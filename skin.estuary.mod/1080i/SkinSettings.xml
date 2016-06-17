@@ -433,6 +433,13 @@
                <onup>640</onup>
                <ondown>640</ondown>
                <visible>Container(9000).HasFocus(5)</visible>
+               <control type="radiobutton" id="665">
+                  <label>40161</label>
+                  <width>1256</width>
+                  <include>DefaultSettingButton</include>
+                  <selected>Skin.HasSetting(show_musicvisualisation)</selected>
+                  <onclick>Skin.ToggleSetting(show_musicvisualisation)</onclick>
+               </control>
                <control type="radiobutton" id="616">
                   <label>40029</label>
                   <width>1256</width>
@@ -485,6 +492,7 @@
                   <onclick>Skin.Reset(animate_artistslideshow)</onclick>
                   <onclick>Skin.Reset(enable_visualisation)</onclick>
                   <onclick>Skin.Reset(show_disc)</onclick>
+                  <onclick>Skin.Reset(show_musicvisualisation)</onclick>
                </control>
             </control>
             <control type="grouplist" id="660">

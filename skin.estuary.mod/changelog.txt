@@ -1,3 +1,7 @@
+[B]1.2.6[/B]
+• Add new icons flags : Rotten TomatoMeter, Rotten Tomatoes Audience Score and MetaCritic rating
+• Add possibility to show music visualisation screen directly when playing song
+
 [B]1.2.5[/B]
 • Add changes from original Estuary 0.8.0
 • Improve icons resolution

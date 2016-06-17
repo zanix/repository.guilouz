@@ -778,8 +778,8 @@
 				<control type="group">
 					<visible>Control.HasFocus(50)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
-					<top>5</top>
-					<left>738</left>
+					<top>52</top>
+					<left>16</left>
 					<control type="image">
 						<left>17</left>
 						<width>44</width>
@@ -787,10 +787,10 @@
 						<animation effect="rotate" end="-90" center="40,23" time="0" condition="true">Conditional</animation>
 						<texture colordiffuse="button_focus">frame/menu-nofo.png</texture>
 					</control>
-					<control type="textbox">
-						<top>-20</top>
+					<control type="label">
+						<top>0</top>
 						<left>74</left>
-						<width>380</width>
+						<width>1000</width>
 						<height>120</height>
 						<shadowcolor>text_shadow</shadowcolor>
 						<label>$LOCALIZE[31125]</label>
@@ -799,18 +799,18 @@
 				<control type="group">
 					<visible>Control.HasFocus(138)</visible>
 					<animation effect="fade" time="200">VisibleChange</animation>
-					<top>5</top>
-					<left>738</left>
+					<top>52</top>
+					<left>16</left>
 					<control type="image">
 						<left>17</left>
 						<width>44</width>
 						<height>44</height>
 						<texture colordiffuse="button_focus">frame/menu-fo.png</texture>
 					</control>
-					<control type="textbox">
-						<top>-20</top>
+					<control type="label">
+						<top>0</top>
 						<left>74</left>
-						<width>380</width>
+						<width>1000</width>
 						<height>120</height>
 						<shadowcolor>text_shadow</shadowcolor>
 						<label>$LOCALIZE[31126]</label>

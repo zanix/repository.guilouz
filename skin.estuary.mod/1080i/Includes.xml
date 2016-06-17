@@ -583,27 +583,220 @@
 			<width>1720</width>
 			<align>right</align>
 			<control type="group">
-				<visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.Rating) + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
-                		<width>128</width>
+				<visible>!ListItem.IsCollection + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
+					<width>420</width>
                 		<height>50</height>
             		<control type="image">
-                		<width>128</width>
+                		<width>420</width>
                 		<height>50</height>
                 		<aspectratio>keep</aspectratio>
-                		<texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating.png</texture>        
-            		</control>            
-            		<control type="label">
-                		<width>71</width>
-               		 	<centertop>47%</centertop>
+                		<texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/cadre2.png</texture>        
+            		</control>
+			<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<right>5</right>
+			<itemgap>15</itemgap>
+			<width>1720</width>
+			<align>right</align>
+			<control type="group">
+                		<width>92</width>
                 		<height>50</height>
-                		<posx>54</posx>
-                		<align>center</align>
+                	<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/imdb.png</texture>
+                		<visible>!String.IsEmpty(ListItem.Rating)</visible>
+            		</control>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/imdb-dimmed.png</texture>
+                		<visible>String.IsEmpty(ListItem.Rating)</visible>
+            		</control>	       	         
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>60</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
                 		<aligny>center</aligny>
                 		<label>$INFO[ListItem.Rating]</label>
-                		<font>Font-Flag</font>
+                		<font>Font-Rating2</font>
                 		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>!String.IsEmpty(ListItem.Rating)</visible>
             		</control>
-          		</control> 
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>60</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>--</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>String.IsEmpty(ListItem.Rating)</visible>
+            		</control>
+          	</control>
+			<control type="group">
+                		<width>90</width>
+                		<height>50</height>
+                	<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesImage),flags/rating/,.png]</texture>
+                		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+            		</control>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/certified-dimmed.png</texture>
+                		<visible>String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+            		</control>	   	         
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesMeter)]%</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+            		</control>
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>--</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+            		</control>
+          	</control>
+          	<control type="group">
+                		<width>90</width>
+                		<height>50</height>
+                	<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/popcorn.png</texture>
+                		<visible>IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter), 59)</visible>
+	            		<visible>IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter), 0)</visible>
+	            		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter))</visible>
+            		</control>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/spilt.png</texture>
+                		<visible>!IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter), 59)</visible>
+						<visible>IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter), 0)</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter))</visible>
+            		</control>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/popcorn-dimmed.png</texture>
+						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter))</visible>
+            		</control>	 	         
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter)]%</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter))</visible>
+            		</control>
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>--</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter))</visible>
+            		</control>
+          	</control>
+          	<control type="group">
+                		<width>90</width>
+                		<height>50</height>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/metacritic.png</texture>
+                		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
+            		</control>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/metacritic-dimmed.png</texture>
+                		<visible>String.IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
+            		</control>	     	         
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>$INFO[Window(Home).Property(SkinHelper.MetaCritic.Rating)]%</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
+            		</control>
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>--</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>String.IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
+            		</control>
+          	</control>
+         </control>
+			</control>	
 			<control type="group">
 				<visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItemDuration.Hours)) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItemDuration.Minutes)) + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
                 		<width>170</width>
@@ -951,27 +1144,220 @@
 			<width>1720</width>
 			<align>right</align>
 			<control type="group">
-				<visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.Rating) + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
-                		<width>128</width>
+				<visible>!ListItem.IsCollection + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
+					<width>420</width>
                 		<height>50</height>
             		<control type="image">
-                		<width>128</width>
+                		<width>420</width>
                 		<height>50</height>
                 		<aspectratio>keep</aspectratio>
-                		<texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating.png</texture>        
-            		</control>            
-            		<control type="label">
-                		<width>71</width>
-               		 	<centertop>47%</centertop>
+                		<texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/cadre2.png</texture>        
+            		</control>
+			<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<right>5</right>
+			<itemgap>15</itemgap>
+			<width>1720</width>
+			<align>right</align>
+			<control type="group">
+                		<width>92</width>
                 		<height>50</height>
-                		<posx>54</posx>
-                		<align>center</align>
+                	<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/imdb.png</texture>
+                		<visible>!String.IsEmpty(ListItem.Rating)</visible>
+            		</control>	         
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/imdb-dimmed.png</texture>
+                		<visible>String.IsEmpty(ListItem.Rating)</visible>
+            		</control>	
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>60</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
                 		<aligny>center</aligny>
                 		<label>$INFO[ListItem.Rating]</label>
-                		<font>Font-Flag</font>
+                		<font>Font-Rating2</font>
                 		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>!String.IsEmpty(ListItem.Rating)</visible>
             		</control>
-          		</control> 
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>60</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>--</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>String.IsEmpty(ListItem.Rating)</visible>
+            		</control>
+          	</control>
+			<control type="group">
+                		<width>90</width>
+                		<height>50</height>
+                	<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesImage),flags/rating/,.png]</texture>
+                		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+            		</control>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/certified-dimmed.png</texture>
+                		<visible>String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+            		</control>	   	         
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesMeter)]%</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+            		</control>
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>--</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+            		</control>
+          	</control>
+          	<control type="group">
+                		<width>90</width>
+                		<height>50</height>
+                	<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/popcorn.png</texture>
+                		<visible>IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter), 59)</visible>
+	            		<visible>IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter), 0)</visible>
+	            		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter))</visible>
+            		</control>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/spilt.png</texture>
+                		<visible>!IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter), 59)</visible>
+						<visible>IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter), 0)</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter))</visible>
+            		</control>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/popcorn-dimmed.png</texture>
+						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter))</visible>
+            		</control>	 	         
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter)]%</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter))</visible>
+            		</control>
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>--</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter))</visible>
+            		</control>
+          	</control>
+          	<control type="group">
+                		<width>90</width>
+                		<height>50</height>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/metacritic.png</texture>
+                		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
+            		</control>
+            		<control type="image">
+                		<width>32</width>
+               		 	<centertop>49%</centertop>
+                		<height>32</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<texture>flags/rating/metacritic-dimmed.png</texture>
+                		<visible>String.IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
+            		</control>	     	         
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>$INFO[Window(Home).Property(SkinHelper.MetaCritic.Rating)]%</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
+            		</control>
+            		<control type="label">
+            			<posx>38</posx>
+                		<width>58</width>
+               		 	<centertop>49%</centertop>
+                		<height>50</height>
+                		<align>left</align>
+                		<aligny>center</aligny>
+                		<label>--</label>
+                		<font>Font-Rating2</font>
+                		<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                		<visible>String.IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
+            		</control>
+          	</control>
+         </control>
+			</control>	
 			<control type="group">
 				<visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
                 		<width>170</width>

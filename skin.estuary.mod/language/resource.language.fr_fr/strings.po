@@ -692,7 +692,7 @@ msgstr "Afficher les effets de visualisation"
 
 msgctxt "#40033"
 msgid "Music OSD"
-msgstr "OSD Musique"
+msgstr "Ecran de visualisation musique"
 
 msgctxt "#40034"
 msgid "Visualization of the music screen related settings."
@@ -736,7 +736,7 @@ msgstr "Sauvegarde et restauration des paramètres du thème."
 
 msgctxt "#40044"
 msgid "Video OSD"
-msgstr "OSD Vidéo"
+msgstr "Ecran de visualisation vidéo"
 
 msgctxt "#40045"
 msgid "Show ClearArt on video infos"
@@ -1201,3 +1201,11 @@ msgstr "Désactiver l'effet de zoom"
 msgctxt "#40160"
 msgid "Disable zoom effect when selecting item."
 msgstr "Permet de désactiver l'effet de zoom lors de la sélection d'un élément."
+
+msgctxt "#40161"
+msgid "Show music visualisation screen when playing song"
+msgstr "Afficher l'écran de visualisation de la musique à la lecture d'une chanson"
+
+msgctxt "#40162"
+msgid "Show music visualisation screen directly when playing song."
+msgstr "Permet d'afficher directement l'écran de visualisation de la musique dès la lecture d'une chanson."

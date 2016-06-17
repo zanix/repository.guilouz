@@ -115,6 +115,11 @@
             <size>24</size>
         </font>
         <font>
+            <name>Font-Rating2</name>
+            <filename>RobotoCondensed-Bold.ttf</filename>
+            <size>30</size>
+        </font>
+        <font>
             <name>Font-Volume</name>
             <filename>RobotoCondensed-Bold.ttf</filename>
             <size>22</size>
@@ -242,6 +247,11 @@
             <name>Font-Rating</name>
             <filename>RobotoCondensed-Bold.ttf</filename>
             <size>24</size>
+        </font>
+        <font>
+            <name>Font-Rating2</name>
+            <filename>RobotoCondensed-Bold.ttf</filename>
+            <size>30</size>
         </font>
         <font>
             <name>Font-Volume</name>
