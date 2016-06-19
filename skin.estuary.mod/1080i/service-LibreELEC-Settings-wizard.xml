@@ -64,7 +64,7 @@
 		<top>549</top>
 		<width>1050</width>
 		<height>3</height>
-		<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
+		<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/separator-grey.png</texture>
             </control> 
             <control type="group" id="1398">
                 <visible>String.IsEmpty(Control.GetLabel(1390))</visible>
@@ -90,7 +90,7 @@
                     <font>font24_title</font>
                     <label></label>
                     <align>left</align>
-                    <textcolor>button_focus</textcolor>           
+                    <textcolor>$VAR[SkinColorVar]</textcolor>           
                 </control>			
                 <control type="textbox" id="1400">
                     <left>300</left>
@@ -111,7 +111,7 @@
                         <label>
                         </label>
                         <align>left</align>
-                        <textcolor>button_focus</textcolor>                        
+                        <textcolor>$VAR[SkinColorVar]</textcolor>                        
                     </control>
                     <control type="radiobutton" id="1406">
                         <left>280</left>
@@ -120,7 +120,7 @@
                         <height>75</height>
                         <label></label>   
                         <textoffsetx>45</textoffsetx>                              
-                        <texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+                        <texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
                         <texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
                     </control>		
                     <control type="radiobutton" id="1407">
@@ -130,7 +130,7 @@
                         <height>75</height>
                         <label></label>   
                         <textoffsetx>45</textoffsetx>                               
-                        <texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+                        <texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
                         <texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
                     </control>			      	            
                     <control type="button" id="1401">
@@ -138,7 +138,7 @@
                         <top>440</top>
                         <width>300</width>
                         <height>75</height>
-                        <texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+                        <texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
                         <texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
                         <label></label>
                         <font>font13_title</font>
@@ -150,7 +150,7 @@
                         <top>440</top>
                         <width>300</width>
                         <height>75</height>
-                        <texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+                        <texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
                         <texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
                         <label></label>
                         <font>font13_title</font>
@@ -175,7 +175,7 @@
                         <height>20</height>
                         <label></label>
                         <align>left</align>
-                        <textcolor>button_focus</textcolor>                       
+                        <textcolor>$VAR[SkinColorVar]</textcolor>                       
                     </control>
                     <control type="image">
                         <left>278</left>
@@ -246,7 +246,7 @@
                                 <height>50</height>	
                                 <aligny>center</aligny>						
                                 <font>font13_title</font>
-                                <textcolor>button_focus</textcolor>
+                                <textcolor>$VAR[SkinColorVar]</textcolor>
                                 <info>ListItem.Label</info>
                                 <visible>true</visible>
                             </control>
@@ -283,7 +283,7 @@
                                 <lefttexture></lefttexture>
                                 <righttexture></righttexture>
                                 <overlaytexture></overlaytexture>  
-                                <midtexture colordiffuse="button_focus">dialogs/separator-grey.png</midtexture>                          
+                                <midtexture colordiffuse="$VAR[SkinColorVar]">dialogs/separator-grey.png</midtexture>                          
                             </control> 
                             <!-- Secure Symbol (bottom right) -->
                             <control type="image">
@@ -312,7 +312,7 @@
                                 <width>974</width>
                                 <height>48</height>
                                 <visible>Control.HasFocus(1200)</visible>
-                                <texture colordiffuse="button_focus">lists/focus.png</texture>
+                                <texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
                                 <animation type="Visible" reversible="false">
                                     <effect type="fade" start="0" end="100" time="300" />
                                 </animation>			        							
@@ -345,7 +345,7 @@
                                 <height>50</height>	
                                 <aligny>center</aligny>						
                                 <font>font13_title</font>
-                                <textcolor>button_focus</textcolor>
+                                <textcolor>$VAR[SkinColorVar]</textcolor>
                                 <info>ListItem.Label</info>
                                 <visible>true</visible>
                             </control>
@@ -382,7 +382,7 @@
                                 <lefttexture></lefttexture>
                                 <righttexture></righttexture>
                                 <overlaytexture></overlaytexture>  
-                                <midtexture colordiffuse="button_focus">dialogs/separator-grey.png</midtexture>                          
+                                <midtexture colordiffuse="$VAR[SkinColorVar]">dialogs/separator-grey.png</midtexture>                          
                             </control>                            
                             <!-- Secure Symbol (bottom right) -->
                             <control type="image">
@@ -404,7 +404,7 @@
                 <width>300</width>
                 <height>75</height>
                 <visible>true</visible>
-		<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+		<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 		<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
                 <label></label>
                 <font>font13_title</font>

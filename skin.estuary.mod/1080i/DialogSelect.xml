@@ -87,7 +87,7 @@
 					<control type="textbox">
 						<left>135</left>
 						<top>65</top>
-						<width>700</width>
+						<width>750</width>
 						<height>60</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
@@ -108,7 +108,7 @@
 						<top>0</top>
 						<width>878</width>
 						<height>125</height>
-						<texture colordiffuse="button_focus">lists/focus.png</texture>
+						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 						<visible>Control.HasFocus(6)</visible>
 					</control>
 					<control type="image">
@@ -141,7 +141,7 @@
 					<control type="textbox">
 						<left>135</left>
 						<top>65</top>
-						<width>700</width>
+						<width>750</width>
 						<height>60</height>
 						<font>font12</font>
 						<label>$INFO[ListItem.Label2]</label>
@@ -169,7 +169,7 @@
 					<font>font10</font>
 					<align>right</align>
 					<aligny>center</aligny>
-					<textcolor>grey</textcolor>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<label>$VAR[SelectLabel]</label>
 				</control>
 				<control type="grouplist" id="9001">

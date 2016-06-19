@@ -238,7 +238,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(200).ListItem.Property(NextNumber)] - $INFO[Container(200).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(200).ListItem.Property(NextNumber)] - $INFO[Container(200).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -249,7 +249,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(200).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(200).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -261,7 +261,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(200).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(200).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -302,7 +302,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(201).ListItem.Property(NextNumber)] - $INFO[Container(201).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(201).ListItem.Property(NextNumber)] - $INFO[Container(201).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -313,7 +313,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(201).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(201).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -325,7 +325,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(201).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(201).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -366,7 +366,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(202).ListItem.Property(NextNumber)] - $INFO[Container(202).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(202).ListItem.Property(NextNumber)] - $INFO[Container(202).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -377,7 +377,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(202).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(202).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -389,7 +389,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(202).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(202).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>			
@@ -430,7 +430,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(203).ListItem.Property(NextNumber)] - $INFO[Container(203).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(203).ListItem.Property(NextNumber)] - $INFO[Container(203).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -441,7 +441,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(203).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(203).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -453,7 +453,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(203).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(203).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -494,7 +494,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(204).ListItem.Property(NextNumber)] - $INFO[Container(204).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(204).ListItem.Property(NextNumber)] - $INFO[Container(204).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -505,7 +505,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(204).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(204).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -517,7 +517,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(204).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(204).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -558,7 +558,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(205).ListItem.Property(NextNumber)] - $INFO[Container(205).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(205).ListItem.Property(NextNumber)] - $INFO[Container(205).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -569,7 +569,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(205).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(205).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -581,7 +581,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(205).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(205).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -622,7 +622,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(206).ListItem.Property(NextNumber)] - $INFO[Container(206).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(206).ListItem.Property(NextNumber)] - $INFO[Container(206).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -633,7 +633,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(206).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(206).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -645,7 +645,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(206).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(206).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -686,7 +686,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(207).ListItem.Property(NextNumber)] - $INFO[Container(207).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(207).ListItem.Property(NextNumber)] - $INFO[Container(207).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -697,7 +697,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(207).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(207).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -709,7 +709,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(207).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(207).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -750,7 +750,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(208).ListItem.Property(NextNumber)] - $INFO[Container(208).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(208).ListItem.Property(NextNumber)] - $INFO[Container(208).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -761,7 +761,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(208).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(208).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -773,7 +773,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(208).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(208).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -814,7 +814,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(209).ListItem.Property(NextNumber)] - $INFO[Container(209).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(209).ListItem.Property(NextNumber)] - $INFO[Container(209).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -825,7 +825,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(209).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(209).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -837,7 +837,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(209).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(209).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -878,7 +878,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(210).ListItem.Property(NextNumber)] - $INFO[Container(210).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(210).ListItem.Property(NextNumber)] - $INFO[Container(210).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -889,7 +889,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(210).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(210).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -901,7 +901,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(210).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(210).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -942,7 +942,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(211).ListItem.Property(NextNumber)] - $INFO[Container(211).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(211).ListItem.Property(NextNumber)] - $INFO[Container(211).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -953,7 +953,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(211).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(211).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -965,7 +965,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(211).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(211).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -1006,7 +1006,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(212).ListItem.Property(NextNumber)] - $INFO[Container(212).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(212).ListItem.Property(NextNumber)] - $INFO[Container(212).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -1017,7 +1017,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(212).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(212).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -1029,7 +1029,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(212).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(212).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -1070,7 +1070,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(213).ListItem.Property(NextNumber)] - $INFO[Container(213).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(213).ListItem.Property(NextNumber)] - $INFO[Container(213).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -1081,7 +1081,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(213).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(213).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -1093,7 +1093,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(213).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(213).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -1134,7 +1134,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(214).ListItem.Property(NextNumber)] - $INFO[Container(214).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(214).ListItem.Property(NextNumber)] - $INFO[Container(214).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -1145,7 +1145,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(214).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(214).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -1157,7 +1157,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(214).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(214).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -1198,7 +1198,7 @@
 					<posy>40</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20359] : [/COLOR]$INFO[Container(215).ListItem.Property(NextNumber)] - $INFO[Container(215).ListItem.Property(NextTitle)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20359] : [/COLOR]$INFO[Container(215).ListItem.Property(NextNumber)] - $INFO[Container(215).ListItem.Property(NextTitle)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -1209,7 +1209,7 @@
 					<posy>70</posy>
 					<width>1040</width>
 					<height>25</height>
-					<label>[COLOR=button_focus]$LOCALIZE[20416] : [/COLOR]$INFO[Container(215).ListItem.Property(ShortTime)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20416] : [/COLOR]$INFO[Container(215).ListItem.Property(ShortTime)]</label>
 					<font>font12</font>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -1221,7 +1221,7 @@
 					<width>1040</width>
 					<height>25</height>
 					<align>right</align>
-					<label>[COLOR=button_focus]$LOCALIZE[29909] : [/COLOR]$INFO[Container(215).ListItem.Property(Network)]</label>
+					<label>[COLOR=$VAR[SkinColorVar]]$LOCALIZE[29909] : [/COLOR]$INFO[Container(215).ListItem.Property(Network)]</label>
 					<font>font12</font>
 				</control>
 			</control>
@@ -1351,7 +1351,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -1379,7 +1379,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -1407,7 +1407,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -1540,7 +1540,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -1568,7 +1568,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -1596,7 +1596,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -1729,7 +1729,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -1757,7 +1757,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -1785,7 +1785,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -1918,7 +1918,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -1946,7 +1946,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -1974,7 +1974,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -2107,7 +2107,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -2135,7 +2135,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -2163,7 +2163,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -2296,7 +2296,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -2324,7 +2324,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -2352,7 +2352,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -2485,7 +2485,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -2513,7 +2513,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -2541,7 +2541,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -2674,7 +2674,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -2702,7 +2702,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -2730,7 +2730,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -2863,7 +2863,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -2891,7 +2891,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -2919,7 +2919,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -3052,7 +3052,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -3080,7 +3080,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -3108,7 +3108,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -3241,7 +3241,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -3269,7 +3269,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -3297,7 +3297,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -3430,7 +3430,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -3458,7 +3458,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -3486,7 +3486,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -3619,7 +3619,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -3647,7 +3647,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -3675,7 +3675,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -3808,7 +3808,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -3836,7 +3836,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -3864,7 +3864,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -3997,7 +3997,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -4025,7 +4025,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -4053,7 +4053,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -4186,7 +4186,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>299</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Poster</description>
@@ -4214,7 +4214,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>40</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Banner</description>
@@ -4242,7 +4242,7 @@
 							<posy>0</posy>
 							<width>210</width>
 							<height>81</height>
-							<texture background="true" colordiffuse="button_focus">dialogs/white.png</texture>
+							<texture background="true" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
 						   </control>
 						    <control type="image">
 							<description>Logo</description>
@@ -4264,7 +4264,7 @@
 				<posy>495</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
+				<texture flipx="true" colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
 				<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 				<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -4275,7 +4275,7 @@
 				<posy>495</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture colordiffuse="button_focus">overlays/arrowright.png</texture>
+				<texture colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
 				<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 				<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -4333,7 +4333,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(200).NumItems)</xvisible>
 				</control>
@@ -4361,7 +4361,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(201).NumItems)</xvisible>
 				</control>
@@ -4389,7 +4389,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(202).NumItems)</xvisible>
 				</control>
@@ -4417,7 +4417,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(203).NumItems)</xvisible>
 				</control>
@@ -4445,7 +4445,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(204).NumItems)</xvisible>
 				</control>
@@ -4473,7 +4473,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(205).NumItems)</xvisible>
 				</control>
@@ -4501,7 +4501,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(206).NumItems)</xvisible>
 				</control>
@@ -4529,7 +4529,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(207).NumItems)</xvisible>
 				</control>
@@ -4557,7 +4557,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(208).NumItems)</xvisible>
 				</control>
@@ -4585,7 +4585,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(209).NumItems)</xvisible>
 				</control>
@@ -4613,7 +4613,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(210).NumItems)</xvisible>
 				</control>
@@ -4641,7 +4641,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(211).NumItems)</xvisible>
 				</control>
@@ -4669,7 +4669,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(212).NumItems)</xvisible>
 				</control>
@@ -4697,7 +4697,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(213).NumItems)</xvisible>
 				</control>
@@ -4725,7 +4725,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(214).NumItems)</xvisible>
 				</control>
@@ -4753,7 +4753,7 @@
 					<width>54</width>
 					<height>44</height>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="button_focus">frame/item-count.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<xvisible>!String.IsEmpty(Container(215).NumItems)</xvisible>
 				</control>

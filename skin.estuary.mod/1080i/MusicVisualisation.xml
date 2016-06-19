@@ -118,7 +118,7 @@
 					<label>$INFO[MusicPlayer.Artist]</label>
 					<font>font30_title</font>
 					<shadowcolor>black</shadowcolor>
-					<textcolor>button_focus</textcolor>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
@@ -128,7 +128,7 @@
 					<label>[COLOR grey]$INFO[MusicPlayer.Album][/COLOR]$INFO[MusicPlayer.Year, (,) ]</label>
 					<font>font24_title</font>
 					<shadowcolor>black</shadowcolor>
-					<textcolor>button_focus</textcolor>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
@@ -220,7 +220,7 @@
 					<top>1029</top>
 					<width>16</width>
 					<height>18</height>
-					<texture colordiffuse="button_focus">osd/arrow.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">osd/arrow.png</texture>
 					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 				</control>
 				<control type="textbox">
@@ -229,8 +229,8 @@
 					<width>1250</width>
 					<align>right</align>
 					<height>122</height>
-					<label>[B][UPPERCASE]$LOCALIZE[31024][/UPPERCASE][/B][CR][COLOR grey]$INFO[MusicPlayer.Offset(1).Title,, - ][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(1).Artist][/COLOR][COLOR grey]$INFO[MusicPlayer.Offset(1).Duration, - ,][/COLOR][CR][COLOR grey]$INFO[MusicPlayer.Offset(2).Title,, - ][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(2).Artist][/COLOR][COLOR grey]$INFO[MusicPlayer.Offset(2).Duration, - ,][/COLOR][CR][COLOR grey]$INFO[MusicPlayer.Offset(3).Title,, - ][/COLOR][COLOR button_focus]$INFO[MusicPlayer.Offset(3).Artist][/COLOR][COLOR grey]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
-					<textcolor>button_focus</textcolor>
+					<label>[B][UPPERCASE]$LOCALIZE[31024][/UPPERCASE][/B][CR][COLOR grey]$INFO[MusicPlayer.Offset(1).Title,, - ][/COLOR][COLOR=$VAR[SkinColorVar]]$INFO[MusicPlayer.Offset(1).Artist][/COLOR][COLOR grey]$INFO[MusicPlayer.Offset(1).Duration, - ,][/COLOR][CR][COLOR grey]$INFO[MusicPlayer.Offset(2).Title,, - ][/COLOR][COLOR=$VAR[SkinColorVar]]$INFO[MusicPlayer.Offset(2).Artist][/COLOR][COLOR grey]$INFO[MusicPlayer.Offset(2).Duration, - ,][/COLOR][CR][COLOR grey]$INFO[MusicPlayer.Offset(3).Title,, - ][/COLOR][COLOR=$VAR[SkinColorVar]]$INFO[MusicPlayer.Offset(3).Artist][/COLOR][COLOR grey]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<font>font12</font>
 					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 				</control>
@@ -296,7 +296,7 @@
 				<height>30</height>
 				<info>Player.ProgressCache</info>
 				<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+				<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
 				<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 			</control>
 			<control type="progress" id="23">
@@ -307,7 +307,7 @@
 				<height>30</height>
 				<info>Player.Progress</info>
 				<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-				<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+				<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
 			</control>
 		</control>
 		<control type="group">

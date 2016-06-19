@@ -41,7 +41,7 @@
                     <width>560</width>
                     <height>30</height>
                     <font>font13_title</font>
-                    <textcolor>button_focus</textcolor>
+                    <textcolor>$VAR[SkinColorVar]</textcolor>
                     <label></label>
                     <align>center</align>
                     <visible>true</visible>
@@ -52,7 +52,7 @@
                     <width>560</width>
                     <height>30</height>
                     <font>font13_title</font>
-                    <textcolor>button_focus</textcolor>
+                    <textcolor>$VAR[SkinColorVar]</textcolor>
                     <label></label>
                     <align>center</align>
                     <visible>true</visible>
@@ -63,7 +63,7 @@
                     <width>560</width>
                     <height>30</height>
                     <font>font13_title</font>
-                    <textcolor>button_focus</textcolor>
+                    <textcolor>$VAR[SkinColorVar]</textcolor>
                     <label></label>
                     <align>center</align>
                     <visible>true</visible>

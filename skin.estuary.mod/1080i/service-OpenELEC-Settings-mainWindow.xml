@@ -13,8 +13,8 @@
 				<top>940</top>
 				<width>48</width>
 				<height>24</height>
-				<texturefocus colordiffuse="button_focus">overlays/arrowdown.png</texturefocus>
-				<texturenofocus colordiffuse="button_focus">overlays/arrowdown.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturenofocus>
 				<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 				<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -28,8 +28,8 @@
 				<top>105</top>
 				<width>48</width>
 				<height>24</height>
-				<texturefocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturefocus>
-				<texturenofocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturenofocus>
 				<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 				<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -47,8 +47,8 @@
 				<top>940</top>
 				<width>48</width>
 				<height>24</height>
-				<texturefocus colordiffuse="button_focus">overlays/arrowdown.png</texturefocus>
-				<texturenofocus colordiffuse="button_focus">overlays/arrowdown.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturenofocus>
 				<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 				<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -62,8 +62,8 @@
 				<top>105</top>
 				<width>48</width>
 				<height>24</height>
-				<texturefocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturefocus>
-				<texturenofocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturenofocus>
 				<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 				<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -81,8 +81,8 @@
 				<top>940</top>
 				<width>48</width>
 				<height>24</height>
-				<texturefocus colordiffuse="button_focus">overlays/arrowdown.png</texturefocus>
-				<texturenofocus colordiffuse="button_focus">overlays/arrowdown.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturenofocus>
 				<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 				<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -96,8 +96,8 @@
 				<top>105</top>
 				<width>48</width>
 				<height>24</height>
-				<texturefocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturefocus>
-				<texturenofocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturenofocus>
 				<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 				<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 				<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -162,7 +162,7 @@
 			<left>2</left>
 			<width>396</width>
 			<height>124.6</height>
-			<texture colordiffuse="button_focus">lists/focus.png</texture>
+			<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 			<visible>Control.HasFocus(1000)</visible>
 	            </control>
                     <control type="label">
@@ -195,7 +195,7 @@
 			<top>802</top>
 			<width>1256</width>
 			<height>3</height>
-			<texture colordiffuse="button_focus" border="2">dialogs/separator.png</texture>
+			<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/separator.png</texture>
 		</control>
                 <control type="group" id="1900">
                     <left>470</left>
@@ -218,7 +218,8 @@
                         <font>font12</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>[COLOR button_focus]$ADDON[service.openelec.settings 606][/COLOR] $INFO[Window.Property(Distri)] ($INFO[Window.Property(build)])</label>
+                        <label>$ADDON[service.openelec.settings 606] [COLOR white]$INFO[Window.Property(Distri)] ($INFO[Window.Property(build)])[/COLOR]</label>
+                        <textcolor>$VAR[SkinColorVar]</textcolor>
                     </control>	
                     <control type="label">
                         <left>0</left>
@@ -228,7 +229,8 @@
                         <font>font12</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>[COLOR button_focus]$ADDON[service.openelec.settings 607][/COLOR] $INFO[Window.Property(Version)]</label>
+                        <label>$ADDON[service.openelec.settings 607] [COLOR white]$INFO[Window.Property(Version)][/COLOR]</label>
+                        <textcolor>$VAR[SkinColorVar]</textcolor>
                     </control>	
                     <control type="label">
                         <left>0</left>
@@ -238,7 +240,8 @@
                         <font>font12</font>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>[COLOR button_focus]$ADDON[service.openelec.settings 608][/COLOR] $INFO[Window.Property(Arch)]</label>
+                        <label>$ADDON[service.openelec.settings 608] [COLOR white]$INFO[Window.Property(Arch)][/COLOR]</label>
+                        <textcolor>$VAR[SkinColorVar]</textcolor>
                     </control>
                     <control type="textbox">
                         <left>00</left>
@@ -296,8 +299,8 @@
                             </control>
                             <control type="label">
                                 <align>right</align>
-                                <left>828</left>
-                                <width>400</width>
+                                <left>528</left>
+                                <width>700</width>
                                 <height>42</height>	
                                 <font>fontContextMenu</font>
                                 <info>ListItem.Property(value)</info>
@@ -364,7 +367,7 @@
                             <width>1258</width>
                             <height>42</height>
                             <visible>Control.HasFocus(1100)</visible>
-                            <texture colordiffuse="button_focus">lists/focus.png</texture>
+                            <texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
                         </control> 
                         <control type="group">
                             <visible>!String.IsEqual(ListItem.Property(Typ), separator)</visible>
@@ -379,8 +382,8 @@
                             </control>
                             <control type="label">
                                 <align>right</align>
-                                <left>828</left>
-                                <width>400</width>
+                                <left>528</left>
+                                <width>700</width>
                                 <height>42</height>
                                 <font>fontContextMenu</font>
                                 <info>ListItem.Property(value)</info>
@@ -398,8 +401,8 @@
                             </control>
                             <control type="label">
                                 <align>right</align>
-                                <left>828</left>
-                                <width>400</width>
+                                <left>528</left>
+                                <width>700</width>
                                 <height>42</height>
                                 <font>fontContextMenu</font>
                                 <info>ListItem.Property(value)</info>
@@ -501,7 +504,7 @@
                             <width>700</width>
                             <height>30</height>							
                             <font>font24_title</font>
-                            <textcolor>button_focus</textcolor>
+                            <textcolor>$VAR[SkinColorVar]</textcolor>
                             <info>ListItem.Label</info>
                             <visible>true</visible>
                         </control>
@@ -604,7 +607,7 @@
                             <width>1258</width>
                             <height>105</height>
                             <visible>Control.HasFocus(1200)</visible>
-                            <texture colordiffuse="button_focus">lists/focus.png</texture>
+                            <texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
                         </control>
                         <!-- Icon ethernet -->
                         <control type="image">
@@ -886,7 +889,7 @@
                             <width>700</width>
                             <height>30</height>
                             <font>font24_title</font>
-                            <textcolor>button_focus</textcolor>
+                            <textcolor>$VAR[SkinColorVar]</textcolor>
                             <info>ListItem.Label</info>
                             <visible>true</visible>
                         </control>
@@ -938,7 +941,7 @@
                             <width>1258</width>
                             <height>105</height>
                             <visible>Control.HasFocus(1300)</visible>
-                            <texture colordiffuse="button_focus">lists/focus.png</texture>
+                            <texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
                         </control>
                          <!-- default -->
                         <control type="image">
@@ -1122,7 +1125,7 @@
                 <font>font12</font>
                 <label>$INFO[Window.Property(InfoText)]</label>
                 <align>justify</align>
-		<textcolor>button_focus</textcolor>
+		<textcolor>$VAR[SkinColorVar]</textcolor>
 		<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
             </control>
             </control>

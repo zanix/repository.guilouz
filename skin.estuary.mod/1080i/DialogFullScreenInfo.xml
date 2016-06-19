@@ -56,11 +56,11 @@
 				<top>-205</top>
 				<width>200</width>
 				<height>300</height>
-				<texture fallback="DefaultVideoCover.png">$VAR[NowPlayingPosterVar]</texture>
+				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(poster)]</texture>
 				<bordertexture colordiffuse="FF494949">dialogs/white.png</bordertexture>
 				<bordersize>5</bordersize>
 				<aspectratio aligny="center">keep</aspectratio>
-				<visible>!VideoPlayer.Content(LiveTV) + !String.IsEmpty(Player.Art(poster)) + !String.IsEmpty(Player.Art(tvshow.poster))</visible>
+				<visible>!VideoPlayer.Content(LiveTV) + !String.IsEmpty(Player.Art(poster))</visible>
 			</control>
 			<control type="image">
 				<description>TV Cover</description>
@@ -68,7 +68,19 @@
 				<top>-205</top>
 				<width>200</width>
 				<height>300</height>
-				<texture fallback="DefaultVideoCover.png">$VAR[NowPlayingPosterVar]</texture>
+				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(tvshow.poster)]</texture>
+				<bordertexture colordiffuse="FF494949">dialogs/white.png</bordertexture>
+				<bordersize>5</bordersize>
+				<aspectratio aligny="center">keep</aspectratio>
+				<visible>!VideoPlayer.Content(LiveTV) + !String.IsEmpty(Player.Art(tvshow.poster))</visible>
+			</control>
+			<control type="image">
+				<description>TV Cover</description>
+				<right>48</right>
+				<top>-205</top>
+				<width>200</width>
+				<height>300</height>
+				<texture>$INFO[Player.Art(thumb)]</texture>
 				<aspectratio aligny="center">keep</aspectratio>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<visible>!String.IsEmpty(Player.Art(thumb))</visible>
@@ -85,7 +97,7 @@
 			<control type="grouplist">
 				<left>45</left>
 				<top>50</top>
-				<width>700</width>
+				<width>1100</width>
 				<height>100</height>
 				<align>left</align>
 				<orientation>horizontal</orientation>
@@ -125,7 +137,29 @@
                 		<aspectratio>keep</aspectratio>
                 		<texture>$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]</texture>
                 		<visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
-            		</control>   
+            		</control>
+            		<control type="group">
+						<width>156</width>
+                		<height>50</height>
+            			<control type="image">
+                			<width>156</width>
+                			<height>50</height>
+                			<aspectratio>keep</aspectratio>
+                			<texture>flags/rating.png</texture>
+                			<visible>!String.IsEmpty(VideoPlayer.Rating)</visible>        
+            			</control>
+						<control type="label">
+							<posx>74</posx>
+							<posy>2</posy>
+							<width>79</width>
+							<height>44</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>Font-Flag</font>
+							<label>$INFO[VideoPlayer.Rating]</label>
+							<visible>!String.IsEmpty(VideoPlayer.Rating)</visible>  
+						</control>
+					</control>   
 			</control>
 			<control type="grouplist" id="5550">
 				<visible>String.IsEmpty(Skin.String(clearart_position)) | String.IsEqual(Skin.String(clearart_position),$LOCALIZE[40088])</visible>
@@ -218,7 +252,7 @@
 					<height>30</height>
 					<info>Player.ProgressCache</info>
 					<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+					<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
 					<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 				</control>
 				<control type="progress" id="23">
@@ -229,7 +263,7 @@
 					<height>30</height>
 					<info>Player.Progress</info>
 					<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+					<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
 				</control>
 				<control type="button" id="87">
 					<include>HiddenObject</include>
@@ -251,7 +285,7 @@
 					<ondown>650</ondown>
 					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
 					<textureslidernib>osd/progress/nub_bar.png</textureslidernib>
-					<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
+					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_bar.png</textureslidernibfocus>
 					<info>Player.Progress</info>
 					<action>seek</action>
 					<visible>!Control.HasFocus(87)</visible>
@@ -282,7 +316,7 @@
 				<control type="label">
 					<width>1600</width>
 					<height>44</height>
-					<label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season, • $LOCALIZE[20373] ,]$INFO[VideoPlayer.Episode, • $LOCALIZE[20359] ,]$INFO[VideoPlayer.Rating, • ,]</label>
+					<label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season, • $LOCALIZE[20373] ,]$INFO[VideoPlayer.Episode, • $LOCALIZE[20359] ,]</label>
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(Episodes)</visible>
 				</control>
@@ -290,7 +324,7 @@
 					<font>font14</font>
 					<width>1600</width>
 					<height>44</height>
-					<label>$INFO[VideoPlayer.Genre]$INFO[VideoPlayer.Year, • ,]$INFO[VideoPlayer.Rating, • ,]</label>
+					<label>$INFO[VideoPlayer.Genre]$INFO[VideoPlayer.Year, • ,]</label>
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(Movies)</visible>
 				</control>
@@ -298,7 +332,7 @@
 					<font>font14</font>
 					<width>1600</width>
 					<height>44</height>
-					<label>$INFO[VideoPlayer.ChannelNumberLabel,$LOCALIZE[19029] : , ]$INFO[VideoPlayer.ChannelName][CR]$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031] : ]</label>
+					<label>$INFO[VideoPlayer.ChannelNumberLabel,[B]$LOCALIZE[19029] :[/B] , ]$INFO[VideoPlayer.ChannelName][CR]$INFO[VideoPlayer.NextTitle,[B]$LOCALIZE[19031] :[/B] ]</label>
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
@@ -332,7 +366,7 @@
 					<height>100</height>
 					<font>font16</font>
 					<shadowcolor>text_shadow</shadowcolor>
-					<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31085] : ]</label>
+					<label>$INFO[VideoPlayer.ChannelGroup,[B]$LOCALIZE[31085] :[/B] ]</label>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="label">

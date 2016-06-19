@@ -35,7 +35,7 @@
 					<onup>10</onup>
 					<ondown>10</ondown>
 					<viewtype label="19032">list</viewtype>
-					<progresstexture border="0,60,18,14" colordiffuse="button_focus">windows/pvr/epg_progress.png</progresstexture>
+					<progresstexture border="0,60,18,14" colordiffuse="$VAR[SkinColorVar]">windows/pvr/epg_progress.png</progresstexture>
 					<rulerlayout height="45" width="1400">
 						<control type="label">
 							<width>500</width>
@@ -43,7 +43,7 @@
 							<font>font12</font>
 							<label>$INFO[ListItem.Label]</label>
 							<textoffsetx>10</textoffsetx>
-							<textcolor>button_focus</textcolor>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
 						</control>
 					</rulerlayout>
 					<channellayout height="58" width="330">
@@ -76,7 +76,7 @@
 							<height>60</height>
 							<font>font24_title</font>
 							<label>$INFO[ListItem.ChannelNumber]</label>
-							<textcolor>button_focus</textcolor>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<align>center</align>
 							<aligny>center</aligny>
 						</control>
@@ -88,7 +88,7 @@
 							<font>font12</font>
 							<label>$INFO[ListItem.ChannelName]</label>
 							<scroll>yes</scroll>
-							<textcolor>button_focus</textcolor>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<aligny>center</aligny>
 							<textoffsetx>10</textoffsetx>
 						</control>
@@ -122,13 +122,13 @@
 							<left>2</left>
 							<width>54</width>
 							<height>54</height>
-							<texture colordiffuse="button_focus">lists/focus.png</texture>
+							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<visible>Control.HasFocus(10)</visible>
 						</control>
 						<control type="image" id="2">
 							<width>58</width>
 							<height>58</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 						</control>
 						<control type="image" id="2">
 							<width>58</width>
@@ -188,7 +188,7 @@
 						<control type="label">
 							<width>1480</width>
 							<height>30</height>
-							<textcolor>button_focus</textcolor>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<font>font12</font>
 							<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.EpgEventTitle,  [COLOR grey],[/COLOR]]$INFO[ListItem.EpisodeName, [COLOR grey](,)[/COLOR]]$INFO[ListItem.Genre,      $LOCALIZE[515] : [COLOR grey],[/COLOR]]</label>
 						</control>
@@ -257,7 +257,7 @@
 								<left>378</left>
 								<width>825</width>
 								<height>58</height>
-								<textcolor>button_focus</textcolor>
+								<textcolor>$VAR[SkinColorVar]</textcolor>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
@@ -281,7 +281,7 @@
 								<left>0</left>
 								<width>1090</width>
 								<height>58</height>
-								<texture colordiffuse="button_focus">lists/focus.png</texture>
+								<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 								<visible>Control.HasFocus(13)</visible>
 							</control>
 							<control type="label">
@@ -326,7 +326,7 @@
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<include content="PVRInfoPanel">
-					<param name="bottom_label1" value="$INFO[ListItem.NextTitle,[COLOR button_focus]$LOCALIZE[19031]:[/COLOR] ]" />
+					<param name="bottom_label1" value="$INFO[ListItem.NextTitle,$LOCALIZE[19031]:[COLOR white] ,[/COLOR]]" />
 					<param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
 				</include>
 			</control>

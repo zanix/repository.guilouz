@@ -132,6 +132,7 @@
                     <height>32</height>
                     <align>right</align>
                     <label>$INFO[ListItem.Year]</label>
+                    <textcolor>$VAR[SkinColorVar]</textcolor>
                     <visible>Container.Content(movies)</visible>
                  </control>
                 <control type="label">
@@ -141,6 +142,7 @@
                     <height>32</height>
                     <align>right</align>
                     <label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
+                    <textcolor>$VAR[SkinColorVar]</textcolor>
                     <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>                   
                 </control>              
                 <control type="label">
@@ -150,6 +152,7 @@
                     <height>32</height>
                     <align>right</align>
                     <label>$LOCALIZE[40092] $INFO[ListItem.Premiered]</label>
+                    <textcolor>$VAR[SkinColorVar]</textcolor>
                     <visible>Container.Content(episodes)</visible>
                  </control>
                 <control type="textbox">

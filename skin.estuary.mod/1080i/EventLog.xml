@@ -138,7 +138,7 @@
 							<width>1120</width>
 							<height>35</height>
 							<font>font12</font>
-							<textcolor>button_focus</textcolor>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
@@ -158,7 +158,7 @@
 							<top>0</top>
 							<width>1260</width>
 							<height>90</height>
-							<texture colordiffuse="button_focus">lists/focus.png</texture>
+							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 						</control>
 						<control type="image">
@@ -196,7 +196,7 @@
 							<width>1120</width>
 							<height>35</height>
 							<font>font12</font>
-							<textcolor>button_focus</textcolor>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<align>right</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>

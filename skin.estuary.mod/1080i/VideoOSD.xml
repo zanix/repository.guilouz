@@ -73,7 +73,7 @@
 					<texture border="40">buttons/dialogbutton-nofo.png</texture>
 				</control>
 				<control type="label">
-					<left>30</left>
+					<right>40</right>
 					<top>20</top>
 					<align>right</align>
 					<textoffsetx>20</textoffsetx>
@@ -83,13 +83,14 @@
 					<label>$VAR[VideoOSDHelpTextVar]</label>
 				</control>
 				<control type="label">
-					<left>30</left>
+					<left>60</left>
 					<top>20</top>
 					<width>1858</width>
 					<height>60</height>
-					<align>center</align>
+					<align>left</align>
 					<aligny>center</aligny>
 					<label>$VAR[SeekLabel]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="group" id="200">
@@ -114,9 +115,9 @@
 							<visible>!VideoPlayer.Content(livetv)</visible>
 						</control>
 						<control type="radiobutton" id="602">
-							<textureradioonfocus colordiffuse="button_focus">osd/fullscreen/buttons/play.png</textureradioonfocus>
+							<textureradioonfocus colordiffuse="$VAR[SkinColorVar]">osd/fullscreen/buttons/play.png</textureradioonfocus>
 							<textureradioonnofocus>osd/fullscreen/buttons/play.png</textureradioonnofocus>
-							<textureradioofffocus colordiffuse="button_focus">osd/fullscreen/buttons/pause.png</textureradioofffocus>
+							<textureradioofffocus colordiffuse="$VAR[SkinColorVar]">osd/fullscreen/buttons/pause.png</textureradioofffocus>
 							<textureradiooffnofocus>osd/fullscreen/buttons/pause.png</textureradiooffnofocus>
 							<texturefocus>-</texturefocus>
 							<width>125</width>
@@ -151,9 +152,9 @@
 							<visible>VideoPlayer.HasMenu</visible>
 						</control>
 						<control type="radiobutton" id="606">
-							<textureradioonfocus colordiffuse="button_focus">osd/fullscreen/buttons/record-white.png</textureradioonfocus>
+							<textureradioonfocus colordiffuse="$VAR[SkinColorVar]">osd/fullscreen/buttons/record-white.png</textureradioonfocus>
 							<textureradioonnofocus>osd/fullscreen/buttons/record-white.png</textureradioonnofocus>
-							<textureradioofffocus colordiffuse="button_focus">osd/fullscreen/buttons/record.png</textureradioofffocus>
+							<textureradioofffocus colordiffuse="$VAR[SkinColorVar]">osd/fullscreen/buttons/record.png</textureradioofffocus>
 							<textureradiooffnofocus>osd/fullscreen/buttons/record.png</textureradiooffnofocus>
 							<texturefocus>-</texturefocus>
 							<width>125</width>
@@ -279,7 +280,7 @@
 						<height>30</height>
 						<info>Player.ProgressCache</info>
 						<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-						<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+						<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
 						<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 					</control>
 					<control type="progress" id="23">
@@ -290,7 +291,7 @@
 						<height>30</height>
 						<info>Player.Progress</info>
 						<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-						<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+						<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
 					</control>
 					<control type="button" id="87">
 						<include>HiddenObject</include>
@@ -311,7 +312,7 @@
 						<ondown>650</ondown>
 						<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
 						<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
-						<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
+						<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
 						<info>Player.Progress</info>
 						<action>seek</action>
 						<visible>!Control.HasFocus(87)</visible>
@@ -324,8 +325,8 @@
 						<onup>8010</onup>
 						<ondown>650</ondown>
 						<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
-						<textureslidernib colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernib>
-						<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_leftright.png</textureslidernibfocus>
+						<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernib>
+						<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
 						<info>Player.Progress</info>
 						<action>seek</action>
 						<visible>Control.HasFocus(87)</visible>
@@ -377,7 +378,7 @@
 						<width>470</width>
 						<include>DefaultOSDSettingButton</include>
 						<label>$LOCALIZE[31112]</label>
-						<label2>[COLOR button_focus]$INFO[VideoPlayer.AudioLanguage][/COLOR]</label2>
+						<label2>[COLOR=$VAR[SkinColorVar]]$INFO[VideoPlayer.AudioLanguage][/COLOR]</label2>
 						<onclick>AudioNextLanguage</onclick>
 					</control>
 				</control>
@@ -427,7 +428,7 @@
 						<width>470</width>
 						<include>DefaultOSDSettingButton</include>
 						<label>$LOCALIZE[31112]</label>
-						<label2>[COLOR button_focus]$INFO[VideoPlayer.AudioLanguage][/COLOR]</label2>
+						<label2>[COLOR=$VAR[SkinColorVar]]$INFO[VideoPlayer.AudioLanguage][/COLOR]</label2>
 						<onclick>AudioNextLanguage</onclick>
 					</control>
 				</control>
@@ -474,7 +475,7 @@
 						<width>470</width>
 						<include>DefaultOSDSettingButton</include>
 						<label>$LOCALIZE[31051]</label>
-						<label2>[COLOR button_focus]$INFO[VideoPlayer.SubtitlesLanguage][/COLOR]</label2>
+						<label2>[COLOR=$VAR[SkinColorVar]]$INFO[VideoPlayer.SubtitlesLanguage][/COLOR]</label2>
 						<onclick>CycleSubtitle</onclick>
 						<enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
 					</control>

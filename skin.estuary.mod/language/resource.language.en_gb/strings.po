@@ -1342,3 +1342,23 @@ msgstr ""
 msgctxt "#40162"
 msgid "Show music visualisation screen directly when playing song."
 msgstr ""
+
+msgctxt "#40163"
+msgid "Skin color"
+msgstr ""
+
+msgctxt "#40164"
+msgid "Reset skin color"
+msgstr ""
+
+msgctxt "#40165"
+msgid "Color"
+msgstr ""
+
+msgctxt "#40166"
+msgid "Change main theme color."
+msgstr ""
+
+msgctxt "#40167"
+msgid "Reset theme color to default."
+msgstr ""

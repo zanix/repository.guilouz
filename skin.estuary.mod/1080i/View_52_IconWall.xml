@@ -31,10 +31,10 @@
 							<texture border="40">buttons/button-nofo.png</texture>
 						</control>
 						<control type="image">
-							<left>120</left>
-							<top>5</top>
-							<width>160</width>
-							<height>160</height>
+							<left>140</left>
+							<top>25</top>
+							<width>120</width>
+							<height>120</height>
 							<texture fallback="DefaultStudios.png">$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
@@ -87,14 +87,14 @@
 						<control type="image">
 							<width>400</width>
 							<height>245</height>
-							<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<texture border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texture>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
 						<control type="image">
-							<left>120</left>
-							<top>5</top>
-							<width>160</width>
-							<height>160</height>
+							<left>140</left>
+							<top>25</top>
+							<width>120</width>
+							<height>120</height>
 							<texture fallback="DefaultStudios.png">$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
@@ -202,7 +202,7 @@
 						<control type="image">
 							<width>400</width>
 							<height>245</height>
-							<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<texture border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texture>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
 						<control type="image">
@@ -291,7 +291,7 @@
 						<control type="image">
 							<width>330</width>
 							<height>124</height>
-							<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
+							<texture border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texture>
 							<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 						</control>
 						<control type="textbox">

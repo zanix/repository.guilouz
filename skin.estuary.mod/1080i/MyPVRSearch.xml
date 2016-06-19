@@ -15,7 +15,7 @@
 				<control type="image">
 					<description>background image</description>
 					<left>90</left>
-					<top>160</top>
+					<top>161</top>
 					<width>1090</width>
 					<height>746</height>
 					<texture border="22">dialogs/dialog-bg.png</texture>
@@ -69,7 +69,8 @@
 									<width>890</width>
 									<height>100</height>
 									<aligny>top</aligny>
-									<label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
+									<label>[COLOR white]$INFO[ListItem.ChannelName][/COLOR]$INFO[ListItem.Label, - ]</label>
+									<textcolor>$VAR[SkinColorVar]</textcolor>
 								</control>
 								<control type="label">
 									<left>120</left>
@@ -99,11 +100,11 @@
 								<visible>!Control.HasFocus(50)</visible>
 							</control>
 							<control type="image">
-								<left>0</left>
+								<left>2</left>
 								<top>0</top>
-								<width>1050</width>
+								<width>1046</width>
 								<height>101</height>
-								<texture colordiffuse="button_focus">lists/focus.png</texture>
+								<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 								<visible>Control.HasFocus(50)</visible>
 							</control>
 							<control type="label">
@@ -133,7 +134,8 @@
 									<width>890</width>
 									<height>100</height>
 									<aligny>top</aligny>
-									<label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
+									<label>[COLOR white]$INFO[ListItem.ChannelName][/COLOR]$INFO[ListItem.Label, - ]</label>
+									<textcolor>$VAR[SkinColorVar]</textcolor>
 								</control>
 								<control type="label">
 									<left>120</left>
@@ -172,7 +174,7 @@
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<include content="PVRInfoPanel">
-					<param name="bottom_label1" value="$INFO[ListItem.NextTitle,[COLOR button_focus]$LOCALIZE[19031]:[/COLOR] ]" />
+					<param name="bottom_label1" value="$INFO[ListItem.NextTitle,$LOCALIZE[19031]:[COLOR white] ,[/COLOR]]" />
 					<param name="bottom_label2" value="$INFO[ListItem.NextStartTime]" />
 				</include>
 			</control>

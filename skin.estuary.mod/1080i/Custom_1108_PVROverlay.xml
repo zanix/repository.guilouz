@@ -58,7 +58,7 @@
 			<height>15</height>
 			<info>Player.ProgressCache</info>
 			<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-			<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+			<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
 			<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 		</control>
 		<control type="progress" id="23">
@@ -69,14 +69,15 @@
 			<height>15</height>
 			<info>Player.Progress</info>
 			<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-			<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
+			<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
 		</control>
 		<control type="label">
 			<left>530</left>
 			<top>955</top>
 			<width>1300</width>
 			<height>25</height>
-			<label>[COLOR button_focus]$INFO[VideoPlayer.NextStartTime]$INFO[VideoPlayer.NextEndTime, - , : ][/COLOR]$INFO[VideoPlayer.NextTitle]</label>
+			<label>$INFO[VideoPlayer.NextStartTime]$INFO[VideoPlayer.NextEndTime, - , : ][COLOR white]$INFO[VideoPlayer.NextTitle][/COLOR]</label>
+			<textcolor>$VAR[SkinColorVar]</textcolor>
 			<aligny>center</aligny>
 		</control>
 		<control type="grouplist">

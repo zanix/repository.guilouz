@@ -63,7 +63,7 @@
                 			<height>64</height>
                 			<width>64</width>
                 			<aspectratio scalediffuse="false">keep</aspectratio>
-                			<texture colordiffuse="button_focus">dialogs/nextup/circle.png</texture>
+                			<texture colordiffuse="$VAR[SkinColorVar]">dialogs/nextup/circle.png</texture>
             			</control>
             			<control type="label">
             			        <top>-2</top>
@@ -87,7 +87,7 @@
                 			<textoffsetx>0</textoffsetx>
                 			<onleft>3013</onleft>
                 			<onright>3013</onright>
-                			<texturefocus colordiffuse="button_focus">dialogs/nextup/nextupplay.png</texturefocus>
+                			<texturefocus colordiffuse="$VAR[SkinColorVar]">dialogs/nextup/nextupplay.png</texturefocus>
                 			<texturenofocus>dialogs/nextup/nextupplay.png</texturenofocus>
             			</control>
             			<control type="button" id="3013">
@@ -102,7 +102,7 @@
                 			<textoffsetx>0</textoffsetx>
                 			<onleft>3012</onleft>
                 			<onright>3012</onright>
-                			<texturefocus colordiffuse="button_focus">dialogs/nextup/nextupstop.png</texturefocus>
+                			<texturefocus colordiffuse="$VAR[SkinColorVar]">dialogs/nextup/nextupstop.png</texturefocus>
                 			<texturenofocus>dialogs/nextup/nextupstop.png</texturenofocus>
             			</control>
 				<control type="group">

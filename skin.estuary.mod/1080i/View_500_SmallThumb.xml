@@ -97,7 +97,7 @@
 							<left>1</left>
 							<width>220</width>
 							<height>330</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 						</control>
 						<control type="image">
 							<left>5</left>
@@ -125,7 +125,7 @@
 						<width>70</width>
 						<height>330</height>
 						<fadetime>300</fadetime>
-						<texture colordiffuse="button_focus">colors/white.png</texture>
+						<texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
 						<animation effect="zoom" start="0,100" end="100,100" time="250" center="auto">Focus</animation>
 						<animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50">UnFocus</animation>
 					</control>
@@ -206,8 +206,8 @@
 							<width>352</width>
 							<height>25</height>
 							<font>font12</font>
-							<selectedcolor>button_focus</selectedcolor>
-							<textcolor>button_focus</textcolor>
+							<selectedcolor>$VAR[SkinColorVar]</selectedcolor>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<aligny>center</aligny>
 							<label fallback="-">$INFO[ListItem.Label2]</label>
 						</control>
@@ -275,8 +275,8 @@
 								<width>352</width>
 								<height>25</height>
 								<font>font12</font>
-								<selectedcolor>button_focus</selectedcolor>
-								<textcolor>button_focus</textcolor>
+								<selectedcolor>$VAR[SkinColorVar]</selectedcolor>
+								<textcolor>$VAR[SkinColorVar]</textcolor>
 								<aligny>center</aligny>
 								<label fallback="-">$INFO[ListItem.Label2]</label>
 							</control>
@@ -287,40 +287,40 @@
 							<include>UserRatingCircle</include>
 						</control>
 						<control type="image">
-							<left>4</left>
-							<top>11</top>
-							<width>370</width>
-							<height>333</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<left>8</left>
+							<top>15</top>
+							<width>362</width>
+							<height>328</height>
+							<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 						</control>
 					</control>
 					<control type="image">
 						<right>32</right>
-						<top>12</top>
+						<top>15</top>
 						<width>70</width>
-						<height>330</height>
+						<height>328</height>
 						<fadetime>300</fadetime>
-						<texture colordiffuse="button_focus">colors/white.png</texture>
+						<texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
 						<animation effect="zoom" start="0,100" end="100,100" time="250" center="auto" condition="!Skin.HasSetting(no_animations)">Focus</animation>
 						<animation effect="zoom" start="100,100" end="0,100" time="125" center="auto" delay="50" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
 					</control>
 					<control type="group">
-						<top>12</top>
+						<top>15</top>
 						<right>-10</right>
 						<animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
 						<animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
 						<include content="SmallThumbInfoFlag">
 							<param name="icon" value="lists/rating.png" />
 							<param name="infolabel" value="ListItem.Rating" />
-							<param name="posy" value="20" />
+							<param name="posy" value="25" />
 						</include>
 						<include content="SmallThumbInfoFlag">
 							<param name="icon" value="lists/year.png" />
 							<param name="infolabel" value="ListItem.Year" />
-							<param name="posy" value="140" />
+							<param name="posy" value="145" />
 						</include>
 						<control type="image">
-							<top>260</top>
+							<top>265</top>
 							<right>52</right>
 							<width>48</width>
 							<height>48</height>
@@ -337,11 +337,11 @@
 						<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="160,180" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
 						<include>InfoWallMusicLayout</include>
 						<control type="image">
-							<left>15</left>
+							<left>16</left>
 							<top>5</top>
 							<width>288</width>
 							<height>348</height>
-							<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+							<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
 					</control>

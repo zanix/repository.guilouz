@@ -1,3 +1,16 @@
+[B]1.2.7[/B]
+• Krypton : Replace changelog file with a 'news' section in addon.xml
+• Add possibility to change skin color
+• Add Clearlogo on video OSD
+• Add IMDB flag icon on video OSD
+• Add possibility to choose multi images for home menu background
+• Replace year by total episodes in list views for tv shows and seasons
+• Improve esthetic appearance
+• Fix poster on video OSD
+• Fix duration flag icon with music videos
+• Fix ratings with tv shows
+• Updated language files from Transifex
+
 [B]1.2.6[/B]
 • Add new icons flags : Rotten TomatoMeter, Rotten Tomatoes Audience Score and MetaCritic rating
 • Add possibility to show music visualisation screen directly when playing song

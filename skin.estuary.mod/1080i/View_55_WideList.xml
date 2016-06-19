@@ -50,7 +50,7 @@
 						<top>0</top>
 						<width>1396</width>
 						<height>63</height>
-						<texture colordiffuse="button_focus">lists/focus.png</texture>
+						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 						<visible>Control.HasFocus(55)</visible>
 					</control>
 					<control type="label">
@@ -100,7 +100,7 @@
 						<width>32</width>
 						<visible>String.IsEmpty(ListItem.Year)</visible>
 						<height>32</height>
-						<texture colordiffuse="button_focus">$VAR[ListWatchedIconVar]</texture>
+						<texture colordiffuse="$VAR[SkinColorVar]">$VAR[ListWatchedIconVar]</texture>
 						<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
 						<visible>!Control.HasFocus(55)</visible>
 					</control>
@@ -121,7 +121,7 @@
 						<aligny>center</aligny>
 						<font>font12</font>
 						<label>$INFO[ListItem.Year]</label>
-						<textcolor>button_focus</textcolor>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
 					<control type="label">
@@ -174,7 +174,7 @@
 				<top>0</top>
 				<width>1396</width>
 				<height>63</height>
-				<texture colordiffuse="button_focus">lists/focus.png</texture>
+				<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 				<visible>Control.hasFocus(55)</visible>
 			</control>
 			<control type="label">
@@ -246,7 +246,7 @@
 				<top>0</top>
 				<width>1396</width>
 				<height>63</height>
-				<texture colordiffuse="button_focus">lists/focus.png</texture>
+				<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 				<visible>Control.hasFocus(55)</visible>
 			</control>
 			<control type="image">

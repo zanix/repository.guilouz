@@ -29,14 +29,14 @@
 					<top>-11</top>
 					<width>100</width>
 					<height>100</height>
-					<texture colordiffuse="button_focus">dialogs/volume/progress/p$INFO[Control.GetLabel(32)].png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">dialogs/volume/progress/p$INFO[Control.GetLabel(32)].png</texture>
 				</control>
 				<control type="image">
 					<left>-4</left>
 					<top>-11</top>
 					<width>100</width>
 					<height>100</height>
-					<texture colordiffuse="button_focus">dialogs/extendedprogress/loading.png</texture>
+					<texture colordiffuse="$VAR[SkinColorVar]">dialogs/extendedprogress/loading.png</texture>
 					<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
 				</control>
 			</control>

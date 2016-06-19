@@ -11,9 +11,9 @@
 		<textcolor>white</textcolor>
 		<font>font12</font>
 		<invalidcolor>invalid</invalidcolor>
-		<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+		<texturefocus colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texturefocus>
 		<texturenofocus border="30">lists/separator.png</texturenofocus>
-		<alttexturefocus colordiffuse="button_focus">lists/focus.png</alttexturefocus>
+		<alttexturefocus colordiffuse="$VAR[SkinColorVar]">lists/focus.png</alttexturefocus>
 		<alttexturenofocus border="30">lists/separator.png</alttexturenofocus>
 	</include>
 	<include name="PVRQuickNavItemsCommon">
@@ -25,7 +25,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>-</font>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+				<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<radioposx>26</radioposx>
 				<radioposy>0</radioposy>
@@ -35,7 +35,7 @@
 				<textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
 				<textureradioofffocus>$PARAM[icon]</textureradioofffocus>
 				<textureradiooffnofocus>$PARAM[icon]</textureradiooffnofocus>
-				<textureradiooffdisabled colordiffuse="button_focus">$PARAM[icon]</textureradiooffdisabled>
+				<textureradiooffdisabled colordiffuse="$VAR[SkinColorVar]">$PARAM[icon]</textureradiooffdisabled>
 				<onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TV$PARAM[area])</onclick>
 				<onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(Radio$PARAM[area])</onclick>
 				<enable>!Window.IsActive(TV$PARAM[area]) + !Window.IsActive(Radio$PARAM[area])</enable>
@@ -249,7 +249,7 @@
 		<font>font12_title</font>
 		<align>left</align>
 		<aligny>top</aligny>
-		<textcolor>button_focus</textcolor>
+		<textcolor>$VAR[SkinColorVar]</textcolor>
 	</include>
 	<include name="MediaMenuCommon">
 		<include>OpenClose_Left</include>
@@ -289,7 +289,7 @@
 				<aspectratio>keep</aspectratio>
 				<width>56</width>
 				<height>56</height>
-				<texture colordiffuse="button_focus">icons/logo.png</texture>
+				<texture colordiffuse="$VAR[SkinColorVar]">icons/logo.png</texture>
 			</control>
 			<control type="image">
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
@@ -337,7 +337,7 @@
 				<selected>Player.Paused</selected>
 				<onclick>PlayerControl(Play)</onclick>
 				<font>-</font>
-				<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+				<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 				<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 				<radioposx>39</radioposx>
 				<radioposy>0</radioposy>

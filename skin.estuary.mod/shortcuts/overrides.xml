@@ -68,7 +68,7 @@
     <propertySettings property="PictureWidget" buttonID="3128" title="Path" showNone="True" imageBrowse="True" />    
 
 <!-- Background -->
-    <backgroundBrowse default="Yes">Single</backgroundBrowse>
+    <backgroundBrowse default="Yes">True</backgroundBrowse>
     
 <!-- Icons Directory -->
     <thumbnailBrowseDefault>special://skin/extras/icons/</thumbnailBrowseDefault>    

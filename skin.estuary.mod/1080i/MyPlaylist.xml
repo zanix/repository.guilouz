@@ -59,7 +59,7 @@
 							<top>0</top>
 							<width>799</width>
 							<height>63</height>
-							<texture colordiffuse="button_focus">lists/focus.png</texture>
+							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 						</control>
 						<control type="label">
 							<left>30</left>

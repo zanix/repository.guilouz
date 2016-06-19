@@ -56,7 +56,8 @@
 								<width>680</width>
 								<height>100</height>
 								<aligny>top</aligny>
-								<label>$INFO[ListItem.ChannelName][COLOR button_focus]$INFO[ListItem.Label, - ][/COLOR]</label>
+								<label>[COLOR white]$INFO[ListItem.ChannelName][/COLOR]$INFO[ListItem.Label, - ]</label>
+								<textcolor>$VAR[SkinColorVar]</textcolor>
 							</control>
 							<control type="label">
 								<left>30</left>
@@ -95,7 +96,7 @@
 							<top>2</top>
 							<width>1046</width>
 							<height>101</height>
-							<texture colordiffuse="button_focus">lists/focus.png</texture>
+							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 						</control>
 						<control type="image">

@@ -1209,3 +1209,23 @@ msgstr "Afficher l'écran de visualisation de la musique à la lecture d'une cha
 msgctxt "#40162"
 msgid "Show music visualisation screen directly when playing song."
 msgstr "Permet d'afficher directement l'écran de visualisation de la musique dès la lecture d'une chanson."
+
+msgctxt "#40163"
+msgid "Skin color"
+msgstr "Couleur du thème"
+
+msgctxt "#40164"
+msgid "Reset skin color"
+msgstr "Réinitialiser la couleur du thème"
+
+msgctxt "#40165"
+msgid "Color"
+msgstr "Couleur"
+
+msgctxt "#40166"
+msgid "Change main theme color."
+msgstr "Permet de changer la couleur principale du thème."
+
+msgctxt "#40167"
+msgid "Reset theme color to default."
+msgstr "Permet de réinitialiser la couleur par défaut du thème."

@@ -11,7 +11,7 @@
 		<top>218</top>
 		<width>28</width>
 		<height>28</height>
-		<texture flipx="true" colordiffuse="button_focus">overlays/arrowright.png</texture>
+		<texture flipx="true" colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
 		<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 		<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 		<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -21,7 +21,7 @@
 		<top>218</top>
 		<width>28</width>
 		<height>28</height>
-		<texture colordiffuse="button_focus">overlays/arrowright.png</texture>
+		<texture colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
 		<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 		<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 		<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -181,7 +181,7 @@
             <height>272</height>
             <width>390</width>
             <bottom>173</bottom>
-            <texture border="40" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texture>
+            <texture border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texture>
         </control>  
         <control type="group">
             <top>20</top>
@@ -256,7 +256,8 @@
                 <height>30</height>
                 <scroll>yes</scroll>
                 <font>font12</font>
-                <label>$INFO[Window(Home).Property(NextAired.LatestDate),[COLOR button_focus]$LOCALIZE[40109] : [/COLOR], - ]$INFO[Window(Home).Property(NextAired.LatestNumber),, ]$INFO[Window(Home).Property(NextAired.LatestTitle)]</label>
+                <label>$INFO[Window(Home).Property(NextAired.LatestDate),$LOCALIZE[40109] : [COLOR white], - ]$INFO[Window(Home).Property(NextAired.LatestNumber),, ]$INFO[Window(Home).Property(NextAired.LatestTitle),,[/COLOR]]</label>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
                 <visible>String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
             </control>
 	    <control type="label">
@@ -268,7 +269,8 @@
                 <height>30</height>
                 <scroll>yes</scroll>
                 <font>font12</font>
-                <label>$INFO[Window(Home).Property(NextAired.NextDate),[COLOR button_focus]$LOCALIZE[40108] : [/COLOR], - ]$INFO[Window(Home).Property(NextAired.NextNumber),, ]$INFO[Window(Home).Property(NextAired.NextTitle)]</label>
+                <label>$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[40108] : [COLOR white], - ]$INFO[Window(Home).Property(NextAired.NextNumber),, ]$INFO[Window(Home).Property(NextAired.NextTitle),,[/COLOR]]</label>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
                 <visible>!String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
             </control>
             <control type="label">
@@ -280,7 +282,8 @@
                 <height>30</height>
                 <scroll>yes</scroll>
                 <font>font12</font>
-                <label>$INFO[ListItem.Genre,[COLOR button_focus]$LOCALIZE[515] : [/COLOR], ]</label>
+                <label>$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR]]</label>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
                 <visible>String.IsEqual(ListItem.DBType,tvshow)</visible>
             </control>
             <control type="label">
@@ -292,7 +295,7 @@
                 <height>30</height>
                 <scroll>yes</scroll>
                 <font>font12</font>
-                <textcolor>button_focus</textcolor>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
                 <label>$INFO[ListItem.Genre]</label>
                 <visible>!String.IsEqual(ListItem.DBType,tvshow)</visible>
             </control>
@@ -305,7 +308,7 @@
                 <height>30</height>
                 <scroll>yes</scroll>
                 <font>font12</font>
-                <textcolor>button_focus</textcolor>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
                 <label>$INFO[Window(Home).Property(SkinHelper.MovieSet.Genre)]</label>
             </control>
             <control type="image">

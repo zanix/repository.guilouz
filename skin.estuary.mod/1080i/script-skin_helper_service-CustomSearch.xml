@@ -628,7 +628,7 @@
                         <width>150</width>
                         <height>221</height>
                         <bordersize>-6</bordersize>
-                        <texture border="0" colordiffuse="button_focus">dialogs/white.png</texture>
+                        <texture border="0" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
                      </control>
                      <control type="image">
                         <width>150</width>
@@ -691,7 +691,7 @@
                         <width>150</width>
                         <height>221</height>
                         <bordersize>-6</bordersize>
-                        <texture border="0" colordiffuse="button_focus">dialogs/white.png</texture>
+                        <texture border="0" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
                      </control>
                      <control type="image">
                         <width>150</width>
@@ -752,7 +752,7 @@
                         <width>150</width>
                         <height>221</height>
                         <bordersize>-6</bordersize>
-                        <texture border="0" colordiffuse="button_focus">dialogs/white.png</texture>
+                        <texture border="0" colordiffuse="$VAR[SkinColorVar]">dialogs/white.png</texture>
                      </control>
                      <control type="image">
                         <width>150</width>
@@ -783,8 +783,8 @@
             <top>270</top>
             <width>32</width>
             <height>32</height>
-            <texturefocus colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texturefocus>
-            <texturenofocus colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[SkinColorVar]" flipx="true">overlays/arrowright.png</texturefocus>
+            <texturenofocus colordiffuse="$VAR[SkinColorVar]" flipx="true">overlays/arrowright.png</texturenofocus>
             <animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
             <animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
             <animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -797,8 +797,8 @@
             <top>270</top>
             <width>32</width>
             <height>32</height>
-            <texturefocus colordiffuse="button_focus">overlays/arrowright.png</texturefocus>
-            <texturenofocus colordiffuse="button_focus">overlays/arrowright.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texturefocus>
+            <texturenofocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texturenofocus>
             <animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
             <animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
             <animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -813,8 +813,8 @@
             <top>560</top>
             <width>32</width>
             <height>32</height>
-            <texturefocus colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texturefocus>
-            <texturenofocus colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[SkinColorVar]" flipx="true">overlays/arrowright.png</texturefocus>
+            <texturenofocus colordiffuse="$VAR[SkinColorVar]" flipx="true">overlays/arrowright.png</texturenofocus>
             <animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
             <animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
             <animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -827,8 +827,8 @@
             <top>560</top>
             <width>32</width>
             <height>32</height>
-            <texturefocus colordiffuse="button_focus">overlays/arrowright.png</texturefocus>
-            <texturenofocus colordiffuse="button_focus">overlays/arrowright.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texturefocus>
+            <texturenofocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texturenofocus>
             <animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
             <animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
             <animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -843,8 +843,8 @@
             <top>850</top>
             <width>32</width>
             <height>32</height>
-            <texturefocus colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texturefocus>
-            <texturenofocus colordiffuse="button_focus" flipx="true">overlays/arrowright.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[SkinColorVar]" flipx="true">overlays/arrowright.png</texturefocus>
+            <texturenofocus colordiffuse="$VAR[SkinColorVar]" flipx="true">overlays/arrowright.png</texturenofocus>
             <animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
             <animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
             <animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -857,8 +857,8 @@
             <top>850</top>
             <width>32</width>
             <height>32</height>
-            <texturefocus colordiffuse="button_focus">overlays/arrowright.png</texturefocus>
-            <texturenofocus colordiffuse="button_focus">overlays/arrowright.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texturefocus>
+            <texturenofocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texturenofocus>
             <animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
             <animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
             <animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>

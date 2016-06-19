@@ -21,7 +21,7 @@
 				<height>380</height>
 				<font>font_textbox</font>
 				<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR][/COLOR]</label>
-				<textcolor>button_focus</textcolor>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
 			</control>
 			<control type="textbox">
 				<left>840</left>
@@ -30,14 +30,14 @@
 				<height>70</height>
 				<font>font_textbox</font>
 				<label fallback="31008">$INFO[ListItem.AddonDisclaimer,$LOCALIZE[24052]: ]</label>
-				<textcolor>button_focus</textcolor>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
 			</control>
 			<control type="image">
 				<left>790</left>
 				<top>600</top>
 				<width>1000</width>
 				<height>3</height>
-				<texture colordiffuse="button_focus" border="2">dialogs/separator-grey.png</texture>
+				<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/separator-grey.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<left>90</left>
@@ -82,7 +82,10 @@
 				<include content="InfoDialogButton">
 					<param name="id" value="10" />
 					<param name="icon" value="icons/infodialogs/changelog.png" />
-					<param name="label" value="$LOCALIZE[24036]" />
+					<param name="onclick_1" value="SetProperty(TextViewer_Header,$LOCALIZE[24054],home)" />
+					<param name="onclick_2" value="SetProperty(TextViewer_Text,$ESCINFO[ListItem.AddonNews],home)" />
+					<param name="onclick_3" value="ActivateWindow(1102)" />
+					<param name="label" value="$LOCALIZE[24054]" />
 				</include>
 				<include content="InfoDialogToggleButton">
 					<param name="id" value="7" />

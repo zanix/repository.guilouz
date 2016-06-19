@@ -55,7 +55,7 @@
 						<left>2</left>
 						<width>396</width>
 						<height>74</height>
-						<texture colordiffuse="button_focus">lists/focus.png</texture>
+						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 						<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
@@ -149,7 +149,7 @@
 					<control type="image">
 						<width>314</width>
 						<height>373</height>
-						<texture colordiffuse="button_focus">lists/focus.png</texture>
+						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 						<visible>Control.HasFocus(2)</visible>
 					</control>
 					<control type="image">

@@ -140,7 +140,7 @@
 							<top>-9</top>
 							<width>801</width>
 							<height>140</height>
-							<texture colordiffuse="button_focus" border="40">buttons/button-fo.png</texture>
+							<texture colordiffuse="$VAR[SkinColorVar]" border="40">buttons/button-fo.png</texture>
 						</control>
 						<control type="label">
 							<left>80</left>
@@ -216,7 +216,7 @@
 								<height>55</height>
 								<top>20</top>
 								<left>210</left>
-								<texture colordiffuse="button_focus">icons/extendedinfo/local.png</texture>
+								<texture colordiffuse="$VAR[SkinColorVar]">icons/extendedinfo/local.png</texture>
 								<visible>!String.IsEmpty(ListItem.DBID)</visible>
 							</control>
 							<control type="image">
@@ -263,7 +263,7 @@
 								<height>55</height>
 								<top>20</top>
 								<left>210</left>
-								<texture colordiffuse="button_focus">icons/extendedinfo/local.png</texture>
+								<texture colordiffuse="$VAR[SkinColorVar]">icons/extendedinfo/local.png</texture>
 								<visible>!String.IsEmpty(ListItem.DBID)</visible>
 							</control>
 							<control type="image">
@@ -305,7 +305,7 @@
 								<top>3</top>
 								<width>278</width>
 								<height>406</height>
-								<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+								<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 							</control>
 						</control>
 						<control type="group">
@@ -348,8 +348,8 @@
 					<bottom>93</bottom>
 					<width>48</width>
 					<height>24</height>
-					<texturefocus colordiffuse="button_focus">overlays/arrowdown.png</texturefocus>
-					<texturenofocus colordiffuse="button_focus">overlays/arrowdown.png</texturenofocus>
+					<texturefocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturefocus>
+					<texturenofocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturenofocus>
 					<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 					<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 					<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -363,8 +363,8 @@
 					<top>93</top>
 					<width>48</width>
 					<height>24</height>
-					<texturefocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturefocus>
-					<texturenofocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturenofocus>
+					<texturefocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturefocus>
+					<texturenofocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturenofocus>
 					<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 					<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 					<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -378,8 +378,8 @@
 					<bottom>86</bottom>
 					<width>48</width>
 					<height>24</height>
-					<texturefocus colordiffuse="button_focus">overlays/arrowdown.png</texturefocus>
-					<texturenofocus colordiffuse="button_focus">overlays/arrowdown.png</texturenofocus>
+					<texturefocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturefocus>
+					<texturenofocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturenofocus>
 					<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 					<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 					<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -393,8 +393,8 @@
 					<top>86</top>
 					<width>48</width>
 					<height>24</height>
-					<texturefocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturefocus>
-					<texturenofocus colordiffuse="button_focus" flipy="true">overlays/arrowdown.png</texturenofocus>
+					<texturefocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturefocus>
+					<texturenofocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturenofocus>
 					<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
 					<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 					<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
@@ -453,7 +453,7 @@
 				<textwidth>315</textwidth>
 				<align>left</align>
 				<aligny>top</aligny>
-				<texturefocus border="23" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+				<texturefocus border="23" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 				<texturenofocus border="23">buttons/button-nofo.png</texturenofocus>
 				<font>font13</font>
 				<ondown>SetFocus(7000)</ondown>
@@ -478,7 +478,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<onclick>Container.NextViewMode</onclick>
-				<texturefocus border="23" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
+				<texturefocus border="23" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 				<texturenofocus border="23">buttons/button-nofo.png</texturenofocus>
 				<font>font13</font>
 				<ondown>SetFocus(7000)</ondown>
@@ -501,7 +501,7 @@
 				<font>font13</font>
 				<textwidth>315</textwidth>
 				<label>-</label>
-				<focusedcolor>button_focus</focusedcolor>
+				<focusedcolor>$VAR[SkinColorVar]</focusedcolor>
 				<radiowidth>200</radiowidth>
 				<radioheight>180</radioheight>
 				<radioposx>130</radioposx>
@@ -509,7 +509,7 @@
 				<textureradioonfocus>icons/extendedinfo/moviedb.png</textureradioonfocus>
 				<textureradiooffnofocus>icons/extendedinfo/moviedb.png</textureradiooffnofocus>
 				<textureradioofffocus>icons/extendedinfo/moviedb.png</textureradioofffocus>
-				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+				<texturefocus colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texturefocus>
 				<texturenofocus border="20">lists/separator.png</texturenofocus>
 			</control>
 			<control type="grouplist" id="9000">
@@ -591,8 +591,8 @@
  		<left>17</left>
  		<width>44</width>
  		<height>44</height>
- 		<texturefocus colordiffuse="button_focus">frame/menu-nofo.png</texturefocus>
- 		<texturenofocus colordiffuse="button_focus">frame/menu-nofo.png</texturenofocus>
+ 		<texturefocus colordiffuse="$VAR[SkinColorVar]">frame/menu-nofo.png</texturefocus>
+ 		<texturenofocus colordiffuse="$VAR[SkinColorVar]">frame/menu-nofo.png</texturenofocus>
  		<animation effect="fade" time="200">VisibleChange</animation>
  		<onclick>SetFocus(9000)</onclick>
  		<visible>!Skin.HasSetting(KioskMode) + !ControlGroup(9000).HasFocus</visible>
@@ -613,7 +613,7 @@
 		<left>17</left>
 		<width>44</width>
 		<height>44</height>
-		<texture colordiffuse="button_focus">frame/menu-fo.png</texture>
+		<texture colordiffuse="$VAR[SkinColorVar]">frame/menu-fo.png</texture>
 		<animation effect="fade" time="200">VisibleChange</animation>
 		<visible>ControlGroup(9000).HasFocus</visible>
 	</control>
@@ -639,7 +639,7 @@
 		<width>54</width>
 		<height>44</height>
 		<aspectratio>keep</aspectratio>
-		<texture colordiffuse="button_focus">frame/item-count.png</texture>
+		<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
 		<animation effect="fade" time="200">VisibleChange</animation>
 		<visible>!String.IsEmpty(Window.Property(CurrentPage))</visible>
 		<animation effect="fade" start="100" end="0" time="250" delay="200" reversible="true" condition="Control.IsVisible(23000)">Conditional</animation>

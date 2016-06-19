@@ -72,7 +72,7 @@
                             <posy>-18</posy>
                             <width>513</width>
                             <height>738</height>
-                            <texture border="40" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texture>
+                            <texture border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texture>
                             <visible>Control.HasFocus($PARAM[id])</visible>
                         </control>
                         <control type="image">
@@ -210,7 +210,7 @@
                             <posy>-18</posy>
                             <width>513</width>
                             <height>738</height>
-                            <texture border="40" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texture>
+                            <texture border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texture>
                             <visible>Control.HasFocus($PARAM[id])</visible>
                         </control>
                         <control type="image">
@@ -306,7 +306,8 @@
                                 <right>10</right>
                                 <height>24</height>
                                 <font>font12</font>                               
-                                <label>[UPPERCASE]$INFO[ListItem.Season,$LOCALIZE[20373] , • ]$INFO[ListItem.Episode,$LOCALIZE[20359] ,][/UPPERCASE]</label>
+                                <label>[UPPERCASE]$INFO[ListItem.Season,$LOCALIZE[20373] , [COLOR white]•[/COLOR] ]$INFO[ListItem.Episode,$LOCALIZE[20359] ,][/UPPERCASE]</label>
+                                <textcolor>$VAR[SkinColorVar]</textcolor>
                             </control>
                             <control type="textbox">
                                 <top>100</top>
@@ -318,6 +319,7 @@
                                 <font>font12</font>
                                 <autoscroll>false</autoscroll>
                                 <label>$VAR[ShiftRightTextBoxVar]</label>
+                                <textcolor>$VAR[SkinColorVar]</textcolor>
                             </control>
                             <control type="label">
                                 <bottom>20</bottom>
@@ -327,6 +329,7 @@
                                 <align>center</align>
                                 <font>font10</font>
                                 <label>[I]$LOCALIZE[40092] $INFO[ListItem.Premiered][/I]</label>
+                                <textcolor>$VAR[SkinColorVar]</textcolor>
                             </control>                     
                         <control type="image">
                             <right>0</right>
@@ -354,7 +357,7 @@
                             <posy>-18</posy>
                             <width>513</width>
                             <height>738</height>
-                            <texture border="40" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texture>
+                            <texture border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texture>
                             <visible>Control.HasFocus($PARAM[id])</visible>
                         </control>
                         <control type="image">
@@ -381,7 +384,7 @@
                             <posy>-18</posy>
                             <width>513</width>
                             <height>738</height>
-                            <texture border="40" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texture>
+                            <texture border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texture>
                             <visible>Control.HasFocus($PARAM[id])</visible>
                         </control>
                         <control type="image">
@@ -431,6 +434,7 @@
                                 <align>left</align>
                                 <font>font12</font>
                                 <label>$VAR[ShiftRightTextBoxVar]</label>
+                                <textcolor>$VAR[SkinColorVar]</textcolor>
                                 <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
                             </control>
                             <control type="label">

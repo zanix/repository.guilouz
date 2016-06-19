@@ -90,7 +90,8 @@
 					<font>font12</font>
 					<scroll>yes</scroll>
 					<visible>Control.IsVisible(54)</visible>
-					<label>$INFO[Window(Home).Property(NextAired.NextDate),[COLOR button_focus]$LOCALIZE[40108] : [/COLOR], - ]$INFO[Window(Home).Property(NextAired.NextNumber),, ]$INFO[Window(Home).Property(NextAired.NextTitle)]</label>
+					<label>$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[40108] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.NextNumber),, ]$INFO[Window(Home).Property(NextAired.NextTitle)][/COLOR]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<visible>!String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 				</control>
 				<control type="label">
@@ -101,7 +102,8 @@
 					<font>font12</font>
 					<scroll>yes</scroll>
 					<visible>Control.IsVisible(54)</visible>
-					<label>$INFO[Window(Home).Property(NextAired.LatestDate),[COLOR button_focus]$LOCALIZE[40109] : [/COLOR], - ]$INFO[Window(Home).Property(NextAired.LatestNumber),, ]$INFO[Window(Home).Property(NextAired.LatestTitle)]</label>
+					<label>$INFO[Window(Home).Property(NextAired.LatestDate),$LOCALIZE[40109] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.LatestNumber),, ]$INFO[Window(Home).Property(NextAired.LatestTitle)][/COLOR]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<visible>String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 				</control>
 				<control type="textbox">
@@ -134,7 +136,8 @@
 					<font>font12</font>
 					<scroll>yes</scroll>
 					<visible>!Control.IsVisible(54)</visible>
-					<label>$INFO[Window(Home).Property(NextAired.NextDate),[COLOR button_focus]$LOCALIZE[40108] : [/COLOR], - ]$INFO[Window(Home).Property(NextAired.NextNumber),, ]$INFO[Window(Home).Property(NextAired.NextTitle)]</label>
+					<label>$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[40108] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.NextNumber),, ]$INFO[Window(Home).Property(NextAired.NextTitle)][/COLOR]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<visible>!String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 				</control>
 				<control type="label">
@@ -145,7 +148,8 @@
 					<font>font12</font>
 					<scroll>yes</scroll>
 					<visible>!Control.IsVisible(54)</visible>
-					<label>$INFO[Window(Home).Property(NextAired.LatestDate),[COLOR button_focus]$LOCALIZE[40109] : [/COLOR], - ]$INFO[Window(Home).Property(NextAired.LatestNumber),, ]$INFO[Window(Home).Property(NextAired.LatestTitle)]</label>
+					<label>$INFO[Window(Home).Property(NextAired.LatestDate),$LOCALIZE[40109] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.LatestNumber),, ]$INFO[Window(Home).Property(NextAired.LatestTitle)][/COLOR]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<visible>String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 				</control>
 				<control type="image">
@@ -268,10 +272,10 @@
 				</control>
 				<control type="image">
 					<left>1</left>
-					<top>1</top>
+					<top>2</top>
 					<width>472</width>
-					<height>706</height>
-					<texture background="true" border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
+					<height>699</height>
+					<texture background="true" border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<visible>Control.HasFocus(51)</visible>
 				</control>

@@ -48,7 +48,7 @@
 					<aligny>top</aligny>
 					<label>$LOCALIZE[19005]</label>
 					<font>font24_title</font>
-					<textcolor>button_focus</textcolor>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="grouplist">
 					<orientation>vertical</orientation>
@@ -75,7 +75,8 @@
 						<width>250</width>
 						<height>25</height>
 						<aligny>center</aligny>
-						<label>[COLOR button_focus]$LOCALIZE[19008] :[/COLOR] $INFO[PVR.ActStreamSignal]</label>
+						<label>$LOCALIZE[19008] : [COLOR white]$INFO[PVR.ActStreamSignal][/COLOR]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<font>font12</font>
 					</control>
 					<control type="progress">
@@ -90,7 +91,8 @@
 						<width>250</width>
 						<height>25</height>
 						<aligny>center</aligny>
-						<label>[COLOR button_focus]$LOCALIZE[19009] :[/COLOR] $INFO[PVR.ActStreamSNR]</label>
+						<label>$LOCALIZE[19009] : [COLOR white]$INFO[PVR.ActStreamSNR][/COLOR]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<font>font12</font>
 					</control>
 					<control type="progress">
@@ -128,7 +130,7 @@
 				<top>490</top>
 				<width>100</width>
 				<height>100</height>
-				<texture colordiffuse="button_focus">dialogs/extendedprogress/loading-back.png</texture>
+				<texture colordiffuse="$VAR[SkinColorVar]">dialogs/extendedprogress/loading-back.png</texture>
 				<visible>String.IsEmpty(Skin.String(SkinHelper.SpinnerTexturePath)) | String.IsEmpty(Skin.String(SkinHelper.SpinnerTexture)) | Skin.String(SkinHelper.SpinnerTexturePath,None)</visible>
 			</control>
 <!-- 			<control type="image" id="1">

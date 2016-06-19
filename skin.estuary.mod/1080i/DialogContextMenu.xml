@@ -22,14 +22,14 @@
 			<top>-70</top>
 			<width>450</width>
 			<height>70</height>
-			<texture colordiffuse="button_focus" border="2">dialogs/dialog-bg-solid.png</texture>
+			<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/dialog-bg-solid.png</texture>
 		</control>
 		<control type="image">
 			<left>0</left>
 			<top>-70</top>
 			<width>450</width>
 			<height>70</height>
-			<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
+			<texture colordiffuse="$VAR[SkinColorVar]" border="2">colors/white70.png</texture>
 		</control>
 		<control type="label">
 			<textoffsetx>30</textoffsetx>
@@ -85,7 +85,7 @@
 			<height>60</height>
 			<font>fontContextMenu</font>
 			<align>center</align>
-			<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+			<texturefocus colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texturefocus>
 			<texturenofocus>lists/separator.png</texturenofocus>
 		</control>
 		<include content="UpDownArrows">
