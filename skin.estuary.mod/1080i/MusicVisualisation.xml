@@ -35,7 +35,7 @@
             		<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
         	</control>
 		<control type="image">
-			<texture fallback="special://skin/extras/backgrounds/SKINDEFAULT.jpg">$VAR[GlobalFanartVar]</texture>
+			<texture colordiffuse="$VAR[SkinColorVar]" fallback="special://skin/extras/backgrounds/default.jpg">$VAR[GlobalFanartVar]</texture>
 			<width>1920</width>
 			<height>1080</height>
 			<aspectratio align="center">scale</aspectratio>
@@ -64,7 +64,7 @@
 					<animation effect="slide" end="240,0" time="300" reverisble="true" condition="Player.Playing">Conditional</animation>
 					<animation effect="slide" end="0,0" time="300" reverisble="true" condition="!Player.Playing">Conditional</animation>
 					<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="Skin.HasSetting(show_disc)">Conditional</animation>
-					<texture background="true" fallback="osd/cd.png">$INFO[Player.FolderPath]cdart.png</texture>
+					<texture background="true" fallback="osd/cd.png">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</texture>
 					<visible>Skin.HasSetting(show_disc)</visible>
 				</control>
 				<control type="image">
@@ -74,7 +74,7 @@
 					<width>497</width>
 					<height>490</height>
 					<aspectratio>stretch</aspectratio>
-					<texture fallback="DefaultAlbumCover.png">$INFO[MusicPlayer.Cover]</texture>
+					<texture fallback="DefaultAudioCover.png">$INFO[MusicPlayer.Cover]</texture>
 				</control>
 				<control type="image">
 					<left>-47</left>
@@ -111,6 +111,16 @@
 			<control type="group">
 				<left>80</left>
 				<top>717</top>
+				<control type="image">
+					<posy>10</posy>
+					<posx>1160</posx>
+					<width>600</width>
+					<height>111</height>
+					<aspectratio align="right" aligny="center">keep</aspectratio>
+					<texture>$INFO[Window(Home).Property(SkinHelper.Player.Music.Banner)]</texture>
+					<bordertexture colordiffuse="FF494949">dialogs/white.png</bordertexture>
+					<bordersize>3</bordersize>
+				</control>
 				<control type="label">
 					<top>0</top>
 					<width>1600</width>
@@ -153,7 +163,7 @@
 				<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 				<bordersize>4</bordersize>
 				<visible>!String.IsEmpty(Player.Art(fanart))</visible>
-				<visible>![Window.IsActive(VisualisationSettings) | Window.IsActive(VisualisationPresetList)]</visible>
+				<visible>!Window.IsActive(VisualisationPresetList)</visible>
 				<visible>![Skin.HasSetting(enable_artistslideshowthumb) + Skin.HasSetting(enable_artistslideshow)]</visible>
 				<animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
 				<animation effect="fade" end="0" time="200">Hidden</animation>
@@ -169,7 +179,7 @@
 				<width>806</width>
 				<height>482</height>
 				<texture background="true" colordiffuse="border_alpha">colors/black.png</texture>
-				<visible>![Window.IsActive(VisualisationSettings) | Window.IsActive(VisualisationPresetList)]</visible>
+				<visible>!Window.IsActive(VisualisationPresetList)</visible>
 				<visible>Skin.HasSetting(enable_artistslideshowthumb) + Skin.HasSetting(enable_artistslideshow)</visible>
 				<animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
 				<animation effect="fade" end="0" time="200">Hidden</animation>
@@ -189,7 +199,7 @@
             	<randomize>true</randomize>
            		<fadetime>600</fadetime>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>          
-				<visible>![Window.IsActive(VisualisationSettings) | Window.IsActive(VisualisationPresetList)]</visible>
+				<visible>!Window.IsActive(VisualisationPresetList)</visible>
 				<visible>Skin.HasSetting(enable_artistslideshowthumb) + Skin.HasSetting(enable_artistslideshow)</visible>
 				<animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
 				<animation effect="fade" end="0" time="200">Hidden</animation>
@@ -210,7 +220,7 @@
 					<top>990</top>
 					<width>122</width>
 					<height>122</height>
-					<texture background="true" border="2" fallback="DefaultAlbumCover.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
+					<texture background="true" border="2" fallback="DefaultAudioCover.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
 					<bordertexture colordiffuse="FF494949">dialogs/white.png</bordertexture>
 					<bordersize>2</bordersize>
 					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>

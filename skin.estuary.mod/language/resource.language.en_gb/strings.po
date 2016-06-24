@@ -748,7 +748,7 @@ msgid "Media sources widget"
 msgstr ""
 
 msgctxt "#40014"
-msgid "Live TV widget"
+msgid "Live TV widget - Channels"
 msgstr ""
 
 msgctxt "#40015"
@@ -759,9 +759,7 @@ msgctxt "#40016"
 msgid "Pictures widget"
 msgstr ""
 
-msgctxt "#40017"
-msgid "Widget style"
-msgstr ""
+# empty strings "40017"
 
 msgctxt "#40018"
 msgid "Video Sources"
@@ -771,17 +769,11 @@ msgctxt "#40019"
 msgid "Audio Sources"
 msgstr ""
 
-msgctxt "#40020"
-msgid "Posters"
-msgstr ""
+# empty strings "40020"
 
-msgctxt "#40021"
-msgid "Thumbs"
-msgstr ""
+# empty strings "40021"
 
-msgctxt "#40022"
-msgid "Icons"
-msgstr ""
+# empty strings "40022"
 
 msgctxt "#40023"
 msgid "Set images path"
@@ -803,9 +795,7 @@ msgctxt "#40027"
 msgid "Show artists clearlogos"
 msgstr ""
 
-msgctxt "#40028"
-msgid "Path of music folder"
-msgstr ""
+# empty strings "40028"
 
 msgctxt "#40029"
 msgid "Enable Artist SlideShow addon for background"
@@ -1107,21 +1097,13 @@ msgctxt "#40103"
 msgid "Unwatched TV shows"
 msgstr ""
 
-msgctxt "#40104"
-msgid "Recently added unwatched episodes"
-msgstr ""
+# empty strings "40104"
 
-msgctxt "#40105"
-msgid "Recently added unwatched movies"
-msgstr ""
+# empty strings "40105"
 
-msgctxt "#40106"
-msgid "Hide watched episodes from recently added episodes"
-msgstr ""
+# empty strings "40106"
 
-msgctxt "#40107"
-msgid "Hide watched movies from recently added movies"
-msgstr ""
+# empty strings "40107"
 
 msgctxt "#40108"
 msgid "Next aired"
@@ -1219,9 +1201,7 @@ msgctxt "#40131"
 msgid "Show artists clearlogos on music library."
 msgstr ""
 
-msgctxt "#40132"
-msgid "Set location of the folder containing music."
-msgstr ""
+# empty strings "40132"
 
 msgctxt "#40133"
 msgid "Show studios and recordslabels icons on library."
@@ -1280,7 +1260,7 @@ msgid "Show visualisation effects on music visualisation screen."
 msgstr ""
 
 msgctxt "#40147"
-msgid "Show CDArt on music visualisation screen. 'cdart.png' file must be present in album folder."
+msgid "Show CDArt on music visualisation screen."
 msgstr ""
 
 msgctxt "#40148"
@@ -1361,4 +1341,24 @@ msgstr ""
 
 msgctxt "#40167"
 msgid "Reset theme color to default."
+msgstr ""
+
+msgctxt "#40168"
+msgid "Live TV widget - Recently played channels"
+msgstr ""
+
+msgctxt "#40169"
+msgid "Watched to"
+msgstr ""
+
+msgctxt "#40170"
+msgid "unwatched episodes"
+msgstr ""
+
+msgctxt "#40171"
+msgid "unwatched episode"
+msgstr ""
+
+msgctxt "#40172"
+msgid "Watched episodes"
 msgstr ""

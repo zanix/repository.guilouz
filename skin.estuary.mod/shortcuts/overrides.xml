@@ -15,6 +15,7 @@
     <widget label="40012" icon="DefaultAddon.png">AddonsWidget</widget>
     <widget label="40013" icon="DefaultNetwork.png">SourcesWidget</widget>
     <widget label="40014" icon="DefaultTVGuide.png">LiveTVWidget</widget>
+    <widget label="40168" icon="DefaultTVGuide.png">LiveTVWidget2</widget>
     <widget label="40015" icon="DefaultRadioGuide.png">RadioWidget</widget>
     <widget label="40016" icon="DefaultPicture.png">PictureWidget</widget>
 
@@ -41,34 +42,15 @@
     <backgrounddefault labelID="pictures">special://skin/extras/home-images/pictures.jpg</backgrounddefault>
     <backgrounddefault labelID="addons">special://skin/extras/home-images/addons.jpg</backgrounddefault>
     <backgrounddefault labelID="weather">special://skin/extras/home-images/weather.jpg</backgrounddefault>
-    
-<!-- Widget Style -->
-    <propertySettings property="WidgetStyle.1" buttonID="3121" title="$LOCALIZE[40017] 1" showNone="False" />
-    <property property="WidgetStyle.1">$LOCALIZE[40020]</property>
-    <property property="WidgetStyle.1">$LOCALIZE[40021]</property>
-    <property property="WidgetStyle.1">$LOCALIZE[40022]</property>
-    
-    <propertySettings property="WidgetStyle.2" buttonID="3123" title="$LOCALIZE[40017] 2" showNone="False" />
-    <property property="WidgetStyle.2">$LOCALIZE[40020]</property>
-    <property property="WidgetStyle.2">$LOCALIZE[40021]</property>
-    <property property="WidgetStyle.2">$LOCALIZE[40022]</property>
-    
-    <propertySettings property="WidgetStyle.3" buttonID="3125" title="$LOCALIZE[40017] 3" showNone="False" />
-    <property property="WidgetStyle.3">$LOCALIZE[40020]</property>
-    <property property="WidgetStyle.3">$LOCALIZE[40021]</property>
-    <property property="WidgetStyle.3">$LOCALIZE[40022]</property>
-    
-    <propertySettings property="WidgetStyle.4" buttonID="3127" title="$LOCALIZE[40017] 4" showNone="False" />
-    <property property="WidgetStyle.4">$LOCALIZE[40020]</property>
-    <property property="WidgetStyle.4">$LOCALIZE[40021]</property>
-    <property property="WidgetStyle.4">$LOCALIZE[40022]</property>
 
 <!-- Widget Settings -->    
     <propertySettings toggle="HideBannerWidget" buttonID="3129" templateonly="True" />
-    <propertySettings property="PictureWidget" buttonID="3128" title="Path" showNone="True" imageBrowse="True" />    
+    <propertySettings property="PictureWidget" buttonID="3128" title="$LOCALIZE[40023]" showNone="True" imageBrowse="True" />    
 
 <!-- Background -->
-    <backgroundBrowse default="Yes">True</backgroundBrowse>
+	<background label="smartshortcuts">||BROWSE||plugin://script.skin.helper.service/?action=backgrounds</background>
+	<background label="smartshortcuts">||BROWSE||special://skin/extras/home-images</background>
+	<backgroundBrowse default="protocol://">True</backgroundBrowse>
     
 <!-- Icons Directory -->
     <thumbnailBrowseDefault>special://skin/extras/icons/</thumbnailBrowseDefault>    

@@ -72,6 +72,14 @@
 				<control type="grouplist" id="9000">
 					<top>90</top>
 					<include>MediaMenuListCommon</include>
+					<control type="radiobutton" id="626">
+						<include>MediaMenuItemsCommon</include>
+						<label>Extrafanarts</label>
+						<selected>Skin.HasSetting(SkinHelper.EnableMusicExtraFanart)</selected>
+						<onclick>Skin.ToggleSetting(SkinHelper.EnableMusicExtraFanart)</onclick>
+						<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
+						<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
+					</control>
 					<control type="label" id="203">
 						<description>Actions</description>
 						<include>MediaMenuLabelCommon</include>

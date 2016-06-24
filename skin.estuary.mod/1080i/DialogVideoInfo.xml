@@ -14,7 +14,7 @@
             			<width>290</width>             
             			<height>131</height>
             			<aspectratio>keep</aspectratio>
-            			<texture background="true">$VAR[ClearLogoTop]</texture>
+            			<texture background="true">$VAR[ClearLogoVar]</texture>
         		</control>
         		<control type="image">
         			<include>OpenClose_Right</include>
@@ -85,6 +85,21 @@
 					<bordersize>20</bordersize>
 				</control>
 			</control>
+			<control type="group">
+				<top>836</top>
+				<left>74</left>
+				<width>509</width>
+				<height>136</height>
+				<include>OpenClose_Left</include>
+				<visible>String.IsEqual(ListItem.DBType,tvshow)</visible>
+			<control type="image">
+				<width>509</width>
+				<height>136</height>
+				<texture>$INFO[ListItem.Art(banner)]</texture>
+				<bordertexture border="20">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+		</control>	
 			<control type="group">
 				<top>834</top>
 				<left>70</left>
@@ -247,7 +262,7 @@
                 </control> 
                 
                 <control type="grouplist">
-			<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
+					<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
                     <itemgap>5</itemgap>
                     <orientation>horizontal</orientation>
                     <align>center</align>

@@ -24,6 +24,25 @@
             <randomize>true</randomize>
             <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ExtraFanArtPath))</visible>
         </control>
+        <control type="group">
+        	<visible>!Container.Content(videos)</visible>
+        <control type="image">
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture>$INFO[Window(home).Property(fanart)]</texture>
+			<visible>!Skin.HasSetting(SkinHelper.EnableMusicExtraFanart)</visible>
+		</control>
+        <control type="multiimage">
+ 			<include>FullScreenDimensions</include>
+ 			<aspectratio>scale</aspectratio>
+ 			<fadetime>400</fadetime>
+            <imagepath>$INFO[Window(Home).Property(SkinHelper.Music.ExtraFanArt)]</imagepath>
+            <timeperimage>3000</timeperimage>
+            <randomize>true</randomize>
+            <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Music.ExtraFanArt))</visible>
+            <visible>Skin.HasSetting(SkinHelper.EnableMusicExtraFanart)</visible>
+        </control>
+        </control>
 		<control type="button" id="3000">
 			<include>HiddenObject</include>
 			<onclick>Action(close)</onclick>

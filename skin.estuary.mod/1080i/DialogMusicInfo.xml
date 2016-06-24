@@ -13,7 +13,7 @@
             		<width>332</width>             
             		<height>150</height>
             		<aspectratio>keep</aspectratio>
-            		<texture background="true">$VAR[ClearLogoMusicTop]</texture>
+            		<texture background="true">$VAR[ClearLogoVar]</texture>
         	</control>
         	<control type="image">
         			<include>OpenClose_Right</include>

@@ -20,7 +20,7 @@
 				<onup>52</onup>
 				<ondown>52</ondown>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
-				<visible>Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(roles) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Container.Content(playlists) | Container.Content(unknown)</visible>
+				<visible>Container.Content() | Container.Content(tags) | Container.Content(years) | Container.Content(roles) | Container.Content(genres) | Container.Content(countries) | Container.Content(studios) | Container.Content(playlists) | Container.Content(unknown) | Container.Content(images)</visible>
 				<viewtype label="31099">icon</viewtype>
 				<itemlayout height="248" width="440" condition="Container.Content() | Container.Content(unknown) | Container.Content(tags) | Container.Content(files) | Container.Content(playlists) | Container.Content(studios)">
 					<control type="group">
@@ -304,6 +304,91 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
+						</control>
+					</control>
+				</focusedlayout>
+				<itemlayout height="372" width="440" condition="Container.Content(images)">
+					<control type="image">
+			<top>-10</top>
+			<width>400</width>
+			<height>380</height>
+			<texture border="40">buttons/button-nofo.png</texture>
+		</control>
+		<control type="image">
+			<left>25</left>
+			<top>18</top>
+			<width>350</width>
+			<height>280</height>
+			<texture border="2" fallback="DefaultFolderSquare.png" background="true">$VAR[ShiftThumbVar]</texture>
+			<aspectratio>keep</aspectratio>
+			<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+			<bordersize>4</bordersize>
+		</control>
+		<control type="image">
+			<left>20</left>
+			<top>308</top>
+			<width>358</width>
+			<height>40</height>
+			<texture>colors/black.png</texture>
+		</control>
+		<control type="label">
+			<left>20</left>
+			<top>308</top>
+			<width>358</width>
+			<textoffsetx>20</textoffsetx>
+			<height>40</height>
+			<font>font12</font>
+			<aligny>center</aligny>
+			<align>center</align>
+			<label>$INFO[ListItem.Label]</label>
+		</control>
+				</itemlayout>
+				<focusedlayout height="372" width="440" condition="Container.Content(images)">
+					<control type="group">
+						<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="190,180" condition="!Skin.HasSetting(no_animations)">Focus</animation>
+						<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="190,180" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+						<control type="image">
+			<top>-10</top>
+			<width>400</width>
+			<height>380</height>
+			<texture border="40">buttons/button-nofo.png</texture>
+		</control>
+		<control type="image">
+			<left>25</left>
+			<top>18</top>
+			<width>350</width>
+			<height>280</height>
+			<texture border="2" fallback="DefaultFolderSquare.png" background="true">$VAR[ShiftThumbVar]</texture>
+			<aspectratio>keep</aspectratio>
+			<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+			<bordersize>4</bordersize>
+		</control>
+		<control type="image">
+			<left>20</left>
+			<top>308</top>
+			<width>358</width>
+			<height>40</height>
+			<texture>colors/black.png</texture>
+		</control>
+		<control type="label">
+			<left>20</left>
+			<top>308</top>
+			<width>358</width>
+			<textoffsetx>20</textoffsetx>
+			<height>40</height>
+			<font>font12</font>
+			<align>center</align>
+			<aligny>center</aligny>
+			<scroll>yes</scroll>
+			<label>$INFO[ListItem.Label]</label>
+		</control>
+						<control type="image">
+							<left>15</left>
+							<top>5</top>
+							<width>368</width>
+							<height>348</height>
+							<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
+							<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
 						</control>
 					</control>
 				</focusedlayout>

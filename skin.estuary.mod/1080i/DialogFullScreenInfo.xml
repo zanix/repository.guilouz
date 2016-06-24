@@ -93,6 +93,66 @@
 				<label fallback="416">$VAR[FullScreenInfoTextBoxVar]</label>
 				<align>justify</align>
 				<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
+				<visible>!Control.HasFocus(5554) + !Control.HasFocus(5556)</visible>
+			</control>
+			<control type="group">
+				<visible>Control.HasFocus(5554) | Control.HasFocus(5556)</visible>
+				<control id="5556" type="wraplist">
+					<left>52</left>
+					<top>-154</top>
+					<width>1600</width>
+					<height>190</height>
+					<onup>5554</onup>
+					<ondown>5554</ondown>
+					<onback>5554</onback>
+					<preloaditems>8</preloaditems>
+					<focusposition>6</focusposition>
+					<autoscroll time="3000">!Control.HasFocus(5556)</autoscroll>
+					<viewtype label="casting">list</viewtype>
+					<orientation>horizontal</orientation>
+					<scrolltime easing="inout" tween="sine">300</scrolltime>
+					<itemlayout height="177" width="123.076923">
+						<control type="group">
+							<animation effect="zoom" end="85" start="100" time="200" center="auto" condition="Control.HasFocus(5556)">Conditional</animation>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<right>0</right>
+								<bottom>0</bottom>
+								<aspectratio align="center" aligny="center">scale</aspectratio>
+								<texture background="true" fallback="DefaultActorSolid.png">$INFO[ListItem.Icon]</texture>
+							</control>
+						</control>
+					</itemlayout>
+					<focusedlayout height="177" width="123.076923">
+						<control type="group">
+							<control type="button">
+								<texturefocus>-</texturefocus>
+								<texturenofocus>-</texturenofocus>
+								<onfocus>SetProperty(OSD_Cast_String,$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ],home)</onfocus>
+							</control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<right>0</right>
+								<bottom>0</bottom>
+								<aspectratio align="center" aligny="center">scale</aspectratio>
+								<texture background="true" fallback="DefaultActorSolid.png">$INFO[ListItem.Icon]</texture>
+							</control>
+						</control>
+					</focusedlayout>
+					<content target="video">$VAR[OSDCastVar]</content>
+				</control>
+				<control type="label">
+					<left>52</left>
+					<top>35</top>
+					<width>1600</width>
+					<align>center</align>
+					<height>41</height>
+					<scroll>true</scroll>
+					<label>$INFO[Container(5556).ListItem.Label]$INFO[Container(5556).ListItem.Label2, $LOCALIZE[20347] ]</label>
+					<visible>Integer.IsGreater(Container(5556).NumItems,0)</visible>
+				</control>
 			</control>
 			<control type="grouplist">
 				<left>45</left>
@@ -191,7 +251,7 @@
 					<textoffsetx>40</textoffsetx>
 					<onclick>Close</onclick>
 					<label>$LOCALIZE[206]</label>
-					<visible>!String.IsEmpty(VideoPlayer.CastAndRole)</visible>
+					<ondown condition="Integer.IsGreater(Container(5556).NumItems,0)">5556</ondown>
 				</control>
 				<control type="button" id="5555">
 					<width>auto</width>
@@ -231,7 +291,7 @@
 					<textoffsetx>40</textoffsetx>
 					<onclick>Close</onclick>
 					<label>$LOCALIZE[206]</label>
-					<visible>!String.IsEmpty(VideoPlayer.CastAndRole)</visible>
+					<ondown condition="Integer.IsGreater(Container(5556).NumItems,0)">5556</ondown>
 				</control>
 				<control type="button" id="5555">
 					<width>auto</width>

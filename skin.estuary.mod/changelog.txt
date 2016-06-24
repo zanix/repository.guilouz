@@ -1,3 +1,19 @@
+[B]1.2.8[/B]
+• Now use Skin Helper Service for Music Clearlogos and CDArts
+• Add ClearLogos on home screen for widgets
+• Add Fanarts on home screen for widgets
+• Add new Live TV widget (thanks to im85288)
+• Add support for music extrafanarts with Skin Helper Service
+• Add Clearlogos on music visualisation
+• Add banner on music visualisation
+• Add banner on tv shows info
+• Add new views for images : Icons wall and List
+• Add casting list on video OSD (thanks to im85288)
+• Add the file size of add-ons packages
+• Changes in functioning of personnalise home menu
+• Changes in widgets with labels on top
+• Changes for Krypton
+
 [B]1.2.7[/B]
 • Krypton : Replace changelog file with a 'news' section in addon.xml
 • Add possibility to change skin color

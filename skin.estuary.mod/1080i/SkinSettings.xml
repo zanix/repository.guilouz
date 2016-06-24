@@ -277,14 +277,6 @@
                   <onclick>Skin.ToggleSetting(show_musicclearlogos)</onclick>
                   <selected>Skin.HasSetting(show_musicclearlogos)</selected>
                </control>
-               <control type="button" id="615">
-                  <label>- $LOCALIZE[40028]</label>
-                  <label2>$INFO[Skin.String(artworklocation)]</label2>
-                  <width>1256</width>
-                  <include>DefaultSettingButton</include>
-                  <onclick>Skin.SetPath(artworklocation)</onclick>
-                  <visible>Skin.HasSetting(show_musicclearlogos)</visible>
-               </control>
                <control type="radiobutton" id="643">
                   <label>40052</label>
                   <width>1256</width>
@@ -612,6 +604,7 @@
                   <width>1256</width>
                   <include>DefaultSettingButton</include>
                   <label>10041</label>
+                  <onclick>Skin.Reset(SkinColor)</onclick>
                   <onclick>Skin.Reset(KioskMode)</onclick>
                   <onclick>Skin.Reset(SplashScreen)</onclick>
                   <onclick>Skin.Reset(enable_updateartworks)</onclick>
