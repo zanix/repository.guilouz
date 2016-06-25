@@ -686,7 +686,7 @@
                 			<width>156</width>
                 			<height>50</height>
                 			<aspectratio>keep</aspectratio>
-                			<texture>flags/rating.png</texture>   
+                			<texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating.png</texture>   
             			</control>
 						<control type="label">
 							<posx>74</posx>
@@ -697,6 +697,7 @@
 							<aligny>center</aligny>
 							<font>Font-Flag</font>
 							<label>$INFO[ListItem.Rating]</label>
+							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
 					</control> 	
 			<control type="group">
@@ -746,7 +747,7 @@
           		<control type="group">
                 		<width>162</width>
                 		<height>50</height>
-                		<visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.Duration) + !String.IsEmpty(ListItem.EndTimeResume) + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
+                		<visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.EndTimeResume) + !String.IsEmpty(ListItem.EndTimeResume) + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
             		<control type="image">
                 		<width>162</width>
                			<height>50</height>
@@ -1024,7 +1025,7 @@
 					<posx>686</posx>
 					<width>632</width>
 					<height>50</height>
-					<texture>flags/cadre2.png</texture>
+					<texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/cadre2.png</texture>
 					<visible>![String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter)) + String.IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesAudienceMeter)) + String.IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))] + !Container.Content(tvshows)</visible>
 				</control>
 		<control type="grouplist">
@@ -1173,7 +1174,7 @@
                 			<width>156</width>
                 			<height>50</height>
                 			<aspectratio>keep</aspectratio>
-                			<texture>flags/rating.png</texture>  
+                			<texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating.png</texture>  
             			</control>
 						<control type="label">
 							<posx>74</posx>
@@ -1184,6 +1185,7 @@
 							<aligny>center</aligny>
 							<font>Font-Flag</font>
 							<label>$INFO[ListItem.Rating]</label>
+							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
 					</control>	
 			<control type="group">
@@ -1211,7 +1213,7 @@
           		<control type="group">
                 		<width>162</width>
                 		<height>50</height>
-                		<visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.Duration) + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
+                		<visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.EndTimeResume) + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
             		<control type="image">
                 		<width>162</width>
                			<height>50</height>

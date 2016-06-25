@@ -1,3 +1,6 @@
+[B]1.2.9[/B]
+• Fix rating flag icon color
+
 [B]1.2.8[/B]
 • Now use Skin Helper Service for Music Clearlogos and CDArts
 • Add ClearLogos on home screen for widgets
@@ -13,6 +16,7 @@
 • Changes in functioning of personnalise home menu
 • Changes in widgets with labels on top
 • Changes for Krypton
+• Improve esthetic appearance
 
 [B]1.2.7[/B]
 • Krypton : Replace changelog file with a 'news' section in addon.xml
