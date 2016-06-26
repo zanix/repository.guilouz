@@ -221,7 +221,7 @@
 					<include>DefaultSettingButton</include>
 					<label>$ADDON[script.skinshortcuts 32072]</label>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>!String.IsEqual(Container(211).ListItem.Property(widget),WeatherWidget) + ![String.IsEmpty(Container(211).ListItem.Property(HideBannerWidget)) + String.IsEqual(Container(211).ListItem.Property(widget),PictureWidget)]</visible>
+					<visible>!String.IsEqual(Container(211).ListItem.Property(widget),WeatherWidget) + ![String.IsEmpty(Container(211).ListItem.Property(HideBannerWidget)) + String.IsEqual(Container(211).ListItem.Property(widget),PictureWidget) + !Skin.HasSetting(horizontal_menu)]</visible>
 				</control>
 				<control type="button" id="312">
 					<width>1256</width>
@@ -229,6 +229,7 @@
 					<label>$ADDON[script.skinshortcuts 32044]</label>
 					<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget)</visible>
+					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 				</control>
 				<control type="button" id="1452">
 					<width>1256</width>

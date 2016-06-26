@@ -759,7 +759,9 @@ msgctxt "#40016"
 msgid "Pictures widget"
 msgstr ""
 
-# empty strings "40017"
+msgctxt "#40017"
+msgid "Enable horizontal menu"
+msgstr ""
 
 msgctxt "#40018"
 msgid "Video Sources"
@@ -769,7 +771,9 @@ msgctxt "#40019"
 msgid "Audio Sources"
 msgstr ""
 
-# empty strings "40020"
+msgctxt "#40020"
+msgid "Replace vertical home menu by horizontal menu."
+msgstr ""
 
 # empty strings "40021"
 
@@ -1361,4 +1365,8 @@ msgstr ""
 
 msgctxt "#40172"
 msgid "Watched episodes"
+msgstr ""
+
+msgctxt "#40173"
+msgid "Add sources"
 msgstr ""

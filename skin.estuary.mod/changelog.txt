@@ -1,5 +1,8 @@
 [B]1.2.9[/B]
+• Add horizontal home menu
+• Add Rotten TomatoMeter and Rotten Tomatoes Audience Score for tv shows
 • Fix rating flag icon color
+• Minnor fix 
 
 [B]1.2.8[/B]
 • Now use Skin Helper Service for Music Clearlogos and CDArts

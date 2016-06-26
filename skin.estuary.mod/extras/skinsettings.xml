@@ -24,8 +24,8 @@
     <setting id="Opacity" value="100" label="100" condition="" icon="special://skin/media/DefaultAddonLookAndFeel.png" description="$LOCALIZE[40067]100%"/>
     
     <!-- Hide Bars -->
-    <setting id="HideBars" value="Never" label="$LOCALIZE[40068]" condition="" icon="special://skin/media/DefaultAddon.png" description="$LOCALIZE[40061]"/>
-    <setting id="HideBars" value="Library" label="$LOCALIZE[40069]" condition="" icon="special://skin/media/DefaultAddon.png" description="$LOCALIZE[40072]"/>
-    <setting id="HideBars" value="Everywhere" label="$LOCALIZE[40070]" condition="" icon="special://skin/media/DefaultAddon.png" description="$LOCALIZE[40073]"/>
+    <setting id="HideBars" value="Never" label="$LOCALIZE[40068]" condition="" icon="special://skin/media/dialogs/settings/Bars-Never.png" description="$LOCALIZE[40061]"/>
+    <setting id="HideBars" value="Library" label="$LOCALIZE[40069]" condition="" icon="special://skin/media/dialogs/settings/Bars-Library.png" description="$LOCALIZE[40072]"/>
+    <setting id="HideBars" value="Everywhere" label="$LOCALIZE[40070]" condition="" icon="special://skin/media/dialogs/settings/Bars-Always.png" description="$LOCALIZE[40073]"/>
 
 </settings>

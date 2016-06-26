@@ -616,7 +616,7 @@ msgstr "Medienquellen Widget"
 
 msgctxt "#40014"
 msgid "Live TV widget - Channels"
-msgstr "Live TV Widget - Channels"
+msgstr "Live TV Widget - Sender"
 
 msgctxt "#40015"
 msgid "Radios widget"
@@ -627,8 +627,8 @@ msgid "Pictures widget"
 msgstr "Bilder Widget"
 
 msgctxt "#40017"
-msgid "Widget style"
-msgstr "Widget Art"
+msgid "Enable horizontal menu"
+msgstr ""
 
 msgctxt "#40018"
 msgid "Video Sources"
@@ -639,16 +639,12 @@ msgid "Audio Sources"
 msgstr "Audiodatei Quellen"
 
 msgctxt "#40020"
-msgid "Posters"
-msgstr "Posters"
+msgid "Replace vertical home menu by horizontal menu."
+msgstr ""
 
-msgctxt "#40021"
-msgid "Thumbs"
-msgstr "Thumbs"
+# empty strings "40021"
 
-msgctxt "#40022"
-msgid "Icons"
-msgstr "Icons"
+# empty strings "40022"
 
 msgctxt "#40023"
 msgid "Set images path"
@@ -670,9 +666,7 @@ msgctxt "#40027"
 msgid "Show artists clearlogos"
 msgstr "Zeige Künstler Clearlogos"
 
-msgctxt "#40028"
-msgid "Path of music folder"
-msgstr "Pfad zum Musikverzeichnis"
+# empty strings "40028"
 
 msgctxt "#40029"
 msgid "Enable Artist SlideShow addon for background"
@@ -974,21 +968,13 @@ msgctxt "#40103"
 msgid "Unwatched TV shows"
 msgstr "Ungesehene Fernsehserien"
 
-msgctxt "#40104"
-msgid "Recently added unwatched episodes"
-msgstr "Kürzlich hinzugefügte ungesehene Episoden"
+# empty strings "40104"
 
-msgctxt "#40105"
-msgid "Recently added unwatched movies"
-msgstr "Kürzlich hinzugefügte ungesehene Filme"
+# empty strings "40105"
 
-msgctxt "#40106"
-msgid "Hide watched episodes from recently added episodes"
-msgstr "Entferne gesehene Episoden von \"Kürzlich hinzugefügte Episoden\""
+# empty strings "40106"
 
-msgctxt "#40107"
-msgid "Hide watched movies from recently added movies"
-msgstr "Entferne gesehene Filme von \"Kürzlich hinzugefügte Filme\""
+# empty strings "40107"
 
 msgctxt "#40108"
 msgid "Next aired"
@@ -1086,9 +1072,7 @@ msgctxt "#40131"
 msgid "Show artists clearlogos on music library."
 msgstr "Zeige Künstler Clearlogos in der Musikbibliothek."
 
-msgctxt "#40132"
-msgid "Set location of the folder containing music."
-msgstr "Lege den Pfad zum Musikverzeichnis fest."
+# empty strings "40132"
 
 msgctxt "#40133"
 msgid "Show studios and recordslabels icons on library."
@@ -1208,7 +1192,7 @@ msgstr "Zeige Musikvisualisierung wenn ein Song gespielt wird."
 
 msgctxt "#40162"
 msgid "Show music visualisation screen directly when playing song."
-msgstr "Zeige Musikvisualisierung sofort wenn ein Song gespielt wird.."
+msgstr "Zeige Musikvisualisierung sofort wenn ein Song gespielt wird."
 
 msgctxt "#40163"
 msgid "Skin color"
@@ -1229,3 +1213,27 @@ msgstr "Ändere die Hauptfarbe des Skins"
 msgctxt "#40167"
 msgid "Reset theme color to default."
 msgstr "Setze die Hauptfarbe des Skins auf die Standardeinstellung zurück."
+
+msgctxt "#40168"
+msgid "Live TV widget - Recently played channels"
+msgstr "Live TV Widget - kürzlich angesehene Sender"
+
+msgctxt "#40169"
+msgid "Watched to"
+msgstr "bereits gesehen: "
+
+msgctxt "#40170"
+msgid "unwatched episodes"
+msgstr "ungesehene Folgen"
+
+msgctxt "#40171"
+msgid "unwatched episode"
+msgstr "ungesehene Folge"
+
+msgctxt "#40172"
+msgid "Watched episodes"
+msgstr "gesehene Folgen"
+
+msgctxt "#40173"
+msgid "Add sources"
+msgstr ""
