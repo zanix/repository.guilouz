@@ -145,14 +145,14 @@
 	</groupings>
 	
 	<widget-groupings>
-        <shortcut label="40085" icon="DefaultFolder.png" condition="String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) | String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) | String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) | String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) | String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
+        <shortcut label="40085" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
 
         <shortcut label="32107" type="32021" icon="DefaultAddon.png" condition="!System.HasAddon(script.skin.helper.service)">::INSTALL::script.skin.helper.service</shortcut>
 	
-	        <node label="40084">
-	                <content>widgets</content>
-	        </node> 
-		<node label="32030" condition="String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) | String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) | String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) | String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) | String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget)">
+	    <node label="40084">
+            <content>widgets</content>
+	    </node> 
+		<node label="32030">
 			<content>video</content>
 			<node label="32040">
 				<content>playlist-video</content>
@@ -164,7 +164,7 @@
 				<content>videosources</content>
 			</node>
 		</node>
-		<node label="32031" condition="String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) | String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) | String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) | String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) | String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget)">
+		<node label="32031">
 			<content>music</content>
 			<node label="32040">
 				<content>playlist-audio</content>
@@ -176,10 +176,10 @@
 				<content>musicsources</content>
 			</node>
 		</node>
-		<node label="32020" condition="String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) | String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) | String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) | String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) | String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget)">
+		<node label="32020">
 			<content>picturesources</content>
 		</node>
-		<node label="32007" condition="String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) | String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) | String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) | String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) | String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget)">
+		<node label="32007">
 			<node label="32009">
 				<content>addon-program-plugin</content>
 			</node>

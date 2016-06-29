@@ -1,3 +1,6 @@
+[B]1.3.1[/B]
+• Fix widget selection
+
 [B]1.3.0[/B]
 • Add 'My TV shows airing today' on default tv shows widget
 • Add 'Next episodes to watch' on default tv shows widget
