@@ -74,6 +74,17 @@
 				<aspectratio aligny="center">keep</aspectratio>
 				<visible>!VideoPlayer.Content(LiveTV) + !String.IsEmpty(Player.Art(tvshow.poster))</visible>
 			</control>
+			<control type="image" id="456788">
+ 				<right>48</right>
+ 				<top>-205</top>
+ 				<width>200</width>
+ 				<height>300</height>
+ 				<texture background="true">http://localhost:52307/getpvrthumb&amp;title=$INFO[VideoPlayer.Title]&amp;channel=$INFO[VideoPlayer.ChannelName]&amp;type=poster,landscape,fanart,thumb</texture>
+ 				<bordertexture colordiffuse="FF494949">dialogs/white.png</bordertexture>
+				<bordersize>5</bordersize>
+ 				<aspectratio aligny="center">keep</aspectratio>
+ 				<visible>VideoPlayer.Content(LiveTV)</visible>
+ 			</control>
 			<control type="image">
 				<description>TV Cover</description>
 				<right>48</right>
@@ -82,8 +93,7 @@
 				<height>300</height>
 				<texture>$INFO[Player.Art(thumb)]</texture>
 				<aspectratio aligny="center">keep</aspectratio>
-				<visible>VideoPlayer.Content(LiveTV)</visible>
-				<visible>!String.IsEmpty(Player.Art(thumb))</visible>
+				<visible>VideoPlayer.Content(LiveTV) + String.IsEmpty(Control.GetLabel(456788))</visible>
 			</control>
 			<control type="textbox">
 				<left>52</left>

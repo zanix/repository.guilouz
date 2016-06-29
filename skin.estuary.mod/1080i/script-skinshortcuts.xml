@@ -301,6 +301,26 @@
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					<visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget)</visible>
 				</control>
+				<control type="button" id="1473">
+					<width>1256</width>
+					<include>DefaultSettingButton</include>
+					<label>$ADDON[script.skinshortcuts 32044] 4</label>
+					<label2>$VAR[TVShowsWidget4Label2Var]</label2>
+					<onclick>SetProperty(widgetID, tvshows4)</onclick>
+					<onclick>SendClick(312)</onclick>
+					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget)</visible>
+				</control>
+				<control type="button" id="1474">
+					<width>1256</width>
+					<include>DefaultSettingButton</include>
+					<label>$ADDON[script.skinshortcuts 32044] 5</label>
+					<label2>$VAR[TVShowsWidget5Label2Var]</label2>
+					<onclick>SetProperty(widgetID, tvshows5)</onclick>
+					<onclick>SendClick(312)</onclick>
+					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget)</visible>
+				</control>
 				<control type="button" id="1460">
 					<width>1256</width>
 					<include>DefaultSettingButton</include>

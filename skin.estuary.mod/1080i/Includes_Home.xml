@@ -216,7 +216,9 @@
 			<top>0</top>
 			<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 			<include content="LeftRightArrows">
-				<param name="posy" value="221" />
+				<param name="left_posx" value="465" />
+				<param name="right_posx" value="1824" />
+				<param name="posy" value="215" />
 				<param name="list_id" value="$PARAM[list_id]" />
 			</include>
 			<control type="label">
@@ -328,7 +330,7 @@
 			<include content="LeftRightArrows">
 				<param name="left_posx" value="190" />
 				<param name="right_posx" value="1792" />
-				<param name="posy" value="221" />
+				<param name="posy" value="215" />
 				<param name="list_id" value="$PARAM[list_id]" />
 			</include>
 			<control type="label">
@@ -872,7 +874,9 @@
 				<top>0</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<include content="LeftRightArrows">
-					<param name="posy" value="210" />
+					<param name="left_posx" value="460" />
+					<param name="right_posx" value="1835" />
+					<param name="posy" value="181" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="label">
@@ -902,19 +906,14 @@
 					<preloaditems>1</preloaditems>
 					<itemlayout width="454" height="400">
 						<control type="image">
-							<left>0</left>
-							<top>1</top>
-							<width>453</width>
-							<height>276</height>
-							<texture border="40">buttons/button-nofo.png</texture>
-						</control>
-						<control type="image">
-							<left>24</left>
-							<top>24</top>
-							<width>405</width>
-							<height>298</height>
+							<left>20</left>
+							<top>18</top>
+							<width>415</width>
+							<height>305</height>
 							<aspectratio aligny="top">keep</aspectratio>
 							<texture fallback="DefaultVideoCover.png" background="true">$PARAM[item_image]</texture>
+							<bordertexture>dialogs/back.png</bordertexture>
+							<bordersize>3</bordersize>
 						</control>
 					</itemlayout>
 					<focusedlayout width="454" height="400">
@@ -932,19 +931,14 @@
 								<effect type="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="233,90" />
 							</animation>
 							<control type="image">
-								<left>0</left>
-								<top>1</top>
-								<width>453</width>
-								<height>276</height>
-								<texture border="40">buttons/button-nofo.png</texture>
-							</control>
-							<control type="image">
-								<left>24</left>
-								<top>24</top>
-								<width>405</width>
-								<height>298</height>
+								<left>20</left>
+								<top>18</top>
+								<width>415</width>
+								<height>305</height>
 								<aspectratio aligny="top">keep</aspectratio>
 								<texture fallback="DefaultVideoCover.png" background="true">$PARAM[item_image]</texture>
+								<bordertexture>dialogs/back.png</bordertexture>
+								<bordersize>3</bordersize>
 							</control>
 							<control type="group">
 								<left>20</left>
@@ -962,15 +956,15 @@
 								<control type="progress">
 									<left>30</left>
 									<top>215</top>
-									<width>350</width>
+									<width>356</width>
 									<height>13</height>
 									<info>ListItem.PercentPlayed</info>
 								</control>
 							</control>
 							<control type="image">
 								<left>20</left>
-								<top>20</top>
-								<width>413</width>
+								<top>18</top>
+								<width>416</width>
 								<height>236</height>
 								<texture background="true" border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
@@ -996,9 +990,9 @@
 				<top>0</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<include content="LeftRightArrows">
-					<param name="left_posx" value="190" />
-					<param name="right_posx" value="1792" />
-					<param name="posy" value="221" />
+					<param name="left_posx" value="194" />
+					<param name="right_posx" value="1794" />
+					<param name="posy" value="195" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="label">
@@ -1017,7 +1011,7 @@
 					<height>400</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
+					<onleft>noop</onleft>
 					<onright>noop</onright>
 					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
  					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
@@ -1028,19 +1022,14 @@
 					<preloaditems>1</preloaditems>
 					<itemlayout width="540" height="400">
 						<control type="image">
-							<left>0</left>
-							<top>1</top>
-							<width>510</width>
-							<height>308</height>
-							<texture border="40">buttons/button-nofo.png</texture>
-						</control>
-						<control type="image">
-							<left>24</left>
-							<top>24</top>
-							<width>462</width>
-							<height>340</height>
+							<left>22</left>
+							<top>18</top>
+							<width>470</width>
+							<height>346</height>
 							<aspectratio aligny="top">keep</aspectratio>
 							<texture fallback="DefaultVideoCover.png" background="true">$PARAM[item_image]</texture>
+							<bordertexture>dialogs/back.png</bordertexture>
+							<bordersize>3</bordersize>
 						</control>
 					</itemlayout>
 					<focusedlayout width="540" height="400">
@@ -1058,19 +1047,14 @@
 								<effect type="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="233,90" />
 							</animation>
 							<control type="image">
-								<left>0</left>
-								<top>1</top>
-								<width>510</width>
-								<height>308</height>
-								<texture border="40">buttons/button-nofo.png</texture>
-							</control>
-							<control type="image">
-								<left>24</left>
-								<top>24</top>
-								<width>462</width>
-								<height>340</height>
+								<left>22</left>
+								<top>18</top>
+								<width>470</width>
+								<height>346</height>
 								<aspectratio aligny="top">keep</aspectratio>
 								<texture fallback="DefaultVideoCover.png" background="true">$PARAM[item_image]</texture>
+								<bordertexture>dialogs/back.png</bordertexture>
+								<bordersize>3</bordersize>
 							</control>
 							<control type="group">
 								<left>20</left>
@@ -1079,25 +1063,25 @@
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
 								<control type="image">
-									<left>0</left>
-									<top>211</top>
-									<width>410</width>
+									<left>5</left>
+									<top>240</top>
+									<width>465</width>
 									<height>21</height>
 									<texture colordiffuse="99FFFFFF">colors/black.png</texture>
 								</control>
 								<control type="progress">
 									<left>30</left>
-									<top>215</top>
-									<width>350</width>
+									<top>244</top>
+									<width>414</width>
 									<height>13</height>
 									<info>ListItem.PercentPlayed</info>
 								</control>
 							</control>
 							<control type="image">
-								<left>20</left>
-								<top>20</top>
+								<left>22</left>
+								<top>18</top>
 								<width>470</width>
-								<height>268</height>
+								<height>267</height>
 								<texture background="true" border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
@@ -1125,7 +1109,9 @@
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<include content="LeftRightArrows">
-					<param name="posy" value="200" />
+					<param name="left_posx" value="456" />
+					<param name="right_posx" value="1846" />
+					<param name="posy" value="210" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="label">
@@ -1220,7 +1206,9 @@
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<include content="LeftRightArrows">
-					<param name="posy" value="200" />
+					<param name="left_posx" value="456" />
+					<param name="right_posx" value="1846" />
+					<param name="posy" value="210" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="label">
@@ -1401,7 +1389,7 @@
 				<include content="LeftRightArrows">
 					<param name="left_posx" value="210" />
 					<param name="right_posx" value="1780" />
-					<param name="posy" value="200" />
+					<param name="posy" value="210" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="label">
@@ -1420,7 +1408,7 @@
 					<height>400</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
+					<onleft>noop</onleft>
 					<onright>noop</onright>
 					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
  					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
@@ -1498,7 +1486,7 @@
 				<include content="LeftRightArrows">
 					<param name="left_posx" value="210" />
 					<param name="right_posx" value="1780" />
-					<param name="posy" value="200" />
+					<param name="posy" value="210" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="label">
@@ -1517,7 +1505,7 @@
 					<height>400</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
+					<onleft>noop</onleft>
 					<onright>noop</onright>
 					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
  					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
@@ -1686,7 +1674,9 @@
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
 				<include content="LeftRightArrows">
-					<param name="posy" value="200" />
+					<param name="left_posx" value="456" />
+					<param name="right_posx" value="1846" />
+					<param name="posy" value="210" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="panel" id="$PARAM[list_id]">
@@ -1825,7 +1815,7 @@
 				<include content="LeftRightArrows">
 					<param name="left_posx" value="210" />
 					<param name="right_posx" value="1780" />
-					<param name="posy" value="200" />
+					<param name="posy" value="210" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="panel" id="$PARAM[list_id]">
@@ -1835,7 +1825,7 @@
 					<height>$PARAM[height]</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
+					<onleft>noop</onleft>
 					<onright>noop</onright>
 					<onup condition="Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[list_id]).Position])</onup>
 					<onup condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)">Control.SetFocus($PARAM[onup_id],$INFO[Container($PARAM[ondown_id]).Position])</onup>
@@ -1960,7 +1950,9 @@
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
 				<include content="LeftRightArrows">
-					<param name="posy" value="300" />
+					<param name="left_posx" value="459" />
+					<param name="right_posx" value="1843" />
+					<param name="posy" value="290" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="panel" id="$PARAM[list_id]">
@@ -2140,7 +2132,7 @@
 							<height>60</height>
 							<left>405</left>
 							<top>4</top>
-							<texture border="2">$INFO[ListItem.Icon]</texture>
+							<texture border="2">$INFO[ListItem.icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
@@ -2186,7 +2178,7 @@
 							<height>60</height>
 							<left>405</left>
 							<top>4</top>
-							<texture border="2">$INFO[ListItem.Icon]</texture>
+							<texture border="2">$INFO[ListItem.icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
@@ -2213,26 +2205,6 @@
 						<control type="image">
 							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 							<texture background="true" fallback="special://skin/extras/home-images/livetv.jpg">$VAR[PVRLandscapeVar]</texture>
-							<visible>!String.IsEmpty(Window(home).Property(SkinHelper.PVR.Landscape)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.FanArt)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.Thumb)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.ChannelLogo))</visible>
-						</control>
-						<control type="image">
-							<description>Title overlay</description>
-							<texture colordiffuse="44000000">colors/white.png</texture>
-							<visible>!String.IsEmpty(Window(home).Property(SkinHelper.PVR.Landscape)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.FanArt)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.Thumb)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.ChannelLogo))</visible>
-						</control>
-						<control type="image">
-							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-							<texture diffuse="colors/white.png" background="true" fallback="special://skin/extras/home-images/livetv.jpg">$INFO[Container($PARAM[list_id]).ListItem.Thumb]</texture>
-							<visible>String.IsEmpty(Window(home).Property(SkinHelper.PVR.Landscape)) + String.IsEmpty(Window(home).Property(SkinHelper.PVR.FanArt)) + String.IsEmpty(Window(home).Property(SkinHelper.PVR.Thumb)) + String.IsEmpty(Window(home).Property(SkinHelper.PVR.ChannelLogo))</visible>
-						</control>
-						<control type="image">
-							<bottom>0</bottom>
-							<right>0</right>
-							<height>130</height>
-							<width>130</width>
-							<aspectratio align="right" aligny="bottom" scalediffuse="false">keep</aspectratio>
-							<texture diffuse="colors/white.png" background="true">$INFO[Container($PARAM[list_id]).ListItem.Thumb]</texture>
-							<visible>[!String.IsEmpty(Window(home).Property(SkinHelper.PVR.Landscape)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.FanArt)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.Thumb))] + String.IsEmpty(Window(home).Property(SkinHelper.PVR.ChannelLogo))</visible>
 						</control>
 					</control>
 					<control type="group">
@@ -2363,7 +2335,7 @@
 							<height>60</height>
 							<left>603</left>
 							<top>4</top>
-							<texture border="2">$INFO[ListItem.Icon]</texture>
+							<texture border="2">$INFO[ListItem.icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
@@ -2409,7 +2381,7 @@
 							<height>60</height>
 							<left>603</left>
 							<top>4</top>
-							<texture border="2">$INFO[ListItem.Icon]</texture>
+							<texture border="2">$INFO[ListItem.icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
@@ -2435,26 +2407,6 @@
 						<control type="image">
 							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
 							<texture background="true" fallback="special://skin/extras/home-images/livetv.jpg">$VAR[PVRLandscapeVar]</texture>
-							<visible>!String.IsEmpty(Window(home).Property(SkinHelper.PVR.Landscape)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.FanArt)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.Thumb)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.ChannelLogo))</visible>
-						</control>
-						<control type="image">
-							<description>Title overlay</description>
-							<texture colordiffuse="44000000">colors/white.png</texture>
-							<visible>!String.IsEmpty(Window(home).Property(SkinHelper.PVR.Landscape)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.FanArt)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.Thumb)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.ChannelLogo))</visible>
-						</control>
-						<control type="image">
-							<aspectratio align="center" aligny="center" scalediffuse="false">stretch</aspectratio>
-							<texture diffuse="colors/white.png" background="true" fallback="special://skin/extras/home-images/livetv.jpg">$INFO[Container($PARAM[list_id]).ListItem.Thumb]</texture>
-							<visible>String.IsEmpty(Window(home).Property(SkinHelper.PVR.Landscape)) + String.IsEmpty(Window(home).Property(SkinHelper.PVR.FanArt)) + String.IsEmpty(Window(home).Property(SkinHelper.PVR.Thumb)) + String.IsEmpty(Window(home).Property(SkinHelper.PVR.ChannelLogo))</visible>
-						</control>
-						<control type="image">
-							<bottom>0</bottom>
-							<right>0</right>
-							<height>130</height>
-							<width>130</width>
-							<aspectratio align="right" aligny="bottom" scalediffuse="false">keep</aspectratio>
-							<texture diffuse="colors/white.png" background="true">$INFO[Container($PARAM[list_id]).ListItem.Thumb]</texture>
-							<visible>[!String.IsEmpty(Window(home).Property(SkinHelper.PVR.Landscape)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.FanArt)) | !String.IsEmpty(Window(home).Property(SkinHelper.PVR.Thumb))] + String.IsEmpty(Window(home).Property(SkinHelper.PVR.ChannelLogo))</visible>
 						</control>
 					</control>
 					<control type="group">
@@ -2550,7 +2502,7 @@
 				<include content="LeftRightArrows">
 					<param name="left_posx" value="210" />
 					<param name="right_posx" value="1780" />
-					<param name="posy" value="300" />
+					<param name="posy" value="290" />
 					<param name="list_id" value="$PARAM[list_id]" />
 				</include>
 				<control type="panel" id="$PARAM[list_id]">
@@ -2560,7 +2512,7 @@
 					<height>$PARAM[height]</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>horizontal</orientation>
-					<onleft>9000</onleft>
+					<onleft>noop</onleft>
 					<onright>noop</onright>
 					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
  					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
@@ -2680,8 +2632,8 @@
 			<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 			<visible>$PARAM[visible]</visible>
 			<control type="image">
-				<left>445</left>
-				<top>230</top>
+				<left>469</left>
+				<top>235</top>
 				<width>28</width>
 				<height>28</height>
 				<texture flipx="true" colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
@@ -2690,8 +2642,8 @@
 				<visible>Container($PARAM[list_id]).HasPrevious + Control.HasFocus($PARAM[list_id])</visible>
 			</control>
 			<control type="image">
-				<left>1840</left>
-				<top>230</top>
+				<left>1835</left>
+				<top>235</top>
 				<width>28</width>
 				<height>28</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
@@ -2835,7 +2787,7 @@
 			<visible>$PARAM[visible]</visible>
 			<control type="image">
 				<left>185</left>
-				<top>230</top>
+				<top>235</top>
 				<width>28</width>
 				<height>28</height>
 				<texture flipx="true" colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
@@ -2845,7 +2797,7 @@
 			</control>
 			<control type="image">
 				<left>1800</left>
-				<top>230</top>
+				<top>235</top>
 				<width>28</width>
 				<height>28</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
@@ -2870,7 +2822,7 @@
 				<height>400</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>horizontal</orientation>
-				<onleft>9000</onleft>
+				<onleft>noop</onleft>
 				<onright>noop</onright>
 				<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
  				<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
@@ -3069,27 +3021,6 @@
 			</include>
 		</content>
 	</include>
-	<!-- <include content="WeatherDailyItem">
-	     <item id="$PARAM[item_index]">
-	     <label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</label>
-	     <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDate)]</label2>
-	     <property name="Humidity">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Humidity)]</property>
-	     <property name="Pressure">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Pressure)]</property>
-	     <property name="DewPoint">$INFO[Window(weather).Property(Daily.$PARAM[item_index].DewPoint)]</property>
-	     <property name="FeelsLike">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FeelsLike)]</property>
-	     <property name="Rain">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Rain)]</property>
-	     <property name="Snow">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Snow)]</property>
-	     <property name="TempMorn">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempMorn)]</property>
-	     <property name="TempEve">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempEve)]</property>
-	     <property name="TempNight">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempNight)]</property>
-	     <property name="WindSpeed">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindSpeed)]</property>
-	     <property name="WindGust">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindGust)]</property>
-	     <property name="WindDirection">$INFO[Window(weather).Property(Daily.$PARAM[item_index].WindDirection)]</property>
-	     <property name="Precipitation">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Precipitation)]</property>
-	     <onclick>SetProperty(FocusedItem,$PARAM[item_index])</onclick>
-	     <icon>$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</icon>
-	     </item>
-	     </include> -->
 	<include name="WeatherHourlyItem">
 		<item>
 			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
@@ -3156,8 +3087,6 @@
 			<visible>Weather.IsFetched + !String.IsEmpty(Window(weather).Property(Map.$PARAM[item_id].Area)) + !String.IsEmpty(Window(weather).Property(Map.IsFetched))</visible>
 		</item>
 	</include>
-	
-	
 	<include name="HorizontalMenuVar">
 			<control type="group">
  			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
@@ -3230,7 +3159,7 @@
 						<param name="widget_header" value="$LOCALIZE[342]" />
 						<param name="visible" value="!Library.HasContent(movies)"/>
 					</include>
-					<include content="ImageWidget">
+					<include content="ImageWidget5">
 						<param name="image_path" value="special://skin/extras/home-images/movies.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
@@ -3283,17 +3212,35 @@
 					<include content="WidgetListEpisodes2">
 						<param name="content_path" value="$VAR[TVShowsWidget3ContentVar]"/>
 						<param name="widget_header" value="$VAR[TVShowsWidget3LabelVar]"/>
-						<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+						<param name="item_image" value="$VAR[EpisodesThumbsVar]" />
 						<param name="widget_target" value="$VAR[TVShowsWidget3TargetVar]"/>
 						<param name="list_id" value="6300"/>
 						<param name="onup_id" value="6200"/>
+						<param name="ondown_id" value="6400"/>
+					</include>
+					<include content="WidgetListEpisodes2">
+						<param name="content_path" value="$VAR[TVShowsWidget4ContentVar]"/>
+						<param name="widget_header" value="$VAR[TVShowsWidget4LabelVar]"/>
+						<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+						<param name="widget_target" value="$VAR[TVShowsWidget4TargetVar]"/>
+						<param name="list_id" value="6400"/>
+						<param name="onup_id" value="6300"/>
+						<param name="ondown_id" value="6500"/>
+					</include>
+					<include content="WidgetListEpisodes2">
+						<param name="content_path" value="$VAR[TVShowsWidget5ContentVar]"/>
+						<param name="widget_header" value="$VAR[TVShowsWidget5LabelVar]"/>
+						<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+						<param name="widget_target" value="$VAR[TVShowsWidget5TargetVar]"/>
+						<param name="list_id" value="6500"/>
+						<param name="onup_id" value="6400"/>
 						<param name="ondown_id" value="9000"/>
 					</include>
 					<include content="ImageWidgetHeader">
 						<param name="widget_header" value="$LOCALIZE[20343]" />
 						<param name="visible" value="!Library.HasContent(tvshows)"/>
 					</include>
-					<include content="ImageWidget">
+					<include content="ImageWidget5">
 						<param name="image_path" value="special://skin/extras/home-images/livetv.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
@@ -3376,7 +3323,7 @@
 						<param name="sortby" value="playcount"/>
 						<param name="sortorder" value="descending"/>
 					</include>
-					<include content="ImageWidget">
+					<include content="ImageWidget5">
 						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
@@ -3472,7 +3419,7 @@
 						<param name="main_label" value=""/>
 						<param name="sub_label" value=""/>
 					</include>
-					<include content="ImageWidget">
+					<include content="ImageWidget5">
 						<param name="image_path" value="special://skin/extras/home-images/addons.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31119]" />
 						<param name="button_label" value="$LOCALIZE[31118]" />
@@ -3528,7 +3475,7 @@
 						<param name="ondown_id" value="9000"/>
 						<param name="icon" value="DefaultPlaylist.png"/>
 					</include>
-					<include content="ImageWidget">
+					<include content="ImageWidget5">
  						<param name="image_path" value="special://skin/extras/home-images/livetv.jpg"/>
  						<param name="text_label" value="$LOCALIZE[31105]" />
  						<param name="button_label" value="$LOCALIZE[31110]" />
@@ -3767,11 +3714,11 @@
 						<param name="widget_header" value="$LOCALIZE[31019]"/>
 						<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
 					</include>
-					<include content="ImageWidgetHeader">
+					<include content="ImageWidgetHeader2">
 						<param name="widget_header" value="$LOCALIZE[12600]" />
 						<param name="visible" value="String.IsEmpty(Weather.plugin)"/>
 					</include>
-					<include content="ImageWidget">
+					<include content="ImageWidget5">
 						<param name="image_path" value="special://skin/extras/home-images/weather.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31120]" />
 						<param name="button_label" value="$LOCALIZE[31121]" />
@@ -3862,7 +3809,7 @@
 						<param name="onup_id" value="10300"/>
 						<param name="ondown_id" value="9000"/>
 					</include>
-					<include content="ImageWidget">
+					<include content="ImageWidget5">
 						<param name="image_path" value="special://skin/extras/home-images/musicvideo.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
@@ -4080,6 +4027,7 @@
 							<width>1310</width>
 							<shadowcolor>black</shadowcolor>
 							<label>$LOCALIZE[40112] $INFO[System.UsedSpace] [B]/[/B] $INFO[System.TotalSpace] [B]-[/B] [LOWERCASE]$INFO[System.UsedSpacePercent][/LOWERCASE]</label>
+							<visible>!System.Platform.Android</visible>
 						</control>
 						<control type="progress">
 							<top>715</top>
@@ -4087,6 +4035,7 @@
 							<width>1100</width>
 							<height>16</height>
 							<info>System.UsedSpace</info>
+							<visible>!System.Platform.Android</visible>
 						</control>
 					</control>	
 			</control>
@@ -4385,6 +4334,7 @@
 				<onup>700</onup>
 				<ondown>14200</ondown>
 				<onright>9000</onright>
+				<onleft>9000</onleft>
 				<include content="BottomMainMenuItem">
 					<param name="control_id" value="900" />
  					<param name="onclick" value="ActivateWindow(1107)" />
@@ -4516,11 +4466,6 @@
 				</control>
 			</control>
 	</include>
-	
-	
-	
-	
-	
 	<include name="VerticalMenuVar">
 			<control type="group">
  			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
@@ -4585,11 +4530,12 @@
 				                        <height>110</height>
 				                        <width>880</width>
 				                        <onup>20000</onup>
-				                        <ondown condition="!String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),SourcesWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)  + !String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">5100</ondown>
+				                        <ondown condition="!String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),SourcesWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget2) + !String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)  + !String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">5100</ondown>
 				                        <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget)">8100</ondown>
 				                        <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget)">15001</ondown>
 				                        <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),SourcesWidget)">11100</ondown>
 				                        <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget)">12200</ondown>
+				                        <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget2)">16200</ondown>
 				                        <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)">13200</ondown>
 				                        <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget)">6100</ondown>
 				                        <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)">7100</ondown>
@@ -4738,7 +4684,6 @@
 					</include>
 					<include content="WidgetListEpisodes">
 						<param name="content_path" value="$VAR[TVShowsWidget2ContentVar]"/>
-
 						<param name="widget_header" value="$VAR[TVShowsWidget2LabelVar]"/>
 						<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
 						<param name="widget_target" value="$VAR[TVShowsWidget2TargetVar]"/>
@@ -4749,10 +4694,28 @@
 					<include content="WidgetListEpisodes">
 						<param name="content_path" value="$VAR[TVShowsWidget3ContentVar]"/>
 						<param name="widget_header" value="$VAR[TVShowsWidget3LabelVar]"/>
-						<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+						<param name="item_image" value="$VAR[EpisodesThumbsVar]" />
 						<param name="widget_target" value="$VAR[TVShowsWidget3TargetVar]"/>
 						<param name="list_id" value="6300"/>
 						<param name="onup_id" value="6200"/>
+						<param name="ondown_id" value="6400"/>
+					</include>
+					<include content="WidgetListEpisodes">
+						<param name="content_path" value="$VAR[TVShowsWidget4ContentVar]"/>
+						<param name="widget_header" value="$VAR[TVShowsWidget4LabelVar]"/>
+						<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+						<param name="widget_target" value="$VAR[TVShowsWidget4TargetVar]"/>
+						<param name="list_id" value="6400"/>
+						<param name="onup_id" value="6300"/>
+						<param name="ondown_id" value="6500"/>
+					</include>
+					<include content="WidgetListEpisodes">
+						<param name="content_path" value="$VAR[TVShowsWidget5ContentVar]"/>
+						<param name="widget_header" value="$VAR[TVShowsWidget5LabelVar]"/>
+						<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+						<param name="widget_target" value="$VAR[TVShowsWidget5TargetVar]"/>
+						<param name="list_id" value="6500"/>
+						<param name="onup_id" value="6400"/>
 						<param name="ondown_id" value="20001"/>
 					</include>
 					<include content="ImageWidgetHeader">
@@ -4933,7 +4896,7 @@
 						<param name="sortorder" value="descending"/>
 						<param name="list_id" value="8500"/>
 						<param name="onup_id" value="8400"/>
-						<param name="ondown_id" value="8600"/>
+						<param name="ondown_id" value="20001"/>
 						<param name="single_label" value="$INFO[ListItem.Label]"/>
 						<param name="main_label" value=""/>
 						<param name="sub_label" value=""/>
@@ -5115,7 +5078,7 @@
 					<height>810</height>
 					<posy>115</posy>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<include content="WidgetListChannels">
+					<include content="WidgetListChannels2">
 						<param name="content_path" value="pvr://channels/radio/All channels/"/>
 						<param name="widget_header" value="$LOCALIZE[31018]"/>
 						<param name="widget_target" value="files"/>
@@ -5546,6 +5509,7 @@
 							<width>1310</width>
 							<shadowcolor>black</shadowcolor>
 							<label>$LOCALIZE[40112] $INFO[System.UsedSpace] [B]/[/B] $INFO[System.TotalSpace] [B]-[/B] [LOWERCASE]$INFO[System.UsedSpacePercent][/LOWERCASE]</label>
+							<visible>!System.Platform.Android</visible>
 						</control>
 						<control type="progress">
 							<top>715</top>
@@ -5553,6 +5517,7 @@
 							<width>1100</width>
 							<height>16</height>
 							<info>System.UsedSpace</info>
+							<visible>!System.Platform.Android</visible>
 						</control>
 					</control>	
 			</control>

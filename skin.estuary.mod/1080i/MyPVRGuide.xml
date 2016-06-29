@@ -167,26 +167,40 @@
 						<visible>String.StartsWith(ListItem.PlotOutline,http://) | String.StartsWith(ListItem.PlotOutline,https://)</visible>
 					</control>
 					<control type="image">
-						<left>125</left>
+ 						<top>-25</top>
+ 						<left>100</left>
+ 						<width>1840</width>
+ 						<height>250</height>
+ 						<texture border="22">dialogs/dialog-bg.png</texture>
+ 					</control>
+					<control type="image" id="45678">
+ 						<left>135</left>
+ 						<width>312</width>
+ 						<height>200</height>
+ 						<texture background="true">http://localhost:52307/getpvrthumb&amp;title=$INFO[ListItem.Title]&amp;channel=$INFO[ListItem.ChannelName]&amp;type=landscape,fanart,thumb,poster</texture>
+ 						<aspectratio align="center" aligny="center">keep</aspectratio>
+ 						<visible>!Player.HasVideo</visible>
+ 					</control>
+ 					<control type="videowindow">
+ 						<left>135</left>
+ 						<width>312</width>
+ 						<height>200</height>
+ 						<visible>Player.HasVideo</visible>
+ 					</control>
+					<control type="image">
+						<left>135</left>
 						<width>200</width>
 						<height>200</height>
 						<aspectratio>keep</aspectratio>
 						<fadetime>400</fadetime>
-						<texture>$INFO[Container(10).ListItem.Icon]</texture>
-						<visible>!Control.IsVisible(82)</visible>
+						<texture align="center" aligny="center">$INFO[Container(10).ListItem.Icon]</texture>
+						<visible>String.IsEmpty(Control.GetLabel(45678))</visible>
 					</control>
 					<control type="group">
-						<left>410</left>
-						<top>0</top>
-						<control type="image">
-							<top>-25</top>
-							<left>-50</left>
-							<width>1580</width>
-							<height>250</height>
-							<texture border="22">dialogs/dialog-bg.png</texture>
-						</control>
+						<left>460</left>
+						<top>5</top>
 						<control type="label">
-							<width>1480</width>
+							<width>1430</width>
 							<height>30</height>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<font>font12</font>
@@ -194,8 +208,8 @@
 						</control>
 						<control type="textbox">
 							<top>38</top>
-							<width>1480</width>
-							<height>153</height>
+							<width>1430</width>
+							<height>148</height>
 							<font>font12</font>
 							<label>$INFO[ListItem.Plot]</label>
 							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>

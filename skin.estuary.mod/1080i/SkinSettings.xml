@@ -196,9 +196,7 @@
                   <width>1256</width>
                   <include>DefaultSettingButton</include>
                   <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
-                  <onclick>Skin.Reset(HideWatchedEpisodes)</onclick>
                   <onclick>Skin.Reset(show_episodesfanarts)</onclick>
-                  <onclick>Skin.Reset(HideWatchedMovies)</onclick>
                </control>
             </control>
             <control type="grouplist" id="600">
@@ -318,20 +316,7 @@
                   <width>1256</width>
                   <include>DefaultSettingButton</include>
                   <label>10041</label>
-                  <onclick>RunScript(script.skin.helper.service,action=reset,filter=HideBars)</onclick>
-                  <onclick>Skin.Reset(no_slide_animations)</onclick>
-                  <onclick>Skin.Reset(no_animations)</onclick>
-                  <onclick>Skin.Reset(autoscroll)</onclick>
-                  <onclick>Skin.Reset(show_weatherinfo)</onclick>
-                  <onclick>Skin.Reset(show_mediaflags)</onclick>
-                  <onclick>Skin.Reset(enable_mediaflagscolor)</onclick>
-                  <onclick>Skin.Reset(Skin_EnableAnimatedPosters)</onclick>
-                  <onclick>Skin.Reset(show_clearlogos)</onclick>
-                  <onclick>Skin.Reset(show_musicclearlogos)</onclick>
-                  <onclick>Skin.Reset(artworklocation)</onclick>
-                  <onclick>Skin.Reset(show_studiologos)</onclick>
-                  <onclick>Skin.Reset(studiologos.name)</onclick>
-                  <onclick>Skin.Reset(recordlabels.name)</onclick>
+                  <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=RunScript(script.skin.helper.service,action=reset,filter=HideBars,silent=true)|Skin.Reset(no_slide_animations)|Skin.Reset(no_animations)|Skin.Reset(autoscroll)|Skin.Reset(show_weatherinfo)|Skin.Reset(show_mediaflags)|Skin.Reset(enable_mediaflagscolor)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(show_clearlogos)|Skin.Reset(show_musicclearlogos)|Skin.Reset(artworklocation)|Skin.Reset(show_studiologos)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
                </control>
             </control>
             <control type="grouplist" id="630">
@@ -405,12 +390,7 @@
                   <width>1256</width>
                   <include>DefaultSettingButton</include>
                   <label>10041</label>
-                  <onclick>Skin.Reset(no_fanart)</onclick>
-                  <onclick>Skin.Reset(background_showvideo)</onclick>
-                  <onclick>Skin.Reset(use_custom_bg)</onclick>
-                  <onclick>Skin.Reset(custom_background)</onclick>
-                  <onclick>Skin.Reset(WeatherFanart.name)</onclick>
-                  <onclick>RunScript(script.skin.helper.service,action=reset,filter=Opacity)</onclick>
+                  <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_fanart)|Skin.Reset(background_showvideo)|Skin.Reset(use_custom_bg)|Skin.Reset(custom_background)|Skin.Reset(WeatherFanart.name)|RunScript(script.skin.helper.service,action=reset,filter=Opacity,silent=true))</onclick>
                </control>
             </control>
             <control type="grouplist" id="640">
@@ -477,13 +457,8 @@
                   <width>1256</width>
                   <include>DefaultSettingButton</include>
                   <label>10041</label>
-                  <onclick>Skin.Reset(enable_artistslideshow)</onclick>
-                  <onclick>Skin.Reset(enable_artistslideshowthumb)</onclick>
-                  <onclick>Skin.Reset(animate_artistslideshow)</onclick>
-                  <onclick>Skin.Reset(enable_visualisation)</onclick>
-                  <onclick>Skin.Reset(show_disc)</onclick>
-                  <onclick>Skin.Reset(show_musicvisualisation)</onclick>
-               </control>
+                  <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_artistslideshow)|Skin.Reset(enable_artistslideshowthumb)|Skin.Reset(animate_artistslideshow)|Skin.Reset(enable_visualisation)|Skin.Reset(show_disc)|Skin.Reset(show_musicvisualisation))</onclick>
+              </control>   
             </control>
             <control type="grouplist" id="660">
                <left>442</left>
@@ -529,9 +504,7 @@
                   <width>1256</width>
                   <include>DefaultSettingButton</include>
                   <label>10041</label>
-                  <onclick>Skin.Reset(enable_playerclearart)</onclick>
-                  <onclick>Skin.Reset(clearart_position)</onclick>
-                  <onclick>Skin.Reset(enable_clearartnextup)</onclick>
+                  <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_playerclearart)|Skin.Reset(clearart_position)|Skin.Reset(enable_clearartnextup))</onclick>
                </control>
             </control>
             <control type="grouplist" id="620">
@@ -611,13 +584,7 @@
                   <width>1256</width>
                   <include>DefaultSettingButton</include>
                   <label>10041</label>
-                  <onclick>Skin.Reset(SkinColor)</onclick>
-                  <onclick>Skin.Reset(KioskMode)</onclick>
-                  <onclick>Skin.Reset(SplashScreen)</onclick>
-                  <onclick>Skin.Reset(enable_updateartworks)</onclick>
-                  <onclick>Skin.Reset(WeatherIcons.name)</onclick>
-                  <onclick>RunScript(script.skin.helper.service,action=reset,filter=SpinnerTexture)</onclick>
-                  <onclick>Skin.Reset(Skin.ToggleDebug)</onclick>
+                  <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(SkinColor)|Skin.Reset(KioskMode)|Skin.Reset(SplashScreen)|Skin.Reset(enable_updateartworks)|Skin.Reset(WeatherIcons.name)|RunScript(script.skin.helper.service,action=reset,filter=SpinnerTexture,silent=true)|Skin.Reset(Skin.ToggleDebug))</onclick>
                </control>
             </control>
             <control type="grouplist" id="650">

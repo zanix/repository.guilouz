@@ -1370,3 +1370,11 @@ msgstr ""
 msgctxt "#40173"
 msgid "Add sources"
 msgstr ""
+
+msgctxt "#40174"
+msgid "My TV shows airing today"
+msgstr ""
+
+msgctxt "#40175"
+msgid "Next episodes to watch"
+msgstr ""

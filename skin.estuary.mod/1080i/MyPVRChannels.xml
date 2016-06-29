@@ -181,7 +181,7 @@
 							<width>80</width>
 							<height>60</height>
 							<aspectratio align="right">keep</aspectratio>
-							<texture>$INFO[listitem.icon]</texture>
+							<texture>$INFO[ListItem.icon]</texture>
 						</control>
 						<control type="progress">
 							<left>105</left>
@@ -246,7 +246,7 @@
 							<width>80</width>
 							<height>60</height>
 							<aspectratio align="right">keep</aspectratio>
-							<texture>$INFO[listitem.icon]</texture>
+							<texture>$INFO[ListItem.icon]</texture>
 						</control>
 						<control type="progress">
 							<left>105</left>

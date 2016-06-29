@@ -1237,3 +1237,11 @@ msgstr "Episodes vus"
 msgctxt "#40173"
 msgid "Add sources"
 msgstr "Ajouter des sources"
+
+msgctxt "#40174"
+msgid "My TV shows airing today"
+msgstr "Mes séries TV diffusées aujourd'hui"
+
+msgctxt "#40175"
+msgid "Next episodes to watch"
+msgstr "Prochains épisodes à regarder"
