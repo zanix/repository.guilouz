@@ -8,7 +8,7 @@
 						<left>522</left>
 						<aspectratio align="left" aligny="center">keep</aspectratio>
 						<texture>$VAR[WidgetClearLogoVar]</texture>
-						<visible>Skin.HasSetting(show_clearlogos)</visible>
+						<visible>!Skin.HasSetting(show_widgetclearlogos)</visible>
 						<visible>!Skin.HasSetting(horizontal_menu)</visible>
 				</control>
 				<control type="image">
@@ -18,7 +18,7 @@
 						<left>5</left>
 						<aspectratio align="left" aligny="center">keep</aspectratio>
 						<texture>$VAR[WidgetClearLogoVar]</texture>
-						<visible>Skin.HasSetting(show_clearlogos)</visible>
+						<visible>!Skin.HasSetting(show_widgetclearlogos)</visible>
 						<visible>Skin.HasSetting(horizontal_menu)</visible>
 				</control>			
 				<control type="label">
@@ -57,6 +57,47 @@
 						<scroll>yes</scroll>	
 					</control>
 	</include>
+	<include name="BottomFlagInfo">
+		<control type="grouplist">
+			<visible>!Player.HasMedia</visible>
+			<visible>!Skin.HasSetting(enable_widgetflagicons)</visible>
+			<orientation>horizontal</orientation>
+			<top>1016</top>
+			<centerleft>50%</centerleft>
+			<itemgap>5</itemgap>
+			<width>591</width>
+			<control type="image">      
+                		<width>73</width>           
+                		<height>50</height>
+                		<aspectratio>keep</aspectratio>             
+                		<texture>$VAR[WidgetFlagIconResolutionVar]</texture>
+            		</control>
+			<control type="image">
+                		<width>130</width>
+                		<height>50</height>
+                		<aspectratio>keep</aspectratio>
+                		<texture>$VAR[WidgetFlagIconVideoCodecVar]</texture>
+            		</control> 
+			<control type="image">
+                		<width>108</width>
+                		<height>50</height>
+                		<aspectratio>keep</aspectratio>
+                		<texture>$VAR[WidgetFlagIconAspectVar]</texture>
+            		</control>
+            		<control type="image">
+                		<width>130</width>
+                		<height>50</height>
+                		<aspectratio>keep</aspectratio>
+                		<texture>$VAR[WidgetFlagIconAudioCodecVar]</texture>
+            		</control>
+            		<control type="image">           
+                		<width>130</width>               
+                		<height>50</height>
+                		<aspectratio>keep</aspectratio>
+                		<texture>$VAR[WidgetFlagIconAudioChannelsVar]</texture>
+            		</control>
+		</control>
+	</include>
 	<include name="PVRWidget">
 		<control type="image">
 			<top>0</top>
@@ -71,7 +112,7 @@
 			<width>140</width>
 			<height>140</height>
 			<aspectratio>keep</aspectratio>
-			<texture background="true" fallback="DefaultVideoCover.png">$PARAM[icon]</texture>
+			<texture background="true" fallback="DefaultTVShowSquare.png">$PARAM[icon]</texture>
 		</control>
 		<control type="label">
 			<left>210</left>
@@ -911,7 +952,7 @@
 							<width>415</width>
 							<height>305</height>
 							<aspectratio aligny="top">keep</aspectratio>
-							<texture fallback="DefaultVideoCover.png" background="true">$PARAM[item_image]</texture>
+							<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 							<bordertexture>dialogs/back.png</bordertexture>
 							<bordersize>3</bordersize>
 						</control>
@@ -936,7 +977,7 @@
 								<width>415</width>
 								<height>305</height>
 								<aspectratio aligny="top">keep</aspectratio>
-								<texture fallback="DefaultVideoCover.png" background="true">$PARAM[item_image]</texture>
+								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 								<bordertexture>dialogs/back.png</bordertexture>
 								<bordersize>3</bordersize>
 							</control>
@@ -1027,7 +1068,7 @@
 							<width>470</width>
 							<height>346</height>
 							<aspectratio aligny="top">keep</aspectratio>
-							<texture fallback="DefaultVideoCover.png" background="true">$PARAM[item_image]</texture>
+							<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 							<bordertexture>dialogs/back.png</bordertexture>
 							<bordersize>3</bordersize>
 						</control>
@@ -1052,7 +1093,7 @@
 								<width>470</width>
 								<height>346</height>
 								<aspectratio aligny="top">keep</aspectratio>
-								<texture fallback="DefaultVideoCover.png" background="true">$PARAM[item_image]</texture>
+								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 								<bordertexture>dialogs/back.png</bordertexture>
 								<bordersize>3</bordersize>
 							</control>

@@ -1378,3 +1378,23 @@ msgstr ""
 msgctxt "#40175"
 msgid "Next episodes to watch"
 msgstr ""
+
+msgctxt "#40176"
+msgid "Hide Rotten Tomatoes and Metacritic info"
+msgstr ""
+
+msgctxt "#40177"
+msgid "Hide info from Rotten Tomatoes and Metacritic."
+msgstr ""
+
+msgctxt "#40178"
+msgid "Show media flags icons on home menu such as resolution, ratio, video codec, audio codec and number of channels."
+msgstr ""
+
+msgctxt "#40179"
+msgid "Show media clearlogos"
+msgstr ""
+
+msgctxt "#40180"
+msgid "Show clearlogos on home menu."
+msgstr ""

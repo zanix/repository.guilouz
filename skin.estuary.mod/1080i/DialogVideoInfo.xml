@@ -57,7 +57,7 @@
 						<width>469</width>
 						<height>668</height>
 						<aspectratio>stretch</aspectratio>
-						<texture colordiffuse="AAFFFFFF" fallback="DefaultVideoCover.png">colors/black.png</texture>
+						<texture colordiffuse="AAFFFFFF" fallback="DefaultVideoFanart.png">colors/black.png</texture>
 					</control>
 					<control type="image">
 						<left>20</left>

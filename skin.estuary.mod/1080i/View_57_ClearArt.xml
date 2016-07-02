@@ -199,7 +199,7 @@
                 <width>730</width>
                 <fadetime>200</fadetime>                            
                 <aspectratio>stretch</aspectratio>
-                <texture background="true">$VAR[FanartImageVar]</texture>
+                <texture fallback="DefaultVideoFanart.png"  background="true">$VAR[FanartImageVar]</texture>
             </control>
             <control type="textbox">
                 <top>10</top>
