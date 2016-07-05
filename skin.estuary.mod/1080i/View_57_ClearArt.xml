@@ -1,60 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-     <include name="View_57_ClearArts">
+    <include name="View_57_ClearArts">
         <control type="group">
             <visible>Control.IsVisible(57)</visible>
             <include>Visible_Right</include>
-	    <include>OpenClose_Right</include>
-	    <top>160</top>
-	<control type="image">
-		<left>65</left>
-		<top>218</top>
-		<width>28</width>
-		<height>28</height>
-		<texture flipx="true" colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
-		<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
-		<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
-		<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
-	</control>
-	<control type="image">
-		<right>65</right>
-		<top>218</top>
-		<width>28</width>
-		<height>28</height>
-		<texture colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
-		<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
-		<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
-		<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
-	</control>
-	<control type="button" id="57500">
-		<left>65</left>
-		<top>218</top>
-		<width>28</width>
-		<height>28</height>
-		<texturefocus>-</texturefocus>
-		<texturenofocus>-</texturenofocus>
-		<onclick>Control.Move(57,-1)</onclick>
-		<visible allowhiddenfocus="true">Container(57).HasPrevious + [Control.HasFocus(57) | Control.HasFocus(57500)]</visible>
-	</control>
-	<control type="button" id="57501">
-        	<right>65</right>
-		<top>218</top>
-		<width>28</width>
-		<height>28</height>
-		<texturefocus>-</texturefocus>
-		<texturenofocus>-</texturenofocus>
-		<onclick>Control.Move(57,1)</onclick>
-		<visible allowhiddenfocus="true">Container(57).HasNext + [Control.HasFocus(57) | Control.HasFocus(57501)]</visible>
-	</control>
+            <include>OpenClose_Right</include>
+            <top>160</top>
+            <control type="image">
+                <left>65</left>
+                <top>218</top>
+                <width>28</width>
+                <height>28</height>
+                <texture flipx="true" colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
+                <animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
+                <animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+                <animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
+            </control>
+            <control type="image">
+                <right>65</right>
+                <top>218</top>
+                <width>28</width>
+                <height>28</height>
+                <texture colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
+                <animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
+                <animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+                <animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
+            </control>
+            <control type="button" id="57500">
+                <left>65</left>
+                <top>218</top>
+                <width>28</width>
+                <height>28</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(57,-1)</onclick>
+                <visible allowhiddenfocus="true">Container(57).HasPrevious + [Control.HasFocus(57) | Control.HasFocus(57500)]</visible>
+            </control>
+            <control type="button" id="57501">
+                <right>65</right>
+                <top>218</top>
+                <width>28</width>
+                <height>28</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(57,1)</onclick>
+                <visible allowhiddenfocus="true">Container(57).HasNext + [Control.HasFocus(57) | Control.HasFocus(57501)]</visible>
+            </control>
             <include content="View_ClearArts">
                 <param name="id" value="57" />
                 <param name="condition" value="Container.Content(sets) | Container.Content(tvshows) | Container.Content(movies)" />
             </include>
         </control>
     </include>
-      
     <include name="View_ClearArts">
-        <include>View_ClearArts_Top</include> 
+        <include>View_ClearArts_Top</include>
         <control type="group">
             <control type="wraplist" id="$PARAM[id]">
                 <top>525</top>
@@ -77,37 +76,37 @@
                         <left>0</left>
                         <right>10</right>
                         <control type="group">
-                        	<centertop>50%</centertop>
+                            <centertop>50%</centertop>
                             <height>186</height>
                             <width>330</width>
                             <centerleft>50%</centerleft>
                             <visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
                             <visible>String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
-                        <control type="image">
-                            <height>100%</height>
-                            <width>100%</width>
-			    			<aspectratio align="center" aligny="center">keep</aspectratio>
-                            <texture>$INFO[ListItem.Art(fanart)]</texture>
+                            <control type="image">
+                                <height>100%</height>
+                                <width>100%</width>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Art(fanart)]</texture>
+                            </control>
+                            <control type="image">
+                                <centerleft>50%</centerleft>
+                                <bottom>0</bottom>
+                                <height>35</height>
+                                <width>330</width>
+                                <texture>dialogs/back.png</texture>
+                            </control>
+                            <control type="label">
+                                <centerleft>50%</centerleft>
+                                <bottom>5</bottom>
+                                <height>30</height>
+                                <width>330</width>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <scroll>yes</scroll>
+                                <font>font10</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
                         </control>
-                        <control type="image">
-                            <centerleft>50%</centerleft>
-                            <bottom>0</bottom>
-                            <height>35</height>
-                            <width>330</width>
-                            <texture>dialogs/back.png</texture>
-                        </control>         
-                        <control type="label">
-                            <centerleft>50%</centerleft>
-                            <bottom>5</bottom>
-                            <height>30</height>
-                            <width>330</width>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <scroll>yes</scroll>
-                            <font>font10</font>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        </control>                                           
                         <control type="image">
                             <bottom>0</bottom>
                             <height>186</height>
@@ -115,59 +114,58 @@
                             <centerleft>50%</centerleft>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <texture>$VAR[ClearArtView]</texture>
-                        </control>                        
+                        </control>
                     </control>
                 </itemlayout>
-                <focusedlayout height="200" width="378">                                      
+                <focusedlayout height="200" width="378">
                     <control type="group">
                         <left>0</left>
                         <right>10</right>
                         <control type="group">
-                        	<centertop>50%</centertop>
+                            <centertop>50%</centertop>
                             <height>186</height>
                             <width>330</width>
                             <centerleft>50%</centerleft>
                             <visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
                             <visible>String.IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
-                        <control type="image">
-                            <height>100%</height>
-                            <width>100%</width>
-			    			<aspectratio align="center" aligny="center">keep</aspectratio>
-                            <texture>$INFO[ListItem.Art(fanart)]</texture>
+                            <control type="image">
+                                <height>100%</height>
+                                <width>100%</width>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Art(fanart)]</texture>
+                            </control>
+                            <control type="image">
+                                <centerleft>50%</centerleft>
+                                <bottom>0</bottom>
+                                <height>35</height>
+                                <width>330</width>
+                                <texture>dialogs/back.png</texture>
+                            </control>
+                            <control type="label">
+                                <centerleft>50%</centerleft>
+                                <bottom>5</bottom>
+                                <height>30</height>
+                                <width>330</width>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <scroll>yes</scroll>
+                                <font>font10</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
                         </control>
-                        <control type="image">
-                            <centerleft>50%</centerleft>
-                            <bottom>0</bottom>
-                            <height>35</height>
-                            <width>330</width>
-                            <texture>dialogs/back.png</texture>
-                        </control>         
-                        <control type="label">
-                            <centerleft>50%</centerleft>
-                            <bottom>5</bottom>
-                            <height>30</height>
-                            <width>330</width>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <scroll>yes</scroll>
-                            <font>font10</font>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        </control>                                     
                         <control type="image">
                             <bottom>0</bottom>
                             <height>186</height>
                             <width>330</width>
                             <centerleft>50%</centerleft>
-			    <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <aspectratio align="center" aligny="center">keep</aspectratio>
                             <texture>$VAR[ClearArtView]</texture>
-                        </control>                        
+                        </control>
                     </control>
-                 </focusedlayout>
+                </focusedlayout>
             </control>
-        </control>       
-    </include> 
-    
+        </control>
+    </include>
     <include name="View_ClearArts_Top">
         <control type="image">
             <left>-20</left>
@@ -182,7 +180,7 @@
             <width>390</width>
             <bottom>173</bottom>
             <texture border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texture>
-        </control>  
+        </control>
         <control type="group">
             <top>20</top>
             <height>430</height>
@@ -197,62 +195,62 @@
                 <posx>1049</posx>
                 <height>410</height>
                 <width>730</width>
-                <fadetime>200</fadetime>                            
+                <fadetime>200</fadetime>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="DefaultVideoFanart.png"  background="true">$VAR[FanartImageVar]</texture>
+                <texture fallback="DefaultVideoFanart.png"  background="true">$VAR[ListInfoBoxImageVar]</texture>
             </control>
             <control type="textbox">
                 <top>10</top>
                 <posx>439</posx>
                 <left>449</left>
                 <right>10</right>
-                <width>580</width>  
+                <width>580</width>
                 <height>338</height>
                 <font>font12</font>
                 <align>justify</align>
                 <label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
-		<autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-		<visible>!ListItem.IsCollection + String.IsEqual(ListItem.DBType,tvshow)</visible>
+                <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+                <visible>!ListItem.IsCollection + String.IsEqual(ListItem.DBType,tvshow)</visible>
             </control>
             <control type="textbox">
                 <top>10</top>
                 <posx>439</posx>
                 <left>449</left>
                 <right>10</right>
-                <width>580</width>  
+                <width>580</width>
                 <height>365</height>
                 <font>font12</font>
                 <align>justify</align>
                 <label>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot]</label>
-		<autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-		<visible>!ListItem.IsCollection + !String.IsEqual(ListItem.DBType,tvshow)</visible>
+                <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+                <visible>!ListItem.IsCollection + !String.IsEqual(ListItem.DBType,tvshow)</visible>
             </control>
             <control type="textbox">
                 <top>10</top>
                 <posx>439</posx>
                 <left>449</left>
                 <right>10</right>
-                <width>580</width>  
+                <width>580</width>
                 <height>365</height>
                 <font>font12</font>
                 <align>justify</align>
                 <label>$INFO[Window(Home).Property(SkinHelper.MovieSet.ExtendedPlot)]</label>
-		<autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-		<visible>ListItem.IsCollection</visible>
+                <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+                <visible>ListItem.IsCollection</visible>
             </control>
             <control type="image">
-		<bottom>2</bottom>
-		<posx>991</posx>
-		<width>48</width>
-		<height>48</height>
-		<texture>$VAR[ListWatchedIconVar]</texture>
-	    </control>
-	    <control type="label">
+                <bottom>2</bottom>
+                <posx>991</posx>
+                <width>48</width>
+                <height>48</height>
+                <texture>$VAR[ListWatchedIconVar]</texture>
+            </control>
+            <control type="label">
                 <bottom>40</bottom>
                 <posx>439</posx>
                 <left>449</left>
                 <right>10</right>
-                <width>535</width>  
+                <width>535</width>
                 <height>30</height>
                 <scroll>yes</scroll>
                 <font>font12</font>
@@ -260,12 +258,12 @@
                 <textcolor>$VAR[SkinColorVar]</textcolor>
                 <visible>String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
             </control>
-	    <control type="label">
+            <control type="label">
                 <bottom>40</bottom>
                 <posx>439</posx>
                 <left>449</left>
                 <right>10</right>
-                <width>535</width>  
+                <width>535</width>
                 <height>30</height>
                 <scroll>yes</scroll>
                 <font>font12</font>
@@ -278,7 +276,7 @@
                 <posx>439</posx>
                 <left>449</left>
                 <right>10</right>
-                <width>535</width>  
+                <width>535</width>
                 <height>30</height>
                 <scroll>yes</scroll>
                 <font>font12</font>
@@ -291,7 +289,7 @@
                 <posx>439</posx>
                 <left>449</left>
                 <right>10</right>
-                <width>535</width>  
+                <width>535</width>
                 <height>30</height>
                 <scroll>yes</scroll>
                 <font>font12</font>
@@ -304,7 +302,7 @@
                 <posx>439</posx>
                 <left>449</left>
                 <right>10</right>
-                <width>535</width>  
+                <width>535</width>
                 <height>30</height>
                 <scroll>yes</scroll>
                 <font>font12</font>
@@ -316,10 +314,10 @@
                 <posx>141</posx>
                 <height>410</height>
                 <width>288</width>
-                <fadetime>200</fadetime>                               
+                <fadetime>200</fadetime>
                 <aspectratio>stretch</aspectratio>
-                <texture background="true" fallback="DefaultVideoCover.png">$VAR[ListPosterVar]</texture>
+                <texture background="true" fallback="DefaultVideoCover.png">$VAR[PosterImageVar]</texture>
             </control>
-    </control>
-    </include> 
+        </control>
+    </include>
 </includes>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-     <include name="View_503_Gallery">
+    <include name="View_503_Gallery">
         <control type="group">
             <visible>Control.IsVisible(503)</visible>
             <include>Visible_Right</include>
-	    <include>OpenClose_Right</include>
-	    <top>180</top>
-	    <left>20</left>
+            <include>OpenClose_Right</include>
+            <top>180</top>
+            <left>20</left>
             <right>20</right>
             <height>700</height>
             <include content="View_Gallery">
@@ -15,7 +15,6 @@
             </include>
         </control>
     </include>
-    
     <include name="View_Gallery">
         <control type="group">
             <control type="fixedlist" id="$PARAM[id]">
@@ -38,7 +37,7 @@
                 <itemlayout height="700" width="88">
                     <control type="group">
                         <left>0</left>
-                        <right>10</right>                      
+                        <right>10</right>
                         <control type="image">
                             <left>0</left>
                             <right>0</right>
@@ -54,7 +53,7 @@
                             <animation effect="rotate" end="90" start="0" condition="true" center="20,650">Conditional</animation>
                             <label>$INFO[ListItem.Label]</label>
                             <align>left</align>
-                        </control>                
+                        </control>
                         <control type="image">
                             <centerleft>50%</centerleft>
                             <top>20</top>
@@ -69,9 +68,8 @@
                     <include>View_Gallery_Info</include>
                 </focusedlayout>
             </control>
-        </control>      
+        </control>
     </include>
-    
     <include name="View_Gallery_Fanart">
         <control type="group">
             <top>0</top>
@@ -88,24 +86,23 @@
                 <right>10</right>
                 <top>10</top>
                 <bottom>10</bottom>
-                <fadetime>200</fadetime>                   
+                <fadetime>200</fadetime>
                 <aspectratio>stretch</aspectratio>
                 <texture background="true" fallback="DefaultVideoFanart.png">$VAR[FanartImageVar]</texture>
                 <visible>!Container.Content(episodes)</visible>
-            </control>  
+            </control>
             <control type="image">
                 <left>10</left>
                 <right>10</right>
                 <top>10</top>
                 <bottom>10</bottom>
-                <fadetime>200</fadetime>                   
+                <fadetime>200</fadetime>
                 <aspectratio>stretch</aspectratio>
                 <texture background="true" fallback="DefaultVideoFanart.png">$INFO[ListItem.Art(thumb)]</texture>
                 <visible>Container.Content(episodes)</visible>
-            </control>        
+            </control>
         </control>
     </include>
-    
     <include name="View_Gallery_Info">
         <control type="group">
             <left>10</left>
@@ -113,70 +110,70 @@
             <bottom>15</bottom>
             <height>122</height>
             <control type="image">
-                <width>100%</width>               
+                <width>100%</width>
                 <height>120</height>
-                <bottom>-5</bottom>                    
-                <texture>dialogs/back.png</texture>                          
+                <bottom>-5</bottom>
+                <texture>dialogs/back.png</texture>
             </control>
-                <control type="label">
-                    <left>20</left>
-                    <right>20</right>
-                    <top>10</top>
-                    <height>32</height>
-                    <label>[B]$INFO[ListItem.Label][/B]</label>
-                </control>
-                <control type="label">
-                    <left>20</left>
-                    <right>20</right>
-                    <top>10</top>
-                    <height>32</height>
-                    <align>right</align>
-                    <label>$INFO[ListItem.Year]</label>
-                    <textcolor>$VAR[SkinColorVar]</textcolor>
-                    <visible>Container.Content(movies)</visible>
-                 </control>
-                <control type="label">
-                    <left>20</left>
-                    <right>20</right>
-                    <top>10</top>
-                    <height>32</height>
-                    <align>right</align>
-                    <label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
-                    <textcolor>$VAR[SkinColorVar]</textcolor>
-                    <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>                   
-                </control>              
-                <control type="label">
-                    <left>20</left>
-                    <right>20</right>
-                    <top>10</top>
-                    <height>32</height>
-                    <align>right</align>
-                    <label>$LOCALIZE[40092] $INFO[ListItem.Premiered]</label>
-                    <textcolor>$VAR[SkinColorVar]</textcolor>
-                    <visible>Container.Content(episodes)</visible>
-                 </control>
-                <control type="textbox">
-                    <left>20</left> 
-                    <width>1116</width>                  
-                    <bottom>5</bottom>
-                    <height>67</height>
-                    <align>justify</align>
-                    <font>font12</font>
-                    <label>$INFO[ListItem.Plot]</label>
-                    <autoscroll delay="7000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-                    <visible>!ListItem.IsCollection</visible>
-                </control>
-                <control type="textbox">
-                    <left>20</left> 
-                    <width>1116</width>                  
-                    <bottom>5</bottom>
-                    <height>67</height>
-                    <align>justify</align>
-                    <font>font12</font>
-                    <label>$INFO[Window(Home).Property(SkinHelper.MovieSet.ExtendedPlot)]</label>
-                    <autoscroll delay="7000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-                    <visible>ListItem.IsCollection</visible>
-                </control>
-         </control>       
+            <control type="label">
+                <left>20</left>
+                <right>20</right>
+                <top>10</top>
+                <height>32</height>
+                <label>[B]$INFO[ListItem.Label][/B]</label>
+            </control>
+            <control type="label">
+                <left>20</left>
+                <right>20</right>
+                <top>10</top>
+                <height>32</height>
+                <align>right</align>
+                <label>$INFO[ListItem.Year]</label>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
+                <visible>Container.Content(movies)</visible>
+            </control>
+            <control type="label">
+                <left>20</left>
+                <right>20</right>
+                <top>10</top>
+                <height>32</height>
+                <align>right</align>
+                <label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
+                <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+            </control>
+            <control type="label">
+                <left>20</left>
+                <right>20</right>
+                <top>10</top>
+                <height>32</height>
+                <align>right</align>
+                <label>$LOCALIZE[40092] $INFO[ListItem.Premiered]</label>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
+                <visible>Container.Content(episodes)</visible>
+            </control>
+            <control type="textbox">
+                <left>20</left>
+                <width>1116</width>
+                <bottom>5</bottom>
+                <height>67</height>
+                <align>justify</align>
+                <font>font12</font>
+                <label>$INFO[ListItem.Plot]</label>
+                <autoscroll delay="7000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+                <visible>!ListItem.IsCollection</visible>
+            </control>
+            <control type="textbox">
+                <left>20</left>
+                <width>1116</width>
+                <bottom>5</bottom>
+                <height>67</height>
+                <align>justify</align>
+                <font>font12</font>
+                <label>$INFO[Window(Home).Property(SkinHelper.MovieSet.ExtendedPlot)]</label>
+                <autoscroll delay="7000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+                <visible>ListItem.IsCollection</visible>
+            </control>
+        </control>
     </include>
 </includes>

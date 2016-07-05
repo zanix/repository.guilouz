@@ -46,7 +46,7 @@
 					<width>469</width>
 					<height>668</height>
 					<aspectratio>stretch</aspectratio>
-					<texture fallback="DefaultVideoCover.png">$VAR[InfoDialogPosterVar]</texture>
+					<texture fallback="DefaultVideoCover.png">$VAR[PosterImageVar]</texture>
 				</control>
 				<control type="group">
 					<visible>String.IsEqual(ListItem.DBType,episode)</visible>
@@ -57,7 +57,7 @@
 						<width>469</width>
 						<height>668</height>
 						<aspectratio>stretch</aspectratio>
-						<texture colordiffuse="AAFFFFFF" fallback="DefaultVideoFanart.png">colors/black.png</texture>
+						<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
 					</control>
 					<control type="image">
 						<left>20</left>
@@ -65,7 +65,7 @@
 						<width>439</width>
 						<height>668</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Thumb]</texture>
+						<texture fallback="DefaultVideoFanart.png">$INFO[ListItem.Thumb]</texture>
 						<bordertexture border="20">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
 					</control>

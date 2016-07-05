@@ -46,7 +46,7 @@
                 <top>0</top>
                 <width>1920</width>
                 <height>920</height>
-                <texture>$VAR[GlobalFanartVar]</texture>
+                <texture colordiffuse="$VAR[BackgroundColorVar]" fallback="special://skin/extras/backgrounds/default.png">$VAR[GlobalFanartVar]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">

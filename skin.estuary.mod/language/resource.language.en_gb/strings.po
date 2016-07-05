@@ -1328,11 +1328,11 @@ msgid "Show music visualisation screen directly when playing song."
 msgstr ""
 
 msgctxt "#40163"
-msgid "Skin color"
+msgid "Main color"
 msgstr ""
 
 msgctxt "#40164"
-msgid "Reset skin color"
+msgid "Reset main color"
 msgstr ""
 
 msgctxt "#40165"
@@ -1344,7 +1344,7 @@ msgid "Change main theme color."
 msgstr ""
 
 msgctxt "#40167"
-msgid "Reset theme color to default."
+msgid "Reset main color to default."
 msgstr ""
 
 msgctxt "#40168"
@@ -1397,4 +1397,32 @@ msgstr ""
 
 msgctxt "#40180"
 msgid "Show clearlogos on home menu."
+msgstr ""
+
+msgctxt "#40181"
+msgid "Colors"
+msgstr ""
+
+msgctxt "#40182"
+msgid "Skin colors related settings."
+msgstr ""
+
+msgctxt "#40183"
+msgid "Background color"
+msgstr ""
+
+msgctxt "#40184"
+msgid "Reset background color"
+msgstr ""
+
+msgctxt "#40185"
+msgid "Change background color."
+msgstr ""
+
+msgctxt "#40186"
+msgid "Reset background color to default."
+msgstr ""
+
+msgctxt "#40187"
+msgid "Color selection"
 msgstr ""

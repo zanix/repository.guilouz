@@ -1195,12 +1195,12 @@ msgid "Show music visualisation screen directly when playing song."
 msgstr "Permet d'afficher directement l'écran de visualisation de la musique dès la lecture d'une chanson."
 
 msgctxt "#40163"
-msgid "Skin color"
-msgstr "Couleur du thème"
+msgid "Main color"
+msgstr "Couleur principale"
 
 msgctxt "#40164"
-msgid "Reset skin color"
-msgstr "Réinitialiser la couleur du thème"
+msgid "Reset main color"
+msgstr "Réinitialiser la couleur principale"
 
 msgctxt "#40165"
 msgid "Color"
@@ -1211,8 +1211,8 @@ msgid "Change main theme color."
 msgstr "Permet de changer la couleur principale du thème."
 
 msgctxt "#40167"
-msgid "Reset theme color to default."
-msgstr "Permet de réinitialiser la couleur par défaut du thème."
+msgid "Reset main color to default."
+msgstr "Permet de réinitialiser la couleur principale par défaut."
 
 msgctxt "#40168"
 msgid "Live TV widget - Recently played channels"
@@ -1265,3 +1265,31 @@ msgstr "Afficher les logos des médias"
 msgctxt "#40180"
 msgid "Show clearlogos on home menu."
 msgstr "Permet d'afficher les logos des médias sur le menu d'accueil."
+
+msgctxt "#40181"
+msgid "Colors"
+msgstr "Couleurs"
+
+msgctxt "#40182"
+msgid "Skin colors related settings."
+msgstr "Paramètres relatifs aux couleurs du thème."
+
+msgctxt "#40183"
+msgid "Background color"
+msgstr "Couleur de l'arrière-plan"
+
+msgctxt "#40184"
+msgid "Reset background color"
+msgstr "Réinitialiser la couleur de l'arrière-plan"
+
+msgctxt "#40185"
+msgid "Change background color."
+msgstr "Permet de changer la couleur de l'arrière-plan."
+
+msgctxt "#40186"
+msgid "Reset background color to default."
+msgstr "Permet de réinitialiser la couleur par défaut de l'arrière-plan."
+
+msgctxt "#40187"
+msgid "Color selection"
+msgstr "Sélection de la couleur"

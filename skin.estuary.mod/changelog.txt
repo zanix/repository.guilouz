@@ -1,3 +1,14 @@
+[B]1.3.3[/B]
+• Add IMDB Top 250 flag icon
+• Add possibility to change background color regardless of main skin color
+• Add button for Color Management on video OSD
+• Add complete discography on artist info
+• Now use Skin Helper Service for artists and albums description
+• Fix missing posters and fanarts on some views
+• Other minor fixes
+• Updated language files from Transifex
+• Cleanup code
+
 [B]1.3.2[/B]
 • Add total / watched / unwatched episodes number for tv shows and seasons
 • Add possibility to hide info from Rotten Tomatoes and Metacritic
