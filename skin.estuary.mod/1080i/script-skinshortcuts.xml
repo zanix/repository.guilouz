@@ -10,6 +10,31 @@
                 <top>0</top>
                 <control type="group">
                     <include>OpenClose_Left</include>
+                    <control type="grouplist" id="700">
+                    <orientation>vertical</orientation>
+                    <itemgap>-16</itemgap>
+                    <left>-113</left>
+                    <top>338</top>
+                    <onup>700</onup>
+                    <ondown>700</ondown>
+                    <onright>211</onright>
+                    <include content="BottomMainMenuItem">
+                        <param name="control_id" value="303" />
+                        <param name="icon" value="icons/up.png" />
+                    </include>
+                    <include content="BottomMainMenuItem">
+                        <param name="control_id" value="304" />
+                        <param name="icon" value="icons/down.png" />
+                    </include>
+                    <include content="BottomMainMenuItem">
+                        <param name="control_id" value="301" />
+                        <param name="icon" value="icons/add.png" />
+                    </include>
+                    <include content="BottomMainMenuItem">
+                        <param name="control_id" value="302" />
+                        <param name="icon" value="icons/delete.png" />
+                    </include>
+                </control>
                     <control type="image">
                         <description>Menu Panel</description>
                         <left>-20</left>
@@ -56,7 +81,7 @@
                         <top>200</top>
                         <width>400</width>
                         <height>666</height>
-                        <onleft>61</onleft>
+                        <onleft>700</onleft>
                         <onright>90001</onright>
                         <onup>211</onup>
                         <ondown>211</ondown>
@@ -183,6 +208,7 @@
                         <include>DefaultSettingButton</include>
                         <label>$ADDON[script.skinshortcuts 32048]</label>
                         <label2>$INFO[Container(211).ListItem.Label]</label2>
+                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
                     </control>
                     <control type="button" id="307">
                         <description>Change action</description>
@@ -190,6 +216,7 @@
                         <include>DefaultSettingButton</include>
                         <label>$ADDON[script.skinshortcuts 32027]</label>
                         <label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
+                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
                     </control>
                     <control type="button" id="305">
                         <description>Change label</description>
@@ -197,6 +224,7 @@
                         <include>DefaultSettingButton</include>
                         <label>$ADDON[script.skinshortcuts 32025]</label>
                         <label2>$INFO[Container(211).ListItem.Label]</label2>
+                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
                     </control>
                     <control type="button" id="306">
                         <description>Browse for thumbnail</description>
@@ -221,6 +249,7 @@
                         <label>$ADDON[script.skinshortcuts 32072]</label>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                         <visible>!String.IsEqual(Container(211).ListItem.Property(widget),WeatherWidget) + ![String.IsEmpty(Container(211).ListItem.Property(HideBannerWidget)) + String.IsEqual(Container(211).ListItem.Property(widget),PictureWidget) + !Skin.HasSetting(horizontal_menu)]</visible>
+                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
                     </control>
                     <control type="button" id="312">
                         <width>1256</width>
@@ -229,6 +258,7 @@
                         <label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
                         <visible>!String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget)</visible>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
                     </control>
                     <control type="button" id="1452">
                         <width>1256</width>
@@ -471,29 +501,6 @@
                         <selected>Skin.HasSetting(show_episodesfanarts)</selected>
                         <onclick>Skin.ToggleSetting(show_episodesfanarts)</onclick>
                         <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget)</visible>
-                    </control>
-                    <control type="button" id="303">
-                        <description>Move up</description>
-                        <label>$LOCALIZE[31159]</label>
-                        <width>1256</width>
-                        <include>DefaultSettingButton</include>
-                    </control>
-                    <control type="button" id="304">
-                        <description>Move down</description>
-                        <label>$LOCALIZE[31160]</label>
-                        <width>1256</width>
-                        <include>DefaultSettingButton</include>
-                    </control>
-                    <control type="button" id="302">
-                        <description>Delete shortcut</description>
-                        <width>1256</width>
-                        <include>DefaultSettingButton</include>
-                    </control>
-                    <control type="button" id="301">
-                        <description>Add shortcut</description>
-                        <width>1256</width>
-                        <include>DefaultSettingButton</include>
-                        <label>$ADDON[script.skinshortcuts 32000]</label>
                     </control>
                 </control>
                 <control type="textbox" id="6">

@@ -73,6 +73,15 @@
                 <width>497</width>
                 <height>490</height>
                 <aspectratio>stretch</aspectratio>
+                <texture>DefaultAudioCover.png</texture>
+            </control>
+            <control type="image">
+                <animation effect="fade" time="300">Visible</animation>
+                <animation effect="fade" time="300">Hidden</animation>
+                <top>5</top>
+                <width>497</width>
+                <height>490</height>
+                <aspectratio>stretch</aspectratio>
                 <texture fallback="DefaultAudioCover.png">$INFO[MusicPlayer.Cover]</texture>
             </control>
             <control type="image">
@@ -177,6 +186,7 @@
                 <width>806</width>
                 <height>482</height>
                 <texture background="true" colordiffuse="border_alpha">colors/black.png</texture>
+                <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + !String.IsEmpty(Player.Art(fanart))</visible>
                 <visible>!Window.IsActive(VisualisationPresetList)</visible>
                 <visible>Skin.HasSetting(enable_artistslideshowthumb) + Skin.HasSetting(enable_artistslideshow)</visible>
                 <animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
@@ -197,6 +207,7 @@
                 <randomize>true</randomize>
                 <fadetime>600</fadetime>
                 <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+                <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + !String.IsEmpty(Player.Art(fanart))</visible>
                 <visible>!Window.IsActive(VisualisationPresetList)</visible>
                 <visible>Skin.HasSetting(enable_artistslideshowthumb) + Skin.HasSetting(enable_artistslideshow)</visible>
                 <animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>

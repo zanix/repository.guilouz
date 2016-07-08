@@ -145,6 +145,18 @@
                     <icon>icons/settings/profiles.png</icon>
                 </item>
                 <item>
+                    <label>LibreELEC</label>
+                    <onclick>RunAddon(service.libreelec.settings)</onclick>
+                    <icon>icons/settings/libreelec.png</icon>
+                    <visible>System.HasAddon(service.libreelec.settings)</visible>
+                </item>
+                <item>
+                    <label>OpenELEC</label>
+                    <onclick>RunAddon(service.openelec.settings)</onclick>
+                    <icon>icons/settings/openelec.png</icon>
+                    <visible>System.HasAddon(service.openelec.settings)</visible>
+                </item>
+                <item>
                     <label>$LOCALIZE[138]</label>
                     <onclick>ActivateWindow(systeminfo)</onclick>
                     <icon>icons/settings/sysinfo.png</icon>

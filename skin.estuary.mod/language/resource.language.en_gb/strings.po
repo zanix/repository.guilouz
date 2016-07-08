@@ -1426,3 +1426,59 @@ msgstr ""
 msgctxt "#40187"
 msgid "Color selection"
 msgstr ""
+
+msgctxt "#40188"
+msgid "Go up item."
+msgstr ""
+
+msgctxt "#40189"
+msgid "Go down item."
+msgstr ""
+
+msgctxt "#40190"
+msgid "Add item."
+msgstr ""
+
+msgctxt "#40191"
+msgid "Delete item."
+msgstr ""
+
+msgctxt "#40192"
+msgid "Library options"
+msgstr ""
+
+msgctxt "#40193"
+msgid "Settings applying to library."
+msgstr ""
+
+msgctxt "#40194"
+msgid "Notification popup position"
+msgstr ""
+
+msgctxt "#40195"
+msgid "Set notification popup position."
+msgstr ""
+
+msgctxt "#40196"
+msgid "Bottom center"
+msgstr ""
+
+msgctxt "#40197"
+msgid "Bottom right"
+msgstr ""
+
+msgctxt "#40198"
+msgid "Bottom left"
+msgstr ""
+
+msgctxt "#40199"
+msgid "Top center"
+msgstr ""
+
+msgctxt "#40200"
+msgid "Top right"
+msgstr ""
+
+msgctxt "#40201"
+msgid "Top left"
+msgstr ""

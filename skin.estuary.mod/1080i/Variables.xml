@@ -1290,6 +1290,7 @@
         <value condition="Control.HasFocus(671)">$LOCALIZE[40180]</value>
         <value condition="Control.HasFocus(672)">$LOCALIZE[40185]</value>
         <value condition="Control.HasFocus(673)">$LOCALIZE[40186]</value>
+        <value condition="Control.HasFocus(674)">$LOCALIZE[40195]</value>
         <value condition="Control.HasFocus(657) | Control.HasFocus(658) | Control.HasFocus(659) | Control.HasFocus(661) | Control.HasFocus(662)  | Control.HasFocus(669)">$LOCALIZE[10045]</value>
         <value condition="Container(9000).HasFocus(1)">$LOCALIZE[40024]</value>
         <value condition="Container(9000).HasFocus(2)">$LOCALIZE[31130]</value>
@@ -1300,6 +1301,11 @@
         <value condition="Container(9000).HasFocus(7)">$LOCALIZE[40046]</value>
         <value condition="Container(9000).HasFocus(8)">$LOCALIZE[40048]</value>
         <value condition="Container(9000).HasFocus(9)">$LOCALIZE[40182]</value>
+        <value condition="Container(9000).HasFocus(10)">$LOCALIZE[40193]</value>
+        <value condition="Control.HasFocus(301)">$LOCALIZE[40190]</value>
+        <value condition="Control.HasFocus(302)">$LOCALIZE[40191]</value>
+        <value condition="Control.HasFocus(303)">$LOCALIZE[40188]</value>
+        <value condition="Control.HasFocus(304)">$LOCALIZE[40189]</value>
         <value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus]">$LOCALIZE[31130]</value>
     </variable>
     <variable name="DSPManagerHelpTextVar">
@@ -1619,6 +1625,10 @@
     <variable name="Label_SkinSetting_HideBars">
         <value condition="!String.IsEmpty(Skin.String(HideBars.label))">$INFO[Skin.String(HideBars.label)]</value>
         <value>$LOCALIZE[40068]</value>
+    </variable>
+    <variable name="Label_SkinSetting_PopupPosition">
+        <value condition="!String.IsEmpty(Skin.String(PopupPosition.label))">$INFO[Skin.String(PopupPosition.label)]</value>
+        <value>$LOCALIZE[40196]</value>
     </variable>
     <variable name="Label_SkinSetting_Spinner">
         <value condition="Skin.String(SkinHelper.SpinnerTexturePath,None)">$LOCALIZE[15109]</value>

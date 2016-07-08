@@ -250,8 +250,8 @@
         </font>
         <font>
             <name>Font-Rating2</name>
-            <filename>RobotoCondensed-Bold.ttf</filename>
-            <size>34</size>
+            <filename>arial.ttf</filename>
+            <size>32</size>
         </font>
         <font>
             <name>Font-Volume</name>

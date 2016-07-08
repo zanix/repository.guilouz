@@ -530,6 +530,7 @@
         <param name="button2_onclick">true</param>
         <definition>
             <control type="group">
+                <include>Visible_Right_Delayed</include>
                 <visible>$PARAM[visible]</visible>
                 <control type="image">
                     <top>-5</top>
@@ -831,6 +832,7 @@
         <param name="button2_onclick">true</param>
         <definition>
             <control type="group">
+                <include>Visible_Right_Delayed</include>
                 <visible>$PARAM[visible]</visible>
                 <control type="image">
                     <top>5</top>
@@ -950,8 +952,8 @@
                             <left>20</left>
                             <top>18</top>
                             <width>415</width>
-                            <height>305</height>
-                            <aspectratio aligny="top">keep</aspectratio>
+                            <height>235</height>
+                            <aspectratio aligny="top">stretch</aspectratio>
                             <texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
                             <bordertexture>dialogs/back.png</bordertexture>
                             <bordersize>3</bordersize>
@@ -975,8 +977,8 @@
                                 <left>20</left>
                                 <top>18</top>
                                 <width>415</width>
-                                <height>305</height>
-                                <aspectratio aligny="top">keep</aspectratio>
+                                <height>235</height>
+                                <aspectratio aligny="top">stretch</aspectratio>
                                 <texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
                                 <bordertexture>dialogs/back.png</bordertexture>
                                 <bordersize>3</bordersize>
@@ -1066,8 +1068,8 @@
                             <left>22</left>
                             <top>18</top>
                             <width>470</width>
-                            <height>346</height>
-                            <aspectratio aligny="top">keep</aspectratio>
+                            <height>267</height>
+                            <aspectratio aligny="top">stretch</aspectratio>
                             <texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
                             <bordertexture>dialogs/back.png</bordertexture>
                             <bordersize>3</bordersize>
@@ -1091,8 +1093,8 @@
                                 <left>22</left>
                                 <top>18</top>
                                 <width>470</width>
-                                <height>346</height>
-                                <aspectratio aligny="top">keep</aspectratio>
+                                <height>267</height>
+                                <aspectratio aligny="top">stretch</aspectratio>
                                 <texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
                                 <bordertexture>dialogs/back.png</bordertexture>
                                 <bordersize>3</bordersize>
@@ -3796,6 +3798,36 @@
                         </include>
                     </control>
                 </control>
+                <control type="group" id="14000">
+                    <include>Visible_Right_Delayed</include>
+                    <control type="grouplist" id="14001">
+                        <orientation>vertical</orientation>
+                        <include content="ImageWidgetHeader2">
+                            <param name="widget_header" value="LibreELEC" />
+                            <param name="visible" value="String.IsEqual(Container(9000).ListItem.Label,LibreELEC) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)"/>
+                        </include>
+                        <include content="ImageWidget5">
+                            <param name="image_path" value="icons/LibreELEC/LibreELEC-fanart.png"/>
+                            <param name="button_label" value="" />
+                            <param name="button_id" value="14100"/>
+                            <param name="visible" value="String.IsEqual(Container(9000).ListItem.Label,LibreELEC)  + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)"/>
+                            <param name="visible_1" value="False"/>
+                            <param name="visible_2" value="False"/>
+                        </include>
+                        <include content="ImageWidgetHeader2">
+                            <param name="widget_header" value="OpenELEC" />
+                            <param name="visible" value="String.IsEqual(Container(9000).ListItem.Label,OpenELEC) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)"/>
+                        </include>                        
+                        <include content="ImageWidget5">
+                            <param name="image_path" value="icons/LibreELEC/OpenELEC-fanart.png"/>
+                            <param name="button_label" value="" />
+                            <param name="button_id" value="14200"/>
+                            <param name="visible" value="String.IsEqual(Container(9000).ListItem.Label,OpenELEC) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)"/>
+                            <param name="visible_1" value="False"/>
+                            <param name="visible_2" value="False"/>
+                        </include>
+                    </control>
+                </control>
                 <control type="group" id="10000">
                     <visible>String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideoWidget)</visible>
                     <visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
@@ -4567,7 +4599,7 @@
                                 <left>935</left>
                                 <top>22</top>
                                 <height>110</height>
-                                <width>880</width>
+                                <width>881</width>
                                 <onup>20000</onup>
                                 <ondown condition="!String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),SourcesWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget2) + !String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)  + !String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">5100</ondown>
                                 <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget)">8100</ondown>
@@ -5272,6 +5304,36 @@
                             <param name="button_label" value="" />
                             <param name="button_id" value="4100"/>
                             <param name="visible" value="String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget))  + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)"/>
+                            <param name="visible_1" value="False"/>
+                            <param name="visible_2" value="False"/>
+                        </include>
+                    </control>
+                </control>
+                <control type="group" id="14000">
+                    <include>Visible_Right_Delayed</include>
+                    <control type="grouplist" id="14001">
+                        <orientation>vertical</orientation>
+                        <include content="ImageWidgetHeader">
+                            <param name="widget_header" value="LibreELEC" />
+                            <param name="visible" value="String.IsEqual(Container(9000).ListItem.Label,LibreELEC) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)"/>
+                        </include>
+                        <include content="ImageWidget3">
+                            <param name="image_path" value="icons/LibreELEC/LibreELEC-fanart.png"/>
+                            <param name="button_label" value="" />
+                            <param name="button_id" value="14100"/>
+                            <param name="visible" value="String.IsEqual(Container(9000).ListItem.Label,LibreELEC) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)"/>
+                            <param name="visible_1" value="False"/>
+                            <param name="visible_2" value="False"/>
+                        </include>
+                        <include content="ImageWidgetHeader">
+                            <param name="widget_header" value="OpenELEC" />
+                            <param name="visible" value="String.IsEqual(Container(9000).ListItem.Label,OpenELEC) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)"/>
+                        </include>
+                        <include content="ImageWidget3">
+                            <param name="image_path" value="icons/LibreELEC/OpenELEC-fanart.png"/>
+                            <param name="button_label" value="" />
+                            <param name="button_id" value="14200"/>
+                            <param name="visible" value="String.IsEqual(Container(9000).ListItem.Label,OpenELEC) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)"/>
                             <param name="visible_1" value="False"/>
                             <param name="visible_2" value="False"/>
                         </include>

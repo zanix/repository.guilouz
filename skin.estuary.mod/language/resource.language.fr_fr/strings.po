@@ -1293,3 +1293,59 @@ msgstr "Permet de réinitialiser la couleur par défaut de l'arrière-plan."
 msgctxt "#40187"
 msgid "Color selection"
 msgstr "Sélection de la couleur"
+
+msgctxt "#40188"
+msgid "Go up item."
+msgstr "Monter l'élément."
+
+msgctxt "#40189"
+msgid "Go down item."
+msgstr "Descendre l'élément."
+
+msgctxt "#40190"
+msgid "Add item."
+msgstr "Ajouter un élément."
+
+msgctxt "#40191"
+msgid "Delete item."
+msgstr "Supprimer l'élément."
+
+msgctxt "#40192"
+msgid "Library options"
+msgstr "Options de la biblothèque"
+
+msgctxt "#40193"
+msgid "Settings applying to library."
+msgstr "Paramètres s'appliquants à la bibliothèque."
+
+msgctxt "#40194"
+msgid "Notification popup position"
+msgstr "Position de la fenêtre de notification"
+
+msgctxt "#40195"
+msgid "Set notification popup position."
+msgstr "Permet de définir la position de la fenêtre de notification."
+
+msgctxt "#40196"
+msgid "Bottom center"
+msgstr "En bas au centre"
+
+msgctxt "#40197"
+msgid "Bottom right"
+msgstr "En bas à droite"
+
+msgctxt "#40198"
+msgid "Bottom left"
+msgstr "En bas à gauche"
+
+msgctxt "#40199"
+msgid "Top center"
+msgstr "En haut au centre"
+
+msgctxt "#40200"
+msgid "Top right"
+msgstr "En haut à droite"
+
+msgctxt "#40201"
+msgid "Top left"
+msgstr "En haut à gauche"
