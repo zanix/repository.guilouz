@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol>9000</defaultcontrol>
     <backgroundcolor>background</backgroundcolor>
-    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|videos|movie|tvshow|music|musicvideo|livetv|radio|pictures|addons|weather|powermenu)</onunload>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|videos|movie|tvshow|music|musicvideo|livetv|radio|picture|addon|weather|powermenu)</onunload>
     <controls>
         <include>DefaultBackground</include>
         <control type="group">

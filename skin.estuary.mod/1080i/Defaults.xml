@@ -33,7 +33,7 @@
 		<font>font13</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>disabled</disabledcolor>
-		<textoffsetx>7</textoffsetx>
+		<textoffsetx>30</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>no</pulseonselect>
 	</default>

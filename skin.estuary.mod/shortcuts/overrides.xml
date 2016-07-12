@@ -6,6 +6,9 @@
     <icon labelID="radio">DefaultRadioGuide.png</icon>
     
     <!-- Additionnal Widgets -->
+    <widget label="40211" icon="DefaultPoster.png">PersonalWidgetPoster</widget>
+    <widget label="40212" icon="DefaultThumb.png">PersonalWidgetThumb</widget>
+    <widget label="40213" icon="DefaultIcon.png">PersonalWidgetIcon</widget>
     <widget label="40008" icon="Weather.png">WeatherWidget</widget>
     <widget label="40009" icon="DefaultMovies.png">MoviesWidget</widget>
     <widget label="40010" icon="DefaultTVShows.png">TVShowsWidget</widget>
@@ -13,10 +16,10 @@
     <widget label="40011" icon="DefaultMusicSongs.png">MusicWidget</widget>
     <widget label="40012" icon="DefaultAddon.png">AddonsWidget</widget>
     <widget label="40013" icon="DefaultNetwork.png">SourcesWidget</widget>
+    <widget label="40016" icon="DefaultPicture.png">PictureWidget</widget>
     <widget label="40014" icon="DefaultTVGuide.png">LiveTVWidget</widget>
     <widget label="40168" icon="DefaultTVGuide.png">LiveTVWidget2</widget>
     <widget label="40015" icon="DefaultRadioGuide.png">RadioWidget</widget>
-    <widget label="40016" icon="DefaultPicture.png">PictureWidget</widget>
     
     <!-- Default Widgets -->
     <widgetdefault labelID="videos">SourcesWidget</widgetdefault>
@@ -26,8 +29,8 @@
     <widgetdefault labelID="music">MusicWidget</widgetdefault>
     <widgetdefault labelID="radio">RadioWidget</widgetdefault>
     <widgetdefault labelID="livetv">LiveTVWidget</widgetdefault>
-    <widgetdefault labelID="pictures">PictureWidget</widgetdefault>
-    <widgetdefault labelID="addons">AddonsWidget</widgetdefault>
+    <widgetdefault labelID="picture">PictureWidget</widgetdefault>
+    <widgetdefault labelID="addon">AddonsWidget</widgetdefault>
     <widgetdefault labelID="weather">WeatherWidget</widgetdefault>
     
     <!-- Default Backgrounds -->
@@ -38,8 +41,8 @@
     <backgrounddefault labelID="music">special://skin/extras/home-images/music.jpg</backgrounddefault>
     <backgrounddefault labelID="radio">special://skin/extras/home-images/radio.jpg</backgrounddefault>
     <backgrounddefault labelID="livetv">special://skin/extras/home-images/livetv.jpg</backgrounddefault>
-    <backgrounddefault labelID="pictures">special://skin/extras/home-images/pictures.jpg</backgrounddefault>
-    <backgrounddefault labelID="addons">special://skin/extras/home-images/addons.jpg</backgrounddefault>
+    <backgrounddefault labelID="picture">special://skin/extras/home-images/pictures.jpg</backgrounddefault>
+    <backgrounddefault labelID="addon">special://skin/extras/home-images/addons.jpg</backgrounddefault>
     <backgrounddefault labelID="weather">special://skin/extras/home-images/weather.jpg</backgrounddefault>
     
     <!-- Widget Settings -->

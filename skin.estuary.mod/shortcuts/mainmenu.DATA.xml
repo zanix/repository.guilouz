@@ -52,14 +52,14 @@
     <shortcut>
         <label>1</label>
         <label2>Common Shortcut</label2>
-        <defaultID>pictures</defaultID>
+        <defaultID>picture</defaultID>
         <icon>special://skin/extras/icons/pictures.png</icon>
         <action>ActivateWindow(Pictures,return)</action>
     </shortcut>
     <shortcut>
         <label>24001</label>
         <label2>Common Shortcut</label2>
-        <defaultID>addons</defaultID>
+        <defaultID>addon</defaultID>
         <icon>special://skin/extras/icons/addons.png</icon>
         <action>ActivateWindow(1100)</action>
     </shortcut>

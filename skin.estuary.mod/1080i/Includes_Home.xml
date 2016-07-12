@@ -294,7 +294,7 @@
                             <top>0</top>
                             <width>240</width>
                             <height>340</height>
-                            <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+                            <texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
                             <bordertexture border="20">overlays/shadow.png</bordertexture>
                             <bordersize>20</bordersize>
                         </control>
@@ -319,7 +319,7 @@
                             <top>0</top>
                             <width>240</width>
                             <height>340</height>
-                            <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+                            <texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
                             <bordertexture border="20">overlays/shadow.png</bordertexture>
                             <bordersize>20</bordersize>
                         </control>
@@ -406,7 +406,7 @@
                             <top>0</top>
                             <width>240</width>
                             <height>340</height>
-                            <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+                            <texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
                             <bordertexture border="20">overlays/shadow.png</bordertexture>
                             <bordersize>20</bordersize>
                         </control>
@@ -431,7 +431,233 @@
                             <top>0</top>
                             <width>240</width>
                             <height>340</height>
-                            <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+                            <texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
+                            <bordertexture border="20">overlays/shadow.png</bordertexture>
+                            <bordersize>20</bordersize>
+                        </control>
+                        <control type="group">
+                            <left>20</left>
+                            <top>20</top>
+                            <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                            <visible>Control.HasFocus($PARAM[list_id])</visible>
+                            <control type="image">
+                                <left>0</left>
+                                <top>279</top>
+                                <bottom>20</bottom>
+                                <visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+                                <width>200</width>
+                                <height>21</height>
+                                <texture>colors/black.png</texture>
+                                <animation effect="fade" start="0" end="70" time="50">Focus</animation>
+                            </control>
+                            <control type="progress">
+                                <left>20</left>
+                                <top>283</top>
+                                <width>160</width>
+                                <height>13</height>
+                                <info>ListItem.PercentPlayed</info>
+                                <visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+                            </control>
+                            <control type="image">
+                                <left>-3</left>
+                                <top>-4</top>
+                                <width>207</width>
+                                <height>307</height>
+                                <texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
+                            </control>
+                        </control>
+                    </control>
+                </focusedlayout>
+                <content target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+            </control>
+        </control>
+    </include>
+    <include name="WidgetListMovies3">
+        <control type="group">
+            <description>Poster Widget including header and arrows</description>
+            <height>404</height>
+            <left>0</left>
+            <top>0</top>
+            <visible>$PARAM[visible]</visible>
+            <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+            <include content="LeftRightArrows">
+                <param name="left_posx" value="465" />
+                <param name="right_posx" value="1824" />
+                <param name="posy" value="215" />
+                <param name="list_id" value="$PARAM[list_id]" />
+            </include>
+            <control type="label">
+                <left>500</left>
+                <top>20</top>
+                <width>1315</width>
+                <height>40</height>
+                <scroll>yes</scroll>
+                <label>$PARAM[widget_header]</label>
+                <shadowcolor>text_shadow</shadowcolor>
+            </control>
+            <control type="panel" id="$PARAM[list_id]">
+                <left>484</left>
+                <top>60</top>
+                <width>1385</width>
+                <height>400</height>
+                <scrolltime tween="cubic" easing="out">500</scrolltime>
+                <orientation>horizontal</orientation>
+                <onleft>9000</onleft>
+                <onright>noop</onright>
+                <onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+                <onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+                <onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+                <onup>$PARAM[onup_id]</onup>
+                <ondown>$PARAM[ondown_id]</ondown>
+                <onback>SetFocus(9000)</onback>
+                <preloaditems>1</preloaditems>
+                <itemlayout width="277" height="400">
+                    <control type="group">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>240</width>
+                            <height>340</height>
+                            <texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
+                            <bordertexture border="20">overlays/shadow.png</bordertexture>
+                            <bordersize>20</bordersize>
+                        </control>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="277" height="400">
+                    <control type="button">
+                        <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+                        <texturenofocus>-</texturenofocus>
+                        <texturefocus>-</texturefocus>
+                    </control>
+                    <control type="group">
+                        <depth>DepthContentPopout</depth>
+                        <animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+                            <effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
+                        </animation>
+                        <animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+                            <effect type="zoom" start="107" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+                        </animation>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>240</width>
+                            <height>340</height>
+                            <texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
+                            <bordertexture border="20">overlays/shadow.png</bordertexture>
+                            <bordersize>20</bordersize>
+                        </control>
+                        <control type="group">
+                            <left>20</left>
+                            <top>20</top>
+                            <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                            <visible>Control.HasFocus($PARAM[list_id])</visible>
+                            <control type="image">
+                                <left>0</left>
+                                <top>279</top>
+                                <bottom>20</bottom>
+                                <visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+                                <width>200</width>
+                                <height>21</height>
+                                <texture>colors/black.png</texture>
+                                <animation effect="fade" start="0" end="70" time="50">Focus</animation>
+                            </control>
+                            <control type="progress">
+                                <left>20</left>
+                                <top>283</top>
+                                <width>160</width>
+                                <height>13</height>
+                                <info>ListItem.PercentPlayed</info>
+                                <visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+                            </control>
+                            <control type="image">
+                                <left>-3</left>
+                                <top>-4</top>
+                                <width>207</width>
+                                <height>307</height>
+                                <texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
+                            </control>
+                        </control>
+                    </control>
+                </focusedlayout>
+                <content target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+            </control>
+        </control>
+    </include>
+    <include name="WidgetListMovies4">
+        <control type="group">
+            <description>Poster Widget including header and arrows</description>
+            <height>404</height>
+            <left>0</left>
+            <top>0</top>
+            <visible>$PARAM[visible]</visible>
+            <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+            <include content="LeftRightArrows">
+                <param name="left_posx" value="190" />
+                <param name="right_posx" value="1792" />
+                <param name="posy" value="215" />
+                <param name="list_id" value="$PARAM[list_id]" />
+            </include>
+            <control type="label">
+                <left>226</left>
+                <top>20</top>
+                <width>1620</width>
+                <height>40</height>
+                <scroll>yes</scroll>
+                <label>$PARAM[widget_header]</label>
+                <shadowcolor>text_shadow</shadowcolor>
+            </control>
+            <control type="panel" id="$PARAM[list_id]">
+                <left>210</left>
+                <top>60</top>
+                <width>1620</width>
+                <height>400</height>
+                <scrolltime tween="cubic" easing="out">500</scrolltime>
+                <orientation>horizontal</orientation>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+                <onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+                <onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+                <onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+                <onup>$PARAM[onup_id]</onup>
+                <ondown>$PARAM[ondown_id]</ondown>
+                <onback>SetFocus(9000)</onback>
+                <preloaditems>1</preloaditems>
+                <itemlayout width="270" height="400">
+                    <control type="group">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>240</width>
+                            <height>340</height>
+                            <texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
+                            <bordertexture border="20">overlays/shadow.png</bordertexture>
+                            <bordersize>20</bordersize>
+                        </control>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="270" height="400">
+                    <control type="button">
+                        <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+                        <texturenofocus>-</texturenofocus>
+                        <texturefocus>-</texturefocus>
+                    </control>
+                    <control type="group">
+                        <depth>DepthContentPopout</depth>
+                        <animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+                            <effect type="zoom" start="100" end="107" time="200" tween="sine" easing="inout" center="110,130" />
+                        </animation>
+                        <animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+                            <effect type="zoom" start="107" end="100" time="200" tween="sine" easing="inout" center="110,130" />
+                        </animation>
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <width>240</width>
+                            <height>340</height>
+                            <texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
                             <bordertexture border="20">overlays/shadow.png</bordertexture>
                             <bordersize>20</bordersize>
                         </control>
@@ -1031,6 +1257,240 @@
                 <height>405</height>
                 <left>0</left>
                 <top>0</top>
+                <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+                <include content="LeftRightArrows">
+                    <param name="left_posx" value="194" />
+                    <param name="right_posx" value="1794" />
+                    <param name="posy" value="195" />
+                    <param name="list_id" value="$PARAM[list_id]" />
+                </include>
+                <control type="label">
+                    <left>230</left>
+                    <top>15</top>
+                    <width>1315</width>
+                    <height>40</height>
+                    <scroll>yes</scroll>
+                    <label>$PARAM[widget_header]</label>
+                    <shadowcolor>text_shadow</shadowcolor>
+                </control>
+                <control type="panel" id="$PARAM[list_id]">
+                    <left>210</left>
+                    <top>60</top>
+                    <width>1620</width>
+                    <height>400</height>
+                    <scrolltime tween="cubic" easing="out">500</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <onleft>noop</onleft>
+                    <onright>noop</onright>
+                    <onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+                    <onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+                    <onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+                    <onup>$PARAM[onup_id]</onup>
+                    <ondown>$PARAM[ondown_id]</ondown>
+                    <onback>SetFocus(9000)</onback>
+                    <preloaditems>1</preloaditems>
+                    <itemlayout width="540" height="400">
+                        <control type="image">
+                            <left>22</left>
+                            <top>18</top>
+                            <width>470</width>
+                            <height>267</height>
+                            <aspectratio aligny="top">stretch</aspectratio>
+                            <texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+                            <bordertexture>dialogs/back.png</bordertexture>
+                            <bordersize>3</bordersize>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="540" height="400">
+                        <control type="button">
+                            <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+                            <texturenofocus>-</texturenofocus>
+                            <texturefocus>-</texturefocus>
+                        </control>
+                        <control type="group">
+                            <depth>DepthContentPopout</depth>
+                            <animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+                                <effect type="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="233,90" />
+                            </animation>
+                            <animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+                                <effect type="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="233,90" />
+                            </animation>
+                            <control type="image">
+                                <left>22</left>
+                                <top>18</top>
+                                <width>470</width>
+                                <height>267</height>
+                                <aspectratio aligny="top">stretch</aspectratio>
+                                <texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+                                <bordertexture>dialogs/back.png</bordertexture>
+                                <bordersize>3</bordersize>
+                            </control>
+                            <control type="group">
+                                <left>20</left>
+                                <top>20</top>
+                                <visible>!Integer.IsEqual(ListItem.PercentPlayed,0) + Control.HasFocus($PARAM[list_id])</visible>
+                                <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                                <control type="image">
+                                    <left>5</left>
+                                    <top>240</top>
+                                    <width>465</width>
+                                    <height>21</height>
+                                    <texture colordiffuse="99FFFFFF">colors/black.png</texture>
+                                </control>
+                                <control type="progress">
+                                    <left>30</left>
+                                    <top>244</top>
+                                    <width>414</width>
+                                    <height>13</height>
+                                    <info>ListItem.PercentPlayed</info>
+                                </control>
+                            </control>
+                            <control type="image">
+                                <left>22</left>
+                                <top>18</top>
+                                <width>470</width>
+                                <height>267</height>
+                                <texture background="true" border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
+                                <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                                <visible>Control.HasFocus($PARAM[list_id])</visible>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                    <content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+                </control>
+            </control>
+        </definition>
+    </include>
+    <include name="WidgetListEpisodes3">
+        <param name="sortby"></param>
+        <param name="sortorder">ascending</param>
+        <param name="textcolor">white</param>
+        <definition>
+            <control type="group">
+                <description>Episode Widget including header and arrows</description>
+                <height>405</height>
+                <left>0</left>
+                <top>0</top>
+                <visible>$PARAM[visible]</visible>
+                <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+                <include content="LeftRightArrows">
+                    <param name="left_posx" value="460" />
+                    <param name="right_posx" value="1835" />
+                    <param name="posy" value="181" />
+                    <param name="list_id" value="$PARAM[list_id]" />
+                </include>
+                <control type="label">
+                    <left>500</left>
+                    <top>15</top>
+                    <width>1315</width>
+                    <height>40</height>
+                    <scroll>yes</scroll>
+                    <label>$PARAM[widget_header]</label>
+                    <shadowcolor>text_shadow</shadowcolor>
+                </control>
+                <control type="panel" id="$PARAM[list_id]">
+                    <left>480</left>
+                    <top>60</top>
+                    <width>1362</width>
+                    <height>400</height>
+                    <scrolltime tween="cubic" easing="out">500</scrolltime>
+                    <orientation>horizontal</orientation>
+                    <onleft>9000</onleft>
+                    <onright>noop</onright>
+                    <onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+                    <onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+                    <onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+                    <onup>$PARAM[onup_id]</onup>
+                    <ondown>$PARAM[ondown_id]</ondown>
+                    <onback>SetFocus(9000)</onback>
+                    <preloaditems>1</preloaditems>
+                    <itemlayout width="454" height="400">
+                        <control type="image">
+                            <left>20</left>
+                            <top>18</top>
+                            <width>415</width>
+                            <height>235</height>
+                            <aspectratio aligny="top">stretch</aspectratio>
+                            <texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+                            <bordertexture>dialogs/back.png</bordertexture>
+                            <bordersize>3</bordersize>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="454" height="400">
+                        <control type="button">
+                            <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+                            <texturenofocus>-</texturenofocus>
+                            <texturefocus>-</texturefocus>
+                        </control>
+                        <control type="group">
+                            <depth>DepthContentPopout</depth>
+                            <animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+                                <effect type="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="233,90" />
+                            </animation>
+                            <animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+                                <effect type="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="233,90" />
+                            </animation>
+                            <control type="image">
+                                <left>20</left>
+                                <top>18</top>
+                                <width>415</width>
+                                <height>235</height>
+                                <aspectratio aligny="top">stretch</aspectratio>
+                                <texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+                                <bordertexture>dialogs/back.png</bordertexture>
+                                <bordersize>3</bordersize>
+                            </control>
+                            <control type="group">
+                                <left>20</left>
+                                <top>20</top>
+                                <visible>!Integer.IsEqual(ListItem.PercentPlayed,0) + Control.HasFocus($PARAM[list_id])</visible>
+                                <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                                <control type="image">
+                                    <left>0</left>
+                                    <top>211</top>
+                                    <width>410</width>
+                                    <height>21</height>
+                                    <texture colordiffuse="99FFFFFF">colors/black.png</texture>
+                                </control>
+                                <control type="progress">
+                                    <left>30</left>
+                                    <top>215</top>
+                                    <width>356</width>
+                                    <height>13</height>
+                                    <info>ListItem.PercentPlayed</info>
+                                </control>
+                            </control>
+                            <control type="image">
+                                <left>20</left>
+                                <top>18</top>
+                                <width>416</width>
+                                <height>236</height>
+                                <texture background="true" border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
+                                <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+                                <visible>Control.HasFocus($PARAM[list_id])</visible>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                    <content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+                </control>
+            </control>
+        </definition>
+    </include>
+    <include name="WidgetListEpisodes4">
+        <param name="sortby"></param>
+        <param name="sortorder">ascending</param>
+        <param name="textcolor">white</param>
+        <definition>
+            <control type="group">
+                <description>Episode Widget including header and arrows</description>
+                <height>405</height>
+                <left>0</left>
+                <top>0</top>
+                <visible>$PARAM[visible]</visible>
                 <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
                 <include content="LeftRightArrows">
                     <param name="left_posx" value="194" />
@@ -3144,6 +3604,185 @@
                 <top>78</top>
                 <left>20</left>
                 <include>OpenClose_Right</include>
+                <control type="group" id="18000">
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster)</visible>
+                    <visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+                    <include>Visible_Right_Delayed</include>
+                    <control type="button" id="18888">
+                        <width>1</width>
+                        <height>1</height>
+                        <label>-</label>
+                        <onfocus>SetFocus(18001)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(18200)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(18100)</onfocus>
+                        <onclick>noop</onclick>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                    </control>
+                    <control type="grouplist" id="18001">
+                        <orientation>vertical</orientation>
+                        <height>810</height>
+                        <posy>0</posy>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
+                        <itemgap>-2</itemgap>
+                        <include content="WidgetListMovies4">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter1)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter1)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter1)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))"/>
+                            <param name="list_id" value="18100"/>
+                            <param name="onup_id" value="5900"/>
+                            <param name="ondown_id" value="18200"/>
+                        </include> 
+                        <include content="WidgetListMovies4">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter2)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter2)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter2)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))"/>
+                            <param name="list_id" value="18200"/>
+                            <param name="onup_id" value="18100"/>
+                            <param name="ondown_id" value="18300"/>
+                        </include>
+                        <include content="WidgetListMovies4">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter3)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter3)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter3)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))"/>
+                            <param name="list_id" value="18300"/>
+                            <param name="onup_id" value="18200"/>
+                            <param name="ondown_id" value="18400"/>
+                        </include>
+                        <include content="WidgetListMovies4">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter4)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter4)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter4)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))"/>
+                            <param name="list_id" value="18400"/>
+                            <param name="onup_id" value="18300"/>
+                            <param name="ondown_id" value="9000"/>
+                        </include>                 
+                    </control>
+                </control>
+                <control type="group" id="19000">
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)</visible>
+                    <visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+                    <include>Visible_Right_Delayed</include>
+                    <control type="button" id="19888">
+                        <width>1</width>
+                        <height>1</height>
+                        <label>-</label>
+                        <onfocus>SetFocus(19001)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(19200).NumItems,0)">SetFocus(19200)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(19100).NumItems,0)">SetFocus(19100)</onfocus>
+                        <onclick>noop</onclick>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                    </control>
+                    <control type="grouplist" id="19001">
+                        <orientation>vertical</orientation>
+                        <height>810</height>
+                        <posy>0</posy>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
+                        <include content="WidgetListEpisodes4">
+                            <param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb1)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb1)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb1)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))"/>
+                            <param name="list_id" value="19100"/>
+                            <param name="onup_id" value="5900"/>
+                            <param name="ondown_id" value="19200"/>
+                        </include>
+                        <include content="WidgetListEpisodes4">
+                            <param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb2)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb2)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb2)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))"/>
+                            <param name="list_id" value="19200"/>
+                            <param name="onup_id" value="19100"/>
+                            <param name="ondown_id" value="19300"/>
+                        </include>
+                        <include content="WidgetListEpisodes4">
+                            <param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb3)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb3)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb3)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))"/>
+                            <param name="list_id" value="19300"/>
+                            <param name="onup_id" value="19200"/>
+                            <param name="ondown_id" value="19400"/>
+                        </include>
+                        <include content="WidgetListEpisodes4">
+                            <param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb4)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb4)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb4)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))"/>
+                            <param name="list_id" value="19400"/>
+                            <param name="onup_id" value="19300"/>
+                            <param name="ondown_id" value="9000"/>
+                        </include>
+                    </control>
+                </control>
+                 <control type="group" id="21000">
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon)</visible>
+                    <visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+                    <include>Visible_Right_Delayed</include>
+                    <control type="button" id="21888">
+                        <width>1</width>
+                        <height>1</height>
+                        <label>-</label>
+                        <onfocus>SetFocus(21001)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(21200).NumItems,0)">SetFocus(21200)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(21100).NumItems,0)">SetFocus(21100)</onfocus>
+                        <onclick>noop</onclick>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                    </control>
+                    <control type="grouplist" id="21001">
+                        <orientation>vertical</orientation>
+                        <height>810</height>
+                        <posy>0</posy>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
+                        <include content="WidgetListSquare3">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon1)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon1)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon1)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))"/>
+                            <param name="list_id" value="21100"/>
+                            <param name="onup_id" value="5900"/>
+                            <param name="ondown_id" value="21200"/>
+                        </include>
+                        <include content="WidgetListSquare3">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon2)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon2)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon2)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))"/>
+                            <param name="list_id" value="21200"/>
+                            <param name="onup_id" value="21100"/>
+                            <param name="ondown_id" value="21300"/>
+                        </include>
+                        <include content="WidgetListSquare3">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon3)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon3)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon3)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))"/>
+                            <param name="list_id" value="21300"/>
+                            <param name="onup_id" value="21200"/>
+                            <param name="ondown_id" value="21400"/>
+                        </include>
+                        <include content="WidgetListSquare3">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon4)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon4)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon4)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))"/>
+                            <param name="list_id" value="21400"/>
+                            <param name="onup_id" value="21300"/>
+                            <param name="ondown_id" value="9000"/>
+                        </include>
+                    </control>
+                </control>
                 <control type="group" id="17000">
                     <visible>String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)</visible>
                     <visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
@@ -4226,6 +4865,18 @@
                         <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget2)">16200</onup>
                         <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)">13200</onup>
                         <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget)">8100</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))">18100</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))">18300</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))">18400</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))">19100</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))">19200</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))">19300</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))">19400</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))">21100</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))">21200</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))">21300</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))">21400</onup>
                         <onright>9000</onright>
                         <onleft>700</onleft>
                         <orientation>horizontal</orientation>
@@ -4318,6 +4969,18 @@
                         <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget2)">16200</onup>
                         <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)">13200</onup>
                         <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget)">8100</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))">18100</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))">18300</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))">18400</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))">19100</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))">19200</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))">19300</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))">19400</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))">21100</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))">21200</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))">21300</onup>
+                        <onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))">21400</onup>
                         <onright>5900</onright>
                         <onleft>700</onleft>
                         <ondown>9000</ondown>
@@ -4601,7 +5264,7 @@
                                 <height>110</height>
                                 <width>881</width>
                                 <onup>20000</onup>
-                                <ondown condition="!String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),SourcesWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget2) + !String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)  + !String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">5100</ondown>
+                                <ondown condition="!String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),SourcesWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget2) + !String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)  + !String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget) + !String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) ">5100</ondown>
                                 <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget)">8100</ondown>
                                 <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget)">15001</ondown>
                                 <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),SourcesWidget)">11100</ondown>
@@ -4612,6 +5275,18 @@
                                 <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)">7100</ondown>
                                 <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideoWidget)">10100</ondown>
                                 <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">17100</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))">18100</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))">18300</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))">18400</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))">19100</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))">19200</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))">19300</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))">19400</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))">21100</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))">21200</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))">21300</ondown>
+                                <ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))">21400</ondown>
                                 <itemlayout width="110" height="120">
                                     <control type="image">
                                         <width>130</width>
@@ -4653,6 +5328,185 @@
                                 </content>
                             </control>
                         </control>
+                    </control>
+                </control>
+                <control type="group" id="18000">
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster)</visible>
+                    <visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+                    <include>Visible_Right_Delayed</include>
+                    <control type="button" id="18888">
+                        <width>1</width>
+                        <height>1</height>
+                        <label>-</label>
+                        <onfocus>SetFocus(18001)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(18200)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(18100)</onfocus>
+                        <onclick>noop</onclick>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                    </control>
+                    <control type="grouplist" id="18001">
+                        <orientation>vertical</orientation>
+                        <height>810</height>
+                        <posy>115</posy>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
+                        <itemgap>-2</itemgap>
+                        <include content="WidgetListMovies3">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter1)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter1)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter1)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))"/>
+                            <param name="list_id" value="18100"/>
+                            <param name="onup_id" value="5900"/>
+                            <param name="ondown_id" value="18200"/>
+                        </include> 
+                        <include content="WidgetListMovies3">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter2)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter2)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter2)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))"/>
+                            <param name="list_id" value="18200"/>
+                            <param name="onup_id" value="18100"/>
+                            <param name="ondown_id" value="18300"/>
+                        </include>
+                        <include content="WidgetListMovies3">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter3)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter3)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter3)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))"/>
+                            <param name="list_id" value="18300"/>
+                            <param name="onup_id" value="18200"/>
+                            <param name="ondown_id" value="18400"/>
+                        </include>
+                        <include content="WidgetListMovies3">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter4)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter4)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter4)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))"/>
+                            <param name="list_id" value="18400"/>
+                            <param name="onup_id" value="18300"/>
+                            <param name="ondown_id" value="20001"/>
+                        </include>                 
+                    </control>
+                </control>
+                <control type="group" id="19000">
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)</visible>
+                    <visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+                    <include>Visible_Right_Delayed</include>
+                    <control type="button" id="19888">
+                        <width>1</width>
+                        <height>1</height>
+                        <label>-</label>
+                        <onfocus>SetFocus(19001)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(19200).NumItems,0)">SetFocus(19200)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(19100).NumItems,0)">SetFocus(19100)</onfocus>
+                        <onclick>noop</onclick>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                    </control>
+                    <control type="grouplist" id="19001">
+                        <orientation>vertical</orientation>
+                        <height>810</height>
+                        <posy>115</posy>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
+                        <include content="WidgetListEpisodes3">
+                            <param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb1)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb1)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb1)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))"/>
+                            <param name="list_id" value="19100"/>
+                            <param name="onup_id" value="5900"/>
+                            <param name="ondown_id" value="19200"/>
+                        </include>
+                        <include content="WidgetListEpisodes3">
+                            <param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb2)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb2)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb2)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))"/>
+                            <param name="list_id" value="19200"/>
+                            <param name="onup_id" value="19100"/>
+                            <param name="ondown_id" value="19300"/>
+                        </include>
+                        <include content="WidgetListEpisodes3">
+                            <param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb3)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb3)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb3)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))"/>
+                            <param name="list_id" value="19300"/>
+                            <param name="onup_id" value="19200"/>
+                            <param name="ondown_id" value="19400"/>
+                        </include>
+                        <include content="WidgetListEpisodes3">
+                            <param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb4)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb4)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb4)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))"/>
+                            <param name="list_id" value="19400"/>
+                            <param name="onup_id" value="19300"/>
+                            <param name="ondown_id" value="20001"/>
+                        </include>
+                    </control>
+                </control>
+                 <control type="group" id="21000">
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon)</visible>
+                    <visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+                    <include>Visible_Right_Delayed</include>
+                    <control type="button" id="21888">
+                        <width>1</width>
+                        <height>1</height>
+                        <label>-</label>
+                        <onfocus>SetFocus(21001)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(21200).NumItems,0)">SetFocus(21200)</onfocus>
+                        <onfocus condition="Integer.IsGreater(Container(21100).NumItems,0)">SetFocus(21100)</onfocus>
+                        <onclick>noop</onclick>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                    </control>
+                    <control type="grouplist" id="21001">
+                        <orientation>vertical</orientation>
+                        <height>810</height>
+                        <posy>115</posy>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
+                        <include content="WidgetListSquare">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon1)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon1)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon1)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))"/>
+                            <param name="list_id" value="21100"/>
+                            <param name="onup_id" value="5900"/>
+                            <param name="ondown_id" value="21200"/>
+                        </include>
+                        <include content="WidgetListSquare">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon2)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon2)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon2)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))"/>
+                            <param name="list_id" value="21200"/>
+                            <param name="onup_id" value="21100"/>
+                            <param name="ondown_id" value="21300"/>
+                        </include>
+                        <include content="WidgetListSquare">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon3)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon3)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon3)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))"/>
+                            <param name="list_id" value="21300"/>
+                            <param name="onup_id" value="21200"/>
+                            <param name="ondown_id" value="21400"/>
+                        </include>
+                        <include content="WidgetListSquare">
+                            <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon4)]"/>
+                            <param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon4)]"/>
+                            <param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon4)]"/>
+                            <param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))"/>
+                            <param name="list_id" value="21400"/>
+                            <param name="onup_id" value="21300"/>
+                            <param name="ondown_id" value="20001"/>
+                        </include>
                     </control>
                 </control>
                 <control type="group" id="17000">
@@ -5720,7 +6574,7 @@
                     <top>94</top>
                     <width>424</width>
                     <height>110</height>
-                    <onup>14200</onup>
+                    <onup>803</onup>
                     <ondown>SetFocus(9000,0)</ondown>
                     <ondown>9000</ondown>
                     <onright>2000</onright>
@@ -5766,6 +6620,18 @@
                         <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget)">12200</onright>
                         <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget2)">16200</onright>
                         <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)">13200</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))">18100</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))">18300</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))">18400</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))">19100</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))">19200</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))">19300</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))">19400</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))">21100</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))">21200</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))">21300</onright>
+                        <onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))">21400</onright>
                         <onup>900</onup>
                         <ondown>700</ondown>
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -5873,7 +6739,7 @@
                     <top>878</top>
                     <onup>SetFocus(9000,99)</onup>
                     <onup>9000</onup>
-                    <ondown>14200</ondown>
+                    <ondown>900</ondown>
                     <include content="BottomMainMenuItem">
                         <param name="control_id" value="803" />
                         <param name="onclick" value="ActivateWindow(favourites)" />

@@ -1482,3 +1482,55 @@ msgstr ""
 msgctxt "#40201"
 msgid "Top left"
 msgstr ""
+
+msgctxt "#40202"
+msgid "Video process information"
+msgstr ""
+
+msgctxt "#40203"
+msgid "Hardware decoding"
+msgstr ""
+
+ msgctxt "#40204"
+ msgid "Inactive"
+ msgstr ""
+ 
+msgctxt "#40205"
+msgid "Decoder"
+msgstr ""
+
+msgctxt "#40206"
+msgid "Audio process information"
+msgstr ""
+
+msgctxt "#40207"
+msgid "Memory used"
+msgstr ""
+
+msgctxt "#40208"
+msgid "Channels"
+msgstr ""
+
+msgctxt "#40209"
+msgid "Deinterlace"
+msgstr ""
+
+msgctxt "#40210"
+msgid "Processing"
+msgstr ""
+
+msgctxt "#40211"
+msgid "Custom widget (posters)"
+msgstr ""
+
+msgctxt "#40212"
+msgid "Custom widget (thumbs)"
+msgstr ""
+
+msgctxt "#40213"
+msgid "Custom widget (icons)"
+msgstr ""
+
+msgctxt "#40214"
+msgid "Select default widget"
+msgstr ""

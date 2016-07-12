@@ -254,12 +254,133 @@
                     <control type="button" id="312">
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
-                        <label>$ADDON[script.skinshortcuts 32044]</label>
+                        <label>40214</label>
                         <label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
-                        <visible>!String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget)</visible>
+                        <visible>!String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetIcon)</visible>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                         <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
                     </control>
+                    <control type="button" id="1475">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 1</label>
+                        <label2>$VAR[PersonalPosterWidget1Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalposter1)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetPoster)</visible>
+                    </control>
+                    <control type="button" id="1476">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 2</label>
+                        <label2>$VAR[PersonalPosterWidget2Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalposter2)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetPoster)</visible>
+                    </control>
+                    <control type="button" id="1477">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 3</label>
+                        <label2>$VAR[PersonalPosterWidget3Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalposter3)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetPoster)</visible>
+                    </control>
+                    <control type="button" id="1478">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 4</label>
+                        <label2>$VAR[PersonalPosterWidget4Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalposter4)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetPoster)</visible>
+                    </control>
+                    <control type="button" id="1479">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 1</label>
+                        <label2>$VAR[PersonalThumbWidget1Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalthumb1)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)</visible>
+                    </control>
+                    <control type="button" id="1480">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 2</label>
+                        <label2>$VAR[PersonalThumbWidget2Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalthumb2)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)</visible>
+                    </control>
+                    <control type="button" id="1481">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 3</label>
+                        <label2>$VAR[PersonalThumbWidget3Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalthumb3)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)</visible>
+                    </control>
+                    <control type="button" id="1482">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 4</label>
+                        <label2>$VAR[PersonalThumbWidget4Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalthumb4)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)</visible>
+                    </control>
+                    <control type="button" id="1483">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 1</label>
+                        <label2>$VAR[PersonalIconWidget1Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalicon1)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetIcon)</visible>
+                    </control>
+                    <control type="button" id="1484">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 2</label>
+                        <label2>$VAR[PersonalIconWidget2Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalicon2)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetIcon)</visible>
+                    </control>
+                    <control type="button" id="1485">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 3</label>
+                        <label2>$VAR[PersonalIconWidget3Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalicon3)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetIcon)</visible>
+                    </control>
+                    <control type="button" id="1486">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>$ADDON[script.skinshortcuts 32044] 4</label>
+                        <label2>$VAR[PersonalIconWidget4Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, personalicon4)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetIcon)</visible>
+                    </control>
+                    
                     <control type="button" id="1452">
                         <width>1256</width>
                         <include>DefaultSettingButton</include>

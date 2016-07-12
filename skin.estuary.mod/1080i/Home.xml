@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|videos|movie|tvshow|musicvideo|music|livetv|radio|pictures|addons|weather|powermenu)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|videos|movie|tvshow|musicvideo|music|livetv|radio|picture|addon|weather|powermenu)</onload>
     <onload condition="Skin.HasSetting(Skin_EnableAnimatedPosters)">Skin.SetBool(SkinHelper.EnableAnimatedPosters)</onload>
     <onload>Skin.SetBool(SkinHelper.EnablePVRThumbs)</onload>
     <onload>Skin.SetBool(SkinHelper.EnableAddonsLookups)</onload>

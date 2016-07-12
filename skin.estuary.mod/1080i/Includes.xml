@@ -455,7 +455,6 @@
                     <align>$PARAM[align]</align>
                     <aligny>center</aligny>
                     <textcolor>grey</textcolor>
-                    <scroll>yes</scroll>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
             </itemlayout>
