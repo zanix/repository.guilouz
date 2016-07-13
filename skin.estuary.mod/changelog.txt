@@ -1,3 +1,6 @@
+[B]1.3.6[/B]
+• Fix Sources widget
+
 [B]1.3.5[/B]
 • Add new fully customizable widgets : posters, thumbs and icons
 • Add player processing info on video osd

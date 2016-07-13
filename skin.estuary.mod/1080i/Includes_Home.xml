@@ -2210,7 +2210,7 @@
                             <left>62</left>
                             <width>220</width>
                             <height>180</height>
-                            <texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+                            <texture fallback="DefaultPlaylist.png">$PARAM[icon]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="image">
@@ -2263,7 +2263,7 @@
                                 <left>62</left>
                                 <width>220</width>
                                 <height>180</height>
-                                <texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+                                <texture fallback="DefaultPlaylist.png">$PARAM[icon]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
                             <control type="image">
@@ -2349,7 +2349,7 @@
                             <left>62</left>
                             <width>220</width>
                             <height>180</height>
-                            <texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+                            <texture fallback="DefaultPlaylist.png">$PARAM[icon]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="image">
@@ -2402,7 +2402,7 @@
                                 <left>62</left>
                                 <width>220</width>
                                 <height>180</height>
-                                <texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+                                <texture fallback="DefaultPlaylist.png">$PARAM[icon]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
                             <control type="image">
@@ -4148,13 +4148,12 @@
                             <param name="ondown_id" value="11200"/>
                         </include>
                         <include content="WidgetListText2">
-                            <param name="content_path" value="$VAR[SourcesWidget2ContentVar]"/>
+                            <param name="content_path" value="$VAR[SourcesWidget3ContentVar]"/>
                             <param name="widget_header" value="$VAR[SourcesWidget3LabelVar]"/>
                             <param name="widget_target" value="$VAR[SourcesWidget3TargetVar]"/>
                             <param name="list_id" value="11200"/>
                             <param name="onup_id" value="11300"/>
                             <param name="ondown_id" value="9000"/>
-                            <param name="icon" value="DefaultPlaylist.png"/>
                         </include>
                         <include content="ImageWidget5">
                             <param name="image_path" value="special://skin/extras/home-images/livetv.jpg"/>
@@ -5874,13 +5873,12 @@
                             <param name="ondown_id" value="11200"/>
                         </include>
                         <include content="WidgetListText">
-                            <param name="content_path" value="$VAR[SourcesWidget2ContentVar]"/>
+                            <param name="content_path" value="$VAR[SourcesWidget3ContentVar]"/>
                             <param name="widget_header" value="$VAR[SourcesWidget3LabelVar]"/>
                             <param name="widget_target" value="$VAR[SourcesWidget3TargetVar]"/>
                             <param name="list_id" value="11200"/>
                             <param name="onup_id" value="11300"/>
                             <param name="ondown_id" value="20001"/>
-                            <param name="icon" value="DefaultPlaylist.png"/>
                         </include>
                         <include content="ImageWidget">
                             <param name="image_path" value="special://skin/extras/home-images/livetv.jpg"/>
