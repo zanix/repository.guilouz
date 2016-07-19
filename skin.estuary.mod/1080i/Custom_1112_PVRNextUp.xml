@@ -6,7 +6,7 @@
 	<visible>!Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml)</visible>
 	<controls>
 		<control type="group">
-			<animation effect="fade" end="100" start="0" time="200" condition="!Window.IsVisible(videoosd) + Window.IsVisible(fullscreenvideo) + Integer.IsEqual(Player.TimeRemaining(hh),00) + Integer.IsEqual(Player.TimeRemaining(mm),00) + Integer.IsLessOrEqual(Player.TimeRemaining(ss),30)">Conditional</animation>
+			<visible>!Window.IsVisible(videoosd) + Window.IsVisible(fullscreenvideo) + Integer.IsEqual(Player.TimeRemaining(hh),00) + Integer.IsEqual(Player.TimeRemaining(mm),00) + Integer.IsLessOrEqual(Player.TimeRemaining(ss),30)</visible>
 			<right>64</right>
 			<bottom>90</bottom>
 			<width>378</width>

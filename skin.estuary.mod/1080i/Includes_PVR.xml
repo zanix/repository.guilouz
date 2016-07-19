@@ -360,8 +360,8 @@
             <top>20</top>
             <width>150</width>
             <height>100</height>
-            <aspectratio>keep</aspectratio>
-            <texture fallback="DefaultTVShowsSquare.png">$INFO[Listitem.Art(thumb)]</texture>
+            <aspectratio align="center" aligny="center">keep</aspectratio>
+            <texture fallback="DefaultTVShowsSquare.png">$INFO[ListItem.icon]</texture>
             <fadetime>200</fadetime>
         </control>
         <control type="label">
