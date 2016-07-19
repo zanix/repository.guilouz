@@ -6572,7 +6572,8 @@
                     <top>94</top>
                     <width>424</width>
                     <height>110</height>
-                    <onup>803</onup>
+                    <onup condition="!Player.HasMedia">700</onup>
+                    <onup condition="Player.HasMedia">14200</onup>
                     <ondown>SetFocus(9000,0)</ondown>
                     <ondown>9000</ondown>
                     <onright>2000</onright>
@@ -6737,7 +6738,8 @@
                     <top>878</top>
                     <onup>SetFocus(9000,99)</onup>
                     <onup>9000</onup>
-                    <ondown>900</ondown>
+                    <ondown condition="!Player.HasMedia">900</ondown>
+                    <ondown condition="Player.HasMedia">14200</ondown>
                     <include content="BottomMainMenuItem">
                         <param name="control_id" value="803" />
                         <param name="onclick" value="ActivateWindow(favourites)" />

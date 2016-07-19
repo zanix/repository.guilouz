@@ -106,6 +106,7 @@
                             <height>66</height>
                             <texture>colors/black.png</texture>
                             <animation effect="fade" start="0" end="70" time="50">Focus</animation>
+                            <visible>!Skin.HasSetting(hide_posterinfo)</visible>
                         </control>
                         <control type="textbox">
                             <left>15</left>
@@ -117,6 +118,7 @@
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
                             <autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
+                            <visible>!Skin.HasSetting(hide_posterinfo)</visible>
                         </control>
                     </control>
                     <control type="image">

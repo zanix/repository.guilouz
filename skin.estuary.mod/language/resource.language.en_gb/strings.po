@@ -1534,3 +1534,23 @@ msgstr ""
 msgctxt "#40214"
 msgid "Select default widget"
 msgstr ""
+
+msgctxt "#40215"
+msgid "Hide posters info"
+msgstr ""
+
+msgctxt "#40216"
+msgid "Simple wall"
+msgstr ""
+
+msgctxt "#40217"
+msgid "To be continued ..."
+msgstr ""
+
+msgctxt "#40218"
+msgid "Enable Next Up popup for Live TV"
+msgstr ""
+
+msgctxt "#40219"
+msgid "Enable Next Up popup notification for Live TV."
+msgstr ""

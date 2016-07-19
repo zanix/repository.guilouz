@@ -90,11 +90,13 @@
                             <texture>overlays/back.png</texture>
                             <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
                             <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
+                            <visible>!Skin.HasSetting(hide_posterinfo)</visible>
                         </control>
                         <control type="group">
                             <bottom>15</bottom>
                             <animation effect="fade" start="0" end="100" time="200" delay="250">Focus</animation>
                             <animation effect="fade" start="100" end="0" time="50">UnFocus</animation>
+                            <visible>!Skin.HasSetting(hide_posterinfo)</visible>
                             <control type="group">
                                 <bottom>35</bottom>
                                 <left>80</left>

@@ -1401,3 +1401,23 @@ msgstr "Widget personnalisé (icônes)"
 msgctxt "#40214"
 msgid "Select default widget"
 msgstr "Définir le widget par défaut"
+
+msgctxt "#40215"
+msgid "Hide posters info"
+msgstr "Masquer les informations des posters"
+
+msgctxt "#40216"
+msgid "Simple wall"
+msgstr "Mur simple"
+
+msgctxt "#40217"
+msgid "To be continued ..."
+msgstr "A suivre ..."
+
+msgctxt "#40218"
+msgid "Enable Next Up popup for Live TV"
+msgstr "Activer les notifications pour les programmes TV"
+
+msgctxt "#40219"
+msgid "Enable Next Up popup notification for Live TV."
+msgstr "Permet d'activer la fenêtre de notification du programme suivant pour les chaînes TV."

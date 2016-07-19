@@ -570,6 +570,13 @@
                         <selected>Skin.HasSetting(enable_clearartnextup)</selected>
                         <onclick>Skin.ToggleSetting(enable_clearartnextup)</onclick>
                     </control>
+                    <control type="radiobutton" id="675">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>40218</label>
+                        <selected>!Skin.HasSetting(disable_PVRNextUp)</selected>
+                        <onclick>Skin.ToggleSetting(disable_PVRNextUp)</onclick>
+                    </control>
                     <control type="image" id="14">
                         <description>separator image</description>
                         <height>3</height>
@@ -579,7 +586,7 @@
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_playerclearart)|Skin.Reset(clearart_position)|Skin.Reset(enable_clearartnextup))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_playerclearart)|Skin.Reset(clearart_position)|Skin.Reset(enable_clearartnextup)|Skin.Reset(disable_PVRNextUp))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="620">
