@@ -86,7 +86,7 @@
                                 <height>100%</height>
                                 <width>100%</width>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture>$INFO[ListItem.Art(fanart)]</texture>
+                                <texture fallback="DefaultVideoFanart.png">$INFO[ListItem.Art(fanart)]</texture>
                             </control>
                             <control type="image">
                                 <centerleft>50%</centerleft>
@@ -132,7 +132,7 @@
                                 <height>100%</height>
                                 <width>100%</width>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture>$INFO[ListItem.Art(fanart)]</texture>
+                                <texture fallback="DefaultVideoFanart.png">$INFO[ListItem.Art(fanart)]</texture>
                             </control>
                             <control type="image">
                                 <centerleft>50%</centerleft>
