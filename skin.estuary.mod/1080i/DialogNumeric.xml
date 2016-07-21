@@ -45,6 +45,7 @@
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
+				<textwidth>203</textwidth>
 				<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texturefocus>
 				<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 				<label>$LOCALIZE[20181]</label>
@@ -61,6 +62,7 @@
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
+				<textwidth>203</textwidth>
 				<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texturefocus>
 				<texturenofocus colordiffuse="71FFFFFF" border="40">buttons/button-alt-nofo.png</texturenofocus>
 				<label>$LOCALIZE[20177]</label>

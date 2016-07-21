@@ -2,6 +2,7 @@
 • Fix PVR icon
 • Fix next up popup for PVR
 • Fix animated posters on some views
+• Fix numeric button
 • Replace years by artists for albums
 
 [B]1.3.7[/B]
