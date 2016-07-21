@@ -2,7 +2,6 @@
 <window>
     <defaultcontrol>-</defaultcontrol>
     <backgroundcolor>background</backgroundcolor>
-    <onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
     <controls>
     	<control type="image">
             <texture colordiffuse="$VAR[BackgroundColorVar]" fallback="special://skin/extras/backgrounds/default.jpg">$VAR[GlobalFanartVar]</texture>

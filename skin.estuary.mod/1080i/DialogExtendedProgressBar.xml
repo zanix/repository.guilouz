@@ -30,6 +30,7 @@
 					<width>100</width>
 					<height>100</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">dialogs/volume/progress/p$INFO[Control.GetLabel(32)].png</texture>
+					<animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
 					<left>-4</left>
