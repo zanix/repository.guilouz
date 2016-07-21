@@ -669,12 +669,12 @@ msgstr "Zeige Künstler Clearlogos"
 # empty strings "40028"
 
 msgctxt "#40029"
-msgid "Enable Artist SlideShow addon for background"
-msgstr "Aktiviere Künstler SlideShow Addon für Hintegrund"
+msgid "Enable extrafanarts for background"
+msgstr "Aktiviere extrafanarts für Hintegrund"
 
 msgctxt "#40030"
-msgid "Enable Artist SlideShow addon for thumb"
-msgstr "Aktiviere Künstler SlieShow Addon für Thumbs"
+msgid "Enable extrafanarts for thumb"
+msgstr "Aktiviere extrafanarts für Thumbs"
 
 msgctxt "#40031"
 msgid "Animate background"
@@ -1115,12 +1115,12 @@ msgid "Set background opacity on all over skin."
 msgstr "Setze die Transparenz für den Hintergrund im gesamten Skin."
 
 msgctxt "#40143"
-msgid "Show slideshow of artist fanarts on music visualisation screen. [B]Artist SlideShow[/B] addon is needed."
-msgstr "Zeige eine Diashow der Künstlerfanart im Musikvisualisierungsbildschirm. [B]Artist SlideShow[/B] Addon wird benötigt."
+msgid "Show slideshow of artist fanarts on music visualisation screen."
+msgstr "Zeige eine Diashow der Künstlerfanart im Musikvisualisierungsbildschirm."
 
 msgctxt "#40144"
-msgid "Show slideshow of artist fanarts in thumbnail on music visualisation screen. [B]Artist SlideShow[/B] addon is needed."
-msgstr "Zeige Diashow der Künstlerfanart in Miniaturansicht des Musikvisualisierungsbildschirm. [B]Artist SlideShow[/B] Addon wird benötigt."
+msgid "Show slideshow of artist fanarts in thumbnail on music visualisation screen."
+msgstr "Zeige Diashow der Künstlerfanart in Miniaturansicht des Musikvisualisierungsbildschirm."
 
 msgctxt "#40145"
 msgid "Animate background or slideshow (if enabled) on music visualisation screen."

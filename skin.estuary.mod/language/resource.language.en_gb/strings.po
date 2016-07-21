@@ -802,11 +802,11 @@ msgstr ""
 # empty strings "40028"
 
 msgctxt "#40029"
-msgid "Enable Artist SlideShow addon for background"
+msgid "Enable extrafanarts for background"
 msgstr ""
 
 msgctxt "#40030"
-msgid "Enable Artist SlideShow addon for thumb"
+msgid "Enable extrafanarts for thumb"
 msgstr ""
 
 msgctxt "#40031"
@@ -1248,11 +1248,11 @@ msgid "Set background opacity on all over skin."
 msgstr ""
 
 msgctxt "#40143"
-msgid "Show slideshow of artist fanarts on music visualisation screen. [B]Artist SlideShow[/B] addon is needed."
+msgid "Show slideshow of artist fanarts on music visualisation screen."
 msgstr ""
 
 msgctxt "#40144"
-msgid "Show slideshow of artist fanarts in thumbnail on music visualisation screen. [B]Artist SlideShow[/B] addon is needed."
+msgid "Show slideshow of artist fanarts in thumbnail on music visualisation screen."
 msgstr ""
 
 msgctxt "#40145"
