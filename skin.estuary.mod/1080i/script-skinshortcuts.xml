@@ -241,7 +241,28 @@
                         <label>$ADDON[script.skinshortcuts 32045]</label>
                         <label2>$VAR[Label_SkinSetting_Backgrounds]</label2>
                         <visible>!String.IsEqual(Window.Property(groupname),powermenu)</visible>
+                        <visible>!String.StartsWith(Window.Property(groupname),x11)</visible>
                     </control>
+                    <include content="Shortcuts_SetHub">
+                        <param name="hubid" value="1114" />
+                        <param name="buttonid1" value="1487" />
+                    </include>
+                    <include content="Shortcuts_SetHub">
+                        <param name="hubid" value="1115" />
+                        <param name="buttonid1" value="1488" />
+                    </include>
+                    <include content="Shortcuts_SetHub">
+                        <param name="hubid" value="1116" />
+                        <param name="buttonid1" value="1489" />
+                    </include>
+                    <include content="Shortcuts_SetHub">
+                        <param name="hubid" value="1117" />
+                        <param name="buttonid1" value="1490" />
+                    </include>
+                    <include content="Shortcuts_SetHub">
+                        <param name="hubid" value="1118" />
+                        <param name="buttonid1" value="1491" />
+                    </include>          
                     <control type="button" id="405">
                         <description>Edit submenu</description>
                         <width>1256</width>
@@ -254,11 +275,18 @@
                     <control type="button" id="312">
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
-                        <label>40214</label>
-                        <label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
+                        <label>$VAR[Label_SkinSetting_WidgetLabel]</label>
+                        <label2>$VAR[Label_SkinSetting_Widget]</label2>
                         <visible>!String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetIcon)</visible>
-                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu) | String.StartsWith(Window.Property(groupname),x11)</visible>
                         <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
+                    </control>
+                    <control type="button" id="1492" description="Hub Image">
+                        <width>100%</width>
+                        <label>40221</label>
+                        <label2>$VAR[Label_SkinSetting_HubImage]</label2>
+                        <include>DefaultSettingButton</include>
+                        <visible>String.StartsWith(Window.Property(groupname),x11)</visible>
                     </control>
                     <control type="button" id="1475">
                         <width>1256</width>

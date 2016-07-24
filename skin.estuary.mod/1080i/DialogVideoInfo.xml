@@ -491,6 +491,12 @@
  						<param name="visible" value="!String.IsEmpty(ListItem.Status)" />
  						<param name="textcolor" value="$VAR[SkinColorVar]" />
  					</include>
+ 					<include content="InfoDialogMetadata">
+						<param name="control_id" value="160" />
+						<param name="label" value="$LOCALIZE[568] : [COLOR white]$INFO[ListItem.LastPlayed][/COLOR]" />
+						<param name="visible" value="!String.IsEmpty(ListItem.LastPlayed)" />
+						<param name="textcolor" value="$VAR[SkinColorVar]" />
+				</include>
 				</control>
 				<control type="image">
 					<left>17</left>

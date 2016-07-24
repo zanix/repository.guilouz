@@ -48,6 +48,7 @@
     <!-- Widget Settings -->
     <propertySettings toggle="HideBannerWidget" buttonID="3129" templateonly="True" />
     <propertySettings property="PictureWidget" buttonID="3128" title="$LOCALIZE[40023]" showNone="True" imageBrowse="True" />
+    <propertySettings property="hubImage" buttonID="1492" title="$LOCALIZE[40221]" showNone="True" imageBrowse="True" />
     
     <!-- Background -->
     <background label="smartshortcuts">||BROWSE||plugin://script.skin.helper.service/?action=backgrounds</background>
@@ -59,6 +60,13 @@
     
     <!-- Groupings -->
     <groupings>
+        <node label="Hubs">
+            <shortcut label="$LOCALIZE[40223]" type="Hub" icon="special://skin/extras/icons/movie.png">ActivateWindow(1114)</shortcut>
+            <shortcut label="$LOCALIZE[40224]" type="Hub" icon="special://skin/extras/icons/tv.png">ActivateWindow(1115)</shortcut>
+            <shortcut label="$LOCALIZE[40225]" type="Hub" icon="DefaultAddonLookAndFeel.png">ActivateWindow(1116)</shortcut>
+            <shortcut label="$LOCALIZE[40228]" type="Hub" icon="DefaultAddonLookAndFeel.png">ActivateWindow(1117)</shortcut>
+            <shortcut label="$LOCALIZE[40229]" type="Hub" icon="DefaultAddonLookAndFeel.png">ActivateWindow(1118)</shortcut>
+        </node>
         <node label="32029">
             <content>common</content>
             <shortcut label="$ADDON[script.skin.helper.service 32062]" type="32010" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>

@@ -603,6 +603,7 @@
  				<aligny>center</aligny>
  				<font>font12</font>
  				<textcolor>grey</textcolor>
+ 				<scroll>yes</scroll>
  			</control>
  			<control type="label">
  				<description>Memory</description>

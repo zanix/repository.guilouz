@@ -1421,3 +1421,43 @@ msgstr "Activer les notifications pour les programmes TV"
 msgctxt "#40219"
 msgid "Enable Next Up popup notification for Live TV."
 msgstr "Permet d'activer la fenêtre de notification du programme suivant pour les chaînes TV."
+
+msgctxt "#40220"
+msgid "Random tv shows"
+msgstr "Séries TV aléatoires"
+
+msgctxt "#40221"
+msgid "Set Hub image"
+msgstr "Définir l'image du Hub"
+
+msgctxt "#40222"
+msgid "Set Hub items"
+msgstr "Définir les éléments du Hub"
+
+msgctxt "#40223"
+msgid "Movies Hub"
+msgstr "Hub Films"
+
+msgctxt "#40224"
+msgid "TV Shows Hub"
+msgstr "Hub Séries TV"
+
+msgctxt "#40225"
+msgid "Custom Hub 1"
+msgstr "Hub personnalisé 1"
+
+msgctxt "#40226"
+msgid "Random episodes"
+msgstr "Episodes aléatoires"
+
+msgctxt "#40227"
+msgid "Select hub widget"
+msgstr "Définir le widget du Hub"
+
+msgctxt "#40228"
+msgid "Custom Hub 2"
+msgstr "Hub personnalisé 2"
+
+msgctxt "#40229"
+msgid "Custom Hub 3"
+msgstr "Hub personnalisé 3"

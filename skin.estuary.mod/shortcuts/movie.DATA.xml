@@ -13,7 +13,7 @@
         <action>ActivateWindow(Videos,videodb://movies/sets/,return)</action>
     </shortcut>
     <shortcut>
-        <label>562</label>
+        <label>652</label>
         <label2>Common Shortcut</label2>
         <icon>special://skin/extras/icons/years.png</icon>
         <action>ActivateWindow(Videos,videodb://movies/years/,return)</action>

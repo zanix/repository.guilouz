@@ -1554,3 +1554,43 @@ msgstr ""
 msgctxt "#40219"
 msgid "Enable Next Up popup notification for Live TV."
 msgstr ""
+
+msgctxt "#40220"
+msgid "Random tv shows"
+msgstr ""
+
+msgctxt "#40221"
+msgid "Set Hub image"
+msgstr ""
+
+msgctxt "#40222"
+msgid "Set Hub items"
+msgstr ""
+
+msgctxt "#40223"
+msgid "Movies Hub"
+msgstr ""
+
+msgctxt "#40224"
+msgid "TV Shows Hub"
+msgstr ""
+
+msgctxt "#40225"
+msgid "Custom Hub 1"
+msgstr ""
+
+msgctxt "#40226"
+msgid "Random episodes"
+msgstr ""
+
+msgctxt "#40227"
+msgid "Select hub widget"
+msgstr ""
+
+msgctxt "#40228"
+msgid "Custom Hub 2"
+msgstr ""
+
+msgctxt "#40229"
+msgid "Custom Hub 3"
+msgstr ""
