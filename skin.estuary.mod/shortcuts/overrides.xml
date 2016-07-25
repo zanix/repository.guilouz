@@ -9,6 +9,7 @@
     <widget label="40211" icon="DefaultPoster.png">PersonalWidgetPoster</widget>
     <widget label="40212" icon="DefaultThumb.png">PersonalWidgetThumb</widget>
     <widget label="40213" icon="DefaultIcon.png">PersonalWidgetIcon</widget>
+    <widget label="40230" icon="DefaultHub.png">HubWidget</widget>
     <widget label="40008" icon="Weather.png">WeatherWidget</widget>
     <widget label="40009" icon="DefaultMovies.png">MoviesWidget</widget>
     <widget label="40010" icon="DefaultTVShows.png">TVShowsWidget</widget>
@@ -154,11 +155,11 @@
         </node>
     </groupings>
     <widget-groupings>
-        <shortcut label="40085" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
-        <shortcut label="32107" type="32021" icon="DefaultAddon.png" condition="!System.HasAddon(script.skin.helper.service)">::INSTALL::script.skin.helper.service</shortcut>
         <node label="40084">
             <content>widgets</content>
         </node>
+        <shortcut label="40085" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
+        <shortcut label="32107" type="32021" icon="DefaultAddon.png" condition="!System.HasAddon(script.skin.helper.service)">::INSTALL::script.skin.helper.service</shortcut>
         <node label="32030">
             <content>video</content>
             <node label="32040">

@@ -36,6 +36,20 @@
             <imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Window(Home).Property(SkinHelper.Player.Music.ExtraFanArt)]</imagepath>
             <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
             <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
+        </control>
+        <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>1920</width>
+            <height>1080</height>
+            <aspectratio>scale</aspectratio>
+            <fadetime>400</fadetime>
+            <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+            <texture background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Player.Art(fanart)]</texture>
+            <visible>String.IsEmpty(Window(Home).Property(SkinHelper.Player.Music.ExtraFanArt)) + Skin.HasSetting(enable_artistslideshow)</visible>
+            <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
+            <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
         </control>      
         <control type="visualisation">
             <include>FullScreenDimensions</include>
@@ -167,7 +181,27 @@
                 <bordersize>4</bordersize>
                 <visible>!String.IsEmpty(Player.Art(fanart))</visible>
                 <visible>!Window.IsActive(VisualisationPresetList)</visible>
-                <visible>![Skin.HasSetting(enable_artistslideshowthumb) + Skin.HasSetting(enable_artistslideshow)]</visible>
+                <visible>!Skin.HasSetting(enable_artistslideshowthumb)</visible>
+                <animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
+                <animation effect="fade" end="0" time="200">Hidden</animation>
+                <animation effect="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" condition="!Window.IsVisible(script-cu-lrclyrics-main.xml)">Conditional</animation>
+                <animation effect="slide" start="320" end="0" time="400" delay="300" tween="cubic" easing="out" condition="!Window.IsVisible(script-cu-lrclyrics-main.xml)">Conditional</animation>
+                <animation effect="fade" start="100" end="0" time="300" tween="sine" delay="300" easing="out" condition="Window.IsVisible(script-cu-lrclyrics-main.xml)">Conditional</animation>
+                <animation effect="slide" start="0" end="320" time="400" delay="300" tween="cubic" easing="out" condition="Window.IsVisible(script-cu-lrclyrics-main.xml)">Conditional</animation>
+            </control>
+            <control type="image">
+                <include>OpenClose_Right</include>
+                <left>1090</left>
+                <top>202</top>
+                <width>798</width>
+                <height>474</height>
+                <aspectratio>scale</aspectratio>
+                <texture background="true" border="2">$INFO[Player.Art(fanart)]</texture>
+                <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+                <bordersize>4</bordersize>
+                <visible>!String.IsEmpty(Player.Art(fanart))</visible>
+                <visible>!Window.IsActive(VisualisationPresetList)</visible>
+                <visible>Skin.HasSetting(enable_artistslideshowthumb) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Music.ExtraFanArt))</visible>
                 <animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
                 <animation effect="fade" end="0" time="200">Hidden</animation>
                 <animation effect="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" condition="!Window.IsVisible(script-cu-lrclyrics-main.xml)">Conditional</animation>
@@ -182,9 +216,9 @@
                 <width>806</width>
                 <height>482</height>
                 <texture background="true" colordiffuse="border_alpha">colors/black.png</texture>
-                <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + !String.IsEmpty(Player.Art(fanart))</visible>
+                <visible>!String.IsEmpty(Player.Art(fanart))</visible>
                 <visible>!Window.IsActive(VisualisationPresetList)</visible>
-                <visible>Skin.HasSetting(enable_artistslideshowthumb) + Skin.HasSetting(enable_artistslideshow)</visible>
+                <visible>Skin.HasSetting(enable_artistslideshowthumb)</visible>
                 <animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
                 <animation effect="fade" end="0" time="200">Hidden</animation>
                 <animation effect="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" condition="!Window.IsVisible(script-cu-lrclyrics-main.xml)">Conditional</animation>
@@ -203,9 +237,9 @@
                 <randomize>true</randomize>
                 <fadetime>600</fadetime>
                 <imagepath background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.ExtraFanArt)]</imagepath>
-                <visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + !String.IsEmpty(Player.Art(fanart))</visible>
+                <visible>!String.IsEmpty(Player.Art(fanart))</visible>
                 <visible>!Window.IsActive(VisualisationPresetList)</visible>
-                <visible>Skin.HasSetting(enable_artistslideshowthumb) + Skin.HasSetting(enable_artistslideshow)</visible>
+                <visible>Skin.HasSetting(enable_artistslideshowthumb)</visible>
                 <animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
                 <animation effect="fade" end="0" time="200">Hidden</animation>
                 <animation effect="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" condition="!Window.IsVisible(script-cu-lrclyrics-main.xml)">Conditional</animation>

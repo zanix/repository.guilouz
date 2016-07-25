@@ -24,13 +24,12 @@
             <control type="grouplist">
                 <left>85</left>
                 <description>Left side of top bar</description>
-                <width>900</width>
+                <width>780</width>
                 <height>100</height>
                 <orientation>horizontal</orientation>
                 <usecontrolcoords>true</usecontrolcoords>
                 <control type="label">
-                    <label>[COLOR white]$INFO[VideoPlayer.Title][/COLOR]$INFO[VideoPlayer.Year, [COLOR white]([/COLOR],[COLOR white])[/COLOR]]</label>
-                    <textcolor>$VAR[SkinColorVar]</textcolor>
+                    <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
                     <include>BreadcrumbsLabel</include>
                 </control>
             </control>

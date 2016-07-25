@@ -25,6 +25,10 @@
  		<value condition="!String.IsEmpty(Container(9501).ListItem.Property(widgetTarget))">$INFO[Container(9501).ListItem.Property(widgetTarget)]</value>
  		<value>video</value>
  	</variable>
+ 	<variable name="HubWidget1Label2Var">
+        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.hubwidget))">$INFO[Container(211).ListItem.Property(widgetName.hubwidget)]</value>
+        <value>$LOCALIZE[40037]</value>
+    </variable>
     <variable name="PersonalPosterWidget1Label2Var">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personalposter1))">$INFO[Container(211).ListItem.Property(widgetName.personalposter1)]</value>
         <value>$LOCALIZE[40037]</value>
@@ -444,6 +448,7 @@
     <variable name="WidgetLabelVar">
         <!-- Hubs -->
         <value condition="!String.IsEmpty(Container(9500).ListItem.Label)">$INFO[Container(9500).ListItem.Label]</value>
+        <value condition="Control.HasFocus(22100)">$INFO[Container(22100).ListItem.Label]</value>
         <!-- Customs -->
         <value condition="Control.HasFocus(18100)">$INFO[Container(18100).ListItem.Label]</value>
         <value condition="Control.HasFocus(18200)">$INFO[Container(18200).ListItem.Label]</value>
@@ -489,9 +494,6 @@
         <value condition="Control.HasFocus(12200)">$INFO[Container(12200).ListItem.Season,$LOCALIZE[20373] ,] $INFO[Container(12000).ListItem.Episode,$LOCALIZE[20359] , : ]$INFO[Container(12200).ListItem.Title]</value>
     </variable>
     <variable name="WidgetLabel2Var">
-        <!-- Hubs -->
-        <value condition="Integer.IsEqual(Container(9500).ListItem.PercentPlayed,0)">[COLOR $VAR[SkinColorVar]]$INFO[Container(9500).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(9500).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(9500).ListItem.Year][/COLOR]</value>
-        <value condition="!Integer.IsEqual(Container(9500).ListItem.PercentPlayed,0)">[COLOR $VAR[SkinColorVar]]$INFO[Container(9500).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(9500).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(9500).ListItem.Year]$INFO[Container(9500).ListItem.PercentPlayed,[COLOR white] • [/COLOR]$LOCALIZE[40169] ,%][/COLOR]</value>
         <!-- Customs -->
         <value condition="Control.HasFocus(18100) + Integer.IsEqual(Container(18100).ListItem.PercentPlayed,0)">[COLOR $VAR[SkinColorVar]]$INFO[Container(18100).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(18100).ListItem.TVShowTitle,,[COLOR white] • [/COLOR]]$INFO[Container(18100).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(18100).ListItem.Year][/COLOR]</value>
         <value condition="Control.HasFocus(18100) + !Integer.IsEqual(Container(18100).ListItem.PercentPlayed,0)">[COLOR $VAR[SkinColorVar]]$INFO[Container(18100).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(18100).ListItem.TVShowTitle,,[COLOR white] • [/COLOR]]$INFO[Container(18100).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(18100).ListItem.Year]$INFO[Container(18100).ListItem.PercentPlayed,[COLOR white] • [/COLOR]$LOCALIZE[40169] ,%][/COLOR]</value>
@@ -586,6 +588,11 @@
         <value condition="Control.HasFocus(7600)">[COLOR $VAR[SkinColorVar]]$INFO[Container(7600).ListItem.Artist][/COLOR] • [COLOR $VAR[SkinColorVar]]$INFO[Container(7600).ListItem.Year][/COLOR][COLOR $VAR[SkinColorVar]]$INFO[Container(7600).ListItem.PlayCount,[COLOR white] • [/COLOR]$LOCALIZE[567] : ,][/COLOR]</value>
         <!-- Live TV -->
         <value condition="Control.HasFocus(12200)">[COLOR= $VAR[SkinColorVar]]$INFO[Container(12200).ListItem.ChannelName][/COLOR]</value>
+        <!-- Hubs -->
+        <value condition="Control.HasFocus(22100) + Integer.IsEqual(Container(22100).ListItem.PercentPlayed,0)">[COLOR $VAR[SkinColorVar]]$INFO[Container(22100).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(22100).ListItem.TVShowTitle,,[COLOR white] • [/COLOR]]$INFO[Container(22100).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(22100).ListItem.Year][/COLOR]</value>
+        <value condition="Control.HasFocus(22100) + !Integer.IsEqual(Container(22100).ListItem.PercentPlayed,0)">[COLOR $VAR[SkinColorVar]]$INFO[Container(22100).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(22100).ListItem.TVShowTitle,,[COLOR white] • [/COLOR]]$INFO[Container(22100).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(22100).ListItem.Year]$INFO[Container(22100).ListItem.PercentPlayed,[COLOR white] • [/COLOR]$LOCALIZE[40169] ,%][/COLOR]</value>
+        <value condition="Integer.IsEqual(Container(9500).ListItem.PercentPlayed,0)">[COLOR $VAR[SkinColorVar]]$INFO[Container(9500).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(9500).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(9500).ListItem.Year][/COLOR]</value>
+        <value condition="!Integer.IsEqual(Container(9500).ListItem.PercentPlayed,0)">[COLOR $VAR[SkinColorVar]]$INFO[Container(9500).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(9500).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(9500).ListItem.Year]$INFO[Container(9500).ListItem.PercentPlayed,[COLOR white] • [/COLOR]$LOCALIZE[40169] ,%][/COLOR]</value>
     </variable>
     <variable name="WidgetFlagIconResolutionVar">
         <!-- Hubs -->
@@ -594,6 +601,11 @@
         <value condition="String.Contains(Container(9500).ListItem.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
         <value condition="Integer.IsGreater(Container(9500).ListItem.VideoResolution,1080)">flags/videoresolution/4K.png</value>
         <value condition="!String.IsEmpty(Container(9500).ListItem.VideoResolution)">$INFO[Container(9500).ListItem.VideoResolution,flags/videoresolution/,.png]</value>
+        <value condition="Control.HasFocus(22100) + Container(22100).ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
+        <value condition="Control.HasFocus(22100) + String.Contains(Container(22100).ListItem.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
+        <value condition="Control.HasFocus(22100) + String.Contains(Container(22100).ListItem.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
+        <value condition="Control.HasFocus(22100) + Integer.IsGreater(Container(22100).ListItem.VideoResolution,1080)">flags/videoresolution/4K.png</value>
+        <value condition="Control.HasFocus(22100)">$INFO[Container(22100).ListItem.VideoResolution,flags/videoresolution/,.png]</value>
         <!-- Customs -->
         <value condition="Control.HasFocus(18100) + Container(18100).ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
         <value condition="Control.HasFocus(18100) + String.Contains(Container(18100).ListItem.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
@@ -779,6 +791,7 @@
     <variable name="WidgetFlagIconVideoCodecVar">
         <!-- Hubs -->
         <value condition="!String.IsEmpty(Container(9500).ListItem.VideoCodec)">$INFO[Container(9500).ListItem.VideoCodec,flags/videocodec/,.png]</value>
+        <value condition="Control.HasFocus(22100)">$INFO[Container(22100).ListItem.VideoCodec,flags/videocodec/,.png]</value>
         <!-- Customs -->
         <value condition="Control.HasFocus(18100)">$INFO[Container(18100).ListItem.VideoCodec,flags/videocodec/,.png]</value>
         <value condition="Control.HasFocus(18200)">$INFO[Container(18200).ListItem.VideoCodec,flags/videocodec/,.png]</value>
@@ -823,6 +836,7 @@
     <variable name="WidgetFlagIconAspectVar">
         <!-- Hubs -->
         <value condition="!String.IsEmpty(Container(9500).ListItem.VideoAspect)">$INFO[Container(9500).ListItem.VideoAspect,flags/aspectratio/,.png]</value>
+        <value condition="Control.HasFocus(22100)">$INFO[Container(22100).ListItem.VideoAspect,flags/aspectratio/,.png]</value>
         <!-- Customs -->
         <value condition="Control.HasFocus(18100)">$INFO[Container(18100).ListItem.VideoAspect,flags/aspectratio/,.png]</value>
         <value condition="Control.HasFocus(18200)">$INFO[Container(18200).ListItem.VideoAspect,flags/aspectratio/,.png]</value>
@@ -874,6 +888,14 @@
         <value condition="String.Contains(Container(9500).ListItem.Filenameandpath,dtsx)">flags/audiocodec/dts-x.png</value>
         <value condition="String.Contains(Container(9500).ListItem.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
         <value condition="!String.Isempty(Container(9500).ListItem.AudioCodec)">$INFO[Container(9500).ListItem.AudioCodec,flags/audiocodec/,.png]</value>
+        <value condition="Control.HasFocus(22100) + String.Contains(Container(22100).ListItem.Filenameandpath,atmos)">flags/audiocodec/atmos.png</value>
+        <value condition="Control.HasFocus(22100) + String.Contains(Container(22100).ListItem.Filenameandpath,Atmos)">flags/audiocodec/atmos.png</value>
+        <value condition="Control.HasFocus(22100) + String.Contains(Container(22100).ListItem.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
+        <value condition="Control.HasFocus(22100) + String.Contains(Container(22100).ListItem.Filenameandpath,dts-x)">flags/audiocodec/dts-x.png</value>
+        <value condition="Control.HasFocus(22100) + String.Contains(Container(22100).ListItem.Filenameandpath,DTS-X)">flags/audiocodec/dts-x.png</value>
+        <value condition="Control.HasFocus(22100) + String.Contains(Container(22100).ListItem.Filenameandpath,dtsx)">flags/audiocodec/dts-x.png</value>
+        <value condition="Control.HasFocus(22100) + String.Contains(Container(22100).ListItem.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
+        <value condition="Control.HasFocus(22100)">$INFO[Container(22100).ListItem.AudioCodec,flags/audiocodec/,.png]</value>
         <!-- Customs -->
         <value condition="Control.HasFocus(18100) + String.Contains(Container(18100).ListItem.Filenameandpath,atmos)">flags/audiocodec/atmos.png</value>
         <value condition="Control.HasFocus(18100) + String.Contains(Container(18100).ListItem.Filenameandpath,Atmos)">flags/audiocodec/atmos.png</value>
@@ -1156,6 +1178,7 @@
     <variable name="WidgetFlagIconAudioChannelsVar">
         <!-- Hubs -->
         <value condition="!String.Isempty(Container(9500).ListItem.AudioChannels)">$INFO[Container(9500).ListItem.AudioChannels,flags/audiochannel/,.png]</value>
+        <value condition="Control.HasFocus(22100)">$INFO[Container(22100).ListItem.AudioChannels,flags/audiochannel/,.png]</value>
         <!-- Customs -->
         <value condition="Control.HasFocus(18100)">$INFO[Container(18100).ListItem.AudioChannels,flags/audiochannel/,.png]</value>
         <value condition="Control.HasFocus(18200)">$INFO[Container(18200).ListItem.AudioChannels,flags/audiochannel/,.png]</value>
@@ -1286,6 +1309,10 @@
         <value condition="String.IsEmpty(Container(9500).ListItem.Art(clearlogo)) + String.IsEmpty(Container(9500).ListItem.Art(tvshow.clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(9500).Listitem.Title]&amp;type=clearlogo</value>
     </variable>    
     <variable name="WidgetClearLogoVar">
+        <!-- Hub -->
+        <value condition="Control.HasFocus(22100) + !String.IsEmpty(Container(22100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(22100).ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="Control.HasFocus(22100) + !String.IsEmpty(Container(22100).ListItem.Art(clearlogo))">$INFO[Container(22100).ListItem.Art(clearlogo)]</value>
+        <value condition="Control.HasFocus(22100) + String.IsEmpty(Container(22100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(22100).ListItem.Art(tvshow.clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(22100).Listitem.Title]&amp;type=clearlogo</value>
         <!-- Customs -->
         <value condition="Control.HasFocus(18100) + !String.IsEmpty(Container(18100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(18100).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18100) + !String.IsEmpty(Container(18100).ListItem.Art(clearlogo))">$INFO[Container(18100).ListItem.Art(clearlogo)]</value>
@@ -1883,8 +1910,8 @@
         <value>[COLOR white]$INFO[ListItem.Genre][/COLOR]</value>
     </variable>
     <variable name="OSDSubLabelVar">
-        <value condition="VideoPlayer.Content(episodes)">[UPPERCASE]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , [COLOR white]•[/COLOR] ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] , [COLOR white]•[/COLOR] ][/UPPERCASE]$INFO[VideoPlayer.TVShowTitle,[COLOR white],[/COLOR]]</value>
-        <value>[COLOR white]$INFO[VideoPlayer.Genre][/COLOR]</value>
+        <value condition="VideoPlayer.Content(episodes)">[UPPERCASE]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , [COLOR white]•[/COLOR] ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] , [COLOR white]•[/COLOR] ][/UPPERCASE]$INFO[VideoPlayer.TVShowTitle,[UPPERCASE],[/UPPERCASE]]</value>
+        <value>[UPPERCASE]$INFO[VideoPlayer.Genre][/UPPERCASE]</value>
     </variable>
     <variable name="AddonsFanartVar">
         <value condition="Skin.HasSetting(no_fanart)">$VAR[GlobalFanartVar]</value>
@@ -1935,6 +1962,7 @@
         <value condition="!String.IsEmpty(Container(21200).ListItem.Art(fanart)) + Control.HasFocus(21200)">$INFO[Container(21200).ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Container(21300).ListItem.Art(fanart)) + Control.HasFocus(21300)">$INFO[Container(21300).ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Container(21400).ListItem.Art(fanart)) + Control.HasFocus(21400)">$INFO[Container(21400).ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(Container(22100).ListItem.Art(fanart)) + Control.HasFocus(22100)">$INFO[Container(22100).ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Skin.String(WeatherFanart.path)) + !String.IsEmpty(Container(15100).ListItem.Property(FanartCode)) + Control.HasFocus(15100)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container(15100).ListItem.Property(FanartCode)]</value>
         <value condition="!String.IsEmpty(Skin.String(WeatherFanart.path)) + !String.IsEmpty(Container(15200).ListItem.Property(FanartCode)) + Control.HasFocus(15200)">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container(15200).ListItem.Property(FanartCode)]</value>
         <!--<value condition="!String.IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(id)]$INFO[Skin.String(HomeFanart.ext)]</value>-->

@@ -277,7 +277,6 @@
                         <include>DefaultSettingButton</include>
                         <label>$VAR[Label_SkinSetting_WidgetLabel]</label>
                         <label2>$VAR[Label_SkinSetting_Widget]</label2>
-                        <visible>!String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),SourcesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetIcon)</visible>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu) | String.StartsWith(Window.Property(groupname),x11)</visible>
                         <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
                     </control>
@@ -287,6 +286,16 @@
                         <label2>$VAR[Label_SkinSetting_HubImage]</label2>
                         <include>DefaultSettingButton</include>
                         <visible>String.StartsWith(Window.Property(groupname),x11)</visible>
+                    </control>
+                    <control type="button" id="1493">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>40227</label>
+                        <label2>$VAR[HubWidget1Label2Var]</label2>
+                        <onclick>SetProperty(widgetID, hubwidget)</onclick>
+                        <onclick>SendClick(312)</onclick>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),HubWidget)</visible>
                     </control>
                     <control type="button" id="1475">
                         <width>1256</width>

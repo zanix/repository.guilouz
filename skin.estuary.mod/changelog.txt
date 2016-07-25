@@ -1,3 +1,11 @@
+[B]1.3.10[/B]
+• Add possibility to change type of widgets for preconfigured widgets
+• Add new Hub widget
+• Show fallback behind thumb in addoninfo preview list
+• Make slideshow window a dialog
+• Updated language files from Transifex
+• Fix second label with home widgets
+
 [B]1.3.9[/B]
 • Add Movies/TV Shows Hubs and ability to create up to 3
 • Add last played on video info

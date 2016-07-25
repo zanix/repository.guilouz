@@ -1022,7 +1022,7 @@ msgid "Show background video"
 msgstr ""
 
 msgctxt "#40084"
-msgid "Default Widgets"
+msgid "Type of Widgets"
 msgstr ""
 
 msgctxt "#40085"
@@ -1532,7 +1532,7 @@ msgid "Custom widget (icons)"
 msgstr ""
 
 msgctxt "#40214"
-msgid "Select default widget"
+msgid "Set type of widgets"
 msgstr ""
 
 msgctxt "#40215"
@@ -1593,4 +1593,8 @@ msgstr ""
 
 msgctxt "#40229"
 msgid "Custom Hub 3"
+msgstr ""
+
+msgctxt "#40230"
+msgid "Hub Widget"
 msgstr ""
