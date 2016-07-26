@@ -1308,6 +1308,13 @@
         <value condition="!String.IsEmpty(Container(9500).ListItem.Art(clearlogo))">$INFO[Container(9500).ListItem.Art(clearlogo)]</value>
         <value condition="String.IsEmpty(Container(9500).ListItem.Art(clearlogo)) + String.IsEmpty(Container(9500).ListItem.Art(tvshow.clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(9500).Listitem.Title]&amp;type=clearlogo</value>
     </variable>    
+    <variable name="WidgetBannerVar">
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Listitem.Title]&amp;type=banner</value>
+    </variable>
     <variable name="WidgetClearLogoVar">
         <!-- Hub -->
         <value condition="Control.HasFocus(22100) + !String.IsEmpty(Container(22100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(22100).ListItem.Art(tvshow.clearlogo)]</value>
