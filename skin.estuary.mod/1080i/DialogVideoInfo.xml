@@ -499,18 +499,19 @@
 				</include>
 				</control>
 				<control type="image">
-					<left>17</left>
+					<left>0</left>
 					<top>185</top>
-					<width>1210</width>
-					<height>283</height>
+					<width>1248</width>
+					<height>240</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="A0FFFFFF">colors/black.png</texture>
+					<texture border="40">buttons/button-nofo.png</texture>
+					<visible>Integer.IsEqual(Container(50).NumItems,0)</visible>
 				</control>
 				<control type="textbox">
-					<left>17</left>
-					<top>185</top>
-					<width>1210</width>
-					<height>283</height>
+					<left>30</left>
+					<top>195</top>
+					<width>1188</width>
+					<height>220</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font24_title</font>
@@ -518,18 +519,19 @@
 					<visible>Integer.IsEqual(Container(50).NumItems,0) + String.IsEmpty(ListItem.Art(tvshow.banner)) + String.IsEmpty(ListItem.Art(banner))</visible>
 				</control>
 				<control type="image">
-					<left>77</left>
-					<top>185</top>
-					<width>1090</width>
-					<height>283</height>
+					<left>30</left>
+					<top>195</top>
+					<width>1188</width>
+					<height>220</height>
 					<fadetime>150</fadetime>
-					<aspectratio>keep</aspectratio>
+					<aspectratio>stretch</aspectratio>
 					<texture>$VAR[BannerVar]</texture>
 					<visible>Integer.IsEqual(Container(50).NumItems,0)</visible>
 				</control>
 				<control type="list" id="50">
+					<left>2</left>
 					<top>158</top>
-					<width>1235</width>
+					<width>1228</width>
 					<height>370</height>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -785,14 +787,14 @@
 				</control>
 				<include content="LeftRightArrows">
 					<param name="list_id" value="5000" />
-					<param name="left_posx" value="-15" />
+					<param name="left_posx" value="-21" />
 					<param name="right_posx" value="1240" />
 					<param name="posy" value="924" />
 					<param name="visible" value="true" />
 				</include>
 				<include content="LeftRightArrows">
 					<param name="list_id" value="50" />
-					<param name="left_posx" value="-15" />
+					<param name="left_posx" value="-21" />
 					<param name="right_posx" value="1240" />
 					<param name="posy" value="320" />
 					<param name="visible" value="true" />

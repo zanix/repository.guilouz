@@ -1,3 +1,7 @@
+[B]1.3.13[/B]
+• Improve esthetic appearance
+• Fix thumbnails for TV Shows Widgets
+
 [B]1.3.12[/B]
 • Add possibility to disable banners for TV Shows Widget/Custom Widget (Thumbs)
 • Add possibility to replace episodes thumbnails by TV shows thumbnails for Custom Widget (Thumbs) 

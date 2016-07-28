@@ -700,7 +700,7 @@
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <selected>!String.IsEmpty(Container(211).ListItem.Property(ReplaceThumbWidget))</selected>
-                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)</visible>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget)</visible>
                     </control>
                     <control type="radiobutton" id="1495">
                         <label>40231</label>
