@@ -1049,8 +1049,8 @@ msgid "Show weather with the time and date on the top bar."
 msgstr "Permet d'afficher la météo avec l'heure et la date sur la barre du haut."
 
 msgctxt "#40126"
-msgid "Replace thumbnails of episodes by fanarts"
-msgstr "Remplacer les vignettes des épisodes par les arrière-plans"
+msgid "Replace episodes thumbnails by TV shows thumbnails"
+msgstr "Remplacer les vignettes des épisodes par les vignettes des séries TV"
 
 msgctxt "#40127"
 msgid "Show media flags icons such as resolution, ratio, video codec, audio codec, number of channels, duration..."
@@ -1465,3 +1465,7 @@ msgstr "Hub personnalisé 3"
 msgctxt "#40230"
 msgid "Hub Widget"
 msgstr "Widget Hub"
+
+msgctxt "#40231"
+msgid "Hide widgets banners"
+msgstr "Masquer les bannières des widgets"

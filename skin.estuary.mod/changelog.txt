@@ -1,5 +1,11 @@
+[B]1.3.12[/B]
+• Add possibility to disable banners for TV Shows Widget/Custom Widget (Thumbs)
+• Add possibility to replace episodes thumbnails by TV shows thumbnails for Custom Widget (Thumbs) 
+• Fix widgets visibility in Customize home menu (Thanks to BobCratchett)
+• Media textures are now packed
+
 [B]1.3.11[/B]
-• Changes in TV Shows/Custom (Thumbs) widgets
+• Changes in TV Shows Widget/Custom Widget (Thumbs)
 • Improve esthetic appearance
 
 [B]1.3.10[/B]

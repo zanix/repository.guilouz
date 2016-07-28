@@ -1182,7 +1182,7 @@ msgid "Show weather with the time and date on the top bar."
 msgstr ""
 
 msgctxt "#40126"
-msgid "Replace thumbnails of episodes by fanarts"
+msgid "Replace episodes thumbnails by TV shows thumbnails"
 msgstr ""
 
 msgctxt "#40127"
@@ -1597,4 +1597,8 @@ msgstr ""
 
 msgctxt "#40230"
 msgid "Hub Widget"
+msgstr ""
+
+msgctxt "#40231"
+msgid "Hide widgets banners"
 msgstr ""

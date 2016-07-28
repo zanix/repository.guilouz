@@ -1049,8 +1049,8 @@ msgid "Show weather with the time and date on the top bar."
 msgstr "Zeige Wetter-, Datum- und Uhrzeitinformationen im oberen Bereich an."
 
 msgctxt "#40126"
-msgid "Replace thumbnails of episodes by fanarts"
-msgstr "Ersetze Miniaturbilder der Folgen durch Fanart"
+msgid "Replace episodes thumbnails by TV shows thumbnails"
+msgstr "Ersetze Miniaturbilder der Folgen durch Miniaturbilder der TV Serien"
 
 msgctxt "#40127"
 msgid "Show media flags icons such as resolution, ratio, video codec, audio codec, number of channels, duration..."
