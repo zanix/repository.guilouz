@@ -5,15 +5,15 @@
     <controls>
     	<control type="image">
             <texture colordiffuse="$VAR[BackgroundColorVar]" fallback="special://skin/extras/backgrounds/default.jpg">$VAR[GlobalFanartVar]</texture>
-            <width>1920</width>
-            <height>1080</height>
+            <width>100%</width>
+            <height>100%</height>
             <aspectratio align="center">scale</aspectratio>
         </control>
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <width>1920</width>
-            <height>1080</height>
+            <width>100%</width>
+            <height>100%</height>
             <aspectratio>scale</aspectratio>
             <fadetime>400</fadetime>
             <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
@@ -26,8 +26,8 @@
         <control type="multiimage">
             <left>0</left>
             <top>0</top>
-            <width>1920</width>
-            <height>1080</height>
+            <width>100%</width>
+            <height>100%</height>
             <aspectratio>scale</aspectratio>
             <timeperimage>5000</timeperimage>
             <randomize>true</randomize>
@@ -40,8 +40,8 @@
         <control type="image">
             <left>0</left>
             <top>0</top>
-            <width>1920</width>
-            <height>1080</height>
+            <width>100%</width>
+            <height>100%</height>
             <aspectratio>scale</aspectratio>
             <fadetime>400</fadetime>
             <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
@@ -254,6 +254,18 @@
                 <animation effect="fade" end="0" time="200">Hidden</animation>
                 <animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
                 <animation effect="fade" end="0" time="200">WindowClose</animation>
+                <control type="label">
+                <left>30</left>
+                <bottom>65</bottom>
+                <width>1858</width>
+                <height>75</height>
+                <align>center</align>
+                <aligny>bottom</aligny>
+                <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+                <font>font30</font>
+                <shadowcolor>black</shadowcolor>
+                <textcolor>white</textcolor>
+            </control>
                 <control type="image">
                     <right>80</right>
                     <top>990</top>
@@ -290,6 +302,7 @@
                     <height>58</height>
                     <texture colordiffuse="grey">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
                     <aspectratio>keep</aspectratio>
+                    <visible>!Player.ChannelPreviewActive</visible>
                 </control>
                 <control type="image">
                     <left>235</left>
@@ -298,8 +311,10 @@
                     <height>58</height>
                     <texture colordiffuse="grey">$INFO[MusicPlayer.Channels,flags/audiochannel/,.png]</texture>
                     <aspectratio>keep</aspectratio>
+                    <visible>!Player.ChannelPreviewActive</visible>
                 </control>
                 <control type="group">
+                    <visible>!Player.ChannelPreviewActive</visible>
                     <width>200</width>
                     <height>58</height>
                     <left>388</left>
@@ -347,6 +362,7 @@
                 <texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
                 <midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
                 <animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
+                <visible>!Player.ChannelPreviewActive</visible>
             </control>
             <control type="progress" id="23">
                 <animation effect="fade" end="0" time="200">WindowClose</animation>
@@ -357,6 +373,7 @@
                 <info>Player.Progress</info>
                 <texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
                 <midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
+                <visible>!Player.ChannelPreviewActive | VideoPlayer.HasEpg</visible>
             </control>
         </control>
         <control type="group">

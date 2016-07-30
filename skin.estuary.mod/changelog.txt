@@ -1,6 +1,14 @@
-[B]1.3.13[/B]
+[B]1.4.0[/B]
+• Add 'Next airing episodes' widget for TV Shows (Requires script.module.thetvdb which is not yet in any repo (BETA stage), get it from github)
+• Add possibility to configure up to 6 widgets for Customizable widgets
+• Add new changes from original Estuary 0.8.4
+• Rearrange type of widgets
 • Improve esthetic appearance
 • Fix thumbnails for TV Shows Widgets
+• Fix submenu with Picture Widget
+• Fix Label2 when movie is linked to TV show
+• Fix ClearLogos
+• Fix access to addons widgets when there is no submenu
 
 [B]1.3.12[/B]
 • Add possibility to disable banners for TV Shows Widget/Custom Widget (Thumbs)

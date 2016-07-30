@@ -691,6 +691,41 @@ msgctxt "#31134"
 msgid "Remaining"
 msgstr ""
 
+#: /1080i/DialogAddonInfo.xml
+msgctxt "#31135"
+msgid "Installed from"
+msgstr ""
+
+#: /1080i/DialogAddonInfo.xml
+msgctxt "#31136"
+msgid "Click here to see latest changes..."
+msgstr ""
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31137"
+msgid "PVR info"
+msgstr ""
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31138"
+msgid "Player process info"
+msgstr ""
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31139"
+msgid "Video decoder"
+msgstr ""
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31140"
+msgid "Pixel format"
+msgstr ""
+
+#: /1080i/DialogAddonInfo.xml
+msgctxt "#31141"
+msgid "Changes for version"
+msgstr ""
+
 msgctxt "#40000"
 msgid "Show movies and tv shows clearlogos"
 msgstr ""
@@ -1520,15 +1555,15 @@ msgid "Processing"
 msgstr ""
 
 msgctxt "#40211"
-msgid "Custom widget (posters)"
+msgid "Customizable widget (posters)"
 msgstr ""
 
 msgctxt "#40212"
-msgid "Custom widget (thumbs)"
+msgid "Customizable widget (thumbs)"
 msgstr ""
 
 msgctxt "#40213"
-msgid "Custom widget (icons)"
+msgid "Customizable widget (icons)"
 msgstr ""
 
 msgctxt "#40214"
@@ -1576,7 +1611,7 @@ msgid "TV Shows Hub"
 msgstr ""
 
 msgctxt "#40225"
-msgid "Custom Hub 1"
+msgid "Customizable Hub 1"
 msgstr ""
 
 msgctxt "#40226"
@@ -1588,11 +1623,11 @@ msgid "Select hub widget"
 msgstr ""
 
 msgctxt "#40228"
-msgid "Custom Hub 2"
+msgid "Customizable Hub 2"
 msgstr ""
 
 msgctxt "#40229"
-msgid "Custom Hub 3"
+msgid "Customizable Hub 3"
 msgstr ""
 
 msgctxt "#40230"
@@ -1601,4 +1636,20 @@ msgstr ""
 
 msgctxt "#40231"
 msgid "Hide widgets banners"
+msgstr ""
+
+msgctxt "#40232"
+msgid "Next airing episodes"
+msgstr ""
+
+msgctxt "#40233"
+msgid "Customizable widgets"
+msgstr ""
+
+msgctxt "#40234"
+msgid "Preconfigured widgets"
+msgstr ""
+
+msgctxt "#40235"
+msgid "No screenshot available"
 msgstr ""

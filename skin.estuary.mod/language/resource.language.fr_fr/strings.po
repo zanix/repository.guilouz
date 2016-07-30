@@ -558,6 +558,41 @@ msgctxt "#31134"
 msgid "Remaining"
 msgstr "Restant"
 
+#: /1080i/DialogAddonInfo.xml
+msgctxt "#31135"
+msgid "Installed from"
+msgstr "Installé depuis"
+
+#: /1080i/DialogAddonInfo.xml
+msgctxt "#31136"
+msgid "Click here to see latest changes..."
+msgstr "Appuyer sur OK pour voir les derniers changements..."
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31137"
+msgid "PVR info"
+msgstr "Infos PVR"
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31138"
+msgid "Player process info"
+msgstr "Informations sur le traitement"
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31139"
+msgid "Video decoder"
+msgstr "Décodeur vidéo"
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31140"
+msgid "Pixel format"
+msgstr "Format de pixel"
+
+#: /1080i/DialogAddonInfo.xml
+msgctxt "#31141"
+msgid "Changes for version"
+msgstr "Changements"
+
 msgctxt "#40000"
 msgid "Show movies and tv shows clearlogos"
 msgstr "Afficher les logos des films et séries TV"
@@ -1387,16 +1422,16 @@ msgid "Processing"
 msgstr "Traitement"
 
 msgctxt "#40211"
-msgid "Custom widget (posters)"
-msgstr "Widget personnalisé (posters)"
+msgid "Customizable widget (posters)"
+msgstr "Widget personnalisable (posters)"
 
 msgctxt "#40212"
-msgid "Custom widget (thumbs)"
-msgstr "Widget personnalisé (vignettes)"
+msgid "Customizable widget (thumbs)"
+msgstr "Widget personnalisable (vignettes)"
 
 msgctxt "#40213"
-msgid "Custom widget (icons)"
-msgstr "Widget personnalisé (icônes)"
+msgid "Customizable widget (icons)"
+msgstr "Widget personnalisable (icônes)"
 
 msgctxt "#40214"
 msgid "Set type of widgets"
@@ -1443,8 +1478,8 @@ msgid "TV Shows Hub"
 msgstr "Hub Séries TV"
 
 msgctxt "#40225"
-msgid "Custom Hub 1"
-msgstr "Hub personnalisé 1"
+msgid "Customizable Hub 1"
+msgstr "Hub personnalisable 1"
 
 msgctxt "#40226"
 msgid "Random episodes"
@@ -1455,12 +1490,12 @@ msgid "Select hub widget"
 msgstr "Définir le widget du Hub"
 
 msgctxt "#40228"
-msgid "Custom Hub 2"
-msgstr "Hub personnalisé 2"
+msgid "Customizable Hub 2"
+msgstr "Hub personnalisable 2"
 
 msgctxt "#40229"
-msgid "Custom Hub 3"
-msgstr "Hub personnalisé 3"
+msgid "Customizable Hub 3"
+msgstr "Hub personnalisable 3"
 
 msgctxt "#40230"
 msgid "Hub Widget"
@@ -1469,3 +1504,19 @@ msgstr "Widget Hub"
 msgctxt "#40231"
 msgid "Hide widgets banners"
 msgstr "Masquer les bannières des widgets"
+
+msgctxt "#40232"
+msgid "Next airing episodes"
+msgstr "Episodes diffusés prochainement"
+
+msgctxt "#40233"
+msgid "Customizable widgets"
+msgstr "Widgets personnalisables"
+
+msgctxt "#40234"
+msgid "Preconfigured widgets"
+msgstr "Widgets préconfigurés"
+
+msgctxt "#40235"
+msgid "No screenshot available"
+msgstr "Pas de screenshot disponible"

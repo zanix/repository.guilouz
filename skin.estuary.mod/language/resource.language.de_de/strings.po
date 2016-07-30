@@ -1387,15 +1387,15 @@ msgid "Processing"
 msgstr "Verarbeitung"
 
 msgctxt "#40211"
-msgid "Custom widget (posters)"
+msgid "Customizable widget (posters)"
 msgstr "Individuelles Widget (Poster)"
 
 msgctxt "#40212"
-msgid "Custom widget (thumbs)"
+msgid "Customizable widget (thumbs)"
 msgstr "Individuelles Widget (Thumbs)"
 
 msgctxt "#40213"
-msgid "Custom widget (icons)"
+msgid "Customizable widget (icons)"
 msgstr "Individuelles Widget (Icons)"
 
 msgctxt "#40214"
@@ -1443,7 +1443,7 @@ msgid "TV Shows Hub"
 msgstr "TV Serien Hub"
 
 msgctxt "#40225"
-msgid "Custom Hub 1"
+msgid "Customizable Hub 1"
 msgstr "Individueller Hub 1"
 
 msgctxt "#40226"
@@ -1455,11 +1455,11 @@ msgid "Select hub widget"
 msgstr "Wähle Hub Widget"
 
 msgctxt "#40228"
-msgid "Custom Hub 2"
+msgid "Customizable Hub 2"
 msgstr "Individueller Hub 2"
 
 msgctxt "#40229"
-msgid "Custom Hub 3"
+msgid "Customizable Hub 3"
 msgstr "Individueller Hub 3"
 
 msgctxt "#40230"

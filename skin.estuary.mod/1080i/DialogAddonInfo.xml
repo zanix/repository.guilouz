@@ -22,6 +22,7 @@
 				<font>font_textbox</font>
 				<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]][COLOR=white]$INFO[ListItem.AddonDescription][/COLOR][COLOR=white][CR][/COLOR]</label>
 				<textcolor>$VAR[SkinColorVar]</textcolor>
+				<autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
 			</control>
 			<control type="group">
  				<left>625</left>
@@ -35,6 +36,16 @@
  					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
  					<bordersize>4</bordersize>
  				</control>
+ 				<control type="label">
+ 				    <left>10</left>
+					<top>173</top>
+					<height>30</height>
+					<width>365</width>
+					<align>center</align>
+					<font>font10</font>
+				    <label>40235</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
  				<control type="image">
  					<left>405</left>
  					<width>385</width>
@@ -44,6 +55,16 @@
  					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
  					<bordersize>4</bordersize>
  				</control>
+ 				<control type="label">
+ 				   <left>415</left>
+					<top>173</top>
+					<height>30</height>
+					<width>365</width>
+					<align>center</align>
+					<font>font10</font>
+				    <label>40235</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
  				<control type="image">
  					<left>810</left>
  					<width>385</width>
@@ -52,6 +73,16 @@
  					<aspectratio>scale</aspectratio>
  					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
  					<bordersize>4</bordersize>
+				</control>
+				<control type="label">
+ 				   <left>820</left>
+					<top>173</top>
+					<height>30</height>
+					<width>365</width>
+					<align>center</align>
+					<font>font10</font>
+				    <label>40235</label>
+					<shadowcolor>text_shadow</shadowcolor>
 				</control>
 				</control>
 				<control type="panel" id="50">
@@ -155,7 +186,7 @@
 					<param name="id" value="10" />
 					<param name="icon" value="icons/infodialogs/changelog.png" />
 					<param name="onclick_1" value="SetProperty(TextViewer_Header,$LOCALIZE[24054],home)" />
-					<param name="onclick_2" value="SetProperty(TextViewer_Text,$ESCINFO[ListItem.AddonNews],home)" />
+					<param name="onclick_2" value="SetProperty(TextViewer_Text,$ESCVAR[AddonNewsVar],home)" />
 					<param name="onclick_3" value="ActivateWindow(1102)" />
 					<param name="label" value="$LOCALIZE[24054]" />
 				</include>

@@ -4146,6 +4146,24 @@
 							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))"/>
 							<param name="list_id" value="18400"/>
 							<param name="onup_id" value="18300"/>
+							<param name="ondown_id" value="18500"/>
+						</include>
+						<include content="WidgetListMovies4">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter5)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter5)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter5)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter5))"/>
+							<param name="list_id" value="18500"/>
+							<param name="onup_id" value="18400"/>
+							<param name="ondown_id" value="18600"/>
+						</include>
+						<include content="WidgetListMovies4">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter6)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter6)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter6)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter6))"/>
+							<param name="list_id" value="18600"/>
+							<param name="onup_id" value="18500"/>
 							<param name="ondown_id" value="9000"/>
 						</include>
 					</control>
@@ -4208,6 +4226,26 @@
 							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))"/>
 							<param name="list_id" value="19400"/>
 							<param name="onup_id" value="19300"/>
+							<param name="ondown_id" value="19500"/>
+						</include>
+						<include content="WidgetListEpisodes4">
+							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb5)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb5)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb5)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb5))"/>
+							<param name="list_id" value="19500"/>
+							<param name="onup_id" value="19400"/>
+							<param name="ondown_id" value="19600"/>
+						</include>
+						<include content="WidgetListEpisodes4">
+							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb6)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb6)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb6)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb6))"/>
+							<param name="list_id" value="19600"/>
+							<param name="onup_id" value="19500"/>
 							<param name="ondown_id" value="9000"/>
 						</include>
 					</control>
@@ -4266,6 +4304,24 @@
 							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))"/>
 							<param name="list_id" value="21400"/>
 							<param name="onup_id" value="21300"/>
+							<param name="ondown_id" value="21500"/>
+						</include>
+						<include content="WidgetListSquare3">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon5)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon5)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon5)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon5))"/>
+							<param name="list_id" value="21500"/>
+							<param name="onup_id" value="21400"/>
+							<param name="ondown_id" value="21600"/>
+						</include>
+						<include content="WidgetListSquare3">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon6)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon6)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon6)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon6))"/>
+							<param name="list_id" value="21600"/>
+							<param name="onup_id" value="21500"/>
 							<param name="ondown_id" value="9000"/>
 						</include>
 					</control>
@@ -4402,6 +4458,15 @@
 							<param name="widget_target" value="$VAR[TVShowsWidget5TargetVar]"/>
 							<param name="list_id" value="6500"/>
 							<param name="onup_id" value="6400"/>
+							<param name="ondown_id" value="6600"/>
+						</include>
+						<include content="WidgetListEpisodes2">
+							<param name="content_path" value="$VAR[TVShowsWidget6ContentVar]"/>
+							<param name="widget_header" value="$VAR[TVShowsWidget6LabelVar]"/>
+							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+							<param name="widget_target" value="$VAR[TVShowsWidget6TargetVar]"/>
+							<param name="list_id" value="6600"/>
+							<param name="onup_id" value="6500"/>
 							<param name="ondown_id" value="9000"/>
 						</include>
 						<include content="ImageWidgetHeader">
@@ -5356,14 +5421,20 @@
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</onup>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))">18300</onup>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))">18400</onup>
+						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter5))">18500</onup>
+						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter6))">18600</onup>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))">19100</onup>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))">19200</onup>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))">19300</onup>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))">19400</onup>
+						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb5))">19500</onup>
+						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb6))">19600</onup>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))">21100</onup>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))">21200</onup>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))">21300</onup>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))">21400</onup>
+						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon5))">21500</onup>
+						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon6))">21600</onup>
 						<onright>9000</onright>
 						<onleft>700</onleft>
 						<orientation>horizontal</orientation>
@@ -5614,7 +5685,7 @@
 				<left>0</left>
 				<top>1041</top>
 				<height>30</height>
-				<width>1920</width>
+				<width>100%</width>
 				<font>font12</font>
 				<urlset>1</urlset>
 				<titlecolor>$VAR[SkinColorVar]</titlecolor>
@@ -5744,7 +5815,7 @@
 								<visible>Control.HasFocus(5900)</visible>
 							</control>
 							<control type="panel" id="5900">
-								<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+								<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900) + ![String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget)) + String.IsEqual(Container(9000).ListItem.Property(widget),PictureWidget)]</visible>
 								<orientation>horizontal</orientation>
 								<onleft>9000</onleft>
 								<left>935</left>
@@ -5768,14 +5839,20 @@
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</ondown>
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))">18300</ondown>
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))">18400</ondown>
+								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter5))">18500</ondown>
+								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter6))">18600</ondown>
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))">19100</ondown>
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))">19200</ondown>
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))">19300</ondown>
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))">19400</ondown>
+								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb5))">19500</ondown>
+								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb6))">19600</ondown>
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))">21100</ondown>
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))">21200</ondown>
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))">21300</ondown>
 								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))">21400</ondown>
+								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon5))">21500</ondown>
+								<ondown condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon6))">21600</ondown>
 								<itemlayout width="110" height="120">
 									<control type="image">
 										<width>130</width>
@@ -5907,6 +5984,24 @@
 							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))"/>
 							<param name="list_id" value="18400"/>
 							<param name="onup_id" value="18300"/>
+							<param name="ondown_id" value="18500"/>
+						</include>
+						<include content="WidgetListMovies3">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter5)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter5)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter5)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter5))"/>
+							<param name="list_id" value="18500"/>
+							<param name="onup_id" value="18400"/>
+							<param name="ondown_id" value="18600"/>
+						</include>
+						<include content="WidgetListMovies3">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter6)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter6)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalposter6)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter6))"/>
+							<param name="list_id" value="18600"/>
+							<param name="onup_id" value="18500"/>
 							<param name="ondown_id" value="20001"/>
 						</include>
 					</control>
@@ -5969,6 +6064,26 @@
 							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))"/>
 							<param name="list_id" value="19400"/>
 							<param name="onup_id" value="19300"/>
+							<param name="ondown_id" value="19500"/>
+						</include>
+						<include content="WidgetListEpisodes3">
+							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb5)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb5)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb5)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb5))"/>
+							<param name="list_id" value="19500"/>
+							<param name="onup_id" value="19400"/>
+							<param name="ondown_id" value="19600"/>
+						</include>
+						<include content="WidgetListEpisodes3">
+							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalthumb6)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalthumb6)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalthumb6)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb6))"/>
+							<param name="list_id" value="19600"/>
+							<param name="onup_id" value="19500"/>
 							<param name="ondown_id" value="20001"/>
 						</include>
 					</control>
@@ -6027,6 +6142,24 @@
 							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))"/>
 							<param name="list_id" value="21400"/>
 							<param name="onup_id" value="21300"/>
+							<param name="ondown_id" value="21500"/>
+						</include>
+						<include content="WidgetListSquare">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon5)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon5)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon5)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon5))"/>
+							<param name="list_id" value="21500"/>
+							<param name="onup_id" value="21400"/>
+							<param name="ondown_id" value="21600"/>
+						</include>
+						<include content="WidgetListSquare">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalicon6)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalicon6)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personalicon6)]"/>
+							<param name="visible" value="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon6))"/>
+							<param name="list_id" value="21600"/>
+							<param name="onup_id" value="21500"/>
 							<param name="ondown_id" value="20001"/>
 						</include>
 					</control>
@@ -6163,6 +6296,15 @@
 							<param name="widget_target" value="$VAR[TVShowsWidget5TargetVar]"/>
 							<param name="list_id" value="6500"/>
 							<param name="onup_id" value="6400"/>
+							<param name="ondown_id" value="6600"/>
+						</include>
+						<include content="WidgetListEpisodes">
+							<param name="content_path" value="$VAR[TVShowsWidget6ContentVar]"/>
+							<param name="widget_header" value="$VAR[TVShowsWidget6LabelVar]"/>
+							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
+							<param name="widget_target" value="$VAR[TVShowsWidget6TargetVar]"/>
+							<param name="list_id" value="6600"/>
+							<param name="onup_id" value="6500"/>
 							<param name="ondown_id" value="20001"/>
 						</include>
 						<include content="ImageWidgetHeader">
@@ -7136,6 +7278,7 @@
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">17100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget)">6100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)">7100</onright>
+						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget)">8100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideoWidget)">10100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget)">15100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),SourcesWidget)">11100</onright>
@@ -7147,14 +7290,20 @@
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))">18300</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))">18400</onright>
+						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter5))">18500</onright>
+						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter6))">18600</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))">19100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))">19200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))">19300</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))">19400</onright>
+						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb5))">19500</onright>
+						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb6))">19600</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))">21100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))">21200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))">21300</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))">21400</onright>
+						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon5))">21500</onright>
+						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon6))">21600</onright>
 						<onup>900</onup>
 						<ondown>700</ondown>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -7317,7 +7466,7 @@
 				<left>0</left>
 				<top>1041</top>
 				<height>30</height>
-				<width>1920</width>
+				<width>100%</width>
 				<font>font12</font>
 				<urlset>1</urlset>
 				<titlecolor>$VAR[SkinColorVar]</titlecolor>
