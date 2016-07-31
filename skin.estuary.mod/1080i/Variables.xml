@@ -1732,6 +1732,7 @@
         <value condition="Control.HasFocus(15200) + !String.IsEmpty(Window(Weather).Property(WeatherProviderLogo))">$INFO[Window(Weather).Property(WeatherProviderLogo)]</value>
     </variable>
     <variable name="EpisodesThumbsVar">
+        <value condition="!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))">$VAR[ClearLogoVar]</value>
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(ReplaceThumbWidget))">$VAR[TVShowWidgetImageVar]</value>
         <value>$INFO[ListItem.Art(thumb)]</value>
     </variable>
@@ -1873,6 +1874,7 @@
     </variable>
     <variable name="TVShowWidgetImageVar">
         <value condition="ListItem.IsParentFolder">DefaultBackFanart.png</value>
+        <value condition="!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))">$VAR[ClearLogoVar]</value>
         <value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>

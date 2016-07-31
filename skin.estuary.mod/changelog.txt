@@ -1,3 +1,7 @@
+[B]1.4.1[/B]
+• Add possibility to use clearlogos instead of thumbnails for TV Shows Widget and Customizable Widget (thumbs)
+• Fix typo in mypics.xml
+
 [B]1.4.0[/B]
 • Add 'Next airing episodes' widget for TV Shows (Requires script.module.thetvdb which is not yet in any repo (BETA stage), get it from github)
 • Add possibility to configure up to 6 widgets for Customizable widgets

@@ -52,6 +52,7 @@
     <propertySettings property="hubImage" buttonID="1492" title="$LOCALIZE[40221]" showNone="True" imageBrowse="True" />
     <propertySettings toggle="HideBannerWidget2" buttonID="1495" templateonly="True" />
     <propertySettings toggle="ReplaceThumbWidget" buttonID="3132" templateonly="True" />
+    <propertySettings toggle="UseClearLogos" buttonID="1503" templateonly="True" />
     
     <!-- Background -->
     <background label="smartshortcuts">||BROWSE||plugin://script.skin.helper.service/?action=backgrounds</background>

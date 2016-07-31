@@ -1653,3 +1653,7 @@ msgstr ""
 msgctxt "#40235"
 msgid "No screenshot available"
 msgstr ""
+
+msgctxt "#40236"
+msgid "Use clearlogos instead of thumbnails"
+msgstr ""
