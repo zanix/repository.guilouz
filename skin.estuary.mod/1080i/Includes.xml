@@ -2108,16 +2108,6 @@
                     <visible>Window.IsVisible(MyMusicNav.xml)</visible>
                 </control>
                 <control type="image">
-                    <visible>Skin.HasSetting(show_musicclearlogos)</visible>
-                    <top>0</top>
-                    <centerleft>50%</centerleft>
-                    <width>178</width>
-                    <height>80</height>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.ClearLogo)]</texture>
-                    <visible>Window.IsVisible(MusicVisualisation.xml)</visible>
-                </control>
-                <control type="image">
                     <top>10</top>
                     <width>80</width>
                     <height>80</height>

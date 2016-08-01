@@ -110,9 +110,9 @@
                     <icon>icons/settings/appearance.png</icon>
                 </item>
                 <item>
-                    <label>$LOCALIZE[14202]</label>
-                    <onclick>ActivateWindow(LibrarySettings)</onclick>
-                    <icon>icons/settings/library.png</icon>
+                    <label>$LOCALIZE[14211]</label>
+                    <onclick>ActivateWindow(MediaSettings)</onclick>
+                    <icon>icons/settings/media.png</icon>
                 </item>
                 <item>
                     <label>$LOCALIZE[14200]</label>

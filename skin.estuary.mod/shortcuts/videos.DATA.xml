@@ -21,7 +21,7 @@
     <shortcut>
         <label>20314</label>
         <label2>Common Shortcut</label2>
-        <icon>special://skin/extras/icons/videos.png</icon>
+        <icon>special://skin/extras/icons/media.png</icon>
         <action>ActivateWindow(Videos,root,return)</action>
     </shortcut>
 </shortcuts>

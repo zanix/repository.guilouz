@@ -304,7 +304,7 @@
         </control>
         <control type="image">
             <left>0</left>
-            <bottom>90</bottom>
+            <bottom>10</bottom>
             <width>430</width>
             <height>100</height>
             <texture>dialogs/logo.png</texture>
