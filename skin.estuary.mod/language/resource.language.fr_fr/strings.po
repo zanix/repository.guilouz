@@ -571,7 +571,7 @@ msgstr "Appuyer sur OK pour voir les derniers changements..."
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31137"
 msgid "PVR info"
-msgstr "Infos PVR"
+msgstr "Informations PVR"
 
 #: /1080i/DialogPlayerProcessInfo.xml
 msgctxt "#31138"

@@ -3,6 +3,7 @@
 • Fix typo in mypics.xml
 • Minnor fixes
 • Krypton : Renaming of Library settings to Media settings
+• Krypton : Add PlayerProcessInfo window (button 'o')
 
 [B]1.4.0[/B]
 • Add 'Next airing episodes' widget for TV Shows (Requires script.module.thetvdb which is not yet in any repo (BETA stage), get it from github)
