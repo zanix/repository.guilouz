@@ -1,6 +1,7 @@
 [B]1.4.1[/B]
 • Add possibility to use clearlogos instead of thumbnails for TV Shows Widget and Customizable Widget (thumbs)
 • Fix typo in mypics.xml
+• Fix Android apps (thanks to maxtherabbit)
 • Minnor fixes
 • Krypton : Renaming of Library settings to Media settings
 • Krypton : Add PlayerProcessInfo window (button 'o')

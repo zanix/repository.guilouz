@@ -20,7 +20,7 @@
 				<shadowcolor>black</shadowcolor>
 				<pagecontrol>3000</pagecontrol>
 				<font>font16</font>
-				<label>$INFO[ListItem.FileNameAndPath]</label>
+				<label>$VAR[PathLabelVar]</label>
 			</control>
 			<control type="scrollbar" id="3000">
 				<include>HiddenObject</include>

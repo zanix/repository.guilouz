@@ -2410,6 +2410,10 @@
  		<value condition="!String.IsEmpty(ListItem.AddonNews)">$INFO[ListItem.AddonNews]</value>
  		<value>$LOCALIZE[19055]</value>
  	</variable>
+ 	<variable name="PathLabelVar">
+ 		<value condition="!String.IsEmpty(ListItem.FileNameAndPath)">$INFO[ListItem.FileNameAndPath]</value>
+ 		<value>$LOCALIZE[19055]</value>
+ 	</variable>
     <variable name="Label_SkinSetting_Startup">
         <value condition="!String.IsEmpty(Skin.String(SplashScreen))">$INFO[Skin.String(SplashScreen)]</value>
         <value condition="String.IsEmpty(Skin.String(SplashScreen))">$LOCALIZE[40037]</value>
