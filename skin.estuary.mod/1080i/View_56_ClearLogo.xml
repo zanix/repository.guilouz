@@ -113,7 +113,7 @@
                             <width>330</width>
                             <centerleft>50%</centerleft>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <texture>$VAR[ClearLogoVar]</texture>
+                            <texture>$VAR[ClearLogoViewVar]</texture>
                         </control>
                     </control>
                 </itemlayout>
@@ -159,7 +159,7 @@
                             <width>330</width>
                             <centerleft>50%</centerleft>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <texture>$VAR[ClearLogoVar]</texture>
+                            <texture>$VAR[ClearLogoViewVar]</texture>
                         </control>
                     </control>
                 </focusedlayout>

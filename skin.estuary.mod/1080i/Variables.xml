@@ -1455,6 +1455,11 @@
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
     </variable>
+    <variable name="ClearLogoViewVar">
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Listitem.Title]&amp;type=clearlogo</value>
+    </variable>
     <variable name="ClearLogoVar">
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="!String.IsEmpty(Container(50).ListItem.Art(tvshow.clearlogo))">$INFO[Container(50).ListItem.Art(tvshow.clearlogo)]</value>
@@ -1507,11 +1512,11 @@
     </variable>
     <variable name="WidgetClearLogoVar">
         <!-- Hub -->
-        <value condition="Control.HasFocus(22100) + !String.IsEmpty(Container(22100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(22100).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="Control.HasFocus(22100) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="Control.HasFocus(22100) + !String.IsEmpty(Container(22100).ListItem.Art(clearlogo))">$INFO[Container(22100).ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(22100) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(22100) + String.IsEmpty(Container(22100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(22100).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(22100).Listitem.Title]&amp;type=clearlogo</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget) + !String.IsEmpty(Container(22100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(22100).ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget) + !String.IsEmpty(Container(22100).ListItem.Art(clearlogo))">$INFO[Container(22100).ListItem.Art(clearlogo)]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget) + String.IsEmpty(Container(22100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(22100).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(22100).Listitem.Title]&amp;type=clearlogo</value>
         <!-- Customs -->
         <value condition="Control.HasFocus(18100) + !String.IsEmpty(Container(18100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(18100).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18100) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
@@ -2203,16 +2208,16 @@
         <value>$INFO[ListItem.Year]</value>
     </variable>
     <variable name="VideoInfoMainLabelVar">
-        <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title,[COLOR white],[/COLOR]]$INFO[ListItem.Year, [COLOR white]([/COLOR],[COLOR white])[/COLOR]]</value>
+        <value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title,[COLOR white],[/COLOR]]$INFO[ListItem.Year, [COLOR white](,)[/COLOR]]</value>
         <value>$INFO[ListItem.Label,[COLOR white],[/COLOR]]$INFO[ListItem.Year, [COLOR white]([/COLOR],[COLOR white])[/COLOR]]</value>
     </variable>
     <variable name="VideoInfoSubLabelVar">
-        <value condition="String.IsEqual(ListItem.DBType,episode)">[UPPERCASE]$INFO[ListItem.Season,$LOCALIZE[20373] , [COLOR white]•[/COLOR] ]$INFO[ListItem.Episode,$LOCALIZE[20359] , [COLOR white]•[/COLOR] ][/UPPERCASE]$INFO[ListItem.TVShowTitle,[COLOR white],[/COLOR]]</value>
-        <value condition="String.IsEqual(ListItem.DBType,movie)">[COLOR white]$INFO[ListItem.Tagline][/COLOR]</value>
-        <value>[COLOR white]$INFO[ListItem.Genre][/COLOR]</value>
+        <value condition="String.IsEqual(ListItem.DBType,episode)">$INFO[ListItem.TVShowTitle,, [COLOR white]•[/COLOR] ]$INFO[ListItem.Season,$LOCALIZE[20373] , [COLOR white]•[/COLOR] ]$INFO[ListItem.Episode,$LOCALIZE[20359] ,]</value>
+        <value condition="String.IsEqual(ListItem.DBType,movie)">[I]$INFO[ListItem.Tagline][/I]</value>
+        <value>$INFO[ListItem.Genre]</value>
     </variable>
     <variable name="OSDSubLabelVar">
-        <value condition="VideoPlayer.Content(episodes)">[UPPERCASE]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , [COLOR white]•[/COLOR] ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] , [COLOR white]•[/COLOR] ][/UPPERCASE]$INFO[VideoPlayer.TVShowTitle,[UPPERCASE],[/UPPERCASE]]</value>
+        <value condition="VideoPlayer.Content(episodes)">[UPPERCASE]$INFO[VideoPlayer.TVShowTitle,, [COLOR white]•[/COLOR] ]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , [COLOR white]•[/COLOR] ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] ,][/UPPERCASE]</value>
         <value>[UPPERCASE]$INFO[VideoPlayer.Genre][/UPPERCASE]</value>
     </variable>
     <variable name="AddonsFanartVar">

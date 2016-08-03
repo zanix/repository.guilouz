@@ -6,10 +6,7 @@
     <onload>Skin.SetBool(SkinHelper.EnableAddonsLookups)</onload>
     <onload>SetProperty(RefreshList,1,Home)</onload>
     <onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
-    <!--<menucontrol>9000</menucontrol>-->
     <defaultcontrol>9000</defaultcontrol>
-    <!-- 	<onload condition="ControlGroup(700).HasFocus">SetFocus(9000,0)</onload>
- -->
     <backgroundcolor>background</backgroundcolor>
     <controls>
         <control type="button" id="20000">

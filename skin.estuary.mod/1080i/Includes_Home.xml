@@ -331,6 +331,27 @@
 								<texture colordiffuse="$VAR[SkinColorVar]">$VAR[ListWatchedIconVar]</texture>
 							</control>
 						</control>
+						<control type="image">
+                            <left>0</left>
+                            <right>10</right>
+                            <width>100%</width>
+                            <height>50</height>
+                            <bottom>0</bottom>
+                            <texture>dialogs/back.png</texture>
+                            <visible>!Control.HasFocus(22100)</visible>
+                        </control>
+                        <control type="label">
+                            <left>10</left>
+                            <right>20</right>
+                            <width>100%</width>
+                            <height>50</height>
+                            <bottom>0</bottom>
+                            <font>font11</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Label]</label>
+                            <visible>!Control.HasFocus(22100)</visible>
+                        </control>
 					</itemlayout>
 					<focusedlayout width="1232" height="695">
 						<control type="image">
@@ -355,6 +376,27 @@
 								<texture colordiffuse="$VAR[SkinColorVar]">$VAR[ListWatchedIconVar]</texture>
 							</control>
 						</control>
+						<control type="image">
+                            <left>0</left>
+                            <right>10</right>
+                            <width>100%</width>
+                            <height>50</height>
+                            <bottom>0</bottom>
+                            <texture>dialogs/back.png</texture>
+                            <visible>!Control.HasFocus(22100)</visible>
+                        </control>
+                        <control type="label">
+                            <left>10</left>
+                            <right>20</right>
+                            <width>100%</width>
+                            <height>50</height>
+                            <bottom>0</bottom>
+                            <font>font11</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Label]</label>
+                            <visible>!Control.HasFocus(22100)</visible>
+                        </control>
 					</focusedlayout>
 					<content target="$PARAM[widget_target]">$PARAM[content_path]</content>
 				</control>
@@ -441,6 +483,27 @@
 								<texture colordiffuse="$VAR[SkinColorVar]">$VAR[ListWatchedIconVar]</texture>
 							</control>
 						</control>
+						<control type="image">
+                            <left>0</left>
+                            <right>10</right>
+                            <width>100%</width>
+                            <height>50</height>
+                            <bottom>0</bottom>
+                            <texture>dialogs/back.png</texture>
+                            <visible>!Control.HasFocus(22100)</visible>
+                        </control>
+                        <control type="label">
+                            <left>10</left>
+                            <right>20</right>
+                            <width>100%</width>
+                            <height>50</height>
+                            <bottom>0</bottom>
+                            <font>font11</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Label]</label>
+                            <visible>!Control.HasFocus(22100)</visible>
+                        </control>
 					</itemlayout>
 					<focusedlayout width="1232" height="695">
 						<control type="image">
@@ -465,6 +528,27 @@
 								<texture colordiffuse="$VAR[SkinColorVar]">$VAR[ListWatchedIconVar]</texture>
 							</control>
 						</control>
+						<control type="image">
+                            <left>0</left>
+                            <right>10</right>
+                            <width>100%</width>
+                            <height>50</height>
+                            <bottom>0</bottom>
+                            <texture>dialogs/back.png</texture>
+                            <visible>!Control.HasFocus(22100)</visible>
+                        </control>
+                        <control type="label">
+                            <left>10</left>
+                            <right>20</right>
+                            <width>100%</width>
+                            <height>50</height>
+                            <bottom>0</bottom>
+                            <font>font11</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Label]</label>
+                            <visible>!Control.HasFocus(22100)</visible>
+                        </control>
 					</focusedlayout>
 					<content target="$PARAM[widget_target]">$PARAM[content_path]</content>
 				</control>

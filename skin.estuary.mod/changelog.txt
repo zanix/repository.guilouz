@@ -1,3 +1,9 @@
+[B]1.4.2[/B]
+• Changes on Hub Widget
+• Fix slider color on PlayerProcessInfo window
+• Fix clearlogos on Clearlogos view
+• Improve esthetic appearance
+
 [B]1.4.1[/B]
 • Add possibility to use clearlogos instead of thumbnails for TV Shows Widget and Customizable Widget (thumbs)
 • Fix typo in mypics.xml
