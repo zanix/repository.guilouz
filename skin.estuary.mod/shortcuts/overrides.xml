@@ -33,6 +33,11 @@
     <widgetdefault labelID="picture">PictureWidget</widgetdefault>
     <widgetdefault labelID="addon">AddonsWidget</widgetdefault>
     <widgetdefault labelID="weather">WeatherWidget</widgetdefault>
+    <widgetdefault labelID="power">PowerWidget</widgetdefault>
+    <widgetdefault labelID="setting">SettingsWidget</widgetdefault>
+    <widgetdefault labelID="favourite">FavouritesWidget</widgetdefault>
+    <widgetdefault labelID="filemanager">FileManagerWidget</widgetdefault>
+    <widgetdefault labelID="search">SearchWidget</widgetdefault>
     
     <!-- Default Backgrounds -->
     <backgrounddefault labelID="videos">special://skin/extras/home-images/videos.jpg</backgrounddefault>
@@ -45,6 +50,11 @@
     <backgrounddefault labelID="picture">special://skin/extras/home-images/pictures.jpg</backgrounddefault>
     <backgrounddefault labelID="addon">special://skin/extras/home-images/addons.jpg</backgrounddefault>
     <backgrounddefault labelID="weather">special://skin/extras/home-images/weather.jpg</backgrounddefault>
+    <backgrounddefault labelID="power">special://skin/extras/home-images/power.jpg</backgrounddefault>
+    <backgrounddefault labelID="setting">special://skin/extras/home-images/settings.jpg</backgrounddefault>
+    <backgrounddefault labelID="favourite">special://skin/extras/home-images/favorites.jpg</backgrounddefault>
+    <backgrounddefault labelID="filemanager">special://skin/extras/home-images/filemanager.jpg</backgrounddefault>
+    <backgrounddefault labelID="search">special://skin/extras/home-images/search.jpg</backgrounddefault>
     
     <!-- Widget Settings -->
     <propertySettings toggle="HideBannerWidget" buttonID="3129" templateonly="True" />

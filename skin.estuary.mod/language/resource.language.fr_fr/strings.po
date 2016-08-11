@@ -677,9 +677,13 @@ msgctxt "#40020"
 msgid "Replace vertical home menu by horizontal menu."
 msgstr "Permet de remplacer le menu d'accueil vertical par le menu horizontal."
 
-# empty strings "40021"
+msgctxt "#40021"
+msgid "Enable horizontal advanced menu"
+msgstr "Activer le menu horizontal avancé"
 
-# empty strings "40022"
+msgctxt "#40022"
+msgid "Replace vertical home menu by horizontal advanced menu."
+msgstr "Permet de remplacer le menu d'accueil vertical par le menu horizontal avancé."
 
 msgctxt "#40023"
 msgid "Set images path"

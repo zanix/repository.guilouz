@@ -557,7 +557,7 @@
 					<description>Channels</description>
 					<left>270</left>
 					<top>200</top>
-					<width>490</width>
+					<width>550</width>
 					<height>25</height>
 					<label fallback="1446">$INFO[Player.Process(audiochannels)]</label>
 					<align>left</align>
@@ -601,7 +601,7 @@
 					<description>CPU value</description>
 					<left>555</left>
 					<top>260</top>
-					<width>180</width>
+					<width>145</width>
 					<height>25</height>
 					<label>$INFO[System.CpuUsage]</label>
 					<align>left</align>
@@ -645,7 +645,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<visible>Control.HasFocus(5557)</visible>
-				<left>730</left>
+				<left>850</left>
 				<top>-220</top>
 				<control type="label">
 					<description>Header</description>

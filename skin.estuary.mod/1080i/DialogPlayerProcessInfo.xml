@@ -487,14 +487,13 @@
 					<description>Channels</description>
 					<left>270</left>
 					<top>200</top>
-					<width>490</width>
+					<width>600</width>
 					<height>25</height>
 					<label fallback="1446">$INFO[Player.Process(audiochannels)]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textcolor>grey</textcolor>
-					<scroll>yes</scroll>
 				</control>
 				<control type="label">
 					<description>Header</description>
@@ -608,7 +607,7 @@
 					<height>30</height>
 					<info>Player.ProgressCache</info>
 					<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
+					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
 					<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 				</control>
 				<control type="progress" id="23">
@@ -619,7 +618,7 @@
 					<height>30</height>
 					<info>Player.Progress</info>
 					<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
+					<midtexture colordiffuse="button_focus">colors/white50.png</midtexture>
 				</control>
 				<control type="button" id="87">
 					<include>HiddenObject</include>
@@ -641,7 +640,7 @@
 					<ondown>650</ondown>
 					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
 					<textureslidernib>osd/progress/nub_bar.png</textureslidernib>
-					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_bar.png</textureslidernibfocus>
+					<textureslidernibfocus colordiffuse="button_focus">osd/progress/nub_bar.png</textureslidernibfocus>
 					<info>Player.Progress</info>
 					<action>seek</action>
 					<visible>!Control.HasFocus(87)</visible>

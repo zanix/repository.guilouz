@@ -208,6 +208,15 @@
                         <include>DefaultSettingButton</include>
                         <selected>Skin.HasSetting(horizontal_menu)</selected>
                         <onclick>Skin.ToggleSetting(horizontal_menu)</onclick>
+                        <enable>!Skin.HasSetting(horizontaladvanced_menu)</enable>
+                    </control>
+                    <control type="radiobutton" id="677">
+                        <label>40021</label>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <selected>Skin.HasSetting(horizontaladvanced_menu)</selected>
+                        <onclick>Skin.ToggleSetting(horizontaladvanced_menu)</onclick>
+                        <enable>!Skin.HasSetting(horizontal_menu)</enable>
                     </control>
                     <control type="radiobutton" id="671">
                         <label>40179</label>
@@ -215,6 +224,7 @@
                         <include>DefaultSettingButton</include>
                         <selected>!Skin.HasSetting(show_widgetclearlogos)</selected>
                         <onclick>Skin.ToggleSetting(show_widgetclearlogos)</onclick>
+                        <visible>!Skin.HasSetting(horizontaladvanced_menu)</visible>
                     </control>
                     <control type="radiobutton" id="668">
                         <label>31094</label>
@@ -232,7 +242,7 @@
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(horizontal_menu)|Skin.Reset(enable_widgetflagicons)|Skin.Reset(show_widgetclearlogos))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(horizontal_menu)|Skin.Reset(horizontaladvanced_menu)|Skin.Reset(enable_widgetflagicons)|Skin.Reset(show_widgetclearlogos))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="600">
@@ -770,6 +780,18 @@
                         <onclick condition="!System.HasAddon(script.module.thetvdb)">InstallAddon(script.module.thetvdb)</onclick>
                         <onclick condition="System.HasAddon(script.module.thetvdb)">Addon.OpenSettings(script.module.thetvdb)</onclick>
                         <selected>System.HasAddon(script.module.thetvdb)</selected>
+                        <include>DefaultSettingButton</include>
+                    </control>
+                    <control type="radiobutton" id="676">
+                        <width>1256</width>
+                        <label>script.module.musicbrainz $INFO[System.AddonVersion(script.module.musicbrainz),(,)]</label>
+                        <textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+                        <textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+                        <textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+                        <textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+                        <onclick condition="!System.HasAddon(script.module.thetvdb)">InstallAddon(script.module.musicbrainz)</onclick>
+                        <onclick condition="System.HasAddon(script.module.thetvdb)">Addon.OpenSettings(script.module.musicbrainz)</onclick>
+                        <selected>System.HasAddon(script.module.musicbrainz)</selected>
                         <include>DefaultSettingButton</include>
                     </control>
                     <control type="radiobutton" id="633">

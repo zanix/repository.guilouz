@@ -1,8 +1,12 @@
-[B]1.4.2[/B]
+[B]1.5.0[/B]
+• Add new horizontal advanced home menu
 • Changes on Hub Widget
 • Fix slider color on PlayerProcessInfo window
 • Fix clearlogos on Clearlogos view
+• Fix home screen channel widget's start and end time when no epg available
+• Fix sort attribute and order for tv and radio channels on home screen
 • Improve esthetic appearance
+• Many others fixes
 
 [B]1.4.1[/B]
 • Add possibility to use clearlogos instead of thumbnails for TV Shows Widget and Customizable Widget (thumbs)

@@ -36,7 +36,8 @@
             <imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[HomeFanartVar]</imagepath>
             <visible>![Player.HasVideo + Skin.HasSetting(background_showvideo)]</visible>
         </control>
-        <include condition="!Skin.HasSetting(horizontal_menu)">VerticalMenuVar</include>
+        <include condition="!Skin.HasSetting(horizontal_menu) + !Skin.HasSetting(horizontaladvanced_menu)">VerticalMenuVar</include>
         <include condition="Skin.HasSetting(horizontal_menu)">HorizontalMenuVar</include>
+        <include condition="Skin.HasSetting(horizontaladvanced_menu)">AdvancedHorizontalMenuVar</include>
     </controls>
 </window>
