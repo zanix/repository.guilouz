@@ -1033,7 +1033,7 @@ msgid "Visible TV channels"
 msgstr ""
 
 msgctxt "#40077"
-msgid ""
+msgid "Access all of your favorites"
 msgstr ""
 
 msgctxt "#40078"
