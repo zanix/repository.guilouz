@@ -423,6 +423,13 @@
 					</control>
 				</control>
 				<include content="InfoDialogButton">
+						<param name="id" value="442" />
+						<param name="icon" value="icons/infodialogs/edit.png" />
+						<param name="onclick_1" value="RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])" />
+						<param name="label" value="$LOCALIZE[21435]" />
+						<param name="visible" value="System.HasAddon(script.libraryeditor)" />
+					</include>
+				<include content="InfoDialogButton">
 					<param name="id" value="6" />
 					<param name="icon" value="icons/infodialogs/update.png" />
 					<param name="label" value="$LOCALIZE[184]" />

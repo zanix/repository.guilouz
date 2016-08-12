@@ -204,7 +204,7 @@
 				<width>445</width>
 				<height>250</height>
 				<right>125</right>
-				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<aspectratio align="right" aligny="center">keep</aspectratio>
 				<texture>$VAR[WidgetThumbVar]</texture>
 			</control>
 			<control type="grouplist">
@@ -7681,7 +7681,7 @@
 			</control>
 			<control type="rss">
 				<left>0</left>
-				<top>71</top>
+				<top>1041</top>
 				<height>30</height>
 				<width>100%</width>
 				<font>font10</font>
@@ -9466,7 +9466,7 @@
 			</control>
 			<control type="rss">
 				<left>0</left>
-				<top>75</top>
+				<top>1041</top>
 				<height>30</height>
 				<width>100%</width>
 				<font>font10</font>
