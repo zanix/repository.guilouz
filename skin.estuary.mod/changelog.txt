@@ -1,6 +1,7 @@
 [B]1.5.2[/B]
 • Add support for Library Editor addon
 • Fix RSS
+• Improve esthetic appearance
 
 [B]1.5.1[/B]
 • Fix on music visualisation
