@@ -81,7 +81,7 @@
             <font>font12</font>
             <align>center</align>
             <aligny>center</aligny>
-            <label>$INFO[ListItem.Artist,,[COLOR white] - [/COLOR]][COLOR white]$INFO[ListItem.Label][/COLOR]</label>
+            <label>$INFO[ListItem.Artist,,[CR]][COLOR white]$INFO[ListItem.Label][/COLOR]</label>
             <textcolor>$VAR[SkinColorVar]</textcolor>
             <visible>Container.Content(albums)</visible>
         </control>
@@ -136,7 +136,7 @@
             <font>font12</font>
             <align>center</align>
             <aligny>center</aligny>
-            <label>$INFO[ListItem.Artist,,[COLOR white] - [/COLOR]][COLOR white]$INFO[ListItem.Label][/COLOR]</label>
+            <label>$INFO[ListItem.Artist,,[CR]][COLOR white]$INFO[ListItem.Label][/COLOR]</label>
             <textcolor>$VAR[SkinColorVar]</textcolor>
             <autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
             <visible>Container.Content(albums)</visible>
