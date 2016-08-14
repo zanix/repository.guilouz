@@ -1,5 +1,6 @@
 [B]1.5.2[/B]
 • Add support for Library Editor addon
+• Add year for albums in wall info view
 • Move RSS at bottom
 • Fix Seekbar color
 • Fix Seekbar label

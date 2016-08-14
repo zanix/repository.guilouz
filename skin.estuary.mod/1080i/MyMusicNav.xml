@@ -66,6 +66,27 @@
                     <timeperimage>3000</timeperimage>
                     <imagepath background="true" fallback="colors/black.png">$VAR[ListInfoBoxImageVar]</imagepath>
                 </control>
+                <control type="group">
+                    <visible>!String.IsEmpty(ListItem.Year)</visible>
+                    <control type="image">
+                        <right>113</right>
+                        <top>831</top>
+                        <width>463</width>
+                        <height>46</height>
+                        <texture>dialogs/back.png</texture>
+                    </control>
+                    <control type="group">
+                        <top>838</top>
+                        <right>212</right>
+                        <width>182</width>
+                        <align>center</align>
+                        <include content="InfoFlag">
+                            <param name="visible" value="!String.IsEmpty(ListItem.Year)" />
+                            <param name="icon" value="lists/year.png" />
+                            <param name="label" value="$INFO[ListItem.Year]" />
+                        </include>
+                    </control>
+                 </control>   
             </control>
             <include>MediaMenuMouseOverlay</include>
             <control type="group">
