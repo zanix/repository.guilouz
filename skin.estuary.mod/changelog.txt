@@ -1,3 +1,9 @@
+[B]1.5.3[/B]
+• Add aired time, season and episode number for next aired widget
+• Improve esthetic appearance
+• Krypton : Update DialogGameControllers.xml
+• Krypton : Show playspeed on video OSD
+
 [B]1.5.2[/B]
 • Add support for Library Editor addon
 • Add year for albums in wall info view

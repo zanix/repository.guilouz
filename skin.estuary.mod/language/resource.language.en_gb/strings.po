@@ -726,6 +726,11 @@ msgctxt "#31141"
 msgid "Changes for version"
 msgstr ""
 
+#: /1080i/Variables.xml
+msgctxt "#31142"
+msgid "Play speed"
+msgstr ""
+
 msgctxt "#40000"
 msgid "Show movies and tv shows clearlogos"
 msgstr ""

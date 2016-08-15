@@ -601,6 +601,19 @@
 					<description>CPU value</description>
 					<left>555</left>
 					<top>260</top>
+					<width>800</width>
+					<height>25</height>
+					<label>$INFO[System.CpuUsage]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>grey</textcolor>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="label">
+					<description>CPU value</description>
+					<left>555</left>
+					<top>260</top>
 					<width>145</width>
 					<height>25</height>
 					<label>$INFO[System.CpuUsage]</label>
@@ -609,6 +622,7 @@
 					<font>font12</font>
 					<textcolor>grey</textcolor>
 					<scroll>yes</scroll>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="label">
 					<description>Memory</description>

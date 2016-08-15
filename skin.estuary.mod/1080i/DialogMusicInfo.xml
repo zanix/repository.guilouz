@@ -164,6 +164,15 @@
 				<label fallback="19055">$VAR[MusicInfoTextboxVar]</label>
 				<autoscroll delay="10000" time="4000" repeat="10000"/>
 			</control>
+			<control type="image">
+				<left>620</left>
+				<top>214</top>
+				<width>1120</width>
+				<height>207</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>$INFO[Window(Home).Property(SkinHelper.Music.Banner)]</texture>
+				<visible>String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
 			<control type="panel" id="50">
 				<left>585</left>
 				<top>170</top>
@@ -437,25 +446,33 @@
 			</control>
 			<include content="LeftRightArrows">
 				<param name="list_id" value="50" />
-				<param name="left_posx" value="574" />
-				<param name="right_posx" value="1780" />
+				<param name="left_posx" value="560" />
+				<param name="right_posx" value="1772" />
+				<param name="posy" value="304" />
+				<param name="visible" value="Control.HasFocus(50)" />
+			</include>
+			<include content="LeftRightArrows">
+				<param name="list_id" value="502" />
+				<param name="left_posx" value="560" />
+				<param name="right_posx" value="1772" />
 				<param name="posy" value="300" />
-				<param name="visible" value="true" />
+				<param name="visible" value="Control.HasFocus(502)" />
 			</include>
 		</control>
 		<control type="group">
 			<visible>String.IsEqual(ListItem.DBType,artist)</visible>
 			<include content="InfoDialogTopBarInfo">
-				<param name="main_label" value="$INFO[ListItem.Artist]" />
+				<param name="main_label" value="[COLOR white]$INFO[ListItem.Artist][/COLOR]" />
 				<param name="sub_label" value="$INFO[ListItem.Genre]" />
 				<param name="id" value="33333" />
+				<param name="textcolor" value="$VAR[SkinColorVar]" />
 			</include>
 		</control>
 		<control type="group">
 			<visible>String.IsEqual(ListItem.DBType,album)</visible>
 			<include content="InfoDialogTopBarInfo">
-				<param name="main_label" value="[COLOR white]$INFO[ListItem.Album][/COLOR]$INFO[ListItem.Year, [COLOR white]([/COLOR],[COLOR white])[/COLOR]]" />
-				<param name="sub_label" value="[COLOR white]$INFO[ListItem.Artist][/COLOR]" />
+				<param name="main_label" value="[COLOR white]$INFO[ListItem.Album]$INFO[ListItem.Year, (,)[/COLOR]]" />
+				<param name="sub_label" value="$INFO[ListItem.Artist]" />
 				<param name="id" value="33334" />
 				<param name="textcolor" value="$VAR[SkinColorVar]" />
 			</include>
@@ -463,8 +480,8 @@
 		<control type="group">
 			<visible>String.IsEqual(ListItem.DBType,song) + !Window.IsActive(musicinformation)</visible>
 			<include content="InfoDialogTopBarInfo">
-				<param name="main_label" value="$INFO[ListItem.TrackNumber]. [COLOR white]$INFO[ListItem.Title][/COLOR]" />
-				<param name="sub_label" value="[COLOR white]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album][/COLOR]$INFO[ListItem.Year, [COLOR white]([/COLOR],[COLOR white])[/COLOR]]" />
+				<param name="main_label" value="[COLOR white]$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title][/COLOR]" />
+				<param name="sub_label" value="$INFO[ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[ListItem.Album]$INFO[ListItem.Year, (,)" />
 				<param name="id" value="33335" />
 				<param name="textcolor" value="$VAR[SkinColorVar]" />
 			</include>
