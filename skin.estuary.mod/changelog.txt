@@ -1,6 +1,8 @@
 [B]1.5.3[/B]
 • Add aired time, season and episode number for next aired widget
+• Add fallback music disc (Thanks emiralles)
 • Improve esthetic appearance
+• Fix media settings icon
 • Krypton : Update DialogGameControllers.xml
 • Krypton : Show playspeed on video OSD
 

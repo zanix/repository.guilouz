@@ -296,31 +296,31 @@
 				<width>73</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$VAR[WidgetFlagIconResolutionVar]</texture>
+				<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconResolutionVar]</texture>
 			</control>
 			<control type="image">
 				<width>130</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$VAR[WidgetFlagIconVideoCodecVar]</texture>
+				<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconVideoCodecVar]</texture>
 			</control>
 			<control type="image">
 				<width>108</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$VAR[WidgetFlagIconAspectVar]</texture>
+				<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconAspectVar]</texture>
 			</control>
 			<control type="image">
 				<width>130</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$VAR[WidgetFlagIconAudioCodecVar]</texture>
+				<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconAudioCodecVar]</texture>
 			</control>
 			<control type="image">
 				<width>130</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
-				<texture>$VAR[WidgetFlagIconAudioChannelsVar]</texture>
+				<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconAudioChannelsVar]</texture>
 			</control>
 		</control>
 	</include>

@@ -128,7 +128,13 @@
             <name>Font-MusicOSD</name>
             <filename>RobotoCondensed-Regular.ttf</filename>
             <size>21</size>
-        </font>     
+        </font>
+        <font>
+			<name>Font-Disc</name>
+			<filename>PermanentMarker.ttf</filename>
+			<size>36</size>
+			<linespacing>.8</linespacing>
+		</font>    
 	</fontset>
 	<fontset id="Arial" idloc="31053">
 		<!-- Arial Font better for non English -->
@@ -263,5 +269,11 @@
             <filename>RobotoCondensed-Regular.ttf</filename>
             <size>21</size>
         </font>
+        <font>
+			<name>Font-Disc</name>
+			<filename>PermanentMarker.ttf</filename>
+			<size>36</size>
+			<linespacing>.8</linespacing>
+		</font>
 	</fontset>
 </fonts>

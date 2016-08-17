@@ -2712,7 +2712,7 @@
         <value condition="Window.IsActive(PlayerSettings)">icons/settings/player.png</value>
         <value condition="Window.IsActive(programssettings)">icons/settings/programs.png</value>
         <value condition="Window.IsActive(InterfaceSettings)">icons/settings/appearance.png</value>
-        <value condition="Window.IsActive(LibrarySettings)">icons/settings/library.png</value>
+        <value condition="Window.IsActive(MediaSettings)">icons/settings/media.png</value>
         <value condition="Window.IsActive(systemsettings)">icons/settings/system.png</value>
         <value condition="Window.IsActive(servicesettings)">icons/settings/network.png</value>
         <value condition="Window.IsActive(pvrsettings)">icons/settings/livetv.png</value>
