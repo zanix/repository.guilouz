@@ -1533,3 +1533,11 @@ msgstr "Pas de screenshot disponible"
 msgctxt "#40236"
 msgid "Use clearlogos instead of thumbnails"
 msgstr "Utiliser les logos à la place des vignettes"
+
+msgctxt "#40237"
+msgid "Add rule"
+msgstr "Ajouter une règle"
+
+msgctxt "#40238"
+msgid "Delete rule"
+msgstr "Supprimer une règle"

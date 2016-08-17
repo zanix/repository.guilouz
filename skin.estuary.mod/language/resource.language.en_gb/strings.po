@@ -1666,3 +1666,11 @@ msgstr ""
 msgctxt "#40236"
 msgid "Use clearlogos instead of thumbnails"
 msgstr ""
+
+msgctxt "#40237"
+msgid "Add rule"
+msgstr ""
+
+msgctxt "#40238"
+msgid "Delete rule"
+msgstr ""
