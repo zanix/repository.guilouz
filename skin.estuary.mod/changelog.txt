@@ -1,3 +1,6 @@
+[B]1.5.4[/B]
+• Fix bad Textures.xbt
+
 [B]1.5.3[/B]
 • Add aired time, season and episode number for next aired widget
 • Add fallback music disc (Thanks emiralles)
