@@ -1674,3 +1674,11 @@ msgstr ""
 msgctxt "#40238"
 msgid "Delete rule"
 msgstr ""
+
+msgctxt "#40239"
+msgid "Hide CD case"
+msgstr ""
+
+msgctxt "#40240"
+msgid "Hide CD case on music visualisation screen."
+msgstr ""

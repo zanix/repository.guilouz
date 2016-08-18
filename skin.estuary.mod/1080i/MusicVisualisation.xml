@@ -70,6 +70,7 @@
 				<aligny>top</aligny>
 				<aspectratio align="left">keep</aspectratio>
 				<fadetime>300</fadetime>
+				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
 				<animation effect="slide" end="240,0" time="300" reverisble="true" condition="Player.Playing">Conditional</animation>
 				<animation effect="slide" end="0,0" time="300" reverisble="true" condition="!Player.Playing">Conditional</animation>
 				<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="Skin.HasSetting(show_disc)">Conditional</animation>
@@ -85,6 +86,7 @@
 				<aligny>center</aligny>
 				<font>Font-Disc</font>
 				<label>$INFO[MusicPlayer.Artist]</label>
+				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
 				<animation effect="slide" end="240,0" time="300" reverisble="true" condition="Player.Playing">Conditional</animation>
 				<animation effect="slide" end="0,0" time="300" reverisble="true" condition="!Player.Playing">Conditional</animation>
 				<animation effect="rotate" end="-360" center="265,253" time="4800" loop="true" reversible="false" condition="Skin.HasSetting(show_disc)">Conditional</animation>
@@ -102,6 +104,7 @@
 				<aligny>center</aligny>
 				<font>Font-Disc</font>
 				<label>$INFO[MusicPlayer.Album]</label>
+				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
 				<animation effect="slide" end="240,0" time="300" reverisble="true" condition="Player.Playing">Conditional</animation>
 				<animation effect="slide" end="0,0" time="300" reverisble="true" condition="!Player.Playing">Conditional</animation>
 				<animation effect="rotate" end="-360" center="265,253" time="4800" loop="true" reversible="false" condition="Skin.HasSetting(show_disc)">Conditional</animation>
@@ -111,6 +114,14 @@
 				<visible>Skin.HasSetting(show_disc)</visible>
 			</control>
 			<control type="image">
+				<top>1</top>
+				<left>-47</left>
+				<width>505</width>
+				<height>498</height>
+				<texture>dialogs/back.png</texture>
+				<visible>Skin.HasSetting(hide_cdcase)</visible>
+			</control>
+			<control type="image">
 				<animation effect="fade" time="300">Visible</animation>
 				<animation effect="fade" time="300">Hidden</animation>
 				<top>5</top>
@@ -118,6 +129,7 @@
 				<height>490</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>DefaultAudioCover.png</texture>
+				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
 			</control>
 			<control type="image">
 				<animation effect="fade" time="300">Visible</animation>
@@ -127,6 +139,7 @@
 				<height>490</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>$INFO[MusicPlayer.Cover]</texture>
+				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
 			</control>
 			<control type="image">
 				<left>-47</left>
@@ -135,6 +148,7 @@
 				<height>500</height>
 				<aspectratio align="right">keep</aspectratio>
 				<texture>osd/cdcase.png</texture>
+				<visible>!Skin.HasSetting(hide_cdcase)</visible>
 			</control>
 			<control type="label">
 				<left>-208</left>
@@ -145,6 +159,7 @@
 				<align>center</align>
 				<font>Font-MusicOSD</font>
 				<label>[UPPERCASE]$INFO[MusicPlayer.Property(Album_Label)][/UPPERCASE]</label>
+				<visible>!Skin.HasSetting(hide_cdcase)</visible>
 			</control>
 		</control>
 		<control type="group">

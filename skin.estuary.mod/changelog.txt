@@ -1,9 +1,12 @@
+[B]1.5.5[/B]
+• Add possiblity to hide CD case on music visualisation screen.
+
 [B]1.5.4[/B]
 • Fix bad Textures.xbt
 
 [B]1.5.3[/B]
 • Add aired time, season and episode number for next aired widget
-• Add fallback music disc (Thanks emiralles)
+• Add fallback music disc (Thanks to mikeSiLVO)
 • Add possibility to delete / add more one rule for smartplaylist
 • Improve esthetic appearance
 • Fix media settings icon

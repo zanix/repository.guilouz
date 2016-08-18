@@ -1541,3 +1541,11 @@ msgstr "Ajouter une règle"
 msgctxt "#40238"
 msgid "Delete rule"
 msgstr "Supprimer une règle"
+
+msgctxt "#40239"
+msgid "Hide CD case"
+msgstr "Masquer le boîtier du disque"
+
+msgctxt "#40240"
+msgid "Hide CD case on music visualisation screen."
+msgstr "Permet de masquer le boîtier du disque sur l'écran de visualisation de la musique."
