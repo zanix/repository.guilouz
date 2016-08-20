@@ -1,3 +1,7 @@
+1.5.6 :
+• Add DTS-HD High Resolution icon
+• Fix playspeed label
+
 1.5.5 :
 • Add possiblity to hide CD case on music visualisation screen
 • Add language and subtitles language of current video on video OSD
