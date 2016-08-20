@@ -1549,3 +1549,11 @@ msgstr "Masquer le boîtier du disque"
 msgctxt "#40240"
 msgid "Hide CD case on music visualisation screen."
 msgstr "Permet de masquer le boîtier du disque sur l'écran de visualisation de la musique."
+
+msgctxt "#40241"
+msgid "Hide pictures info"
+msgstr "Masquer les informations des images"
+
+msgctxt "#40242"
+msgid "Mosaics"
+msgstr "Mosaïques"

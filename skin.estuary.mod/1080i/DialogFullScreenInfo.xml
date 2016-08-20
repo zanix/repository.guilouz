@@ -997,6 +997,53 @@
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
+				<control type="group">
+					<control type="image">
+						<posy>16</posy>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/infodialogs/audio.png</texture>
+						<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
+					</control>
+					<control type="image">
+						<posy>16</posy>
+						<posx>50</posx>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[VideoPlayer.AudioLanguage,icons/infodialogs/flags/,.png]</texture>
+						<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
+					</control>
+					<control type="label">
+						<posy>12</posy>
+						<posx>102</posx>
+						<font>font14</font>
+						<width>40</width>
+						<height>40</height>
+						<label>•</label>
+						<aligny>center</aligny>
+						<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+					</control>
+					<control type="image">
+						<posy>16</posy>
+						<posx>136</posx>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/infodialogs/subtitles.png</texture>
+						<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+					</control>
+					<control type="image">
+						<posy>16</posy>
+						<posx>186</posx>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[VideoPlayer.SubtitlesLanguage,icons/infodialogs/flags/,.png]</texture>
+						<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+					</control>
+				</control>
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd)</visible>

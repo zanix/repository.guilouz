@@ -22,6 +22,7 @@
     <include file="View_502_FanArt.xml" />
     <include file="View_504_PicsList.xml" />
     <include file="View_505_Wall.xml" />
+    <include file="View_506_Mosaic.xml" />
     <include file="Variables.xml" />
     <include file="script-skinshortcuts-includes.xml"/>
     <constant name="DepthDialog">0.50</constant>

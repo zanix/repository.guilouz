@@ -126,14 +126,14 @@
                         <width>40</width>
                         <height>40</height>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="ListLabel">icons/infodialogs/audio.png</texture>
+                        <texture>icons/infodialogs/audio.png</texture>
                         <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
                     </control>
                     <control type="image">
                         <width>10</width>
                         <height>10</height>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="ListLabel"></texture>
+                        <texture></texture>
                         <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
                     </control>
                     <control type="image">
@@ -207,7 +207,7 @@
                         <width>10</width>
                         <height>10</height>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="ListLabel"></texture>
+                        <texture></texture>
                         <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
                     </control>
                     <control type="image">
@@ -274,14 +274,14 @@
                         <width>40</width>
                         <height>40</height>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="ListLabel">icons/infodialogs/subtitles.png</texture>
+                        <texture>icons/infodialogs/subtitles.png</texture>
                         <visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
                     </control>   
                     <control type="image">
                         <width>10</width>
                         <height>10</height>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="ListLabel"></texture>
+                        <texture></texture>
                         <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
                     </control>               
                     <control type="image">
