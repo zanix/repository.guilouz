@@ -286,12 +286,20 @@
                         <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=PopupPosition,header=$LOCALIZE[40194])</onclick>
                         <onclick>ReloadSkin()</onclick>
                     </control>
+                    <control type="radiobutton" id="679">
+                        <label>$LOCALIZE[40243]</label>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick>Skin.ToggleSetting(hide_date)</onclick>
+                        <selected>Skin.HasSetting(hide_date)</selected>
+                    </control>
                     <control type="radiobutton" id="603">
                         <label>$LOCALIZE[31093]</label>
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <onclick>Skin.ToggleSetting(show_weatherinfo)</onclick>
                         <selected>Skin.HasSetting(show_weatherinfo)</selected>
+                        <visible>!Skin.HasSetting(hide_date)</visible>
                     </control>
                     <control type="image" id="11">
                         <description>separator image</description>
@@ -302,7 +310,7 @@
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=RunScript(script.skin.helper.service,action=reset,filter=HideBars,silent=true)|Skin.Reset(no_slide_animations)|Skin.Reset(no_animations)|RunScript(script.skin.helper.service,action=reset,filter=PopupPosition,silent=true)|Skin.Reset(show_weatherinfo))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=RunScript(script.skin.helper.service,action=reset,filter=HideBars,silent=true)|Skin.Reset(no_slide_animations)|Skin.Reset(no_animations)|RunScript(script.skin.helper.service,action=reset,filter=PopupPosition,silent=true)|Skin.Reset(hide_date)|Skin.Reset(show_weatherinfo))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="630">

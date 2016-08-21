@@ -3,7 +3,7 @@
 	<zorder>3</zorder>
 	<controls>
 		<control type="group">
-			<visible>!Window.IsVisible(Startup.xml)</visible>
+			<visible>!Window.IsVisible(Startup.xml) + !Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)</visible>
 			<depth>DepthMax</depth>
 			<top>945</top>
 			<left>640</left>

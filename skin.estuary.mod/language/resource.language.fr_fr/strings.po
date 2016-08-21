@@ -1557,3 +1557,11 @@ msgstr "Masquer les informations des images"
 msgctxt "#40242"
 msgid "Mosaics"
 msgstr "Mosaïques"
+
+msgctxt "#40243"
+msgid "Hide time and date"
+msgstr "Masquer l'heure et la date"
+
+msgctxt "#40244"
+msgid "Hide time and date on top bar."
+msgstr "Permet de masquer l'heure et la date sur la barre du haut."

@@ -1690,3 +1690,11 @@ msgstr ""
 msgctxt "#40242"
 msgid "Mosaics"
 msgstr ""
+
+msgctxt "#40243"
+msgid "Hide time and date"
+msgstr ""
+
+msgctxt "#40244"
+msgid "Hide time and date on top bar."
+msgstr ""

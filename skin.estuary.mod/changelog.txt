@@ -1,6 +1,8 @@
 1.5.6 :
 • Add DTS-HD High Resolution icon
+• Add possiblity to hide time and date on top bar
 • Fix playspeed label
+• Hide notifications on fullscreen
 
 1.5.5 :
 • Add possiblity to hide CD case on music visualisation screen

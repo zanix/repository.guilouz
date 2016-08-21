@@ -2275,11 +2275,13 @@
                         <control type="label">
                             <include>BreadcrumbsLabel</include>
                             <label>$INFO[System.Time]</label>
-                            <visible>!Skin.HasSetting(horizontaladvanced_menu)</visible>
+                            <visible>![Skin.HasSetting(horizontaladvanced_menu) + Window.IsVisible(Home.xml)]</visible>
+                            <visible>!Skin.HasSetting(hide_date)</visible>
                         </control>
                     </control>
                     <control type="group">
-                    	<visible>!Skin.HasSetting(horizontaladvanced_menu)</visible>
+                    	<visible>![Skin.HasSetting(horizontaladvanced_menu) + Window.IsVisible(Home.xml)]</visible>
+                    	<visible>!Skin.HasSetting(hide_date)</visible>
                         <control type="image">
                             <right>25</right>
                             <top>20</top>
@@ -2316,7 +2318,8 @@
             <onclick>ActivateWindow(weather)</onclick>
             <label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
             <visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
-            <visible>!Skin.HasSetting(horizontaladvanced_menu)</visible>
+            <visible>![Skin.HasSetting(horizontaladvanced_menu) + Window.IsVisible(Home.xml)]</visible>
+            <visible>!Skin.HasSetting(hide_date)</visible>
         </control>
         <control type="image">
             <top>4</top>
@@ -2326,7 +2329,8 @@
             <aspectratio align="left">keep</aspectratio>
             <texture colordiffuse="$VAR[SkinColorVar]">weather/small/$INFO[Weather.FanartCode].png</texture>
             <visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
-            <visible>!Skin.HasSetting(horizontaladvanced_menu)</visible>
+            <visible>![Skin.HasSetting(horizontaladvanced_menu) + Window.IsVisible(Home.xml)]</visible>
+            <visible>!Skin.HasSetting(hide_date)</visible>
         </control>
     </include>
     <include name="BreadcrumbsLabel">
