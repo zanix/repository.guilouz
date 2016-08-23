@@ -12,7 +12,7 @@
 		<control type="image">
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture>$INFO[Window(home).Property(fanart)]</texture>
+			<texture>$VAR[InfoFanartVar]</texture>
 			<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ExtraFanArtPath))</visible>
 		</control>
 		<control type="multiimage">
@@ -29,7 +29,7 @@
         <control type="image">
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture>$INFO[Window(home).Property(fanart)]</texture>
+			<texture>$VAR[InfoFanartVar]</texture>
 			<visible>!Skin.HasSetting(SkinHelper.EnableMusicExtraFanart)</visible>
 		</control>
         <control type="multiimage">

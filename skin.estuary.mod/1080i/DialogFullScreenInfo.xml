@@ -998,6 +998,7 @@
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="group">
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
 					<control type="image">
 						<posy>16</posy>
 						<width>40</width>

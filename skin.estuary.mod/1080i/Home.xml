@@ -6,6 +6,11 @@
     <onload>Skin.SetBool(SkinHelper.EnableAddonsLookups)</onload>
     <onload>SetProperty(RefreshList,1,Home)</onload>
     <onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
+    <onunload>ClearProperty(infoposter,home)</onunload>
+	<onunload>ClearProperty(infologo,home)</onunload>
+	<onunload>ClearProperty(infologotv,home)</onunload>
+	<onunload>ClearProperty(infofanart,home)</onunload>
+	<onunload>ClearProperty(infobanner,home)</onunload>
     <defaultcontrol>9000</defaultcontrol>
     <backgroundcolor>background</backgroundcolor>
     <controls>

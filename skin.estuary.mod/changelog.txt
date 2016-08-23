@@ -2,7 +2,13 @@
 • Add DTS-HD High Resolution icon
 • Add possiblity to hide time and date on top bar
 • Fix playspeed label
+• Fix poster, clearlogo and fanart when pressing "i" button on widgets
+• Fix poster, clearlogo and fanart on video info
+• Fix 'Show fanart' on music/video info
+• Fix osd not showing with live tv
 • Hide notifications on fullscreen
+• Allow skip chapters with button on video OSD
+• Updated language files from Transifex
 
 1.5.5 :
 • Add possiblity to hide CD case on music visualisation screen

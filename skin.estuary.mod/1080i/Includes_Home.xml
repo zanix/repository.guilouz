@@ -580,6 +580,16 @@
 						</control>
 					</itemlayout>
 					<focusedlayout width="1232" height="695">
+						<control type="button">
+							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
+							<texturenofocus>-</texturenofocus>
+							<texturefocus>-</texturefocus>
+						</control>
 						<control type="image">
 							<width>100%</width>
 							<height>100%</height>
@@ -732,6 +742,16 @@
 						</control>
 					</itemlayout>
 					<focusedlayout width="1232" height="695">
+						<control type="button">
+							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
+							<texturenofocus>-</texturenofocus>
+							<texturefocus>-</texturefocus>
+						</control>
 						<control type="image">
 							<width>100%</width>
 							<height>100%</height>
@@ -894,6 +914,16 @@
 						</control>
 					</itemlayout>
 					<focusedlayout width="1140" height="641">
+						<control type="button">
+							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
+							<texturenofocus>-</texturenofocus>
+							<texturefocus>-</texturefocus>
+						</control>
 						<control type="image">
 							<width>100%</width>
 							<height>100%</height>
@@ -976,6 +1006,11 @@
 				<focusedlayout width="277" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus>-</texturenofocus>
 						<texturefocus>-</texturefocus>
 					</control>
@@ -1088,6 +1123,11 @@
 				<focusedlayout width="270" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+						<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+						<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus>-</texturenofocus>
 						<texturefocus>-</texturefocus>
 					</control>
@@ -1199,6 +1239,11 @@
 				<focusedlayout width="240" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+						<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+						<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus>-</texturenofocus>
 						<texturefocus>-</texturefocus>
 					</control>
@@ -1312,6 +1357,11 @@
 				<focusedlayout width="277" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+						<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+						<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus>-</texturenofocus>
 						<texturefocus>-</texturefocus>
 					</control>
@@ -1425,6 +1475,11 @@
 				<focusedlayout width="270" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+						<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+						<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus>-</texturenofocus>
 						<texturefocus>-</texturefocus>
 					</control>
@@ -1537,6 +1592,11 @@
 				<focusedlayout width="240" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+						<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+						<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus>-</texturenofocus>
 						<texturefocus>-</texturefocus>
 					</control>
@@ -2183,6 +2243,11 @@
 					<focusedlayout width="454" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -2357,6 +2422,11 @@
 					<focusedlayout width="540" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -2530,6 +2600,11 @@
 					<focusedlayout width="440" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -2705,6 +2780,11 @@
 					<focusedlayout width="454" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -2880,6 +2960,11 @@
 					<focusedlayout width="540" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -3054,6 +3139,11 @@
 					<focusedlayout width="440" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -3204,6 +3294,11 @@
 					<focusedlayout width="343" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -3342,6 +3437,11 @@
 					<focusedlayout width="343" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -3482,6 +3582,11 @@
 					<focusedlayout width="405" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -3579,6 +3684,11 @@
 					<focusedlayout width="340" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -3676,6 +3786,11 @@
 					<focusedlayout width="340" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -3814,6 +3929,11 @@
 					<focusedlayout width="405" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -3954,6 +4074,11 @@
 					<focusedlayout width="340" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -4077,6 +4202,11 @@
 					<focusedlayout width="343" height="340">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -4216,6 +4346,11 @@
 					<focusedlayout width="405" height="340">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>
@@ -4354,6 +4489,11 @@
 					<focusedlayout width="340" height="340">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
+							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
+							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus>-</texturenofocus>
 							<texturefocus>-</texturefocus>
 						</control>

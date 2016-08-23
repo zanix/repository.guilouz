@@ -600,7 +600,7 @@
         <value condition="Control.HasFocus(6500)">[COLOR $VAR[SkinColorVar]]$INFO[Container(6500).ListItem.Property(NextSeasonNumber),$LOCALIZE[20373] ,] $INFO[Container(6500).ListItem.Property(NextEpisodeNumber),$LOCALIZE[20359] , : ]$INFO[Container(6500).ListItem.Property(NextTitle)]$INFO[Container(6500).ListItem.Property(ShortTime),[COLOR white] • [/COLOR]$LOCALIZE[20416] : ,][/COLOR]</value>    
         <value condition="Control.HasFocus(6600) + Integer.IsEqual(Container(6600).ListItem.PercentPlayed,0) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.tvshows6))">[COLOR $VAR[SkinColorVar]]$INFO[Container(6600).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(6600).ListItem.TVShowTitle,,[COLOR white] • [/COLOR]]$INFO[Container(6600).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(6600).ListItem.Year][/COLOR]</value>
         <value condition="Control.HasFocus(6600) + !Integer.IsEqual(Container(6600).ListItem.PercentPlayed,0) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.tvshows6))">[COLOR $VAR[SkinColorVar]]$INFO[Container(6600).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(6600).ListItem.TVShowTitle,,[COLOR white] • [/COLOR]]$INFO[Container(6600).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(6600).ListItem.Year,]$INFO[Container(6600).ListItem.PercentPlayed,[COLOR white] • [/COLOR]$LOCALIZE[40169] ,%][/COLOR]</value>
-        <value condition="Control.HasFocus(6600)">[COLOR $VAR[SkinColorVar]]$INFO[Container(6600).ListItem.TvShowTitle][/COLOR]</value>
+        <value condition="Control.HasFocus(6600)">[COLOR $VAR[SkinColorVar]]$INFO[Container(6600).ListItem.TvShowTitle]$INFO[Container(6600).ListItem.Property(airday),[COLOR white] • [/COLOR]$LOCALIZE[20416] : ,]$INFO[Container(6600).ListItem.Property(airtime), - ,][/COLOR]</value>
         <!-- Music Videos -->
         <value condition="Control.HasFocus(10100) + Integer.IsEqual(Container(10100).ListItem.PercentPlayed,0) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.musicvideo1))">[COLOR $VAR[SkinColorVar]]$INFO[Container(10100).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(10100).ListItem.TVShowTitle,,[COLOR white] • [/COLOR]]$INFO[Container(10100).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(10100).ListItem.Year][/COLOR]</value>
         <value condition="Control.HasFocus(10100) + !Integer.IsEqual(Container(10100).ListItem.PercentPlayed,0) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.musicvideo1))">[COLOR $VAR[SkinColorVar]]$INFO[Container(10100).ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[Container(10100).ListItem.TVShowTitle,,[COLOR white] • [/COLOR]]$INFO[Container(10100).ListItem.Rating,,[COLOR white] • [/COLOR]]$INFO[Container(10100).ListItem.Year,]$INFO[Container(10100).ListItem.PercentPlayed,[COLOR white] • [/COLOR]$LOCALIZE[40169] ,%][/COLOR]</value>
@@ -1496,25 +1496,23 @@
         <value condition="!String.IsEmpty(Container(504).ListItem.Art(clearlogo))">$INFO[Container(504).ListItem.Art(clearlogo)]</value>
         <value condition="!String.IsEmpty(Container(505).ListItem.Art(clearlogo))">$INFO[Container(505).ListItem.Art(clearlogo)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Listitem.Title]&amp;type=clearlogo</value>
+        <value condition="!String.IsEmpty(Window(home).Property(infologo))">$INFO[Window(home).Property(infologo)]</value>
+        <value condition="!String.IsEmpty(Window(home).Property(infologotv))">$INFO[Window(home).Property(infologotv)]</value>
     </variable>
     <variable name="HubClearLogoVar">
         <value condition="!String.IsEmpty(Container(9500).ListItem.Art(tvshow.clearlogo))">$INFO[Container(9500).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="!String.IsEmpty(Container(9500).ListItem.Art(clearlogo))">$INFO[Container(9500).ListItem.Art(clearlogo)]</value>
-        <value condition="String.IsEmpty(Container(9500).ListItem.Art(clearlogo)) + String.IsEmpty(Container(9500).ListItem.Art(tvshow.clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(9500).Listitem.Title]&amp;type=clearlogo</value>
     </variable>    
     <variable name="WidgetBannerVar">
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(ListItem.Art(tvshow.banner)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Listitem.Title]&amp;type=banner</value>
     </variable>
     <variable name="WidgetHubPosterVar">
         <value condition="!String.IsEmpty(Container(22100).ListItem.Art(tvshow.poster))">$INFO[Container(22100).ListItem.Art(tvshow.poster)]</value>
         <value condition="!String.IsEmpty(Container(22100).ListItem.Art(poster))">$INFO[Container(22100).ListItem.Art(poster)]</value>
         <value condition="!String.IsEmpty(Container(22100).ListItem.Icon)">$INFO[Container(22100).ListItem.Icon]</value>
-        <value condition="String.IsEmpty(Container(22100).ListItem.Art(poster)) + String.IsEmpty(Container(22100).ListItem.Art(tvshow.poster)) + String.IsEmpty(Container(22100).ListItem.Icon)">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(22100).Listitem.Title]&amp;type=poster,thumb</value>
     </variable>
     <variable name="WidgetClearLogoVar">
         <!-- Hub -->
@@ -1523,258 +1521,216 @@
         <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + !Control.HasFocus(900) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget) + !String.IsEmpty(Container(22100).ListItem.Art(clearlogo)) + !Control.HasFocus(900) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804)">$INFO[Container(22100).ListItem.Art(clearlogo)]</value>
         <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget) + !String.IsEmpty(ListItem.Art(clearlogo)) + !Control.HasFocus(900) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804)">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget) + String.IsEmpty(Container(22100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(22100).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + !Control.HasFocus(900) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804)">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(22100).Listitem.Title]&amp;type=clearlogo</value>
         <!-- Customs -->
         <value condition="Control.HasFocus(18100) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(18100) + !String.IsEmpty(Container(18100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(18100).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18100) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18100) + !String.IsEmpty(Container(18100).ListItem.Art(clearlogo))">$INFO[Container(18100).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(18100) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(18100) + String.IsEmpty(Container(18100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(18100).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(18100).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(18200) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(18200) + !String.IsEmpty(Container(18200).ListItem.Art(tvshow.clearlogo))">$INFO[Container(18200).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18200) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18200) + !String.IsEmpty(Container(18200).ListItem.Art(clearlogo))">$INFO[Container(18200).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(18200) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(18200) + String.IsEmpty(Container(18200).ListItem.Art(clearlogo)) + String.IsEmpty(Container(18200).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(18200).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(18300) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(18300) + !String.IsEmpty(Container(18300).ListItem.Art(tvshow.clearlogo))">$INFO[Container(18300).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18300) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18300) + !String.IsEmpty(Container(18300).ListItem.Art(clearlogo))">$INFO[Container(18300).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(18300) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(18300) + String.IsEmpty(Container(18300).ListItem.Art(clearlogo)) + String.IsEmpty(Container(18300).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(18300).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(18400) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(18400) + !String.IsEmpty(Container(18400).ListItem.Art(tvshow.clearlogo))">$INFO[Container(18400).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18400) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18400) + !String.IsEmpty(Container(18400).ListItem.Art(clearlogo))">$INFO[Container(18400).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(18400) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(18400) + String.IsEmpty(Container(18400).ListItem.Art(clearlogo)) + String.IsEmpty(Container(18400).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(18400).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(18500) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(18500) + !String.IsEmpty(Container(18500).ListItem.Art(tvshow.clearlogo))">$INFO[Container(18500).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18500) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18500) + !String.IsEmpty(Container(18500).ListItem.Art(clearlogo))">$INFO[Container(18500).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(18500) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(18500) + String.IsEmpty(Container(18500).ListItem.Art(clearlogo)) + String.IsEmpty(Container(18500).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(18500).Listitem.Title]&amp;type=clearlogo</value> 
         <value condition="Control.HasFocus(18600) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(18600) + !String.IsEmpty(Container(18600).ListItem.Art(tvshow.clearlogo))">$INFO[Container(18600).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18600) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(18600) + !String.IsEmpty(Container(18600).ListItem.Art(clearlogo))">$INFO[Container(18600).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(18600) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(18600) + String.IsEmpty(Container(18600).ListItem.Art(clearlogo)) + String.IsEmpty(Container(18600).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(18600).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(19100) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(19100) + !String.IsEmpty(Container(19100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(19100).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19100) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19100) + !String.IsEmpty(Container(19100).ListItem.Art(clearlogo))">$INFO[Container(19100).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(19100) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(19100) + String.IsEmpty(Container(19100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(19100).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(19100).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(19200) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(19200) + !String.IsEmpty(Container(19200).ListItem.Art(tvshow.clearlogo))">$INFO[Container(19200).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19200) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19200) + !String.IsEmpty(Container(19200).ListItem.Art(clearlogo))">$INFO[Container(19200).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(19200) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(19200) + String.IsEmpty(Container(19200).ListItem.Art(clearlogo)) + String.IsEmpty(Container(19200).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(19200).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(19300) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(19300) + !String.IsEmpty(Container(19300).ListItem.Art(tvshow.clearlogo))">$INFO[Container(19300).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19300) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19300) + !String.IsEmpty(Container(19300).ListItem.Art(clearlogo))">$INFO[Container(19300).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(19300) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(19300) + String.IsEmpty(Container(19300).ListItem.Art(clearlogo)) + String.IsEmpty(Container(19300).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(19300).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(19400) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(19400) + !String.IsEmpty(Container(19400).ListItem.Art(tvshow.clearlogo))">$INFO[Container(19400).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19400) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19400) + !String.IsEmpty(Container(19400).ListItem.Art(clearlogo))">$INFO[Container(19400).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(19400) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(19400) + String.IsEmpty(Container(19400).ListItem.Art(clearlogo)) + String.IsEmpty(Container(19400).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(19400).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(19500) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(19500) + !String.IsEmpty(Container(19500).ListItem.Art(tvshow.clearlogo))">$INFO[Container(19500).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19500) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19500) + !String.IsEmpty(Container(19500).ListItem.Art(clearlogo))">$INFO[Container(19500).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(19500) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(19500) + String.IsEmpty(Container(19500).ListItem.Art(clearlogo)) + String.IsEmpty(Container(19500).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(19500).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(19600) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(19600) + !String.IsEmpty(Container(19600).ListItem.Art(tvshow.clearlogo))">$INFO[Container(19600).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19600) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(19600) + !String.IsEmpty(Container(19600).ListItem.Art(clearlogo))">$INFO[Container(19600).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(19600) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(19600) + String.IsEmpty(Container(19600).ListItem.Art(clearlogo)) + String.IsEmpty(Container(19600).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(19600).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(21100) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(21100) + !String.IsEmpty(Container(21100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(21100).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21100) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21100) + !String.IsEmpty(Container(21100).ListItem.Art(clearlogo))">$INFO[Container(21100).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(21100) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(21100) + String.IsEmpty(Container(21100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(21100).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(21100).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(21200) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(21200) + !String.IsEmpty(Container(21200).ListItem.Art(tvshow.clearlogo))">$INFO[Container(21200).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21200) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21200) + !String.IsEmpty(Container(21200).ListItem.Art(clearlogo))">$INFO[Container(21200).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(21200) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(21200) + String.IsEmpty(Container(21200).ListItem.Art(clearlogo)) + String.IsEmpty(Container(21200).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(21200).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(21300) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(21300) + !String.IsEmpty(Container(21300).ListItem.Art(tvshow.clearlogo))">$INFO[Container(21300).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21300) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21300) + !String.IsEmpty(Container(21300).ListItem.Art(clearlogo))">$INFO[Container(21300).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(21300) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(21300) + String.IsEmpty(Container(21300).ListItem.Art(clearlogo)) + String.IsEmpty(Container(21300).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(21300).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(21400) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(21400) + !String.IsEmpty(Container(21400).ListItem.Art(tvshow.clearlogo))">$INFO[Container(21400).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21400) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21400) + !String.IsEmpty(Container(21400).ListItem.Art(clearlogo))">$INFO[Container(21400).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(21400) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(21400) + String.IsEmpty(Container(21400).ListItem.Art(clearlogo)) + String.IsEmpty(Container(21400).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(21400).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(21500) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(21500) + !String.IsEmpty(Container(21500).ListItem.Art(tvshow.clearlogo))">$INFO[Container(21500).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21500) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21500) + !String.IsEmpty(Container(21500).ListItem.Art(clearlogo))">$INFO[Container(21500).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(21500) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(21500) + String.IsEmpty(Container(21500).ListItem.Art(clearlogo)) + String.IsEmpty(Container(21500).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(21500).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(21600) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(21600) + !String.IsEmpty(Container(21600).ListItem.Art(tvshow.clearlogo))">$INFO[Container(21600).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21600) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(21600) + !String.IsEmpty(Container(21600).ListItem.Art(clearlogo))">$INFO[Container(21600).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(21600) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(21600) + String.IsEmpty(Container(21600).ListItem.Art(clearlogo)) + String.IsEmpty(Container(21600).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(21600).Listitem.Title]&amp;type=clearlogo</value>
         <!-- Sources -->
         <value condition="Control.HasFocus(11100) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(11100) + !String.IsEmpty(Container(11100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(11100).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(11100) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(11100) + !String.IsEmpty(Container(11100).ListItem.Art(clearlogo))">$INFO[Container(11100).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(11100) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(11100) + String.IsEmpty(Container(11100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(11100).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(11100).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(11200) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(11200) + !String.IsEmpty(Container(11200).ListItem.Art(tvshow.clearlogo))">$INFO[Container(11200).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(11200) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(11200) + !String.IsEmpty(Container(11200).ListItem.Art(clearlogo))">$INFO[Container(11200).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(11200) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(11200) + String.IsEmpty(Container(11200).ListItem.Art(clearlogo)) + String.IsEmpty(Container(11200).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(11200).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(11300) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(11300) + !String.IsEmpty(Container(11300).ListItem.Art(tvshow.clearlogo))">$INFO[Container(11300).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(11300) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(11300) + !String.IsEmpty(Container(11300).ListItem.Art(clearlogo))">$INFO[Container(11300).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(11300) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(11300) + String.IsEmpty(Container(11300).ListItem.Art(clearlogo)) + String.IsEmpty(Container(11300).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(11300).Listitem.Title]&amp;type=clearlogo</value>
         <!-- Movies -->
         <value condition="Control.HasFocus(17100) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(17100) + !String.IsEmpty(Container(17100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(17100).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(17100) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(17100) + !String.IsEmpty(Container(17100).ListItem.Art(clearlogo))">$INFO[Container(17100).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(17100) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(17100) + String.IsEmpty(Container(17100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(17100).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(17100).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(17200) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(17200) + !String.IsEmpty(Container(17200).ListItem.Art(tvshow.clearlogo))">$INFO[Container(17200).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(17200) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(17200) + !String.IsEmpty(Container(17200).ListItem.Art(clearlogo))">$INFO[Container(17200).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(17200) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(17200) + String.IsEmpty(Container(17200).ListItem.Art(clearlogo)) + String.IsEmpty(Container(17200).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(17200).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(17300) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(17300) + !String.IsEmpty(Container(17300).ListItem.Art(tvshow.clearlogo))">$INFO[Container(17300).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(17300) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(17300) + !String.IsEmpty(Container(17300).ListItem.Art(clearlogo))">$INFO[Container(17300).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(17300) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(17300) + String.IsEmpty(Container(17300).ListItem.Art(clearlogo)) + String.IsEmpty(Container(17300).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(17300).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(17400) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(17400) + !String.IsEmpty(Container(17400).ListItem.Art(tvshow.clearlogo))">$INFO[Container(17400).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(17400) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(17400) + !String.IsEmpty(Container(17400).ListItem.Art(clearlogo))">$INFO[Container(17400).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(17400) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(17400) + String.IsEmpty(Container(17400).ListItem.Art(clearlogo)) + String.IsEmpty(Container(17400).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(17400).Listitem.Title]&amp;type=clearlogo</value>
         <!-- TV Shows -->
         <value condition="Control.HasFocus(6100) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(6100) + !String.IsEmpty(Container(6100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(6100).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6100) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6100) + !String.IsEmpty(Container(6100).ListItem.Art(clearlogo))">$INFO[Container(6100).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(6100) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(6100) + String.IsEmpty(Container(6100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(6100).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(6100).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(6200) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(6200) + !String.IsEmpty(Container(6200).ListItem.Art(tvshow.clearlogo))">$INFO[Container(6200).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6200) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6200) + !String.IsEmpty(Container(6200).ListItem.Art(clearlogo))">$INFO[Container(6200).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(6200) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(6200) + String.IsEmpty(Container(6200).ListItem.Art(clearlogo)) + String.IsEmpty(Container(6200).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(6200).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(6300) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(6300) + !String.IsEmpty(Container(6300).ListItem.Art(tvshow.clearlogo))">$INFO[Container(6300).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6300) + !String.IsEmpty(Container(6300).ListItem.Art(clearlogo))">$INFO[Container(6300).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(6300) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(6300) + String.IsEmpty(Container(6300).ListItem.Art(clearlogo)) + String.IsEmpty(Container(6300).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(6300).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(6400) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(6400) + !String.IsEmpty(Container(6400).ListItem.Art(tvshow.clearlogo))">$INFO[Container(6400).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6400) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6400) + !String.IsEmpty(Container(6400).ListItem.Art(clearlogo))">$INFO[Container(6400).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(6400) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(6400) + String.IsEmpty(Container(6400).ListItem.Art(clearlogo)) + String.IsEmpty(Container(6400).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(6400).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(6500) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(6500) + !String.IsEmpty(Container(6500).ListItem.Art(tvshow.clearlogo))">$INFO[Container(6500).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6500) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6500) + !String.IsEmpty(Container(6500).ListItem.Art(clearlogo))">$INFO[Container(6500).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(6500) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(6500) + String.IsEmpty(Container(6500).ListItem.Art(clearlogo)) + String.IsEmpty(Container(6500).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(6500).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(6600) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(6600) + !String.IsEmpty(Container(6600).ListItem.Art(tvshow.clearlogo))">$INFO[Container(6600).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6600) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(6600) + !String.IsEmpty(Container(6600).ListItem.Art(clearlogo))">$INFO[Container(6600).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(6600) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(6600) + String.IsEmpty(Container(6600).ListItem.Art(clearlogo)) + String.IsEmpty(Container(6600).ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(6600).Listitem.Title]&amp;type=clearlogo</value>
         <!-- Music Videos -->
         <value condition="Control.HasFocus(10100) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(10100) + !String.IsEmpty(Container(10100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(10100).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(10100) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(10100) + !String.IsEmpty(Container(10100).ListItem.Art(clearlogo))">$INFO[Container(10100).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(10100) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(10100) + String.IsEmpty(Container(10100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(10100).ListItem.Art(tvshow.clearlogo)) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(10100).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(10200) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(10200) + !String.IsEmpty(Container(10200).ListItem.Art(tvshow.clearlogo))">$INFO[Container(10200).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(10200) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(10200) + !String.IsEmpty(Container(10200).ListItem.Art(clearlogo))">$INFO[Container(10200).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(10200) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(10200) + String.IsEmpty(Container(10200).ListItem.Art(clearlogo)) + String.IsEmpty(Container(10200).ListItem.Art(tvshow.clearlogo))+ !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(10200).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(10300) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(10300) + !String.IsEmpty(Container(10300).ListItem.Art(tvshow.clearlogo))">$INFO[Container(10300).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(10300) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(10300) + !String.IsEmpty(Container(10300).ListItem.Art(clearlogo))">$INFO[Container(10300).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(10300) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(10300) + String.IsEmpty(Container(10300).ListItem.Art(clearlogo)) + String.IsEmpty(Container(10300).ListItem.Art(tvshow.clearlogo))+ !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(10300).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(10400) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(10400) + !String.IsEmpty(Container(10400).ListItem.Art(tvshow.clearlogo))">$INFO[Container(10400).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(10400) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(10400) + !String.IsEmpty(Container(10400).ListItem.Art(clearlogo))">$INFO[Container(10400).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(10400) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(10400) + String.IsEmpty(Container(10400).ListItem.Art(clearlogo)) + String.IsEmpty(Container(10400).ListItem.Art(tvshow.clearlogo))+ !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(10400).Listitem.Title]&amp;type=clearlogo</value>
         <!-- Music -->
         <value condition="Control.HasFocus(7100) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(7100) + !String.IsEmpty(Container(7100).ListItem.Art(tvshow.clearlogo))">$INFO[Container(7100).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7100) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7100) + !String.IsEmpty(Container(7100).ListItem.Art(clearlogo))">$INFO[Container(7100).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(7100) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(7100) + String.IsEmpty(Container(7100).ListItem.Art(clearlogo)) + String.IsEmpty(Container(7100).ListItem.Art(tvshow.clearlogo)) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(7100).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(7200) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(7200) + !String.IsEmpty(Container(7200).ListItem.Art(tvshow.clearlogo))">$INFO[Container(7200).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7200) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7200) + !String.IsEmpty(Container(7200).ListItem.Art(clearlogo))">$INFO[Container(7200).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(7200) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(7200) + String.IsEmpty(Container(7200).ListItem.Art(clearlogo)) + String.IsEmpty(Container(7200).ListItem.Art(tvshow.clearlogo))+ !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(7200).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(7300) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(7300) + !String.IsEmpty(Container(7300).ListItem.Art(tvshow.clearlogo))">$INFO[Container(7300).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7300) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7300) + !String.IsEmpty(Container(7300).ListItem.Art(clearlogo))">$INFO[Container(7300).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(7300) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(7300) + String.IsEmpty(Container(7300).ListItem.Art(clearlogo)) + String.IsEmpty(Container(7300).ListItem.Art(tvshow.clearlogo))+ !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(7300).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(7400) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(7400) + !String.IsEmpty(Container(7400).ListItem.Art(tvshow.clearlogo))">$INFO[Container(7400).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7400) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7400) + !String.IsEmpty(Container(7400).ListItem.Art(clearlogo))">$INFO[Container(7400).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(7400) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(7400) + String.IsEmpty(Container(7400).ListItem.Art(clearlogo)) + String.IsEmpty(Container(7400).ListItem.Art(tvshow.clearlogo))+ !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(7400).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(7500) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(7500) + !String.IsEmpty(Container(7500).ListItem.Art(tvshow.clearlogo))">$INFO[Container(7500).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7500) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7500) + !String.IsEmpty(Container(7500).ListItem.Art(clearlogo))">$INFO[Container(7500).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(7500) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(7500) + String.IsEmpty(Container(7500).ListItem.Art(clearlogo)) + String.IsEmpty(Container(7500).ListItem.Art(tvshow.clearlogo))+ !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(7500).Listitem.Title]&amp;type=clearlogo</value>
         <value condition="Control.HasFocus(7600) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(7600) + !String.IsEmpty(Container(7600).ListItem.Art(tvshow.clearlogo))">$INFO[Container(7600).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7600) + !String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Control.HasFocus(7600) + !String.IsEmpty(Container(7600).ListItem.Art(clearlogo))">$INFO[Container(7600).ListItem.Art(clearlogo)]</value>
         <value condition="Control.HasFocus(7600) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="Control.HasFocus(7600) + String.IsEmpty(Container(7600).ListItem.Art(clearlogo)) + String.IsEmpty(Container(7600).ListItem.Art(tvshow.clearlogo))+ !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container(7600).Listitem.Title]&amp;type=clearlogo</value>
         <!-- Live TV -->
         <value condition="Control.HasFocus(12200) + !String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Control.HasFocus(12200) + !String.IsEmpty(Container(12200).ListItem.Art(tvshow.clearlogo))">$INFO[Container(12200).ListItem.Art(tvshow.clearlogo)]</value>
@@ -1843,6 +1799,10 @@
         <value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelName]</value>
         <value condition="Player.HasAudio">$INFO[MusicPlayer.Artist]</value>
     </variable>
+    <variable name="InfoFanartVar">
+        <value condition="!String.IsEmpty(Window(home).Property(fanart))">$INFO[Window(home).Property(fanart)]</value>
+        <value>$INFO[Window(home).Property(infofanart)]</value>
+    </variable>
     <variable name="GlobalFanartVar">
         <value condition="Skin.HasSetting(use_custom_bg) + !String.IsEmpty(Skin.String(custom_background))">$INFO[Skin.String(custom_background)]</value>
         <value>special://skin/extras/backgrounds/default.png</value>
@@ -1908,6 +1868,9 @@
     <variable name="BannerArtVar">
         <value condition="ListItem.IsParentFolder">DefaultBackBanner.png</value>
         <value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(infobanner))">$INFO[Window(Home).Property(infobanner)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(infobannertv))">$INFO[Window(Home).Property(infobannertv)]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
     <variable name="FanartImageVar">
@@ -2336,6 +2299,7 @@
         <value condition="!String.IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
         <value condition="String.IsEmpty(ListItem.Icon) | String.Contains(ListItem.Icon,Default,left) + String.Contains(ListItem.Icon,.png,right)">http://localhost:52307/getthumb&amp;title=$INFO[Listitem.Label]</value>
         <value condition="Container.Content(episodes) + !String.IsEmpty(Container.Art(season.poster))">$INFO[Container.Art(season.poster)]</value>
+        <value condition="!String.IsEmpty(Window(home).Property(infoposter))">$INFO[Window(home).Property(infoposter)]</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="ListPosterVar">
