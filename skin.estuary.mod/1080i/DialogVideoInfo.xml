@@ -4,6 +4,7 @@
 	<onload>SetProperty(infobackground,$INFO[ListItem.Art(fanart)],home)</onload>
 	<onunload>ClearProperty(infobackground,home)</onunload>
 	<controls>
+		<include>DefaultBackground</include>
 		<control type="multiimage">
 			<depth>DepthBackground</depth>
 			<include>FullScreenDimensions</include>
@@ -534,7 +535,7 @@
 					<height>220</height>
 					<fadetime>150</fadetime>
 					<aspectratio>stretch</aspectratio>
-					<texture>$VAR[BannerVar]</texture>
+					<texture>$VAR[BannerArtVar]</texture>
 					<visible>Integer.IsEqual(Container(50).NumItems,0)</visible>
 				</control>
 				<control type="list" id="50">

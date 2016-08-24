@@ -1,3 +1,7 @@
+1.5.7 :
+• Fix missing skin settings icons
+• Other Fixes
+
 1.5.6 :
 • Add DTS-HD High Resolution icon
 • Add possiblity to hide time and date on top bar
