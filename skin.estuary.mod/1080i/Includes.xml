@@ -1445,6 +1445,7 @@
                 <label>$PARAM[header_label]</label>
                 <haspath>$PARAM[header_haspath]</haspath>
                 <shadowcolor>black</shadowcolor>
+                <scroll>yes</scroll>
             </control>
             <control type="list" id="$PARAM[list_id]">
                 <left>0</left>
@@ -1483,6 +1484,7 @@
                         <font>font12</font>
                         <label>$INFO[ListItem.Label]</label>
                         <shadowcolor>text_shadow</shadowcolor>
+                        <scroll>yes</scroll>
                     </control>
                     <control type="label">
                         <left>0</left>
@@ -1570,6 +1572,7 @@
                 <label>$PARAM[header_label]</label>
                 <haspath>$PARAM[header_haspath]</haspath>
                 <shadowcolor>black</shadowcolor>
+                <scroll>yes</scroll>
             </control>
             <control type="list" id="$PARAM[list_id]">
                 <left>0</left>
@@ -1608,6 +1611,7 @@
                         <font>font12</font>
                         <label>$INFO[ListItem.Label]</label>
                         <shadowcolor>text_shadow</shadowcolor>
+                        <scroll>yes</scroll>
                     </control>
                     <control type="label">
                         <left>0</left>

@@ -126,35 +126,48 @@
             <animation delay="300" effect="fade" time="200">Visible</animation>
             <animation effect="fade" delay="200" time="150">Hidden</animation>
             <control type="image" id="1">
-                <left>910</left>
-                <top>490</top>
-                <width>100</width>
-                <height>100</height>
-                <texture colordiffuse="$VAR[SkinColorVar]">dialogs/extendedprogress/loading-back.png</texture>
-                <visible>String.IsEmpty(Skin.String(SkinHelper.SpinnerTexturePath)) | String.IsEmpty(Skin.String(SkinHelper.SpinnerTexture)) | Skin.String(SkinHelper.SpinnerTexturePath,None)</visible>
-            </control>
-            <!-- 			<control type="image" id="1"><left>910</left><top>490</top><width>100</width><height>100</height><texture>dialogs/volume/progress/p$INFO[Player.CacheLevel].png</texture><animation effect="fade" end="50" time="0" condition="true">Conditional</animation><visible>String.IsEmpty(Skin.String(SkinHelper.SpinnerTexturePath)) | String.IsEmpty(Skin.String(SkinHelper.SpinnerTexture)) | Skin.String(SkinHelper.SpinnerTexturePath,None)</visible></control> -->
-            <control type="image" id="1">
-                <left>910</left>
-                <top>490</top>
-                <width>100</width>
-                <height>100</height>
-                <texture>dialogs/extendedprogress/loading.png</texture>
-                <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
-                <visible>String.IsEmpty(Skin.String(SkinHelper.SpinnerTexturePath)) | String.IsEmpty(Skin.String(SkinHelper.SpinnerTexture)) | Skin.String(SkinHelper.SpinnerTexturePath,None)</visible>
-            </control>
-            <control type="multiimage" id="1">
                 <centerleft>50%</centerleft>
                 <centertop>50%</centertop>
-                <width>100</width>
-                <height>100</height>
-                <aspectratio>keep</aspectratio>
-                <imagepath>$INFO[Skin.String(SkinHelper.SpinnerTexturePath)]</imagepath>
-                <timeperimage>75</timeperimage>
-                <randomize>false</randomize>
-                <fadetime>0</fadetime>
-                <visible>!Skin.String(SkinHelper.SpinnerTexturePath,None)</visible>
+                <width>240</width>
+                <height>230</height>
+                <texture>dialogs/back.png</texture>
             </control>
+            <control type="image" id="1">
+                <centerleft>50%</centerleft>
+                <top>420</top>
+                <width>200</width>
+                <height>200</height>
+                <texture>dialogs/extendedprogress/loading-back.png</texture>
+            </control>
+            <control type="image" id="1">
+                <centerleft>50%</centerleft>
+                <top>420</top>
+                <width>200</width>
+                <height>200</height>
+                <texture colordiffuse="$VAR[SkinColorVar]">dialogs/volume/progress/p$INFO[Player.CacheLevel].png</texture>
+            </control>
+            <control type="label" id="1">
+ 				<label>$INFO[Player.CacheLevel]%</label>
+ 				<centerleft>50%</centerleft>
+ 				<top>420</top>
+ 				<width>200</width>
+ 				<height>200</height>
+ 				<aligny>center</aligny>
+ 				<align>center</align>
+ 				<font>font12</font>
+ 				<shadowcolor>black</shadowcolor>
+ 			</control>
+ 			<control type="label" id="2">
+ 				<label>$LOCALIZE[15107]</label>
+ 				<centerleft>50%</centerleft>
+ 				<top>600</top>
+ 				<width>200</width>
+  				<height>20</height>
+  				<aligny>center</aligny>
+  				<align>center</align>
+  				<font>font12</font>
+ 				<shadowcolor>black</shadowcolor>
+  			</control>
         </control>
     </controls>
 </window>
