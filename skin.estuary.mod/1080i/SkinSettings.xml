@@ -286,6 +286,13 @@
                         <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=PopupPosition,header=$LOCALIZE[40194])</onclick>
                         <onclick>ReloadSkin()</onclick>
                     </control>
+                    <control type="radiobutton" id="681">
+                        <label>$LOCALIZE[40104]</label>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick>Skin.ToggleSetting(hide_popup)</onclick>
+                        <selected>Skin.HasSetting(hide_popup)</selected>
+                    </control>
                     <control type="radiobutton" id="679">
                         <label>$LOCALIZE[40243]</label>
                         <width>1256</width>

@@ -1012,9 +1012,13 @@ msgctxt "#40103"
 msgid "Unwatched TV shows"
 msgstr "Séries TV non vues"
 
-# empty strings "40104"
+msgctxt "#40104"
+msgid "Hide notification popup during playback"
+msgstr "Masquer la fenêtre de notification lors de la lecture"
 
-# empty strings "40105"
+msgctxt "#40105"
+msgid "Hide notification popup during video or music playback."
+msgstr "Permet de masquer la fenêtre de notification lors de la lecture de vidéos ou de musiques."
 
 # empty strings "40106"
 

@@ -2331,7 +2331,7 @@
 		<value condition="Player.Paused">[COLOR white]$LOCALIZE[112][/COLOR]</value>
 		<value condition="Player.Forwarding">[COLOR white]$LOCALIZE[31039][/COLOR] $VAR[VideoPlayerForwardRewindVar]</value>
         <value condition="Player.Rewinding">[COLOR white]$LOCALIZE[31038][/COLOR] $VAR[VideoPlayerForwardRewindVar]</value>
-        <value condition="[Player.Playing + !Player.Caching] + !Player.Seeking">[COLOR white]$LOCALIZE[14086][/COLOR]</value>
+        <value condition="[Player.Playing + !Player.Caching] + !Player.Seeking">[COLOR white]$LOCALIZE[14086][/COLOR]</value>   
     </variable>
     <variable name="SeekTimeLabelVar">
         <value condition="Player.Seeking">$INFO[Player.SeekTime]$INFO[Player.Duration, / ]</value>
@@ -2416,6 +2416,7 @@
         <value condition="Control.HasFocus(677)">$LOCALIZE[40022]</value>
         <value condition="Control.HasFocus(678)">$LOCALIZE[40240]</value>
         <value condition="Control.HasFocus(679)">$LOCALIZE[40244]</value>
+        <value condition="Control.HasFocus(681)">$LOCALIZE[40105]</value>
         <value condition="Control.HasFocus(657) | Control.HasFocus(658) | Control.HasFocus(659) | Control.HasFocus(661) | Control.HasFocus(662)  | Control.HasFocus(669)">$LOCALIZE[10045]</value>
         <value condition="Container(9000).HasFocus(1)">$LOCALIZE[40024]</value>
         <value condition="Container(9000).HasFocus(2)">$LOCALIZE[31130]</value>

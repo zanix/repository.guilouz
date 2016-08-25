@@ -1,5 +1,6 @@
 1.5.7 :
 • Add buffering progress on video fullscreen
+• Add setting to hide notification popup during playback
 • Improve esthetic appearance
 • Fix missing skin settings icons
 • Other Fixes
