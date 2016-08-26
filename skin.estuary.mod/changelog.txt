@@ -3,6 +3,7 @@
 • Add setting to hide notification popup during playback
 • Improve esthetic appearance
 • Fix missing skin settings icons
+• Fix broken addon message
 • Other Fixes
 
 1.5.6 :
