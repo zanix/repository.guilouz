@@ -128,45 +128,36 @@
             <control type="image" id="1">
                 <centerleft>50%</centerleft>
                 <centertop>50%</centertop>
-                <width>240</width>
-                <height>230</height>
+                <width>350</width>
+                <height>70</height>
                 <texture>dialogs/back.png</texture>
             </control>
-            <control type="image" id="1">
-                <centerleft>50%</centerleft>
-                <top>420</top>
-                <width>200</width>
-                <height>200</height>
-                <texture>dialogs/extendedprogress/loading-back.png</texture>
-            </control>
-            <control type="image" id="1">
-                <centerleft>50%</centerleft>
-                <top>420</top>
-                <width>200</width>
-                <height>200</height>
-                <texture colordiffuse="$VAR[SkinColorVar]">dialogs/volume/progress/p$INFO[Player.CacheLevel].png</texture>
+ 			<control type="progress" id="1">
+ 			    <centerleft>50%</centerleft>
+                <top>544</top>
+                <width>320</width>
+                <height>16</height>
+                <info>Player.CacheLevel</info>
             </control>
             <control type="label" id="1">
  				<label>$INFO[Player.CacheLevel]%</label>
  				<centerleft>50%</centerleft>
- 				<top>420</top>
- 				<width>200</width>
- 				<height>200</height>
+ 				<top>518</top>
+ 				<width>320</width>
+ 				<height>20</height>
  				<aligny>center</aligny>
- 				<align>center</align>
- 				<font>font12</font>
- 				<shadowcolor>black</shadowcolor>
- 			</control>
+ 				<align>right</align>
+ 				<font>font10</font>
+ 			</control>        
  			<control type="label" id="2">
  				<label>$LOCALIZE[15107]</label>
  				<centerleft>50%</centerleft>
- 				<top>600</top>
- 				<width>200</width>
+ 				<top>518</top>
+ 				<width>320</width>
   				<height>20</height>
   				<aligny>center</aligny>
-  				<align>center</align>
-  				<font>font12</font>
- 				<shadowcolor>black</shadowcolor>
+  				<align>left</align>
+  				<font>font10</font>
   			</control>
         </control>
     </controls>
