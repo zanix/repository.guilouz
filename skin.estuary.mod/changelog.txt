@@ -2,7 +2,6 @@
 • Add buffering progress on video fullscreen
 • Add setting to hide notification popup during playback
 • Improve esthetic appearance
-• Disable 3D flag icon with Emby
 • Fix missing skin settings icons
 • Fix broken addon message
 • Other Fixes
