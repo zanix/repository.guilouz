@@ -1,5 +1,7 @@
 1.5.8 :
 • Fix 'Play recording' button on Recordings Info dialog
+• [PVR] Recordings window : fix/improve user experience in case of empty recordings list
+• Update some icons
 
 1.5.7 :
 • Add buffering progress on video fullscreen
