@@ -31,8 +31,8 @@
                 <top>218</top>
                 <width>28</width>
                 <height>28</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus></texturefocus>
+                <texturenofocus></texturenofocus>
                 <onclick>Control.Move(57,-1)</onclick>
                 <visible allowhiddenfocus="true">Container(57).HasPrevious + [Control.HasFocus(57) | Control.HasFocus(57500)]</visible>
             </control>
@@ -41,8 +41,8 @@
                 <top>218</top>
                 <width>28</width>
                 <height>28</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus></texturefocus>
+                <texturenofocus></texturenofocus>
                 <onclick>Control.Move(57,1)</onclick>
                 <visible allowhiddenfocus="true">Container(57).HasNext + [Control.HasFocus(57) | Control.HasFocus(57501)]</visible>
             </control>
@@ -125,8 +125,8 @@
 							<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
 							<onfocus>SetProperty(infobannertv,$INFO[Container.ListItem.Art(tvshow.banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
                     <control type="group">
                         <left>0</left>

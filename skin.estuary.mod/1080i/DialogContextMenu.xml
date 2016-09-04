@@ -51,8 +51,8 @@
 			<height>48</height>
 			<radiowidth>48</radiowidth>
 			<radioheight>48</radioheight>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturefocus></texturefocus>
+			<texturenofocus></texturenofocus>
 			<label></label>
 			<animation effect="slide" end="-70,0" time="0" condition="true">Conditional</animation>
 			<textureradioofffocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioofffocus>
@@ -80,7 +80,7 @@
 		<control type="button" id="1000">
 			<description>button template</description>
 			<left>2</left>
-			<top>-</top>
+			<top></top>
 			<width>446</width>
 			<height>60</height>
 			<font>fontContextMenu</font>

@@ -21,7 +21,7 @@
                 <align>center</align>
                 <font>font10</font>
                 <selectedcolor>white</selectedcolor>
-                <label fallback="-">$INFO[$PARAM[infolabel]]</label>
+                <label fallback="">$INFO[$PARAM[infolabel]]</label>
             </control>
         </control>
     </include>
@@ -75,8 +75,8 @@
 							<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
 							<onfocus>SetProperty(infobannertv,$INFO[Container.ListItem.Art(tvshow.banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 					</control>
                     <control type="group">
                         <animation effect="slide" start="0,0" end="-40,0" time="300">Focus</animation>
@@ -221,7 +221,7 @@
                             <selectedcolor>$VAR[SkinColorVar]</selectedcolor>
                             <textcolor>$VAR[SkinColorVar]</textcolor>
                             <aligny>center</aligny>
-                            <label fallback="-">$INFO[ListItem.Label2]</label>
+                            <label fallback="">$INFO[ListItem.Label2]</label>
                         </control>
                     </control>
                     <control type="group">
@@ -291,7 +291,7 @@
                                 <selectedcolor>$VAR[SkinColorVar]</selectedcolor>
                                 <textcolor>$VAR[SkinColorVar]</textcolor>
                                 <aligny>center</aligny>
-                                <label fallback="-">$INFO[ListItem.Label2]</label>
+                                <label fallback="">$INFO[ListItem.Label2]</label>
                             </control>
                         </control>
                         <control type="group">
@@ -351,8 +351,8 @@
 				<onfocus>SetProperty(infologotv,$INFO[Container.ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 				<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
 				<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 			</control>
                     <control type="group">
                         <animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="160,180" condition="!Skin.HasSetting(no_animations)">Focus</animation>

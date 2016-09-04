@@ -192,7 +192,7 @@
 					<onright condition="Control.IsVisible(6)">9001</onright>
 					<include content="DefaultDialogButton">
 						<param name="id" value="5" />
-						<param name="label" value="-" />
+						<param name="label" value="" />
 					</include>
 					<include content="DefaultDialogButton">
 						<param name="id" value="7" />

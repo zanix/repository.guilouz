@@ -478,7 +478,7 @@
                 <textoffsety>25</textoffsety>
                 <font>font13</font>
                 <textwidth>315</textwidth>
-                <label>-</label>
+                <label></label>
                 <focusedcolor>$VAR[SkinColorVar]</focusedcolor>
                 <radiowidth>200</radiowidth>
                 <radioheight>180</radioheight>
@@ -582,8 +582,8 @@
                 <shadowcolor>text_shadow</shadowcolor>
                 <label>$LOCALIZE[33063]</label>
                 <onclick>SetFocus(9000)</onclick>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus></texturefocus>
+                <texturenofocus></texturenofocus>
                 <animation effect="fade" time="225">VisibleChange</animation>
                 <visible>!Skin.HasSetting(KioskMode) + !ControlGroup(9000).HasFocus</visible>
             </control>

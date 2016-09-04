@@ -1,7 +1,11 @@
 1.5.8 :
+• Add possibility to navigate main menu to widgets rather than main menu to submenus icons
 • Fix 'Play recording' button on Recordings Info dialog
-• [PVR] Recordings window : fix/improve user experience in case of empty recordings list
+• Fix/improve user experience in case of empty recordings list
+• Fix/unify PVR window breadcrumbs
+• Fix channel icons/thumbnails
 • Update some icons
+• Remove all use of hyphen as none value
 
 1.5.7 :
 • Add buffering progress on video fullscreen

@@ -275,8 +275,8 @@
                     <control type="button" id="312">
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
-                        <label>-</label>
-                        <label2>-</label2> 
+                        <label></label>
+                        <label2></label2> 
                         <visible>false</visible>
                     </control>
                     <control type="button" id="1494">

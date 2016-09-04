@@ -233,6 +233,14 @@
                         <selected>!Skin.HasSetting(enable_widgetflagicons)</selected>
                         <onclick>Skin.ToggleSetting(enable_widgetflagicons)</onclick>
                     </control>
+                    <control type="radiobutton" id="682">
+                        <label>40106</label>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <selected>Skin.HasSetting(enable_widgetselection)</selected>
+                        <onclick>Skin.ToggleSetting(enable_widgetselection)</onclick>
+                        <visible>!Skin.HasSetting(horizontaladvanced_menu) + !Skin.HasSetting(horizontal_menu)</visible>
+                    </control>
                     <control type="image" id="16">
                         <description>separator image</description>
                         <height>3</height>
@@ -242,7 +250,7 @@
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(horizontal_menu)|Skin.Reset(horizontaladvanced_menu)|Skin.Reset(enable_widgetflagicons)|Skin.Reset(show_widgetclearlogos))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(horizontal_menu)|Skin.Reset(horizontaladvanced_menu)|Skin.Reset(enable_widgetflagicons)|Skin.Reset(show_widgetclearlogos)|Skin.Reset(enable_widgetselection))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="600">

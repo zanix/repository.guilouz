@@ -9,37 +9,37 @@
     <controls>
         <control type="group" id="100">
             <control type="label" id="110">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="120">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="130">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="140">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="150">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="160">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="170">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="180">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="210">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="220">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="230">
-                <font>-</font>
+                <font></font>
             </control>
             <control type="image">
                 <left>0</left>
@@ -188,8 +188,8 @@
                     <top>14</top>
                     <width>420</width>
                     <height>110</height>
-                    <font>-</font>
-                    <label>-</label>
+                    <font></font>
+                    <label></label>
                     <radioposx>338</radioposx>
                     <textoffsetx>40</textoffsetx>
                     <radioposy>0</radioposy>
@@ -210,7 +210,7 @@
                     <height>55</height>
                     <aligny>center</aligny>
                     <font>font13</font>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label" id="191">
                     <left>77</left>
@@ -219,7 +219,7 @@
                     <height>55</height>
                     <aligny>center</aligny>
                     <font>font13</font>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="radiobutton" id="198">
                     <left>37</left>
@@ -232,7 +232,7 @@
                     <onright>101</onright>
                     <aligny>center</aligny>
                     <font>font14</font>
-                    <label>-</label>
+                    <label></label>
                     <radioposx>338</radioposx>
                     <textoffsetx>40</textoffsetx>
                     <radioposy>0</radioposy>

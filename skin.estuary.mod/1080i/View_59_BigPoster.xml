@@ -64,8 +64,8 @@
 							<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
 							<onfocus>SetProperty(infobannertv,$INFO[Container.ListItem.Art(tvshow.banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
                     <control type="group">
                         <left>0</left>
@@ -214,8 +214,8 @@
 							<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
 							<onfocus>SetProperty(infobannertv,$INFO[Container.ListItem.Art(tvshow.banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
                     <control type="group">
                         <left>0</left>
@@ -370,8 +370,8 @@
 							<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
 							<onfocus>SetProperty(infobannertv,$INFO[Container.ListItem.Art(tvshow.banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
                     <control type="group">
                         <visible>String.IsEqual(ListItem.Label,..)</visible>

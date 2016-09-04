@@ -1765,7 +1765,7 @@
         <value>$INFO[Player.Time]$INFO[Player.Title, - ]</value>
     </variable>
     <variable name="AutoCompletionContentVar">
-        <value condition="!System.HasAddon(plugin.program.autocompletion) | System.HasHiddenInput">-</value>
+        <value condition="!System.HasAddon(plugin.program.autocompletion) | System.HasHiddenInput"></value>
         <value>plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</value>
     </variable>
     <variable name="PlaylistLabel2Var">
@@ -1773,7 +1773,7 @@
         <value>$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
     </variable>
     <variable name="AndroidAppPathVar">
-        <value condition="!System.Platform.Android">-</value>
+        <value condition="!System.Platform.Android"></value>
         <value>androidapp://sources/apps/</value>
     </variable>
     <variable name="AddonCountLabel">
@@ -2235,7 +2235,7 @@
     </variable>
     <variable name="AddonsListIconVar">
         <value condition="!String.IsEmpty(ListItem.AddonBroken)">icons/addonstatus/disable.png</value>
-        <value condition="ListItem.IsParentFolder">-</value>
+        <value condition="ListItem.IsParentFolder"></value>
         <value condition="ListItem.Property(addon.orphaned)">icons/addonstatus/orphan.png</value>
         <value condition="ListItem.Property(addon.downloading)">icons/addonstatus/install.png</value>
         <value condition="ListItem.Property(addon.isinstalled) + !ListItem.Property(addon.isenabled) + Window.IsActive(addonbrowser)">icons/addonstatus/disable.png</value>
@@ -2418,6 +2418,7 @@
         <value condition="Control.HasFocus(678)">$LOCALIZE[40240]</value>
         <value condition="Control.HasFocus(679)">$LOCALIZE[40244]</value>
         <value condition="Control.HasFocus(681)">$LOCALIZE[40105]</value>
+        <value condition="Control.HasFocus(682)">$LOCALIZE[40107]</value>
         <value condition="Control.HasFocus(657) | Control.HasFocus(658) | Control.HasFocus(659) | Control.HasFocus(661) | Control.HasFocus(662)  | Control.HasFocus(669)">$LOCALIZE[10045]</value>
         <value condition="Container(9000).HasFocus(1)">$LOCALIZE[40024]</value>
         <value condition="Container(9000).HasFocus(2)">$LOCALIZE[31130]</value>
@@ -2569,7 +2570,6 @@
         <value condition="!String.IsEmpty(Container(504).ListItem.Art(fanart)) + Control.HasFocus(504)">$INFO[Container(504).ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Container(505).ListItem.Art(fanart)) + Control.HasFocus(505)">$INFO[Container(505).ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(id)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>-</value>
     </variable>
     <variable name="HomeFanartVar">
         <value condition="Skin.HasSetting(no_fanart)">$VAR[GlobalFanartVar]</value>
@@ -2630,7 +2630,6 @@
         <value condition="Control.HasFocus(804)">special://skin/extras/home-images/power.jpg</value>
         <value condition="Control.HasFocus(900)">special://skin/extras/home-images/search.jpg</value>
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
-        <value>-</value>
     </variable>
     <variable name="MusicExtraFanArtVar">
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Music.ExtraFanArt))">$INFO[Window(Home).Property(SkinHelper.Music.ExtraFanArt)]</value>
@@ -2669,7 +2668,7 @@
     </variable>
     <variable name="ListWatchedIconVar">
         <value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
-        <value condition="ListItem.IsParentFolder">-</value>
+        <value condition="ListItem.IsParentFolder"></value>
         <value condition="ListItem.IsResumable">overlays/watched/resume.png</value>
         <value condition="!String.IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
         <value condition="ListItem.IsFolder + Container.Content(files)">overlays/folder.png</value>
@@ -2693,10 +2692,28 @@
         <value condition="Container.Content(episodes)">$LOCALIZE[20343]</value>
         <value>$LOCALIZE[3]</value>
     </variable>
-    <variable name="BreadcrumbsPVRTimerVar">
-        <value condition="Window.IsActive(TVTimerRules) | Window.IsActive(RadioTimerRules)">$LOCALIZE[19138]</value>
-        <value>$LOCALIZE[19040]</value>
-    </variable>
+    <variable name="BreadcrumbsPVRChannelsVar">
+ 		<value condition="Window.IsActive(TVChannels)">$LOCALIZE[19020] / $LOCALIZE[19019] / $INFO[Control.GetLabel(29)]</value>
+ 		<value>$LOCALIZE[19021] / $LOCALIZE[19019] / $INFO[Control.GetLabel(29)]</value>
+ 	</variable>
+ 	<variable name="BreadcrumbsPVRGuideVar">
+ 		<value condition="Window.IsActive(TVGuide)">$LOCALIZE[19020] / $LOCALIZE[19069] / $INFO[Control.GetLabel(29)] - $INFO[Control.GetLabel(30)]</value>
+ 		<value>$LOCALIZE[19021] / $LOCALIZE[19069] / $INFO[Control.GetLabel(29)] - $INFO[Control.GetLabel(30)]</value>
+ 	</variable>
+ 	<variable name="BreadcrumbsPVRRecordingsVar">
+ 		<value condition="Window.IsActive(TVRecordings)">$LOCALIZE[19020] / $LOCALIZE[19017]$INFO[Control.GetLabel(30), / ]</value>
+ 		<value>$LOCALIZE[19021] / $LOCALIZE[19017]$INFO[Control.GetLabel(30), / ]</value>
+ 	</variable>
+ 	<variable name="BreadcrumbsPVRTimersVar">
+ 		<value condition="Window.IsActive(TVTimers)">$LOCALIZE[19020] / $LOCALIZE[19040]</value>
+ 		<value condition="Window.IsActive(RadioTimers)">$LOCALIZE[19021] / $LOCALIZE[19040]</value>
+ 		<value condition="Window.IsActive(TVTimerRules)">$LOCALIZE[19020] / $LOCALIZE[19138]$INFO[Control.GetLabel(29), / ]</value>
+ 		<value>$LOCALIZE[19021] / $LOCALIZE[19138]$INFO[Control.GetLabel(29), / ]</value>
+ 	</variable>
+ 	<variable name="BreadcrumbsPVRSearchVar">
+ 		<value condition="Window.IsActive(TVSearch)">$LOCALIZE[19020] / $LOCALIZE[137]</value>
+ 		<value>$LOCALIZE[19021] / $LOCALIZE[137]</value>
+  	</variable>
     <variable name="RepeatButtonColordiffuseVar">
         <value condition="Control.HasFocus(704)">$VAR[SkinColorVar]</value>
         <value>FFFFFFFF</value>

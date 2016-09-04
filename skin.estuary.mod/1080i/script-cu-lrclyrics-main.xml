@@ -193,8 +193,8 @@
             <top>-1080</top>
             <width>5760</width>
             <height>3240</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
+            <texturefocus></texturefocus>
+            <texturenofocus></texturenofocus>
             <onclick>Action(close)</onclick>
         </control>
         <control type="button">
@@ -203,8 +203,8 @@
             <top>0</top>
             <width>1320</width>
             <height>780</height>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
+            <texturefocus></texturefocus>
+            <texturenofocus></texturenofocus>
             <onclick>noop</onclick>
         </control>
         <control type="radiobutton">
@@ -214,8 +214,8 @@
             <height>48</height>
             <radiowidth>48</radiowidth>
             <radioheight>48</radioheight>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
+            <texturefocus></texturefocus>
+            <texturenofocus></texturenofocus>
             <label></label>
             <animation effect="slide" end="-70,0" time="0" condition="true">Conditional</animation>
             <textureradioofffocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioofffocus>

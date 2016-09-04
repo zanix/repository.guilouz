@@ -50,8 +50,8 @@
 							<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
 							<onfocus>SetProperty(infobannertv,$INFO[Container.ListItem.Art(tvshow.banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
                         <control type="image">
                             <posx>-93</posx>
@@ -120,8 +120,8 @@
                 <centertop>50%</centertop>
                 <width>28</width>
                 <height>28</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus></texturefocus>
+                <texturenofocus></texturenofocus>
                 <onclick>Control.Move(58,-1)</onclick>
                 <visible allowhiddenfocus="true">Container(58).HasPrevious + [Control.HasFocus(58) | Control.HasFocus(58500)]</visible>
             </control>
@@ -130,8 +130,8 @@
                 <centertop>50%</centertop>
                 <width>28</width>
                 <height>28</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus></texturefocus>
+                <texturenofocus></texturenofocus>
                 <onclick>Control.Move(58,1)</onclick>
                 <visible allowhiddenfocus="true">Container(58).HasNext + [Control.HasFocus(58) | Control.HasFocus(58501)]</visible>
             </control>

@@ -40,8 +40,8 @@
 			<top>0</top>
 			<width>100%</width>
 			<height>800</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<texturefocus></texturefocus>
+			<texturenofocus></texturenofocus>
 			<onclick>Action(close)</onclick>
 		</control>
 		<control type="group">
@@ -142,8 +142,8 @@
 					<focusedlayout height="177" width="123.076923">
 						<control type="group">
 							<control type="button">
-								<texturefocus>-</texturefocus>
-								<texturenofocus>-</texturenofocus>
+								<texturefocus></texturefocus>
+								<texturenofocus></texturenofocus>
 								<onfocus>SetProperty(OSD_Cast_String,$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ],home)</onfocus>
 							</control>
 							<control type="image">

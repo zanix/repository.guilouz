@@ -587,8 +587,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="image">
 							<width>100%</width>
@@ -749,8 +749,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="image">
 							<width>100%</width>
@@ -921,8 +921,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="image">
 							<width>100%</width>
@@ -1011,8 +1011,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-						<texturenofocus>-</texturenofocus>
-						<texturefocus>-</texturefocus>
+						<texturenofocus></texturenofocus>
+						<texturefocus></texturefocus>
 					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
@@ -1128,8 +1128,8 @@
 						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-						<texturenofocus>-</texturenofocus>
-						<texturefocus>-</texturefocus>
+						<texturenofocus></texturenofocus>
+						<texturefocus></texturefocus>
 					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
@@ -1244,8 +1244,8 @@
 						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-						<texturenofocus>-</texturenofocus>
-						<texturefocus>-</texturefocus>
+						<texturenofocus></texturenofocus>
+						<texturefocus></texturefocus>
 					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
@@ -1362,8 +1362,8 @@
 						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-						<texturenofocus>-</texturenofocus>
-						<texturefocus>-</texturefocus>
+						<texturenofocus></texturenofocus>
+						<texturefocus></texturefocus>
 					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
@@ -1480,8 +1480,8 @@
 						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-						<texturenofocus>-</texturenofocus>
-						<texturefocus>-</texturefocus>
+						<texturenofocus></texturenofocus>
+						<texturefocus></texturefocus>
 					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
@@ -1597,8 +1597,8 @@
 						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-						<texturenofocus>-</texturenofocus>
-						<texturefocus>-</texturefocus>
+						<texturenofocus></texturenofocus>
+						<texturefocus></texturefocus>
 					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
@@ -2248,8 +2248,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -2427,8 +2427,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -2605,8 +2605,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -2785,8 +2785,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -2965,8 +2965,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -3144,8 +3144,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -3299,8 +3299,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -3442,8 +3442,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -3587,8 +3587,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -3689,8 +3689,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -3791,8 +3791,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -3934,8 +3934,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -4079,8 +4079,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -4207,8 +4207,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -4351,8 +4351,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -4494,8 +4494,8 @@
 							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
 							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -4635,8 +4635,8 @@
 					<focusedlayout width="343" height="500">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -4772,13 +4772,13 @@
 					<focusedlayout width="490" height="70">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -4974,13 +4974,13 @@
 					<focusedlayout width="688" height="70">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -5167,13 +5167,13 @@
 					<focusedlayout width="688" height="70">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -5377,8 +5377,8 @@
 					<focusedlayout width="405" height="500">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -5513,8 +5513,8 @@
 					<focusedlayout width="340" height="500">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
 						<control type="group">
 							<depth>DepthContentPopout</depth>
@@ -6200,13 +6200,13 @@
 					<control type="button" id="22888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(22001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(22200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(22100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="22001">
 						<orientation>vertical</orientation>
@@ -6232,13 +6232,13 @@
 					<control type="button" id="18888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(18001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(18200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(18100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="18001">
 						<orientation>vertical</orientation>
@@ -6309,13 +6309,13 @@
 					<control type="button" id="19888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(19001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19200).NumItems,0)">SetFocus(19200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19100).NumItems,0)">SetFocus(19100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="19001">
 						<orientation>vertical</orientation>
@@ -6391,13 +6391,13 @@
 					<control type="button" id="21888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(21001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21200).NumItems,0)">SetFocus(21200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21100).NumItems,0)">SetFocus(21100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="21001">
 						<orientation>vertical</orientation>
@@ -6467,13 +6467,13 @@
 					<control type="button" id="17888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(17001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17200).NumItems,0)">SetFocus(17200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17100).NumItems,0)">SetFocus(17100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="17001">
 						<orientation>vertical</orientation>
@@ -6535,13 +6535,13 @@
 					<control type="button" id="6888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(6001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6200).NumItems,0)">SetFocus(6200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6100).NumItems,0)">SetFocus(6100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="6001">
 						<orientation>vertical</orientation>
@@ -6625,12 +6625,12 @@
 					<control type="button" id="7888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(7001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(7100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="7001">
 						<orientation>vertical</orientation>
@@ -6709,12 +6709,12 @@
 					<control type="button" id="8888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(8001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(8100).NumItems,0)">SetFocus(8100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="8001">
 						<orientation>vertical</orientation>
@@ -6805,12 +6805,12 @@
 					<control type="button" id="11888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(11001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(11100).NumItems,0)">SetFocus(11100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="11001">
 						<orientation>vertical</orientation>
@@ -6860,12 +6860,12 @@
 					<control type="button" id="12888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(12001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(12100).NumItems,0)">SetFocus(12100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="12001">
 						<orientation>vertical</orientation>
@@ -6891,12 +6891,12 @@
 					<control type="button" id="16888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(16001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(16100).NumItems,0)">SetFocus(16100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="16001">
 						<orientation>vertical</orientation>
@@ -6952,12 +6952,12 @@
 					<control type="button" id="13888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(13001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(13100).NumItems,0)">SetFocus(13100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="13001">
 						<orientation>vertical</orientation>
@@ -6983,13 +6983,13 @@
 					<control type="button" id="15888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(15001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(15100).NumItems,0)">SetFocus(15100)</onfocus>
 						<onfocus condition="String.IsEmpty(Weather.Plugin)">SetFocus(15300)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="15001">
 						<orientation>vertical</orientation>
@@ -7163,12 +7163,12 @@
 					<control type="button" id="10088">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(10001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(10100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="10001">
 						<orientation>vertical</orientation>
@@ -7916,13 +7916,13 @@
 					<control type="button" id="5888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(5001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(5200).NumItems,0)">SetFocus(5200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(5100).NumItems,0)">SetFocus(5100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="5001">
 						<orientation>vertical</orientation>
@@ -8042,13 +8042,13 @@
 					<control type="button" id="22888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(22001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(22200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(22100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="22001">
 						<orientation>vertical</orientation>
@@ -8074,13 +8074,13 @@
 					<control type="button" id="18888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(18001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(18200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(18100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="18001">
 						<orientation>vertical</orientation>
@@ -8151,13 +8151,13 @@
 					<control type="button" id="19888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(19001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19200).NumItems,0)">SetFocus(19200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19100).NumItems,0)">SetFocus(19100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="19001">
 						<orientation>vertical</orientation>
@@ -8233,13 +8233,13 @@
 					<control type="button" id="21888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(21001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21200).NumItems,0)">SetFocus(21200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21100).NumItems,0)">SetFocus(21100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="21001">
 						<orientation>vertical</orientation>
@@ -8309,13 +8309,13 @@
 					<control type="button" id="17888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(17001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17200).NumItems,0)">SetFocus(17200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17100).NumItems,0)">SetFocus(17100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="17001">
 						<orientation>vertical</orientation>
@@ -8377,13 +8377,13 @@
 					<control type="button" id="6888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(6001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6200).NumItems,0)">SetFocus(6200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6100).NumItems,0)">SetFocus(6100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="6001">
 						<orientation>vertical</orientation>
@@ -8467,12 +8467,12 @@
 					<control type="button" id="7888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(7001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(7100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="7001">
 						<orientation>vertical</orientation>
@@ -8551,12 +8551,12 @@
 					<control type="button" id="8888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(8001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(8100).NumItems,0)">SetFocus(8100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="8001">
 						<orientation>vertical</orientation>
@@ -8647,12 +8647,12 @@
 					<control type="button" id="11888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(11001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(11100).NumItems,0)">SetFocus(11100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="11001">
 						<orientation>vertical</orientation>
@@ -8702,12 +8702,12 @@
 					<control type="button" id="12888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(12001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(12100).NumItems,0)">SetFocus(12100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="12001">
 						<orientation>vertical</orientation>
@@ -8733,12 +8733,12 @@
 					<control type="button" id="16888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(16001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(16100).NumItems,0)">SetFocus(16100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="16001">
 						<orientation>vertical</orientation>
@@ -8794,12 +8794,12 @@
 					<control type="button" id="13888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(13001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(13100).NumItems,0)">SetFocus(13100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="13001">
 						<orientation>vertical</orientation>
@@ -8825,13 +8825,13 @@
 					<control type="button" id="15888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(15001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(15100).NumItems,0)">SetFocus(15100)</onfocus>
 						<onfocus condition="String.IsEmpty(Weather.Plugin)">SetFocus(15300)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="15001">
 						<orientation>vertical</orientation>
@@ -9005,12 +9005,12 @@
 					<control type="button" id="10088">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(10001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(10100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="10001">
 						<orientation>vertical</orientation>
@@ -9416,36 +9416,65 @@
 						<height>666</height>
 						<pagecontrol>70</pagecontrol>
 						<onfocus>ClearProperty(listposition,home)</onfocus>
-						<onright condition="!String.IsEmpty(Container(5900).ListItem.Label)">5900</onright>
+						<onright condition="!String.IsEmpty(Container(5900).ListItem.Label) + !Skin.HasSetting(enable_widgetselection)">5900</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">17100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">17100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget)">6100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget)">6100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)">7100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)">7100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget)">8100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget)">8100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideoWidget)">10100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideoWidget)">10100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget)">15100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget)">15100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),SourcesWidget)">11100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),SourcesWidget)">11100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget)">12200</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget)">12200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget2)">16200</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget2)">16200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)">13200</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)">13200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget)">22100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget)">22100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))">18100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))">18100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))">18300</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter3))">18300</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))">18400</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter4))">18400</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter5))">18500</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter5))">18500</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter6))">18600</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter6))">18600</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))">19100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb1))">19100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))">19200</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb2))">19200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))">19300</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb3))">19300</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))">19400</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb4))">19400</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb5))">19500</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb5))">19500</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb6))">19600</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetThumb)  + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalthumb6))">19600</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))">21100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon1))">21100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))">21200</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon2))">21200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))">21300</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon3))">21300</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))">21400</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon4))">21400</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon5))">21500</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon5))">21500</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon6))">21600</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetIcon) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalicon6))">21600</onright>
 						<onup>900</onup>
 						<ondown>700</ondown>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -9670,13 +9699,13 @@
 					<control type="button" id="22888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(22001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(22200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(22100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="22001">
 						<orientation>vertical</orientation>
@@ -9725,13 +9754,13 @@
 					<control type="button" id="18888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(18001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(18200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(18100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="18001">
 						<orientation>vertical</orientation>
@@ -9828,13 +9857,13 @@
 					<control type="button" id="19888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(19001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19200).NumItems,0)">SetFocus(19200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19100).NumItems,0)">SetFocus(19100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="19001">
 						<orientation>vertical</orientation>
@@ -9936,13 +9965,13 @@
 					<control type="button" id="21888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(21001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21200).NumItems,0)">SetFocus(21200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21100).NumItems,0)">SetFocus(21100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="21001">
 						<orientation>vertical</orientation>
@@ -10038,13 +10067,13 @@
 					<control type="button" id="17888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(17001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17200).NumItems,0)">SetFocus(17200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17100).NumItems,0)">SetFocus(17100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="17001">
 						<orientation>vertical</orientation>
@@ -10119,13 +10148,13 @@
 					<control type="button" id="6888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(6001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6200).NumItems,0)">SetFocus(6200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6100).NumItems,0)">SetFocus(6100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="6001">
 						<orientation>vertical</orientation>
@@ -10222,12 +10251,12 @@
 					<control type="button" id="7888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(7001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(7100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="7001">
 						<orientation>vertical</orientation>
@@ -10322,12 +10351,12 @@
 					<control type="button" id="8888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(8001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(8100).NumItems,0)">SetFocus(8100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="8001">
 						<orientation>vertical</orientation>
@@ -10434,12 +10463,12 @@
 					<control type="button" id="11888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(11001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(11100).NumItems,0)">SetFocus(11100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="11001">
 						<orientation>vertical</orientation>
@@ -10478,12 +10507,12 @@
 					<control type="button" id="12888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(12001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(12100).NumItems,0)">SetFocus(12100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="12001">
 						<orientation>vertical</orientation>
@@ -10509,12 +10538,12 @@
 					<control type="button" id="16888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(16001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(16100).NumItems,0)">SetFocus(16100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="16001">
 						<orientation>vertical</orientation>
@@ -10568,12 +10597,12 @@
 					<control type="button" id="13888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(13001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(13100).NumItems,0)">SetFocus(13100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="13001">
 						<orientation>vertical</orientation>
@@ -10624,13 +10653,13 @@
 					<control type="button" id="15888">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(15001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(15100).NumItems,0)">SetFocus(15100)</onfocus>
 						<onfocus condition="String.IsEmpty(Weather.Plugin)">SetFocus(15300)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="15001">
 						<orientation>vertical</orientation>
@@ -10721,12 +10750,12 @@
 					<control type="button" id="10088">
 						<width>1</width>
 						<height>1</height>
-						<label>-</label>
+						<label></label>
 						<onfocus>SetFocus(10001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(10100)</onfocus>
 						<onclick>noop</onclick>
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
+						<texturefocus></texturefocus>
+						<texturenofocus></texturenofocus>
 					</control>
 					<control type="grouplist" id="10001">
 						<orientation>vertical</orientation>

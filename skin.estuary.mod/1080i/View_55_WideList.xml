@@ -44,8 +44,8 @@
 							<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
 							<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
 							<onfocus>SetProperty(infobannertv,$INFO[Container.ListItem.Art(tvshow.banner)],home)</onfocus>
-							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
+							<texturenofocus></texturenofocus>
+							<texturefocus></texturefocus>
 						</control>
                     <control type="image">
                         <left>0</left>
