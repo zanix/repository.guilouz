@@ -1,3 +1,6 @@
+1.5.9 :
+• Fix selection with Picture Widget nad Hub Widget when 'Select widget first' is enable
+
 1.5.8 :
 • Add possibility to navigate main menu to widgets rather than main menu to submenus icons
 • Fix 'Play recording' button on Recordings Info dialog

@@ -9417,6 +9417,7 @@
 						<pagecontrol>70</pagecontrol>
 						<onfocus>ClearProperty(listposition,home)</onfocus>
 						<onright condition="!String.IsEmpty(Container(5900).ListItem.Label) + !Skin.HasSetting(enable_widgetselection)">5900</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PictureWidget)">5900</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">17100</onright>
 						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">17100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget)">6100</onright>
@@ -9438,7 +9439,7 @@
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)">13200</onright>
 						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)">13200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget)">22100</onright>
-						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget)">22100</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget)">5900</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))">18100</onright>
 						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))">18100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</onright>
