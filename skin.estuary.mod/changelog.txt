@@ -1,5 +1,7 @@
 1.5.9 :
+• Add in progress/watched flag icons for widgets
 • Fix selection with Picture Widget nad Hub Widget when 'Select widget first' is enable
+• Fix shortcut problem with Live TV and Radios
 
 1.5.8 :
 • Add possibility to navigate main menu to widgets rather than main menu to submenus icons

@@ -1379,6 +1379,99 @@
         <value condition="Control.HasFocus(7500)">$INFO[Container(7500).ListItem.AudioChannels,flags/audiochannel/,.png]</value>
         <value condition="Control.HasFocus(7600)">$INFO[Container(7600).ListItem.AudioChannels,flags/audiochannel/,.png]</value>
     </variable>
+    <variable name="WidgetFlagIconWatchedVar">
+        <!-- Hubs -->
+        <value condition="Control.HasFocus(22100) + Container(22100).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(22100) + Integer.IsGreater(Container(22100).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <!-- Customs -->
+        <value condition="Control.HasFocus(18100) + Container(18100).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(18100) + Integer.IsGreater(Container(18100).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(18200) + Container(18200).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(18200) + Integer.IsGreater(Container(18200).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(18300) + Container(18300).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(18300) + Integer.IsGreater(Container(18300).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(18400) + Container(18400).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(18400) + Integer.IsGreater(Container(18400).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(18500) + Container(18500).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(18500) + Integer.IsGreater(Container(18500).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(18600) + Container(18600).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(18600) + Integer.IsGreater(Container(18600).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(19100) + Container(19100).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(19100) + Integer.IsGreater(Container(19100).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(19200) + Container(19200).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(19200) + Integer.IsGreater(Container(19200).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(19300) + Container(19300).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(19300) + Integer.IsGreater(Container(19300).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(19400) + Container(19400).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(19400) + Integer.IsGreater(Container(19400).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(19500) + Container(19500).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(19500) + Integer.IsGreater(Container(19500).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(19600) + Container(19600).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(19600) + Integer.IsGreater(Container(19600).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(21100) + Container(21100).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(21100) + Integer.IsGreater(Container(21100).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(21200) + Container(21200).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(21200) + Integer.IsGreater(Container(21200).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(21300) + Container(21300).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(21300) + Integer.IsGreater(Container(21300).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(21400) + Container(21400).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(21400) + Integer.IsGreater(Container(21400).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(21500) + Container(21500).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(21500) + Integer.IsGreater(Container(21500).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(21600) + Container(21600).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(21600) + Integer.IsGreater(Container(21600).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <!-- Sources -->
+        <value condition="Control.HasFocus(11100) + Container(11100).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(11100) + Integer.IsGreater(Container(11100).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(11200) + Container(11200).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(11200) + Integer.IsGreater(Container(11200).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(11300) + Container(11300).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(11300) + Integer.IsGreater(Container(11300).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <!-- Movies -->
+        <value condition="Control.HasFocus(17100) + Container(17100).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(17100) + Integer.IsGreater(Container(17100).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(17200) + Container(17200).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(17200) + Integer.IsGreater(Container(17200).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(17300) + Container(17300).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(17300) + Integer.IsGreater(Container(17300).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(17400) + Container(17400).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(17400) + Integer.IsGreater(Container(17400).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <!-- TV Shows -->
+        <value condition="Control.HasFocus(6100) + Container(6100).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(6100) + Integer.IsGreater(Container(6100).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(6200) + Container(6200).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(6200) + Integer.IsGreater(Container(6200).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(6300) + Container(6300).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(6300) + Integer.IsGreater(Container(6300).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(6400) + Container(6400).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(6400) + Integer.IsGreater(Container(6400).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(6500) + Container(6500).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(6500) + Integer.IsGreater(Container(6500).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(6600) + Container(6600).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(6600) + Integer.IsGreater(Container(6600).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <!-- Music Videos -->
+        <value condition="Control.HasFocus(10100) + Container(10100).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(10100) + Integer.IsGreater(Container(10100).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(10200) + Container(10200).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(10200) + Integer.IsGreater(Container(10200).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(10300) + Container(10300).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(10300) + Integer.IsGreater(Container(10300).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(10400) + Container(10400).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(10400) + Integer.IsGreater(Container(10400).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <!-- Music -->
+        <value condition="Control.HasFocus(7100) + Container(7100).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(7100) + Integer.IsGreater(Container(7100).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(7200) + Container(7200).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(7200) + Integer.IsGreater(Container(7200).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(7300) + Container(7300).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(7300) + Integer.IsGreater(Container(7300).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(7400) + Container(7400).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(7400) + Integer.IsGreater(Container(7400).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(7500) + Container(7500).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(7500) + Integer.IsGreater(Container(7500).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+        <value condition="Control.HasFocus(7600) + Container(7600).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
+        <value condition="Control.HasFocus(7600) + Integer.IsGreater(Container(7600).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
+    </variable>
     <variable name="PVRLandscapeVar">
         <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.PVR.Landscape))">$INFO[Window(home).Property(SkinHelper.PVR.Landscape)]</value>
         <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.PVR.FanArt))">$INFO[Window(home).Property(SkinHelper.PVR.FanArt)]</value>

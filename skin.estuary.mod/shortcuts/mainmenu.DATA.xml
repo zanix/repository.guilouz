@@ -48,21 +48,21 @@
         <label2>Common Shortcut</label2>
         <defaultID>radio</defaultID>
         <icon>special://skin/extras/icons/radio.png</icon>
-        <action>ActivateWindow(RadioChannels,return)</action>
+        <action>ActivateWindow(RadioChannels)</action>
     </shortcut>
     <shortcut>
         <label>19020</label>
         <label2>Common Shortcut</label2>
         <defaultID>livetv</defaultID>
         <icon>special://skin/extras/icons/livetv.png</icon>
-        <action>ActivateWindow(TVChannels,return)</action>
+        <action>ActivateWindow(TVChannels)</action>
     </shortcut>
     <shortcut>
         <label>1</label>
         <label2>Common Shortcut</label2>
         <defaultID>picture</defaultID>
         <icon>special://skin/extras/icons/pictures.png</icon>
-        <action>ActivateWindow(Pictures,return)</action>
+        <action>ActivateWindow(Pictures)</action>
     </shortcut>
     <shortcut>
         <label>24001</label>
