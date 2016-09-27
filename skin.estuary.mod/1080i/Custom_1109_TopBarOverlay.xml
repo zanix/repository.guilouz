@@ -24,7 +24,7 @@
             <control type="label">
                 <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
                 <left>85</left>
-                <width>auto</width>
+                <width>1400</width>
                 <font>font13_title</font>
                 <shadowcolor>text_shadow</shadowcolor>
                 <top>7</top>
@@ -35,13 +35,50 @@
             <control type="label">
                 <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
                 <left>85</left>
+                <width>1400</width>
+                <font>font13_title</font>
+                <shadowcolor>text_shadow</shadowcolor>
+                <top>7</top>
+                <height>100</height>
+                <align>left</align>
+                <visible>Skin.HasSetting(show_clearlogos) + String.IsEmpty(Player.Art(clearlogo))</visible>
+                <visible>VideoPlayer.Content(movies)</visible>
+            </control>
+            <control type="label">
+                <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
+                <left>85</left>
+                <width>1400</width>
+                <font>font13_title</font>
+                <shadowcolor>text_shadow</shadowcolor>
+                <top>7</top>
+                <height>100</height>
+                <align>left</align>
+                <visible>Skin.HasSetting(show_clearlogos) + String.IsEmpty(Player.Art(tvshow.clearlogo))</visible>
+                <visible>!VideoPlayer.Content(movies)</visible>
+            </control>
+            <control type="label">
+                <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
+                <left>85</left>
                 <width>750</width>
                 <font>font13_title</font>
                 <shadowcolor>text_shadow</shadowcolor>
                 <top>7</top>
                 <height>100</height>
                 <scroll>yes</scroll>
-                <visible>Skin.HasSetting(show_clearlogos)</visible>
+                <visible>Skin.HasSetting(show_clearlogos) + !String.IsEmpty(Player.Art(clearlogo))</visible>
+                <visible>VideoPlayer.Content(movies)</visible>
+            </control>
+            <control type="label">
+                <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
+                <left>85</left>
+                <width>750</width>
+                <font>font13_title</font>
+                <shadowcolor>text_shadow</shadowcolor>
+                <top>7</top>
+                <height>100</height>
+                <scroll>yes</scroll>
+                <visible>Skin.HasSetting(show_clearlogos) + !String.IsEmpty(Player.Art(tvshow.clearlogo))</visible>
+                <visible>!VideoPlayer.Content(movies)</visible>
             </control>
             <control type="label">
                 <top>40</top>
@@ -51,7 +88,7 @@
                 <textcolor>$VAR[SkinColorVar]</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
                 <height>100</height>
-                <width>auto</width>
+                <width>1400</width>
                 <align>left</align>
                 <visible>!Skin.HasSetting(show_clearlogos)</visible>
             </control>
@@ -60,12 +97,52 @@
                 <label>$VAR[OSDSubLabelVar]</label>
                 <font>font10</font>
                 <left>85</left>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <height>100</height>
+                <width>1400</width>
+                <align>left</align>
+                <visible>Skin.HasSetting(show_clearlogos) + String.IsEmpty(Player.Art(clearlogo))</visible>
+                <visible>VideoPlayer.Content(movies)</visible>
+            </control>
+            <control type="label">
+                <top>40</top>
+                <label>$VAR[OSDSubLabelVar]</label>
+                <font>font10</font>
+                <left>85</left>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <height>100</height>
+                <width>1400</width>
+                <align>left</align>
+                <visible>Skin.HasSetting(show_clearlogos) + String.IsEmpty(Player.Art(tvshow.clearlogo))</visible>
+                <visible>!VideoPlayer.Content(movies)</visible>
+            </control>
+            <control type="label">
+                <top>40</top>
+                <label>$VAR[OSDSubLabelVar]</label>
+                <font>font10</font>
+                <left>85</left>
                 <width>750</width>
                 <textcolor>$VAR[SkinColorVar]</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
                 <height>100</height>
                 <scroll>yes</scroll>
-                <visible>Skin.HasSetting(show_clearlogos)</visible>
+                <visible>Skin.HasSetting(show_clearlogos) + !String.IsEmpty(Player.Art(clearlogo))</visible>
+                <visible>VideoPlayer.Content(movies)</visible>
+            </control>
+            <control type="label">
+                <top>40</top>
+                <label>$VAR[OSDSubLabelVar]</label>
+                <font>font10</font>
+                <left>85</left>
+                <width>750</width>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
+                <shadowcolor>text_shadow</shadowcolor>
+                <height>100</height>
+                <scroll>yes</scroll>
+                <visible>Skin.HasSetting(show_clearlogos) + !String.IsEmpty(Player.Art(tvshow.clearlogo))</visible>
+                <visible>!VideoPlayer.Content(movies)</visible>
             </control>
             <control type="image">   
             	<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + !Window.IsVisible(DialogVideoInfo.xml)</visible>

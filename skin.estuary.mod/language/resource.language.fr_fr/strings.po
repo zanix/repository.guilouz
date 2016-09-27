@@ -82,15 +82,15 @@ msgstr "Enregistrements récents"
 
 msgctxt "#31016"
 msgid "Recently played channels"
-msgstr "Chaînes vues récemment"
+msgstr "Chaînes regardées récemment"
 
 msgctxt "#31017"
 msgid "Rated"
 msgstr "Classification"
 
 msgctxt "#31018"
-msgid "Most played channels"
-msgstr "Chaînes les plus vues"
+msgid "Recently played channels"
+msgstr "Chaînes regardées récemment"
 
 msgctxt "#31019"
 msgid "Forecast"
@@ -1268,7 +1268,7 @@ msgstr "Permet de réinitialiser la couleur principale par défaut."
 
 msgctxt "#40168"
 msgid "Live TV widget - Recently played channels"
-msgstr "Widget TV - Chaînes vues récemment"
+msgstr "Widget TV - Chaînes regardées récemment"
 
 msgctxt "#40169"
 msgid "Watched to"

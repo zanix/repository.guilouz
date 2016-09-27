@@ -38,6 +38,8 @@
         </control>
     </include>
     <include name="InfoWallMusicItemLayout">
+        <param name="fallback_image">DefaultFolder.png</param>
+		<definition>
         <control type="image">
             <top>-10</top>
             <width>320</width>
@@ -49,7 +51,7 @@
             <top>21</top>
             <width>250</width>
             <height>250</height>
-            <texture border="2" fallback="DefaultFolderSquare.png" background="true">$VAR[ShiftThumbVar]</texture>
+            <texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[ShiftThumbVar]</texture>
             <aspectratio>stretch</aspectratio>
             <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
             <bordersize>4</bordersize>
@@ -90,8 +92,11 @@
             <top>28</top>
             <include>UserRatingCircle</include>
         </control>
+        </definition>
     </include>
     <include name="InfoWallMusicFocusedLayout">
+        <param name="fallback_image">DefaultFolder.png</param>
+		<definition>
         <control type="image">
             <top>-10</top>
             <width>320</width>
@@ -103,7 +108,7 @@
             <top>21</top>
             <width>250</width>
             <height>250</height>
-            <texture border="2" fallback="DefaultFolderSquare.png" background="true">$VAR[ShiftThumbVar]</texture>
+            <texture border="2" fallback="$PARAM[fallback_image]" background="true">$VAR[ShiftThumbVar]</texture>
             <aspectratio>stretch</aspectratio>
             <bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
             <bordersize>4</bordersize>
@@ -146,6 +151,7 @@
             <top>28</top>
             <include>UserRatingCircle</include>
         </control>
+        </definition>
     </include>
     <include name="View_54_InfoWall">
         <include content="UpDownArrows">
@@ -191,6 +197,18 @@
                         <bordertexture border="20">overlays/shadow.png</bordertexture>
                         <bordersize>20</bordersize>
                     </control>
+                    <control type="textbox">
+						<left>20</left>
+						<top>220</top>
+						<width>209</width>
+						<height>100</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font12_title</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
+					</control>
                     <control type="group">
                         <left>179</left>
                         <top>30</top>
@@ -220,6 +238,18 @@
                             <bordertexture border="20">overlays/shadow.png</bordertexture>
                             <bordersize>20</bordersize>
                         </control>
+                        <control type="textbox">
+							<left>20</left>
+							<top>220</top>
+							<width>209</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster)) + !Listitem.IsParentFolder</visible>
+						</control>
                         <control type="group">
                             <left>179</left>
                             <top>30</top>

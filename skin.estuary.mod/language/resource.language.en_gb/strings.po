@@ -108,7 +108,7 @@ msgstr ""
 
 #: /1080i/Home.xml:443
 msgctxt "#31018"
-msgid "Most played channels"
+msgid "Recently played channels"
 msgstr ""
 
 #: /1080i/Home.xml:675 /1080i/MyWeather.xml:52

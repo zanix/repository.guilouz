@@ -6,6 +6,14 @@
         <control type="image">
             <description>LOGO</description>
             <left>0</left>
+            <top>0</top>
+            <width>100%</width>
+            <height>100%</height>
+            <texture colordiffuse="$VAR[BackgroundColorVar]">special://skin/extras/home-images/loginscreen.jpg</texture>
+        </control>
+        <control type="image">
+            <description>LOGO</description>
+            <left>0</left>
             <top>-100</top>
             <width>1920</width>
             <height>100</height>
@@ -75,13 +83,6 @@
                 <scrolltime>200</scrolltime>
                 <itemlayout height="130" width="690">
                     <control type="image">
-                        <left>20</left>
-                        <top>20</top>
-                        <width>90</width>
-                        <height>88</height>
-                        <texture border="40">colors/black.png</texture>
-                    </control>
-                    <control type="image">
                         <left>0</left>
                         <top>0</top>
                         <width>690</width>
@@ -117,13 +118,6 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="130" width="690">
-                    <control type="image">
-                        <left>20</left>
-                        <top>20</top>
-                        <width>90</width>
-                        <height>90</height>
-                        <texture border="40">colors/black.png</texture>
-                    </control>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>

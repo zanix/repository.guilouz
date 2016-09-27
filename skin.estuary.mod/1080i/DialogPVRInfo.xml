@@ -50,7 +50,8 @@
 				<height>425</height>
 				<align>justify</align>
 				<font>font_textbox</font>
-				<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.Duration])[CR]$INFO[ListItem.StartDate][CR]$INFO[ListItem.Season, [COLOR=$VAR[SkinColorVar]]S[/COLOR]]$INFO[ListItem.Episode, [COLOR=$VAR[SkinColorVar]]E[/COLOR], : ]$INFO[ListItem.EpisodeName,[B],[/B][CR]]$INFO[ListItem.Genre,[COLOR=$VAR[SkinColorVar]]$LOCALIZE[515] : [/COLOR],[CR]]$INFO[ListItem.Writer,[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20417] : [/COLOR],[CR]]$INFO[ListItem.Director,[COLOR=$VAR[SkinColorVar]]$LOCALIZE[20339] : [/COLOR],[CR]]$INFO[ListItem.Cast,[COLOR=$VAR[SkinColorVar]]$LOCALIZE[206] : [/COLOR],[CR]][CR]$INFO[ListItem.Plot]</label>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
+				<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.Duration])[CR]$INFO[ListItem.StartDate][CR]$INFO[ListItem.Season, S]$INFO[ListItem.Episode, E, : ]$INFO[ListItem.EpisodeName,[B],[/B][CR]]$INFO[ListItem.Genre,$LOCALIZE[515] : ,[CR]]$INFO[ListItem.Writer,$LOCALIZE[20417] : ,[CR]]$INFO[ListItem.Director,$LOCALIZE[20339] : ,[CR]]$INFO[ListItem.Cast,$LOCALIZE[206] : ,[CR]][CR][COLOR white]$INFO[ListItem.Plot][/COLOR]</label>
 				<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 			<control type="grouplist" id="9000">
@@ -64,7 +65,7 @@
 				<defaultcontrol>5</defaultcontrol>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<onup>49</onup>
+				<onup>61</onup>
 				<ondown>49</ondown>
 				<include content="InfoDialogButton">
 					<param name="id" value="5" />
@@ -90,6 +91,12 @@
 					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
 				</include>
 				<include content="InfoDialogButton">
+					<param name="id" value="9" />
+					<param name="icon" value="icons/infodialogs/timer.png" />
+					<param name="label" value="$LOCALIZE[19061]" />
+					<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
+				</include>
+				<include content="InfoDialogButton">
 					<param name="id" value="440" />
 					<param name="icon" value="icons/infodialogs/trailer.png" />
 					<param name="label" value="$LOCALIZE[31114]" />
@@ -100,8 +107,8 @@
 			</control>
 		</control>
 		<include content="InfoDialogTopBarInfo">
-			<param name="main_label" value="$INFO[ListItem.Title]$INFO[ListItem.Season, ]$INFO[ListItem.Episode,[COLOR grey]x[/COLOR]]" />
-			<param name="sub_label" value="$INFO[ListItem.ChannelName]" />
+			<param name="main_label" value="$INFO[ListItem.Season,$LOCALIZE[20373] ,] $INFO[ListItem.Episode,$LOCALIZE[20359] , : ]$INFO[ListItem.Title]" /> 
+			<param name="sub_label" value="[COLOR $VAR[SkinColorVar]]$INFO[ListItem.ChannelName][/COLOR]" />
 			<param name="posy" value="40" />
 		</include>
 	</controls>

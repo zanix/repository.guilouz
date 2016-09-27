@@ -58,7 +58,7 @@
         <label>13017</label>
         <action>InhibitIdleShutdown(true)</action>
         <icon>special://skin/extras/icons/power.png</icon> 
-        <visible>System.HasShutdown +!System.IsInhibit</visible>     
+        <visible>System.HasShutdown + !System.IsInhibit</visible>     
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>

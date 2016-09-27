@@ -1,7 +1,24 @@
-1.5.9 :
+1.6.0 :
 • Add in progress/watched flag icons for widgets
-• Fix selection with Picture Widget nad Hub Widget when 'Select widget first' is enable
-• Fix shortcut problem with Live TV and Radios
+• Add 'Stop Scanning' option to Submenu
+• Add vertical scrollbar to channel list in PVR Guide
+• Add fallback labels to some viewtypes
+• Add 'Add timer' button in PVR info dialog
+• Add script.skin.helper.colorpicker in necessary addon
+• Add recordings widget to home screen
+• Separate tv/radio widgets for current and next recording
+• Fix selection with Picture Widget and Hub Widget when 'Select widget first' is enable
+• Fix shortcut issue with Live TV and Radios
+• Fix navigation issue with PVR Guide
+• Fix missing Options button in the BottomBar in pictures section
+• Fix non-scrolling plot for PVR recordings
+• Fix on PVR widgets
+• Workaround for navigation issue on dialog addon settings
+• Drop some PVR viewtypes
+• Remove window type, id and zorder defenitions
+• Hide 'Update Library' button in Addon section
+• Avoid empty variables
+• Many other fixes
 
 1.5.8 :
 • Add possibility to navigate main menu to widgets rather than main menu to submenus icons

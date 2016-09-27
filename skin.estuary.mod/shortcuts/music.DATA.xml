@@ -43,9 +43,9 @@
         <action>ActivateWindow(Music,musicdb://,return)</action>
     </shortcut>
     <shortcut>
-        <label>653</label>
+        <label>$VAR[MusicLibraryScanLabel]</label>
         <label2>Common Shortcut</label2>
-        <icon>special://skin/extras/icons/update.png</icon>
+        <icon>$VAR[MusicLibraryScanIcon]</icon>
         <action>UpdateLibrary(music)</action>
     </shortcut>
 </shortcuts>

@@ -37,9 +37,9 @@
         <action>ActivateWindow(Videos,videodb://musicvideos/,return)</action>
     </shortcut>
     <shortcut>
-        <label>653</label>
+        <label>$VAR[VideoLibraryScanLabel]</label>
         <label2>Common Shortcut</label2>
-        <icon>special://skin/extras/icons/update.png</icon>
+        <icon>$VAR[VideoLibraryScanIcon]</icon>
         <action>UpdateLibrary(video)</action>
     </shortcut>
 </shortcuts>

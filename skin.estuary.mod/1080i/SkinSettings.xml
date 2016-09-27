@@ -800,6 +800,18 @@
                         <selected>System.HasAddon(script.skin.helper.service)</selected>
                         <include>DefaultSettingButton</include>
                     </control>
+                    <control type="radiobutton" id="683">
+                        <width>1256</width>
+                        <label>script.skin.helper.colorpicker $INFO[System.AddonVersion(script.skin.helper.colorpicker),(,)]</label>
+                        <textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+                        <textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+                        <textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+                        <textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+                        <onclick condition="!System.HasAddon(script.skin.helper.service)">InstallAddon(script.skin.helper.colorpicker)</onclick>
+                        <onclick condition="System.HasAddon(script.skin.helper.service)">Addon.OpenSettings(script.skin.helper.colorpicker)</onclick>
+                        <selected>System.HasAddon(script.skin.helper.colorpicker)</selected>
+                        <include>DefaultSettingButton</include>
+                    </control>
                     <control type="radiobutton" id="641">
                         <width>1256</width>
                         <label>script.module.thetvdb $INFO[System.AddonVersion(script.module.thetvdb),(,)]</label>

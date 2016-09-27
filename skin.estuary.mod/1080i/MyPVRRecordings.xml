@@ -201,6 +201,7 @@
                         <align>justify</align>
                         <label>$INFO[ListItem.Plot]</label>
                         <font>font12</font>
+                        <autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
                     </control>
                 </control>
                 <control type="image">
@@ -276,7 +277,9 @@
                 <font></font>
                 <include>HiddenObject</include>
             </control>
-            <include>BottomBar</include>
+            <include content="BottomBar">
+				<param name="info_visible" value="true" />
+			</include>
         </control>
     </controls>
 </window>

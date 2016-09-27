@@ -89,8 +89,8 @@ msgid "Rated"
 msgstr "Altersfreigabe"
 
 msgctxt "#31018"
-msgid "Most played channels"
-msgstr "Meistgespielte Kanäle"
+msgid "Recently played channels"
+msgstr "Zuletzt gesehene Kanäle"
 
 msgctxt "#31019"
 msgid "Forecast"

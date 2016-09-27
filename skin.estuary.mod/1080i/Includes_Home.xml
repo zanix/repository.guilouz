@@ -1009,6 +1009,18 @@
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout width="277" height="400">
@@ -1038,6 +1050,20 @@
 							<texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+							<animation effect="fade" start="0" end="100" time="200" reversible="true">Unfocus</animation>
+							<animation effect="fade" start="100" end="0" time="0" reversible="true">Focus</animation>
 						</control>
 						<control type="group">
 							<left>20</left>
@@ -1126,6 +1152,18 @@
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout width="270" height="400">
@@ -1155,6 +1193,20 @@
 							<texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+							<animation effect="fade" start="0" end="100" time="200" reversible="true">Unfocus</animation>
+							<animation effect="fade" start="100" end="0" time="0" reversible="true">Focus</animation>
 						</control>
 						<control type="group">
 							<left>20</left>
@@ -1242,6 +1294,18 @@
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout width="240" height="400">
@@ -1271,6 +1335,20 @@
 							<texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+							<animation effect="fade" start="0" end="100" time="200" reversible="true">Unfocus</animation>
+							<animation effect="fade" start="100" end="0" time="0" reversible="true">Focus</animation>
 						</control>
 						<control type="group">
 							<left>20</left>
@@ -1360,6 +1438,18 @@
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout width="277" height="400">
@@ -1389,6 +1479,20 @@
 							<texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+							<animation effect="fade" start="0" end="100" time="200" reversible="true">Unfocus</animation>
+							<animation effect="fade" start="100" end="0" time="0" reversible="true">Focus</animation>
 						</control>
 						<control type="group">
 							<left>20</left>
@@ -1478,6 +1582,18 @@
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout width="270" height="400">
@@ -1507,6 +1623,20 @@
 							<texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+							<animation effect="fade" start="0" end="100" time="200" reversible="true">Unfocus</animation>
+							<animation effect="fade" start="100" end="0" time="0" reversible="true">Focus</animation>
 						</control>
 						<control type="group">
 							<left>20</left>
@@ -1595,6 +1725,18 @@
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout width="240" height="400">
@@ -1624,6 +1766,20 @@
 							<texture fallback="DefaultVideoCover.png" background="true">$VAR[PosterImageVar]</texture>
 							<bordertexture border="20">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="textbox">
+							<left>20</left>
+							<top>210</top>
+							<width>200</width>
+							<height>100</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font12_title</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+							<animation effect="fade" start="0" end="100" time="200" reversible="true">Unfocus</animation>
+							<animation effect="fade" start="100" end="0" time="0" reversible="true">Focus</animation>
 						</control>
 						<control type="group">
 							<left>20</left>
@@ -4613,7 +4769,7 @@
 							<left>42</left>
 							<width>260</width>
 							<height>200</height>
-							<texture fallback="DefaultTVShowsSquare.png">$PARAM[icon]</texture>
+							<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
@@ -4671,7 +4827,7 @@
 								<left>42</left>
 								<width>260</width>
 								<height>200</height>
-								<texture fallback="DefaultTVShowsSquare.png">$PARAM[icon]</texture>
+								<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="textbox">
@@ -5355,7 +5511,7 @@
 							<left>42</left>
 							<width>260</width>
 							<height>200</height>
-							<texture fallback="DefaultTVShowsSquare.png">$PARAM[icon]</texture>
+							<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
@@ -5413,7 +5569,7 @@
 								<left>42</left>
 								<width>260</width>
 								<height>200</height>
-								<texture fallback="DefaultTVShowsSquare.png">$PARAM[icon]</texture>
+								<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="textbox">
@@ -5457,6 +5613,15 @@
 				<height>$PARAM[height]</height>
 				<left>0</left>
 				<top>0</top>
+				<control type="label">
+					<left>130</left>
+					<top>0</top>
+					<width>1700</width>
+					<height>40</height>
+					<scroll>yes</scroll>
+					<label>$PARAM[widget_header]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<include content="LeftRightArrowsAdvancedHorizontal">
 					<param name="left_posx" value="70" />
@@ -5466,7 +5631,7 @@
 				</include>
 				<control type="panel" id="$PARAM[list_id]">
 					<left>110</left>
-					<top>0</top>
+					<top>40</top>
 					<width>1700</width>
 					<height>$PARAM[height]</height>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -5491,7 +5656,7 @@
 							<left>42</left>
 							<width>260</width>
 							<height>200</height>
-							<texture fallback="DefaultTVShowsSquare.png">$PARAM[icon]</texture>
+							<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
@@ -5549,7 +5714,7 @@
 								<left>42</left>
 								<width>260</width>
 								<height>200</height>
-								<texture fallback="DefaultTVShowsSquare.png">$PARAM[icon]</texture>
+								<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="textbox">
@@ -5569,6 +5734,425 @@
 								<width>260</width>
 								<height>98</height>
 								<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][CR][COLOR white]$INFO[ListItem.Title][/COLOR]</label>
+								<textcolor>$VAR[SkinColorVar]</textcolor>
+								<font>font12</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+								<aligny>top</aligny>
+							</control>
+						</control>
+					</focusedlayout>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="WidgetListRecordings">
+		<param name="height">600</param>
+		<param name="arrow_posy">200</param>
+		<param name="item_limit">25</param>
+		<param name="icon">$INFO[ListItem.Icon]</param>
+		<definition>
+			<control type="group">
+				<description>Square Widget including header and arrows</description>
+				<height>$PARAM[height]</height>
+				<left>0</left>
+				<top>0</top>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<control type="label">
+					<left>500</left>
+					<top>15</top>
+					<width>900</width>
+					<height>40</height>
+					<label>$PARAM[widget_header]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
+				<include content="LeftRightArrows">
+					<param name="left_posx" value="459" />
+					<param name="right_posx" value="1843" />
+					<param name="posy" value="290" />
+					<param name="list_id" value="$PARAM[list_id]" />
+				</include>
+				<control type="panel" id="$PARAM[list_id]">
+					<left>480</left>
+					<top>55</top>
+					<width>1372</width>
+					<height>$PARAM[height]</height>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<orientation>horizontal</orientation>
+					<onleft>9000</onleft>
+					<onright>noop</onright>
+					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+					<onup>$PARAM[onup_id]</onup>
+					<ondown>$PARAM[ondown_id]</ondown>
+					<onback>SetFocus(9000)</onback>
+					<preloaditems>1</preloaditems>
+					<itemlayout width="343" height="500">
+						<control type="image">
+							<width>340</width>
+							<height>500</height>
+							<texture border="40">buttons/button-nofo.png</texture>
+						</control>
+						<control type="image">
+							<top>43</top>
+							<left>42</left>
+							<width>260</width>
+							<height>200</height>
+							<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="textbox">
+							<left>42</left>
+							<top>247</top>
+							<width>260</width>
+							<height>70</height>
+							<label>$INFO[ListItem.ChannelName]</label>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>top</aligny>
+						</control>
+						<control type="textbox">
+							<left>42</left>
+							<top>350</top>
+							<width>260</width>
+							<height>100</height>
+							<label>$INFO[ListItem.DateTime][CR][COLOR white]$INFO[ListItem.Title][/COLOR]</label>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>top</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="343" height="500">
+						<control type="group">
+							<depth>DepthContentPopout</depth>
+							<animation type="Focus">
+								<effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,70" />
+							</animation>
+							<animation type="Unfocus">
+								<effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
+							</animation>
+							<control type="image">
+								<width>340</width>
+								<height>500</height>
+								<texture border="40">buttons/button-nofo.png</texture>
+							</control>
+							<control type="image">
+								<width>340</width>
+								<height>500</height>
+								<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
+								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+							</control>
+							<control type="image">
+								<top>43</top>
+								<left>42</left>
+								<width>260</width>
+								<height>200</height>
+								<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="textbox">
+								<left>42</left>
+								<top>247</top>
+								<width>260</width>
+								<height>70</height>
+								<label>$INFO[ListItem.ChannelName]</label>
+								<font>font12</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+								<aligny>top</aligny>
+							</control>
+							<control type="textbox">
+								<left>42</left>
+								<top>350</top>
+								<width>260</width>
+								<height>100</height>
+								<label>$INFO[ListItem.DateTime][CR][COLOR white]$INFO[ListItem.Title][/COLOR]</label>
+								<textcolor>$VAR[SkinColorVar]</textcolor>
+								<font>font12</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+								<aligny>top</aligny>
+							</control>
+						</control>
+					</focusedlayout>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="WidgetListRecordings2">
+		<param name="height">600</param>
+		<param name="arrow_posy">200</param>
+		<param name="item_limit">25</param>
+		<param name="icon">$INFO[ListItem.Icon]</param>
+		<definition>
+			<control type="group">
+				<description>Square Widget including header and arrows</description>
+				<height>$PARAM[height]</height>
+				<left>0</left>
+				<top>0</top>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<control type="label">
+					<left>248</left>
+					<top>15</top>
+					<width>1620</width>
+					<height>40</height>
+					<scroll>yes</scroll>
+					<label>$PARAM[widget_header]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
+				<include content="LeftRightArrows">
+					<param name="left_posx" value="210" />
+					<param name="right_posx" value="1780" />
+					<param name="posy" value="290" />
+					<param name="list_id" value="$PARAM[list_id]" />
+				</include>
+				<control type="panel" id="$PARAM[list_id]">
+					<left>230</left>
+					<top>55</top>
+					<width>1620</width>
+					<height>$PARAM[height]</height>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<orientation>horizontal</orientation>
+					<onleft>9000</onleft>
+					<onright>noop</onright>
+					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+					<onup>$PARAM[onup_id]</onup>
+					<ondown>$PARAM[ondown_id]</ondown>
+					<onback>SetFocus(9000)</onback>
+					<preloaditems>1</preloaditems>
+					<itemlayout width="343" height="500">
+						<control type="image">
+							<width>340</width>
+							<height>500</height>
+							<texture border="40">buttons/button-nofo.png</texture>
+						</control>
+						<control type="image">
+							<top>43</top>
+							<left>42</left>
+							<width>260</width>
+							<height>200</height>
+							<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="textbox">
+							<left>42</left>
+							<top>247</top>
+							<width>260</width>
+							<height>70</height>
+							<label>$INFO[ListItem.ChannelName]</label>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>top</aligny>
+						</control>
+						<control type="textbox">
+							<left>42</left>
+							<top>350</top>
+							<width>260</width>
+							<height>100</height>
+							<label>$INFO[ListItem.DateTime][CR][COLOR white]$INFO[ListItem.Title][/COLOR]</label>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>top</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="343" height="500">
+						<control type="group">
+							<depth>DepthContentPopout</depth>
+							<animation type="Focus">
+								<effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,70" />
+							</animation>
+							<animation type="Unfocus">
+								<effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
+							</animation>
+							<control type="image">
+								<width>340</width>
+								<height>500</height>
+								<texture border="40">buttons/button-nofo.png</texture>
+							</control>
+							<control type="image">
+								<width>340</width>
+								<height>500</height>
+								<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
+								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+							</control>
+							<control type="image">
+								<top>43</top>
+								<left>42</left>
+								<width>260</width>
+								<height>200</height>
+								<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="textbox">
+								<left>42</left>
+								<top>247</top>
+								<width>260</width>
+								<height>70</height>
+								<label>$INFO[ListItem.ChannelName]</label>
+								<font>font12</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+								<aligny>top</aligny>
+							</control>
+							<control type="textbox">
+								<left>42</left>
+								<top>350</top>
+								<width>260</width>
+								<height>100</height>
+								<label>$INFO[ListItem.DateTime][CR][COLOR white]$INFO[ListItem.Title][/COLOR]</label>
+								<textcolor>$VAR[SkinColorVar]</textcolor>
+								<font>font12</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+								<aligny>top</aligny>
+							</control>
+						</control>
+					</focusedlayout>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="WidgetListRecordingsAdvancedHorizontal">
+		<param name="height">600</param>
+		<param name="arrow_posy">200</param>
+		<param name="item_limit">25</param>
+		<param name="icon">$INFO[ListItem.Icon]</param>
+		<definition>
+			<control type="group">
+				<description>Square Widget including header and arrows</description>
+				<height>$PARAM[height]</height>
+				<left>0</left>
+				<top>0</top>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<control type="label">
+					<left>130</left>
+					<top>0</top>
+					<width>1700</width>
+					<height>40</height>
+					<scroll>yes</scroll>
+					<label>$PARAM[widget_header]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
+				<include content="LeftRightArrows">
+					<param name="left_posx" value="70" />
+					<param name="right_posx" value="70" />
+					<param name="posy" value="290" />
+					<param name="list_id" value="$PARAM[list_id]" />
+				</include>
+				<control type="panel" id="$PARAM[list_id]">
+					<left>110</left>
+					<top>40</top>
+					<width>1700</width>
+					<height>$PARAM[height]</height>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<orientation>horizontal</orientation>
+					<onleft>9000</onleft>
+					<onright>noop</onright>
+					<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
+					<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
+					<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>
+					<onup>$PARAM[onup_id]</onup>
+					<ondown>$PARAM[ondown_id]</ondown>
+					<onback>SetFocus(9000)</onback>
+					<preloaditems>1</preloaditems>
+					<itemlayout width="343" height="500">
+						<control type="image">
+							<width>340</width>
+							<height>500</height>
+							<texture border="40">buttons/button-nofo.png</texture>
+						</control>
+						<control type="image">
+							<top>43</top>
+							<left>42</left>
+							<width>260</width>
+							<height>200</height>
+							<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="textbox">
+							<left>42</left>
+							<top>247</top>
+							<width>260</width>
+							<height>70</height>
+							<label>$INFO[ListItem.ChannelName]</label>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>top</aligny>
+						</control>
+						<control type="textbox">
+							<left>42</left>
+							<top>350</top>
+							<width>260</width>
+							<height>100</height>
+							<label>$INFO[ListItem.DateTime][CR][COLOR white]$INFO[ListItem.Title][/COLOR]</label>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>top</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="343" height="500">
+						<control type="group">
+							<depth>DepthContentPopout</depth>
+							<animation type="Focus">
+								<effect type="zoom" start="100" end="108" time="200" tween="sine" easing="inout" center="150,70" />
+							</animation>
+							<animation type="Unfocus">
+								<effect type="zoom" start="108" end="100" time="200" tween="sine" easing="inout" center="150,70" />
+							</animation>
+							<control type="image">
+								<width>340</width>
+								<height>500</height>
+								<texture border="40">buttons/button-nofo.png</texture>
+							</control>
+							<control type="image">
+								<width>340</width>
+								<height>500</height>
+								<texture border="40" colordiffuse="button_focus">buttons/button-fo.png</texture>
+								<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+								<animation effect="fade" start="100" end="0" time="0">Unfocus</animation>
+							</control>
+							<control type="image">
+								<top>43</top>
+								<left>42</left>
+								<width>260</width>
+								<height>200</height>
+								<texture fallback="DefaultTVShows.png">$PARAM[icon]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="textbox">
+								<left>42</left>
+								<top>247</top>
+								<width>260</width>
+								<height>70</height>
+								<label>$INFO[ListItem.ChannelName]</label>
+								<font>font12</font>
+								<shadowcolor>text_shadow</shadowcolor>
+								<align>center</align>
+								<aligny>top</aligny>
+							</control>
+							<control type="textbox">
+								<left>42</left>
+								<top>350</top>
+								<width>260</width>
+								<height>100</height>
+								<label>$INFO[ListItem.DateTime][CR][COLOR white]$INFO[ListItem.Title][/COLOR]</label>
 								<textcolor>$VAR[SkinColorVar]</textcolor>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
@@ -6882,7 +7466,7 @@
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include content="WidgetListChannels3">
-							<param name="content_path" value="pvr://channels/tv/All channels/"/>
+							<param name="content_path" value="pvr://channels/tv/*"/>
 							<param name="widget_header" value="$LOCALIZE[19019]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12200"/>
@@ -6913,41 +7497,52 @@
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include content="WidgetListChannels4">
-							<param name="content_path" value="pvr://channels/tv/All channels/"/>
+							<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
 							<param name="widget_header" value="$LOCALIZE[31016]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="16200"/>
 							<param name="onup_id" value="9000"/>
-							<param name="ondown_id" value="9000"/>
-							<param name="height" value="540"/>
+							<param name="ondown_id" value="16300"/>
+							<param name="height" value="550"/>
 						</include>
+						<include content="WidgetListRecordings2">
+ 							<param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
+ 							<param name="sortby" value="date"/>
+ 							<param name="sortorder" value="descending"/>
+ 							<param name="widget_header" value="$LOCALIZE[31015]"/>
+ 							<param name="widget_target" value="pvr"/>
+ 							<param name="list_id" value="16300"/>
+ 							<param name="onup_id" value="16200"/>
+  							<param name="ondown_id" value="9000"/>
+ 							<param name="height" value="550"/>
+  						</include>
 						<control type="grouplist">
 							<height>218</height>
-							<left>478</left>
+							<left>230</left>
 							<top>36</top>
 							<orientation>horizontal</orientation>
 							<align>right</align>
 							<width>1360</width>
 							<control type="group">
 								<width>680</width>
-								<visible>PVR.IsRecording</visible>
+								<visible>PVR.IsRecordingTV</visible>
 								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.NowRecordingChannelIcon]" />
+									<param name="icon" value="$INFO[PVR.TVNowRecordingChannelIcon]" />
 									<param name="header" value="$LOCALIZE[19158]" />
-									<param name="label1" value="$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]" />
-									<param name="label2" value="$INFO[PVR.NowRecordingTitle][CR][COLOR=grey]$INFO[PVR.NowRecordingChannel][/COLOR]" />
+									<param name="label1" value="$INFO[PVR.TVNowRecordingDateTime,$LOCALIZE[19126] - ]" />
+									<param name="label2" value="$INFO[PVR.TVNowRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNowRecordingChannel][/COLOR]" />
 								</include>
 							</control>
 							<control type="group">
-								<visible>PVR.HasNonRecordingTimer</visible>
+								<visible>PVR.HasNonRecordingTVTimer</visible>
 								<width>680</width>
 								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.NextRecordingChannelIcon]" />
+									<param name="icon" value="$INFO[PVR.TVNextRecordingChannelIcon]" />
 									<param name="header" value="$LOCALIZE[19157]" />
-									<param name="label1" value="$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19126] - ]" />
-									<param name="label2" value="$INFO[PVR.NextRecordingTitle][CR][COLOR=grey]$INFO[PVR.NextRecordingChannel][/COLOR]" />
+									<param name="label1" value="$INFO[PVR.TVNextRecordingDateTime,$LOCALIZE[19126] - ]" />
+									<param name="label2" value="$INFO[PVR.TVNextRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNextRecordingChannel][/COLOR]" />
 								</include>
 							</control>
 						</control>
@@ -6972,16 +7567,57 @@
 						<height>810</height>
 						<posy>0</posy>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<usecontrolcoords>true</usecontrolcoords>
 						<include content="WidgetListChannels4">
-							<param name="content_path" value="pvr://channels/radio/All channels/"/>
+							<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
 							<param name="widget_header" value="$LOCALIZE[31018]"/>
 							<param name="widget_target" value="files"/>
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="13200"/>
 							<param name="onup_id" value="9000"/>
-							<param name="ondown_id" value="9000"/>
-						</include>
+							<param name="ondown_id" value="13300"/>
+							<param name="height" value="550"/>
+ 						</include>
+ 						<include content="WidgetListRecordings2">
+ 							<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
+ 							<param name="sortby" value="date"/>
+ 							<param name="sortorder" value="descending"/>
+ 							<param name="widget_header" value="$LOCALIZE[31015]"/>
+ 							<param name="widget_target" value="pvr"/>
+ 							<param name="list_id" value="13300"/>
+ 							<param name="onup_id" value="13200"/>
+  							<param name="ondown_id" value="9000"/>
+  							<param name="height" value="550"/>
+  						</include>
+ 						<control type="grouplist">
+ 							<height>218</height>
+ 							<left>230</left>
+ 							<top>36</top>
+ 							<orientation>horizontal</orientation>
+ 							<align>right</align>
+ 							<width>1360</width>
+ 							<control type="group">
+ 								<width>680</width>
+ 								<visible>PVR.IsRecordingRadio</visible>
+ 								<include content="PVRWidget">
+ 									<param name="icon" value="$INFO[PVR.RadioNowRecordingChannelIcon]" />
+ 									<param name="header" value="$LOCALIZE[19158]" />
+ 									<param name="label1" value="$INFO[PVR.RadioNowRecordingDateTime,$LOCALIZE[19126] - ]" />
+ 									<param name="label2" value="$INFO[PVR.RadioNowRecordingTitle][CR][COLOR=grey]$INFO[PVR.RadioNowRecordingChannel][/COLOR]" />
+ 								</include>
+ 							</control>
+ 							<control type="group">
+ 								<visible>PVR.HasNonRecordingRadioTimer</visible>
+ 								<width>680</width>
+ 								<include content="PVRWidget">
+ 									<param name="icon" value="$INFO[PVR.RadioNextRecordingChannelIcon]" />
+ 									<param name="header" value="$LOCALIZE[19157]" />
+ 									<param name="label1" value="$INFO[PVR.RadioNextRecordingDateTime,$LOCALIZE[19126] - ]" />
+ 									<param name="label2" value="$INFO[PVR.RadioNextRecordingTitle][CR][COLOR=grey]$INFO[PVR.RadioNextRecordingChannel][/COLOR]" />
+ 								</include>
+ 							</control>
+ 						</control>
 					</control>
 				</control>
 				<control type="group" id="15000">
@@ -8724,7 +9360,7 @@
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include content="WidgetListChannels">
-							<param name="content_path" value="pvr://channels/tv/All channels/"/>
+							<param name="content_path" value="pvr://channels/tv/*"/>
 							<param name="widget_header" value="$LOCALIZE[19019]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12200"/>
@@ -8750,21 +9386,32 @@
 					</control>
 					<control type="grouplist" id="16001">
 						<orientation>vertical</orientation>
-						<height>810</height>
+						<height>807</height>
 						<posy>115</posy>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include content="WidgetListChannels2">
-							<param name="content_path" value="pvr://channels/tv/All channels/"/>
+							<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
 							<param name="widget_header" value="$LOCALIZE[31016]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="16200"/>
 							<param name="onup_id" value="5900"/>
-							<param name="ondown_id" value="20001"/>
-							<param name="height" value="540"/>
+							<param name="ondown_id" value="16300"/>
+							<param name="height" value="550"/>
 						</include>
+						<include content="WidgetListRecordings">
+ 							<param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
+ 							<param name="sortby" value="date"/>
+ 							<param name="sortorder" value="descending"/>
+ 							<param name="widget_header" value="$LOCALIZE[31015]"/>
+ 							<param name="widget_target" value="pvr"/>
+ 							<param name="list_id" value="16300"/>
+ 							<param name="onup_id" value="16200"/>
+  							<param name="ondown_id" value="20001"/>
+ 							<param name="height" value="550"/>
+  						</include>
 						<control type="grouplist">
 							<height>218</height>
 							<left>478</left>
@@ -8774,22 +9421,22 @@
 							<width>1360</width>
 							<control type="group">
 								<width>680</width>
-								<visible>PVR.IsRecording</visible>
+								<visible>PVR.IsRecordingTV</visible>
 								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.NowRecordingChannelIcon]" />
+									<param name="icon" value="$INFO[PVR.TVNowRecordingChannelIcon]" />
 									<param name="header" value="$LOCALIZE[19158]" />
-									<param name="label1" value="$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]" />
-									<param name="label2" value="$INFO[PVR.NowRecordingTitle][CR][COLOR=grey]$INFO[PVR.NowRecordingChannel][/COLOR]" />
+									<param name="label1" value="$INFO[PVR.TVNowRecordingDateTime,$LOCALIZE[19126] - ]" />
+									<param name="label2" value="$INFO[PVR.TVNowRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNowRecordingChannel][/COLOR]" />
 								</include>
 							</control>
 							<control type="group">
-								<visible>PVR.HasNonRecordingTimer</visible>
+								<visible>PVR.HasNonRecordingTVTimer</visible>
 								<width>680</width>
 								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.NextRecordingChannelIcon]" />
+									<param name="icon" value="$INFO[PVR.TVNextRecordingChannelIcon]" />
 									<param name="header" value="$LOCALIZE[19157]" />
-									<param name="label1" value="$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19126] - ]" />
-									<param name="label2" value="$INFO[PVR.NextRecordingTitle][CR][COLOR=grey]$INFO[PVR.NextRecordingChannel][/COLOR]" />
+									<param name="label1" value="$INFO[PVR.TVNextRecordingDateTime,$LOCALIZE[19126] - ]" />
+									<param name="label2" value="$INFO[PVR.TVNextRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNextRecordingChannel][/COLOR]" />
 								</include>
 							</control>
 						</control>
@@ -8814,8 +9461,9 @@
 						<height>810</height>
 						<posy>115</posy>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<usecontrolcoords>true</usecontrolcoords>
 						<include content="WidgetListChannels2">
-							<param name="content_path" value="pvr://channels/radio/All channels/"/>
+							<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
 							<param name="widget_header" value="$LOCALIZE[31018]"/>
 							<param name="widget_target" value="files"/>
 							<param name="sortby" value="lastplayed"/>
@@ -8823,7 +9471,47 @@
 							<param name="list_id" value="13200"/>
 							<param name="onup_id" value="5900"/>
 							<param name="ondown_id" value="20001"/>
+							<param name="height" value="550"/>
 						</include>
+						<include content="WidgetListRecordings">
+ 							<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
+ 							<param name="sortby" value="date"/>
+ 							<param name="sortorder" value="descending"/>
+ 							<param name="widget_header" value="$LOCALIZE[31015]"/>
+ 							<param name="widget_target" value="pvr"/>
+ 							<param name="list_id" value="13300"/>
+ 							<param name="onup_id" value="13200"/>
+  							<param name="ondown_id" value="20001"/>
+  							<param name="height" value="550"/>
+  						</include>
+  						<control type="grouplist">
+ 							<height>218</height>
+ 							<left>478</left>
+ 							<top>36</top>
+ 							<orientation>horizontal</orientation>
+ 							<align>right</align>
+ 							<width>1360</width>
+ 							<control type="group">
+ 								<width>680</width>
+ 								<visible>PVR.IsRecordingRadio</visible>
+ 								<include content="PVRWidget">
+ 									<param name="icon" value="$INFO[PVR.RadioNowRecordingChannelIcon]" />
+ 									<param name="header" value="$LOCALIZE[19158]" />
+ 									<param name="label1" value="$INFO[PVR.RadioNowRecordingDateTime,$LOCALIZE[19126] - ]" />
+ 									<param name="label2" value="$INFO[PVR.RadioNowRecordingTitle][CR][COLOR=grey]$INFO[PVR.RadioNowRecordingChannel][/COLOR]" />
+ 								</include>
+ 							</control>
+ 							<control type="group">
+ 								<visible>PVR.HasNonRecordingRadioTimer</visible>
+ 								<width>680</width>
+ 								<include content="PVRWidget">
+ 									<param name="icon" value="$INFO[PVR.RadioNextRecordingChannelIcon]" />
+ 									<param name="header" value="$LOCALIZE[19157]" />
+ 									<param name="label1" value="$INFO[PVR.RadioNextRecordingDateTime,$LOCALIZE[19126] - ]" />
+ 									<param name="label2" value="$INFO[PVR.RadioNextRecordingTitle][CR][COLOR=grey]$INFO[PVR.RadioNextRecordingChannel][/COLOR]" />
+ 								</include>
+ 							</control>
+ 						</control>
 					</control>
 				</control>
 				<control type="group" id="15000">
@@ -10531,7 +11219,7 @@
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include content="WidgetListChannelsAdvancedHorizontal1">
-							<param name="content_path" value="pvr://channels/tv/All channels/"/>
+							<param name="content_path" value="pvr://channels/tv/*"/>
 							<param name="widget_header" value="$LOCALIZE[19019]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12200"/>
@@ -10556,48 +11244,32 @@
 					</control>
 					<control type="grouplist" id="16001">
 						<orientation>vertical</orientation>
-						<height>810</height>
+						<height>734</height>
 						<top>90</top>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
 						<include content="WidgetListChannelsAdvancedHorizontal2">
-							<param name="content_path" value="pvr://channels/tv/All channels/"/>
+							<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
+							<param name="widget_header" value="$LOCALIZE[31016]"/>
 							<param name="list_id" value="16200"/>
 							<param name="onup_id" value="9000"/>
-							<param name="ondown_id" value="9000"/>
-							<param name="height" value="540"/>
+							<param name="ondown_id" value="16300"/>
+							<param name="height" value="600"/>
 						</include>
-						<control type="grouplist">
-							<height>218</height>
-							<left>110</left>
-							<top>-40</top>
-							<orientation>horizontal</orientation>
-							<align>center</align>
-							<width>1700</width>
-							<control type="group">
-								<width>680</width>
-								<visible>PVR.IsRecording</visible>
-								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.NowRecordingChannelIcon]" />
-									<param name="header" value="$LOCALIZE[19158]" />
-									<param name="label1" value="$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]" />
-									<param name="label2" value="$INFO[PVR.NowRecordingTitle][CR][COLOR=grey]$INFO[PVR.NowRecordingChannel][/COLOR]" />
-								</include>
-							</control>
-							<control type="group">
-								<visible>PVR.HasNonRecordingTimer</visible>
-								<width>680</width>
-								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.NextRecordingChannelIcon]" />
-									<param name="header" value="$LOCALIZE[19157]" />
-									<param name="label1" value="$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19126] - ]" />
-									<param name="label2" value="$INFO[PVR.NextRecordingTitle][CR][COLOR=grey]$INFO[PVR.NextRecordingChannel][/COLOR]" />
-								</include>
-							</control>
-						</control>
+						<include content="WidgetListRecordingsAdvancedHorizontal">
+ 							<param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
+ 							<param name="sortby" value="date"/>
+ 							<param name="sortorder" value="descending"/>
+ 							<param name="widget_header" value="$LOCALIZE[31015]"/>
+ 							<param name="widget_target" value="pvr"/>
+ 							<param name="list_id" value="16300"/>
+ 							<param name="onup_id" value="16200"/>
+  							<param name="ondown_id" value="9000"/>
+ 							<param name="height" value="600"/>
+  						</include>
 					</control>
 				</control>
 				<control type="group" id="13000">
@@ -10618,15 +11290,29 @@
 						<height>810</height>
 						<top>90</top>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
+						<usecontrolcoords>true</usecontrolcoords>
 						<include content="WidgetListChannelsAdvancedHorizontal2">
-							<param name="content_path" value="pvr://channels/radio/All channels/"/>
+							<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
 							<param name="widget_target" value="files"/>
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
+							<param name="widget_header" value="$LOCALIZE[31018]"/>
 							<param name="list_id" value="13200"/>
 							<param name="onup_id" value="9000"/>
-							<param name="ondown_id" value="9000"/>
+							<param name="ondown_id" value="13300"/>
+							<param name="height" value="600"/>
 						</include>
+						<include content="WidgetListRecordingsAdvancedHorizontal">
+ 							<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
+ 							<param name="sortby" value="date"/>
+ 							<param name="sortorder" value="descending"/>
+ 							<param name="widget_header" value="$LOCALIZE[31015]"/>
+ 							<param name="widget_target" value="pvr"/>
+ 							<param name="list_id" value="13300"/>
+ 							<param name="onup_id" value="13200"/>
+  							<param name="ondown_id" value="9000"/>
+ 							<param name="height" value="600"/>
+  						</include>
 					</control>
 				</control>
 				<control type="group" id="15000">
