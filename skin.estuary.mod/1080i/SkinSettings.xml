@@ -420,6 +420,13 @@
                         <onclick>Skin.ToggleSetting(autoscroll)</onclick>
                         <selected>Skin.HasSetting(autoscroll)</selected>
                     </control>
+                    <control type="radiobutton" id="684">
+                        <label>$LOCALIZE[40028]</label>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick>Skin.ToggleSetting(hide_plotforspoiler)</onclick>
+                        <selected>Skin.HasSetting(hide_plotforspoiler)</selected>
+                    </control>
                     <control type="radiobutton" id="604">
                         <label>$LOCALIZE[31094]</label>
                         <width>1256</width>
@@ -498,7 +505,7 @@
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(show_mediaflags)|Skin.Reset(enable_mediaflagscolor)|Skin.Reset(hide_audience)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(show_clearlogos)|Skin.Reset(show_musicclearlogos)|Skin.Reset(show_studiologos)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(show_mediaflags)|Skin.Reset(enable_mediaflagscolor)|Skin.Reset(hide_audience)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(show_clearlogos)|Skin.Reset(show_musicclearlogos)|Skin.Reset(show_studiologos)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="640">

@@ -41,7 +41,7 @@
                     <height>121</height>
                     <font>font12</font>
                     <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-                    <label>$INFO[ListItem.Plot]</label>
+                    <label>$VAR[PlotSpoilerVar]</label>
                 </control>
             </control>
             <control type="group">

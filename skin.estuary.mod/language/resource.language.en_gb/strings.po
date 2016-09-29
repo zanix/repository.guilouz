@@ -843,7 +843,9 @@ msgctxt "#40027"
 msgid "Show artists clearlogos"
 msgstr ""
 
-# empty strings "40028"
+msgctxt "#40028"
+msgid "Hide plots to avoid spoilers"
+msgstr ""
 
 msgctxt "#40029"
 msgid "Enable extrafanarts for background"
@@ -1257,7 +1259,9 @@ msgctxt "#40131"
 msgid "Show artists clearlogos on music library."
 msgstr ""
 
-# empty strings "40132"
+msgctxt "#40132"
+msgid "Plot masked to avoid spoilers"
+msgstr ""
 
 msgctxt "#40133"
 msgid "Show studios and recordslabels icons on library."
@@ -1705,4 +1709,8 @@ msgstr ""
 
 msgctxt "#40244"
 msgid "Hide time and date on top bar."
+msgstr ""
+
+msgctxt "#40245"
+msgid "Hide plots of unwatched episodes to avoid spoilers."
 msgstr ""
