@@ -582,7 +582,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>Font-Rating2</font>
-                <label>[UPPERCASE]$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20161] : ,]$INFO[ListItem.Property(WatchedEpisodes), • $LOCALIZE[16102] : ,] $INFO[ListItem.Property(UnwatchedEpisodes), • $LOCALIZE[16101] : ,][/UPPERCASE]</label>
+                <label>[UPPERCASE]$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20161] : ,]$INFO[ListItem.Property(WatchedEpisodes),  •  $LOCALIZE[16102] : ,]$INFO[ListItem.Property(UnwatchedEpisodes),  •  $LOCALIZE[16101] : ,][/UPPERCASE]</label>
                 <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
             </control>
         </control>
