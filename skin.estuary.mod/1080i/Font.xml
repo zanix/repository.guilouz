@@ -235,9 +235,9 @@
 			<style>bold</style>
 		</font>
 		<font>
-			<name>Mono30</name>
+			<name>Mono28</name>
 			<filename>arial.ttf</filename>
-			<size>30</size>
+			<size>28</size>
 		</font>
 		<font>
             <name>Font-Flag</name>

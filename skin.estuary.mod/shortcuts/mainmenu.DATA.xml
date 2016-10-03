@@ -77,6 +77,15 @@
         <defaultID>weather</defaultID>
         <icon>special://skin/extras/icons/sun.png</icon>
         <action>ActivateWindow(Weather)</action>
+        <visible>!String.IsEmpty(Weather.Plugin)</visible>
+    </shortcut>
+    <shortcut>
+        <label>8</label>
+        <label2>Common Shortcut</label2>
+        <defaultID>weather</defaultID>
+        <icon>special://skin/extras/icons/sun.png</icon>
+        <action>ReplaceWindow(servicesettings,weather)</action>
+        <visible>String.IsEmpty(Weather.Plugin)</visible>
     </shortcut>
     <shortcut>
         <label>1036</label>

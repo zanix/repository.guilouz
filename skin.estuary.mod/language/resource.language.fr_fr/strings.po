@@ -598,6 +598,31 @@ msgctxt "#31142"
 msgid "Play speed"
 msgstr "Vitesse de lecture"
 
+#: /1080i/Home.xml
+msgctxt "#31143"
+msgid "You did not set up PVR yet. In order to use PVR, choose a PVR client addon and configure it. Please visit http://kodi.wiki/view/PVR to learn more."
+msgstr "Vous n'avez pas encore configuré la fonction PVR. Pour pouvoir utiliser la fonction PVR, sélectionnez une extension de client PVR and configurez-la. Visitez http://kodi.wiki/view/PVR pour plus d'informations."
+
+#: /1080i/Home.xml
+msgctxt "#31144"
+msgid "Enter add-on browser"
+msgstr "Entrer dans le navigateur d'extensions"
+
+#: /1080i/Custom_1107_SearchDialog.xml
+msgctxt "#31145"
+msgid "Search add-ons"
+msgstr "Rechercher des extensions"
+
+#: /1080i/Home.xml
+msgctxt "#31146"
+msgid "Manage add-ons"
+msgstr "Gérer les extensions"
+
+#: /1080i/Home.xml
+msgctxt "#31147"
+msgid "Download add-ons"
+msgstr "Télécharger des extensions"
+
 msgctxt "#40000"
 msgid "Show movies and tv shows clearlogos"
 msgstr "Afficher les logos des films et séries TV"
