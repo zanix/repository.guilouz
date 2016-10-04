@@ -2,6 +2,7 @@
 • Add possibility to hide plots of unwatched episodes to avoid spoilers
 • Add possibility to search addons with search function on home menu
 • Add new submenu items for addons
+• Changes for script.skin.helper.colorpicker
 • Misc fixes
 
 1.6.0 :

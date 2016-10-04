@@ -715,7 +715,7 @@
                         <include>DefaultSettingButton</include>
                         <label>40183</label>
                         <label2>$VAR[Label_SkinSetting_BackgroundColor]</label2>
-                        <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=BackgroundColor)</onclick>
+                        <onclick>RunScript(script.skin.helper.colorpicker,skinstring=BackgroundColor)</onclick>
                     </control>
                     <control type="button" id="673">
                         <width>1256</width>
@@ -728,7 +728,7 @@
                         <include>DefaultSettingButton</include>
                         <label>40163</label>
                         <label2>$VAR[Label_SkinSetting_SkinColor]</label2>
-                        <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=SkinColor)</onclick>
+                        <onclick>RunScript(script.skin.helper.colorpicker,skinstring=SkinColor)</onclick>
                     </control>
                     <control type="button" id="666">
                         <width>1256</width>
