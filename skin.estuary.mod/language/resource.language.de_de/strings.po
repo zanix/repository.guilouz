@@ -1149,8 +1149,8 @@ msgid "Show artists clearlogos on music library."
 msgstr "Zeige Künstler Clearlogos in der Musikbibliothek."
 
 msgctxt "#40132"
-msgid "Plot masked to avoid spoilers"
-msgstr "Maskiere Handlungen zur Verhinderung von Spoilern"
+msgid "Plot masked to avoid spoilers."
+msgstr "Handlung zur Spoilervermeidung ausgeblendet."
 
 msgctxt "#40133"
 msgid "Show studios and recordslabels icons on library."

@@ -1285,7 +1285,7 @@ msgid "Show artists clearlogos on music library."
 msgstr ""
 
 msgctxt "#40132"
-msgid "Plot masked to avoid spoilers"
+msgid "Plot masked to avoid spoilers."
 msgstr ""
 
 msgctxt "#40133"
