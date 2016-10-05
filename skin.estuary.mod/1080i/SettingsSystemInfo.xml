@@ -90,7 +90,7 @@
                 <texture border="22">dialogs/dialog-bg.png</texture>
             </control>
             <control type="grouplist">
-                <left>480</left>
+                <left>460</left>
                 <top>105</top>
                 <orientation>vertical</orientation>
                 <control type="label" id="2">
@@ -112,6 +112,7 @@
                     <height>45</height>
                     <width>1220</width>
                     <font>font12</font>
+                    <scroll>yes</scroll>
                 </control>
                 <control type="label" id="6">
                     <height>45</height>
@@ -155,7 +156,7 @@
                 <orientation>vertical</orientation>
                 <control type="label">
                     <description>CPU Text</description>
-                    <width>700</width>
+                    <width>800</width>
                     <height>80</height>
                     <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
                     <aligny>top</aligny>
@@ -165,13 +166,13 @@
                 </control>
                 <control type="progress">
                     <description>CPU BAR</description>
-                    <width>700</width>
+                    <width>800</width>
                     <height>16</height>
                     <info>System.CPUUsage</info>
                 </control>
                 <control type="label">
                     <description>Memory Text</description>
-                    <width>700</width>
+                    <width>800</width>
                     <height>40</height>
                     <label>$LOCALIZE[31030] : $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)]</label>
                     <aligny>center</aligny>
@@ -180,14 +181,14 @@
                 </control>
                 <control type="progress">
                     <description>Memory BAR</description>
-                    <width>700</width>
+                    <width>800</width>
                     <height>16</height>
                     <info>system.memory(used)</info>
                 </control>
             </control>
             <control type="label">
                 <top>675</top>
-                <left>900</left>
+                <left>1100</left>
                 <width>auto</width>
                 <height>50</height>
                 <aligny>bottom</aligny>
@@ -200,7 +201,7 @@
                 <description>Kodi build version</description>
                 <itemgap>10</itemgap>
                 <top>720</top>
-                <left>900</left>
+                <left>1100</left>
                 <width>800</width>
                 <align>left</align>
                 <height>45</height>
@@ -231,7 +232,7 @@
                 <itemgap>10</itemgap>
                 <top>770</top>
                 <align>left</align>
-                <left>900</left>
+                <left>1100</left>
                 <width>800</width>
                 <orientation>horizontal</orientation>
                 <control type="label">

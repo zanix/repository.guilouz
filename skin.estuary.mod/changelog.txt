@@ -1,5 +1,6 @@
 1.6.2 :
 • Add script.module.simplecache in necessary addon
+• Use RGB color space for country flags
 • Fixes
 
 1.6.1 :
