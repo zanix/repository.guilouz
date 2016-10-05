@@ -1,3 +1,7 @@
+1.6.2 :
+• Add script.module.simplecache in necessary addon
+• Fixes
+
 1.6.1 :
 • Add possibility to hide plots of unwatched episodes to avoid spoilers
 • Add possibility to search addons with search function on home menu
