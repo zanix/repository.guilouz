@@ -31,6 +31,7 @@
                 <height>100</height>
                 <align>left</align>
                 <visible>!Skin.HasSetting(show_clearlogos)</visible>
+                <animation effect="slide" end="0,10" time="0" condition="String.IsEmpty(VideoPlayer.Genre)">Conditional</animation>
             </control>
             <control type="label">
                 <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
@@ -43,6 +44,7 @@
                 <align>left</align>
                 <visible>Skin.HasSetting(show_clearlogos) + String.IsEmpty(Player.Art(clearlogo))</visible>
                 <visible>VideoPlayer.Content(movies)</visible>
+                <animation effect="slide" end="0,10" time="0" condition="String.IsEmpty(VideoPlayer.Genre)">Conditional</animation>
             </control>
             <control type="label">
                 <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
@@ -55,6 +57,7 @@
                 <align>left</align>
                 <visible>Skin.HasSetting(show_clearlogos) + String.IsEmpty(Player.Art(tvshow.clearlogo))</visible>
                 <visible>!VideoPlayer.Content(movies)</visible>
+                <animation effect="slide" end="0,10" time="0" condition="String.IsEmpty(VideoPlayer.Genre)">Conditional</animation>
             </control>
             <control type="label">
                 <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
@@ -67,6 +70,7 @@
                 <scroll>yes</scroll>
                 <visible>Skin.HasSetting(show_clearlogos) + !String.IsEmpty(Player.Art(clearlogo))</visible>
                 <visible>VideoPlayer.Content(movies)</visible>
+                <animation effect="slide" end="0,10" time="0" condition="String.IsEmpty(VideoPlayer.Genre)">Conditional</animation>
             </control>
             <control type="label">
                 <label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</label>
