@@ -67,7 +67,7 @@
                 <shadowcolor>text_shadow</shadowcolor>
                 <top>7</top>
                 <height>100</height>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <visible>Skin.HasSetting(show_clearlogos) + !String.IsEmpty(Player.Art(clearlogo))</visible>
                 <visible>VideoPlayer.Content(movies)</visible>
                 <animation effect="slide" end="0,10" time="0" condition="String.IsEmpty(VideoPlayer.Genre)">Conditional</animation>
@@ -80,7 +80,7 @@
                 <shadowcolor>text_shadow</shadowcolor>
                 <top>7</top>
                 <height>100</height>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <visible>Skin.HasSetting(show_clearlogos) + !String.IsEmpty(Player.Art(tvshow.clearlogo))</visible>
                 <visible>!VideoPlayer.Content(movies)</visible>
             </control>
@@ -131,7 +131,7 @@
                 <textcolor>$VAR[SkinColorVar]</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
                 <height>100</height>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <visible>Skin.HasSetting(show_clearlogos) + !String.IsEmpty(Player.Art(clearlogo))</visible>
                 <visible>VideoPlayer.Content(movies)</visible>
             </control>
@@ -144,7 +144,7 @@
                 <textcolor>$VAR[SkinColorVar]</textcolor>
                 <shadowcolor>text_shadow</shadowcolor>
                 <height>100</height>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <visible>Skin.HasSetting(show_clearlogos) + !String.IsEmpty(Player.Art(tvshow.clearlogo))</visible>
                 <visible>!VideoPlayer.Content(movies)</visible>
             </control>

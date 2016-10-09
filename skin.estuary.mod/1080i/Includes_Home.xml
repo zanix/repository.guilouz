@@ -7525,6 +7525,7 @@
 							<orientation>horizontal</orientation>
 							<align>right</align>
 							<width>1360</width>
+							<visible>PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer</visible>
 							<control type="group">
 								<width>680</width>
 								<visible>PVR.IsRecordingTV</visible>
@@ -7597,6 +7598,7 @@
  							<orientation>horizontal</orientation>
  							<align>right</align>
  							<width>1360</width>
+ 							<visible>PVR.IsRecordingRadio | PVR.HasNonRecordingRadioTimer</visible>
  							<control type="group">
  								<width>680</width>
  								<visible>PVR.IsRecordingRadio</visible>
@@ -9419,6 +9421,7 @@
 							<orientation>horizontal</orientation>
 							<align>right</align>
 							<width>1360</width>
+							<visible>PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer</visible>
 							<control type="group">
 								<width>680</width>
 								<visible>PVR.IsRecordingTV</visible>
@@ -9491,6 +9494,7 @@
  							<orientation>horizontal</orientation>
  							<align>right</align>
  							<width>1360</width>
+ 							<visible>PVR.IsRecordingRadio | PVR.HasNonRecordingRadioTimer</visible>
  							<control type="group">
  								<width>680</width>
  								<visible>PVR.IsRecordingRadio</visible>

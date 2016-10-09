@@ -173,6 +173,17 @@
                 <textcolor>white</textcolor>
             </control>
             <control type="label">
+ 				<left>30</left>
+ 				<top>96</top>
+ 				<width>1858</width>
+ 				<height>45</height>
+				<align>center</align>
+				<aligny>bottom</aligny>
+ 				<label>$VAR[SeekLabel]</label>
+ 				<shadowcolor>black</shadowcolor>
+ 				<textcolor>$VAR[SkinColorVar]</textcolor>
+ 			</control>
+            <control type="label">
                 <right>30</right>
                 <top>-90</top>
                 <textoffsetx>20</textoffsetx>

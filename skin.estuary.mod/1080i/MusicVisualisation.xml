@@ -331,6 +331,17 @@
 					<font>font12</font>
 					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 				</control>
+				<control type="label">
+ 					<left>79</left>
+ 					<top>980</top>
+ 					<width>400</width>
+ 					<height>45</height>
+					<align>left</align>
+					<aligny>bottom</aligny>
+ 					<label>$VAR[SeekLabel]</label>
+ 					<shadowcolor>black</shadowcolor>
+ 					<textcolor>$VAR[SkinColorVar]</textcolor>
+ 				</control>
 				<control type="image">
 					<left>80</left>
 					<top>1030</top>

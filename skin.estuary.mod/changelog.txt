@@ -1,7 +1,11 @@
 1.6.2 :
+• Add seeklabel on music OSD
+• Add new Icons view
+• Add info wall view for episodes
 • Add script.module.simplecache in necessary addon
 • Use RGB color space for country flags
-• Fixes
+• Changes in smartplaylist editor
+• Misc fixes
 
 1.6.1 :
 • Add possibility to hide plots of unwatched episodes to avoid spoilers
