@@ -1,3 +1,6 @@
+1.6.3 :
+• Fix on smartplaylist editor	
+	
 1.6.2 :
 • Add seeklabel on music OSD
 • Add new Icons view
