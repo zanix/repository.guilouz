@@ -48,6 +48,14 @@
                         </control>
                     </rulerlayout>
                     <channellayout height="58" width="350">
+                        <control type="image" id="121212">
+                            <left>2</left>
+                            <top>3</top>
+                            <width>85</width>
+                            <height>50</height>
+                            <texture fallback="fallback.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                        </control>
                         <control type="label">
                             <left>2</left>
                             <top>-2</top>
@@ -57,6 +65,7 @@
                             <label>$INFO[ListItem.ChannelNumber]</label>
                             <align>center</align>
                             <aligny>center</aligny>
+                            <visible>String.IsEqual(Control.GetLabel(121212),fallback.png)</visible>
                         </control>
                         <control type="label" id="1">
                             <left>90</left>
@@ -70,6 +79,14 @@
                         </control>
                     </channellayout>
                     <focusedchannellayout height="58" width="350">
+                        <control type="image" id="121213">
+                            <left>2</left>
+                            <top>3</top>
+                            <width>85</width>
+                            <height>50</height>
+                            <texture fallback="fallback.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                        </control>
                         <control type="label">
                             <left>2</left>
                             <top>-2</top>
@@ -80,6 +97,7 @@
                             <textcolor>$VAR[SkinColorVar]</textcolor>
                             <align>center</align>
                             <aligny>center</aligny>
+                            <visible>String.IsEqual(Control.GetLabel(121213),fallback.png)</visible>
                         </control>
                         <control type="label" id="1">
                             <left>90</left>

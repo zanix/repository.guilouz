@@ -1,5 +1,8 @@
 1.6.3 :
+• Replace channels numbers by channels icons on PVR Guide
 • Fix on smartplaylist editor	
+• Fix widgets on addons launcher
+• New 4K flag icon
 	
 1.6.2 :
 • Add seeklabel on music OSD
