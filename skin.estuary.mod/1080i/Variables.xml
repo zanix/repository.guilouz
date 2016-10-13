@@ -107,7 +107,7 @@
     </variable>
     <variable name="MoviesWidget1ContentVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.movies1))">$INFO[Container(9000).ListItem.Property(widgetPath.movies1)]</value>
-        <value>plugin://script.skin.helper.service/?action=recentmovies&amp;limit=25&amp;reload=$INFO[Window(Home).Property(widgetreload)]</value>
+        <value>videodb://recentlyaddedmovies/</value>
     </variable>
     <variable name="MoviesWidget1TargetVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetTarget.movies1))">$INFO[Container(9000).ListItem.Property(widgetTarget.movies1)]</value>
@@ -171,7 +171,7 @@
     </variable>
     <variable name="TVShowsWidget1ContentVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.tvshows1))">$INFO[Container(9000).ListItem.Property(widgetPath.tvshows1)]</value>
-        <value>plugin://script.skin.helper.service/?action=recentepisodes&amp;limit=25&amp;reload=$INFO[Window(Home).Property(widgetreload)]</value>
+        <value>videodb://recentlyaddedepisodes/</value>
     </variable>
     <variable name="TVShowsWidget1TargetVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetTarget.tvshows1))">$INFO[Container(9000).ListItem.Property(widgetTarget.tvshows1)]</value>

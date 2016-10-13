@@ -10270,7 +10270,6 @@
 								<shadowcolor>text_shadow</shadowcolor>
 							</control>
 						</focusedlayout>
-						<include>mainmenu-position-and-appearance</include>
 						<content>
 							<include>skinshortcuts-mainmenu</include>
 						</content>
