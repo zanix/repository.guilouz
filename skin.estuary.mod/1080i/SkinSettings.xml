@@ -198,6 +198,9 @@
                         <include>DefaultSettingButton</include>
                         <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
                         <onclick>Skin.Reset(show_episodesfanarts)</onclick>
+                        <onclick>Skin.Reset(HideWatchedMovies)</onclick>
+                        <onclick>Skin.Reset(HideWatchedEpisodes)</onclick>
+                        <onclick>Skin.Reset(HideWatchedMusicVideos)</onclick>
                     </control>
                     <control type="image" id="20000">
                         <height>63</height>

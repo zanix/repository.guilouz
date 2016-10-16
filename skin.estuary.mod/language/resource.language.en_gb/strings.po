@@ -1739,3 +1739,19 @@ msgstr ""
 msgctxt "#40245"
 msgid "Hide plots of unwatched episodes to avoid spoilers."
 msgstr ""
+
+msgctxt "#40246"
+msgid "Unwatched movies recently added"
+msgstr ""
+
+msgctxt "#40247"
+msgid "Unwatched episodes recently added"
+msgstr ""
+
+msgctxt "#40248"
+msgid "Hide watched items from recently added"
+msgstr ""
+
+msgctxt "#40249"
+msgid "Unwatched music videos recently added"
+msgstr ""

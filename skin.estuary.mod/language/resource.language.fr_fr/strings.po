@@ -1606,3 +1606,19 @@ msgstr "Permet de masquer l'heure et la date sur la barre du haut."
 msgctxt "#40245"
 msgid "Hide plots of unwatched episodes to avoid spoilers."
 msgstr "Permet de masquer les résumés des épisodes non vus pour éviter les spoilers."
+
+msgctxt "#40246"
+msgid "Unwatched movies recently added"
+msgstr "Films non vus ajoutés récemment"
+
+msgctxt "#40247"
+msgid "Unwatched episodes recently added"
+msgstr "Episodes non vus ajoutés récemment"
+
+msgctxt "#40248"
+msgid "Hide watched items from recently added"
+msgstr "Masquer les éléments vus des ajouts récents"
+
+msgctxt "#40249"
+msgid "Unwatched music videos recently added"
+msgstr "Clips musicaux non vus ajoutés récemment"

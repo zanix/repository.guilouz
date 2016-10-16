@@ -107,6 +107,7 @@
     </variable>
     <variable name="MoviesWidget1ContentVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.movies1))">$INFO[Container(9000).ListItem.Property(widgetPath.movies1)]</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(widgetPath.movies1)) + Skin.HasSetting(HideWatchedMovies)">special://skin/playlists/recent_unwatched_movies.xsp</value>
         <value>videodb://recentlyaddedmovies/</value>
     </variable>
     <variable name="MoviesWidget1TargetVar">
@@ -115,10 +116,12 @@
     </variable>
     <variable name="MoviesWidget1LabelVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName.movies1))">$INFO[Container(9000).ListItem.Property(widgetName.movies1)]</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(widgetPath.movies1)) + Skin.HasSetting(HideWatchedMovies)">$LOCALIZE[40246]</value>
         <value>$LOCALIZE[20386]</value>
     </variable>
     <variable name="MoviesWidget1Label2Var">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.movies1))">$INFO[Container(211).ListItem.Property(widgetName.movies1)]</value>
+        <value condition="String.IsEmpty(Container(211).ListItem.Property(widgetPath.movies1)) + Skin.HasSetting(HideWatchedMovies)">$LOCALIZE[40246]</value>
         <value>$LOCALIZE[20386]</value>
     </variable>
     <variable name="MoviesWidget2ContentVar">
@@ -171,6 +174,7 @@
     </variable>
     <variable name="TVShowsWidget1ContentVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.tvshows1))">$INFO[Container(9000).ListItem.Property(widgetPath.tvshows1)]</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(widgetPath.tvshows1)) + Skin.HasSetting(HideWatchedEpisodes)">special://skin/playlists/recent_unwatched_episodes.xsp</value>
         <value>videodb://recentlyaddedepisodes/</value>
     </variable>
     <variable name="TVShowsWidget1TargetVar">
@@ -179,10 +183,12 @@
     </variable>
     <variable name="TVShowsWidget1LabelVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName.tvshows1))">$INFO[Container(9000).ListItem.Property(widgetName.tvshows1)]</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(widgetPath.tvshows1)) + Skin.HasSetting(HideWatchedEpisodes)">$LOCALIZE[40247]</value>
         <value>$LOCALIZE[20387]</value>
     </variable>
     <variable name="TVShowsWidget1Label2Var">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.tvshows1))">$INFO[Container(211).ListItem.Property(widgetName.tvshows1)]</value>
+        <value condition="String.IsEmpty(Container(211).ListItem.Property(widgetPath.tvshows1)) + Skin.HasSetting(HideWatchedEpisodes)">$LOCALIZE[40247]</value>
         <value>$LOCALIZE[20387]</value>
     </variable>
     <variable name="TVShowsWidget2ContentVar">
@@ -363,6 +369,7 @@
     </variable>
     <variable name="MusicVideoWidget1ContentVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.musicvideo1))">$INFO[Container(9000).ListItem.Property(widgetPath.musicvideo1)]</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(widgetPath.musicvideo1)) + Skin.HasSetting(HideWatchedMusicVideos)">special://skin/playlists/recent_unwatched_musicvideos.xsp</value>
         <value>videodb://recentlyaddedmusicvideos/</value>
     </variable>
     <variable name="MusicVideoWidget1TargetVar">
@@ -371,10 +378,12 @@
     </variable>
     <variable name="MusicVideoWidget1LabelVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName.musicvideo1))">$INFO[Container(9000).ListItem.Property(widgetName.musicvideo1)]</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(widgetPath.musicvideo1)) + Skin.HasSetting(HideWatchedMusicVideos)">$LOCALIZE[40249]</value>
         <value>$LOCALIZE[20390]</value>
     </variable>
     <variable name="MusicVideoWidget1Label2Var">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.musicvideo1))">$INFO[Container(211).ListItem.Property(widgetName.musicvideo1)]</value>
+        <value condition="String.IsEmpty(Container(211).ListItem.Property(widgetPath.musicvideo1)) + Skin.HasSetting(HideWatchedMusicVideos)">$LOCALIZE[40249]</value>
         <value>$LOCALIZE[20390]</value>
     </variable>
     <variable name="MusicVideoWidget2ContentVar">
@@ -1554,8 +1563,7 @@
     </variable>
     <variable name="ClearLogoViewVar">
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(ListItem.Art(tvshow.clearlogo))">http://localhost:52307/getpvrthumb&amp;title=$INFO[Listitem.Title]&amp;type=clearlogo</value>
+        <value>$INFO[ListItem.Art(clearlogo)]</value>
     </variable>
     <variable name="ClearLogoVar">
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
@@ -1900,7 +1908,7 @@
     </variable>
     <variable name="FullScreenInfoTextBoxVar">
         <value condition="Control.HasFocus(5552)">$INFO[VideoPlayer.Duration,[B]$LOCALIZE[180] : [/B],[CR]]</value>
-        <value condition="Control.HasFocus(5553)">$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</value>
+        <value condition="Control.HasFocus(5553)">$INFO[VideoPlayer.Tagline,[B][I],[/I][/B][CR]]$INFO[VideoPlayer.Plot]</value>
         <value condition="Control.HasFocus(5555)">$INFO[VideoPlayer.NextTitle,[B],[/B][CR]]$INFO[VideoPlayer.NextPlot]</value>
     </variable>
     <variable name="NowPlayingIconVar">
@@ -2393,7 +2401,6 @@
         <value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
         <value condition="!String.IsEmpty(Container.Art(artist.thumb))">$INFO[Container.Art(artist.thumb)]</value>
         <value condition="!String.IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
-        <value condition="String.IsEmpty(ListItem.Icon) | String.Contains(ListItem.Icon,Default,left) + String.Contains(ListItem.Icon,.png,right)">http://localhost:52307/getthumb&amp;title=$INFO[Listitem.Label]</value>
         <value condition="Container.Content(episodes) + !String.IsEmpty(Container.Art(season.poster))">$INFO[Container.Art(season.poster)]</value>
         <value condition="!String.IsEmpty(Window(home).Property(infoposter))">$INFO[Window(home).Property(infoposter)]</value>
         <value>$INFO[ListItem.Icon]</value>
