@@ -297,14 +297,6 @@
                         <onclick>Skin.ToggleSetting(HideWatchedMovies)</onclick>
                         <visible>String.IsEqual(Container(211).ListItem.Property(widget),MoviesWidget) + String.IsEmpty(Container(211).ListItem.Property(widgetPath.movies1))</visible>
                     </control>
-                    <control type="radiobutton" id="1505">
-                        <width>1256</width>
-                        <include>DefaultSettingButton</include>
-                        <label>40248</label>
-                        <selected>Skin.HasSetting(HideWatchedEpisodes)</selected>
-                        <onclick>Skin.ToggleSetting(HideWatchedEpisodes)</onclick>
-                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) + String.IsEmpty(Container(211).ListItem.Property(widgetPath.tvshows1))</visible>
-                    </control>
                     <control type="radiobutton" id="1506">
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
@@ -312,6 +304,36 @@
                         <selected>Skin.HasSetting(HideWatchedMusicVideos)</selected>
                         <onclick>Skin.ToggleSetting(HideWatchedMusicVideos)</onclick>
                         <visible>String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget) + String.IsEmpty(Container(211).ListItem.Property(widgetPath.musicvideo1))</visible>
+                    </control>
+                    <control type="radiobutton" id="1503">
+                        <label>40236</label>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <selected>!String.IsEmpty(Container(211).ListItem.Property(UseClearLogos))</selected>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)</visible>
+                    </control>
+                    <control type="radiobutton" id="3132">
+                        <label>40126</label>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <enable>String.IsEmpty(Container(211).ListItem.Property(UseClearLogos))</enable>
+                        <selected>!String.IsEmpty(Container(211).ListItem.Property(ReplaceThumbWidget))</selected>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget)</visible>
+                    </control>
+                    <control type="radiobutton" id="1495">
+                        <label>40231</label>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <selected>!String.IsEmpty(Container(211).ListItem.Property(HideBannerWidget2))</selected>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)</visible>
+                    </control>
+                    <control type="radiobutton" id="1505">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>40248</label>
+                        <selected>Skin.HasSetting(HideWatchedEpisodes)</selected>
+                        <onclick>Skin.ToggleSetting(HideWatchedEpisodes)</onclick>
+                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) + String.IsEmpty(Container(211).ListItem.Property(widgetPath.tvshows1))</visible>
                     </control>
                     <control type="button" id="1492" description="Hub Image">
                         <width>100%</width>
@@ -795,28 +817,6 @@
                         <include>DefaultSettingButton</include>
                         <selected>!String.IsEmpty(Container(211).ListItem.Property(HideBannerWidget))</selected>
                         <visible>String.IsEqual(Container(211).ListItem.Property(widget),PictureWidget)</visible>
-                    </control>
-                    <control type="radiobutton" id="1503">
-                        <label>40236</label>
-                        <width>1256</width>
-                        <include>DefaultSettingButton</include>
-                        <selected>!String.IsEmpty(Container(211).ListItem.Property(UseClearLogos))</selected>
-                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)</visible>
-                    </control>
-                    <control type="radiobutton" id="3132">
-                        <label>40126</label>
-                        <width>1256</width>
-                        <include>DefaultSettingButton</include>
-                        <enable>String.IsEmpty(Container(211).ListItem.Property(UseClearLogos))</enable>
-                        <selected>!String.IsEmpty(Container(211).ListItem.Property(ReplaceThumbWidget))</selected>
-                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget)</visible>
-                    </control>
-                    <control type="radiobutton" id="1495">
-                        <label>40231</label>
-                        <width>1256</width>
-                        <include>DefaultSettingButton</include>
-                        <selected>!String.IsEmpty(Container(211).ListItem.Property(HideBannerWidget2))</selected>
-                        <visible>String.IsEqual(Container(211).ListItem.Property(widget),TVShowsWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetThumb)</visible>
                     </control>
                 </control>
                 <control type="textbox" id="6">
