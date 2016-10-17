@@ -503,6 +503,12 @@
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata">
+						<param name="control_id" value="161" />
+						<param name="label" value="$LOCALIZE[126] : [COLOR white]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]" />
+						<param name="visible" value="String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(NextAired.Status))" />
+						<param name="textcolor" value="$VAR[SkinColorVar]" />
+					</include>
+					<include content="InfoDialogMetadata">
 						<param name="control_id" value="160" />
 						<param name="label" value="$LOCALIZE[568] : [COLOR white]$INFO[ListItem.LastPlayed][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.LastPlayed)" />

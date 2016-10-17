@@ -1,3 +1,7 @@
+1.6.4 :
+• Add status of tv shows from Next Aired addon on video infos
+• Minnor fixes
+
 1.6.3 :
 • Replace channels numbers by channels icons on PVR Guide
 • Replace some Skin Helper widgets had to recent changes of Skin Helper Services
