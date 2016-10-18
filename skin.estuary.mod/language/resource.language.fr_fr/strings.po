@@ -230,7 +230,7 @@ msgstr "filtré"
 
 msgctxt "#31053"
 msgid "Arial based"
-msgstr "Basée sur Arial"
+msgstr "Police basée sur Arial"
 
 msgctxt "#31054"
 msgid "Press [B]Left[/B] to rewind, or [B]Right[/B] to fast-forward"
@@ -1622,3 +1622,7 @@ msgstr "Masquer les éléments vus des ajouts récents"
 msgctxt "#40249"
 msgid "Unwatched music videos recently added"
 msgstr "Clips musicaux non vus ajoutés récemment"
+
+msgctxt "#40250"
+msgid "Bigger font"
+msgstr "Grande police"

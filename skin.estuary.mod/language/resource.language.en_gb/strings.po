@@ -1755,3 +1755,7 @@ msgstr ""
 msgctxt "#40249"
 msgid "Unwatched music videos recently added"
 msgstr ""
+
+msgctxt "#40250"
+msgid "Bigger font"
+msgstr ""
