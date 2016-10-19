@@ -1,6 +1,8 @@
 1.6.4 :
 • Add status of tv shows from Next Aired addon on video infos
+• Add genres icons for thumbnails
 • Add bigger font (Thanks to schumi2004)
+• Hide videowindow and visualisation of background when slideshow is active
 • Minnor fixes
 
 1.6.3 :

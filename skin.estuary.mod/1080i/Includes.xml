@@ -2337,12 +2337,12 @@
             <control type="videowindow">
                 <depth>DepthBackground</depth>
                 <include>FullScreenDimensions</include>
-                <visible>Player.HasVideo</visible>
+                <visible>Player.HasVideo + !Slideshow.IsActive</visible>
                 <visible>Skin.HasSetting(background_showvideo)</visible>
             </control>
             <control type="visualisation">
                 <include>FullScreenDimensions</include>
-                <visible>Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+                <visible>Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + !Slideshow.IsActive</visible>
                 <visible>Skin.HasSetting(background_showvisualisation)</visible>
             </control>
             <control type="group">
