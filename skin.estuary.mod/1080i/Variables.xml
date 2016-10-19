@@ -126,7 +126,7 @@
     </variable>
     <variable name="MoviesWidget2ContentVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.movies2))">$INFO[Container(9000).ListItem.Property(widgetPath.movies2)]</value>
-        <value>plugin://script.skin.helper.service/?action=inprogressmovies&amp;limit=25&amp;reload=$INFO[Window(Home).Property(widgetreload)]</value>
+        <value>special://skin/playlists/inprogress_movies.xsp</value>
     </variable>
     <variable name="MoviesWidget2TargetVar">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetTarget.movies2))">$INFO[Container(9000).ListItem.Property(widgetTarget.movies2)]</value>
