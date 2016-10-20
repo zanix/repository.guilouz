@@ -1759,3 +1759,11 @@ msgstr ""
 msgctxt "#40250"
 msgid "Bigger font"
 msgstr ""
+
+msgctxt "#40251"
+msgid "Pause video during access to extended info"
+msgstr ""
+
+msgctxt "#40252"
+msgid "Pause video when viewing extended info."
+msgstr ""

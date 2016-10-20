@@ -154,7 +154,7 @@ msgstr "Ma note"
 
 msgctxt "#31034"
 msgid "Extended info"
-msgstr "Infos étendues"
+msgstr "Informations supplémentaires"
 
 msgctxt "#31035"
 msgid "Pages"
@@ -1626,3 +1626,11 @@ msgstr "Clips musicaux non vus ajoutés récemment"
 msgctxt "#40250"
 msgid "Bigger font"
 msgstr "Grande police"
+
+msgctxt "#40251"
+msgid "Pause video during access to extended info"
+msgstr "Mettre la vidéo en pause lors de l'accès aux informations supplémentaires"
+
+msgctxt "#40252"
+msgid "Pause video when viewing extended info."
+msgstr "Permet de mettre la vidéo en pause lors de la consultation des informations supplémentaires."
