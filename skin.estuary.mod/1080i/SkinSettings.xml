@@ -71,7 +71,7 @@
                         </control>
                         <control type="label">
                             <left>20</left>
-                            <width>380</width>
+                            <width>360</width>
                             <height>74</height>
                             <font>font12_title</font>
                             <label>$INFO[ListItem.Label]</label>
@@ -97,10 +97,11 @@
                         </control>
                         <control type="label">
                             <left>20</left>
-                            <width>380</width>
+                            <width>360</width>
                             <height>74</height>
                             <aligny>center</aligny>
                             <font>font12_title</font>
+                            <scroll>true</scroll>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>
