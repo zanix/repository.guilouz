@@ -2375,7 +2375,7 @@
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="!String.IsEmpty(Container(999).ListItem.Art(poster))">$INFO[Container(999).ListItem.Art(poster)]</value>
         <value condition="!String.IsEmpty(Container(999).ListItem.Art(tvshow.poster))">$INFO[Container(999).ListItem.Art(tvshow.poster)]</value>
-        <value>$INFO[ListItem.Art(thumb)]</value>
+        <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="InfoDialogPosterVar">
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
@@ -2409,7 +2409,7 @@
         <value condition="ListItem.IsParentFolder">DefaultFolderBackPoster.png</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster)) + [!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)]">$INFO[ListItem.Art(animatedposter)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-        <value>$INFO[ListItem.Art(thumb)]</value>
+        <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="ArtistLabelVar">
         <value condition="Container.Content(albums) + !String.IsEmpty(ListItem.AlbumArtist)">$INFO[ListItem.AlbumArtist]</value>
