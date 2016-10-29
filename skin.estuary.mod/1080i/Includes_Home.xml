@@ -7878,7 +7878,7 @@
 							<param name="visible" value="true"/>
 						</include>
 						<include content="ImageWidget5">
-							<param name="image_path" value="special://skin/extras/home-images/favorites.jpg"/>
+							<param name="image_path" value="$VAR[FavoritesFanartVar]"/>
 							<param name="text_label" value="$LOCALIZE[40077]" />
 							<param name="button_label" value="" />
 							<param name="button_id" value="4100"/>
@@ -8096,7 +8096,7 @@
 							<param name="visible" value="true"/>
 						</include>
 						<include content="ImageWidget5">
-							<param name="image_path" value="special://skin/extras/home-images/filemanager.jpg"/>
+							<param name="image_path" value="$VAR[FileManagerFanartVar]"/>
 							<param name="text_label" value="$LOCALIZE[40079]" />
 							<param name="button_label" value="" />
 							<param name="button_id" value="4100"/>
@@ -8117,7 +8117,7 @@
 							<param name="visible" value="true"/>
 						</include>
 						<include content="ImageWidget5">
-							<param name="image_path" value="special://skin/extras/home-images/power.jpg"/>
+							<param name="image_path" value="$VAR[PowerFanartVar]"/>
 							<param name="text_label" value="$LOCALIZE[40080]" />
 							<param name="button_label" value="" />
 							<param name="button_id" value="4100"/>
@@ -8138,7 +8138,7 @@
 							<param name="visible" value="true"/>
 						</include>
 						<include content="ImageWidget5">
-							<param name="image_path" value="special://skin/extras/home-images/search.jpg"/>
+							<param name="image_path" value="$VAR[SearchFanartVar]"/>
 							<param name="text_label" value="$LOCALIZE[40081]" />
 							<param name="button_label" value="" />
 							<param name="button_id" value="4100"/>
@@ -9774,7 +9774,7 @@
 							<param name="visible" value="true"/>
 						</include>
 						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/favorites.jpg"/>
+							<param name="image_path" value="$VAR[FavoritesFanartVar]"/>
 							<param name="text_label" value="$LOCALIZE[40077]" />
 							<param name="button_label" value="" />
 							<param name="button_id" value="4100"/>
@@ -9992,7 +9992,7 @@
 							<param name="visible" value="true"/>
 						</include>
 						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/filemanager.jpg"/>
+							<param name="image_path" value="$VAR[FileManagerFanartVar]"/>
 							<param name="text_label" value="$LOCALIZE[40079]" />
 							<param name="button_label" value="" />
 							<param name="button_id" value="4100"/>
@@ -10013,7 +10013,7 @@
 							<param name="visible" value="true"/>
 						</include>
 						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/power.jpg"/>
+							<param name="image_path" value="$VAR[PowerFanartVar]"/>
 							<param name="text_label" value="$LOCALIZE[40080]" />
 							<param name="button_label" value="" />
 							<param name="button_id" value="4100"/>
@@ -10034,7 +10034,7 @@
 							<param name="visible" value="true"/>
 						</include>
 						<include content="ImageWidget">
-							<param name="image_path" value="special://skin/extras/home-images/search.jpg"/>
+							<param name="image_path" value="$VAR[SearchFanartVar]"/>
 							<param name="text_label" value="$LOCALIZE[40081]" />
 							<param name="button_label" value="" />
 							<param name="button_id" value="4100"/>
@@ -11503,7 +11503,7 @@
 					<control type="grouplist" id="4001">
 						<orientation>vertical</orientation>
 						<include content="ImageWidgetAdvancedHorizontal1">
-							<param name="image_path" value="special://skin/extras/home-images/favorites.jpg"/>
+							<param name="image_path" value="$VAR[FavoritesFanartVar]"/>
 							<param name="widget_header" value="$LOCALIZE[1036]" />
 							<param name="text_label" value="$LOCALIZE[40077]" />
 							<param name="button_id" value="4100"/>
@@ -11732,7 +11732,7 @@
 					<control type="grouplist" id="4001">
 						<orientation>vertical</orientation>
 						<include content="ImageWidgetAdvancedHorizontal1">
-							<param name="image_path" value="special://skin/extras/home-images/filemanager.jpg"/>
+							<param name="image_path" value="$VAR[FileManagerFanartVar]"/>
 							<param name="widget_header" value="$LOCALIZE[10126]" />
 							<param name="text_label" value="$LOCALIZE[40079]" />
 							<param name="button_id" value="4100"/>
@@ -11747,7 +11747,7 @@
 					<control type="grouplist" id="4001">
 						<orientation>vertical</orientation>
 						<include content="ImageWidgetAdvancedHorizontal1">
-							<param name="image_path" value="special://skin/extras/home-images/power.jpg"/>
+							<param name="image_path" value="$VAR[PowerFanartVar]"/>
 							<param name="widget_header" value="$LOCALIZE[33060]" />
 							<param name="text_label" value="$LOCALIZE[40080]" />
 							<param name="button_id" value="4100"/>
@@ -11762,7 +11762,7 @@
 					<control type="grouplist" id="4001">
 						<orientation>vertical</orientation>
 						<include content="ImageWidgetAdvancedHorizontal1">
-							<param name="image_path" value="special://skin/extras/home-images/search.jpg"/>
+							<param name="image_path" value="$VAR[SearchFanartVar]"/>
 							<param name="widget_header" value="$LOCALIZE[31001]" />
 							<param name="text_label" value="$LOCALIZE[40081]" />
 							<param name="button_id" value="4100"/>

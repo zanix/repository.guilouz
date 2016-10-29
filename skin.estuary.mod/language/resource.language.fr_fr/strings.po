@@ -1634,3 +1634,43 @@ msgstr "Mettre la vidéo en pause lors de l'accès aux informations supplémenta
 msgctxt "#40252"
 msgid "Pause video when viewing extended info."
 msgstr "Permet de mettre la vidéo en pause lors de la consultation des informations supplémentaires."
+
+msgctxt "#40253"
+msgid "Background of 'Search...' shortcut"
+msgstr "Arrière-plan du raccourci 'Rechercher...'"
+
+msgctxt "#40254"
+msgid "Background of 'Favourites' shortcut"
+msgstr "Arrière-plan du raccourci 'Favoris'"
+
+msgctxt "#40255"
+msgid "Background of 'File browser' shortcut"
+msgstr "Arrière-plan du raccourci 'Gestionnaire de fichiers'"
+
+msgctxt "#40256"
+msgid "Background of 'Settings' shortcut"
+msgstr "Arrière-plan du raccourci 'Paramètres'"
+
+msgctxt "#40257"
+msgid "Background of 'Power options' shortcut"
+msgstr "Arrière-plan du raccourci 'Options d'alimentation'"
+
+msgctxt "#40258"
+msgid "Replace background of [B]Search...[/B] shortcut."
+msgstr "Permet de remplacer l'arrière-plan du raccourci [B]Rechercher...[/B]."
+
+msgctxt "#40259"
+msgid "Replace background of [B]Favourites[/B] shortcut."
+msgstr "Permet de remplacer l'arrière-plan du raccourci [B]Favoris[/B]."
+
+msgctxt "#40260"
+msgid "Replace background of [B]File browser[/B] shortcut."
+msgstr "Permet de remplacer l'arrière-plan du raccourci [B]Gestionnaire de fichiers[/B]."
+
+msgctxt "#40261"
+msgid "Replace background of [B]Settings[/B] shortcut."
+msgstr "Permet de remplacer l'arrière-plan du raccourci [B]Paramètres[/B]."
+
+msgctxt "#40262"
+msgid "Replace background of [B]Power options[/B] shortcut."
+msgstr "Permet de remplacer l'arrière-plan du raccourci [B]Options d'alimentation[/B]."

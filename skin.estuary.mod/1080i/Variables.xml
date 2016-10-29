@@ -1906,6 +1906,46 @@
         <value condition="Skin.HasSetting(use_custom_bg) + !String.IsEmpty(Skin.String(custom_background))">$INFO[Skin.String(custom_background)]</value>
         <value>special://skin/extras/backgrounds/default.png</value>
     </variable>
+    <variable name="SearchFanartVar">
+        <value condition="!String.IsEmpty(Skin.String(search_background))">$INFO[Skin.String(search_background)]</value>
+        <value>special://skin/extras/home-images/search.jpg</value>
+    </variable>
+    <variable name="Label_SkinSetting_SearchFanart">
+        <value condition="!String.IsEmpty(Skin.String(search_background))">$INFO[Skin.String(search_background)]</value>
+        <value>$LOCALIZE[15109]</value>
+    </variable>
+    <variable name="FavoritesFanartVar">
+        <value condition="!String.IsEmpty(Skin.String(favorites_background))">$INFO[Skin.String(favorites_background)]</value>
+        <value>special://skin/extras/home-images/favorites.jpg</value>
+    </variable>
+    <variable name="Label_SkinSetting_FavoritesFanart">
+        <value condition="!String.IsEmpty(Skin.String(favorites_background))">$INFO[Skin.String(favorites_background)]</value>
+        <value>$LOCALIZE[15109]</value>
+    </variable>
+    <variable name="FileManagerFanartVar">
+        <value condition="!String.IsEmpty(Skin.String(filemanager_background))">$INFO[Skin.String(filemanager_background)]</value>
+        <value>special://skin/extras/home-images/filemanager.jpg</value>
+    </variable>
+    <variable name="Label_SkinSetting_FileManagerFanart">
+        <value condition="!String.IsEmpty(Skin.String(filemanager_background))">$INFO[Skin.String(filemanager_background)]</value>
+        <value>$LOCALIZE[15109]</value>
+    </variable>
+    <variable name="SettingsFanartVar">
+        <value condition="!String.IsEmpty(Skin.String(settings_background))">$INFO[Skin.String(settings_background)]</value>
+        <value>special://skin/extras/home-images/settings.jpg</value>
+    </variable>
+    <variable name="Label_SkinSetting_SettingsFanart">
+        <value condition="!String.IsEmpty(Skin.String(settings_background))">$INFO[Skin.String(settings_background)]</value>
+        <value>$LOCALIZE[15109]</value>
+    </variable>
+    <variable name="PowerFanartVar">
+        <value condition="!String.IsEmpty(Skin.String(power_background))">$INFO[Skin.String(power_background)]</value>
+        <value>special://skin/extras/home-images/power.jpg</value>
+    </variable>
+    <variable name="Label_SkinSetting_PowerFanart">
+        <value condition="!String.IsEmpty(Skin.String(power_background))">$INFO[Skin.String(power_background)]</value>
+        <value>$LOCALIZE[15109]</value>
+    </variable>
     <variable name="FullScreenInfoTextBoxVar">
         <value condition="Control.HasFocus(5552)">$INFO[VideoPlayer.Duration,[B]$LOCALIZE[180] : [/B],[CR]]</value>
         <value condition="Control.HasFocus(5553)">$INFO[VideoPlayer.Tagline,[B][I],[/I][/B][CR]]$INFO[VideoPlayer.Plot]</value>
@@ -2523,6 +2563,11 @@
         <value condition="Control.HasFocus(682)">$LOCALIZE[40107]</value>
         <value condition="Control.HasFocus(684)">$LOCALIZE[40245]</value>
         <value condition="Control.HasFocus(686)">$LOCALIZE[40252]</value>
+        <value condition="Control.HasFocus(687)">$LOCALIZE[40258]</value>
+        <value condition="Control.HasFocus(688)">$LOCALIZE[40259]</value>
+        <value condition="Control.HasFocus(689)">$LOCALIZE[40260]</value>
+        <value condition="Control.HasFocus(691)">$LOCALIZE[40261]</value>
+        <value condition="Control.HasFocus(692)">$LOCALIZE[40262]</value>
         <value condition="Control.HasFocus(657) | Control.HasFocus(658) | Control.HasFocus(659) | Control.HasFocus(661) | Control.HasFocus(662)  | Control.HasFocus(669)">$LOCALIZE[10045]</value>
         <value condition="Container(9000).HasFocus(1)">$LOCALIZE[40024]</value>
         <value condition="Container(9000).HasFocus(2)">$LOCALIZE[31130]</value>
@@ -2727,12 +2772,18 @@
         <!--<value condition="!String.IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(id)]$INFO[Skin.String(HomeFanart.ext)]</value>-->
         <value condition="String.IsEmpty(Skin.String(WeatherFanart.path)) + Control.HasFocus(15100)">special://skin/extras/home-images/weather.jpg</value>
         <value condition="String.IsEmpty(Skin.String(WeatherFanart.path)) + Control.HasFocus(15200)">special://skin/extras/home-images/weather.jpg</value>
-        <value condition="Control.HasFocus(803)">special://skin/extras/home-images/favorites.jpg</value>
-        <value condition="String.IsEqual(Container(5900).ListItem.Label,$LOCALIZE[1036]) + Control.HasFocus(5900)">special://skin/extras/home-images/favorites.jpg</value>
-        <value condition="Control.HasFocus(802)">special://skin/extras/home-images/settings.jpg</value>
-        <value condition="Control.HasFocus(801)">special://skin/extras/home-images/filemanager.jpg</value>
-        <value condition="Control.HasFocus(804)">special://skin/extras/home-images/power.jpg</value>
-        <value condition="Control.HasFocus(900)">special://skin/extras/home-images/search.jpg</value>
+        <value condition="Control.HasFocus(803) + !String.IsEmpty(Skin.String(favorites_background))">$INFO[Skin.String(favorites_background)]</value>
+        <value condition="Control.HasFocus(803) + String.IsEmpty(Skin.String(favorites_background))">special://skin/extras/home-images/favorites.jpg</value>
+        <value condition="String.IsEqual(Container(5900).ListItem.Label,$LOCALIZE[1036]) + Control.HasFocus(5900) + !String.IsEmpty(Skin.String(favorites_background))">$INFO[Skin.String(favorites_background)]</value>
+        <value condition="String.IsEqual(Container(5900).ListItem.Label,$LOCALIZE[1036]) + Control.HasFocus(5900) + String.IsEmpty(Skin.String(favorites_background))">special://skin/extras/home-images/favorites.jpg</value>
+        <value condition="Control.HasFocus(802) + !String.IsEmpty(Skin.String(settings_background))">$INFO[Skin.String(settings_background)]</value>
+        <value condition="Control.HasFocus(802) + String.IsEmpty(Skin.String(settings_background))">special://skin/extras/home-images/settings.jpg</value>
+        <value condition="Control.HasFocus(801) + !String.IsEmpty(Skin.String(filemanager_background))">$INFO[Skin.String(filemanager_background)]</value>
+        <value condition="Control.HasFocus(801) + String.IsEmpty(Skin.String(filemanager_background))">special://skin/extras/home-images/filemanager.jpg</value>
+        <value condition="Control.HasFocus(804) + !String.IsEmpty(Skin.String(power_background))">$INFO[Skin.String(power_background)]</value>
+        <value condition="Control.HasFocus(804) + String.IsEmpty(Skin.String(power_background))">special://skin/extras/home-images/power.jpg</value>
+        <value condition="Control.HasFocus(900) + !String.IsEmpty(Skin.String(search_background))">$INFO[Skin.String(search_background)]</value>
+        <value condition="Control.HasFocus(900) + String.IsEmpty(Skin.String(search_background))">special://skin/extras/home-images/search.jpg</value>
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
     </variable>
     <variable name="MusicExtraFanArtVar">

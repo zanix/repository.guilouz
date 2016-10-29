@@ -245,6 +245,46 @@
                         <onclick>Skin.ToggleSetting(enable_widgetselection)</onclick>
                         <visible>!Skin.HasSetting(horizontaladvanced_menu) + !Skin.HasSetting(horizontal_menu)</visible>
                     </control>
+                    <control type="button" id="687">
+                        <label>40253</label>
+                        <label2>$VAR[Label_SkinSetting_SearchFanart]</label2>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick condition="!Skin.String(search_background)">Skin.SetImage(search_background)</onclick>
+                        <onclick condition="Skin.String(search_background)">Skin.Reset(search_background)</onclick>
+                    </control>
+                    <control type="button" id="688">
+                        <label>40254</label>
+                        <label2>$VAR[Label_SkinSetting_FavoritesFanart]</label2>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick condition="!Skin.String(favorites_background)">Skin.SetImage(favorites_background)</onclick>
+                        <onclick condition="Skin.String(favorites_background)">Skin.Reset(favorites_background)</onclick>
+                    </control>
+                    <control type="button" id="689">
+                        <label>40255</label>
+                        <label2>$VAR[Label_SkinSetting_FileManagerFanart]</label2>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick condition="!Skin.String(filemanager_background)">Skin.SetImage(filemanager_background)</onclick>
+                        <onclick condition="Skin.String(filemanager_background)">Skin.Reset(filemanager_background)</onclick>
+                    </control>
+                    <control type="button" id="691">
+                        <label>40256</label>
+                        <label2>$VAR[Label_SkinSetting_SettingsFanart]</label2>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick condition="!Skin.String(settings_background)">Skin.SetImage(settings_background)</onclick>
+                        <onclick condition="Skin.String(settings_background)">Skin.Reset(settings_background)</onclick>
+                    </control>
+                    <control type="button" id="692">
+                        <label>40257</label>
+                        <label2>$VAR[Label_SkinSetting_PowerFanart]</label2>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick condition="!Skin.String(power_background)">Skin.SetImage(power_background)</onclick>
+                        <onclick condition="Skin.String(power_background)">Skin.Reset(power_background)</onclick>
+                    </control>
                     <control type="image" id="16">
                         <description>separator image</description>
                         <height>3</height>
@@ -254,7 +294,7 @@
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(horizontal_menu)|Skin.Reset(horizontaladvanced_menu)|Skin.Reset(enable_widgetflagicons)|Skin.Reset(show_widgetclearlogos)|Skin.Reset(enable_widgetselection))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(horizontal_menu)|Skin.Reset(horizontaladvanced_menu)|Skin.Reset(enable_widgetflagicons)|Skin.Reset(show_widgetclearlogos)|Skin.Reset(enable_widgetselection)|Skin.Reset(search_background)|Skin.Reset(favorites_background)|Skin.Reset(filemanager_background)|Skin.Reset(settings_background)|Skin.Reset(power_background))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="600">
@@ -963,6 +1003,39 @@
                     <label>$VAR[SkinSettingsHelpTextVar]</label>
                     <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                 </control>
+            </control>
+        </control>
+        <control type="group">
+            <include>OpenClose_Right</include>
+            <control type="button">
+                <left>1141</left>
+                <top>105</top>
+                <width>48</width>
+                <height>24</height>
+                <texturefocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturenofocus>
+                <animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
+                <animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+                <animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
+                <onclick>SetFocus(610)</onclick>
+                <onclick>PageUp</onclick>
+                <animation effect="fade" time="200">VisibleChange</animation>
+                <visible>Container(9000).HasFocus(2) + Container(610).HasPrevious</visible>
+            </control>
+            <control type="button">
+                <left>1141</left>
+                <top>940</top>
+                <width>48</width>
+                <height>24</height>
+                <texturefocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturenofocus>
+                <animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
+                <animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+                <animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
+                <onclick>SetFocus(610)</onclick>
+                <onclick>PageDown</onclick>
+                <animation effect="fade" time="200">VisibleChange</animation>
+                <visible>Container(9000).HasFocus(2) + Container(610).HasNext</visible>
             </control>
         </control>
         <control type="group">

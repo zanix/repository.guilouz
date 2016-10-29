@@ -3,7 +3,6 @@
     <defaultcontrol></defaultcontrol>
     <controls>
         <control type="group" id="0">
-            <!-- codec infos -->
             <control type="image">
                 <left>10</left>
                 <top>-465</top>
@@ -36,6 +35,14 @@
                 <label></label>
                 <font>font12</font>
             </control>
+            <control type="label" id="1">
+ 				<left>45</left>
+ 				<top>15</top>
+ 				<width>1770</width>
+ 				<height>100</height>
+ 				<label>$INFO[Player.SeekNumeric]</label>
+ 				<font>font12</font>
+  			</control>
             <control type="group">
                 <visible>VideoPlayer.Content(LiveTV) + system.getbool(pvrplayback.signalquality)</visible>
                 <top>310</top>

@@ -1767,3 +1767,43 @@ msgstr ""
 msgctxt "#40252"
 msgid "Pause video when viewing extended info."
 msgstr ""
+
+msgctxt "#40253"
+msgid "Background of 'Search...' shortcut"
+msgstr ""
+
+msgctxt "#40254"
+msgid "Background of 'Favourites' shortcut"
+msgstr ""
+
+msgctxt "#40255"
+msgid "Background of 'File browser' shortcut"
+msgstr ""
+
+msgctxt "#40256"
+msgid "Background of 'Settings' shortcut"
+msgstr ""
+
+msgctxt "#40257"
+msgid "Background of 'Power options' shortcut"
+msgstr ""
+
+msgctxt "#40258"
+msgid "Replace background of [B]Search...[/B] shortcut."
+msgstr ""
+
+msgctxt "#40259"
+msgid "Replace background of [B]Favourites[/B] shortcut."
+msgstr ""
+
+msgctxt "#40260"
+msgid "Replace background of [B]File browser[/B] shortcut."
+msgstr ""
+
+msgctxt "#40261"
+msgid "Replace background of [B]Settings[/B] shortcut."
+msgstr ""
+
+msgctxt "#40262"
+msgid "Replace background of [B]Power options[/B] shortcut."
+msgstr ""

@@ -1,4 +1,5 @@
 1.6.5 :
+• Add possibility to replace backgrounds shortcuts
 • Minnor fixes
 
 1.6.4 :
