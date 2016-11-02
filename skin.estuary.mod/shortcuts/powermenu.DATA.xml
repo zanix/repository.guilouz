@@ -37,7 +37,7 @@
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
-        <label>20126</label>
+        <label>$VAR[SystemLogOffVar]</label>
         <action>dialog.close(all,true)</action>
         <action>System.LogOff</action>
         <icon>special://skin/extras/icons/power.png</icon> 
@@ -77,7 +77,7 @@
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
-        <label>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</label>
+        <label>$VAR[CancelAlarmVar]</label>
         <action>CancelAlarm(shutdowntimer)</action>
         <icon>special://skin/extras/icons/power.png</icon> 
         <visible>System.HasAlarm(shutdowntimer)</visible>        

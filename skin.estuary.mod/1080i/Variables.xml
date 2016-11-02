@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <variable name="SystemLogOffVar">
+        <value>$LOCALIZE[20126] $INFO[system.profilename,(,)]</value>
+    </variable>
+    <variable name="CancelAlarmVar">
+        <value>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</value>
+    </variable>
     <variable name="PlotSpoilerVar">
         <value condition="[Skin.HasSetting(hide_plotforspoiler) + String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Playcount,1)">$LOCALIZE[40132]</value>
         <value>$INFO[ListItem.Tagline,[B][I],[/I][/B][CR]]$INFO[ListItem.Plot]</value>
