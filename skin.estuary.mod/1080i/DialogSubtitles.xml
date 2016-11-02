@@ -153,7 +153,7 @@
 						<top>10</top>
 						<width>100</width>
 						<height>45</height>
-						<texture fallback="flags/starrating/rating0.png">flags/starrating/rating$INFO[ListItem.ActualIcon].png</texture>
+						<texture fallback="flags/starrating/rating0.png">$INFO[ListItem.ActualIcon,flags/starrating/rating,.png]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
@@ -223,7 +223,7 @@
 						<top>10</top>
 						<width>100</width>
 						<height>45</height>
-						<texture fallback="flags/starrating/rating0.png">flags/starrating/rating$INFO[ListItem.ActualIcon].png</texture>
+						<texture fallback="flags/starrating/rating0.png">$INFO[ListItem.ActualIcon,flags/starrating/rating,.png]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</focusedlayout>

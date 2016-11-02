@@ -1,7 +1,12 @@
 1.6.5 :
 • Add possibility to replace backgrounds shortcuts
-• Fix PVR search dialog
-• Minnor fixes
+• Rework on extendedinfo windows
+• Allow longer header for dialognumeric
+• Adjust gamecontrollerdialog button order
+• Fix PVR dialogs
+• Fix animations
+• Fix dialogsubtitles image
+• Minnor tweaks
 
 1.6.4 :
 • Add status of tv shows from Next Aired addon on video infos

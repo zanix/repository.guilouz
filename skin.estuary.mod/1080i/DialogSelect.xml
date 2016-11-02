@@ -82,7 +82,8 @@
 						<width>700</width>
 						<height>125</height>
 						<aligny>center</aligny>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font14</font>
 						<visible>String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -91,12 +92,13 @@
 						<width>700</width>
 						<height>60</height>
 						<aligny>center</aligny>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font14</font>
 						<visible>!String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="textbox">
 						<left>135</left>
-						<top>65</top>
+						<top>60</top>
 						<width>750</width>
 						<height>60</height>
 						<font>font12</font>
@@ -136,7 +138,8 @@
 						<height>125</height>
 						<aligny>center</aligny>
 						<scroll>true</scroll>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font14</font>
 						<visible>String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -146,12 +149,13 @@
 						<height>60</height>
 						<aligny>center</aligny>
 						<scroll>true</scroll>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font14</font>
 						<visible>!String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="textbox">
 						<left>135</left>
-						<top>65</top>
+						<top>60</top>
 						<width>750</width>
 						<height>60</height>
 						<font>font12</font>
