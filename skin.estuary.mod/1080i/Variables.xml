@@ -1516,12 +1516,23 @@
         <value condition="Integer.IsLessOrEqual(ListItem.Duration,59)">$INFO[ListItem.Duration,, min]</value>
         <value>$INFO[Window(Home).Property(SkinHelper.ListItemDuration.Hours),,h]$INFO[Window(Home).Property(SkinHelper.ListItemDuration.Minutes)]</value>
     </variable>
-    <variable name="RatingStringVar">
-        <value condition="String.Contains(ListItem.mpaa,U) + String.Contains(System.Language,French)">Tout public</value>
+    <variable name="MPAALabelVar">
         <value condition="String.Contains(ListItem.mpaa,10) + String.Contains(System.Language,French)">Interdit au moins de 10 ans</value>
         <value condition="String.Contains(ListItem.mpaa,12) + String.Contains(System.Language,French)">Interdit au moins de 12 ans</value>
+        <value condition="String.Contains(ListItem.mpaa,16) + String.Contains(System.Language,French)">Interdit au moins de 16 ans</value>
         <value condition="String.Contains(ListItem.mpaa,18) + String.Contains(System.Language,French)">Interdit au moins de 18 ans</value>
+        <value condition="String.Contains(ListItem.mpaa,U) + String.Contains(System.Language,French)">Tout public</value>
+        <value condition="String.Contains(ListItem.mpaa,Rated) + String.Contains(System.Language,French)">Inconnue</value>
         <value>$INFO[ListItem.mpaa]</value>
+    </variable>
+    <variable name="MPAAIconVar">
+        <value condition="String.Contains(Window.Property(mpaa),10) + String.Contains(System.Language,French)">icons/extendedinfo//rating/csa10.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),12) + String.Contains(System.Language,French)">icons/extendedinfo//rating/csa12.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),16) + String.Contains(System.Language,French)">icons/extendedinfo//rating/csa16.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),18) + String.Contains(System.Language,French)">icons/extendedinfo//rating/csa18.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),U) + String.Contains(System.Language,French)">icons/extendedinfo//rating/csau.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),Rated) + String.Contains(System.Language,French)">icons/extendedinfo//rating/rated.png</value>
+        <value>$INFO[Window.Property(mpaa),icons/extendedinfo/rating/,.png]</value>
     </variable>
     <variable name="MediaFlagsColorVar">
         <value condition="Skin.HasSetting(enable_mediaflagscolor)">$VAR[SkinColorVar]</value>

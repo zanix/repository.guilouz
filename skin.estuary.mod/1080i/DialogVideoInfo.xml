@@ -474,7 +474,7 @@
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="156" />
-						<param name="label" value="$LOCALIZE[31017] : [COLOR white]$VAR[RatingStringVar][/COLOR]" />
+						<param name="label" value="$LOCALIZE[31017] : [COLOR white]$VAR[MPAALabelVar][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Mpaa)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>

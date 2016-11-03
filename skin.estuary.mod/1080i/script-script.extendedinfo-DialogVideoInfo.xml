@@ -2812,7 +2812,7 @@
 								<height>69</height>
 								<visible>!String.IsEqual(Window.Property(type),Season) + !String.IsEqual(Window.Property(type),episode)</visible>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
-								<texture colordiffuse="FFFAFAFA" fallback="icons/extendedinfo//rating/MPAA_NR_Certificate_US.png">$INFO[Window.Property(mpaa),icons/extendedinfo/rating/,.png]</texture>
+								<texture colordiffuse="FFFAFAFA" fallback="icons/extendedinfo//rating/MPAA_NR_Certificate_US.png">$VAR[MPAAIconVar]</texture>
 							</control>
 							<control type="group">
 								<left>0</left>

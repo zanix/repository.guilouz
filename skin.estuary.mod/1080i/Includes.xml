@@ -567,6 +567,13 @@
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]</texture>
                 <visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
             </control>
+            <control type="image">
+                <width>73</width>
+                <height>50</height>
+                <aspectratio>keep</aspectratio>
+                <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/webdl.png</texture>
+                <visible>String.Contains(ListItem.Filenameandpath,WEB-DL) | String.Contains(ListItem.Filenameandpath,WEBDL) | String.Contains(ListItem.Filenameandpath,WEB) | String.Contains(ListItem.Filenameandpath,web-dl) | String.Contains(ListItem.Filenameandpath,webdl) | String.Contains(ListItem.Filenameandpath,web)</visible>
+            </control>
         </control>
         <control type="grouplist">
             <orientation>horizontal</orientation>
