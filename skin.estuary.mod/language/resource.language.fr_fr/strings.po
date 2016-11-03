@@ -137,7 +137,7 @@ msgid "Last logged in"
 msgstr "Dernière connexion"
 
 msgctxt "#31030"
-msgid "Memory used"
+msgid "System Memory used"
 msgstr "Mémoire utilisée"
 
 msgctxt "#31031"

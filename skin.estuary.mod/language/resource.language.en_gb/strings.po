@@ -168,7 +168,7 @@ msgstr ""
 
 #: /1080i/SettingsSystemInfo.xml:172
 msgctxt "#31030"
-msgid "Memory used"
+msgid "System Memory used"
 msgstr ""
 
 #: /1080i/SettingsSystemInfo.xml:191

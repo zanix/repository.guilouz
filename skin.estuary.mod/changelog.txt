@@ -1,4 +1,5 @@
 1.6.6 :
+• Rework on vertical home menu
 • Fix power menu
 • Minnor fixes
 
