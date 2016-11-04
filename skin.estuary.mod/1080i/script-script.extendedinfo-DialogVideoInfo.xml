@@ -2812,7 +2812,7 @@
 								<height>69</height>
 								<visible>!String.IsEqual(Window.Property(type),Season) + !String.IsEqual(Window.Property(type),episode)</visible>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
-								<texture colordiffuse="FFFAFAFA" fallback="icons/extendedinfo//rating/MPAA_NR_Certificate_US.png">$VAR[MPAAIconVar]</texture>
+								<texture colordiffuse="FFFAFAFA" fallback="icons/extendedinfo/rating/rated.png">$VAR[MPAAIconVar]</texture>
 							</control>
 							<control type="group">
 								<left>0</left>
@@ -2823,6 +2823,7 @@
 									<height>79</height>
 									<width>2</width>
 									<texture>dialogs/extendedinfo/upright.png</texture>
+									<visible>!String.IsEqual(Window.Property(type),Season) + !String.IsEqual(Window.Property(type),episode)</visible>
 								</control>
 								<control type="label">
 									<left>0</left>
@@ -2878,16 +2879,15 @@
 									<font>font10</font>
 								</control>
 							</control>
-							<control type="image">
-								<left>0</left>
-								<height>79</height>
-								<width>2</width>
-								<visible>!String.IsEqual(Window.Property(type),Season)</visible>
-								<texture>dialogs/extendedinfo/upright.png</texture>
-							</control>
 							<control type="group">
 								<width>220</width>
 								<visible>!String.IsEmpty(Window.Property(Premiered))</visible>
+								<control type="image">
+									<left>0</left>
+									<height>79</height>
+									<width>2</width>
+									<texture>dialogs/extendedinfo/upright.png</texture>
+								</control>
 								<control type="label">
 									<left>0</left>
 									<top>5</top>

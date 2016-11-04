@@ -1526,12 +1526,12 @@
         <value>$INFO[ListItem.mpaa]</value>
     </variable>
     <variable name="MPAAIconVar">
-        <value condition="String.Contains(Window.Property(mpaa),10) + String.Contains(System.Language,French)">icons/extendedinfo//rating/csa10.png</value>
-        <value condition="String.Contains(Window.Property(mpaa),12) + String.Contains(System.Language,French)">icons/extendedinfo//rating/csa12.png</value>
-        <value condition="String.Contains(Window.Property(mpaa),16) + String.Contains(System.Language,French)">icons/extendedinfo//rating/csa16.png</value>
-        <value condition="String.Contains(Window.Property(mpaa),18) + String.Contains(System.Language,French)">icons/extendedinfo//rating/csa18.png</value>
-        <value condition="String.Contains(Window.Property(mpaa),U) + String.Contains(System.Language,French)">icons/extendedinfo//rating/csau.png</value>
-        <value condition="String.Contains(Window.Property(mpaa),Rated) + String.Contains(System.Language,French)">icons/extendedinfo//rating/rated.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),10) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa10.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),12) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa12.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),16) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa16.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),18) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa18.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),U) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csau.png</value>
+        <value condition="String.Contains(Window.Property(mpaa),Rated) + String.Contains(System.Language,French)">icons/extendedinfo/rating/rated.png</value>
         <value>$INFO[Window.Property(mpaa),icons/extendedinfo/rating/,.png]</value>
     </variable>
     <variable name="MediaFlagsColorVar">
