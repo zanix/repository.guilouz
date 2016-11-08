@@ -1679,3 +1679,35 @@ msgstr "Permet de remplacer l'arrière-plan du raccourci [B]Paramètres[/B]."
 msgctxt "#40262"
 msgid "Replace background of [B]Power options[/B] shortcut."
 msgstr "Permet de remplacer l'arrière-plan du raccourci [B]Options d'alimentation[/B]."
+
+msgctxt "#40263"
+msgid "Disable item."
+msgstr "Désactiver l'élément."
+
+msgctxt "#40264"
+msgid "Enable item."
+msgstr "Activer l'élément."
+
+msgctxt "#40265"
+msgid "Up item"
+msgstr "Monter l'élément"
+
+msgctxt "#40266"
+msgid "Down item"
+msgstr "Descendre l'élément"
+
+msgctxt "#40267"
+msgid "Add item"
+msgstr "Ajouter un élément"
+
+msgctxt "#40268"
+msgid "Enable item"
+msgstr "Activer l'élément"
+
+msgctxt "#40269"
+msgid "Disable item"
+msgstr "Désactiver l'élément"
+
+msgctxt "#40270"
+msgid "Delete item"
+msgstr "Supprimer l'élément"

@@ -3342,13 +3342,7 @@ msgctxt "#799"
 msgid "Library update"
 msgstr "Mise à jour de la bibliothèque"
 
-#: xbmc/music/windows/GUIWindowMusicBase.cpp
-msgctxt "#800"
-msgid ""
-"Music library needs to rescan tags from files. Would you like to scan now?"
-msgstr ""
-"La bibliothèque musicale doit à nouveau balayer les informations des "
-"fichiers. Voulez-vous le faire maintenant ?"
+#empty strings from id 800 to 801
 
 #. Label of progess bar which shows the available/total space of pvr backend
 #: xbmc/pvr/PVRGUIInfo.cpp
@@ -5267,6 +5261,13 @@ msgctxt "#12386"
 msgid "Month / Day"
 msgstr "Mois / Jour"
 
+#empty strings from id 12387 to 12388
+
+#: xbmc/windows/GUIWindowSystemInfo.cpp
+msgctxt "#12389"
+msgid "Privacy policy"
+msgstr "Politique de confidentialité"
+
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#12390"
 msgid "System uptime"
@@ -5756,7 +5757,7 @@ msgstr "Matériel :"
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 #: addons/skin.estuary/1080i/SettingsSystemInfo.xml
 msgctxt "#13271"
-msgid "CPU usage:"
+msgid "System CPU usage:"
 msgstr "Utilisation du CPU :"
 
 msgctxt "#13274"
@@ -20318,6 +20319,22 @@ msgstr "Tous les contributeurs"
 msgctxt "#38046"
 msgid "All roles"
 msgstr "Tous les rôles"
+
+#empty strings from id 38047 to 38059
+
+#. Question when forced rescan of music tags needed after upgrade from previous version of Kodi
+#: xbmc/music/windows/GUIWindowMusicBase.cpp
+msgctxt "#38060"
+msgid "Music library needs to rescan tags from files. Would you like to scan now?"
+msgstr "La bibliothèque musicale doit réanalyser les balises des fichiers. Voulez-vous lancer l'analyse maintenant ?"
+
+#. Extra scraping question on upgrade from previous version 
+#: xbmc/music/windows/GUIWindowMusicBase.cpp
+msgctxt "#38061"
+msgid "Fetch additional information for albums and artists? This could take some time so you may prefer to do this later"
+msgstr "Rechercher des informations supplémentaires pour les albums et les artistes ? Cela peut prendre un certain temps. Vous pouvez également le faire plus tard."
+
+#empty strings from id 38062 to 38099
 
 #. Description of section #14200 "Player""
 #: system/settings/settings.xml

@@ -14,7 +14,7 @@
                     <orientation>vertical</orientation>
                     <itemgap>-16</itemgap>
                     <left>-113</left>
-                    <top>338</top>
+                    <top>295</top>
                     <onup>700</onup>
                     <ondown>700</ondown>
                     <onright>211</onright>
@@ -29,6 +29,10 @@
                     <include content="BottomMainMenuItem">
                         <param name="control_id" value="301" />
                         <param name="icon" value="icons/add.png" />
+                    </include>
+                    <include content="BottomMainMenuItem">
+                        <param name="control_id" value="313" />
+                        <param name="icon" value="icons/disable.png" />
                     </include>
                     <include content="BottomMainMenuItem">
                         <param name="control_id" value="302" />
@@ -164,6 +168,18 @@
                                 <scroll>yes</scroll>
                                 <label>$INFO[ListItem.Label]</label>
                                 <shadowcolor>text_shadow</shadowcolor>
+                            </control>
+                            <control type="label">
+                                <left>74</left>
+                                <top>0</top>
+                                <height>70</height>
+                                <width>321</width>
+                                <aligny>center</aligny>
+                                <font>font14</font>
+                                <scroll>yes</scroll>
+                                <label>$INFO[ListItem.Label] ($LOCALIZE[1223])</label>
+                                <shadowcolor>text_shadow</shadowcolor>
+                                <visible>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
                             </control>
                         </focusedlayout>
                     </control>

@@ -2600,6 +2600,8 @@
         <value condition="Control.HasFocus(302)">$LOCALIZE[40191]</value>
         <value condition="Control.HasFocus(303)">$LOCALIZE[40188]</value>
         <value condition="Control.HasFocus(304)">$LOCALIZE[40189]</value>
+        <value condition="Control.HasFocus(313) + String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)">$LOCALIZE[40263]</value>
+        <value condition="Control.HasFocus(313) + String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[40264]</value>
         <value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus]">$LOCALIZE[31130]</value>
     </variable>
     <variable name="DSPManagerHelpTextVar">
