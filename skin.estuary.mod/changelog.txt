@@ -1,3 +1,6 @@
+1.6.7 :
+• Minnor fixes
+
 1.6.6 :
 • Add possibility to disable items in personnalize home menu (with button and context menu)
 • Add privacy policy support on system info
