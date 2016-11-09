@@ -1711,3 +1711,11 @@ msgstr "Désactiver l'élément"
 msgctxt "#40270"
 msgid "Delete item"
 msgstr "Supprimer l'élément"
+
+msgctxt "#40271"
+msgid "Use basic vertical menu"
+msgstr "Utiliser le menu vertical basique"
+
+msgctxt "#40272"
+msgid "Use basic vertical menu instead of dynamic vertical menu."
+msgstr "Permet d'tiliser le menu vertical basique à la place du menu vertical dynamique."

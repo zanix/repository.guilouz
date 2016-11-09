@@ -1,4 +1,6 @@
 1.6.7 :
+• Add skin setting to use basic vertical menu instead of dynamic vertical menu
+• Fix personnalize menu focus when item is disabled
 • Minnor fixes
 
 1.6.6 :

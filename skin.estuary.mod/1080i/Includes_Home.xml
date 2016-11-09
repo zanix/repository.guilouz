@@ -10102,14 +10102,22 @@
 				<control type="group">
 					<left>53</left>
 					<top>206</top>
-					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,8)">conditional</animation>
-					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,7)">conditional</animation>
-					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,6)">conditional</animation>
-					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,5)">conditional</animation>
-					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,4)">conditional</animation>
-					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,3)">conditional</animation>
-					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,2)">conditional</animation>
-					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,1)">conditional</animation>
+					<control type="image">
+						<left>-20</left>
+						<top>-19</top>
+						<width>424</width>
+						<height>706</height>
+						<texture border="22">dialogs/dialog-bg.png</texture>
+						<visible>Skin.HasSetting(basic_menu)</visible>
+					</control>
+					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,8) + !Skin.HasSetting(basic_menu)">conditional</animation>
+					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,7) + !Skin.HasSetting(basic_menu)">conditional</animation>
+					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,6) + !Skin.HasSetting(basic_menu)">conditional</animation>
+					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,5) + !Skin.HasSetting(basic_menu)">conditional</animation>
+					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,4) + !Skin.HasSetting(basic_menu)">conditional</animation>
+					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,3) + !Skin.HasSetting(basic_menu)">conditional</animation>
+					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,2) + !Skin.HasSetting(basic_menu)">conditional</animation>
+					<animation effect="slide" end="0,37" time="0" condition="!Integer.IsGreater(Container(9000).NumItems,1) + !Skin.HasSetting(basic_menu)">conditional</animation>
 					<control type="list" id="9000">
 						<left>0</left>
 						<top>1</top>
@@ -10187,6 +10195,7 @@
 								<width>426</width>
 								<height>114</height>
 								<texture border="22">dialogs/dialog-bg.png</texture>
+								<visible>!Skin.HasSetting(basic_menu)</visible>
 							</control>
 							<control type="image">
 								<left>0</left>
@@ -10220,6 +10229,7 @@
 								<width>426</width>
 								<height>114</height>
 								<texture border="22">dialogs/dialog-bg.png</texture>
+								<visible>!Skin.HasSetting(basic_menu)</visible>
 							</control>
 							<control type="image">
 								<left>0</left>

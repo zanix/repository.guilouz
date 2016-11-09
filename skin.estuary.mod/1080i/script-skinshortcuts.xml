@@ -168,6 +168,7 @@
                                 <scroll>yes</scroll>
                                 <label>$INFO[ListItem.Label]</label>
                                 <shadowcolor>text_shadow</shadowcolor>
+                                <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
                             </control>
                             <control type="label">
                                 <left>74</left>
