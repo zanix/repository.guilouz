@@ -1709,7 +1709,7 @@ msgctxt "#40270"
 msgid "Delete item"
 msgstr "Eintrag löschen"
 
-sgctxt "#40271"
+msgctxt "#40271"
 msgid "Use basic vertical menu"
 msgstr "Standard vertikales Menü verwenden"
 
