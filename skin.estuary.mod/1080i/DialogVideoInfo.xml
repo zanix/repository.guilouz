@@ -644,7 +644,7 @@
 						<param name="icon" value="icons/infodialogs/info.png" />
 						<param name="label" value="$LOCALIZE[31034]" />
 						<param name="onclick_1" value="RunScript(script.extendedinfo,info=openinfodialog)" />
-						<param name="visible" value="System.hasAddon(script.extendedinfo) + !String.IsEqual(ListItem.DBType,musicvideo)" />
+						<param name="visible" value="System.hasAddon(script.extendedinfo) + [String.IsEqual(ListItem.DbType,movie) | String.IsEqual(ListItem.DbType,tvshow) | String.IsEqual(ListItem.DbType,season) | String.IsEqual(ListItem.DbType,episode)]" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="13" />

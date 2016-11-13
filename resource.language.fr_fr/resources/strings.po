@@ -7264,13 +7264,13 @@ msgstr "Paramètres de la bibliothèque"
 
 #: system/settings/settings.xml
 msgctxt "#14204"
-msgid "TV"
-msgstr "TV"
+msgid "PVR & Live TV"
+msgstr "Enregistreur Vidéo & TV"
 
 #: system/settings/settings.xml
 msgctxt "#14205"
-msgid "TV settings"
-msgstr "Paramètres TV"
+msgid "PVR & Live TV settings"
+msgstr "Paramètres Enregistreur Vidéo & TV"
 
 #: system/settings/settings.xml
 msgctxt "#14206"
@@ -15694,6 +15694,44 @@ msgctxt "#35010"
 msgid "Peripheral libraries"
 msgstr "Bibliothèques de périphériques"
 
+#. Title of dialog to ask users if they would like to configure a new controller
+#: xbmc/input/joysticks/dialogs/GUIDialogNewJoystick.cpp
+msgctxt "#35011"
+msgid "New controller detected"
+msgstr "Nouvelle manette détectée"
+ 
+#. Text of dialog to ask users if they would like to configure a new controller
+#: xbmc/input/joysticks/dialogs/GUIDialogNewJoystick.cpp
+msgctxt "#35012"
+msgid "A new controller has been detected. Configuration can be done at any time in \"Settings -> System Settings -> Input\". Would you like to configure it now?"
+msgstr "Une nouvelle manette a été détecté. La configuration peut être effectuée à tout moment dans \"Paramètres -> Système -> Entrée\". Voulez-vous la configurer maintenant ?"
+
+#. Label of the button to fix the bug where buttons are skipped in the controller dialog
+#: addons/skin.estuary/1080i/DialogGameControllers.xml
+msgctxt "#35013"
+msgid "Fix skipping"
+msgstr "Corriger l'ignorance des bouttons"
+
+#. Help text of the button to fix the bug where buttons are skipped in the controller dialog. %s - list of disabled buttons and axes
+#:
+msgctxt "#35014"
+msgid "Some controllers have buttons and axes that interfere with mapping. Press these now to disable them:[CR]%s"
+msgstr "Certaines manettes ont des bouttons et des axes qui interférent avec le mappage. Appuyez sur ces bouttons maintenant pour les désactiver : [CR]%s"
+
+#. Name of a controller button, e.g. Button 1. %d - button index
+#:
+msgctxt "#35015"
+msgid "Button %d"
+msgstr "Boutton %d"
+
+#. Name of a controller axis, e.g. Axis 2. %d - axis index
+#:
+msgctxt "#35016"
+msgid "Axis %d"
+msgstr "Axe %d"
+
+#empty strings from id 35017 to 35048
+
 # empty strings from id 35011 to 35048
 #. Name of game add-ons category
 #: xbmc/filesystem/AddonsDirectory.cpp
@@ -16050,11 +16088,6 @@ msgctxt "#36021"
 msgid "Physical address (overrules HDMI port)"
 msgstr "Adresse physique (remplace le port HDMI)"
 
-#: system/peripherals.xml
-msgctxt "#36022"
-msgid "COM port (leave empty unless needed)"
-msgstr "Port COM (laisser vide, sauf si nécessaire)"
-
 #: xbmc/peripherals/devices/peripheralcecadapter.cpp
 msgctxt "#36023"
 msgid "Configuration updated"
@@ -16186,7 +16219,13 @@ msgctxt "#36045"
 msgid "Pause Playback"
 msgstr "Mettre en pause la lecture"
 
-# empty strings from id 36046 to 36100
+#: system/peripherals.xml
+msgctxt "#36046"
+msgid "Force AVR to wake up when Kodi is activated"
+msgstr "Forcer le réveil de l'amplificateur audio vidéo quand Kodi est activé"
+
+#empty strings from id 36047 to 36098
+ 
 #: system/settings/settings.xml
 msgctxt "#36099"
 msgid "Dithering"
@@ -17020,15 +17059,14 @@ msgstr ""
 
 #: system/settings/settings.xml
 msgctxt "#36201"
-msgid "Settings for PVR / Live TV."
-msgstr "Paramètres pour les fonctions Enregistreur Vidéo / TV en direct."
+msgid "Settings for PVR & Live TV."
+msgstr "Paramètres pour les fonctions Enregistreur Vidéo & TV en direct."
 
 #: system/settings/settings.xml
 msgctxt "#36202"
-msgid "This category contains the general settings for the PVR / Live TV."
+msgid "This category contains the general settings for the PVR & Live TV."
 msgstr ""
-"Cette catégorie contient les paramètres généraux de l'Enregistreur Vidéo / "
-"TV en direct."
+"Cette catégorie contient les paramètres généraux de l'Enregistreur Vidéo & TV en direct."
 
 #: system/settings/settings.xml
 msgctxt "#36203"
