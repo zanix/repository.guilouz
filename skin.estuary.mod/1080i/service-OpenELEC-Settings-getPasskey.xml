@@ -3,7 +3,8 @@
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
-            <left>650</left>
+            <centerleft>50%</centerleft>
+            <width>600</width>
             <top>390</top>
             <animation type="WindowOpen" reversible="false">
                 <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />

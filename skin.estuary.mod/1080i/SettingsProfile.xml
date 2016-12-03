@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">9000</defaultcontrol>
-    <backgroundcolor>background</backgroundcolor>
-    <controls>
-        <include>DefaultBackground</include>
-        <control type="group">
-            <include>OpenClose_Left</include>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<backgroundcolor>background</backgroundcolor>
+	<controls>
+		<include>DefaultBackground</include>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<width>1920</width>
+			<control type="group">
+				<include>OpenClose_Left</include>
             <control type="image">
                 <description>background image</description>
                 <left>90</left>
@@ -128,7 +131,6 @@
                         <width>294</width>
                         <height>100</height>
                         <font>font10</font>
-                        <textcolor>grey</textcolor>
                         <align>center</align>
                         <aligny>top</aligny>
                         <label>$LOCALIZE[31029] :</label>
@@ -138,7 +140,6 @@
                         <top>310</top>
                         <width>294</width>
                         <height>100</height>
-                        <textcolor>grey</textcolor>
                         <font>font10</font>
                         <align>center</align>
                         <aligny>top</aligny>
@@ -211,24 +212,18 @@
                 </control>
                 <control type="button" id="5">
                     <label>$LOCALIZE[31058]</label>
-                    <label2>[B]$INFO[System.ProfileAutoLogin][/B]</label2>
+                    <label2>$INFO[System.ProfileAutoLogin]</label2>
                     <include>DefaultSettingButton</include>
                     <width>1256</width>
                     <enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>
                 </control>
-            </control>
-        </control>
-        <include content="UpDownArrows">
-            <param name="container_id" value="2" />
-            <param name="posx" value="1141" />
-            <param name="up_posy" value="105" />
-            <param name="down_posy" value="940" />
-            <param name="visible" value="!System.HasModalDialog" />
-        </include>
-        <include content="TopBar">
-            <param name="breadcrumbs_label" value="$LOCALIZE[10034]" />
-            <param name="breadcrumbs_icon" value="icons/settings/profiles.png" />
-        </include>
-        <include>BottomBar</include>
-    </controls>
+				</control>
+			</control>
+		</control>
+		<include content="TopBar">
+			<param name="breadcrumbs_label" value="$LOCALIZE[10034]" />
+			<param name="breadcrumbs_icon" value="icons/settings/profiles.png" />
+		</include>
+		<include>BottomBar</include>
+	</controls>
 </window>

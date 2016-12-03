@@ -409,8 +409,8 @@ msgid "Channel options"
 msgstr "Options de la chaîne"
 
 msgctxt "#31098"
-msgid "Select your Kodi user profile[CR]to login and continue"
-msgstr "Sélectionnez votre profil utilisateur Kodi[CR]pour vous identifier et poursuivre"
+msgid "Select your Kodi user profile to login and continue"
+msgstr "Sélectionnez votre profil utilisateur Kodi pour vous identifier et poursuivre"
 
 msgctxt "#31099"
 msgid "Icon Wall"
@@ -1719,3 +1719,15 @@ msgstr "Utiliser le menu vertical basique"
 msgctxt "#40272"
 msgid "Use basic vertical menu instead of dynamic vertical menu."
 msgstr "Permet d'tiliser le menu vertical basique à la place du menu vertical dynamique."
+
+msgctxt "#40273"
+msgid "No bookmarks created yet."
+msgstr "Aucun chapitre créé pour l'instant."
+
+msgctxt "#40274"
+msgid "Show Extrafanarts"
+msgstr "Afficher les Extrafanarts"
+
+msgctxt "#40275"
+msgid "Show multiple backgrounds on the home menu and library."
+msgstr "Permet d'afficher les arrière-plans multiples sur le menu d'accueil et la bibliothèque."

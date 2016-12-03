@@ -11,8 +11,8 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>1920</width>
-                    <height>1080</height>
+                    <width>100%</width>
+                    <height>100%</height>
                     <aspectratio>scale</aspectratio>
                     <texture background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Container(200).ListItem.Property(Fanart)]</texture>
                     <visible>Control.HasFocus(200)</visible>
@@ -23,8 +23,8 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>1920</width>
-                    <height>1080</height>
+                    <width>100%</width>
+                    <height>100%</height>
                     <aspectratio>scale</aspectratio>
                     <texture background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Container(201).ListItem.Property(Fanart)]</texture>
                     <visible>Control.HasFocus(201)</visible>
@@ -35,8 +35,8 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>1920</width>
-                    <height>1080</height>
+                    <width>100%</width>
+                    <height>100%</height>
                     <aspectratio>scale</aspectratio>
                     <texture background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Container(202).ListItem.Property(Fanart)]</texture>
                     <visible>Control.HasFocus(202)</visible>
@@ -47,8 +47,8 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>1920</width>
-                    <height>1080</height>
+                    <width>100%</width>
+                    <height>100%</height>
                     <aspectratio>scale</aspectratio>
                     <texture background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Container(203).ListItem.Property(Fanart)]</texture>
                     <visible>Control.HasFocus(203)</visible>
@@ -59,8 +59,8 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>1920</width>
-                    <height>1080</height>
+                    <width>100%</width>
+                    <height>100%</height>
                     <aspectratio>scale</aspectratio>
                     <texture background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Container(204).ListItem.Property(Fanart)]</texture>
                     <visible>Control.HasFocus(204)</visible>
@@ -71,8 +71,8 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>1920</width>
-                    <height>1080</height>
+                    <width>100%</width>
+                    <height>100%</height>
                     <aspectratio>scale</aspectratio>
                     <texture background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Container(205).ListItem.Property(Fanart)]</texture>
                     <visible>Control.HasFocus(205)</visible>
@@ -83,8 +83,8 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>1920</width>
-                    <height>1080</height>
+                    <width>100%</width>
+                    <height>100%</height>
                     <aspectratio>scale</aspectratio>
                     <texture background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Container(206).ListItem.Property(Fanart)]</texture>
                     <visible>Control.HasFocus(206)</visible>

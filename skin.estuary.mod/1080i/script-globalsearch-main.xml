@@ -2074,7 +2074,7 @@
                                     <top>10</top>
                                     <width>300</width>
                                     <height>300</height>
-                                    <texture border="2" fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+                                    <texture border="2" fallback="DefaultArtist.png" background="true">$INFO[ListItem.Icon]</texture>
                                     <aspectratio>scale</aspectratio>
                                     <bordertexture colordiffuse="60FFFFFF">dialogs/black.png</bordertexture>
                                     <bordersize>4</bordersize>
@@ -2129,7 +2129,7 @@
                                         <top>10</top>
                                         <width>300</width>
                                         <height>300</height>
-                                        <texture border="2" fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+                                        <texture border="2" fallback="DefaultArtist.png" background="true">$INFO[ListItem.Icon]</texture>
                                         <aspectratio>scale</aspectratio>
                                         <bordertexture colordiffuse="60FFFFFF">dialogs/black.png</bordertexture>
                                         <bordersize>4</bordersize>
@@ -2329,7 +2329,7 @@
                                     <top>10</top>
                                     <width>300</width>
                                     <height>300</height>
-                                    <texture border="2" fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+                                    <texture border="2" fallback="DefaultAlbumCover.png" background="true">$INFO[ListItem.Icon]</texture>
                                     <aspectratio>scale</aspectratio>
                                     <bordertexture colordiffuse="60FFFFFF">dialogs/black.png</bordertexture>
                                     <bordersize>4</bordersize>
@@ -2395,7 +2395,7 @@
                                         <top>10</top>
                                         <width>300</width>
                                         <height>300</height>
-                                        <texture border="2" fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+                                        <texture border="2" fallback="DefaultAlbumCover.png" background="true">$INFO[ListItem.Icon]</texture>
                                         <aspectratio>scale</aspectratio>
                                         <bordertexture colordiffuse="60FFFFFF">dialogs/black.png</bordertexture>
                                         <bordersize>4</bordersize>
@@ -2607,7 +2607,7 @@
                                     <top>10</top>
                                     <width>300</width>
                                     <height>300</height>
-                                    <texture border="2" fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+                                    <texture border="2" fallback="DefaultMusic.png" background="true">$INFO[ListItem.Icon]</texture>
                                     <aspectratio>scale</aspectratio>
                                     <bordertexture colordiffuse="60FFFFFF">dialogs/black.png</bordertexture>
                                     <bordersize>4</bordersize>
@@ -2673,7 +2673,7 @@
                                         <top>10</top>
                                         <width>300</width>
                                         <height>300</height>
-                                        <texture border="2" fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+                                        <texture border="2" fallback="DefaultMusic.png" background="true">$INFO[ListItem.Icon]</texture>
                                         <aspectratio>scale</aspectratio>
                                         <bordertexture colordiffuse="60FFFFFF">dialogs/black.png</bordertexture>
                                         <bordersize>4</bordersize>
@@ -3523,6 +3523,13 @@
                                             <font>font10_title</font>
                                             <label>$INFO[ListItem.Property(UserRating)]</label>
                                         </control>
+                                    </control>
+                                    <control type="image">
+                                        <top>15</top>
+                                        <left>1</left>
+                                        <width>220</width>
+                                        <height>330</height>
+                                        <texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
                                     </control>
                                 </control>
                                 <control type="image">

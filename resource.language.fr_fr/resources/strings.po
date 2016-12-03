@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: KODI Main\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2016-11-01 02:46+0100\n"
+"PO-Revision-Date: 2016-11-22 01:15+0100\n"
 "Last-Translator: Kodi Translation Team\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p/kodi-"
 "main/language/fr_FR/)\n"
@@ -865,11 +865,13 @@ msgctxt "#203"
 msgid "Plot outline"
 msgstr "Résumé"
 
+#. label of a smartplaylist filter option to filter for albums on compilations
 #: xbmc/playlists/SmartPlaylist.cpp
 msgctxt "#204"
 msgid "Compilation"
 msgstr "Compilation"
 
+#. label of a smartplaylist filter option to filter for songs or albums on votes for rating
 #: xbmc/playlists/SmartPlaylist.cpp
 msgctxt "#205"
 msgid "Votes"
@@ -1296,11 +1298,11 @@ msgstr "Rechercher des sous-titres"
 
 msgctxt "#294"
 msgid "Create bookmark"
-msgstr "Créer un signet"
+msgstr "Créer un chapitre"
 
 msgctxt "#296"
 msgid "Clear bookmarks"
-msgstr "Effacer les signets"
+msgstr "Effacer les chapitres"
 
 msgctxt "#297"
 msgid "Audio offset"
@@ -1310,11 +1312,11 @@ msgstr "Décalage audio"
 #: addons/skin.estuary/1080i/Variables.xml
 msgctxt "#298"
 msgid "Bookmarks"
-msgstr "Signets"
+msgstr "Chapitres"
 
 msgctxt "#299"
 msgid "Bookmark %i"
-msgstr "Signet %i"
+msgstr "Chapitre %i"
 
 msgctxt "#300"
 msgid "MP1 capable receiver"
@@ -2788,11 +2790,6 @@ msgid "Files without ReplayGain information"
 msgstr "Fichiers sans informations de gain (ReplayGain)"
 
 #: system/settings/settings.xml
-msgctxt "#643"
-msgid "Avoid clipping on ReplayGained files"
-msgstr "Éviter la distorsion sur les fichiers normalisés"
-
-#: system/settings/settings.xml
 msgctxt "#644"
 msgid "Stretch 16:9 - Nonlinear"
 msgstr "Étiré 16: 9 - Non linéaire"
@@ -3342,8 +3339,7 @@ msgctxt "#799"
 msgid "Library update"
 msgstr "Mise à jour de la bibliothèque"
 
-#empty strings from id 800 to 801
-
+# empty strings from id 800 to 801
 #. Label of progess bar which shows the available/total space of pvr backend
 #: xbmc/pvr/PVRGUIInfo.cpp
 msgctxt "#802"
@@ -5261,8 +5257,7 @@ msgctxt "#12386"
 msgid "Month / Day"
 msgstr "Mois / Jour"
 
-#empty strings from id 12387 to 12388
-
+# empty strings from id 12387 to 12388
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#12389"
 msgid "Privacy policy"
@@ -10959,7 +10954,7 @@ msgstr "Désactiver le flux RSS pendant la musique"
 
 msgctxt "#20081"
 msgid "Enable shortcut buttons"
-msgstr "Activer les boutons Signets"
+msgstr "Activer les boutons Chapitres"
 
 msgctxt "#20082"
 msgid "Show programs in main menu"
@@ -12008,15 +12003,15 @@ msgstr "Définir la vignette Acteur"
 #: xbmc/video/dialogs/GUIDialogVideoBookmarks.cpp
 msgctxt "#20404"
 msgid "Remove bookmark"
-msgstr "Retirer le signet"
+msgstr "Retirer le chapitre"
 
 msgctxt "#20405"
 msgid "Remove episode bookmark"
-msgstr "Supprimer le signet d'épisode"
+msgstr "Supprimer le chapitre d'épisode"
 
 msgctxt "#20406"
 msgid "Set episode bookmark"
-msgstr "Créer un signet d'épisode"
+msgstr "Créer un chapitre d'épisode"
 
 msgctxt "#20407"
 msgid "Information provider settings"
@@ -12418,12 +12413,12 @@ msgstr "Chercher des lecteurs UPnP distants"
 #: xbmc/video/dialogs/GUIDialogVideoBookmarks.cpp
 msgctxt "#21362"
 msgid "Bookmark created"
-msgstr "Signet créé"
+msgstr "Chapitre créé"
 
 #: xbmc/video/dialogs/GUIDialogVideoBookmarks.cpp
 msgctxt "#21363"
 msgid "Episode bookmark created"
-msgstr "Signet pour l'épisode créé"
+msgstr "Chapitre pour l'épisode créé"
 
 #: xbmc/dialogs/GUIDialogFileBrowser.cpp
 msgctxt "#21364"
@@ -14510,6 +14505,7 @@ msgid "Style"
 msgstr "Style"
 
 #. Concert composer of the music (if present)
+#: Label of ListItem.Property(Role.Composer)
 #: addons/skin.estuary/1080i/DialogPVRRadioRDSInfo.xml
 msgctxt "#29903"
 msgid "Composer"
@@ -14522,6 +14518,7 @@ msgid "Artist"
 msgstr "Artiste"
 
 #. Conductor of the classic music (if present)
+#: Label of ListItem.Property(Role.Conductor)
 #: addons/skin.estuary/1080i/DialogPVRRadioRDSInfo.xml
 msgctxt "#29905"
 msgid "Conductor"
@@ -14965,49 +14962,49 @@ msgstr ""
 "Si les messages d’avertissements de la circulation sont envoyés via RDS, le "
 "volume est augmenté"
 
-#. Music role category
+#. Node title for music artist role, plural of #38036
 #: system/library/music/musicroles/Remixers.xml
 msgctxt "#29987"
 msgid "Remixers"
 msgstr "Remixers"
 
-#. Music role category
+#. Node title for music artist role, plural of #38037
 #: system/library/music/musicroles/Arrangers.xml
 msgctxt "#29988"
 msgid "Arrangers"
 msgstr "Arrangeurs"
 
-#. Music role category
+#. Node title for music artist role, plural of #29903
 #: system/library/music/musicroles/Composers.xml
 msgctxt "#29989"
 msgid "Composers"
 msgstr "Compositeurs"
 
-#. Music role category
+#. Node title for music artist role, plural of #29905
 #: system/library/music/musicroles/Conductors.xml
 msgctxt "#29990"
 msgid "Conductors"
 msgstr "Conducteurs"
 
-#. Music role category
+#. Node title for music artist role, plural of #38040
 #: system/library/music/musicroles/DJ.xml
 msgctxt "#29991"
 msgid "DJ Mixers"
 msgstr "DJ Mixeurs"
 
-#. Music role category
+#. Node title for music artist role, plural of #38035
 #: system/library/music/musicroles/Lyricists.xml
 msgctxt "#29992"
 msgid "Lyricists"
 msgstr "Paroliers"
 
-#. Music role category
+#. Node title for music artist role, plural of #38034
 #: system/library/music/musicroles/Orchestras.xml
 msgctxt "#29993"
 msgid "Orchestras"
 msgstr "Orchestre"
 
-#. Roles from music contributor
+#. Title for music artist roles node
 #: system/library/music/musicroles/index.xml
 msgctxt "#29994"
 msgid "Roles"
@@ -15699,12 +15696,17 @@ msgstr "Bibliothèques de périphériques"
 msgctxt "#35011"
 msgid "New controller detected"
 msgstr "Nouvelle manette détectée"
- 
+
 #. Text of dialog to ask users if they would like to configure a new controller
 #: xbmc/input/joysticks/dialogs/GUIDialogNewJoystick.cpp
 msgctxt "#35012"
-msgid "A new controller has been detected. Configuration can be done at any time in \"Settings -> System Settings -> Input\". Would you like to configure it now?"
-msgstr "Une nouvelle manette a été détecté. La configuration peut être effectuée à tout moment dans \"Paramètres -> Système -> Entrée\". Voulez-vous la configurer maintenant ?"
+msgid ""
+"A new controller has been detected. Configuration can be done at any time in "
+"\"Settings -> System Settings -> Input\". Would you like to configure it now?"
+msgstr ""
+"Une nouvelle manette a été détecté. La configuration peut être effectuée à "
+"tout moment dans \"Paramètres -> Système -> Entrée\". Voulez-vous la "
+"configurer maintenant ?"
 
 #. Label of the button to fix the bug where buttons are skipped in the controller dialog
 #: addons/skin.estuary/1080i/DialogGameControllers.xml
@@ -15713,25 +15715,41 @@ msgid "Fix skipping"
 msgstr "Corriger l'ignorance des bouttons"
 
 #. Help text of the button to fix the bug where buttons are skipped in the controller dialog. %s - list of disabled buttons and axes
-#:
 msgctxt "#35014"
-msgid "Some controllers have buttons and axes that interfere with mapping. Press these now to disable them:[CR]%s"
-msgstr "Certaines manettes ont des bouttons et des axes qui interférent avec le mappage. Appuyez sur ces bouttons maintenant pour les désactiver : [CR]%s"
+msgid ""
+"Some controllers have buttons and axes that interfere with mapping. Press "
+"these now to disable them:[CR]%s"
+msgstr ""
+"Certaines manettes ont des bouttons et des axes qui interférent avec le "
+"mappage. Appuyez sur ces bouttons maintenant pour les désactiver : [CR]%s"
 
 #. Name of a controller button, e.g. Button 1. %d - button index
-#:
 msgctxt "#35015"
 msgid "Button %d"
 msgstr "Boutton %d"
 
 #. Name of a controller axis, e.g. Axis 2. %d - axis index
-#:
 msgctxt "#35016"
 msgid "Axis %d"
 msgstr "Axe %d"
 
-#empty strings from id 35017 to 35048
+#. Error dialog title when the controller dialog is opened but peripheral add-ons are disabled
+#: xbmc/peripherals/bus/virtual/PeripheralBusAddon.cpp
+msgctxt "#35017"
+msgid "Unable to configure controllers"
+msgstr "Impossible de configurer les manettes"
 
+#. Error dialog text when the controller dialog is opened but peripheral add-ons are disabled
+#: xbmc/peripherals/bus/virtual/PeripheralBusAddon.cpp
+msgctxt "#35018"
+msgid ""
+"Controller configuration depends on a disabled add-on. Would you like to "
+"enable it?"
+msgstr ""
+"La configuration des manettes dépend d'une extension désactivée. Voulez-vous "
+"l'activer ?"
+
+# empty strings from id 35017 to 35048
 # empty strings from id 35011 to 35048
 #. Name of game add-ons category
 #: xbmc/filesystem/AddonsDirectory.cpp
@@ -15771,22 +15789,6 @@ msgstr ""
 "manette. Lorsque vous êtes invité, appuyez sur le bouton de votre manette de "
 "jeu qui correspond le mieux à ce que vous voyez à l'écran. Si vous faites "
 "une erreur, vous pouvez répéter le processus."
-
-#. Title of error dialog shown when no joystick add-ons provide button mapping
-#: xbmc/games/controllers/windows/GUIControllerWindow.cpp
-msgctxt "#35056"
-msgid "Joystick support not found"
-msgstr "Support du joystick non trouvé"
-
-#. Text of error dialog shown when no joystick add-ons provide button mapping
-#: xbmc/games/controllers/windows/GUIControllerWindow.cpp
-msgctxt "#35057"
-msgid ""
-"Controller configuration is disabled. Install the proper joystick support "
-"add-on."
-msgstr ""
-"La configuration de la manette est désactivée. Installez l’extension prise "
-"en charge par votre manette de jeu."
 
 #. Title of controller configuration window
 #: addons/skin.estuary/1080i/DialogGameControllers.xml
@@ -16224,8 +16226,7 @@ msgctxt "#36046"
 msgid "Force AVR to wake up when Kodi is activated"
 msgstr "Forcer le réveil de l'amplificateur audio vidéo quand Kodi est activé"
 
-#empty strings from id 36047 to 36098
- 
+# empty strings from id 36047 to 36098
 #: system/settings/settings.xml
 msgctxt "#36099"
 msgid "Dithering"
@@ -17066,7 +17067,8 @@ msgstr "Paramètres pour les fonctions Enregistreur Vidéo & TV en direct."
 msgctxt "#36202"
 msgid "This category contains the general settings for the PVR & Live TV."
 msgstr ""
-"Cette catégorie contient les paramètres généraux de l'Enregistreur Vidéo & TV en direct."
+"Cette catégorie contient les paramètres généraux de l'Enregistreur Vidéo & "
+"TV en direct."
 
 #: system/settings/settings.xml
 msgctxt "#36203"
@@ -17642,12 +17644,6 @@ msgstr ""
 "Volume de référence (niveau de préampli) à utiliser pour les fichiers sans "
 "informations de gain de lecture. 89dB est prédéfini conformément au "
 "standard. Modifier avec précaution."
-
-#. Description of setting with label #643 "Avoid clipping on ReplayGained files"
-#: system/settings/settings.xml
-msgctxt "#36270"
-msgid "Reduce the volume of the file if clipping will occur."
-msgstr "Réduit le volume du fichier si des coupures vont se produire."
 
 #. Description of setting with label #13314 "Crossfade between songs"
 #: system/settings/settings.xml
@@ -20133,9 +20129,7 @@ msgctxt "#37045"
 msgid ""
 "Extract chapter thumbnails for presentation in the chapters / bookmarks "
 "dialogue. This might increase CPU load."
-msgstr ""
-"Extraire les vignettes de chapitre présentées dans la fenêtre de chapitres / "
-"signets. Peut affecter la charge de CPU."
+msgstr "Extraire les vignettes de chapitre présentées dans la fenêtre de chapitres. Peut affecter la charge de CPU."
 
 #: system/settings/rbp.xml
 msgctxt "#38010"
@@ -20289,46 +20283,54 @@ msgid "Role"
 msgstr "Rôle"
 
 #. Orchestra playing on the recording (if present)
+#: Label of ListItem.Property(Role.Orchestra)
 msgctxt "#38034"
 msgid "Orchestra"
 msgstr "Orchestre"
 
 #. Lyricist that wrote the lyrics of the song (if present)
+#: Label of ListItem.Property(Role.Lyricist)
 msgctxt "#38035"
 msgid "Lyricist"
 msgstr "Parolier"
 
 #. Remixer of the song (if present)
+#: Label of ListItem.Property(Role.Remixer)
 msgctxt "#38036"
 msgid "Remixer"
 msgstr "Remixeur"
 
 #. Arranger of the song (if present)
+#: Label of ListItem.Property(Role.Arranger)
 msgctxt "#38037"
 msgid "Arranger"
 msgstr "Arrangeur"
 
 #. Engineer of the song (if present)
+#: Label of ListItem.Property(Role.Engineer)
 msgctxt "#38038"
 msgid "Engineer"
 msgstr "Ingénieur"
 
 #. Producer of the song (if present)
+#: Label of ListItem.Property(Role.Producer)
 msgctxt "#38039"
 msgid "Producer"
 msgstr "Réalisateur"
 
 #. DJMixer of the song (if present)
+#: Label of ListItem.Property(Role.DJMixer)
 msgctxt "#38040"
 msgid "DJMixer"
 msgstr "DJMixer"
 
 #. Mixer of the song (if present)
+#: Label of ListItem.Property(Role.Mixer)
 msgctxt "#38041"
 msgid "Mixer"
 msgstr "Mixeur"
 
-#. Missing artist name
+#. Name used when artist name is missing from music file tags
 #: music/MusicDatabase.cpp
 msgctxt "#38042"
 msgid "[Missing]"
@@ -20346,7 +20348,7 @@ msgctxt "#38044"
 msgid "Song & album artists"
 msgstr "Artistes de la musique & de l’album"
 
-#. Title all contributors node (any role)
+#. Title all contributors node (any role e.g. composer, piano, producer, engineer)
 #: system/library/music/musicroles/allcontributors.xml
 msgctxt "#38045"
 msgid "All contributors"
@@ -20358,22 +20360,28 @@ msgctxt "#38046"
 msgid "All roles"
 msgstr "Tous les rôles"
 
-#empty strings from id 38047 to 38059
-
+# empty strings from id 38047 to 38059
 #. Question when forced rescan of music tags needed after upgrade from previous version of Kodi
 #: xbmc/music/windows/GUIWindowMusicBase.cpp
 msgctxt "#38060"
-msgid "Music library needs to rescan tags from files. Would you like to scan now?"
-msgstr "La bibliothèque musicale doit réanalyser les balises des fichiers. Voulez-vous lancer l'analyse maintenant ?"
+msgid ""
+"Music library needs to rescan tags from files. Would you like to scan now?"
+msgstr ""
+"La bibliothèque musicale doit réanalyser les balises des fichiers. Voulez-"
+"vous lancer l'analyse maintenant ?"
 
-#. Extra scraping question on upgrade from previous version 
+#. Extra scraping question on upgrade from previous version
 #: xbmc/music/windows/GUIWindowMusicBase.cpp
 msgctxt "#38061"
-msgid "Fetch additional information for albums and artists? This could take some time so you may prefer to do this later"
-msgstr "Rechercher des informations supplémentaires pour les albums et les artistes ? Cela peut prendre un certain temps. Vous pouvez également le faire plus tard."
+msgid ""
+"Fetch additional information for albums and artists? This could take some "
+"time so you may prefer to do this later"
+msgstr ""
+"Rechercher des informations supplémentaires pour les albums et les "
+"artistes ? Cela peut prendre un certain temps. Vous pouvez également le "
+"faire plus tard."
 
-#empty strings from id 38062 to 38099
-
+# empty strings from id 38062 to 38099
 #. Description of section #14200 "Player""
 #: system/settings/settings.xml
 msgctxt "#38100"

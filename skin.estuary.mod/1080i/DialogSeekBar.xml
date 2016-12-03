@@ -7,6 +7,9 @@
 	<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 	<depth>DepthOSD</depth>
 	<controls>
+		<control type="group">
+			<centerleft>50%</centerleft>
+ 			<width>1920</width>
 		<control type="image">
                     <right>31</right>
                     <top>598</top>
@@ -138,6 +141,7 @@
 				<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_bar.png</textureslidernib>
 				<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">colors/white.png</textureslidernibfocus>
 			</control>
+		</control>
 		</control>
 	</controls>
 </window>

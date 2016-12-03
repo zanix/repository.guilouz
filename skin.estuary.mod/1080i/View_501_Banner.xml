@@ -79,16 +79,6 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="183" width="900">
-                    <control type="button">
-							<onfocus>SetProperty(infoposter,$INFO[Container.ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container.ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container.ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
-							<onfocus>SetProperty(infobannertv,$INFO[Container.ListItem.Art(tvshow.banner)],home)</onfocus>
-							<texturenofocus></texturenofocus>
-							<texturefocus></texturefocus>
-						</control>
                     <control type="group">
                         <animation effect="slide" start="0,0" end="-37,0" time="300">Focus</animation>
                         <animation effect="slide" start="-37,0" end="0,0" time="125">UnFocus</animation>
@@ -153,6 +143,7 @@
                                 <height>20</height>
                                 <font>font12</font>
                                 <aligny>center</aligny>
+                                <scroll>true</scroll>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="image">

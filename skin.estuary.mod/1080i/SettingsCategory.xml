@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol>3</defaultcontrol>
-    <controls>
-        <include>DefaultBackground</include>
-        <control type="group">
-            <left>110</left>
-            <include>OpenClose_Left</include>
+	<defaultcontrol>3</defaultcontrol>
+	<controls>
+		<include>DefaultBackground</include>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<width>1920</width>
+			<control type="group">
+				<left>110</left>
+				<include>OpenClose_Left</include>
             <control type="image">
                 <left>-20</left>
                 <top>138</top>
@@ -151,6 +154,7 @@
             <param name="down_posy" value="940" />
             <param name="visible" value="!System.HasModalDialog" />
         </include>
+        </control> 
         <control type="scrollbar" id="60">
  			<right>0</right>
  			<top>80</top>
@@ -169,5 +173,5 @@
             <description>breadcrumbs label</description>
             <visible>False</visible>
         </control>
-    </controls>
+	</controls>
 </window>

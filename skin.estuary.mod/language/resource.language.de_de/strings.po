@@ -409,8 +409,8 @@ msgid "Channel options"
 msgstr "Kanal-Einstellungen"
 
 msgctxt "#31098"
-msgid "Select your Kodi user profile[CR]to login and continue"
-msgstr "Bitte Kodi-Benutzerprofil auswählen[CR]um fortzufahren"
+msgid "Select your Kodi user profile to login and continue"
+msgstr "Bitte Kodi-Benutzerprofil auswählen um fortzufahren"
 
 msgctxt "#31099"
 msgid "Icon Wall"

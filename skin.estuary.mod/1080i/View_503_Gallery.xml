@@ -64,16 +64,6 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="700" width="1186">
-                    <control type="button">
-							<onfocus>SetProperty(infoposter,$INFO[Container.ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container.ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container.ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
-							<onfocus>SetProperty(infobannertv,$INFO[Container.ListItem.Art(tvshow.banner)],home)</onfocus>
-							<texturenofocus></texturenofocus>
-							<texturefocus></texturefocus>
-						</control>
                     <include>View_Gallery_Fanart</include>
                     <include>View_Gallery_Info</include>
                 </focusedlayout>

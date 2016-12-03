@@ -2,6 +2,9 @@
 <window>
     <defaultcontrol></defaultcontrol>
     <controls>
+        <control type="group">
+            <centerleft>50%</centerleft>
+ 			<width>1920</width>
         <control type="group" id="0">
             <control type="image">
                 <left>10</left>
@@ -127,6 +130,7 @@
                     </include>
                 </control>
             </control>
+        </control>
         </control>
         <control type="group" id="1">
             <visible>Player.Caching</visible>

@@ -118,16 +118,6 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="200" width="378">
-                    <control type="button">
-							<onfocus>SetProperty(infoposter,$INFO[Container.ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container.ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container.ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container.ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container.ListItem.Art(banner)],home)</onfocus>
-							<onfocus>SetProperty(infobannertv,$INFO[Container.ListItem.Art(tvshow.banner)],home)</onfocus>
-							<texturenofocus></texturenofocus>
-							<texturefocus></texturefocus>
-						</control>
                     <control type="group">
                         <left>0</left>
                         <right>10</right>
@@ -178,8 +168,8 @@
     </include>
     <include name="View_ClearArts_Top">
         <control type="image">
-            <left>-20</left>
-            <right>-20</right>
+            <left>-500</left>
+            <right>-500</right>
             <height>200</height>
             <bottom>195</bottom>
             <texture>dialogs/back.png</texture>

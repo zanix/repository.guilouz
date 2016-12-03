@@ -6,7 +6,8 @@
 			<visible>!Window.IsVisible(Startup.xml) + ![[Window.IsActive(fullscreenvideo) | Window.IsActive(fullscreeninfo) | Window.IsActive(visualisation)] + Skin.HasSetting(hide_popup)]</visible>
 			<depth>DepthMax</depth>
 			<top>945</top>
-			<left>640</left>
+			<centerleft>50%</centerleft>
+ 			<width>640</width>
 			<include>Animation_DialogPopupOpenClose</include>
 			<animation effect="slide" end="605,0" time="0" condition="String.IsEqual(Skin.String(PopupPosition.label),$LOCALIZE[40197]) | String.IsEqual(Skin.String(PopupPosition.label),$LOCALIZE[40200])">conditional</animation>
 			<animation effect="slide" end="-605,0" time="0" condition="String.IsEqual(Skin.String(PopupPosition.label),$LOCALIZE[40198]) | String.IsEqual(Skin.String(PopupPosition.label),$LOCALIZE[40201])">conditional</animation>

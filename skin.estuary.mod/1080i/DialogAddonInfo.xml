@@ -2,11 +2,14 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload condition="!ListItem.Property(addon.isinstalled) + Window.IsActive(addonbrowser)">SetFocus(6)</onload>
-	<onload>SetProperty(infobackground,$INFO[ListItem.Art(fanart)],home)</onload>
+	<onload>SetProperty(infobackground,$ESCINFO[ListItem.Art(fanart)],home)</onload>
 	<onunload>ClearProperty(infobackground,home)</onunload>
 	<controls>
 		<control type="group">
-			<include>OpenClose_Right</include>
+			<centerleft>50%</centerleft>
+			<width>1920</width>
+			<control type="group">
+				<include>OpenClose_Right</include>
 			<control type="button">
 				<left>605</left>
 				<top>400</top>
@@ -263,6 +266,7 @@
 					<aligny>center</aligny>
 					<label>$LOCALIZE[24096]</label>
 					<font>font24_title</font>
+				</control>
 				</control>
 			</control>
 		</control>

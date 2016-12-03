@@ -6,6 +6,9 @@
 	<animation effect="fade" start="100" end="0" time="100">WindowClose</animation>
 	<depth>DepthOSD</depth>
 	<controls>
+		<control type="group">
+ 			<centerleft>50%</centerleft>
+ 			<width>1920</width>
 		<control type="image">
 			<left>10</left>
 			<top>830</top>
@@ -132,6 +135,7 @@
                 		<texture>$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]</texture>
                 		<visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
             		</control>
+		</control>
 		</control>
 	</controls>
 </window>

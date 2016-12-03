@@ -41,7 +41,20 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio align="right" aligny="top">keep</aspectratio>
-				<texture>$INFO[Weather.conditions]</texture>
+				<texture>$VAR[WeatherIconVar]</texture>
+				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
+			</control>
+			<control type="multiimage">
+				<top>140</top>
+				<left>140</left>
+				<width>150</width>
+				<height>150</height>
+				<aspectratio align="right" aligny="top">keep</aspectratio>
+				<imagepath>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(Weather).Property(Day0.FanartCode),,/]</imagepath>
+				<timeperimage>175</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>0</fadetime>
+				<visible>Skin.HasSetting(WeatherIcons.multi)</visible>
 			</control>
 			<control type="label">
 				<right>140</right>
@@ -590,11 +603,6 @@
 					<focusedlayout width="1232" height="695">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -752,11 +760,6 @@
 					<focusedlayout width="1232" height="695">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -924,11 +927,6 @@
 					<focusedlayout width="1140" height="641">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -1026,11 +1024,6 @@
 				<focusedlayout width="277" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -1169,11 +1162,6 @@
 				<focusedlayout width="270" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-						<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -1311,11 +1299,6 @@
 				<focusedlayout width="240" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-						<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -1455,11 +1438,6 @@
 				<focusedlayout width="277" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-						<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -1599,11 +1577,6 @@
 				<focusedlayout width="270" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-						<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -1742,11 +1715,6 @@
 				<focusedlayout width="240" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-						<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-						<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-						<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-						<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -2407,11 +2375,6 @@
 					<focusedlayout width="454" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -2586,11 +2549,6 @@
 					<focusedlayout width="540" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -2764,11 +2722,6 @@
 					<focusedlayout width="440" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -2944,11 +2897,6 @@
 					<focusedlayout width="454" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -3124,11 +3072,6 @@
 					<focusedlayout width="540" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -3303,11 +3246,6 @@
 					<focusedlayout width="440" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -3458,11 +3396,6 @@
 					<focusedlayout width="343" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -3601,11 +3534,6 @@
 					<focusedlayout width="343" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -3746,11 +3674,6 @@
 					<focusedlayout width="405" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -3848,11 +3771,6 @@
 					<focusedlayout width="340" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -3950,11 +3868,6 @@
 					<focusedlayout width="340" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -4093,11 +4006,6 @@
 					<focusedlayout width="405" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -4238,11 +4146,6 @@
 					<focusedlayout width="340" height="400">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -4366,11 +4269,6 @@
 					<focusedlayout width="343" height="340">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -4510,11 +4408,6 @@
 					<focusedlayout width="405" height="340">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -4653,11 +4546,6 @@
 					<focusedlayout width="340" height="340">
 						<control type="button">
 							<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-							<onfocus>SetProperty(infoposter,$INFO[Container($PARAM[list_id]).ListItem.Art(poster)],home)</onfocus>
-							<onfocus>SetProperty(infologo,$INFO[Container($PARAM[list_id]).ListItem.Art(clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infologotv,$INFO[Container($PARAM[list_id]).ListItem.Art(tvshow.clearlogo)],home)</onfocus>
-							<onfocus>SetProperty(infofanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-							<onfocus>SetProperty(infobanner,$INFO[Container($PARAM[list_id]).ListItem.Art(banner)],home)</onfocus>
 							<texturenofocus></texturenofocus>
 							<texturefocus></texturefocus>
 						</control>
@@ -6203,6 +6091,7 @@
 				<label>$PARAM[widget_header]</label>
 				<font>font14</font>
 				<shadowcolor>text_shadow</shadowcolor>
+				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
 			</control>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>490</left>
@@ -6220,6 +6109,7 @@
 				<ondown>$PARAM[ondown_id]</ondown>
 				<onback>SetFocus(9000)</onback>
 				<preloaditems>1</preloaditems>
+				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
 				<itemlayout width="273" height="400">
 					<control type="image">
 						<left>0</left>
@@ -6357,6 +6247,7 @@
 				<label>$PARAM[widget_header]</label>
 				<font>font14</font>
 				<shadowcolor>text_shadow</shadowcolor>
+				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
 			</control>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>200</left>
@@ -6374,6 +6265,7 @@
 				<ondown>$PARAM[ondown_id]</ondown>
 				<onback>SetFocus(9000)</onback>
 				<preloaditems>1</preloaditems>
+				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
 				<itemlayout width="270" height="400">
 					<control type="image">
 						<left>0</left>
@@ -6496,6 +6388,7 @@
 				<label>$PARAM[widget_header]</label>
 				<font>font14</font>
 				<shadowcolor>text_shadow</shadowcolor>
+				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
 			</control>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>180</left>
@@ -6513,6 +6406,7 @@
 				<ondown>$PARAM[ondown_id]</ondown>
 				<onback>SetFocus(9000)</onback>
 				<preloaditems>1</preloaditems>
+				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
 				<itemlayout width="260" height="400">
 					<control type="image">
 						<left>0</left>
@@ -7184,15 +7078,6 @@
 							<param name="widget_target" value="$VAR[TVShowsWidget5TargetVar]"/>
 							<param name="list_id" value="6500"/>
 							<param name="onup_id" value="6400"/>
-							<param name="ondown_id" value="6600"/>
-						</include>
-						<include content="WidgetListEpisodes2">
-							<param name="content_path" value="$VAR[TVShowsWidget6ContentVar]"/>
-							<param name="widget_header" value="$VAR[TVShowsWidget6LabelVar]"/>
-							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
-							<param name="widget_target" value="$VAR[TVShowsWidget6TargetVar]"/>
-							<param name="list_id" value="6600"/>
-							<param name="onup_id" value="6500"/>
 							<param name="ondown_id" value="9000"/>
 						</include>
 						<include content="ImageWidgetHeader">
@@ -7659,7 +7544,20 @@
 								<left>250</left>
 								<width>150</width>
 								<height>150</height>
-								<texture>$INFO[Weather.conditions]</texture>
+								<texture>$VAR[WeatherIconVar]</texture>
+								<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
+							</control>
+							<control type="multiimage">
+								<top>40</top>
+								<left>250</left>
+								<width>150</width>
+								<height>150</height>
+								<aspectratio align="right" aligny="top">keep</aspectratio>
+								<imagepath>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(Weather).Property(Day0.FanartCode),,/]</imagepath>
+								<timeperimage>175</timeperimage>
+								<randomize>false</randomize>
+								<fadetime>0</fadetime>
+								<visible>Skin.HasSetting(WeatherIcons.multi)</visible>
 							</control>
 							<control type="label">
 								<left>950</left>
@@ -8187,7 +8085,6 @@
 						<left>80</left>
 						<top>672</top>
 						<height>110</height>
-						<pagecontrol>70</pagecontrol>
 						<onfocus>ClearProperty(listposition,home)</onfocus>
 						<ondown condition="Integer.IsGreater(Container(5900).NumItems,0)">5900</ondown>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">17100</onup>
@@ -8465,7 +8362,7 @@
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<visible>Player.hasMedia</visible>
 			</control>
-			<control type="rss">
+			<control type="rss" id="9500">
 				<left>0</left>
 				<top>1041</top>
 				<height>30</height>
@@ -8476,6 +8373,10 @@
 				<shadowcolor>text_shadow</shadowcolor>
 				<headlinecolor>FFC0C0C0</headlinecolor>
 				<textcolor>white</textcolor>
+				<ondown>9000</ondown>
+ 				<onup>9000</onup>
+ 				<onleft>9000</onleft>
+ 				<onright>9000</onright>
 				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<visible>!Player.hasMedia</visible>
@@ -9080,15 +8981,6 @@
 							<param name="widget_target" value="$VAR[TVShowsWidget5TargetVar]"/>
 							<param name="list_id" value="6500"/>
 							<param name="onup_id" value="6400"/>
-							<param name="ondown_id" value="6600"/>
-						</include>
-						<include content="WidgetListEpisodes">
-							<param name="content_path" value="$VAR[TVShowsWidget6ContentVar]"/>
-							<param name="widget_header" value="$VAR[TVShowsWidget6LabelVar]"/>
-							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
-							<param name="widget_target" value="$VAR[TVShowsWidget6TargetVar]"/>
-							<param name="list_id" value="6600"/>
-							<param name="onup_id" value="6500"/>
 							<param name="ondown_id" value="20001"/>
 						</include>
 						<include content="ImageWidgetHeader">
@@ -9555,7 +9447,20 @@
 								<left>530</left>
 								<width>150</width>
 								<height>150</height>
-								<texture>$INFO[Weather.conditions]</texture>
+								<texture>$VAR[WeatherIconVar]</texture>
+								<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
+							</control>
+							<control type="multiimage">
+								<top>40</top>
+								<left>530</left>
+								<width>150</width>
+								<height>150</height>
+								<aspectratio align="right" aligny="top">keep</aspectratio>
+								<imagepath>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(Weather).Property(Day0.FanartCode),,/]</imagepath>
+								<timeperimage>175</timeperimage>
+								<randomize>false</randomize>
+								<fadetime>0</fadetime>
+								<visible>Skin.HasSetting(WeatherIcons.multi)</visible>
 							</control>
 							<control type="label">
 								<left>990</left>
@@ -10123,7 +10028,6 @@
 						<top>1</top>
 						<width>384</width>
 						<height>666</height>
-						<pagecontrol>70</pagecontrol>
 						<onfocus>ClearProperty(listposition,home)</onfocus>
 						<onright condition="!String.IsEmpty(Container(5900).ListItem.Label) + !Skin.HasSetting(enable_widgetselection)">5900</onright>
 						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PictureWidget)">5900</onright>
@@ -10148,7 +10052,7 @@
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)">13200</onright>
 						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)">13200</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget)">22100</onright>
-						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget)">5900</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),HubWidget)">22100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))">18100</onright>
 						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter1))">18100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPoster) + !String.IsEmpty(Container(9000).ListItem.Property(widgetPath.personalposter2))">18200</onright>
@@ -10358,7 +10262,7 @@
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<visible>Player.hasMedia</visible>
 			</control>
-			<control type="rss">
+			<control type="rss" id="9500">
 				<left>0</left>
 				<top>1041</top>
 				<height>30</height>
@@ -10369,6 +10273,10 @@
 				<shadowcolor>text_shadow</shadowcolor>
 				<headlinecolor>FFC0C0C0</headlinecolor>
 				<textcolor>white</textcolor>
+				<ondown>9000</ondown>
+ 				<onup>9000</onup>
+ 				<onleft>9000</onleft>
+ 				<onright>9000</onright>
 				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<visible>!Player.hasMedia</visible>
@@ -10388,6 +10296,7 @@
 				<onclick>SetFocus(9000)</onclick>
 				<onclick>PageDown</onclick>
 				<visible>!String.IsEmpty(Window.Property(ArrowDown)) | Container(9000).HasNext</visible>
+				<visible>Control.HasFocus(9000)</visible>
 			</control>
 			<control type="button">
 				<left>235</left>
@@ -10402,6 +10311,7 @@
 				<onclick>SetFocus(9000)</onclick>
 				<onclick>PageUp</onclick>
 				<visible>!String.IsEmpty(Window.Property(ArrowUp)) | Container(9000).HasPrevious</visible>
+				<visible>Control.HasFocus(9000)</visible>
 			</control>
 		</control>
 	</include>
@@ -10856,7 +10766,7 @@
 							<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 							<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 							<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
-							<visible>[Control.HasFocus(6100) | Control.HasFocus(6200) | Control.HasFocus(6300) | Control.HasFocus(6400) | Control.HasFocus(6500) | Control.HasFocus(6600)] + Container(6001).HasNext</visible>
+							<visible>[Control.HasFocus(6100) | Control.HasFocus(6200) | Control.HasFocus(6300) | Control.HasFocus(6400) | Control.HasFocus(6500)] + Container(6001).HasNext</visible>
 						</control>
 						<control type="image">
 							<centerleft>50%</centerleft>
@@ -10867,7 +10777,7 @@
 							<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 							<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 							<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
-							<visible>[Control.HasFocus(6100) | Control.HasFocus(6200) | Control.HasFocus(6300) | Control.HasFocus(6400) | Control.HasFocus(6500) | Control.HasFocus(6600)] + Container(6001).HasPrevious</visible>
+							<visible>[Control.HasFocus(6100) | Control.HasFocus(6200) | Control.HasFocus(6300) | Control.HasFocus(6400) | Control.HasFocus(6500)] + Container(6001).HasPrevious</visible>
 						</control>
 					</control>
 					<control type="button" id="6888">
@@ -10930,15 +10840,6 @@
 							<param name="widget_target" value="$VAR[TVShowsWidget5TargetVar]"/>
 							<param name="list_id" value="6500"/>
 							<param name="onup_id" value="6400"/>
-							<param name="ondown_id" value="6600"/>
-						</include>
-						<include content="WidgetListEpisodesAdvancedHorizontal1">
-							<param name="content_path" value="$VAR[TVShowsWidget6ContentVar]"/>
-							<param name="widget_header" value="$VAR[TVShowsWidget6LabelVar]"/>
-							<param name="item_image" value="$VAR[TVShowWidgetImageVar]" />
-							<param name="widget_target" value="$VAR[TVShowsWidget6TargetVar]"/>
-							<param name="list_id" value="6600"/>
-							<param name="onup_id" value="6500"/>
 							<param name="ondown_id" value="9000"/>
 						</include>
 					</control>
@@ -11884,7 +11785,6 @@
 						<right>370</right>
 						<bottom>-10</bottom>
 						<height>266</height>
-						<pagecontrol>70</pagecontrol>
 						<onfocus>ClearProperty(listposition,home)</onfocus>
 						<ondown condition="Integer.IsGreater(Container(5900).NumItems,0)">5900</ondown>
 						<onup condition="String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">17100</onup>
@@ -12130,7 +12030,7 @@
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<visible>Player.hasMedia</visible>
 			</control>
-			<control type="rss">
+			<control type="rss" id="9500">
 				<left>0</left>
 				<bottom>258</bottom>
 				<height>30</height>
@@ -12141,6 +12041,10 @@
 				<shadowcolor>text_shadow</shadowcolor>
 				<headlinecolor>FFC0C0C0</headlinecolor>
 				<textcolor>white</textcolor>
+				<ondown>9000</ondown>
+				<onup>9000</onup>
+				<onleft>9000</onleft>
+ 				<onright>9000</onright>
 				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<visible>!Player.hasMedia</visible>

@@ -1,9 +1,16 @@
-1.6.7 :
+1.7.0 :
+• Add support for 21:9 screens
 • Add skin setting to use basic vertical menu instead of dynamic vertical menu
+• Add DVD and BluRay flag icons
+• Add Extrafanarts support on widgets
+• Add genres colors for PVR Guide
+• Replace window for chapters
+• Fix for new Skin Helper Service addons
 • Fix personnalize menu focus when item is disabled
 • Fix opacity background on Next Aired addon
 • Fix videoinfo button
-• Minnor fixes
+• Fix getting stuck on rss control
+• Many others fixes
 
 1.6.6 :
 • Add possibility to disable items in personnalize home menu (with button and context menu)

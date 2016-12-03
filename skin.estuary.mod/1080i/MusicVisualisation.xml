@@ -33,7 +33,7 @@
 			<randomize>true</randomize>
 			<fadetime>600</fadetime>
 			<visible>Skin.HasSetting(enable_artistslideshow)</visible>
-			<imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Window(Home).Property(SkinHelper.Player.Music.ExtraFanArt)]</imagepath>
+			<imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)]</imagepath>
 			<animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 			<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 		</control>
@@ -47,7 +47,7 @@
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<texture background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Player.Art(fanart)]</texture>
-			<visible>String.IsEmpty(Window(Home).Property(SkinHelper.Player.Music.ExtraFanArt)) + Skin.HasSetting(enable_artistslideshow)</visible>
+			<visible>String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)) + Skin.HasSetting(enable_artistslideshow)</visible>
 			<animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 			<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 		</control>
@@ -56,6 +56,9 @@
 			<visible>Player.HasAudio</visible>
 			<visible>Skin.HasSetting(enable_visualisation)</visible>
 		</control>
+		<control type="group">
+			<centerleft>50%</centerleft>
+ 			<width>1920</width>
 		<control type="group">
 			<left>76</left>
 			<top>150</top>
@@ -74,7 +77,7 @@
 				<animation effect="slide" end="240,0" time="300" reverisble="true" condition="Player.Playing">Conditional</animation>
 				<animation effect="slide" end="0,0" time="300" reverisble="true" condition="!Player.Playing">Conditional</animation>
 				<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="Skin.HasSetting(show_disc)">Conditional</animation>
-				<texture background="true" fallback="osd/cd.png">$VAR[MusicPlayerDiscVar]</texture>
+				<texture background="true" fallback="osd/cd.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
 				<visible>Skin.HasSetting(show_disc)</visible>
 			</control>
 			<control type="label">
@@ -183,7 +186,7 @@
 					<width>600</width>
 					<height>111</height>
 					<aspectratio align="right" aligny="center">keep</aspectratio>
-					<texture>$INFO[Window(Home).Property(SkinHelper.Player.Music.Banner)]</texture>
+					<texture>$INFO[Window(Home).Property(SkinHelper.Player.Art.Banner)]</texture>
 					<bordertexture colordiffuse="FF494949">dialogs/white.png</bordertexture>
 					<bordersize>3</bordersize>
 				</control>
@@ -249,7 +252,7 @@
 				<bordersize>4</bordersize>
 				<visible>!String.IsEmpty(Player.Art(fanart))</visible>
 				<visible>!Window.IsActive(VisualisationPresetList)</visible>
-				<visible>Skin.HasSetting(enable_artistslideshowthumb) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Music.ExtraFanArt))</visible>
+				<visible>Skin.HasSetting(enable_artistslideshowthumb) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))</visible>
 				<animation effect="fade" start="0" end="100" delay="400" time="200">Visible</animation>
 				<animation effect="fade" end="0" time="200">Hidden</animation>
 				<animation effect="fade" start="0" end="100" time="300" tween="sine" delay="300" easing="out" condition="!Window.IsVisible(script-cu-lrclyrics-main.xml)">Conditional</animation>
@@ -284,7 +287,7 @@
 				<timeperimage>5000</timeperimage>
 				<randomize>true</randomize>
 				<fadetime>600</fadetime>
-				<imagepath background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.ExtraFanArt)]</imagepath>
+				<imagepath background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)]</imagepath>
 				<visible>!String.IsEmpty(Player.Art(fanart))</visible>
 				<visible>!Window.IsActive(VisualisationPresetList)</visible>
 				<visible>Skin.HasSetting(enable_artistslideshowthumb)</visible>
@@ -382,20 +385,6 @@
 					</control>
 				</control>
 			</control>
-			<control type="label">
-				<left>1840</left>
-				<top>834</top>
-				<width>400</width>
-				<height>45</height>
-				<align>right</align>
-				<aligny>bottom</aligny>
-				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
-				<font>font30_title</font>
-				<shadowcolor>black</shadowcolor>
-				<textcolor>grey</textcolor>
-				<animation effect="fade" start="0" end="100" delay="400" time="200">WindowOpen</animation>
-				<animation effect="fade" end="0" time="200">WindowClose</animation>
-			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<left>30</left>
@@ -458,7 +447,7 @@
 					<width>178</width>
 					<height>80</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.ClearLogo)]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</texture>
 				</control>
 				<control type="label">
 					<top>40</top>
@@ -510,6 +499,7 @@
 					</control>
 				</control>
 			</control>
+		</control>
 		</control>
 	</controls>
 </window>

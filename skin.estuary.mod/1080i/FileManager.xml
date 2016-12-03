@@ -3,6 +3,9 @@
 	<defaultcontrol always="true">20</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
+		<control type="group">
+		<centerleft>50%</centerleft>
+ 		<width>1920</width>
 		<control type="image">
 			<description>Dialog Header image</description>
 			<left>926</left>
@@ -45,6 +48,7 @@
 				<param name="bg_width" value="840" />
 				<param name="header_haspath" value="true" />
 			</include>
+		</control>
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[7]" />

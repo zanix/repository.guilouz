@@ -5,6 +5,9 @@
     <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|videos|movie|tvshow|music|musicvideo|livetv|radio|picture|addon|weather|x1114|x1115|x1116|x1117|x1118|powermenu)</onunload>
     <controls>
         <include>DefaultBackground</include>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<width>1920</width>
         <control type="group">
             <left>110</left>
             <top>0</top>
@@ -397,6 +400,14 @@
                         <onclick>Skin.ToggleSetting(no_fanart)</onclick>
                         <selected>!Skin.HasSetting(no_fanart)</selected>
                     </control>
+                    <control type="radiobutton" id="694">
+                        <label>$LOCALIZE[40274]</label>
+                        <width>1256</width>
+                        <enable>!Skin.HasSetting(no_fanart)</enable>
+                        <include>DefaultSettingButton</include>
+                        <onclick>Skin.ToggleSetting(SkinHelper.EnableExtraFanart)</onclick>
+                        <selected>Skin.HasSetting(SkinHelper.EnableExtraFanart)</selected>
+                    </control>
                     <control type="radiobutton" id="655">
                         <label>$LOCALIZE[40083]</label>
                         <width>1256</width>
@@ -451,7 +462,7 @@
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_fanart)|Skin.Reset(background_showvideo)|Skin.Reset(use_custom_bg)|Skin.Reset(custom_background)|Skin.Reset(WeatherFanart.name)|RunScript(script.skin.helper.service,action=reset,filter=Opacity,silent=true))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_fanart)|Skin.Reset(SkinHelper.EnableExtraFanart)|Skin.Reset(background_showvideo)|Skin.Reset(use_custom_bg)|Skin.Reset(custom_background)|Skin.Reset(WeatherFanart.name)|RunScript(script.skin.helper.service,action=reset,filter=Opacity,silent=true))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="690">
@@ -810,13 +821,13 @@
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <label>40040</label>
-                        <onclick>RunScript(script.skin.helper.service,action=backup)</onclick>
+                        <onclick>RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
                     </control>
                     <control type="button" id="626">
                         <label>40041</label>
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
-                        <onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
+                        <onclick>RunScript(script.skin.helper.skinbackup,action=restore)</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="670">
@@ -878,6 +889,18 @@
                         <selected>System.HasAddon(script.skin.helper.colorpicker)</selected>
                         <include>DefaultSettingButton</include>
                     </control>
+                    <control type="radiobutton" id="685">
+                        <width>1256</width>
+                        <label>script.skin.helper.skinbackup $INFO[System.AddonVersion(script.skin.helper.skinbackup),(,)]</label>
+                        <textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+                        <textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+                        <textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+                        <textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+                        <onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
+                        <onclick condition="System.HasAddon(script.skin.helper.skinbackup)">Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
+                        <selected>System.HasAddon(script.skin.helper.skinbackup)</selected>
+                        <include>DefaultSettingButton</include>
+                    </control>
                     <control type="radiobutton" id="641">
                         <width>1256</width>
                         <label>script.module.thetvdb $INFO[System.AddonVersion(script.module.thetvdb),(,)]</label>
@@ -900,18 +923,6 @@
                         <onclick condition="!System.HasAddon(script.module.musicbrainz)">InstallAddon(script.module.musicbrainz)</onclick>
                         <onclick condition="System.HasAddon(script.module.musicbrainz)">Addon.OpenSettings(script.module.musicbrainz)</onclick>
                         <selected>System.HasAddon(script.module.musicbrainz)</selected>
-                        <include>DefaultSettingButton</include>
-                    </control>
-                    <control type="radiobutton" id="685">
-                        <width>1256</width>
-                        <label>script.module.simplecache $INFO[System.AddonVersion(script.module.simplecache),(,)]</label>
-                        <textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
-                        <textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
-                        <textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
-                        <textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
-                        <onclick condition="!System.HasAddon(script.module.simplecache)">InstallAddon(script.module.simplecache)</onclick>
-                        <onclick condition="System.HasAddon(script.module.simplecache)">Addon.OpenSettings(script.module.simplecache)</onclick>
-                        <selected>System.HasAddon(script.module.simplecache)</selected>
                         <include>DefaultSettingButton</include>
                     </control>
                     <control type="radiobutton" id="633">
@@ -1111,6 +1122,7 @@
                 <animation effect="fade" time="200">VisibleChange</animation>
                 <visible>Container(9000).HasFocus(10) + Container(690).HasNext</visible>
             </control>
+        </control>
         </control>
         <include content="TopBar">
             <param name="breadcrumbs_label" value="$LOCALIZE[5] / $LOCALIZE[20077]" />

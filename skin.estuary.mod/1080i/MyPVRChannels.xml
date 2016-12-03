@@ -9,6 +9,9 @@
         <control type="group">
             <animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
             <control type="group">
+            	<centerleft>50%</centerleft>
+ 				<width>1920</width>
+            <control type="group">
                 <include>OpenClose_Left</include>
                 <left>110</left>
                 <top>182</top>
@@ -328,6 +331,7 @@
                 <param name="down_posy" value="912" />
                 <param name="visible" value="!System.HasModalDialog" />
             </include>
+            </control>
             <include>MediaMenuMouseOverlay</include>
             <control type="group">
                 <include>MediaMenuCommon</include>
