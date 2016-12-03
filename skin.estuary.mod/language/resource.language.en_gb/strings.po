@@ -1864,3 +1864,11 @@ msgstr ""
 msgctxt "#40275"
 msgid "Show multiple backgrounds on the home menu and library."
 msgstr ""
+
+msgctxt "#40276"
+msgid "Disable Kodi screensaver"
+msgstr ""
+
+msgctxt "#40277"
+msgid "Disable Kodi screensaver on fullscreen music playback."
+msgstr ""

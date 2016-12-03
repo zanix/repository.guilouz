@@ -4,6 +4,7 @@
 • Add DVD and BluRay flag icons
 • Add Extrafanarts support on widgets
 • Add genres colors for PVR Guide
+• Add possibility to disable Kodi screensaver on fullscreen music playback
 • Replace window for chapters
 • Fix for new Skin Helper Service addons
 • Fix personnalize menu focus when item is disabled

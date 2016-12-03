@@ -1731,3 +1731,11 @@ msgstr "Afficher les Extrafanarts"
 msgctxt "#40275"
 msgid "Show multiple backgrounds on the home menu and library."
 msgstr "Permet d'afficher les arrière-plans multiples sur le menu d'accueil et la bibliothèque."
+
+msgctxt "#40276"
+msgid "Disable Kodi screensaver"
+msgstr "Désactiver l'écran de veille de Kodi"
+
+msgctxt "#40277"
+msgid "Disable Kodi screensaver on fullscreen music playback."
+msgstr "Permet de désactiver l'écran de veille de Kodi sur l'écran de visualisation de la musique."

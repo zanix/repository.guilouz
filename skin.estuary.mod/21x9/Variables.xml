@@ -7,7 +7,7 @@
         <value>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</value>
     </variable>
     <variable name="PlotSpoilerVar">
-        <value condition="[Skin.HasSetting(hide_plotforspoiler) + String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Playcount,1)">$LOCALIZE[40132]</value>
+        <value condition="[Skin.HasSetting(hide_plotforspoiler) + String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Playcount,1) + !String.StartsWith(Container.FolderPath,plugin://)">$LOCALIZE[40132]</value>
         <value>$INFO[ListItem.Tagline,[B][I],[/I][/B][CR]]$INFO[ListItem.Plot]</value>
     </variable>
     <variable name="HubLabelVar">
@@ -246,19 +246,19 @@
         <value>$LOCALIZE[31122]</value>
     </variable>
     <variable name="TVShowsWidget5ContentVar">
-        <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.tvshows6))">$INFO[Container(9000).ListItem.Property(widgetPath.tvshows6)]</value>
+        <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetPath.tvshows5))">$INFO[Container(9000).ListItem.Property(widgetPath.tvshows5)]</value>
         <value>plugin://script.skin.helper.widgets/?action=unaired&mediatype=episodes&limit=25&reload=$INFO[Window(Home).Property(widgetreload2)]</value>
     </variable>
     <variable name="TVShowsWidget5TargetVar">
-        <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetTarget.tvshows6))">$INFO[Container(9000).ListItem.Property(widgetTarget.tvshows6)]</value>
+        <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetTarget.tvshows5))">$INFO[Container(9000).ListItem.Property(widgetTarget.tvshows5)]</value>
         <value>videos</value>
     </variable>
     <variable name="TVShowsWidget5LabelVar">
-        <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName.tvshows6))">$INFO[Container(9000).ListItem.Property(widgetName.tvshows6)]</value>
+        <value condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName.tvshows5))">$INFO[Container(9000).ListItem.Property(widgetName.tvshows5)]</value>
         <value>$LOCALIZE[40232]</value>
     </variable>
     <variable name="TVShowsWidget5Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.tvshows6))">$INFO[Container(211).ListItem.Property(widgetName.tvshows6)]</value>
+        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.tvshows5))">$INFO[Container(211).ListItem.Property(widgetName.tvshows5)]</value>
         <value>$LOCALIZE[40232]</value>
     </variable>
     <variable name="MusicWidget1ContentVar">
@@ -2315,8 +2315,8 @@
     </variable>
     <variable name="ResolutionFlagVarPlayer">
         <value condition="VideoPlayer.IsStereoscopic">flags/videoresolution/3D.png</value>
-        <value condition="String.Contains(Player.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
-        <value condition="String.Contains(Player.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
+        <value condition="String.Contains(VideoPlayer.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
+        <value condition="String.Contains(VideoPlayer.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
         <value condition="Integer.IsGreater(VideoPlayer.VideoResolution,1080)">flags/videoresolution/4K.png</value>
         <value>$INFO[VideoPlayer.VideoResolution,flags/videoresolution/,.png]</value>
     </variable>
@@ -2489,6 +2489,7 @@
         <value condition="Control.HasFocus(692)">$LOCALIZE[40262]</value>
         <value condition="Control.HasFocus(693)">$LOCALIZE[40272]</value>
         <value condition="Control.HasFocus(694)">$LOCALIZE[40275]</value>
+        <value condition="Control.HasFocus(695)">$LOCALIZE[40277]</value>
         <value condition="Control.HasFocus(657) | Control.HasFocus(658) | Control.HasFocus(659) | Control.HasFocus(661) | Control.HasFocus(662)  | Control.HasFocus(669)">$LOCALIZE[10045]</value>
         <value condition="Container(9000).HasFocus(1)">$LOCALIZE[40024]</value>
         <value condition="Container(9000).HasFocus(2)">$LOCALIZE[31130]</value>

@@ -630,6 +630,13 @@
                         <selected>Skin.HasSetting(hide_cdcase)</selected>
                         <onclick>Skin.ToggleSetting(hide_cdcase)</onclick>
                     </control>
+                    <control type="radiobutton" id="695">
+                        <label>40276</label>
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <selected>Skin.HasSetting(SkinHelper.DisableScreenSaverOnFullScreenMusic)</selected>
+                        <onclick>Skin.ToggleSetting(SkinHelper.DisableScreenSaverOnFullScreenMusic)</onclick>
+                    </control>
                     <control type="image" id="13">
                         <description>separator image</description>
                         <height>3</height>
@@ -639,7 +646,7 @@
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_artistslideshow)|Skin.Reset(enable_artistslideshowthumb)|Skin.Reset(animate_artistslideshow)|Skin.Reset(enable_visualisation)|Skin.Reset(show_disc)|Skin.Reset(hide_cdcase)|Skin.Reset(show_musicvisualisation))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_artistslideshow)|Skin.Reset(enable_artistslideshowthumb)|Skin.Reset(animate_artistslideshow)|Skin.Reset(enable_visualisation)|Skin.Reset(show_disc)|Skin.Reset(hide_cdcase)|Skin.Reset(show_musicvisualisation)|Skin.Reset(SkinHelper.DisableScreenSaverOnFullScreenMusic))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="660">
