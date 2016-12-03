@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <variable name="MusicPlayerDiscTitle">
+        <value condition="!String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]</value>
+        <value>$INFO[Player.Title]</value>
+    </variable>
     <variable name="SystemLogOffVar">
         <value>$LOCALIZE[20126] $INFO[system.profilename,(,)]</value>
     </variable>
