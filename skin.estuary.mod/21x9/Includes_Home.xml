@@ -11171,7 +11171,7 @@
 						<left>-44</left>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<usecontrolcoords>true</usecontrolcoords>
-						<include content="WidgetListChannels3">
+						<include content="WidgetListChannelsAdvancedHorizontal1">
 							<param name="content_path" value="pvr://channels/tv/*"/>
 							<param name="widget_header" value="$LOCALIZE[19019]"/>
 							<param name="widget_target" value="pvr"/>
