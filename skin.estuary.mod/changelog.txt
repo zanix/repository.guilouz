@@ -1,3 +1,6 @@
+1.7.1 :
+• Fix arrow position	
+	
 1.7.0 :
 • Add support for 21:9 screens
 • Add skin setting to use basic vertical menu instead of dynamic vertical menu

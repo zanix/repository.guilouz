@@ -149,7 +149,7 @@
         </control>
         <include content="UpDownArrows">
             <param name="container_id" value="5" />
-            <param name="posx" value="1781" />
+            <param name="posx" value="1461" />
             <param name="up_posy" value="105" />
             <param name="down_posy" value="940" />
             <param name="visible" value="!System.HasModalDialog" />
