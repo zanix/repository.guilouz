@@ -1,5 +1,8 @@
 1.7.2 :
-• Add genre for list view	
+• Add genre for list view
+• Fix context menu for 21:9 screen
+• Fix extended info for 21:9 screen
+• Minnor fix
 
 1.7.1 :
 • Add changes for Kodi 18

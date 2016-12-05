@@ -39,13 +39,13 @@
 		</control>
 		<control type="group">
 			<animation effect="slide" start="5042,0" end="0,0" time="1500" tween="sine">WindowOpen</animation>
-			<animation effect="slide" end="1242,0" time="450" tween="sine" condition="Control.HasFocus(132) | ControlGroup(5000).HasFocus">WindowClose</animation>
+			<animation effect="slide" end="1882,0" time="450" tween="sine" condition="Control.HasFocus(132) | ControlGroup(5000).HasFocus">WindowClose</animation>
 			<animation effect="slide" end="0,1080" time="450" tween="sine" condition="!Control.HasFocus(132) + !ControlGroup(5000).HasFocus">WindowClose</animation>
 			<animation effect="slide" end="-749,0" time="450" tween="sine" easing="inout" condition="!Control.HasFocus(132) + !ControlGroup(5000).HasFocus">Conditional</animation>
 			<!-- right side -->
 			<control type="image">
 				<left>729</left>
-				<width>1950</width>
+				<width>2590</width>
 				<height>1080</height>
 				<aspectratio align="center">scale</aspectratio>
 				<texture fallback="colors/black.png">$INFO[Window.Property(ImageFilter)]</texture>
@@ -53,7 +53,7 @@
 			<control type="image">
                 <depth>DepthBackground</depth>
                 <left>729</left>
-				<width>1950</width>
+				<width>2590</width>
 				<height>1080</height>
                 <aspectratio>scale</aspectratio>
                 <texture colordiffuse="$VAR[BackgroundColorVar]" fallback="special://skin/extras/backgrounds/default.png">$VAR[GlobalFanartVar]</texture>
@@ -64,7 +64,7 @@
 				<visible>!Control.HasFocus(132)</visible>
 				<animation effect="fade" time="250">VisibleChange</animation>
 				<control type="image">
-					<left>990</left>
+					<left>1630</left>
 					<top>-10</top>
 					<width>830</width>
 					<height>110</height>
@@ -89,7 +89,7 @@
 				<control type="image">
 					<left>-40</left>
 					<top>38</top>
-					<width>1080</width>
+					<width>1720</width>
 					<height>1</height>
 					<texture>dialogs/extendedinfo/infopanel_line.png</texture>
 				</control>
@@ -200,7 +200,7 @@
 						<control type="button" id="132">
 							<left>0</left>
 							<top>0</top>
-							<width>1120</width>
+							<width>1760</width>
 							<height>255</height>
 							<onup>SetFocus(20000)</onup>
 							<ondown>150</ondown>
@@ -211,7 +211,7 @@
 						<control type="textbox" id="800">
 							<left>55</left>
 							<top>30</top>
-							<width>1010</width>
+							<width>1650</width>
 							<height>188</height>
 							<align>left</align>
 							<label fallback="19055">$INFO[Window.Property(Biography)]</label>

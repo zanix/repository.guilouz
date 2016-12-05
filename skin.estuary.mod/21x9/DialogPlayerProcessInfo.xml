@@ -294,7 +294,7 @@
 					<description>Channels</description>
 					<left>45</left>
 					<top>200</top>
-					<width>250</width>
+					<width>740</width>
 					<height>25</height>
 					<label>$LOCALIZE[40208] : [COLOR grey]$INFO[Player.Process(audiochannels)][/COLOR]</label>
 					<align>left</align>
