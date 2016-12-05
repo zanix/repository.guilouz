@@ -1,5 +1,8 @@
+1.7.2 :
+• Add genre for list view	
+
 1.7.1 :
-• Add changes for Kodi 18 
+• Add changes for Kodi 18
 • Fix arrow position	
 	
 1.7.0 :

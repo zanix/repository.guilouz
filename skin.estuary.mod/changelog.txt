@@ -1,3 +1,6 @@
+1.7.2 :
+• Add genre for list view	
+
 1.7.1 :
 • Fix arrow position	
 	

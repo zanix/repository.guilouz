@@ -117,7 +117,7 @@
                     <right>130</right>
                     <top>194</top>
                     <width>429</width>
-                    <height>398</height>
+                    <height>368</height>
                     <font>font12</font>
                     <visible>!Control.IsVisible(54)</visible>
                     <label>$INFO[ListItem.Tagline,[B][I],[/I][/B][CR]]$INFO[ListItem.Plot]</label>
@@ -134,6 +134,18 @@
                     <label>$VAR[PlotSpoilerVar]</label>
                     <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
                     <visible>String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)</visible>
+                </control>
+                <control type="label">
+                    <right>130</right>
+                    <top>570</top>
+                    <width>429</width>
+                    <height>398</height>
+                    <font>font12</font>
+                    <scroll>yes</scroll>
+                    <visible>!Control.IsVisible(54)</visible>
+                    <label>$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR]]</label>
+                    <textcolor>$VAR[SkinColorVar]</textcolor>
+                    <visible>!String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.DBType,season) + !String.IsEqual(ListItem.DBType,episode)</visible>
                 </control>
                 <control type="label">
                     <right>130</right>
