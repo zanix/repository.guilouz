@@ -1872,3 +1872,11 @@ msgstr ""
 msgctxt "#40277"
 msgid "Disable Kodi screensaver on fullscreen music playback."
 msgstr ""
+
+msgctxt "#40278"
+msgid "Show rating of TMDB rather than IMDB"
+msgstr ""
+
+msgctxt "#40279"
+msgid "Show rating of TheMovieDB.org rather than IMDb.com."
+msgstr ""

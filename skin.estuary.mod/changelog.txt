@@ -1,7 +1,9 @@
 1.7.2 :
 • Add genre for list view
+• Add possibility to show rating of TMDB rather than IMDB
 • Fix context menu for 21:9 screen
 • Fix extended info for 21:9 screen
+• Fix on favourites window
 • Minnor fix
 
 1.7.1 :

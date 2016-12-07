@@ -28,7 +28,7 @@
 						<left>-20</left>
 						<top>-20</top>
 						<width>424</width>
-						<height>660</height>
+						<height>642</height>
 						<texture border="22">dialogs/dialog-bg.png</texture>
 					</control>
 					<control type="list" id="9000">
@@ -318,6 +318,7 @@
 				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 				<visible>String.IsEqual(Skin.String(HideBars.label),$LOCALIZE[40068]) | String.IsEqual(Skin.String(HideBars.label),$LOCALIZE[40069])</visible>
+				<visible>!Control.HasFocus(9000)</visible>
 			</control>
 			<control type="scrollbar" id="531">
 				<right>0</right>
@@ -333,6 +334,7 @@
 				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 				<visible>String.IsEqual(Skin.String(HideBars.label),$LOCALIZE[40070])</visible>
+				<visible>!Control.HasFocus(9000)</visible>
 			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />

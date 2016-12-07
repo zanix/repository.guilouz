@@ -497,6 +497,14 @@
                         <onclick>Skin.ToggleSetting(show_mediaflags)</onclick>
                         <selected>Skin.HasSetting(show_mediaflags)</selected>
                     </control>
+                    <control type="radiobutton" id="697">
+                        <label>- $LOCALIZE[40278]</label>
+                        <width>1896</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick>Skin.ToggleSetting(enable_TMDBrating)</onclick>
+                        <selected>Skin.HasSetting(enable_TMDBrating)</selected>
+                        <visible>Skin.HasSetting(show_mediaflags)</visible>
+                    </control>
                     <control type="radiobutton" id="646">
                         <label>- $LOCALIZE[40055]</label>
                         <width>1896</width>
@@ -568,7 +576,7 @@
                         <width>1896</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(show_mediaflags)|Skin.Reset(enable_mediaflagscolor)|Skin.Reset(hide_audience)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(show_clearlogos)|Skin.Reset(show_musicclearlogos)|Skin.Reset(show_studiologos)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(show_mediaflags)|Skin.Reset(enable_TMDBrating)|Skin.Reset(enable_mediaflagscolor)|Skin.Reset(hide_audience)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(show_clearlogos)|Skin.Reset(show_musicclearlogos)|Skin.Reset(show_studiologos)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="640">

@@ -7652,6 +7652,7 @@
 				</control>
 				<control type="group" id="4000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PictureWidget)</visible>
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
 					<include>Visible_Right_Delayed</include>
 					<left>318</left>
 					<control type="grouplist" id="4001">
@@ -7679,6 +7680,7 @@
 					</control>
 				</control>
 				<control type="group" id="14000">
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
 					<include>Visible_Right_Delayed</include>
 					<left>318</left>
 					<control type="grouplist" id="14001">
@@ -9563,6 +9565,7 @@
 				</control>
 				<control type="group" id="4000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PictureWidget)</visible>
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
 					<include>Visible_Right_Delayed</include>
 					<left>315.5</left>
 					<control type="grouplist" id="4001">
@@ -9590,6 +9593,7 @@
 					</control>
 				</control>
 				<control type="group" id="14000">
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
 					<include>Visible_Right_Delayed</include>
 					<left>315.5</left>
 					<control type="grouplist" id="14001">

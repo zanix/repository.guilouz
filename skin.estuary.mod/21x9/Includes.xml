@@ -839,6 +839,7 @@
             </control>
             <control type="group">
                 <visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.Rating) + !String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(tvshows)</visible>
+                <visible>!Skin.HasSetting(enable_TMDBrating)</visible>
                 <width>156</width>
                 <height>50</height>
                 <control type="image">
@@ -856,6 +857,29 @@
                     <aligny>center</aligny>
                     <font>Font-Flag</font>
                     <label>$INFO[ListItem.Rating]</label>
+                    <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                </control>
+            </control>
+            <control type="group">
+                <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)) + !String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(tvshows)</visible>
+                <visible>Skin.HasSetting(enable_TMDBrating)</visible>
+                <width>156</width>
+                <height>50</height>
+                <control type="image">
+                    <width>156</width>
+                    <height>50</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating_tmdb.png</texture>
+                </control>
+                <control type="label">
+                    <posx>74</posx>
+                    <posy>2</posy>
+                    <width>79</width>
+                    <height>44</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>Font-Flag</font>
+                    <label>$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)]</label>
                     <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
                 </control>
             </control>
@@ -1329,6 +1353,7 @@
             <align>right</align>
             <control type="group">
                 <visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.Rating) + !String.StartsWith(Container.FolderPath,plugin://)  + !Container.Content(tvshows)</visible>
+                <visible>!Skin.HasSetting(enable_TMDBrating)</visible>
                 <width>156</width>
                 <height>50</height>
                 <control type="image">
@@ -1346,6 +1371,29 @@
                     <aligny>center</aligny>
                     <font>Font-Flag</font>
                     <label>$INFO[ListItem.Rating]</label>
+                    <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                </control>
+            </control>
+            <control type="group">
+                <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)) + !String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(tvshows)</visible>
+                <visible>Skin.HasSetting(enable_TMDBrating)</visible>
+                <width>156</width>
+                <height>50</height>
+                <control type="image">
+                    <width>156</width>
+                    <height>50</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating_tmdb.png</texture>
+                </control>
+                <control type="label">
+                    <posx>74</posx>
+                    <posy>2</posy>
+                    <width>79</width>
+                    <height>44</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>Font-Flag</font>
+                    <label>$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)]</label>
                     <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
                 </control>
             </control>
