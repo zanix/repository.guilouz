@@ -38,6 +38,7 @@
     <widgetdefault labelID="favourite">FavouritesWidget</widgetdefault>
     <widgetdefault labelID="filemanager">FileManagerWidget</widgetdefault>
     <widgetdefault labelID="search">SearchWidget</widgetdefault>
+    <widgetdefault labelID="game">GamesWidget</widgetdefault>
     
     <!-- Default Backgrounds -->
     <backgrounddefault labelID="videos">special://skin/extras/home-images/videos.jpg</backgrounddefault>
@@ -55,6 +56,7 @@
     <backgrounddefault labelID="favourite">special://skin/extras/home-images/favorites.jpg</backgrounddefault>
     <backgrounddefault labelID="filemanager">special://skin/extras/home-images/filemanager.jpg</backgrounddefault>
     <backgrounddefault labelID="search">special://skin/extras/home-images/search.jpg</backgrounddefault>
+    <backgrounddefault labelID="game">special://skin/extras/home-images/games.jpg</backgrounddefault>
     
     <!-- Widget Settings -->
     <propertySettings toggle="HideBannerWidget" buttonID="3129" templateonly="True" />

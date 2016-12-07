@@ -256,6 +256,15 @@
                         <onclick>Skin.ToggleSetting(enable_widgetselection)</onclick>
                         <visible>!Skin.HasSetting(horizontaladvanced_menu) + !Skin.HasSetting(horizontal_menu)</visible>
                     </control>
+                    <control type="button" id="698">
+                        <label>40281</label>
+                        <label2>$VAR[Label_SkinSetting_GamesFanart]</label2>
+                        <width>1896</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick condition="!Skin.String(games_background)">Skin.SetImage(games_background)</onclick>
+                        <onclick condition="Skin.String(games_background)">Skin.Reset(games_background)</onclick>
+                        <visible>System.GetBool(gamesgeneral.enable)</visible>
+                    </control>
                     <control type="button" id="687">
                         <label>40253</label>
                         <label2>$VAR[Label_SkinSetting_SearchFanart]</label2>
@@ -305,7 +314,7 @@
                         <width>1896</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(basic_menu)|Skin.Reset(horizontal_menu)|Skin.Reset(horizontaladvanced_menu)|Skin.Reset(enable_widgetflagicons)|Skin.Reset(show_widgetclearlogos)|Skin.Reset(enable_widgetselection)|Skin.Reset(search_background)|Skin.Reset(favorites_background)|Skin.Reset(filemanager_background)|Skin.Reset(settings_background)|Skin.Reset(power_background))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(basic_menu)|Skin.Reset(horizontal_menu)|Skin.Reset(horizontaladvanced_menu)|Skin.Reset(enable_widgetflagicons)|Skin.Reset(show_widgetclearlogos)|Skin.Reset(enable_widgetselection)|Skin.Reset(games_background)|Skin.Reset(search_background)|Skin.Reset(favorites_background)|Skin.Reset(filemanager_background)|Skin.Reset(settings_background)|Skin.Reset(power_background))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="600">
@@ -497,6 +506,14 @@
                         <onclick>Skin.ToggleSetting(show_mediaflags)</onclick>
                         <selected>Skin.HasSetting(show_mediaflags)</selected>
                     </control>
+                    <control type="radiobutton" id="697">
+                        <label>- $LOCALIZE[40278]</label>
+                        <width>1896</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick>Skin.ToggleSetting(enable_TMDBrating)</onclick>
+                        <selected>Skin.HasSetting(enable_TMDBrating)</selected>
+                        <visible>Skin.HasSetting(show_mediaflags)</visible>
+                    </control>
                     <control type="radiobutton" id="646">
                         <label>- $LOCALIZE[40055]</label>
                         <width>1896</width>
@@ -568,7 +585,7 @@
                         <width>1896</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(show_mediaflags)|Skin.Reset(enable_mediaflagscolor)|Skin.Reset(hide_audience)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(show_clearlogos)|Skin.Reset(show_musicclearlogos)|Skin.Reset(show_studiologos)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(show_mediaflags)|Skin.Reset(enable_TMDBrating)|Skin.Reset(enable_mediaflagscolor)|Skin.Reset(hide_audience)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(show_clearlogos)|Skin.Reset(show_musicclearlogos)|Skin.Reset(show_studiologos)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="640">

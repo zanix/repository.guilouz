@@ -1875,7 +1875,7 @@
 					<width>1310</width>
 					<height>100</height>
 					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900)</visible>
+					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900) | String.IsEqual(Container(9000).ListItem.Property(widget),GamesWidget)</visible>
 				</control>
 				<control type="grouplist" id="$PARAM[button_id]567">
 					<top>680</top>
@@ -1918,7 +1918,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900)</visible>
+					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900) | String.IsEqual(Container(9000).ListItem.Property(widget),GamesWidget)</visible>
 				</control>
 			</control>
 		</definition>
@@ -2177,7 +2177,7 @@
 					<width>1310</width>
 					<height>100</height>
 					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900)</visible>
+					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900) | String.IsEqual(Container(9000).ListItem.Property(widget),GamesWidget)</visible>
 				</control>
 				<control type="grouplist" id="$PARAM[button_id]567">
 					<top>690</top>
@@ -2220,7 +2220,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900)</visible>
+					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900) | String.IsEqual(Container(9000).ListItem.Property(widget),GamesWidget)</visible>
 				</control>
 			</control>
 		</definition>
@@ -2280,7 +2280,7 @@
 						<width>1211</width>
 						<height>100</height>
 						<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),FavouritesWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),FileManagerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),PowerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),SearchWidget)</visible>
+						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),FavouritesWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),FileManagerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),PowerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),SearchWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),GamesWidget)</visible>
 					</control>
 					<control type="textbox" id="$PARAM[button_id]">
 						<top>681</top>
@@ -2291,7 +2291,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),FavouritesWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),FileManagerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),PowerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),SearchWidget)</visible>
+						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),FavouritesWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),FileManagerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),PowerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),SearchWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),GamesWidget)</visible>
 					</control>
 				</control>
 			</control>
@@ -7244,9 +7244,9 @@
 							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquare4">
-							<param name="content_path" value="$VAR[AndroidAppPathVar]"/>
-							<param name="widget_header" value="$LOCALIZE[20244]"/>
-							<param name="widget_target" value="programs"/>
+							<param name="content_path" value="addons://sources/game/"/>
+							<param name="widget_header" value="$LOCALIZE[35049]"/>
+							<param name="widget_target" value="games"/>
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8400"/>
@@ -7257,13 +7257,26 @@
 							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquare4">
+							<param name="content_path" value="$VAR[AndroidAppPathVar]"/>
+							<param name="widget_header" value="$LOCALIZE[20244]"/>
+							<param name="widget_target" value="programs"/>
+							<param name="sortby" value="lastused"/>
+							<param name="sortorder" value="descending"/>
+							<param name="list_id" value="8500"/>
+							<param name="onup_id" value="8400"/>
+							<param name="ondown_id" value="8600"/>
+							<param name="single_label" value="$INFO[ListItem.Label]"/>
+							<param name="main_label" value=""/>
+							<param name="sub_label" value=""/>
+						</include>
+						<include content="WidgetListSquare4">
 							<param name="content_path" value="addons://sources/image/"/>
 							<param name="widget_header" value="$LOCALIZE[1039]"/>
 							<param name="widget_target" value="pictures"/>
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
-							<param name="list_id" value="8500"/>
-							<param name="onup_id" value="8400"/>
+							<param name="list_id" value="8600"/>
+							<param name="onup_id" value="8500"/>
 							<param name="ondown_id" value="9000"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
@@ -7652,6 +7665,7 @@
 				</control>
 				<control type="group" id="4000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PictureWidget)</visible>
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
 					<include>Visible_Right_Delayed</include>
 					<left>318</left>
 					<control type="grouplist" id="4001">
@@ -7679,6 +7693,7 @@
 					</control>
 				</control>
 				<control type="group" id="14000">
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
 					<include>Visible_Right_Delayed</include>
 					<left>318</left>
 					<control type="grouplist" id="14001">
@@ -8052,6 +8067,29 @@
 						<include content="ImageWidget5">
 							<param name="image_path" value="$VAR[SearchFanartVar]"/>
 							<param name="text_label" value="$LOCALIZE[40081]" />
+							<param name="button_label" value="" />
+							<param name="button_id" value="4100"/>
+							<param name="visible" value="true"/>
+							<param name="visible_1" value="False"/>
+							<param name="visible_2" value="False"/>
+						</include>
+					</control>
+				</control>
+				<control type="group" id="50005">
+					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),GamesWidget)</visible>
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<include>Visible_Right_Delayed</include>
+					<left>318</left>
+					<control type="grouplist" id="4001">
+						<orientation>vertical</orientation>
+						<include content="ImageWidgetHeader2">
+							<param name="widget_header" value="$LOCALIZE[15016]" />
+							<param name="visible" value="true"/>
+						</include>
+						<include content="ImageWidget5">
+							<param name="image_path" value="$VAR[GamesFanartVar]"/>
+							<param name="text_label" value="$LOCALIZE[40280]" />
 							<param name="button_label" value="" />
 							<param name="button_id" value="4100"/>
 							<param name="visible" value="true"/>
@@ -9155,9 +9193,9 @@
 							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquare2">
-							<param name="content_path" value="$VAR[AndroidAppPathVar]"/>
-							<param name="widget_header" value="$LOCALIZE[20244]"/>
-							<param name="widget_target" value="programs"/>
+							<param name="content_path" value="addons://sources/game/"/>
+							<param name="widget_header" value="$LOCALIZE[35049]"/>
+							<param name="widget_target" value="games"/>
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8400"/>
@@ -9168,13 +9206,26 @@
 							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquare2">
+							<param name="content_path" value="$VAR[AndroidAppPathVar]"/>
+							<param name="widget_header" value="$LOCALIZE[20244]"/>
+							<param name="widget_target" value="programs"/>
+							<param name="sortby" value="lastused"/>
+							<param name="sortorder" value="descending"/>
+							<param name="list_id" value="8500"/>
+							<param name="onup_id" value="8400"/>
+							<param name="ondown_id" value="8600"/>
+							<param name="single_label" value="$INFO[ListItem.Label]"/>
+							<param name="main_label" value=""/>
+							<param name="sub_label" value=""/>
+						</include>
+						<include content="WidgetListSquare2">
 							<param name="content_path" value="addons://sources/image/"/>
 							<param name="widget_header" value="$LOCALIZE[1039]"/>
 							<param name="widget_target" value="pictures"/>
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
-							<param name="list_id" value="8500"/>
-							<param name="onup_id" value="8400"/>
+							<param name="list_id" value="8600"/>
+							<param name="onup_id" value="8500"/>
 							<param name="ondown_id" value="20001"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
@@ -9563,6 +9614,7 @@
 				</control>
 				<control type="group" id="4000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PictureWidget)</visible>
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
 					<include>Visible_Right_Delayed</include>
 					<left>315.5</left>
 					<control type="grouplist" id="4001">
@@ -9590,6 +9642,7 @@
 					</control>
 				</control>
 				<control type="group" id="14000">
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
 					<include>Visible_Right_Delayed</include>
 					<left>315.5</left>
 					<control type="grouplist" id="14001">
@@ -9963,6 +10016,29 @@
 						<include content="ImageWidget">
 							<param name="image_path" value="$VAR[SearchFanartVar]"/>
 							<param name="text_label" value="$LOCALIZE[40081]" />
+							<param name="button_label" value="" />
+							<param name="button_id" value="4100"/>
+							<param name="visible" value="true"/>
+							<param name="visible_1" value="False"/>
+							<param name="visible_2" value="False"/>
+						</include>
+					</control>
+				</control>
+				<control type="group" id="50005">
+					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),GamesWidget)</visible>
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<include>Visible_Right_Delayed</include>
+					<left>315.5</left>
+					<control type="grouplist" id="4001">
+						<orientation>vertical</orientation>
+						<include content="ImageWidgetHeader">
+							<param name="widget_header" value="$LOCALIZE[15016]" />
+							<param name="visible" value="true"/>
+						</include>
+						<include content="ImageWidget">
+							<param name="image_path" value="$VAR[GamesFanartVar]"/>
+							<param name="text_label" value="$LOCALIZE[40280]" />
 							<param name="button_label" value="" />
 							<param name="button_id" value="4100"/>
 							<param name="visible" value="true"/>
@@ -11052,9 +11128,9 @@
 							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquareAdvancedHorizontal3">
-							<param name="content_path" value="$VAR[AndroidAppPathVar]"/>
-							<param name="widget_header" value="$LOCALIZE[20244]"/>
-							<param name="widget_target" value="programs"/>
+							<param name="content_path" value="addons://sources/game/"/>
+							<param name="widget_header" value="$LOCALIZE[35049]"/>
+							<param name="widget_target" value="games"/>
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8400"/>
@@ -11065,13 +11141,26 @@
 							<param name="sub_label" value=""/>
 						</include>
 						<include content="WidgetListSquareAdvancedHorizontal3">
+							<param name="content_path" value="$VAR[AndroidAppPathVar]"/>
+							<param name="widget_header" value="$LOCALIZE[20244]"/>
+							<param name="widget_target" value="programs"/>
+							<param name="sortby" value="lastused"/>
+							<param name="sortorder" value="descending"/>
+							<param name="list_id" value="8500"/>
+							<param name="onup_id" value="8400"/>
+							<param name="ondown_id" value="8600"/>
+							<param name="single_label" value="$INFO[ListItem.Label]"/>
+							<param name="main_label" value=""/>
+							<param name="sub_label" value=""/>
+						</include>
+						<include content="WidgetListSquareAdvancedHorizontal3">
 							<param name="content_path" value="addons://sources/image/"/>
 							<param name="widget_header" value="$LOCALIZE[1039]"/>
 							<param name="widget_target" value="pictures"/>
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
-							<param name="list_id" value="8500"/>
-							<param name="onup_id" value="8400"/>
+							<param name="list_id" value="8600"/>
+							<param name="onup_id" value="8500"/>
 							<param name="ondown_id" value="9000"/>
 							<param name="single_label" value="$INFO[ListItem.Label]"/>
 							<param name="main_label" value=""/>
@@ -11722,6 +11811,22 @@
 							<param name="image_path" value="$VAR[SearchFanartVar]"/>
 							<param name="widget_header" value="$LOCALIZE[31001]" />
 							<param name="text_label" value="$LOCALIZE[40081]" />
+							<param name="button_id" value="4100"/>
+							<param name="visible" value="True"/>
+						</include>
+					</control>
+				</control>
+				<control type="group" id="50005">
+					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),GamesWidget)</visible>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<include>Visible_Right_Delayed</include>
+					<left>321.5</left>
+					<control type="grouplist" id="4001">
+						<orientation>vertical</orientation>
+						<include content="ImageWidgetAdvancedHorizontal1">
+							<param name="image_path" value="$VAR[GamesFanartVar]"/>
+							<param name="widget_header" value="$LOCALIZE[15016]" />
+							<param name="text_label" value="$LOCALIZE[40280]" />
 							<param name="button_id" value="4100"/>
 							<param name="visible" value="True"/>
 						</include>

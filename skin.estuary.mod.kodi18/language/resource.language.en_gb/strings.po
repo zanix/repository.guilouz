@@ -1872,3 +1872,23 @@ msgstr ""
 msgctxt "#40277"
 msgid "Disable Kodi screensaver on fullscreen music playback."
 msgstr ""
+
+msgctxt "#40278"
+msgid "Show rating of TMDB rather than IMDB"
+msgstr ""
+
+msgctxt "#40279"
+msgid "Show rating of TheMovieDB.org rather than IMDb.com."
+msgstr ""
+
+msgctxt "#40280"
+msgid "Access to all your games"
+msgstr ""
+
+msgctxt "#40281"
+msgid "Background of 'Games' shortcut"
+msgstr ""
+
+msgctxt "#40282"
+msgid "Replace background of [B]Games[/B] shortcut."
+msgstr ""

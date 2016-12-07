@@ -72,6 +72,14 @@
         <action>ActivateWindow(1100)</action>
     </shortcut>
     <shortcut>
+        <label>15016</label>
+        <label2>Common Shortcut</label2>
+        <defaultID>game</defaultID>
+        <icon>special://skin/extras/icons/game.png</icon>
+        <action>ActivateWindow(Games)</action>
+        <visible>System.GetBool(gamesgeneral.enable)</visible>
+    </shortcut>
+    <shortcut>
         <label>8</label>
         <label2>Common Shortcut</label2>
         <defaultID>weather</defaultID>

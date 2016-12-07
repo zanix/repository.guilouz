@@ -28,14 +28,46 @@
 						<left>-20</left>
 						<top>-20</top>
 						<width>424</width>
-						<height>660</height>
+						<height>642</height>
 						<texture border="22">dialogs/dialog-bg.png</texture>
+					</control>
+					<control type="group">
+						<control type="button">
+							<left>182</left>
+							<bottom>278</bottom>
+							<width>20</width>
+							<height>10</height>
+							<texturefocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturefocus>
+							<texturenofocus colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texturenofocus>
+							<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
+							<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+							<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
+							<onclick>SetFocus(9000)</onclick>
+							<onclick>PageDown</onclick>
+							<visible>!String.IsEmpty(Window.Property(ArrowDown)) | Container(9000).HasNext</visible>
+							<visible>Control.HasFocus(9000)</visible>
+						</control>
+						<control type="button">
+							<left>182</left>
+							<top>-15</top>
+							<width>20</width>
+							<height>10</height>
+							<texturefocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturefocus>
+							<texturenofocus colordiffuse="$VAR[SkinColorVar]" flipy="true">overlays/arrowdown.png</texturenofocus>
+							<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
+							<animation effect="zoom" start="100,0" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+							<animation effect="zoom" start="100,100" end="100,0" center="auto" time="200">WindowClose</animation>
+							<onclick>SetFocus(9000)</onclick>
+							<onclick>PageUp</onclick>
+							<visible>!String.IsEmpty(Window.Property(ArrowUp)) | Container(9000).HasPrevious</visible>
+							<visible>Control.HasFocus(9000)</visible>
+						</control>
 					</control>
 					<control type="list" id="9000">
 						<left>1</left>
 						<top>1</top>
 						<width>382</width>
-						<height>671</height>
+						<height>600</height>
 						<pagecontrol>70</pagecontrol>
 						<onup>700</onup>
 						<ondown>700</ondown>
@@ -44,6 +76,7 @@
 						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),addons) + Control.IsVisible(50002)">50002</onright>
 						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),pictures) + Control.IsVisible(50003)">50003</onright>
 						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),android) + Control.IsVisible(50004)">50004</onright>
+						<onright condition="String.IsEqual(Container(9000).ListItem.Property(id),game) + Control.IsVisible(50005)">50005</onright>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<focusedlayout height="120">
 							<control type="image">
@@ -132,6 +165,14 @@
 								<thumb>icons/settings/AddonProgram.png</thumb>
 								<property name="id">addons</property>
 								<property name="path">addons://sources/executable/</property>
+							</item>
+							<item id="6">
+								<label>$LOCALIZE[35049]$INFO[Window(Home).Property(SkinHelper.TotalProgramAddon), (,)]</label>
+								<onclick>ActivateWindow(games,addons://sources/game/,return)</onclick>
+								<thumb>icons/settings/AddonGames.png</thumb>
+								<property name="id">game</property>
+								<property name="path">addons://sources/game/</property>
+								<visible>System.GetBool(gamesgeneral.enable)</visible>
 							</item>
 							<item id="4">
 								<label>$LOCALIZE[20244]$INFO[Window(Home).Property(SkinHelper.TotalProgramAddon), (,)]</label>
@@ -272,6 +313,12 @@
 						<param name="container_path" value="addons://sources/image/" />
 						<param name="container_target" value="pictures" />
 					</include>
+					<include content="AddonLauncherPanel">
+						<param name="container_id" value="50005" />
+						<param name="visible" value="Container(9000).HasFocus(6)" />
+						<param name="container_path" value="addons://sources/game/" />
+						<param name="container_target" value="games" />
+					</include>
 				</control>
 				<include content="UpDownArrows">
 					<param name="container_id" value="50000" />
@@ -303,6 +350,12 @@
 					<param name="up_posy" value="135" />
 					<param name="posx" value="1456" />
 				</include>
+				<include content="UpDownArrows">
+					<param name="container_id" value="50005" />
+					<param name="visible" value="!System.HasActiveModalDialog" />
+					<param name="up_posy" value="135" />
+					<param name="posx" value="1456" />
+				</include>
 			</control>
 			<control type="scrollbar" id="531">
 				<right>0</right>
@@ -318,6 +371,7 @@
 				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 				<visible>String.IsEqual(Skin.String(HideBars.label),$LOCALIZE[40068]) | String.IsEqual(Skin.String(HideBars.label),$LOCALIZE[40069])</visible>
+				<visible>!Control.HasFocus(9000)</visible>
 			</control>
 			<control type="scrollbar" id="531">
 				<right>0</right>
@@ -333,6 +387,7 @@
 				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 				<visible>String.IsEqual(Skin.String(HideBars.label),$LOCALIZE[40070])</visible>
+				<visible>!Control.HasFocus(9000)</visible>
 			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />

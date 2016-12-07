@@ -17,13 +17,13 @@
 			<param name="container_id" value="450" />
 			<param name="posx" value="726" />
 			<param name="up_posy" value="-40" />
-			<param name="down_posy" value="820" />
+			<param name="down_posy" value="836" />
 		</include>
 		<control type="scrollbar" id="60">
-			<left>1465</left>
-			<top>100</top>
+			<left>1550</left>
+			<top>110</top>
 			<width>12</width>
-			<height>670</height>
+			<height>690</height>
 			<onleft>450</onleft>
 			<onright>450</onright>
 			<orientation>vertical</orientation>

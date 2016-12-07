@@ -1444,9 +1444,9 @@ msgctxt "#40203"
 msgid "Hardware decoding"
 msgstr "Décodage matériel"
 
- msgctxt "#40204"
- msgid "Inactive"
- msgstr "Inactif"
+msgctxt "#40204"
+msgid "Inactive"
+msgstr "Inactif"
  
 msgctxt "#40205"
 msgid "Decoder"
@@ -1739,3 +1739,23 @@ msgstr "Désactiver l'écran de veille de Kodi"
 msgctxt "#40277"
 msgid "Disable Kodi screensaver on fullscreen music playback."
 msgstr "Permet de désactiver l'écran de veille de Kodi sur l'écran de visualisation de la musique."
+
+msgctxt "#40278"
+msgid "Show rating of TMDB rather than IMDB"
+msgstr "Afficher les notes de TMDB plutôt que de IMDB"
+
+msgctxt "#40279"
+msgid "Show rating of TheMovieDB.org rather than IMDb.com."
+msgstr "Permet d'afficher les notes de TheMovieDB.org plutôt que celles de IMDb.com."
+
+msgctxt "#40280"
+msgid "Access to all your games"
+msgstr "Accédez à l'ensemble de vos jeux"
+
+msgctxt "#40281"
+msgid "Background of 'Games' shortcut"
+msgstr "Arrière-plan du raccourci 'Jeux'"
+
+msgctxt "#40282"
+msgid "Replace background of [B]Games[/B] shortcut."
+msgstr "Permet de remplacer l'arrière-plan du raccourci [B]Jeux[/B]."
