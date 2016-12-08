@@ -289,7 +289,7 @@
                         <label>$ADDON[script.skinshortcuts 32072]</label>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                         <visible>!String.IsEqual(Container(211).ListItem.Property(widget),WeatherWidget) + ![String.IsEmpty(Container(211).ListItem.Property(HideBannerWidget)) + String.IsEqual(Container(211).ListItem.Property(widget),PictureWidget) + !Skin.HasSetting(horizontal_menu) + !Skin.HasSetting(horizontaladvanced_menu)]</visible>
-                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
+                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC) + !String.IsEqual(Container(211).ListItem.Label,$LOCALIZE[15016])</visible>
                     </control>
                     <control type="button" id="312">
                         <width>1896</width>
@@ -306,7 +306,7 @@
                         <onclick>SetProperty(WidgetVisibility,True,home)</onclick>
  						<onclick>SendClick(312)</onclick>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
+                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC) + !String.IsEqual(Container(211).ListItem.Label,$LOCALIZE[15016]</visible>
                     </control>
                     <control type="radiobutton" id="1504">
                         <width>1896</width>
