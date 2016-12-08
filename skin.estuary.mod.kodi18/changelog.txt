@@ -2,6 +2,7 @@
 • Add genre for list view
 • Add possibility to show rating of TMDB rather than IMDB
 • Add games support
+• Add TVDB rating flag icon for TV Shows
 • Fix context menu for 21:9 screen
 • Fix extended info for 21:9 screen
 • Fix on favourites window
