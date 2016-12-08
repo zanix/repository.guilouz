@@ -2,7 +2,7 @@
 <addon
   id="resource.language.fr_fr"
   version="10.0.0"
-  name="Français (KODI 18)"
+  name="French"
   provider-name="Guilouz">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
