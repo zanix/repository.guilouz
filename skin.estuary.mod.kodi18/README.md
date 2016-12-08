@@ -1,2 +1,2 @@
-# skin.estuary.mod
-Skin Estuary MOD for KODI Krypton
+# skin.estuary.mod.kodi18
+Skin Estuary MOD for KODI 18
