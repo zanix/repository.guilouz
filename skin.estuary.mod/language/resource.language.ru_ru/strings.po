@@ -1966,8 +1966,7 @@ msgstr "Отключить хранитель экрана Kodi"
 
 msgctxt "#40277"
 msgid "Disable Kodi screensaver on fullscreen music playback."
-msgstr ""
-"Отключить хранитель экрана Kodi при полноэкранном воспроизведении музыки"
+msgstr "Отключить хранитель экрана Kodi при полноэкранном воспроизведении музыки"
 
 msgctxt "#40278"
 msgid "Show rating of TMDB rather than IMDB"
