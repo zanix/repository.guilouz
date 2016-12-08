@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: KODI Main\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2016-11-22 01:15+0100\n"
+"PO-Revision-Date: 2016-12-08 03:04+0100\n"
 "Last-Translator: Kodi Translation Team\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p/kodi-"
 "main/language/fr_FR/)\n"
@@ -751,7 +751,9 @@ msgctxt "#179"
 msgid "Song"
 msgstr "Chanson"
 
+#. generic "duration" label used in different places
 #: xbmc/dialogs/GUIDialogMediaFilter.cpp xbmc/playlists/SmartPlaylist.cpp
+#: xbmc/xbmc/pvr/windows/GUIViewStatePVR.cpp
 #: addons/skin.estuary/1080i/Variables.xml
 #: addons/skin.estuary/1080i/View_51_Poster.xml
 #: addons/skin.estuary/1080i/DialogVideoInfo.xml
@@ -817,6 +819,7 @@ msgctxt "#193"
 msgid "Scan"
 msgstr "Balayer"
 
+#. label for "searching" message box heading
 #: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
 #: xbmc/video/dialogs/GUIDialogVideoInfo.cpp
 #: xbmc/video/windows/GUIWindowVideoBase.cpp
@@ -893,8 +896,11 @@ msgctxt "#207"
 msgid "Plot"
 msgstr "Résumé"
 
-#: xbmc/pvr/windows/PVRGUIWindowRecordings.cpp
-#: xbmc/dialogs/GUIDialogPlayEject.cpp system/settings/settings.xml
+#. generic "play" (some sort of media) label used in different places
+#: addons/skin.estuary/1080i/DialogVideoInfo.xml
+#: xbmc/dialogs/GUIDialogPlayEject.cpp xbmc/games/windows/GUIWindowGames.cpp
+#: xbmc/pvr/PVRContextMenus.cpp xbmc/video/windows/GUIWindowVideoBase.cpp
+#: system/settings/settings.xml
 msgctxt "#208"
 msgid "Play"
 msgstr "Lire"
@@ -1162,14 +1168,13 @@ msgstr "Autoriser le contrôle à distance via HTTP"
 
 #. Label for a context menu entry to start/schedule a recording
 #: xbmc/music/windows/GUIWindowMusicBase.cpp
-#: xbmc/pvr/dialogs/GUIDialogPVRGuideInfo.cpp
-#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
-#: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
+#: xbmc/pvr/dialogs/GUIDialogPVRGuideInfo.cpp xbmc/pvr/PVRContextMenus.cpp
 #: addons/skin.estuary/1080i/Variables.xml
 msgctxt "#264"
 msgid "Record"
 msgstr "Enregistrer"
 
+#: xbmc/music/windows/GUIWindowMusicBase.cpp
 msgctxt "#265"
 msgid "Stop Rec."
 msgstr "Arrêter l'enregistrement"
@@ -1248,6 +1253,7 @@ msgctxt "#283"
 msgid "Search results"
 msgstr "Résultats de la recherche"
 
+#. generic "no search results found" label used in diferent places
 #: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
 #: xbmc/video/dialogs/GUIDialogVideoInfo.cpp
 #: xbmc/video/windows/GUIWindowVideoBase.cpp
@@ -1338,9 +1344,11 @@ msgctxt "#304"
 msgid "Language"
 msgstr "Langue"
 
-#. Label of active/inactive radiobutton in PVR timer settings dialog
+#. Label of 'Enabled' radiobutton in PVR timer settings dialog
+#. Label of timers state in PVR timer/timer rule window
 #: system/peripherals.xml xbmc/filesystem/AddonsDirectory.cpp
 #: system/settings/settings.xml xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#305"
 msgid "Enabled"
 msgstr "Activé"
@@ -1375,7 +1383,9 @@ msgctxt "#312"
 msgid "(0=auto)"
 msgstr "(0=auto)"
 
+#. generic "cleaning database" label used in different places
 #: xbmc/music/MusicDatabase.cpp xbmc/pvr/PVRManager.cpp
+#: xbmc/settings/MediaSettings.cpp xbmc/video/VideoDatabase.cpp
 msgctxt "#313"
 msgid "Cleaning database"
 msgstr "Nettoyage de la base de données"
@@ -2381,7 +2391,8 @@ msgctxt "#548"
 msgid "Downmix multichannel audio to stereo"
 msgstr "Démultiplexer les multicanaux audio en stéréo"
 
-#: /xbmc/xbmc/pvr/windows/GUIViewStatePVR.cpp /xbmc/xbmc/utils/SortUtils.cpp
+#. generic "number" label used in different places
+#: xbmc/xbmc/pvr/windows/GUIViewStatePVR.cpp xbmc/xbmc/utils/SortUtils.cpp
 msgctxt "#549"
 msgid "Number"
 msgstr "Nombre"
@@ -2391,12 +2402,15 @@ msgctxt "#550"
 msgid "Sort by: %s"
 msgstr "Trier par : %s"
 
-#: xbmc/view/GUIViewState.cpp
+#. generic "name" label used in different places
+#: xbmc/xbmc/pvr/windows/GUIViewStatePVR.cpp xbmc/view/GUIViewState.cpp
 msgctxt "#551"
 msgid "Name"
 msgstr "Nom"
 
+#. generic "date" label used in different places
 #: addons/skin.estuary/1080i/Variables.xml
+#: xbmc/xbmc/pvr/windows/GUIViewStatePVR.cpp
 msgctxt "#552"
 msgid "Date"
 msgstr "Date"
@@ -2488,7 +2502,9 @@ msgctxt "#567"
 msgid "Play count"
 msgstr "Comptabilisation des lectures"
 
+#. generic "last played" label used in different places
 #: xbmc/dialogs/GUIDialogMediaFilter.cpp xbmc/playlists/SmartPlaylist.cpp
+#: xbmc/xbmc/pvr/windows/GUIViewStatePVR.cpp
 msgctxt "#568"
 msgid "Last played"
 msgstr "Dernière lecture"
@@ -2605,8 +2621,7 @@ msgstr "Une fois"
 #. Label used for buttons and select options as a reference to match all items or ocurrences.
 #: xbmc/dialogs/GUIDialogMediaFilter.cpp xbmc/filesystem/AddonsDirectory.cpp
 #: xbmc/PlayListPlayer.cpp xbmc/profiles/dialogs/GUIDialogLockSettings.cpp
-#: xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#593"
 msgid "All"
 msgstr "Toutes"
@@ -3398,7 +3413,10 @@ msgid "Start any time"
 msgstr "Commencé à tout moment"
 
 # Label of "Recording group" list in the PVR timer setting dialog
+#. Label of recording group list control in the PVR timer settings dialog
+#. Part of value of recording group list control in the PVR timer settings dialog (e.g. "Recording Group 1")
 #: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
+#: xbmc/pvr/timers/PVRTimerType.cpp
 msgctxt "#811"
 msgid "Recording group"
 msgstr "Groupe d’enregistrement"
@@ -3410,26 +3428,26 @@ msgctxt "#812"
 msgid "Prevent duplicate episodes"
 msgstr "Prévenir des épisodes en double"
 
-#. Label of pre-record margin spinner in PVR timer settings dialog
+#. Label of start padding time list control in PVR timer settings dialog
 #: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
 msgctxt "#813"
 msgid "Start padding time"
 msgstr "Durée de la marge de début"
 
-#. Label of post-record margin spinner in PVR timer settings dialog
+#. Label of end padding time list control in PVR timer settings dialog
 #: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
 msgctxt "#814"
 msgid "End padding time"
 msgstr "Durée de la marge de fin"
 
-#. Value of prevent duplicate episodes list control
-#: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
+#. Value of prevent duplicate episodes list control in PVR timer settings dialog
+#: xbmc/pvr/timers/PVRTimerType.cpp
 msgctxt "#815"
 msgid "Record all episodes"
 msgstr "Enregistrer tous les épisodes"
 
-#. Value of prevent duplicate episodes list control
-#: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
+#. Value of prevent duplicate episodes list control in PVR timer settings dialog
+#: xbmc/pvr/timers/PVRTimerType.cpp
 msgctxt "#816"
 msgid "Record only new episodes"
 msgstr "Enregistrer les nouveaux épisodes uniquement"
@@ -3440,7 +3458,7 @@ msgctxt "#817"
 msgid "End any time"
 msgstr "Fin à n’importe quel moment"
 
-#. Label of "MaxRecordings" list in the PVR timer setting dialog
+#. Label of "MaxRecordings" list in the PVR timer settings dialog
 #: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
 msgctxt "#818"
 msgid "Max recordings"
@@ -3480,49 +3498,42 @@ msgstr "Règle de minuterie supprimée"
 
 # empty string from id 829 to 830
 #. Weekday representation
-#: xbmc/dialogs/GUIDialogPVRTimerWeekdaysSettings.cpp
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#831"
 msgid "Mondays"
 msgstr "Les Lundis"
 
 #. Weekday representation
-#: xbmc/dialogs/GUIDialogPVRTimerWeekdaysSettings.cpp
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#832"
 msgid "Tuesdays"
 msgstr "Les Mardis"
 
 #. Weekday representation
-#: xbmc/dialogs/GUIDialogPVRTimerWeekdaysSettings.cpp
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#833"
 msgid "Wednesdays"
 msgstr "Les Mercredis"
 
 #. Weekday representation
-#: xbmc/dialogs/GUIDialogPVRTimerWeekdaysSettings.cpp
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#834"
 msgid "Thursdays"
 msgstr "Les Jeudis"
 
 #. Weekday representation
-#: xbmc/dialogs/GUIDialogPVRTimerWeekdaysSettings.cpp
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#835"
 msgid "Fridays"
 msgstr "Les Vendredis"
 
 #. Weekday representation
-#: xbmc/dialogs/GUIDialogPVRTimerWeekdaysSettings.cpp
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#836"
 msgid "Saturdays"
 msgstr "Les Samedis"
 
 #. Weekday representation
-#: xbmc/dialogs/GUIDialogPVRTimerWeekdaysSettings.cpp
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#837"
 msgid "Sundays"
@@ -3530,7 +3541,7 @@ msgstr "Les Dimanches"
 
 # empty strings from id 838 to 839
 #. Message in a dialog when a user wants to delete a timer that was scheduled by a timer rule
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#840"
 msgid ""
 "Do you only want to delete this timer or also the timer rule that has "
@@ -3540,25 +3551,25 @@ msgstr ""
 "de minuterie qui a été programmé ?"
 
 #. Label for No button in a dialog when a user wants to delete a timer that was scheduled by a timer rule
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#841"
 msgid "Only this"
 msgstr "Uniquement celle-ci"
 
 #. Label for a context menu entry to activate a currently inactive timer
-#: xbmc/pvr/windows/GUIWindowPVRTimers.cpp
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#843"
 msgid "Activate"
 msgstr "Activer"
 
 #. Label for a context menu entry to deactivate a currently active timer
-#: xbmc/pvr/windows/GUIWindowPVRTimers.cpp
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#844"
 msgid "Deactivate"
 msgstr "Désactiver"
 
 #. Message in a dialog when a user wants to delete a timer rule
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#845"
 msgid ""
 "Are you sure you want to delete this timer rule and all timers it has "
@@ -3568,19 +3579,19 @@ msgstr ""
 "les minuteries qui ont été programmé ?"
 
 #. Message in a dialog when a user wants to delete a timer
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#846"
 msgid "Are you sure you want to delete this timer?"
 msgstr "Êtes-vous sûr de vouloir supprimer cette minuterie ?"
 
 #. Heading for a dialog for confirming to stop an active recording
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#847"
 msgid "Confirm stop recording"
 msgstr "Confirmer l’arrêt de l’enregistrement"
 
 #. Message in a dialog when a user wants to stop an active recording
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#848"
 msgid "Are you sure you want to stop this recording?"
 msgstr "Êtes-vous sûr de que vouloir arrêter cet enregistrement ?"
@@ -4785,7 +4796,7 @@ msgctxt "#10139"
 msgid "Pictures / Info"
 msgstr "Images / Info"
 
-#: xbmc/guilib/WindowIDs.h
+#: addons/skin.estuary/1080i/MyGames.xml xbmc/guilib/WindowIDs.h
 msgctxt "#10140"
 msgid "Add-on settings"
 msgstr "Paramètres de l'extension"
@@ -4956,22 +4967,22 @@ msgctxt "#12014"
 msgid "Last updated"
 msgstr "Dernière mise à jour"
 
+# empty strings from id 12015 to 12020
 #. Label of various controls for starting playback from the beginning
-#: xbmc/Autorun.cpp xbmc/pvr/windows/GUIWindowPVRBase.cpp
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+#: xbmc/Autorun.cpp xbmc/pvr/PVRContextMenus.cpp xbmc/pvr/PVRGUIActions.cpp
 #: xbmc/video/windows/GUIWindowVideoBase.cpp
 msgctxt "#12021"
-msgid "Start from beginning"
-msgstr "Démarrer depuis le début"
+msgid "Play from beginning"
+msgstr "Lire depuis le début"
 
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
-#: xbmc/video/windows/GUIWindowVideoBase.cpp
+#. Label of various controls for resuming playback from a certain point in time
+#: xbmc/pvr/PVRGUIActions.cpp xbmc/video/windows/GUIWindowVideoBase.cpp
 msgctxt "#12022"
 msgid "Resume from %s"
 msgstr "Reprendre depuis %s"
 
 #. Label of video/recordings context menu items
-#: xbmc/pvr/windows/PVRGUIWindowRecordings.cpp xbmc/video/ContextMenus.cpp
+#: xbmc/video/ContextMenus.cpp
 msgctxt "#12023"
 msgid "Play from beginning"
 msgstr "Reprendre depuis le début"
@@ -5493,6 +5504,7 @@ msgctxt "#13101"
 msgid "Let driver choose (requires restart)"
 msgstr "Choisi par le pilote (redémarrage nécessaire)"
 
+#. generic "disabled" label used in different places
 #: xbmc/peripherals/bus/PeripheralBus.cpp system/settings/settings.xml
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp xbmc/addons/GUIWindowAddonBrowser.cpp
 msgctxt "#13106"
@@ -5509,7 +5521,7 @@ msgctxt "#13108"
 msgid "Always enabled"
 msgstr "Toujours activé"
 
-#: unknown
+#. unused?
 msgctxt "#13109"
 msgid "Test & apply the resolution"
 msgstr "Tester & appliquer la résolution"
@@ -5524,38 +5536,42 @@ msgctxt "#13111"
 msgid "Would you like to keep this change?"
 msgstr "Voulez-vous conserver ce changement ?"
 
-#: unknown
+#. unused?
 msgctxt "#13112"
 msgid "High quality upscaling"
 msgstr "Conversion en définition supérieure Haute Qualité"
 
-#: unknown
+#. used by several skins
 msgctxt "#13113"
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: unknown
+#. unused?
 msgctxt "#13114"
 msgid "Enabled for SD content"
 msgstr "Activé pour contenu SD"
 
+#. unused?
 msgctxt "#13115"
 msgid "Always enabled"
 msgstr "Toujours activé"
 
+#. unused?
 msgctxt "#13116"
 msgid "Upscaling method"
 msgstr "Méthode de conversion en définition supérieure"
 
+#. unused?
 msgctxt "#13117"
 msgid "Bicubic"
 msgstr "Bicubique"
 
+#. unused?
 msgctxt "#13118"
 msgid "Lanczos"
 msgstr "Lanczos"
 
-#: unknown
+#. unused?
 msgctxt "#13119"
 msgid "Sinc"
 msgstr "Sinc"
@@ -5565,6 +5581,7 @@ msgctxt "#13120"
 msgid "VDPAU"
 msgstr "VDPAU"
 
+#: xbmc/Application.cpp
 msgctxt "#13123"
 msgid "Keep skin?"
 msgstr "Conserver le thème ?"
@@ -5574,12 +5591,12 @@ msgctxt "#13130"
 msgid "Blank other displays"
 msgstr "Vider les autres écrans"
 
-#: unknown
+#. unused?
 msgctxt "#13131"
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: unknown
+#. unused?
 msgctxt "#13132"
 msgid "Blank displays"
 msgstr "Vider l'écran"
@@ -5630,7 +5647,7 @@ msgctxt "#13161"
 msgid "Primary DNS"
 msgstr "DNS Primaire "
 
-#: unknown
+#. unused?
 msgctxt "#13162"
 msgid "Initialise failed"
 msgstr "L'initialisation a échoué"
@@ -5640,22 +5657,22 @@ msgctxt "#13170"
 msgid "Never"
 msgstr "Jamais"
 
-#: unknown
+#. unused?
 msgctxt "#13171"
 msgid "Immediately"
 msgstr "Immédiatement"
 
-#: unknown
+#. unused?
 msgctxt "#13172"
 msgid "After %i secs"
 msgstr "Après %i secs"
 
-#: unknown
+#. unused?
 msgctxt "#13173"
 msgid "HDD install date:"
 msgstr "HDD Installé le :"
 
-#: unknown
+#. unused?
 msgctxt "#13174"
 msgid "HDD power cycle count:"
 msgstr "Disque dur Nb. de cycles marche/arrêt complets :"
@@ -5674,17 +5691,24 @@ msgctxt "#13201"
 msgid "Delete profile '%s'?"
 msgstr "Supprimer le profil '%s' ?"
 
-#: unknown
+#. used by several skins
 msgctxt "#13204"
 msgid "Last loaded profile:"
 msgstr "Dernier profil chargé :"
 
-#: xbmc/addons/GUIDialogAddonInfo.cpp xbmc/peripherals/devices/Peripheral.cpp
+#. generic "unknown" label used in different places
+#: xbmc/GUIInfoManager.cpp xbmc/LangInfo.cpp xbmc/music/MusicDatabase.cpp
 #: xbmc/peripherals/bus/PeripheralBus.cpp
+#: xbmc/peripherals/devices/Peripheral.cpp xbmc/platform/win32/WIN32Util.cpp
+#: xbmc/pvr/addons/PVRClients.cpp xbmc/pvr/channels/PVRChannel.cpp
+#: xbmc/pvr/PVRGUIInfo.cpp
+#: xbmc/video/dialogs/GUIDialogAudioSubtitleSettings.cpp
+#: xbmc/video/PlayerController.cpp
 msgctxt "#13205"
 msgid "Unknown"
 msgstr "Inconnu"
 
+#. unused?
 msgctxt "#13206"
 msgid "Overwrite"
 msgstr "Écraser"
@@ -5695,32 +5719,39 @@ msgctxt "#13207"
 msgid "Forced only"
 msgstr "Forcé uniquement"
 
+#: xbmc/utils/AlarmClock.cpp
 msgctxt "#13208"
 msgid "Alarm clock"
 msgstr "Alarme"
 
+#: xbmc/interfaces/builtins/GUIBuiltins.cpp
 msgctxt "#13209"
 msgid "Alarm clock interval (in minutes)"
 msgstr "Intervalle d'alarme (en minutes)"
 
+#: xbmc/utils/AlarmClock.cpp
 msgctxt "#13210"
 msgid "Started, alarm in %im"
 msgstr "Démarré, alarme dans %im"
 
+#: xbmc/utils/AlarmClock.cpp
 msgctxt "#13211"
 msgid "Alarm!"
 msgstr "Alarme !"
 
+#: xbmc/utils/AlarmClock.cpp
 msgctxt "#13212"
 msgid "Cancelled with %im%is left"
 msgstr "Annulé avec %im%is restantes"
 
 #. minutes (left from countdown)
+#: xbmc/GUIInfoManager.cpp
 msgctxt "#13213"
 msgid "%2.0fm"
 msgstr "%2.0fm"
 
 #. seconds (left from countdown)
+#: xbmc/GUIInfoManager.cpp
 msgctxt "#13214"
 msgid "%2.0fs"
 msgstr "%2.0fs"
@@ -7531,26 +7562,31 @@ msgstr ""
 "Permettre le contrôle à distance des applications sur d’autres systèmes"
 
 # empty strings from id 14278 to 14299
+#. "pvr manager" settings group label
 #: system/settings/settings.xml
 msgctxt "#14300"
 msgid "PVR Manager"
 msgstr "Gestionnaire PVR"
 
+#. pvr "channels" settings group label
 #: system/settings/settings.xml
 msgctxt "#14301"
 msgid "Channels"
 msgstr "Chaînes"
 
+#. pvr "icons" settings group label
 #: system/settings/settings.xml
 msgctxt "#14302"
 msgid "Icons"
 msgstr "Icônes"
 
+#. pvr "epg updates" settings group label
 #: system/settings/settings.xml
 msgctxt "#14303"
 msgid "Updates"
 msgstr "Mises à jour"
 
+#. pvr "RDS" settings group label
 #: system/settings/settings.xml
 msgctxt "#14304"
 msgid "RDS Radio"
@@ -7606,6 +7642,7 @@ msgctxt "#15015"
 msgid "Remove"
 msgstr "Supprimer"
 
+#: system/settings/settings.xml
 #: xbmc/settings/dialogs/GUIDialogAudioDSPSettings.cpp
 msgctxt "#15016"
 msgid "Games"
@@ -7728,9 +7765,7 @@ msgstr "Contenu:"
 
 # empty strings from id 15043 to 15046
 #. Label for a context menu entry and dialog button to open audio DSP settings dialog
-#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
-#: xbmc/music/windows/GUIWindowMusicBase.cpp
+#: xbmc/pvr/PVRContextMenus.cpp xbmc/music/windows/GUIWindowMusicBase.cpp
 #: addons/skin.estuary/1080i/Custom_1105_MusicOSDSettings.xml
 msgctxt "#15047"
 msgid "Audio DSP settings"
@@ -8199,7 +8234,8 @@ msgctxt "#16028"
 msgid "Enter value"
 msgstr "Veuillez saisir une valeur"
 
-#: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
+#. PVR error messages dialog text.
+#: xbmc/addons/PVRClients.cpp xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
 msgctxt "#16029"
 msgid "Check the log for more information about this message."
 msgstr "Consultez le journal pour plus d'informations sur ce message."
@@ -8268,8 +8304,7 @@ msgid "Watched"
 msgstr "Vus"
 
 #. Label for a context menu entry to mark an item as watched
-#: xbmc/music/windows/GUIWindowMusicNav.cpp
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+#: xbmc/music/windows/GUIWindowMusicNav.cpp xbmc/pvr/PVRContextMenus.cpp
 #: xbmc/video/dialogs/GUIDialogVideoInfo.cpp
 #: xbmc/video/windows/GUIWindowVideoNav.cpp
 msgctxt "#16103"
@@ -8277,8 +8312,7 @@ msgid "Mark as watched"
 msgstr "Marquer comme vu"
 
 #. Label for a context menu entry to mark an item as unwatched
-#: xbmc/music/windows/GUIWindowMusicNav.cpp
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+#: xbmc/music/windows/GUIWindowMusicNav.cpp xbmc/pvr/PVRContextMenus.cpp
 #: xbmc/video/dialogs/GUIDialogVideoInfo.cpp
 #: xbmc/video/windows/GUIWindowVideoNav.cpp
 msgctxt "#16104"
@@ -8567,76 +8601,91 @@ msgstr ""
 "ou utiliser une phrase pour une recherche précise, comme \"Le magicien d'Oz"
 "\"."
 
-#. Label of a button / context menu entry to find similar programs (matching a given epg event)
-#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
-#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+#. Label of a context menu entry to find similar programs (matching a given epg event)
+#: xbmc/pvr/PVRContextMenuItem.cpp
 msgctxt "#19003"
 msgid "Find similar"
 msgstr "Trouver les mêmes"
 
+#. label for epg import progess control
 #: xbmc/epg/EpgContainer.cpp
 msgctxt "#19004"
 msgid "Importing guide from clients"
 msgstr "Importation du guide depuis les clients"
 
-#: addons/skin.estuary/1080i/VideoFullScreen.xml
+#. used by several skins
 msgctxt "#19005"
 msgid "PVR stream information"
 msgstr "Information du flux de l'Enregistreur Vidéo"
 
+#. label for 'tuner name' in pvr player information dialog
+#: addons/skin.estuary/1080i/DialogPlayerProcessInfo.xml
 msgctxt "#19006"
 msgid "Receiving device"
 msgstr "Dispositif de réception"
 
+#. label for 'device status' in pvr player information dialog
+#: addons/skin.estuary/1080i/DialogPlayerProcessInfo.xml
 msgctxt "#19007"
 msgid "Device status"
 msgstr "Etat du dispositif"
 
-#: addons/skin.estuary/1080i/VideoFullScreen.xml
+#. label for 'signal quality' in pvr player information dialog
+#: addons/skin.estuary/1080i/DialogPlayerProcessInfo.xml
 msgctxt "#19008"
 msgid "Signal quality"
 msgstr "Qualité du signal"
 
-#: addons/skin.estuary/1080i/VideoFullScreen.xml
+#. label for 'signal noise ratio' in pvr player information dialog
+#: addons/skin.estuary/1080i/DialogPlayerProcessInfo.xml
 msgctxt "#19009"
 msgid "SNR"
 msgstr "Rapport Signal Bruit"
 
+#. label for 'bit error ratio' in pvr player information dialog
+#: addons/skin.estuary/1080i/DialogPlayerProcessInfo.xml
 msgctxt "#19010"
 msgid "BER"
 msgstr "Taux d'erreurs binaires"
 
+#. label for 'number of uncorrected errors' in pvr player information dialog
+#: addons/skin.estuary/1080i/DialogPlayerProcessInfo.xml
 msgctxt "#19011"
 msgid "UNC"
 msgstr "Paquets perdus"
 
+#. label for PVR backend name in system information's PVR section
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#19012"
 msgid "PVR backend"
 msgstr "Serveur Enregistreur Vidéo"
 
+#. PVR 'channel encryption system' textual presentation for free to air channels
 #: xbmc/pvr/channels/PVRChannel.cpp
 msgctxt "#19013"
 msgid "Free to air"
 msgstr "En clair"
 
+#. PVR 'channel encryption system' textual presentation for 'fixed' channels
 #: xbmc/pvr/channels/PVRChannel.cpp
 msgctxt "#19014"
 msgid "Fixed"
 msgstr "Fixe"
 
+#. label for 'channel encryption' in pvr player information dialog
+#: addons/skin.estuary/1080i/DialogPlayerProcessInfo.xml
 msgctxt "#19015"
 msgid "Encryption"
 msgstr "Brouillage"
 
-#: unused
+#. unused?
 msgctxt "#19016"
 msgid "PVR backend %i - %s"
 msgstr "Serveur Enregistreur Vidéo %i - %s"
 
-#: xbmc/dialogs/GUIDialogMediaSource.cpp
-#: addons/skin.estuary/1080i/Variables.xml
+#. generic label for pvr recordings used in different places
+#: addons/skin.estuary/1080i/Home.xml addons/skin.estuary/1080i/Variables.xml
+#: xbmc/dialogs/GUIDialogMediaSource.cpp xbmc/filesystem/PVRDirectory.cpp
 msgctxt "#19017"
 msgid "Recordings"
 msgstr "Enregistrements"
@@ -8647,33 +8696,42 @@ msgctxt "#19018"
 msgid "Folder with channel icons"
 msgstr "Chemin du dossier où sont stockés les icônes des chaînes..."
 
-#: xbmc/windows/GUIWindowSystemInfo.cpp
+#. label for PVR backend number of channels in system information's PVR section
 #: addons/skin.estuary/1080i/DialogPVRGuideOSD.xml
 #: addons/skin.estuary/1080i/DialogPVRChannelManager.xml
 #: addons/skin.estuary/1080i/DialogPVRChannelsOSD.xml
 #: addons/skin.estuary/1080i/Variables.xml addons/skin.estuary/1080i/Home.xml
+#: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#19019"
 msgid "Channels"
 msgstr "Chaînes"
 
+#. generic label for 'Live TV' used in different places
+#: addons/skin.estuary/1080i/Home.xml
+#: addons/skin.estuary/1080i/SkinSettings.xml:
+#: addons/skin.estuary/1080i/Variables.xml
 #: xbmc/pvr/channels/PVRChannelGroupsContainer.cpp xbmc/pvr/PVRManager.cpp
-#: addons/skin.estuary/1080i/Includes.xml addons/skin.estuary/1080i/Home.xml
 msgctxt "#19020"
 msgid "TV"
 msgstr "TV"
 
-#: xbmc/pvr/channels/PVRChannelGroupsContainer.cpp xbmc/pvr/PVRManager.cpp
+#. generic label for pvr-provided 'Radio' used in different places
 #: addons/skin.estuary/1080i/Home.xml
+#: addons/skin.estuary/1080i/SkinSettings.xml
+#: addons/skin.estuary/1080i/Variables.xml
+#: xbmc/pvr/channels/PVRChannelGroupsContainer.cpp xbmc/pvr/PVRManager.cpp
 msgctxt "#19021"
 msgid "Radio"
 msgstr "Radio"
 
+#. generic 'hidden' label used in different places
 #: xbmc/pvr/dialogs/GUIDialogPVRGroupManager.cpp
 #: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
 msgctxt "#19022"
 msgid "Hidden"
 msgstr "Cachées"
 
+#. generic label for 'Live TV channels' used in different places
 #: xbmc/pvr/dialogs/GUIDialogPVRGroupManager.cpp
 #: addons/skin.estuary/1080i/Variables.xml
 #: addons/skin.estuary/1080i/DialogPVRChannelManager.xml
@@ -8681,6 +8739,7 @@ msgctxt "#19023"
 msgid "TV channels"
 msgstr "Chaînes TV"
 
+#. generic label for pvr-provided 'Radio channels' used in different places
 #: xbmc/pvr/dialogs/GUIDialogPVRGroupManager.cpp
 #: addons/skin.estuary/1080i/DialogPVRChannelManager.xml
 #: addons/skin.estuary/1080i/Variables.xml
@@ -8688,51 +8747,68 @@ msgctxt "#19024"
 msgid "Radio channels"
 msgstr "Chaînes Radio"
 
+#. label for PVR backend number of timers in system information's PVR section
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#19025"
 msgid "Upcoming recordings"
 msgstr "Enregistrements programmés "
 
+#. label for "add timer..." list item used in pvr timers / timer rules window
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp xbmc/pvr/timers/PVRTimers.cpp
 msgctxt "#19026"
 msgid "Add timer..."
 msgstr "Ajouter une minuterie..."
 
+#. unused?
 msgctxt "#19027"
 msgid "No search results"
 msgstr "Aucun résultat"
 
+#. label used in pvr guide window views to indicate that there are no epg data for the current view (channel, now, next)
+#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
 msgctxt "#19028"
 msgid "No guide entries"
 msgstr "Aucune entrée de guide"
 
+#. generic 'channel' label used in different places
 #: addons/skin.estuary/1080i/DialogFullScreenInfo.xml
-#: addons/skin.estuary/1080i/MyPVRGuide.xml
+#: xbmc/filesystem/PluginDirectory.cpp xbmc/pvr/channels/PVRChannel.cpp
+#: xbmc/pvr/PVRGUIActions.cpp xbmc/utils/SortUtils.cpp
 msgctxt "#19029"
 msgid "Channel"
 msgstr "Chaîne"
 
+#. generic 'now' label used in diffrent places
 #: addons/skin.estuary/1080i/DialogPVRRadioRDSInfo.xml
 #: addons/skin.estuary/1080i/MyWeather.xml
+#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
 msgctxt "#19030"
 msgid "Now"
 msgstr "Maintenant"
 
-#. Label prefix for the next playing tv-show (PVR) or media, like "Next: The Simpsons", "Next: AC/DC - Thunderstruck". It's also used as EPG display mode (EPG: timeline / now / next)
+#. generic 'next' label used in diffrent places in pvr context
 #: addons/skin.estuary/1080i/DialogFullScreenInfo.xml
 #: addons/skin.estuary/1080i/DialogPVRRadioRDSInfo.xml
+#: addons/skin.estuary/1080i/MyPVRChannels.xml
+#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
 msgctxt "#19031"
 msgid "Next"
 msgstr "Suivant"
 
+#. 'timeline' label used in pvr guide window
+#. xbmc/pvr/windows/GUIWindowPVRGuide.cpp
 #: addons/skin.estuary/1080i/MyPVRGuide.xml
 msgctxt "#19032"
 msgid "Timeline"
 msgstr "Chronologie"
 
+#. generic 'information' label used in different places, like labels for message box headers
 #: xbmc/event/windows/GUIWindowEventLog.cpp xbmc/pvr/addons/PVRClients.cpp
-#: xbmc/pvr/dialogs/GUIDialogPVRGuideInfo.cpp xbmc/pvr/PVRManager.cpp
-#: xbmc/pvr/timers/PVRTimers.cpp xbmc/pvr/windows/GUIWindowPVRBase.cpp
-#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
+#: xbmc/pvr/dialogs/GUIDialogPVRGroupManager.cpp
+#: xbmc/pvr/dialogs/GUIDialogPVRGuideInfo.cpp
+#: xbmc/pvr/recordings/PVRRecording.cpp xbmc/pvr/timers/PVRTimerInfoTag.cpp
+#: xbmc/pvr/timers/PVRTimers.cpp xbmc/pvr/windows/GUIWindowPVRTimersBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp xbmc/pvr/PVRManager.cpp
 #: xbmc/video/windows/GUIWindowVideoBase.cpp
 #: addons/skin.estuary/1080i/VideoOSD.xml
 msgctxt "#19033"
@@ -8740,20 +8816,22 @@ msgid "Information"
 msgstr "Information"
 
 #. message box text stating that a timer is already set for a given epg event.
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19034"
 msgid "There is already a timer set for this event"
 msgstr "Il y a déjà une minuterie programmée pour cet événement"
 
+#. message box text stating that a pvr channel could not be played.
+#: xbmc/pvr/PVRGUIActions.cpp xbmc/pvr/PVRManager.cpp
 msgctxt "#19035"
 msgid ""
-"%s couldn't be played. Check the log for more information about this message."
+"%s can't be played. Check the log for more information about this message."
 msgstr ""
-"Impossible de lire %s. Consultez le journal pour plus d'informations sur ce "
-"message."
+"%s ne peut être lu. Veuillez vérifier le fichier de log pour plus "
+"d’informations à propos de ce message."
 
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
-#: xbmc/video/windows/GUIWindowVideoBase.cpp
+#. message box text stating that a recording could not be played.
+#: xbmc/pvr/PVRGUIActions.cpp xbmc/video/windows/GUIWindowVideoBase.cpp
 msgctxt "#19036"
 msgid ""
 "This recording can't be played. Check the log for more information about "
@@ -8762,16 +8840,20 @@ msgstr ""
 "Impossible de lire cet enregistrement. Consultez le journal pour plus "
 "d'informations sur ce message."
 
+#. pvr settings "show signal quality" label
 #: system/settings/settings.xml
 msgctxt "#19037"
 msgid "Show signal quality"
 msgstr "Afficher la qualité du signal"
 
-#: xbmc/pvr/addons/PVRClients.cpp xbmc/pvr/windows/GUIWindowPVRChannels.cpp
+#. message box text stating that a PVR backend does not support a certain functionality.
+#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#19038"
 msgid "Not supported by the PVR backend."
 msgstr "Non supporté par le serveur de l'Enregistreur Vidéo."
 
+#. message box text asking for confirmation to hide a channel.
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19039"
 msgid "Are you sure you want to hide this channel?"
 msgstr "Êtes-vous sûr de vouloir masquer cette chaîne ?"
@@ -8781,19 +8863,25 @@ msgctxt "#19040"
 msgid "Timers"
 msgstr "Minuteurs"
 
+#. label for "rename recording" confirmation input dialog
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19041"
 msgid "Are you sure you want to rename this recording?"
 msgstr "Êtes-vous sûr de vouloir renommer cet enregistrement ?"
 
+#. label for "rename timer" confirmation input dialog
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19042"
 msgid "Are you sure you want to rename this timer?"
 msgstr "Voulez-vous vraiment renommer cette minuterie ?"
 
+#. pvr settings "recording" category label
 #: system/settings/settings.xml
 msgctxt "#19043"
 msgid "Recording"
 msgstr "Enregistrement"
 
+#: @@@ unused?
 msgctxt "#19044"
 msgid ""
 "Please check your configuration. Check the log for more information about "
@@ -8802,6 +8890,7 @@ msgstr ""
 "Veuillez vérifier votre configuration. Consultez le journal pour plus "
 "d'informations sur ce message."
 
+#: @@@ unused?
 msgctxt "#19045"
 msgid ""
 "No PVR clients have been started yet. Wait for the PVR clients to start up. "
@@ -8811,27 +8900,30 @@ msgstr ""
 "clients d'enregistrement. Consultez le journal pour plus d'informations sur "
 "ce message."
 
+#: @@@ unused?
 msgctxt "#19046"
 msgid "New channel"
 msgstr "Nouvelle chaîne"
 
 #. Label for a context menu entry to open an EPG event information dialog
-#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
-#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
-#: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
-#: xbmc/pvr/windows/GUIWindowPVRtimers.cpp
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#19047"
 msgid "Programme information"
 msgstr "Information du programme"
 
+#. pvr settings "group manager" action button label
+#. Label for a context menu entry to open the pvr channel group manager dialog
+#: system/settings/settings.xml xbmc/pvr/windows/GUIWindowPVRChannels.cpp
 msgctxt "#19048"
 msgid "Group manager"
 msgstr "Gestionnaire de groupe"
 
+#: @@@ unused?
 msgctxt "#19049"
 msgid "Show channel"
 msgstr "Afficher la chaîne"
 
+#: @@@ unused?
 msgctxt "#19050"
 msgid "Show visible channels"
 msgstr "Afficher les chaînes disponibles"
@@ -8841,34 +8933,40 @@ msgctxt "#19051"
 msgid "Show hidden channels"
 msgstr "Afficher les chaînes masquées"
 
+#: @@@ unused?
 msgctxt "#19052"
 msgid "Move channel to:"
 msgstr "Déplacer la chaîne vers :"
 
 #. Label for a context menu entry to open recording info dialog
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#19053"
 msgid "Recording information"
 msgstr "Information d'enregistrement"
 
+#. header label for hide channel confirmation message box
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19054"
 msgid "Hide channel"
 msgstr "Masquer la chaîne"
 
-#: xbmc/epg/EpgInfoTag.cpp xbmc/pvr/windows/GUIWindowPVRBase.cpp
-#: addons/skin.estuary/1080i/View_50_List.xml
+#. generic text used in several places to state that there is no information available
 #: addons/skin.estuary/1080i/DialogMusicInfo.xml
+#: addons/skin.estuary/1080i/DialogVideoInfo.xml
+#: addons/skin.estuary/1080i/Includes_PVR.xml
+#: addons/skin.estuary/1080i/MyGames.xml
+#: addons/skin.estuary/1080i/MyMusicNav.xml
 #: addons/skin.estuary/1080i/MyPics.xml
 #: addons/skin.estuary/1080i/MyVideoNav.xml
-#: addons/skin.estuary/1080i/Includes_PVR.xml
-#: addons/skin.estuary/1080i/DialogVideoInfo.xml
-#: addons/skin.estuary/1080i/MyMusicNav.xml
+#: addons/skin.estuary/1080i/View_50_List.xml xbmc/epg/EpgInfoTag.cpp
+#: xbmc/FileItem.cpp xbmc/GUIInfoManager.cpp xbmc/pvr/PVRManager.cpp
+#: xbmc/utils/SystemInfo.cpp
 msgctxt "#19055"
 msgid "No information available"
 msgstr "Pas d'information disponible"
 
 #. Label for a new timer
-#: xbmc/pvr/timers/PVRTimers.cpp xbmc/pvr/timers/PVRTimerInfoTag.cpp
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 #: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
 msgctxt "#19056"
 msgid "New timer"
@@ -8886,55 +8984,61 @@ msgctxt "#19058"
 msgid "Timer enabled"
 msgstr "Minuterie activée"
 
+#. Label for a context menu entry and for a button to stop a recording
+#: xbmc/pvr/PVRContextMenus.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideInfo.cpp
 msgctxt "#19059"
 msgid "Stop recording"
 msgstr "Arrêter l'enregistrement"
 
 #. Label for a context menu entry to delete a timer associated with an epg event and for a button to delete a timer in epg event info dialog
-#: xbmc/pvr/dialogs/GUIDialogPVRGuideInfo.cpp
-#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
-#: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
+#: xbmc/pvr/PVRContextMenus.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideInfo.cpp
 msgctxt "#19060"
 msgid "Delete timer"
 msgstr "Supprimer la minuterie"
 
 #. Label for a context menu entry to open the timer settings dialog
-#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
-#: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
-#: addons/skin.estuary/1080i/DialogPVRInfo.xml
+#: xbmc/pvr/PVRContextMenus.cpp addons/skin.estuary/1080i/DialogPVRInfo.xml
 msgctxt "#19061"
 msgid "Add timer"
 msgstr "Ajouter une minuterie"
 
+#: @@@ unused?
 msgctxt "#19062"
 msgid "Sort by: Channel"
 msgstr "Trier par : Chaîne"
 
+#. Label for epg grid window "jump to grid start" (oldest available events) context menu entry
+#: /xbmc/pvr/windows/GUIWindowPVRGuide.cpp
 msgctxt "#19063"
 msgid "Go to beginning"
 msgstr "Aller au commencement"
 
+#. Label for epg grid window "jump to grid end" (youngest available events) context menu entry
+#: /xbmc/pvr/windows/GUIWindowPVRGuide.cpp
 msgctxt "#19064"
 msgid "Go to end"
 msgstr "Aller à la fin"
 
+#. Label for timer settings dialog header
+#: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
 msgctxt "#19065"
 msgid "Timer settings"
 msgstr "Paramètres de la minuterie"
 
 #. Name of a shortcut to a custom folder for channel icons
-#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
 #: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
 msgctxt "#19066"
 msgid "Channel icons"
 msgstr "Icônes des chaînes"
 
+#. message box text stating that an epg event is already being recorded
 #: xbmc/pvr/dialogs/GUIDialogPVRGuideInfo.cpp
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19067"
 msgid "This event is already being recorded."
 msgstr "Cet évènement est déjà en cours d'enregistrement"
 
+#. error box text stating that a given pvr recording could not be deleted
 #: xbmc/pvr/recording/PVRRecording.cpp
 msgctxt "#19068"
 msgid ""
@@ -8944,25 +9048,31 @@ msgstr ""
 "Impossible d'effacer cet enregistrement. Consultez le journal pour plus "
 "d'informations sur ce message."
 
-#. Electronic program guide. used by ?
+#. Electronic program guide
 #: addons/skin.estuary/1080i/Variables.xml
 msgctxt "#19069"
 msgid "Guide"
 msgstr "Guide"
 
+#. Label for epg grid window "jump to now" (current epg events) context menu entry
+#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
 msgctxt "#19070"
 msgid "Go to now"
 msgstr "Y aller maintenant"
 
+#. pvr settings "epg update interval" setting label
+#: system/settings/settings.xml
 msgctxt "#19071"
 msgid "Update interval"
 msgstr "Intervalle de mise à jour"
 
+#. pvr settings "do not store epg data in local database" setting label
 #: system/settings/settings.xml
 msgctxt "#19072"
 msgid "Don't cache in local database"
 msgstr "Ne pas mettre en cache dans la base de données locale"
 
+#. pvr settings "delay channel switch" setting label
 #: system/settings/settings.xml
 msgctxt "#19073"
 msgid "Delay channel switch"
@@ -8997,17 +9107,19 @@ msgctxt "#19078"
 msgid "Channel"
 msgstr "Chaîne"
 
-#. heading for PVR timer days of week settings dialog
+#. Heading for PVR timer days of week settings dialog
 #. Label of days of week button in PVR timer settings dialog
 #: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
 msgctxt "#19079"
 msgid "Days of week"
 msgstr "Jours de la semaine"
 
+#. used by several skins
 msgctxt "#19080"
 msgid "Begin"
 msgstr "Début"
 
+#. used by several skins
 msgctxt "#19081"
 msgid "End"
 msgstr "Fin"
@@ -9030,6 +9142,8 @@ msgctxt "#19084"
 msgid "First day"
 msgstr "Premier jour"
 
+#. default for channels without a name. place holder will be filled with channel number.
+#: xbmc/pvr/channels/PVRChannel.cpp
 msgctxt "#19085"
 msgid "Unknown channel %u"
 msgstr "Chaîne inconnue %u"
@@ -9086,7 +9200,7 @@ msgid "Instant recording: %s"
 msgstr "Enregistrement instantané : %s"
 
 #. error message displayed in case adding a timer failed because no suitable epg-based timer type could be found.
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19094"
 msgid ""
 "Timer creation failed. The PVR add-on does not support a suitable timer type."
@@ -9095,7 +9209,7 @@ msgstr ""
 "un type de minuterie approprié."
 
 #. error message displayed in case adding a timer rule failed because no suitable epg-based timer rule type could be found.
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19095"
 msgid ""
 "Timer rule creation failed. The PVR add-on does not support a suitable timer "
@@ -9104,65 +9218,83 @@ msgstr ""
 "Echec de la création de la règle de minuterie. L'extension PVR ne prend pas "
 "en charge un type de règle de minuterie approprié."
 
+# empty string with id 19096
+#. label of the help text for the timer name edit field in PVR timer settings dialog
+#: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
 msgctxt "#19097"
-msgid "Enter the name for the recording"
-msgstr "Veuillez saisir le nom de l'enregistrement"
+msgid "Enter the name for the timer"
+msgstr "Entrer le nom de la minuterie"
 
+#. generic warning label used at several places
 #: xbmc/addons/AddonSystemSettings.cpp
 #: xbmc/cores/AudioEngine/DSPAddons/ActiveAEDSP.cpp
 #: xbmc/pvr/channels/PVRChannelGroupInternal.cpp xbmc/pvr/PVRManager.cpp
-#: xbmc/settings/dialogs/GUIDialogAudioDSPManager.cpp:
+#: xbmc/settings/dialogs/GUIDialogAudioDSPManager.cpp
 msgctxt "#19098"
 msgid "Warning!"
 msgstr "Avertissement !"
 
-#: xbmc/pvr/PVRGUIInfo.cpp
+#. service label in pvr info dialog
+#: addons/skin.estuary/1080i/DialogPlayerProcessInfo.xml
 msgctxt "#19099"
 msgid "Service"
 msgstr "Service"
 
-#: xbmc/pvr/PVRGUIInfo.cpp
+#. mux label in pvr info dialog
+#: addons/skin.estuary/1080i/DialogPlayerProcessInfo.xml
 msgctxt "#19100"
 msgid "Mux"
 msgstr "Mux"
 
-#: xbmc/pvr/PVRGUIInfo.cpp
+#. provider label in pvr info dialog
+#: addons/skin.estuary/1080i/DialogPlayerProcessInfo.xml
 msgctxt "#19101"
 msgid "Provider"
 msgstr "Fournisseur"
 
+#. message box text prompting user to switch to nother channel
 #: xbmc/pvr/channels/PVRChannelGroupInternal.cpp
 msgctxt "#19102"
 msgid "Please switch to another channel."
 msgstr "Veuillez changer de chaîne"
 
 #. Title of numeric dialog for choosing a channel by entering a number
-#: xbmc/pvr/windows/GUIWindowPVRCommon.cpp
+#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
+#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
 msgctxt "#19103"
 msgid "Go to channel"
 msgstr "Aller à la chaîne"
 
+#. label of the help text for the recording folder edit field in PVR timer settings dialog
+#: xbmc/pvr/dialogs/GUIDialogPVRTimerSettings.cpp
 msgctxt "#19104"
 msgid "Enter the name of the folder for the recording"
 msgstr "Veuillez saisir le nom du dossier pour l'enregistrement"
 
+#. unused?
 msgctxt "#19105"
 msgid "Please select a channel"
 msgstr "Veuillez sélectionner une chaîne"
 
+#. part of timer information text (e.g. "Next timer on 10/10/2016 at 9:00 AM")
+#: xbmc/pvr/PVRGUIInfo.cpp
 msgctxt "#19106"
 msgid "Next timer on"
 msgstr "Prochaine minuterie"
 
+#. part of timer information text (e.g. "Next timer on 10/10/2016 at 9:00 AM")
+#: xbmc/pvr/PVRGUIInfo.cpp xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19107"
 msgid "at"
 msgstr "à"
 
+#. label for PVR settings "tv fallback framerate" (in Hz) selector
 #: system/settings/settings.xml
 msgctxt "#19108"
 msgid "Fallback framerate"
 msgstr "Taux de rafraîchissement de secours"
 
+#. message box text stating that a timer could not be saved
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp xbmc/pvr/timers/PVRTimers.cpp
 msgctxt "#19109"
 msgid ""
@@ -9171,6 +9303,7 @@ msgstr ""
 "Impossible d'enregistrer la minuterie. Consultez le journal pour plus "
 "d'informations sur ce message."
 
+#. message box text stating that an unexpected error occured
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19110"
 msgid ""
@@ -9180,6 +9313,7 @@ msgstr ""
 "Une erreur imprévue est survenue. Consultez le journal pour plus "
 "d'informations sur ce message."
 
+#. message box text stating that a PVR backend error occured
 #: xbmc/pvr/addons/PVRClients.cpp xbmc/pvr/recording/PVRRecording.cpp
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19111"
@@ -9189,44 +9323,56 @@ msgstr ""
 "Erreur de l'auxiliaire d'enregistrement vidéo. Consultez le journal pour "
 "plus d'informations sur ce message."
 
+#. delete recordings confirmation message box text
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19112"
 msgid "Delete this recording?"
 msgstr "Supprimer cet enregistrement ?"
 
+#. delete multiple recordings confirmation message box text
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19113"
 msgid "Delete all recordings in this folder?"
 msgstr "Supprimer tous les enregistrements de ce dossier ?"
 
+#. label for PVR backend version in system information's PVR section
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#19114"
 msgid "Version"
 msgstr "Version "
 
+#. label for PVR backend address (e.g. ID address of the PVR backend server) in system information's PVR section
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#19115"
 msgid "Address"
 msgstr "Adresse "
 
+#. label for PVR backend disk size in system information's PVR section
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#19116"
 msgid "Disksize"
 msgstr "Taille du disque "
 
+#. label for PVR settings channels search action control
 #: system/settings/settings.xml
 msgctxt "#19117"
 msgid "Search for channels"
 msgstr "Rechercher des chaînes"
 
+#. unused?
 msgctxt "#19118"
 msgid "Can't use PVR functions while searching."
 msgstr ""
 "Impossible d'utiliser les fonctions de l'Enregistreur Vidéo pendant une "
 "recherche."
 
+#. channel scan backend selection dialog text
+#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#19119"
-msgid "On which server do you want to search?"
-msgstr "Sur quel serveur souhaitez vous faire la recherche?"
+msgid "On which backend do you want to search?"
+msgstr "Sur quel serveur souhaitez-vous effectuer la recherche ?"
 
+#. label for PVR client number in system information's PVR section
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#19120"
 msgid "Client number"
@@ -9237,6 +9383,8 @@ msgctxt "#19121"
 msgid "Avoid repeats"
 msgstr "Éviter les répétitions"
 
+#. delete active timer confirmation message box text
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19122"
 msgid ""
 "This timer is still recording. Are you sure you want to delete this timer?"
@@ -9300,6 +9448,7 @@ msgctxt "#19132"
 msgid "Include unknown genres"
 msgstr "Inclure les genres inconnus"
 
+#: addons/skin.estuary/1080i/DialogPVRGuideSearch.xml
 msgctxt "#19133"
 msgid "Search string"
 msgstr "Rechercher l'expression"
@@ -9314,10 +9463,12 @@ msgctxt "#19135"
 msgid "Case sensitive"
 msgstr "Sensible à la casse"
 
+#. unused?
 msgctxt "#19136"
 msgid "Channel unavailable"
 msgstr "Chaîne indisponible"
 
+#. channel group manager dialog error message box text
 #: xbmc/pvr/dialogs/GUIDialogPVRGroupManager.cpp
 msgctxt "#19137"
 msgid "No groups defined. Please create a group first"
@@ -9329,41 +9480,52 @@ msgctxt "#19138"
 msgid "Timer rules"
 msgstr "Règles de minuterie"
 
+#. channel group manager dialog create group / rename group message box text
+#: xbmc/pvr/dialogs/GUIDialogPVRGroupManager.cpp
 msgctxt "#19139"
 msgid "Name of the new group"
 msgstr "Nom du nouveau groupe"
 
+#. PVR search window 'search' list item label
 #: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
 msgctxt "#19140"
 msgid "Search..."
 msgstr "Rechercher..."
 
+#. part of PVR window's active channel group label (e.g. "Group: HD Sports Channels")
 #: addons/skin.estuary/1080i/Includes_MediaMenu.xml
 #: addons/skin.estuary/1080i/DialogPVRGuideSearch.xml
+#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
 msgctxt "#19141"
 msgid "Group"
 msgstr "Groupe"
 
+#: addons/skin.estuary/1080i/DialogPVRGuideSearch.xml
 msgctxt "#19142"
 msgid "Search guide"
 msgstr "Chercher dans le guide"
 
+#: addons/skin.estuary/1080i/DialogPVRGroupManager.xml
 msgctxt "#19143"
 msgid "Group management"
 msgstr "Gestion des groupes"
 
+#. used by several skins
 msgctxt "#19144"
 msgid "No groups defined"
 msgstr "Aucun groupe défini"
 
+#. used by several skins
 msgctxt "#19145"
 msgid "Grouped"
 msgstr "Groupé"
 
+#: addons/skin.estuary/1080i/DialogPVRChannelsOSD.xml
 msgctxt "#19146"
 msgid "Groups"
 msgstr "Groupes"
 
+#. message box text stating that a PVR backend does not support a certain functionality.
 #: xbmc/pvr/recording/PVRRecording.cpp
 msgctxt "#19147"
 msgid ""
@@ -9379,69 +9541,94 @@ msgctxt "#19148"
 msgid "Channel"
 msgstr "Chaîne"
 
+#. part of timer rule textual weekdays representation (e.g. "Mo-Tu-Fr-Su", "Mo-Tu-__-__-Fr-__-Su")
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19149"
 msgid "Mo"
 msgstr "Lun"
 
+#. part of timer rule textual weekdays representation (e.g. "Mo-Tu-Fr-Su", "Mo-Tu-__-__-Fr-__-Su")
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19150"
 msgid "Tu"
 msgstr "Mar"
 
+#. part of timer rule textual weekdays representation (e.g. "Mo-Tu-Fr-Su", "Mo-Tu-__-__-Fr-__-Su")
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19151"
 msgid "We"
 msgstr "Mer"
 
+#. part of timer rule textual weekdays representation (e.g. "Mo-Tu-Fr-Su", "Mo-Tu-__-__-Fr-__-Su")
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19152"
 msgid "Th"
 msgstr "Jeu"
 
+#. part of timer rule textual weekdays representation (e.g. "Mo-Tu-Fr-Su", "Mo-Tu-__-__-Fr-__-Su")
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19153"
 msgid "Fr"
 msgstr "Ven"
 
+#. part of timer rule textual weekdays representation (e.g. "Mo-Tu-Fr-Su", "Mo-Tu-__-__-Fr-__-Su")
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19154"
 msgid "Sa"
 msgstr "Sam"
 
+#. part of timer rule textual weekdays representation (e.g. "Mo-Tu-Fr-Su", "Mo-Tu-__-__-Fr-__-Su")
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19155"
 msgid "Su"
 msgstr "Dim"
 
+#. unused?
 msgctxt "#19156"
 msgid "from"
 msgstr "de"
 
+#: addons/skin.estuary/1080i/Home.xml
 msgctxt "#19157"
 msgid "Next recording"
 msgstr "Enregistrement suivant"
 
+#: addons/skin.estuary/1080i/Home.xml
 msgctxt "#19158"
 msgid "Currently recording"
 msgstr "En cours d'enregistrement"
 
+#. part of timer / timer rule textual representation (e.g. "10/10/2016 from 11:00 PM to 10/11/2016 1:00 AM". "Mondays from any time to any time")
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19159"
 msgid "from"
 msgstr "de"
 
+#. part of timer / timer rule textual representation (e.g. "10/10/2016 from 11:00 PM to 10/11/2016 1:00 AM". "Mondays from any time to any time")
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19160"
 msgid "to"
 msgstr "à"
 
-#. timer rule presentation string. <start-day-date|days-of-week> "from" <start-day-time|"any time"> "to" <end-day-time|"any time">
+#. timer rule presentation string. (start-day-date|days-of-week) "from" (start-day-time|"any time") "to" (end-day-time|"any time")
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19161"
 msgid "any time"
 msgstr "n’importe quand"
 
+#. timer status textual representation
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19162"
 msgid "Recording active"
 msgstr "Enregistrement activé"
 
+#. label for number of PVR recordings in system information's PVR section
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#19163"
 msgid "Recordings"
 msgstr "Enregistrements "
 
+#. error box text stating that recording could not be started
 #: xbmc/pvr/PVRManager.cpp
 msgctxt "#19164"
 msgid ""
@@ -9450,114 +9637,132 @@ msgstr ""
 "Impossible de démarrer l'enregistrement. Consultez le journal pour plus "
 "d'informations sur ce message."
 
+#: addons/skin.estuary/1080i/DialogPVRInfo.xml
 msgctxt "#19165"
 msgid "Switch"
 msgstr "Changer"
 
+#. label for header of system information's PVR section
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#19166"
 msgid "PVR information"
 msgstr "Information de l'Enregistreur Vidéo"
 
+#. pvr settings "scan for missing channel icons" action button label
 #: system/settings/settings.xml
 msgctxt "#19167"
 msgid "Scan for missing icons"
 msgstr "Rechercher des icônes manquantes"
 
-#. Used in system info to show amount of it
+#. label for PVR number of deleted recordings in system information's PVR section
 #: xbmc/windows/GUIWindowSystemInfo.cpp
 msgctxt "#19168"
 msgid "Deleted and recoverable recordings"
 msgstr "Enregistrements supprimés et récupérables"
 
+#. unused?
 msgctxt "#19169"
 msgid "Hide video information box"
 msgstr "Cacher la boîte d'information vidéo"
 
+#. pvr settings "playback timeout" setting label
 #: system/settings/settings.xml
 msgctxt "#19170"
 msgid "Timeout when starting playback"
 msgstr "Délai de démarrage de la lecture"
 
+#. pvr settings "start playback in a window instead of full screen" setting label
 #: system/settings/settings.xml
 msgctxt "#19171"
 msgid "Start playback minimised"
 msgstr "Démarrer la lecture minimisé"
 
+#. pvr settings "duration for an instant recording" setting label
 #: system/settings/settings.xml
 msgctxt "#19172"
 msgid "Instant recording duration"
 msgstr "Durée d'enregistrement instantanée"
 
+#. pvr settings "default priority for recordings" setting label
 #: system/settings/settings.xml
 msgctxt "#19173"
 msgid "Default recording priority"
 msgstr "Priorité d'enregistrement prédéfinie"
 
+#. pvr settings "default lifetime for recordings" setting label
 #: system/settings/settings.xml
 msgctxt "#19174"
 msgid "Default recording lifetime"
 msgstr "Conservation des enregistrements prédéfinie"
 
+#. pvr settings "default time to add before the start of an event to record (according to its epg data)" setting label
 #: system/settings/settings.xml
 msgctxt "#19175"
 msgid "Default start padding time"
 msgstr "Marge de début par défaut"
 
+#. pvr settings "default time to add after the end of an event to record (according to epg its data)" setting label
 #: system/settings/settings.xml
 msgctxt "#19176"
 msgid "Default end padding time"
 msgstr "Marge de fin par défaut"
 
+#. pvr settings category and group label
 #: system/settings/settings.xml
 msgctxt "#19177"
 msgid "Playback"
 msgstr "Lecture"
 
+#. pvr setting "show channel info while switching channels" value
 #: system/settings/settings.xml
 msgctxt "#19178"
 msgid "Show channel information when switching channels"
 msgstr "Afficher les informations de la chaîne lors du changement de chaîne"
 
-#. Used as extension header on recordings window
+#. header used in pvr recordings window
 #: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
 msgctxt "#19179"
 msgid "Deleted"
 msgstr "Effacé"
 
-#. Settings -> Interface -> Other -> Startup window
+#. Settings -> Interface -> Other -> Startup window value
 #: system/settings/settings.xml
 msgctxt "#19180"
 msgid "TV channels"
 msgstr "Chaînes TV"
 
+#. pvr settings "Menu / OSD" category label
 #: system/settings/settings.xml
 msgctxt "#19181"
 msgid "Menu / OSD"
 msgstr "Menu / OSD"
 
+#. pvr settings "epg days to display" setting value
 #: system/settings/settings.xml
 msgctxt "#19182"
 msgid "Days to display"
 msgstr "Nombre de jours à afficher"
 
-#. Settings -> Interface -> Other -> Startup window
+#. Settings -> Interface -> Other -> Startup window value
 #: system/settings/settings.xml
 msgctxt "#19183"
 msgid "Radio channels"
 msgstr "Radio"
 
-#. Used on pvr recordings as button to show of them
+#. label for "deleted recordings" data source in media source window
 #: addons/skin.estuary/1080i/Includes_MediaMenu.xml
+#: xbmc/dialogs/GUIDialogMediaSource.cpp
 msgctxt "#19184"
 msgid "Deleted recordings"
 msgstr "Enregistrements effacés"
 
+#. pvr settings "clear epg data" action button label
 #: system/settings/settings.xml
 msgctxt "#19185"
 msgid "Clear data"
 msgstr "Effacer les données"
 
+#. message box text for pvr data reset confirmation
 #: xbmc/pvr/PVRManager.cpp
 msgctxt "#19186"
 msgid ""
@@ -9567,21 +9772,25 @@ msgstr ""
 "Toutes vos données liées à la TV (chaînes, groupes, guide) seront effacées. "
 "Êtes-vous sûr ?"
 
+#. progress dialog text shown while purging pvr data
 #: xbmc/pvr/PVRManager.cpp
 msgctxt "#19187"
 msgid "Clearing all related data."
 msgstr "Effacement de toutes les données connexes."
 
+#. message box text for epg data reset confirmation
 #: xbmc/pvr/PVRManager.cpp
 msgctxt "#19188"
 msgid "All your guide data will be cleared. Are you sure?"
 msgstr "Toutes les données de vos guides seront effacées. Êtes-vous sûr ?"
 
+#. pvr settings "automatically start last played channel after Kodi startup" setting label
 #: system/settings/settings.xml
 msgctxt "#19189"
 msgid "Continue last channel on startup"
 msgstr "Reprendre la dernière chaîne au démarrage"
 
+#. pvr settings "automatically start last played channel after Kodi startup" setting value
 #: system/settings/settings.xml
 msgctxt "#19190"
 msgid "Background"
@@ -9592,12 +9801,14 @@ msgctxt "#19191"
 msgid "PVR service"
 msgstr "Enregistreur Vidéo"
 
+#. error message box text stating that none of the available pvr clients does support channel scanning
 #: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#19192"
 msgid "None of the connected PVR backends supports scanning for channels."
 msgstr ""
 "Aucun des enregistreurs vidéos connectés ne permet la recherche des chaînes."
 
+#. error message box text stating that a given pvr channel could not be played
 #: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#19193"
 msgid ""
@@ -9607,28 +9818,36 @@ msgstr ""
 "La recherche des chaînes ne peut pas être démarrée. Consultez le journal "
 "pour plus d'informations sur ce message."
 
+#. unused?
 msgctxt "#19194"
 msgid "Continue?"
 msgstr "Continuer ?"
 
+#. label for a context menu entry for pvr client specific actions
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#19195"
 msgid "Client actions"
 msgstr "Actions du client"
 
+#. value for "pvr client specific actions" dialog headers
+#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#19196"
 msgid "PVR client specific actions"
 msgstr "Actions spécifiques pour le client de l'Enregistreur Vidéo"
 
-#: xbmc/addons/addoncallbackspvr.cpp
+#. text for "recording started on <pvr client name>" pvr client addon callback notification
+#: xbmc/addons/binary/interfaces/api1/PVR/AddonCallbacksPVR.cpp
 msgctxt "#19197"
 msgid "Recording started on: %s"
 msgstr "Enregistrement démarré à : %s"
 
-#: xbmc/addons/addoncallbackspvr.cpp
+#. text for "recording finished on <pvr client name>" pvr client addon callback notification
+#: xbmc/addons/binary/interfaces/api1/PVR/AddonCallbacksPVR.cpp
 msgctxt "#19198"
 msgid "Recording finished on: %s"
 msgstr "Enregistrement terminé à : %s"
 
+#. pvr settings "channel manager" action button label
 #: system/settings/settings.xml addons/skin.estuary/1080i/Variables.xml
 msgctxt "#19199"
 msgid "Channel manager"
@@ -9649,11 +9868,14 @@ msgctxt "#19202"
 msgid "Channel icon:"
 msgstr "Icône de la chaîne :"
 
+#. used by several skins
 msgctxt "#19203"
 msgid "Edit channel"
 msgstr "Éditer la chaîne"
 
+#. initial name for new channels, used in pvr channel manager dialog
 #: addons/skin.estuary/1080i/DialogPVRChannelManager.xml
+#: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
 msgctxt "#19204"
 msgid "New channel"
 msgstr "Nouvelle chaîne"
@@ -9668,19 +9890,25 @@ msgctxt "#19206"
 msgid "Activate guide:"
 msgstr "Activer le guide :"
 
+#. used by several skins
 msgctxt "#19207"
 msgid "Group:"
 msgstr "Groupe :"
 
+#. text for "new channel name input" dialog
+#: xbmc/pvr/dialogs/GUIDialogChannelManager.cpp
 msgctxt "#19208"
 msgid "Enter the name of the new channel"
 msgstr "Veuillez saisir le nom de la nouvelle chaîne"
 
+#. unused?
 msgctxt "#19209"
 msgid "Kodi virtual backend"
 msgstr "Traitement virtuel Kodi"
 
+#. pvr channel manager "epg source" selector value
 #: addons/skin.estuary/1080i/DialogPVRChannelManager.xml
+#: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
 msgctxt "#19210"
 msgid "Client"
 msgstr "Client"
@@ -9691,52 +9919,71 @@ msgctxt "#19211"
 msgid "Delete channel"
 msgstr "Supprimer la chaîne"
 
+#. pvr channel manager "save changes", part of confirmation dialog message
+#: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
 msgctxt "#19212"
 msgid "This list contains changes"
 msgstr "Cette liste a été modifiée"
 
+#. pvr channel manager "create new channel", backend selector dialog message
+#: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
 msgctxt "#19213"
 msgid "Select backend"
 msgstr "Sélection du serveur"
 
+#. @@@ dead code in pvr channel manager, action for a context menu item never added?
+#: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
 msgctxt "#19214"
 msgid "Enter a valid URL for the new channel"
 msgstr "Veuillez saisir une URL valide pour la nouvelle chaîne"
 
-#: xbmc/pvr/timers/PVRTimers.cpp
+#. message box text stating that a pvr backend does not support timers
+#: xbmc/pvr/timers/PVRTimers.cpp xbmc/pvr/windows/GUIWindowsPVRTimersBase.cpp
 msgctxt "#19215"
 msgid "The PVR backend does not support timers."
 msgstr "Le serveur de l'Enregistreur Vidéo ne gère pas les minuteries"
 
+#. used by several skins
 msgctxt "#19216"
 msgid "All radio channels"
 msgstr "Toutes les chaînes radios"
 
+#. label for 'all channels' value for 'channels' selector control in pvr guide search dialog
+#: xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19217"
 msgid "All TV channels"
 msgstr "Toutes les chaînes TV"
 
+#. 'visible' label used as prefix for 'group' control label in pvr channel group manager dialog, e.g. "Visible TV groups"
+#: xbmc/pvr/dialogs/GUIDialogPVRGroupManager.cpp
 msgctxt "#19218"
 msgid "Visible"
 msgstr "Visibles"
 
+#. label for 'ungrouped' control in pvr channel group manager dialog
+#: xbmc/pvr/dialogs/GUIDialogPVRGroupManager.cpp
 msgctxt "#19219"
 msgid "Ungrouped channels"
 msgstr "Chaînes non groupées"
 
+#. 'channels in' label used as prefix for 'group' control label in pvr channel group manager dialog, e.g. "Channels in My Sports Channels Group"
+#: xbmc/pvr/dialogs/GUIDialogPVRGroupManager.cpp
 msgctxt "#19220"
 msgid "Channels in"
 msgstr "Chaînes dans"
 
+#. pvr settings "sync channel groups with backend(s)" control label
 #: system/settings/settings.xml
 msgctxt "#19221"
 msgid "Synchronise channel groups with backend(s)"
 msgstr "Synchroniser les groupes de chaînes avec le(s) serveur(s)"
 
+#: addons/skin.estouchy/xml/Includes.xml
 msgctxt "#19222"
 msgid "Guide"
 msgstr "Guide"
 
+#. unused?
 msgctxt "#19223"
 msgid ""
 "No PVR add-on could be enabled. Check your settings or the log for more "
@@ -9745,145 +9992,182 @@ msgstr ""
 "Aucune extension d'enregistrement vidéo n'a pu être activée. Vérifier vos "
 "réglages ou le journal pour plus d'informations."
 
+#. Notification text to announce that a recording was aborted
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19224"
 msgid "Recording aborted"
 msgstr "Enregistrement annulé"
 
+#. Notification text to announce that a recording was scheduled
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19225"
 msgid "Recording scheduled"
 msgstr "Enregistrement programmé"
 
+#. Notification text to announce that a recording started
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19226"
 msgid "Recording started"
 msgstr "Enregistrement démarré"
 
+#. Notification text to announce that a recording completed
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19227"
 msgid "Recording completed"
 msgstr "Enregistrement terminé"
 
-#: xbmc/pvr/timers/PVRTimerInfoTag.cpp, displayed when a timer is deleted
+#. Notification text to announce that a timer was deleted
+#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19228"
 msgid "Timer deleted"
 msgstr "Minuterie supprimée"
 
+#. label for PVR settings close channel OSD after channel switch control
+#: system/settings/settings.xml
 msgctxt "#19229"
 msgid "Close channel OSD after switching channels"
 msgstr "Fermer le menu à l'écran après un changement de chaîne"
 
+#. label for PVR settings no epg updates during playback control
 #: system/settings/settings.xml
 msgctxt "#19230"
 msgid "Prevent updates during playback"
 msgstr "Empêcher les mises à jour durant la lecture"
 
+#. label for PVR settings use backend channel order control
 #: system/settings/settings.xml
 msgctxt "#19231"
 msgid "Use channel order from backend(s)"
 msgstr "Utiliser l'ordre des chaînes du/des système(s)."
 
+#. label for pvr epg search window 'clear search results' context menu item
+#: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
 msgctxt "#19232"
 msgid "Clear search results"
 msgstr "Effacer les résultats de recherche"
 
+#. label for PVR settings timer updates notification control
 #: system/settings/settings.xml
 msgctxt "#19233"
 msgid "Display a notification on timer updates"
 msgstr "Afficher une notification lors des mises à jour de la programmation"
 
+#. label for PVR settings use backend channel numbers control
 #: system/settings/settings.xml
 msgctxt "#19234"
 msgid "Use channel numbers from backend"
 msgstr "Utiliser les numéros de chaînes du système"
 
+#. label 'pvr starting up' for progress dialog text
+#: xbmc/pvr/PVRManager.cpp xbmc/pvr/windows/GUIWindowPVRBase.cpp
 msgctxt "#19235"
 msgid "PVR manager is starting up"
 msgstr "Démarrage du gestionnaire d'Enregistreur Vidéo"
 
+#. label 'loading channels' for progress dialog text
+#: xbmc/pvr/PVRManager.cpp
 msgctxt "#19236"
 msgid "Loading channels from clients"
 msgstr "Chargement des chaînes depuis les clients"
 
+#. label 'loading timers' for progress dialog text
+#: xbmc/pvr/PVRManager.cpp
 msgctxt "#19237"
 msgid "Loading timers from clients"
 msgstr "Chargement des minuteries depuis les clients"
 
+#. label 'loading recordings' for progress dialog text
+#: xbmc/pvr/PVRManager.cpp
 msgctxt "#19238"
 msgid "Loading recordings from clients"
 msgstr "Chargement des enregistrements depuis les clients"
 
+#. label 'starting background tasks' for progress dialog text
+#: xbmc/pvr/PVRManager.cpp
 msgctxt "#19239"
 msgid "Starting background threads"
 msgstr "Démarrage des services d'arrière-plan"
 
 # empty string with id 19240
 #. Label for context menu entry to open settings dialog for a timer (read-only)
-#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
-#: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
-#: xbmc/pvr/windows/GUIWindowPVRTimersBase.cpp
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#19241"
 msgid "View timer information"
 msgstr "Afficher les informations de minuterie"
 
 #. Label for context menu entry to open settings dialog for a timer
-#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
-#: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#19242"
 msgid "Edit timer"
 msgstr "Editer la minuterie"
 
 #. Label for context menu entry to open settings dialog for a timer rule
-#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
-#: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
-#: xbmc/pvr/windows/GUIWindowPVRTimersBase.cpp
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#19243"
 msgid "Edit timer rule"
 msgstr "Editer la règle de la minuterie"
 
+#. label for PVR settings pvr backend idle time control. if enabled, kodi will be automatically shutdown after the defined amount of pvr backend idle time.
 #: system/settings/settings.xml
 msgctxt "#19244"
 msgid "Backend idle time"
 msgstr "Délai attente du traitement"
 
+#. label for PVR settings wakeup command control. if not empty, kodi will execute the given command upon waking up from suspend.
 #: system/settings/settings.xml
 msgctxt "#19245"
 msgid "Wakeup command"
 msgstr "Commande de réveil"
 
+#. label for PVR settings wakeup before recording control. if checked, the box where kodi is installed on will be automatically turned on before a recording starts.
 #: system/settings/settings.xml
 msgctxt "#19246"
 msgid "Wakeup before recording"
 msgstr "Réveiller avant enregistrement"
 
+#. label for PVR settings daily wakeup control. if checked, the box where kodi is installed on will be automatically turned on at the given time.
 #: system/settings/settings.xml
 msgctxt "#19247"
 msgid "Daily wakeup"
 msgstr "Réveil quotidien"
 
+#. label for PVR settings daily wakeup time control. if checked, the box where kodi is installed on will be automatically turned on at the given time.
 #: system/settings/settings.xml
 msgctxt "#19248"
 msgid "Daily wakeup time (HH:MM:SS)"
 msgstr "Heure de réveil quotidien (HH:MM:SS)"
 
+#. unused?
 msgctxt "#19249"
 msgid "Filter channels"
 msgstr "Filtrer les chaînes"
 
+#. label 'loading epg data from database' for progress dialog text
 #: xbmc/epg/EpgContainer.cpp
 msgctxt "#19250"
 msgid "Loading guide from database"
 msgstr "Chargement du guide depuis la base de données"
 
+#. label for 'update epg' context menu item and 'update epg' confirmation dialog header
+#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
 msgctxt "#19251"
 msgid "Update guide information"
 msgstr "Mettre à jour les informations du guide"
 
+#. label for 'update channel epg' confirmation dialog text
+#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
 msgctxt "#19252"
 msgid "Schedule guide update for this channel?"
 msgstr "Planifier la mise à jour du guide pour cette chaîne ? "
 
+#. label for notification text stating that an epg data update for a given channel was started
+#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
 msgctxt "#19253"
 msgid "Guide update scheduled for channel"
 msgstr "Mise à jour du guide planifiée pour cette chaîne"
 
+#. label for notification text stating that an epg data update for a given channel failed
+#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
 msgctxt "#19254"
 msgid "Guide update failed for channel"
 msgstr "La mise à jour du guide a échoué pour cette chaîne"
@@ -9900,47 +10184,60 @@ msgctxt "#19256"
 msgid "Completed"
 msgstr "Terminé"
 
+#. unused?
 msgctxt "#19257"
 msgid "Lock channel"
 msgstr "Verrouiller la chaîne"
 
+#. unused?
 msgctxt "#19258"
 msgid "Unlock channel"
 msgstr "Déverouiller la chaîne"
 
+#. pvr settings category label
 #: system/settings/settings.xml
 msgctxt "#19259"
 msgid "Parental control"
 msgstr "Contrôle parental"
 
+#. pvr settings 'parental control channel unlock duration' setting label
 #: system/settings/settings.xml
 msgctxt "#19260"
 msgid "Unlock duration"
 msgstr "Durée de verrouillage"
 
+#. pvr settings 'parental control change pin' setting label
 #: system/settings/settings.xml
 msgctxt "#19261"
 msgid "Change PIN"
 msgstr "Changer le code PIN"
 
+#. generic 'parental control enter pin' label
+#: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp xbmc/pvr/PVRManager.cpp
+#: xbmc/settings/SettingConditions.cpp
 msgctxt "#19262"
 msgid "Parental control. Enter PIN:"
 msgstr "Contrôle parental. Veuillez saisir le code PIN"
 
+#. label for 'parental control pin' verification dialog
+#: xbmc/pvr/PVRManager.cpp
 msgctxt "#19263"
 msgid "Locked channel. Enter PIN:"
 msgstr "Chaîne verrouillée. Veuillez saisir le code PIN :"
 
+#. label for 'incorrect pin' error dialog header
 #: xbmc/pvr/PVRManager.cpp
 msgctxt "#19264"
 msgid "Incorrect PIN"
 msgstr "Code PIN Incorrect"
 
+#. label for 'incorrect pin' error dialog text
 #: xbmc/pvr/PVRManager.cpp
 msgctxt "#19265"
-msgid "The entered PIN number was incorrect."
-msgstr "Le code PIN entré est incorrect"
+msgid "The entered PIN was incorrect."
+msgstr "Le code PIN saisi est incorrect."
 
+#. label to use for epg tag title instead of actual event title if the respective channel is parental locked
 #: xbmc/epg/EpgInfoTag.cpp
 msgctxt "#19266"
 msgid "Parental locked"
@@ -9951,26 +10248,31 @@ msgctxt "#19267"
 msgid "Parental locked:"
 msgstr "Protégé par contrôle parental :"
 
+#. pvr settings 'hide no info available labels' setting label. Instead of displaying "no information available" text (for example in epg grid for time spans without epg data), show nothing
 #: system/settings/settings.xml
 msgctxt "#19268"
 msgid "Hide \"No information available\" labels"
 msgstr "Masquer les étiquettes \"Pas d'information disponible\""
 
+#. pvr settings 'hide connection lost warnings' setting label. Do not display notification message in case Kodi cannot reach a pvr backend
 #: system/settings/settings.xml
 msgctxt "#19269"
 msgid "Disable \"Connection lost\" warnings"
 msgstr "Désactiver les avertissements \"Connexion perdue\""
 
-#. Label of the option to switch between a grouped recordings list and a non-grouped recordings list.
+#. Label of the option to switch between a grouped recordings list and a non-grouped recordings list in pvr recordings window.
 #: addons/skin.estuary/1080i/Includes_MediaMenu.xml
 msgctxt "#19270"
 msgid "Group Items"
 msgstr "Grouper les éléments"
 
+#. unused?
 msgctxt "#19271"
 msgid "No PVR add-ons could be found"
 msgstr "Pas d'extensions Enregistreur Vidéo trouvées"
 
+#. label for 'pvr configuration incomplete' information dialog text
+#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
 msgctxt "#19272"
 msgid ""
 "You need a tuner, backend software, and an add-on for the backend to be able "
@@ -9980,93 +10282,95 @@ msgstr ""
 "pouvoir utiliser l'enregistreur numérique. Veuillez lire http://kodi.wiki/"
 "view/PVR pour en savoir plus."
 
-#. Settings -> Interface -> Other -> Startup window
-#: system/settings/settings.xml
+#. Settings -> Interface -> Other -> Startup window value
+#: xbmc/addons/Skin.cpp
 msgctxt "#19273"
 msgid "TV guide"
 msgstr "Guide TV"
 
-#. Settings -> Interface -> Other -> Startup window
-#: system/settings/settings.xml
+#. Settings -> Interface -> Other -> Startup window value
+#: xbmc/addons/Skin.cpp
 msgctxt "#19274"
 msgid "Radio guide"
 msgstr "Guide Radio"
 
+#. timer status textual representation
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19275"
 msgid "Conflict warning"
 msgstr "Avertissement de conflit"
 
+#. timer status textual representation
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19276"
 msgid "Conflict error"
 msgstr "Erreur de conflit"
 
+#. Notification text to announce that a recording has a conflict
 #: xbmc/pvr/timers/PVRTimerInfoTag.cpp
 msgctxt "#19277"
 msgid "Recording conflict"
 msgstr "Conflit d'enregistrement"
 
-#: xbmc/pvr/timers/PVRTimerInfoTag.cpp
+#. Notification text to announce that a recording has an error
 msgctxt "#19278"
 msgid "Recording error"
 msgstr "Erreur d'enregistrement"
 
+#. pvr settings 'client specific' category label.
 #: system/settings/settings.xml
 msgctxt "#19279"
 msgid "Client specific"
 msgstr "Paramètres du client"
 
+#. pvr client specific settings 'client specific settings' action control label.
 #: system/settings/settings.xml
 msgctxt "#19280"
 msgid "Client specific settings"
 msgstr "Paramètres spécifiques au client"
 
+#. pvr settings 'confirm channel switch' setting label.
 #: system/settings/settings.xml
 msgctxt "#19281"
 msgid "Confirm channel switches by pressing \"OK\""
 msgstr "Confirmer le changement de chaîne en appuyant sur \"OK\""
 
 #. Label for a select option or list item, representing an icon graphic (like a TV channel icon)
-#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
 #: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
 msgctxt "#19282"
 msgid "Current icon"
 msgstr "Icône courant"
 
 #. Label for a select option or list item, representing an icon graphic (like a TV channel icon)
-#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
 #: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
 msgctxt "#19283"
 msgid "No icon"
 msgstr "Pas d'icône"
 
-#. Label for a select/menu option to select an icon graphic
-#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
-#: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
+#. used by several skins
 msgctxt "#19284"
 msgid "Choose icon"
 msgstr "Choisissez l'icône"
 
 #. Label for a select/menu option to select an icon graphic
-#: xbmc/pvr/windows/GUIWindowPVRChannels.cpp
 #: xbmc/pvr/dialogs/GUIDialogPVRChannelManager.cpp
 msgctxt "#19285"
 msgid "Browse for icon"
 msgstr "Rechercher des icônes"
 
-#. Notification message if process starts searching for missing channel icons
-#: xbmc/pvr/PVRManager.cpp
+#. unused?
 msgctxt "#19286"
 msgid "Searching for channel icons"
 msgstr "Recherche des logos des chaînes"
 
 #. Label for the default pvr channel group
-#: xbmc/pvr/windows/GUIWindowPVRCommon.cpp
+#: xbmc/pvr/channels/PVRChannelGroup.cpp
+#: xbmc/pvr/channels/PVRChannelGroupInternal.cpp
 msgctxt "#19287"
 msgid "All channels"
 msgstr "Toutes les chaînes"
 
+#. pvr settings 'continue last channel on startup' setting value label.
 #: system/settings/settings.xml
 msgctxt "#19288"
 msgid "Foreground"
@@ -10079,39 +10383,43 @@ msgid "Hide group"
 msgstr "Masquer le groupe"
 
 #. Label for a context menu entry of a recording to undelete a deleted recording
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#19290"
 msgid "Undelete"
 msgstr "Annuler l'effacement"
 
-#. Used on recordings context menu
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+#. Label for a context menu entry of a recording to permanently delete a deleted recording
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#19291"
 msgid "Delete permanently"
 msgstr "Effacer définitivement"
 
-#. Used on recordings context menu
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+#. "remove deleted recordings from trash" dialog header
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19292"
 msgid "Delete all permanently"
 msgstr "Tout effacer définitivement"
 
-#. Used on yes no dialog
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+#. "remove deleted recordings from trash" dialog text
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19293"
-msgid "Delete all recordings permanently?"
-msgstr "Effacer définitivement tous les enregistrements ?"
+msgid ""
+"Remove all deleted recordings from trash? This operation cannot be reverted."
+msgstr ""
+"Supprimer tous les enregistrements supprimés de la corbeille ? Cette "
+"opération ne peut pas être annulée."
 
-#. Used on yes no dialog
-#: xbmc/pvr/windows/GUIWindowPVRRecordings.cpp
+#. "remove deleted recording from trash" dialog text
+#: xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19294"
-msgid "Delete this recording permanently?"
-msgstr "Effacer définitivement cet enregistrement ?"
+msgid ""
+"Remove this deleted recording from trash? This operation cannot be reverted."
+msgstr ""
+"Supprimer cet enregistrement supprimé de la corbeille ? Cette opération ne "
+"peut pas être annulée."
 
 #. Label for context menu entry to delete a timer rule
-#: xbmc/pvr/windows/GUIWindowPVRGuide.cpp
-#: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
-#: xbmc/pvr/windows/GUIWindowPVRTimersBase.cpp
+#: xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#19295"
 msgid "Delete timer rule"
 msgstr "Supprimer la règle de la minuterie"
@@ -10122,445 +10430,535 @@ msgctxt "#19296"
 msgid "No PVR add-on enabled"
 msgstr "Aucune extension PVR activée"
 
-#: xbmc/epg/Epg.cpp
+#. label for epg genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19499"
 msgid "Other / Unknown"
 msgstr "Autre / Inconnu"
 
-#: xbmc/epg/Epg.cpp
+#. label for epg "movie/drama" genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19500"
 msgid "Movie / Drama"
 msgstr "Film / Drame"
 
+#. label for epg "movie/drama" subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19501"
 msgid "Detective / Thriller"
 msgstr "Policier / Thriller"
 
+#. label for epg "movie/drama" subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19502"
 msgid "Adventure / Western / War"
 msgstr "Aventure / Western / Guerre"
 
+#. label for epg "movie/drama" subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19503"
 msgid "Science fiction / Fantasy / Horror"
 msgstr "Science-Fiction / Fantastique / Horreur"
 
+#. label for epg "movie/drama" subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19504"
 msgid "Comedy"
 msgstr "Comédie"
 
+#. label for epg "movie/drama" subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19505"
 msgid "Soap / Melodrama / Folkloric"
 msgstr "Feuilleton / Mélodrame / Folklore"
 
+#. label for epg "movie/drama" subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19506"
 msgid "Romance"
 msgstr "Romance"
 
+#. label for epg "movie/drama" subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19507"
 msgid "Serious / Classical / Religious / Historical movie / drama"
 msgstr "Catastrophe / Classique / Religion / Film Historique / Drame"
 
+#. label for epg "movie/drama" subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19508"
 msgid "Adult movie / drama"
 msgstr "Film Adulte / Drame"
 
-#: xbmc/epg/Epg.cpp
+#. label for "news/current affairs" epg genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19516"
 msgid "News / Current affairs"
 msgstr "Infos / Actualités"
 
+#. label for "news/current affairs" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19517"
 msgid "News / Weather report"
 msgstr "Infos / Météo"
 
+#. label for "news/current affairs" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19518"
 msgid "News magazine"
 msgstr "Magazine d'informations"
 
+#. label for "news/current affairs" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19519"
 msgid "Documentary"
 msgstr "Documentaire"
 
+#. label for "news/current affairs" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19520"
 msgid "Discussion / Interview / Debate"
 msgstr "Discussion / Interview / Débat"
 
-#: xbmc/epg/Epg.cpp
+#. label for "show/game show" epg subgenre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19532"
 msgid "Show / Game show"
 msgstr "Spectacle / Jeu Télévisé"
 
+#. label for "show/game show" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19533"
 msgid "Game show / Quiz / Contest"
 msgstr "Jeu Télévisé / Quiz / Concours"
 
+#. label for "show/game show" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19534"
 msgid "Variety show"
 msgstr "Variétés"
 
+#. label for "show/game show" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19535"
 msgid "Talk show"
 msgstr "Emission débat"
 
-#: xbmc/epg/Epg.cpp
+#. label for "sports" epg genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19548"
 msgid "Sports"
 msgstr "Sports"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19549"
 msgid "Special event"
 msgstr "Evènement spécial"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19550"
 msgid "Sport magazine"
 msgstr "Magazine sportif"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19551"
 msgid "Football"
 msgstr "Football"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19552"
 msgid "Tennis / Squash"
 msgstr "Tennis / Squash"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19553"
 msgid "Team sports"
 msgstr "Sports collectifs"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19554"
 msgid "Athletics"
 msgstr "Athlétisme"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19555"
 msgid "Motor sport"
 msgstr "Sports mécaniques"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19556"
 msgid "Water sport"
 msgstr "Sports nautiques"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19557"
 msgid "Winter sports"
 msgstr "Sports d'hiver"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19558"
 msgid "Equestrian"
 msgstr "Sport Equestre"
 
+#. label for "sports" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19559"
 msgid "Martial sports"
 msgstr "Sports de combat"
 
-#: xbmc/epg/Epg.cpp
+#. label for "children's/youth programmes" epg genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19564"
 msgid "Children's / Youth programmes"
 msgstr "Programmes pour enfants"
 
+#. label for "children's/youth programmes" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19565"
 msgid "Pre-school children's programmes"
 msgstr "Programmes pour les petits"
 
+#. label for "children's/youth programmes" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19566"
 msgid "Entertainment programmes for 6 to 14"
 msgstr "Divertissements pour les 6-14"
 
+#. label for "children's/youth programmes" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19567"
 msgid "Entertainment programmes for 10 to 16"
 msgstr "Divertissements pour les 10-16"
 
+#. label for "children's/youth programmes" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19568"
 msgid "Informational / Educational / School programme"
 msgstr "Programmes éducatifs / scolaires"
 
+#. label for "children's/youth programmes" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19569"
 msgid "Cartoons / Puppets"
 msgstr "Dessins Animés / Marionnettes"
 
+#. label for "music/ballet/dance" epg genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19580"
 msgid "Music / Ballet / Dance"
 msgstr "Musique / Ballet / Danse"
 
+#. label for "music/ballet/dance" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19581"
 msgid "Rock / Pop"
 msgstr "Rock / Pop"
 
+#. label for "music/ballet/dance" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19582"
 msgid "Serious / Classical music"
 msgstr "Musique classique"
 
+#. label for "music/ballet/dance" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19583"
 msgid "Folk / Traditional music"
 msgstr "Musique traditionnelle / folk"
 
+#. label for "music/ballet/dance" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19584"
 msgid "Musical / Opera"
 msgstr "Musique / Opéra"
 
+#. label for "music/ballet/dance" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19585"
 msgid "Ballet"
 msgstr "Ballet"
 
-#: xbmc/epg/Epg.cpp
+#. label for "arts/culture" epg genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19596"
 msgid "Arts / Culture"
 msgstr "Arts / Culture"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19597"
 msgid "Performing arts"
 msgstr "Arts du spectacle"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19598"
 msgid "Fine arts"
 msgstr "Beaux-arts"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19599"
 msgid "Religion"
 msgstr "Religion"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19600"
 msgid "Popular culture / Traditional arts"
 msgstr "Arts populaires / traditionnels"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19601"
 msgid "Literature"
 msgstr "Littérature"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19602"
 msgid "Film / Cinema"
 msgstr "Film / Cinéma"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19603"
 msgid "Experimental film / video"
 msgstr "Film Expérimental / Vidéo"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19604"
 msgid "Broadcasting / Press"
 msgstr "Radio / Presse"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19605"
 msgid "New media"
 msgstr "Nouveaux médias"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19606"
 msgid "Arts / Culture magazines"
 msgstr "Arts / Magazines Culturels"
 
+#. label for "arts/culture" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19607"
 msgid "Fashion"
 msgstr "Mode"
 
-#: xbmc/epg/Epg.cpp
+#. label for "social/political/economics" epg genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19612"
 msgid "Social / Political / Economics"
 msgstr "Social / Politique / Économie"
 
+#. label for "social/political/economics" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19613"
 msgid "Magazines / Reports / Documentary"
 msgstr "Magazines / Reportages / Documentaires"
 
+#. label for "social/political/economics" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19614"
 msgid "Economics / Social advisory"
 msgstr "Économie / Social"
 
+#. label for "social/political/economics" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19615"
 msgid "Remarkable people"
 msgstr "Personnes remarquables"
 
-#: xbmc/epg/Epg.cpp
+#. label for "education/science/factual" epg genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19628"
 msgid "Education / Science / Factual"
 msgstr "Éducation / Science"
 
+#. label for "education/science/factual" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19629"
 msgid "Nature / Animals / Environment"
 msgstr "Nature / Animaux / Environnement"
 
+#. label for "education/science/factual" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19630"
 msgid "Technology / Natural sciences"
 msgstr "Technologie / Sciences Naturelles"
 
+#. label for "education/science/factual" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19631"
 msgid "Medicine / Physiology / Psychology"
 msgstr "Médecine / Physiologie / Psychologie"
 
+#. label for "education/science/factual" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19632"
 msgid "Foreign countries / Expeditions"
 msgstr "Pays étrangers / Expéditions"
 
+#. label for "education/science/factual" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19633"
 msgid "Social / Spiritual sciences"
 msgstr "Social / Sciences Spirituelles"
 
+#. label for "education/science/factual" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19634"
 msgid "Further education"
 msgstr "Formation continue"
 
+#. label for "education/science/factual" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19635"
 msgid "Languages"
 msgstr "Langues"
 
-#: xbmc/epg/Epg.cpp
+#. label for "leisure/hobbies" epg genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19644"
 msgid "Leisure / Hobbies"
 msgstr "Loisirs / Passe-temps"
 
+#. label for "leisure/hobbies" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19645"
 msgid "Tourism / Travel"
 msgstr "Tourisme / Voyage"
 
+#. label for "leisure/hobbies" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19646"
 msgid "Handicraft"
 msgstr "Artisanat"
 
+#. label for "leisure/hobbies" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19647"
 msgid "Motoring"
 msgstr "Automobile"
 
+#. label for "leisure/hobbies" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19648"
 msgid "Fitness & health"
 msgstr "Physique & Santé"
 
+#. label for "leisure/hobbies" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19649"
 msgid "Cooking"
 msgstr "Cuisine"
 
+#. label for "leisure/hobbies" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19650"
 msgid "Advertisement / Shopping"
 msgstr "Publicité / Shopping"
 
+#. label for "leisure/hobbies" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19651"
 msgid "Gardening"
 msgstr "Jardinage"
 
-#: xbmc/epg/Epg.cpp
+#. label for "special characteristics" epg genre value
+#: xbmc/epg/Epg.cpp xbmc/pvr/dialogs/GUIDialogPVRGuideSearch.cpp
 msgctxt "#19660"
 msgid "Special characteristics"
 msgstr "Caracteristiques Spéciales"
 
+#. label for "special characteristics" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19661"
 msgid "Original language"
 msgstr "Langue d'origine"
 
+#. label for "special characteristics" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19662"
 msgid "Black & white"
 msgstr "Noir & Blanc"
 
+#. label for "special characteristics" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19663"
 msgid "Unpublished"
 msgstr "Non publié"
 
+#. label for "special characteristics" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19664"
 msgid "Live broadcast"
 msgstr "Emission en direct"
 
+#. label for "user defined" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19676"
 msgid "Drama"
 msgstr "Drame"
 
+#. label for "user defined" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19677"
 msgid "Detective / Thriller"
 msgstr "Policier / Thriller"
 
+#. label for "user defined" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19678"
 msgid "Adventure / Western / War"
 msgstr "Aventure / Western / Guerre"
 
+#. label for "user defined" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19679"
 msgid "Science fiction / Fantasy / Horror"
 msgstr "Science-Fiction / Fantastique / Horreur"
 
+#. label for "user defined" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19680"
 msgid "Comedy"
 msgstr "Comédie"
 
+#. label for "user defined" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19681"
 msgid "Soap / Melodrama / Folkloric"
 msgstr "Feuilleton / Mélodrame / Folklore"
 
+#. label for "user defined" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19682"
 msgid "Romance"
 msgstr "Romance"
 
+#. label for "user defined" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19683"
 msgid "Serious / Classical / Religion / Historical"
 msgstr "Classique / Religion / Film Historique / Drame"
 
+#. label for "user defined" epg subgenre value
 #: xbmc/epg/Epg.cpp
 msgctxt "#19684"
 msgid "Adult"
@@ -10572,25 +10970,26 @@ msgctxt "#19685"
 msgid "Confirm shutdown"
 msgstr "Confirmez la fermeture"
 
-#: Label for a context menu entries, dialog heading, button to start playing
-#: recording xbmc/pvr/windows/GUIWindowPVRGuide.cpp
-#: xbmc/pvr/windows/GUIWindowPVRSearch.cpp
-#: xbmc/pvr/windows/GUIWindowPVRBase.cpp
+#: Label for context menu entries, dialog heading, button to start playing a
+#: recording xbmc/pvr/PVRContextMenus.cpp xbmc/pvr/PVRGUIActions.cpp
 msgctxt "#19687"
 msgid "Play recording"
 msgstr "Lire l'enregistrement"
 
-#: xbmc/pvr/addons/PVRClients.cpp
+#. label for 'scanning for pvr services' dialog header
+#: xbmc/addons/PVRClient.cpp
 msgctxt "#19688"
 msgid "Scanning for PVR services"
 msgstr "Balayage des services de l'Enregistreur Vidéo"
 
-#: xbmc/pvr/addons/PVRClients.cpp
+#. label for 'scanning for pvr services' dialog text
+#: xbmc/addons/PVRClient.cpp
 msgctxt "#19689"
 msgid "%s service found at %s"
 msgstr "Service %s trouvé sur %s"
 
-#: xbmc/pvr/addons/PVRClient.cpp
+#. label for 'scanning for pvr services' dialog text
+#: xbmc/addons/PVRClient.cpp
 msgctxt "#19690"
 msgid "Do you want to use this service?"
 msgstr "Voulez-vous utiliser ce service ?"
@@ -12813,7 +13212,7 @@ msgid "Remote control sends keyboard presses"
 msgstr "Émulation du clavier par la télécommande"
 
 #. Label for controls used to edit something (e.g. setting "Appearance -> Skin -> Edit" or a context menu entry to open timer settings dialog)
-#: system/settings/settings.xml xbmc/pvr/windows/GUIWindowPVRTimers.cpp
+#: system/settings/settings.xml xbmc/pvr/PVRContextMenus.cpp
 msgctxt "#21450"
 msgid "Edit"
 msgstr "Éditer"
@@ -12828,6 +13227,7 @@ msgstr "Connexion Internet requise."
 #: addons/skin.estuary/1080i/MyVideoNav.xml
 #: addons/skin.estuary/1080i/MyPics.xml
 #: addons/skin.estuary/1080i/MyMusicNav.xml
+#: addons/skin.estuary/1080i/MyGames.xml
 msgctxt "#21452"
 msgid "Get more..."
 msgstr "Plus..."
@@ -13557,7 +13957,7 @@ msgctxt "#24002"
 msgid "Add-on options"
 msgstr "Options de l'extension"
 
-#: xbmc/addons/ContextMenus.h
+#: xbmc/addons/ContextMenus.h xbmc/games/windows/GUIWindowGames.cpp
 msgctxt "#24003"
 msgid "Add-on information"
 msgstr "Information de l'extension"
@@ -13702,7 +14102,6 @@ msgctxt "#24031"
 msgid "Error loading settings"
 msgstr "Erreur de chargement des paramètres"
 
-#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#24032"
 msgid "All add-ons"
 msgstr "Toutes les extensions"
@@ -14610,6 +15009,7 @@ msgid "Lottery"
 msgstr "Loterie"
 
 # Stock information, in list selector (if present)
+#. Stock information, in list selector (if present)
 #: xbmc/pvr/dialogs/GUIDialogPVRRadioRDSInfo.cpp
 msgctxt "#29920"
 msgid "Stock"
@@ -15752,7 +16152,7 @@ msgstr ""
 # empty strings from id 35017 to 35048
 # empty strings from id 35011 to 35048
 #. Name of game add-ons category
-#: xbmc/filesystem/AddonsDirectory.cpp
+#: xbmc/addons/Addon.cpp xbmc/games/windows/GUIViewStateWindowGames.cpp
 msgctxt "#35049"
 msgid "Game add-ons"
 msgstr "Extensions Jeu"
@@ -15956,33 +16356,295 @@ msgctxt "#35102"
 msgid "Disable joystick when this device is present"
 msgstr "Désactiver le joystick quand ce dispositif est connecté"
 
+#. Label for mouse buttons. Used in the controller mapping dialog.
+msgctxt "#35103"
+msgid "Buttons"
+msgstr "Boutons"
+
+#. Label for relative mounters like the mouse pointer. Used in the controller mapping dialog.
+msgctxt "#35104"
+msgid "Pointers"
+msgstr "Pointeurs"
+
+# empty strings from id 35103 to 35149
+#. Name of keyboard category in the settings category window
+#: system/settings/settings.xml
+msgctxt "#35150"
+msgid "Keyboard"
+msgstr "Clavier"
+
+#. Name of group in "Games -> Keyboard" for configuring keyboard players
+#: system/settings/settings.xml
+msgctxt "#35151"
+msgid "Player configuration"
+msgstr "Configuration du joueur"
+
+#. Name of setting for enabling the keyboard during gameplay
+#: system/settings/settings.xml
+msgctxt "#35152"
+msgid "Enable keyboard"
+msgstr "Activer le clavier"
+
+#. Description of setting with label #35152 "Enable keyboard"
+#: system/settings/settings.xml
+msgctxt "#35153"
+msgid ""
+"This allows the keyboard to emulate up to 8 game controllers. If disabled, "
+"the keyboard can still be used to control emulators like DOSBox which "
+"require a full keyboard."
+msgstr ""
+"Permet au clavier d'émuler jusqu'à 8 manettes de jeu. Si désactivé, le "
+"clavier peut encore être utilisé pour contrôler les émulateurs comme DOSBox "
+"qui nécessitent un clavier complet."
+
+#. Setting name for number of keyboard players
+#: system/settings/settings.xml
+msgctxt "#35154"
+msgid "Number of keyboard players"
+msgstr "Nombre de joueurs pour le clavier"
+
+#. Description of settings with label #35066
+#: system/settings/settings.xml
+msgctxt "#35155"
+msgid ""
+"Set the number of players using the keyboard. This is intended for devices "
+"that use keyboard drivers, but you can also see how many people fit around a "
+"keyboard!"
+msgstr ""
+"Définir le nombre de joueurs qui utilisent le clavier. Ceci est destiné aux "
+"périphériques qui utilisent des pilotes de clavier, mais vous pouvez "
+"également voir combien de personnes utilisent le clavier !"
+
+#: system/settings/settings.xml
+msgctxt "#35156"
+msgid "%i"
+msgstr "%i"
+
+#. Name of setting to configure a keyboard player's controller configuration
+#: system/settings/settings.xml
+msgctxt "#35157"
+msgid "Configure keyboard player 1"
+msgstr "Configurer le joueur 1 du clavier"
+
+#. Name of setting to configure a keyboard player's controller configuration
+#: system/settings/settings.xml
+msgctxt "#35158"
+msgid "Configure keyboard player 2"
+msgstr "Configurer le joueur 2 du clavier"
+
+#. Name of setting to configure a keyboard player's controller configuration
+#: system/settings/settings.xml
+msgctxt "#35159"
+msgid "Configure keyboard player 3"
+msgstr "Configurer le joueur 3 du clavier"
+
+#. Name of setting to configure a keyboard player's controller configuration
+#: system/settings/settings.xml
+msgctxt "#35160"
+msgid "Configure keyboard player 4"
+msgstr "Configurer le joueur 4 du clavier"
+
+#. Name of setting to configure a keyboard player's controller configuration
+#: system/settings/settings.xml
+msgctxt "#35161"
+msgid "Configure keyboard player 5"
+msgstr "Configurer le joueur 5 du clavier"
+
+#. Name of setting to configure a keyboard player's controller configuration
+#: system/settings/settings.xml
+msgctxt "#35162"
+msgid "Configure keyboard player 6"
+msgstr "Configurer le joueur 6 du clavier"
+
+#. Name of setting to configure a keyboard player's controller configuration
+#: system/settings/settings.xml
+msgctxt "#35163"
+msgid "Configure keyboard player 7"
+msgstr "Configurer le joueur 7 du clavier"
+
+#. Name of setting to configure a keyboard player's controller configuration
+#: system/settings/settings.xml
+msgctxt "#35164"
+msgid "Configure keyboard player 8"
+msgstr "Configurer le joueur 8 du clavier"
+
+#. Name of the keyboard-emulated controller in the list of peripherals
+#: xbmc/peripherals/bus/virtual/PeripheralBusApplication.cpp
+msgctxt "#35165"
+msgid "Keyboard player"
+msgstr "Joueur du clavier"
+
+# empty strings from id 35166 to 35199
+#. This string is an early meme from the late 1990's that made fun of the poor translation in the 16-bit game Zero Wing from the late 1980's. DO NOT TRANSLATE!
+#: system/settings/settings.xml
+msgctxt "#35200"
+msgid "ALL YOUR BASE ARE BELONG[CR]TO US"
+msgstr "ALL YOUR BASE ARE BELONG[CR]TO US"
+
+#. Name of group in "Games -> General" for configuring gameplay
+#: system/settings/settings.xml
+msgctxt "#35201"
+msgid "Gameplay"
+msgstr "Gameplay"
+
+# empty string with id 35202
+#: system/settings/settings.xml
+msgctxt "#35203"
+msgid "Enable rewind if supported"
+msgstr "Activer le retour arrière s'il est pris en charge"
+
+#: system/settings/settings.xml
+msgctxt "#35204"
+msgid ""
+"Enable real-time rewinding during game play, if supported. Press rewind or "
+"manually seek backwards using the seek bar."
+msgstr ""
+"Activer le retour arrière en temps réel pendant le jeu, s'il est pris en "
+"charge. Appuyer sur la touche retour arrière ou rechercher manuellement vers "
+"l'arrière à l'aide de la barre de recherche."
+
+#: system/settings/settings.xml
+msgctxt "#35205"
+msgid "Maximum rewind time"
+msgstr "Durée de retour arrière maximale"
+
+#: system/settings/settings.xml
+msgctxt "#35206"
+msgid ""
+"Maximum time possible to rewind, if supported. Large rewind histories can "
+"use a lot of RAM."
+msgstr ""
+"Durée maximale possible pour le retour arrière, si supporté. Les longs "
+"retours arrière peuvent utiliser beaucoup de RAM."
+
+#. Description of add-on category for emulators
+#: xbmc/filesystem/AddonsDirectory.cpp
+msgctxt "#35207"
+msgid "Emulators"
+msgstr "Émulateurs"
+
+#. Description of add-on category for standalone games
+#: xbmc/filesystem/AddonsDirectory.cpp
+msgctxt "#35208"
+msgid "Standalone games"
+msgstr "Jeux standalone"
+
+#: xbmc/addons/Addon.cpp
+msgctxt "#35209"
+msgid "Game resources"
+msgstr "Ressources du jeu"
+
+#. Dialog title when gameplay fails
+#: xbmc/games/addons/GameClient.cpp xbmc/games/GameManager.cpp
+msgctxt "#35210"
+msgid "Failed to play game"
+msgstr "Impossible de lancer le jeu"
+
+#. Error dialog text when the game requires restricted files to play. %s - emulator ID
+#: xbmc/games/addons/GameClient.cpp
+msgctxt "#35211"
+msgid "This game requires the following add-on: %s"
+msgstr "Ce jeu nécessite l’extension suivante : %s"
+
+#. Error dialog text when launching a game and no emulators are compatible
+#: xbmc/games/GameUtils.cpp
+msgctxt "#35212"
+msgid "This game isn't compatible with any available emulators."
+msgstr "Ce jeu n'est pas compatible avec les émulateurs disponibles."
+
+#. Error dialog text when launching a game and the emulator has an internal error. %s - emulator name
+#: xbmc/games/GameClient.cpp
+msgctxt "#35213"
+msgid "The emulator \"%s\" had an internal error."
+msgstr "L’émulateur \"%s\" a une erreur interne."
+
+#. Error dialog text when the game can't be played because it's not on a hard drive or partition
+#: xbmc/games/GameUtils.cpp
+msgctxt "#35214"
+msgid ""
+"This game can only be played directly from a hard drive or partition. "
+"Compressed files must be extracted."
+msgstr ""
+"Ce jeu ne peut être lancé que depuis un disque dur ou une partition. Les "
+"fichiers compressés doivent être extraits."
+
+#. Error dialog text when libretro support is disabled
+#: xbmc/games/addons/GameClientProperties.cpp
+msgctxt "#35215"
+msgid "This game depends on a disabled add-on. Would you like to enable it?"
+msgstr "Ce jeu dépend d'une extension désactivée. Voulez-vous l'activer ?"
+
+#. Description of add-on category for game support add-ons like game.libretro (the libretro wrapper)
+#: xbmc/filesystem/AddonsDirectory.cpp
+msgctxt "#35216"
+msgid "Support add-ons"
+msgstr "Extensions de support"
+
+# empty strings from id 35217 to 35219
+#. Description of add-on category for game providers
+#: xbmc/filesystem/AddonsDirectory.cpp
+msgctxt "#35220"
+msgid "Game providers"
+msgstr "Fournisseurs d’informations des jeux"
+
+# empty strings from id 35221 to 35249
+#: xbmc/windows/GUIMediaWindow.cpp
+msgctxt "#35250"
+msgid "Add games..."
+msgstr "Ajouter des jeux…"
+
+#: xbmc/dialogs/GUIDialogMediaSource.cpp
+msgctxt "#35251"
+msgid "Add game source"
+msgstr "Ajouter une source de jeux"
+
+#: xbmc/dialogs/GUIDialogMediaSource.cpp
+msgctxt "#35252"
+msgid "Edit game source"
+msgstr "Éditer la source des jeux"
+
+#: xbmc/games/windows/GUIWindowGames.cpp
+msgctxt "#35253"
+msgid "Install emulator"
+msgstr "Installer un émulateur"
+
+#: xbmc/games/windows/GUIWindowGames.cpp
+msgctxt "#35254"
+msgid "Manage emulators"
+msgstr "Gérer les émulateurs"
+
+#: xbmc/games/dialogs/GUIDialogSelectGameClient.cpp
+msgctxt "#35255"
+msgid "Browse all emulators"
+msgstr "Parcourir tous les émulateurs"
+
 # empty strings from id 35103 to 35504
 #. connection state "host unreachable"
-#: xbmc/addons/AddonCallbacksPVR.cpp
+#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#35505"
 msgid "Server is unreachable."
 msgstr "Le serveur est inaccessible."
 
 #. connection state "server type mismatch" (reachable, but maybe an HTTP server where an FTP server is expected)
-#: xbmc/addons/AddonCallbacksPVR.cpp
+#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#35506"
 msgid "Server does not respond properly."
 msgstr "Le serveur ne répond pas correctement."
 
 #. connection state "client - server version mismatch (reachable, but maybe server version to low)"
-#: xbmc/addons/AddonCallbacksPVR.cpp
+#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#35507"
 msgid "Server version is not compatible."
 msgstr "La version du serveur n’est pas compatible."
 
 #. connection state "access denied" (e.g. due to wrong credentials)
-#: xbmc/addons/AddonCallbacksPVR.cpp
+#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#35508"
 msgid "Access denied."
 msgstr "Accès refusé."
 
 #. connection state "connecting" (asynchronous addon start)
-#: xbmc/addons/AddonCallbacksPVR.cpp
+#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#35509"
 msgid "Connecting to backend."
 msgstr "Connexion au serveur."
@@ -16129,8 +16791,9 @@ msgctxt "#36029"
 msgid "When the TV is switched off"
 msgstr "En arrêtant la TV"
 
-#: xbmc/addons/addonstatushandler.cpp xbmc/addons/AddonCallbacksPVR.cpp
+#. connection state "connection lost"
 #: xbmc/peripherals/devices/PeripheralCecAdapter.cpp
+#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#36030"
 msgid "Connection lost"
 msgstr "Connexion perdue"
@@ -16150,7 +16813,8 @@ msgctxt "#36033"
 msgid "Action when switching to another source"
 msgstr "Action lors du passage à une autre source"
 
-#: xbmc/addons/AddonCallbacksPVR.cpp
+#. connection state "connection established"
+#: xbmc/pvr/addons/PVRClients.cpp
 msgctxt "#36034"
 msgid "Connection established"
 msgstr "Connexion établie"
@@ -19496,12 +20160,14 @@ msgstr ""
 "qu’une nouvelle vidéo est démarrée."
 
 # Dialog title for 3D LUT file picker
+#. Dialog title for 3D LUT file picker
 #: xbmc/video/dialogs/GUIDialogVideoSettings.cpp
 msgctxt "#36580"
 msgid "3D LUT file"
 msgstr "Fichier 3D LUT"
 
 # Dialog title for ICC display profile file picker
+#. Dialog title for ICC display profile file picker
 #: xbmc/video/dialogs/GUIDialogVideoSettings.cpp
 msgctxt "#36581"
 msgid "ICC Profile"
@@ -20129,7 +20795,9 @@ msgctxt "#37045"
 msgid ""
 "Extract chapter thumbnails for presentation in the chapters / bookmarks "
 "dialogue. This might increase CPU load."
-msgstr "Extraire les vignettes de chapitre présentées dans la fenêtre de chapitres. Peut affecter la charge de CPU."
+msgstr ""
+"Extraire les vignettes de chapitre présentées dans la fenêtre de chapitres. "
+"Peut affecter la charge de CPU."
 
 #: system/settings/rbp.xml
 msgctxt "#38010"

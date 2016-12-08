@@ -2,7 +2,7 @@
 <addon
   id="resource.language.fr_fr"
   version="10.0.0"
-  name="French"
+  name="Français (KODI 18)"
   provider-name="Guilouz">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
@@ -26,10 +26,10 @@
     </sorttokens>
   </extension>
   <extension point="kodi.addon.metadata">
-    <summary lang="en">French language pack</summary>
-    <summary lang="fr">Pack de langue français</summary>
-    <description lang="en">French version of all texts used in Kodi.</description>
-    <description lang="fr">Version française de tous les textes utilisés dans Kodi.</description>
+    <summary lang="en">French language pack for Kodi 18</summary>
+    <summary lang="fr">Pack de langue français pour Kodi 18</summary>
+    <description lang="en">French version of all texts used in Kodi 18.</description>
+    <description lang="fr">Version française de tous les textes utilisés dans Kodi 18.</description>
     <platform>all</platform>
   </extension>
 </addon>

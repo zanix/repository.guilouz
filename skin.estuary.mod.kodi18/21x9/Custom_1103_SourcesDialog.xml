@@ -54,6 +54,12 @@
                     <onclick>Dialog.Close(all)</onclick>
                     <onclick>ActivateWindow(pictures,root)</onclick>
                 </item>
+                <item>
+                    <label>$LOCALIZE[15016]</label>
+                    <onclick>Dialog.Close(all)</onclick>
+                    <onclick>ActivateWindow(games,root)</onclick>
+                    <visible>System.GetBool(gamesgeneral.enable)</visible>
+                </item>
             </content>
         </control>
         </control>
