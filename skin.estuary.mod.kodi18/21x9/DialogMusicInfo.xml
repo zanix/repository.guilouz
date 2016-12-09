@@ -483,7 +483,7 @@
 			<visible>String.IsEqual(ListItem.DBType,song) + !Window.IsActive(musicinformation)</visible>
 			<include content="InfoDialogTopBarInfo">
 				<param name="main_label" value="[COLOR white]$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title][/COLOR]" />
-				<param name="sub_label" value="$INFO[ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[ListItem.Album]$INFO[ListItem.Year, (,)" />
+				<param name="sub_label" value="$INFO[ListItem.Artist,,[COLOR white] • [/COLOR]]$INFO[ListItem.Album]$INFO[ListItem.Year, (,)]" />
 				<param name="id" value="33335" />
 				<param name="textcolor" value="$VAR[SkinColorVar]" />
 			</include>
