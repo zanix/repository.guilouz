@@ -146,7 +146,7 @@
 						</itemlayout>
 						<content>
 							<item id="1">
-								<label>$LOCALIZE[1037]$INFO[Window(Home).Property(SkinHelper.TotalVideoAddons), (,)</label>
+								<label>$LOCALIZE[1037]$INFO[Window(Home).Property(SkinHelper.TotalVideoAddons), (,)]</label>
 								<onclick>ActivateWindow(videos,addons://sources/video/,return)</onclick>
 								<thumb>icons/settings/AddonVideo.png</thumb>
 								<property name="id">video</property>
