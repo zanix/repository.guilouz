@@ -18,6 +18,21 @@
         <radioposx>0</radioposx>
         <radioposy>0</radioposy>
     </include>
+    <include name="InfoDialogMetadata2">
+        <param name="textcolor">white</param>
+        <definition>
+            <control type="label" id="$PARAM[control_id]">
+                <width>447</width>
+                <height>45</height>
+                <aligny>center</aligny>
+                <font>font10</font>
+                <label>$PARAM[label]</label>
+                <textcolor>$PARAM[textcolor]</textcolor>
+                <visible>$PARAM[visible]</visible>
+                <scroll>true</scroll>
+            </control>
+        </definition>
+    </include>
     <include name="InfoDialogMetadata">
         <param name="textcolor">white</param>
         <definition>

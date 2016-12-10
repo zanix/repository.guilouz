@@ -282,7 +282,6 @@
 						<onleft>138</onleft>
 						<onright>138</onright>
 						<ondown>5000</ondown>
-						<visible>Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 					<control type="image">
 						<left>735</left>
@@ -290,23 +289,6 @@
 						<height>410</height>
 						<aligny>bottom</aligny>
 						<texture border="40">buttons/button-nofo.png</texture>
-						<visible>Integer.IsGreater(Container(4000).NumItems,0)</visible>
-					</control>
-					<control type="button" id="139">
-						<width>1245</width>
-						<height>410</height>
-						<textoffsetx>40</textoffsetx>
-						<textoffsety>20</textoffsety>
-						<aligny>bottom</aligny>
-						<label></label>
-						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
-						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
-						<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
-						<onup>50</onup>
-						<onleft>139</onleft>
-						<onright>139</onright>
-						<ondown>5000</ondown>
-						<visible>!Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 					<control type="textbox">
 						<left>40</left>
@@ -316,22 +298,11 @@
 						<font>font_textbox</font>
 						<label fallback="19055">$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-						<visible>Integer.IsGreater(Container(4000).NumItems,0)</visible>
-					</control>
-					<control type="textbox">
-						<left>40</left>
-						<top>25</top>
-						<width>1165</width>
-						<height>343</height>
-						<font>font_textbox</font>
-						<label fallback="19055">$INFO[ListItem.Plot]</label>
-						<autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-						<visible>!Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 				</control>
 				<control type="grouplist" id="4000">
 					<orientation>vertical</orientation>
-					<left>730</left>
+					<left>768</left>
 					<top>488</top>
 					<height>355</height>
 					<itemgap>-8</itemgap>
@@ -339,91 +310,91 @@
 					<onup>50</onup>
 					<onright>140</onright>
 					<onleft>140</onleft>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="147" />
 						<param name="label" value="$INFO[ListItem.Director,$LOCALIZE[20339] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Director)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="148" />
 						<param name="label" value="$INFO[ListItem.Writer,$LOCALIZE[20417] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Writer)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="150" />
 						<param name="label" value="$LOCALIZE[515] : [COLOR white]$INFO[ListItem.Genre][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Genre) + String.IsEqual(ListItem.DBType,movie)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="152" />
 						<param name="label" value="$LOCALIZE[21875] : [COLOR white]$INFO[ListItem.Country][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Country)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="153" />
 						<param name="label" value="$LOCALIZE[29909] : [COLOR white]$INFO[ListItem.Studio][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Studio)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="154" />
 						<param name="label" value="$INFO[Window(Home).Property(NextAired.LatestDate),$LOCALIZE[40109] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.LatestNumber),, ][/COLOR]" />
 						<param name="visible" value="String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestDate))" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="154" />
 						<param name="label" value="$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[40108] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.NextNumber),, ][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(Window(Home).Property(NextAired.NextDate))" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="155" />
 						<param name="label" value="$LOCALIZE[31048] : [COLOR white]$INFO[ListItem.Season,, $LOCALIZE[36905]]$INFO[ListItem.Episode, (, $LOCALIZE[20453])][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Season) + !String.IsEqual(ListItem.DBType,episode)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="156" />
 						<param name="label" value="$LOCALIZE[31017] : [COLOR white]$VAR[MPAALabelVar][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Mpaa)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="149" />
 						<param name="label" value="$LOCALIZE[563] : [COLOR white]$INFO[ListItem.RatingAndVotes][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.RatingAndVotes)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="157" />
 						<param name="label" value="$LOCALIZE[20457] : [COLOR white]$INFO[ListItem.Set][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Set)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="158" />
 						<param name="label" value="$LOCALIZE[20459] : [COLOR white]$INFO[ListItem.Tag][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Tag)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="159" />
 						<param name="label" value="$LOCALIZE[126] : [COLOR white]$INFO[ListItem.Status][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Status)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="161" />
 						<param name="label" value="$LOCALIZE[126] : [COLOR white]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]" />
 						<param name="visible" value="String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(NextAired.Status))" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
-					<include content="InfoDialogMetadata">
+					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="160" />
 						<param name="label" value="$LOCALIZE[568] : [COLOR white]$INFO[ListItem.LastPlayed][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.LastPlayed)" />
