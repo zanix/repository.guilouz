@@ -22,7 +22,7 @@
                 <control type="image">
                     <left>0</left>
                     <top>25</top>
-                    <width>520</width>
+                    <width>532</width>
                     <height>905</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="15">dialogs/white.png</texture>
@@ -32,7 +32,7 @@
                 <control type="label">
                     <left>10</left>
                     <top>122</top>
-                    <width>500</width>
+                    <width>512</width>
                     <align>center</align>
                     <height>50</height>
                     <textcolor>white</textcolor>
@@ -44,7 +44,7 @@
                     <left>15</left>
                     <top>172</top>
                     <align>center</align>
-                    <width>490</width>
+                    <width>502</width>
                     <height>90</height>
                     <ondown>3020</ondown>
                     <onback>down</onback>
@@ -65,7 +65,7 @@
                         <itemgap>-10</itemgap>
                         <orientation>horizontal</orientation>
                         <control type="button" id="3020">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>A</label>
                             <align>center</align>
@@ -76,7 +76,7 @@
                             <ondown>3026</ondown>
                         </control>
                         <control type="button" id="3021">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>B</label>
                             <align>center</align>
@@ -87,7 +87,7 @@
                             <ondown>3027</ondown>
                         </control>
                         <control type="button" id="3022">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>C</label>
                             <align>center</align>
@@ -98,7 +98,7 @@
                             <ondown>3028</ondown>
                         </control>
                         <control type="button" id="3023">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>D</label>
                             <align>center</align>
@@ -109,7 +109,7 @@
                             <ondown>3029</ondown>
                         </control>
                         <control type="button" id="3024">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>E</label>
                             <align>center</align>
@@ -120,7 +120,7 @@
                             <ondown>3030</ondown>
                         </control>
                         <control type="button" id="3025">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>F</label>
                             <align>center</align>
@@ -141,7 +141,7 @@
                         <itemgap>-10</itemgap>
                         <orientation>horizontal</orientation>
                         <control type="button" id="3026">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>G</label>
                             <align>center</align>
@@ -152,7 +152,7 @@
                             <ondown>3032</ondown>
                         </control>
                         <control type="button" id="3027">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>H</label>
                             <align>center</align>
@@ -163,7 +163,7 @@
                             <ondown>3033</ondown>
                         </control>
                         <control type="button" id="3028">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>I</label>
                             <align>center</align>
@@ -174,7 +174,7 @@
                             <ondown>3034</ondown>
                         </control>
                         <control type="button" id="3029">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>J</label>
                             <align>center</align>
@@ -185,7 +185,7 @@
                             <ondown>3035</ondown>
                         </control>
                         <control type="button" id="3030">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>K</label>
                             <align>center</align>
@@ -196,7 +196,7 @@
                             <ondown>3036</ondown>
                         </control>
                         <control type="button" id="3031">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>L</label>
                             <align>center</align>
@@ -217,7 +217,7 @@
                         <height>80</height>
                         <orientation>horizontal</orientation>
                         <control type="button" id="3032">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>M</label>
                             <align>center</align>
@@ -228,7 +228,7 @@
                             <ondown>3038</ondown>
                         </control>
                         <control type="button" id="3033">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>N</label>
                             <align>center</align>
@@ -239,7 +239,7 @@
                             <ondown>3039</ondown>
                         </control>
                         <control type="button" id="3034">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>O</label>
                             <align>center</align>
@@ -250,7 +250,7 @@
                             <ondown>3040</ondown>
                         </control>
                         <control type="button" id="3035">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>P</label>
                             <align>center</align>
@@ -261,7 +261,7 @@
                             <ondown>3041</ondown>
                         </control>
                         <control type="button" id="3036">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>Q</label>
                             <align>center</align>
@@ -272,7 +272,7 @@
                             <ondown>3042</ondown>
                         </control>
                         <control type="button" id="3037">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>R</label>
                             <align>center</align>
@@ -293,7 +293,7 @@
                         <itemgap>-10</itemgap>
                         <orientation>horizontal</orientation>
                         <control type="button" id="3038">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>S</label>
                             <align>center</align>
@@ -304,7 +304,7 @@
                             <ondown>3044</ondown>
                         </control>
                         <control type="button" id="3039">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>T</label>
                             <align>center</align>
@@ -315,7 +315,7 @@
                             <ondown>3045</ondown>
                         </control>
                         <control type="button" id="3040">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>U</label>
                             <align>center</align>
@@ -326,7 +326,7 @@
                             <ondown>3046</ondown>
                         </control>
                         <control type="button" id="3041">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>V</label>
                             <align>center</align>
@@ -337,7 +337,7 @@
                             <ondown>3047</ondown>
                         </control>
                         <control type="button" id="3042">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>W</label>
                             <align>center</align>
@@ -348,7 +348,7 @@
                             <ondown>3048</ondown>
                         </control>
                         <control type="button" id="3043">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>X</label>
                             <align>center</align>
@@ -369,7 +369,7 @@
                         <itemgap>-10</itemgap>
                         <orientation>horizontal</orientation>
                         <control type="button" id="3044">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>Y</label>
                             <align>center</align>
@@ -380,7 +380,7 @@
                             <ondown>3050</ondown>
                         </control>
                         <control type="button" id="3045">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>Z</label>
                             <align>center</align>
@@ -391,7 +391,7 @@
                             <ondown>3051</ondown>
                         </control>
                         <control type="button" id="3046">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>$NUMBER[0]</label>
                             <align>center</align>
@@ -402,7 +402,7 @@
                             <ondown>3052</ondown>
                         </control>
                         <control type="button" id="3047">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>$NUMBER[1]</label>
                             <align>center</align>
@@ -413,7 +413,7 @@
                             <ondown>3053</ondown>
                         </control>
                         <control type="button" id="3048">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>$NUMBER[2]</label>
                             <align>center</align>
@@ -424,7 +424,7 @@
                             <ondown>3054</ondown>
                         </control>
                         <control type="button" id="3049">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>$NUMBER[3]</label>
                             <align>center</align>
@@ -445,7 +445,7 @@
                         <itemgap>-10</itemgap>
                         <orientation>horizontal</orientation>
                         <control type="button" id="3050">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>$NUMBER[4]</label>
                             <align>center</align>
@@ -456,7 +456,7 @@
                             <ondown>3056</ondown>
                         </control>
                         <control type="button" id="3051">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>$NUMBER[5]</label>
                             <align>center</align>
@@ -467,7 +467,7 @@
                             <ondown>3056</ondown>
                         </control>
                         <control type="button" id="3052">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>$NUMBER[6]</label>
                             <align>center</align>
@@ -478,7 +478,7 @@
                             <ondown>3057</ondown>
                         </control>
                         <control type="button" id="3053">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>$NUMBER[7]</label>
                             <align>center</align>
@@ -489,7 +489,7 @@
                             <ondown>3057</ondown>
                         </control>
                         <control type="button" id="3054">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>$NUMBER[8]</label>
                             <align>center</align>
@@ -500,7 +500,7 @@
                             <ondown>3058</ondown>
                         </control>
                         <control type="button" id="3055">
-                            <width>90</width>
+                            <width>92</width>
                             <height>90</height>
                             <label>$NUMBER[9]</label>
                             <align>center</align>
@@ -521,9 +521,8 @@
                         <onright>2900</onright>
                         <orientation>horizontal</orientation>
                         <control type="button" id="3056">
-                            <width>170</width>
+                            <width>174</width>
                             <font>font13</font>
-                            <width>90</width>
                             <height>90</height>
                             <label>20181</label>
                             <align>center</align>
@@ -534,9 +533,8 @@
                             <ondown>noop</ondown>
                         </control>
                         <control type="button" id="3057">
-                            <width>170</width>
+                            <width>174</width>
                             <font>font13</font>
-                            <width>90</width>
                             <height>90</height>
                             <label>20182</label>
                             <align>center</align>
@@ -547,9 +545,8 @@
                             <ondown>noop</ondown>
                         </control>
                         <control type="button" id="3058">
-                            <width>170</width>
+                            <width>174</width>
                             <font>font13</font>
-                            <width>90</width>
                             <height>90</height>
                             <label>192</label>
                             <align>center</align>
@@ -774,7 +771,7 @@
             <align>center</align>
             <font>font12</font>
             <scroll>yes</scroll>
-            <label>$INFO[Container(3112).Listitem.tvshowtitle] - $INFO[Container(3112).Listitem.Label]</label>
+            <label>$INFO[Container(3112).Listitem.tvshowtitle]$INFO[Container(3112).Listitem.Label, - ,]</label>
             <visible>Control.HasFocus(3112)</visible>
         </control>
         <control type="group">

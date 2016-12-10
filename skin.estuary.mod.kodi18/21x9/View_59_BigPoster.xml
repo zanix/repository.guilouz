@@ -315,8 +315,7 @@
                                 <align>left</align>
                                 <font>font12</font>
                                 <autoscroll>false</autoscroll>
-                                <label>$VAR[ShiftRightTextBoxVar]</label>
-                                <textcolor>$VAR[SkinColorVar]</textcolor>
+                                <label>$VAR[PlotSpoilerVar]</label>
                             </control>
                             <control type="label">
                                 <bottom>20</bottom>
@@ -430,8 +429,7 @@
                                 <height>278</height>
                                 <align>left</align>
                                 <font>font12</font>
-                                <label>$VAR[ShiftRightTextBoxVar]</label>
-                                <textcolor>$VAR[SkinColorVar]</textcolor>
+                                <label>$VAR[PlotSpoilerVar]</label>
                                 <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
                             </control>
                             <control type="label">
