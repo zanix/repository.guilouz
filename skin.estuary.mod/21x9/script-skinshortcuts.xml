@@ -765,7 +765,7 @@
                         <onclick>ClearProperty(WidgetVisibility,home)</onclick>
                         <onclick>SetProperty(widgetID, musicvideo3)</onclick>
                         <onclick>SendClick(312)</onclick>
-                        <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                         <visible>String.IsEqual(Container(211).ListItem.Property(widget),MusicVideoWidget)</visible>
                     </control>
                     <control type="button" id="1467">

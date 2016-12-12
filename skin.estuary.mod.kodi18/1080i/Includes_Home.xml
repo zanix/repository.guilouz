@@ -8221,7 +8221,7 @@
 								<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 								<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 								<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
-								<visible>IntegerGreaterThan(Container(5900).NumItems,0) + Control.HasFocus(9000)</visible>
+								<visible>Integer.IsGreater(Container(5900).NumItems,0) + Control.HasFocus(9000)</visible>
 							</control>
 						</focusedlayout>
 						<content>
