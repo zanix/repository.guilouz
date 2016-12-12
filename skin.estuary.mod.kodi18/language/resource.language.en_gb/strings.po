@@ -1916,3 +1916,7 @@ msgstr ""
 msgctxt "#40288"
 msgid "Reset pattern color of background."
 msgstr ""
+
+msgctxt "#40289"
+msgid "Horizontal guide"
+msgstr ""
