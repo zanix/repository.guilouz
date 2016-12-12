@@ -14,6 +14,9 @@
  			<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
  			<visible>Window.isActive(fullscreenvideo)</visible>
  		</control>
+ 		<control type="group">
+			<centerleft>50%</centerleft>
+			<width>1920</width>
  		<control type="image">
 			<include>OpenClose_Left</include>
 			<left>114</left>
@@ -111,5 +114,6 @@
 			<param name="sub_label" value="[COLOR $VAR[SkinColorVar]]$INFO[ListItem.ChannelName][/COLOR]" />
 			<param name="posy" value="40" />
 		</include>
+		</control>
 	</controls>
 </window>
