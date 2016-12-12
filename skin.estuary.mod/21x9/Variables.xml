@@ -1477,6 +1477,10 @@
         <value condition="!String.IsEmpty(Skin.String(BackgroundColor))">$INFO[Skin.String(BackgroundColor)]</value>
         <value>button_focus</value>
     </variable>
+    <variable name="PatternColorVar">
+        <value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
+        <value>4D000000</value>
+    </variable>
     <variable name="DurationVar">
         <value condition="Integer.IsLessOrEqual(ListItem.Duration,59)">$INFO[ListItem.Duration,, min]</value>
         <value>$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Hours),,h]$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Minutes)]</value>
@@ -1873,6 +1877,14 @@
     <variable name="GlobalFanartVar">
         <value condition="Skin.HasSetting(use_custom_bg) + !String.IsEmpty(Skin.String(custom_background))">$INFO[Skin.String(custom_background)]</value>
         <value>special://skin/extras/backgrounds/default.png</value>
+    </variable>
+    <variable name="GamesFanartVar">
+        <value condition="!String.IsEmpty(Skin.String(games_background))">$INFO[Skin.String(games_background)]</value>
+        <value>special://skin/extras/home-images/games.jpg</value>
+    </variable>
+    <variable name="Label_SkinSetting_GamesFanart">
+        <value condition="!String.IsEmpty(Skin.String(games_background))">$INFO[Skin.String(games_background)]</value>
+        <value>$LOCALIZE[15109]</value>
     </variable>
     <variable name="SearchFanartVar">
         <value condition="!String.IsEmpty(Skin.String(search_background))">$INFO[Skin.String(search_background)]</value>
@@ -2496,6 +2508,10 @@
         <value condition="Control.HasFocus(694)">$LOCALIZE[40275]</value>
         <value condition="Control.HasFocus(695)">$LOCALIZE[40277]</value>
         <value condition="Control.HasFocus(697)">$LOCALIZE[40279]</value>
+        <value condition="Control.HasFocus(698)">$LOCALIZE[40282]</value>
+        <value condition="Control.HasFocus(699)">$LOCALIZE[40286]</value>
+        <value condition="Control.HasFocus(700)">$LOCALIZE[40287]</value>
+        <value condition="Control.HasFocus(701)">$LOCALIZE[40288]</value>
         <value condition="Control.HasFocus(657) | Control.HasFocus(658) | Control.HasFocus(659) | Control.HasFocus(661) | Control.HasFocus(662)  | Control.HasFocus(669)">$LOCALIZE[10045]</value>
         <value condition="Container(9000).HasFocus(1)">$LOCALIZE[40024]</value>
         <value condition="Container(9000).HasFocus(2)">$LOCALIZE[31130]</value>
@@ -2701,6 +2717,9 @@
         <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + Control.HasFocus(8500)">$INFO[Window(home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
         <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + Control.HasFocus(8500)">$INFO[Container(8500).ListItem.Art(fanart)]</value>
         <value condition="!Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Container(8500).ListItem.Art(fanart)) + Control.HasFocus(8500)">$INFO[Container(8500).ListItem.Art(fanart)]</value>
+        <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + Control.HasFocus(8600)">$INFO[Window(home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
+        <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + Control.HasFocus(8600)">$INFO[Container(8600).ListItem.Art(fanart)]</value>
+        <value condition="!Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Container(8600).ListItem.Art(fanart)) + Control.HasFocus(8600)">$INFO[Container(8600).ListItem.Art(fanart)]</value>
         <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + Control.HasFocus(11100)">$INFO[Window(home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
         <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + Control.HasFocus(11100)">$INFO[Container(11100).ListItem.Art(fanart)]</value>
         <value condition="!Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Container(11100).ListItem.Art(fanart)) + Control.HasFocus(11100)">$INFO[Container(11100).ListItem.Art(fanart)]</value>
@@ -2850,6 +2869,7 @@
         <value condition="Window.IsActive(systemsettings)">icons/settings/system.png</value>
         <value condition="Window.IsActive(servicesettings)">icons/settings/network.png</value>
         <value condition="Window.IsActive(pvrsettings)">icons/settings/livetv.png</value>
+        <value condition="Window.IsActive(GameSettings)">icons/settings/games.png</value>
     </variable>
     <!-- Breadcrumbs -->
     <variable name="BreadcrumbsVideoVar">
@@ -3025,6 +3045,10 @@
     </variable>
     <variable name="Label_SkinSetting_BackgroundColor">
         <value condition="!String.IsEmpty(Skin.String(BackgroundColor))">$INFO[Skin.String(BackgroundColor)]</value>
+        <value>$LOCALIZE[15109]</value>
+    </variable>
+    <variable name="Label_SkinSetting_PatternColor">
+        <value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
         <value>$LOCALIZE[15109]</value>
     </variable>
     <variable name="Background_Opacity">

@@ -808,6 +808,32 @@
                         <label>- $LOCALIZE[40184]</label>
                         <onclick>Skin.Reset(BackgroundColor)</onclick>
                     </control>
+                    <control type="button" id="699">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+					    <label>40283</label>
+					    <label2>$LOCALIZE[467] $INFO[Skin.String(background_overlay)]</label2>
+					    <onclick condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onclick>
+					    <onclick condition="String.IsEqual(Skin.String(background_overlay),6)">Skin.SetString(background_overlay,1)</onclick>
+					    <onclick condition="String.IsEqual(Skin.String(background_overlay),5)">Skin.SetString(background_overlay,6)</onclick>
+					    <onclick condition="String.IsEqual(Skin.String(background_overlay),4)">Skin.SetString(background_overlay,5)</onclick>
+					    <onclick condition="String.IsEqual(Skin.String(background_overlay),3)">Skin.SetString(background_overlay,4)</onclick>
+					    <onclick condition="String.IsEqual(Skin.String(background_overlay),2)">Skin.SetString(background_overlay,3)</onclick>
+					    <onclick condition="String.IsEqual(Skin.String(background_overlay),1)">Skin.SetString(background_overlay,2)</onclick>
+				    </control>
+				    <control type="button" id="700">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>40284</label>
+                        <label2>$VAR[Label_SkinSetting_PatternColor]</label2>
+                        <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PatternColor)</onclick>
+                    </control>
+                    <control type="button" id="701">
+                        <width>1256</width>
+                        <include>DefaultSettingButton</include>
+                        <label>- $LOCALIZE[40285]</label>
+                        <onclick>Skin.Reset(PatternColor)</onclick>
+                    </control>
                     <control type="button" id="608">
                         <width>1256</width>
                         <include>DefaultSettingButton</include>

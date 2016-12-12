@@ -1759,3 +1759,27 @@ msgstr "Arrière-plan du raccourci 'Jeux'"
 msgctxt "#40282"
 msgid "Replace background of [B]Games[/B] shortcut."
 msgstr "Permet de remplacer l'arrière-plan du raccourci [B]Jeux[/B]."
+
+msgctxt "#40283"
+msgid "Pattern type"
+msgstr "Type du modèle"
+
+msgctxt "#40284"
+msgid "Pattern color"
+msgstr "Couleur du modèle"
+
+msgctxt "#40285"
+msgid "Reset pattern color"
+msgstr "Réinitialiser la couleur du modèle"
+
+msgctxt "#40286"
+msgid "Select pattern type of background."
+msgstr "Permet de sélectionner le type de modèle de l'arrière-plan."
+
+msgctxt "#40287"
+msgid "Change pattern color of background."
+msgstr "Permet de changer la couleur du modèle de l'arrière-plan."
+
+msgctxt "#40288"
+msgid "Reset pattern color of background."
+msgstr "Permet de réinitialiser la couleur du modèle de l'arrière-plan."

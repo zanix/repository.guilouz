@@ -1477,6 +1477,10 @@
         <value condition="!String.IsEmpty(Skin.String(BackgroundColor))">$INFO[Skin.String(BackgroundColor)]</value>
         <value>button_focus</value>
     </variable>
+    <variable name="PatternColorVar">
+        <value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
+        <value>4D000000</value>
+    </variable>
     <variable name="DurationVar">
         <value condition="Integer.IsLessOrEqual(ListItem.Duration,59)">$INFO[ListItem.Duration,, min]</value>
         <value>$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Hours),,h]$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Minutes)]</value>
@@ -2505,6 +2509,9 @@
         <value condition="Control.HasFocus(695)">$LOCALIZE[40277]</value>
         <value condition="Control.HasFocus(697)">$LOCALIZE[40279]</value>
         <value condition="Control.HasFocus(698)">$LOCALIZE[40282]</value>
+        <value condition="Control.HasFocus(699)">$LOCALIZE[40286]</value>
+        <value condition="Control.HasFocus(700)">$LOCALIZE[40287]</value>
+        <value condition="Control.HasFocus(701)">$LOCALIZE[40288]</value>
         <value condition="Control.HasFocus(657) | Control.HasFocus(658) | Control.HasFocus(659) | Control.HasFocus(661) | Control.HasFocus(662)  | Control.HasFocus(669)">$LOCALIZE[10045]</value>
         <value condition="Container(9000).HasFocus(1)">$LOCALIZE[40024]</value>
         <value condition="Container(9000).HasFocus(2)">$LOCALIZE[31130]</value>
@@ -3038,6 +3045,10 @@
     </variable>
     <variable name="Label_SkinSetting_BackgroundColor">
         <value condition="!String.IsEmpty(Skin.String(BackgroundColor))">$INFO[Skin.String(BackgroundColor)]</value>
+        <value>$LOCALIZE[15109]</value>
+    </variable>
+    <variable name="Label_SkinSetting_PatternColor">
+        <value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
         <value>$LOCALIZE[15109]</value>
     </variable>
     <variable name="Background_Opacity">

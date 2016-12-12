@@ -1880,3 +1880,39 @@ msgstr ""
 msgctxt "#40279"
 msgid "Show rating of TheMovieDB.org rather than IMDb.com."
 msgstr ""
+
+msgctxt "#40280"
+msgid "Access to all your games"
+msgstr ""
+
+msgctxt "#40281"
+msgid "Background of 'Games' shortcut"
+msgstr ""
+
+msgctxt "#40282"
+msgid "Replace background of [B]Games[/B] shortcut."
+msgstr ""
+
+msgctxt "#40283"
+msgid "Pattern type"
+msgstr ""
+
+msgctxt "#40284"
+msgid "Pattern color"
+msgstr ""
+
+msgctxt "#40285"
+msgid "Reset pattern color"
+msgstr ""
+
+msgctxt "#40286"
+msgid "Select pattern type of background."
+msgstr ""
+
+msgctxt "#40287"
+msgid "Change pattern color of background."
+msgstr ""
+
+msgctxt "#40288"
+msgid "Reset pattern color of background."
+msgstr ""

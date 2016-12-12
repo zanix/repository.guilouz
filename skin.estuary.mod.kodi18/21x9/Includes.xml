@@ -2448,6 +2448,14 @@
                     <texture colordiffuse="$VAR[BackgroundColorVar]" fallback="special://skin/extras/backgrounds/default.png">$VAR[GlobalFanartVar]</texture>
                 </control>
                 <control type="image">
+			        <depth>DepthBackground</depth>
+			        <include>FullScreenDimensions</include>
+			        <aspectratio>scale</aspectratio>
+			        <animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">Conditional</animation>
+                    <animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
+			        <texture colordiffuse="$VAR[PatternColorVar]" fallback="special://skin/extras/patterns/secondary1.png">$INFO[Skin.String(background_overlay),special://skin/extras/patterns/secondary,.png]</texture>
+		        </control>
+                <control type="image">
                     <depth>DepthBackground</depth>
                     <include>FullScreenDimensions</include>
                     <aspectratio>scale</aspectratio>
