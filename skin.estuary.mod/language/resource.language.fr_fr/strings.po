@@ -1787,3 +1787,11 @@ msgstr "Permet de réinitialiser la couleur du modèle de l'arrière-plan."
 msgctxt "#40289"
 msgid "Horizontal guide"
 msgstr "Guide horizontal"
+
+msgctxt "#40290"
+msgid "Number of items for widgets"
+msgstr "Nombre d'éléments pour les widgets"
+
+msgctxt "#40291"
+msgid "Set number of items to display on widgets."
+msgstr "Permet de définir le nombre d'éléments à afficher sur les widgets."

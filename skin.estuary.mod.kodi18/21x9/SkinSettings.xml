@@ -256,6 +256,13 @@
                         <onclick>Skin.ToggleSetting(enable_widgetselection)</onclick>
                         <visible>!Skin.HasSetting(horizontaladvanced_menu) + !Skin.HasSetting(horizontal_menu)</visible>
                     </control>
+                    <control type="button" id="702">
+                        <label>40290</label>
+                        <label2>$VAR[Label_SkinSetting_WidgetNumber]</label2>
+                        <width>1896</width>
+                        <include>DefaultSettingButton</include>
+                        <onclick>Skin.SetNumeric(widgetnumber)</onclick>
+                    </control>
                     <control type="button" id="698">
                         <label>40281</label>
                         <label2>$VAR[Label_SkinSetting_GamesFanart]</label2>
@@ -314,7 +321,7 @@
                         <width>1896</width>
                         <include>DefaultSettingButton</include>
                         <label>10041</label>
-                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(basic_menu)|Skin.Reset(horizontal_menu)|Skin.Reset(horizontaladvanced_menu)|Skin.Reset(enable_widgetflagicons)|Skin.Reset(show_widgetclearlogos)|Skin.Reset(enable_widgetselection)|Skin.Reset(games_background)|Skin.Reset(search_background)|Skin.Reset(favorites_background)|Skin.Reset(filemanager_background)|Skin.Reset(settings_background)|Skin.Reset(power_background))</onclick>
+                        <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(basic_menu)|Skin.Reset(horizontal_menu)|Skin.Reset(horizontaladvanced_menu)|Skin.Reset(enable_widgetflagicons)|Skin.Reset(show_widgetclearlogos)|Skin.Reset(enable_widgetselection)|Skin.Reset(widgetnumber)|Skin.Reset(games_background)|Skin.Reset(search_background)|Skin.Reset(favorites_background)|Skin.Reset(filemanager_background)|Skin.Reset(settings_background)|Skin.Reset(power_background))</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="600">

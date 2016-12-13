@@ -2512,6 +2512,7 @@
         <value condition="Control.HasFocus(699)">$LOCALIZE[40286]</value>
         <value condition="Control.HasFocus(700)">$LOCALIZE[40287]</value>
         <value condition="Control.HasFocus(701)">$LOCALIZE[40288]</value>
+        <value condition="Control.HasFocus(702)">$LOCALIZE[40291]</value>
         <value condition="Control.HasFocus(657) | Control.HasFocus(658) | Control.HasFocus(659) | Control.HasFocus(661) | Control.HasFocus(662)  | Control.HasFocus(669)">$LOCALIZE[10045]</value>
         <value condition="Container(9000).HasFocus(1)">$LOCALIZE[40024]</value>
         <value condition="Container(9000).HasFocus(2)">$LOCALIZE[31130]</value>
@@ -3051,6 +3052,10 @@
     <variable name="Label_SkinSetting_PatternColor">
         <value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
         <value>$LOCALIZE[15109]</value>
+    </variable>
+    <variable name="Label_SkinSetting_WidgetNumber">
+        <value condition="!String.IsEmpty(Skin.String(widgetnumber))">$INFO[Skin.String(widgetnumber)]</value>
+        <value>25</value>
     </variable>
     <variable name="Background_Opacity">
         <value condition="String.IsEmpty(Skin.String(Opacity.label)) + String.IsEqual(Skin.String(Opacity.label),Default)">35FFFFFF</value>

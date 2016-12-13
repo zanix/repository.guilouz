@@ -2,6 +2,5 @@
 <smartplaylist type="episodes">
     <name>$LOCALIZE[40226]</name>
     <match>all</match>
-    <limit>25</limit>
     <order direction="descending">random</order>
 </smartplaylist>

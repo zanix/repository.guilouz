@@ -3,6 +3,5 @@
     <name>$LOCALIZE[31010]</name>
     <match>all</match>
     <rule field="inprogress" operator="true" />
-    <limit>25</limit>
     <order direction="descending">lastplayed</order>
 </smartplaylist>

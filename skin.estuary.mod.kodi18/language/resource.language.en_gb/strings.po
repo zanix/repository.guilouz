@@ -1920,3 +1920,11 @@ msgstr ""
 msgctxt "#40289"
 msgid "Horizontal guide"
 msgstr ""
+
+msgctxt "#40290"
+msgid "Number of items for widgets"
+msgstr ""
+
+msgctxt "#40291"
+msgid "Set number of items to display on widgets."
+msgstr ""

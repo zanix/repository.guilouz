@@ -2,7 +2,6 @@
 <smartplaylist type="musicvideos">
     <name>$LOCALIZE[40117]</name>
     <match>all</match>
-    <limit>25</limit>
     <rule field="playcount" operator="greaterthan">
         <value>0</value>
     </rule>

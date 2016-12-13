@@ -1098,7 +1098,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+				<content target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 			</control>
 		</control>
 	</include>
@@ -1236,7 +1236,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+				<content target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 			</control>
 		</control>
 	</include>
@@ -1373,7 +1373,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+				<content target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 			</control>
 		</control>
 	</include>
@@ -1512,7 +1512,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+				<content target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 			</control>
 		</control>
 	</include>
@@ -1651,7 +1651,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+				<content target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 			</control>
 		</control>
 	</include>
@@ -1789,7 +1789,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<content target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+				<content target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 			</control>
 		</control>
 	</include>
@@ -2466,7 +2466,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -2640,7 +2640,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -2813,7 +2813,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -2988,7 +2988,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -3163,7 +3163,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -3337,7 +3337,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -3434,7 +3434,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -3615,7 +3615,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -3712,7 +3712,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -3809,7 +3809,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -3906,7 +3906,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -4087,7 +4087,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
@@ -4188,7 +4188,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="25">$PARAM[content_path]</content>
+					<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
 				</control>
 			</control>
 		</definition>
