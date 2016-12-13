@@ -1,3 +1,6 @@
+1.7.3 :
+• Minnor fix
+
 1.7.2 :
 • Add genre for list view
 • Add possibility to show rating of TMDB rather than IMDB
