@@ -1,5 +1,6 @@
 1.7.3 :
 • Add possibility to choose number of items to display on widgets
+• Add possibility to disable pattern
 • Minnor fix
 
 1.7.2 :

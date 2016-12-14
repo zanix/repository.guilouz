@@ -819,9 +819,8 @@
                         <width>1896</width>
                         <include>DefaultSettingButton</include>
 					    <label>40283</label>
-					    <label2>$LOCALIZE[467] $INFO[Skin.String(background_overlay)]</label2>
-					    <onclick condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onclick>
-					    <onclick condition="String.IsEqual(Skin.String(background_overlay),12)">Skin.SetString(background_overlay,1)</onclick>
+					    <label2>$VAR[Label_SkinSetting_BackgroundOverlay]</label2>
+					    <onclick condition="String.IsEqual(Skin.String(background_overlay),12)">Skin.SetString(background_overlay,0)</onclick>
 					    <onclick condition="String.IsEqual(Skin.String(background_overlay),11)">Skin.SetString(background_overlay,12)</onclick>
 					    <onclick condition="String.IsEqual(Skin.String(background_overlay),10)">Skin.SetString(background_overlay,11)</onclick>
 					    <onclick condition="String.IsEqual(Skin.String(background_overlay),9)">Skin.SetString(background_overlay,10)</onclick>
@@ -833,6 +832,7 @@
 					    <onclick condition="String.IsEqual(Skin.String(background_overlay),3)">Skin.SetString(background_overlay,4)</onclick>
 					    <onclick condition="String.IsEqual(Skin.String(background_overlay),2)">Skin.SetString(background_overlay,3)</onclick>
 					    <onclick condition="String.IsEqual(Skin.String(background_overlay),1)">Skin.SetString(background_overlay,2)</onclick>
+					    <onclick condition="String.IsEqual(Skin.String(background_overlay),0)">Skin.SetString(background_overlay,1)</onclick>
 				    </control>
 				    <control type="button" id="700">
                         <width>1896</width>

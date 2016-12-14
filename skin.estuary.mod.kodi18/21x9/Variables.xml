@@ -3053,6 +3053,11 @@
         <value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
         <value>$LOCALIZE[15109]</value>
     </variable>
+    <variable name="Label_SkinSetting_BackgroundOverlay">
+        <value condition="String.IsEmpty(Skin.String(background_overlay))">$LOCALIZE[40037]</value>
+        <value condition="String.IsEqual(Skin.String(background_overlay),0)">$LOCALIZE[40037]</value>
+        <value>$LOCALIZE[467] $INFO[Skin.String(background_overlay)]</value>
+    </variable>
     <variable name="Label_SkinSetting_WidgetNumber">
         <value condition="!String.IsEmpty(Skin.String(widgetnumber))">$INFO[Skin.String(widgetnumber)]</value>
         <value>25</value>
