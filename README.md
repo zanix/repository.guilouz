@@ -31,12 +31,12 @@
 
 ### • Changes for Kodi 18 L**** :
 
-https://raw.githubusercontent.com/Guilou...ngelog.txt
+[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod.kodi18/changelog.txt)
 
 
 ### • Changes for Kodi 17 Krypton :
 
-https://raw.githubusercontent.com/Guilou...ngelog.txt
+[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod.kodi/changelog.txt)
 
 
 ### • Installation :
