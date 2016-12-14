@@ -36,7 +36,7 @@
 
 ### • Changes for Kodi 17 Krypton :
 
-[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod.kodi/changelog.txt)
+[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod/changelog.txt)
 
 
 ### • Installation :
