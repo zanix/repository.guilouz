@@ -45,6 +45,7 @@
 - Select downloaded ZIP file.
 - Once installed, go to "Settings / Add-ons / Install from repository / Guilouz Repository / Look and feel / Skin" and install Estuary MOD (KODI 17) or Estuary MOD (KODI 18).
 - Select the skin to "Settings / Appearance / Skin".
+- Install all necessary addons in "Settings / Skin settings".
 
 ### • Download my Repository :
 
