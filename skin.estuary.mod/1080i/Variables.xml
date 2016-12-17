@@ -1456,6 +1456,10 @@
         <value condition="Control.HasFocus(7600) + Container(7600).ListItem.IsResumable">flags/widgets/widgetresume.png</value>
         <value condition="Control.HasFocus(7600) + Integer.IsGreater(Container(7600).ListItem.Playcount,0)">flags/widgets/widgetwatched.png</value>
     </variable>
+    <variable name="DurationWidgetVar">
+        <value condition="String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Hours))">$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Minutes),, min]</value>
+        <value>$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Hours),,h]$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Minutes)]</value>
+    </variable>
     <variable name="PVRLandscapeVar">
         <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.Landscape))">$INFO[Window(home).Property(SkinHelper.ListItem.Art.Landscape)]</value>
         <value condition="!String.IsEmpty(Window(home).Property(SkinHelper.ListItem.Art.FanArt))">$INFO[Window(home).Property(SkinHelper.ListItem.Art.FanArt)]</value>
