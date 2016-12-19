@@ -2863,7 +2863,7 @@
         <value condition="ListItem.IsResumable">overlays/watched/resume.png</value>
         <value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
         <value condition="ListItem.IsCollection">overlays/sets.png</value>
-        <value condition="ListItem.IsFolder + !Container.Content(tvshows)">overlays/folder.png</value>
+        <value condition="ListItem.IsFolder + !Container.Content(tvshows) + !Container.Content(seasons)">overlays/folder.png</value>
         <value condition="!String.IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
         <value>OverlayUnwatched.png</value>
     </variable>
