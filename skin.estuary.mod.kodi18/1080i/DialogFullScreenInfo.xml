@@ -240,6 +240,7 @@
 				<control type="group">
 					<width>156</width>
 					<height>50</height>
+					<visible>!Skin.HasSetting(enable_TMDBrating)</visible>
 					<control type="image">
 						<width>156</width>
 						<height>50</height>
@@ -257,6 +258,29 @@
 						<font>Font-Flag</font>
 						<label>$INFO[VideoPlayer.Rating]</label>
 						<visible>!String.IsEmpty(VideoPlayer.Rating)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>156</width>
+					<height>50</height>
+					<visible>Skin.HasSetting(enable_TMDBrating)</visible>
+					<control type="image">
+						<width>156</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture>flags/rating_tmdb.png</texture>
+						<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Rating.TMDB))</visible>
+					</control>
+					<control type="label">
+						<posx>74</posx>
+						<posy>2</posy>
+						<width>79</width>
+						<height>44</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>Font-Flag</font>
+						<label>$INFO[Window(Home).Property(SkinHelper.Player.Rating.TMDB)]</label>
+						<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Rating.TMDB))</visible>
 					</control>
 				</control>
 			</control>

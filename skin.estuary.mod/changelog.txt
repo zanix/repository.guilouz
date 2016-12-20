@@ -2,6 +2,9 @@
 • Add possibility to choose number of items to display on widgets
 • Add possibility to disable pattern
 • Add duration flag icon for widgets
+• Add first aired date on dialog video info
+• Fix animated posters issue
+• Fix TMDB/TVDB flag icons
 • Minnor fix
 
 1.7.2 :
