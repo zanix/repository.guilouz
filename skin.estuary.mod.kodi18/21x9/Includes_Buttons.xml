@@ -23,7 +23,7 @@
         <definition>
             <control type="label" id="$PARAM[control_id]">
                 <width>447</width>
-                <height>45</height>
+                <height>40</height>
                 <aligny>center</aligny>
                 <font>font10</font>
                 <label>$PARAM[label]</label>
