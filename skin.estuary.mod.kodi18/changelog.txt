@@ -4,6 +4,7 @@
 • Add duration flag icon for widgets
 • Add first aired date on dialog video info
 • Fix animated posters issue
+• Fix duration flag icon
 • Minnor fix
 	
 1.7.2 :
