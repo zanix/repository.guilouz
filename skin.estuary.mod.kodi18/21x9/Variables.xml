@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <variable name="RatingViewVar">
+        <value condition="Skin.HasSetting(enable_TMDBrating)">$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)]</value>
+        <value>$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)]</value>
+    </variable>
     <variable name="MusicPlayerDiscTitle">
         <value condition="!String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]</value>
         <value>$INFO[Player.Title]</value>

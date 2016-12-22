@@ -838,7 +838,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + !String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(tvshows)</visible>
+                <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + !String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)</visible>
                 <visible>!Skin.HasSetting(enable_TMDBrating)</visible>
                 <width>156</width>
                 <height>50</height>
@@ -1375,7 +1375,7 @@
             <width>1720</width>
             <align>right</align>
             <control type="group">
-                <visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.Rating) + !String.StartsWith(Container.FolderPath,plugin://)  + !Container.Content(tvshows)</visible>
+                <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + !String.StartsWith(Container.FolderPath,plugin://)  + !Container.Content(tvshows)</visible>
                 <visible>!Skin.HasSetting(enable_TMDBrating)</visible>
                 <width>156</width>
                 <height>50</height>
@@ -1393,7 +1393,7 @@
                     <align>center</align>
                     <aligny>center</aligny>
                     <font>Font-Flag</font>
-                    <label>$INFO[ListItem.Rating]</label>
+                    <label>$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)]</label>
                     <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
                 </control>
             </control>

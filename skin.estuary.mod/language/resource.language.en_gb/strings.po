@@ -1928,3 +1928,7 @@ msgstr ""
 msgctxt "#40291"
 msgid "Set number of items to display on widgets."
 msgstr ""
+
+msgctxt "#40292"
+msgid "votes"
+msgstr ""

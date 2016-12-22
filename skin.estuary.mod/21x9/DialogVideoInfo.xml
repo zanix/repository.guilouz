@@ -372,8 +372,14 @@
 					</include>
 					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="149" />
-						<param name="label" value="$LOCALIZE[563] : [COLOR white]$INFO[ListItem.RatingAndVotes][/COLOR]" />
-						<param name="visible" value="!String.IsEmpty(ListItem.RatingAndVotes)" />
+						<param name="label" value="$LOCALIZE[563] (IMDB) : [COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.IMDB), (, $LOCALIZE[40292])][/COLOR]" />
+						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.IMDB))]" />
+						<param name="textcolor" value="$VAR[SkinColorVar]" />
+					</include>
+					<include content="InfoDialogMetadata2">
+						<param name="control_id" value="163" />
+						<param name="label" value="$LOCALIZE[563] (TMDB) : [COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.TMDB), (, $LOCALIZE[40292])][/COLOR]" />
+						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.TMDB))]" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata2">
