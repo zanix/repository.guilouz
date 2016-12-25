@@ -1799,3 +1799,7 @@ msgstr "Permet de définir le nombre d'éléments à afficher sur les widgets."
 msgctxt "#40292"
 msgid "votes"
 msgstr "votes"
+
+msgctxt "#40293"
+msgid "Eject"
+msgstr "Éjecter"

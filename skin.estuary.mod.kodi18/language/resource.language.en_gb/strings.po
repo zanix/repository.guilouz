@@ -1932,3 +1932,7 @@ msgstr ""
 msgctxt "#40292"
 msgid "votes"
 msgstr ""
+
+msgctxt "#40293"
+msgid "Eject"
+msgstr ""

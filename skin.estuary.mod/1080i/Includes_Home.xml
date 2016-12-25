@@ -1892,7 +1892,7 @@
 					<width>1310</width>
 					<height>100</height>
 					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900)</visible>
+					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900) | String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)</visible>
 				</control>
 				<control type="grouplist" id="$PARAM[button_id]567">
 					<top>680</top>
@@ -1935,7 +1935,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900)</visible>
+					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900) | String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)</visible>
 				</control>
 			</control>
 		</definition>
@@ -2194,7 +2194,7 @@
 					<width>1310</width>
 					<height>100</height>
 					<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900)</visible>
+					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900) | String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)</visible>
 				</control>
 				<control type="grouplist" id="$PARAM[button_id]567">
 					<top>690</top>
@@ -2237,7 +2237,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900)</visible>
+					<visible>Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(900) | String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)</visible>
 				</control>
 			</control>
 		</definition>
@@ -2297,7 +2297,7 @@
 						<width>1211</width>
 						<height>100</height>
 						<texture colordiffuse="AAFFFFFF">colors/black.png</texture>
-						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),FavouritesWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),FileManagerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),PowerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),SearchWidget)</visible>
+						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),FavouritesWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),FileManagerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),PowerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),SearchWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)</visible>
 					</control>
 					<control type="textbox" id="$PARAM[button_id]">
 						<top>681</top>
@@ -2308,7 +2308,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),FavouritesWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),FileManagerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),PowerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),SearchWidget)</visible>
+						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),FavouritesWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),FileManagerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),PowerWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),SearchWidget) | String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)</visible>
 					</control>
 				</control>
 			</control>
@@ -8071,6 +8071,28 @@
 						</include>
 					</control>
 				</control>
+				<control type="group" id="50006">
+					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)</visible>
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<include>Visible_Right_Delayed</include>
+					<control type="grouplist" id="4001">
+						<orientation>vertical</orientation>
+						<include content="ImageWidgetHeader2">
+							<param name="widget_header" value="$LOCALIZE[427]" />
+							<param name="visible" value="true"/>
+						</include>
+						<include content="ImageWidget5">
+							<param name="image_path" value="special://skin/extras/home-images/disc.jpg"/>
+							<param name="text_label" value="$INFO[System.DVDLabel]" />
+							<param name="button_label" value="" />
+							<param name="button_id" value="4100"/>
+							<param name="visible" value="true"/>
+							<param name="visible_1" value="False"/>
+							<param name="visible_2" value="False"/>
+						</include>
+					</control>
+				</control>
 			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="" />
@@ -9976,6 +9998,25 @@
 						</include>
 					</control>
 				</control>
+				<control type="group" id="50006">
+					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)</visible>
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<include>Visible_Right_Delayed</include>
+					<top>110</top>
+					<control type="grouplist" id="4001">
+						<orientation>vertical</orientation>
+						<include content="ImageWidget">
+							<param name="image_path" value="special://skin/extras/home-images/disc.jpg"/>
+							<param name="text_label" value="$INFO[System.DVDLabel]" />
+							<param name="button_label" value="" />
+							<param name="button_id" value="4100"/>
+							<param name="visible" value="true"/>
+							<param name="visible_1" value="False"/>
+							<param name="visible_2" value="False"/>
+						</include>
+					</control>
+				</control>
 			</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="" />
@@ -10058,6 +10099,7 @@
 						<onfocus>ClearProperty(listposition,home)</onfocus>
 						<onright condition="!String.IsEmpty(Container(5900).ListItem.Label) + !Skin.HasSetting(enable_widgetselection)">5900</onright>
 						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),PictureWidget)">5900</onright>
+						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)">5900</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">17100</onright>
 						<onright condition="Skin.HasSetting(enable_widgetselection) + String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">17100</onright>
 						<onright condition="String.IsEmpty(Container(5900).ListItem.Label) + String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget)">6100</onright>
@@ -11718,6 +11760,22 @@
 							<param name="image_path" value="$VAR[SearchFanartVar]"/>
 							<param name="widget_header" value="$LOCALIZE[31001]" />
 							<param name="text_label" value="$LOCALIZE[40081]" />
+							<param name="button_id" value="4100"/>
+							<param name="visible" value="True"/>
+						</include>
+					</control>
+				</control>
+				<control type="group" id="50006">
+					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)</visible>
+					<visible>!Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + !Control.HasFocus(900)</visible>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<include>Visible_Right_Delayed</include>
+					<control type="grouplist" id="4001">
+						<orientation>vertical</orientation>
+						<include content="ImageWidgetAdvancedHorizontal1">
+							<param name="image_path" value="special://skin/extras/home-images/disc.jpg"/>
+							<param name="widget_header" value="$LOCALIZE[427]" />
+							<param name="text_label" value="$INFO[System.DVDLabel]" />
 							<param name="button_id" value="4100"/>
 							<param name="visible" value="True"/>
 						</include>

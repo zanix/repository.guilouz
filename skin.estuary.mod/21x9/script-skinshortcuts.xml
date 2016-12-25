@@ -306,7 +306,7 @@
                         <onclick>SetProperty(WidgetVisibility,True,home)</onclick>
  						<onclick>SendClick(312)</onclick>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
+                        <visible>!String.IsEqual(Container(211).ListItem.Label,OpenELEC) + !String.IsEqual(Container(211).ListItem.Label,LibreELEC) + !String.IsEqual(Container(211).ListItem.Label,$LOCALIZE[427])</visible>
                     </control>
                     <control type="radiobutton" id="1504">
                         <width>1896</width>

@@ -1,6 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <shortcuts>
     <shortcut>
+        <label>427</label>
+        <label2>Common Shortcut</label2>
+        <defaultID>disc</defaultID>
+        <icon>special://skin/extras/icons/dvd.png</icon>
+        <action>PlayDVD</action>
+        <visible>System.HasMediaDVD</visible>
+    </shortcut>
+    <shortcut>
         <label>31001</label>
         <label2>Common Shortcut</label2>
         <defaultID>search</defaultID>

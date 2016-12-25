@@ -13,12 +13,6 @@
         <action>ActivateWindow(Videos,special://videoplaylists/,return)</action>
     </shortcut>
     <shortcut>
-        <label>341</label>
-        <label2>Common Shortcut</label2>
-        <icon>special://skin/extras/icons/dvd.png</icon>
-        <action>PlayDVD</action>
-    </shortcut>
-    <shortcut>
         <label>20314</label>
         <label2>Common Shortcut</label2>
         <icon>special://skin/extras/icons/media.png</icon>
