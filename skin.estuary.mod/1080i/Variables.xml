@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <variable name="RatingWidgetVar">
-	    <value condition="!Skin.HasSetting(enable_TMDBrating) + !Control.HasFocus(9000) + !Control.HasFocus(5900) + !Control.HasFocus(900) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804)">$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB),,[COLOR white] • [/COLOR]]</value>
-	    <value condition="Skin.HasSetting(enable_TMDBrating)  + !Control.HasFocus(9000) + !Control.HasFocus(5900) + !Control.HasFocus(900) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804)">$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TMDB),,[COLOR white] • [/COLOR]]</value>
+	    <value condition="!Skin.HasSetting(enable_TMDBrating) + !Control.HasFocus(9000) + !Control.HasFocus(5900) + !Control.HasFocus(900) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + Window.IsVisible(Home.xml)">$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB),,[COLOR white] • [/COLOR]]</value>
+	    <value condition="Skin.HasSetting(enable_TMDBrating)  + !Control.HasFocus(9000) + !Control.HasFocus(5900) + !Control.HasFocus(900) + !Control.HasFocus(801) + !Control.HasFocus(802) + !Control.HasFocus(803) + !Control.HasFocus(804) + Window.IsVisible(Home.xml)">$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TMDB),,[COLOR white] • [/COLOR]]</value>
     </variable>
     <variable name="MusicPlayerDiscTitle">
         <value condition="!String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]</value>
