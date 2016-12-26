@@ -930,22 +930,22 @@
             </control>
             <control type="group">
                 <visible>Container.Content(musicvideos) + !String.IsEmpty(ListItem.Duration)</visible>
-                <width>176</width>
+                <width>216</width>
                 <height>50</height>
                 <control type="image">
-                    <width>176</width>
+                    <width>216</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/time.png</texture>
                 </control>
                 <control type="label">
-                    <width>119</width>
+                    <width>149</width>
                     <centertop>47%</centertop>
                     <height>50</height>
-                    <posx>54</posx>
+                    <posx>59</posx>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <label>$VAR[DurationVar]</label>
+                    <label>$INFO[ListItem.Duration]</label>
                     <font>Font-Flag</font>
                     <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
                 </control>
@@ -969,6 +969,7 @@
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.EndTimeResume]</label>
                     <font>Font-Flag</font>
+                    <scroll>true</scroll>
                     <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
                 </control>
             </control>
@@ -1229,7 +1230,7 @@
         <animation effect="fade" time="200">VisibleChange</animation>
         <control type="image">
             <posx>686</posx>
-            <width>632</width>
+            <width>592</width>
             <height>50</height>
             <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/cadre2.png</texture>
             <visible>![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Meter)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MetaCritic.Rating))]</visible>
@@ -1280,7 +1281,7 @@
             <orientation>horizontal</orientation>
             <left>689</left>
             <itemgap>80</itemgap>
-            <width>626</width>
+            <width>586</width>
             <align>center</align>
             <visible>!Skin.HasSetting(hide_audience)</visible>
             <control type="group">
@@ -1422,22 +1423,22 @@
             </control>
             <control type="group">
                 <visible>!ListItem.IsCollection + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://) + !String.IsEmpty(ListItem.Duration)</visible>
-                <width>176</width>
+                <width>216</width>
                 <height>50</height>
                 <control type="image">
-                    <width>176</width>
+                    <width>216</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/time.png</texture>
                 </control>
                 <control type="label">
-                    <width>119</width>
+                    <width>149</width>
                     <centertop>47%</centertop>
                     <height>50</height>
-                    <posx>54</posx>
+                    <posx>59</posx>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <label>$VAR[DurationVar]</label>
+                    <label>$INFO[ListItem.Duration]</label>
                     <font>Font-Flag</font>
                     <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
                 </control>
@@ -1461,6 +1462,7 @@
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.EndTimeResume]</label>
                     <font>Font-Flag</font>
+                    <scroll>true</scroll>
                     <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
                 </control>
             </control>

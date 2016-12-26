@@ -969,6 +969,7 @@
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.EndTimeResume]</label>
                     <font>Font-Flag</font>
+                    <scroll>true</scroll>
                     <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
                 </control>
             </control>
@@ -1461,6 +1462,7 @@
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.EndTimeResume]</label>
                     <font>Font-Flag</font>
+                    <scroll>true</scroll>
                     <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
                 </control>
             </control>
