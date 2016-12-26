@@ -133,6 +133,9 @@
                     <texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
                     <visible>!String.IsEmpty(Window.Property(palettename))</visible>
                 </control>
+                <control type="slider" id="3015">
+					<visible>false</visible>
+				</control>
                 <!-- color preview-->
                 <control type="group">
                     <control type="image">
