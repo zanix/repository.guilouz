@@ -1544,6 +1544,7 @@
     <variable name="ClearArtTop">
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearart))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearart)]</value>
     </variable>
     <variable name="ClearArtView">
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
@@ -1556,39 +1557,7 @@
         <value>$INFO[ListItem.Art(clearlogo)]</value>
     </variable>
     <variable name="ClearLogoVar">
-        <value condition="!String.IsEmpty(Container(50).ListItem.Art(tvshow.clearlogo))">$INFO[Container(50).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(51).ListItem.Art(tvshow.clearlogo))">$INFO[Container(51).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(52).ListItem.Art(tvshow.clearlogo))">$INFO[Container(52).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(53).ListItem.Art(tvshow.clearlogo))">$INFO[Container(53).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(54).ListItem.Art(tvshow.clearlogo))">$INFO[Container(54).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(55).ListItem.Art(tvshow.clearlogo))">$INFO[Container(55).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(56).ListItem.Art(tvshow.clearlogo))">$INFO[Container(56).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(57).ListItem.Art(tvshow.clearlogo))">$INFO[Container(57).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(58).ListItem.Art(tvshow.clearlogo))">$INFO[Container(58).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(59).ListItem.Art(tvshow.clearlogo))">$INFO[Container(59).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(500).ListItem.Art(tvshow.clearlogo))">$INFO[Container(500).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(501).ListItem.Art(tvshow.clearlogo))">$INFO[Container(501).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(502).ListItem.Art(tvshow.clearlogo))">$INFO[Container(502).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(503).ListItem.Art(tvshow.clearlogo))">$INFO[Container(503).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(504).ListItem.Art(tvshow.clearlogo))">$INFO[Container(504).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(505).ListItem.Art(tvshow.clearlogo))">$INFO[Container(505).ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(50).ListItem.Art(clearlogo))">$INFO[Container(50).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(51).ListItem.Art(clearlogo))">$INFO[Container(51).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(52).ListItem.Art(clearlogo))">$INFO[Container(52).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(53).ListItem.Art(clearlogo))">$INFO[Container(53).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(54).ListItem.Art(clearlogo))">$INFO[Container(54).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(55).ListItem.Art(clearlogo))">$INFO[Container(55).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(56).ListItem.Art(clearlogo))">$INFO[Container(56).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(57).ListItem.Art(clearlogo))">$INFO[Container(57).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(58).ListItem.Art(clearlogo))">$INFO[Container(58).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(59).ListItem.Art(clearlogo))">$INFO[Container(59).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(500).ListItem.Art(clearlogo))">$INFO[Container(500).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(501).ListItem.Art(clearlogo))">$INFO[Container(501).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(502).ListItem.Art(clearlogo))">$INFO[Container(502).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(503).ListItem.Art(clearlogo))">$INFO[Container(503).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(504).ListItem.Art(clearlogo))">$INFO[Container(504).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(505).ListItem.Art(clearlogo))">$INFO[Container(505).ListItem.Art(clearlogo)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
     </variable>

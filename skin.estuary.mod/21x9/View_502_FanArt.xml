@@ -42,6 +42,17 @@
                     <font>font12</font>
                     <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
                     <label>$VAR[PlotSpoilerVar]</label>
+                    <visible>!ListItem.IsCollection</visible>
+                </control>
+                <control type="textbox">
+                    <left>1397</left>
+                    <top>589</top>
+                    <width>972</width>
+                    <height>121</height>
+                    <font>font12</font>
+                    <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+                    <label>$INFO[Window(Home).Property(SkinHelper.ListItem.ExtendedPlot)]</label>
+                    <visible>ListItem.IsCollection</visible>
                 </control>
             </control>
             <control type="group">

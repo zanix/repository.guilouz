@@ -146,13 +146,13 @@
         <control type="group">
             <animation effect="fade" time="200" start="0" end="100" condition="!String.IsEmpty(Control.GetLabel($PARAM[textbox_id]))">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" condition="String.IsEmpty(Control.GetLabel($PARAM[textbox_id]))">Conditional</animation>
+            <visible>!ListItem.IsCollection</visible>
             <control type="image">
                 <top>-20</top>
                 <left>60</left>
                 <width>1220</width>
                 <height>192</height>
                 <texture border="22">dialogs/dialog-bg.png</texture>
-                <visible>!ListItem.IsCollection</visible>
             </control>
             <control type="textbox" id="$PARAM[textbox_id]">
                 <left>100</left>
