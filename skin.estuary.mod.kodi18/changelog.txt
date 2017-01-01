@@ -1,4 +1,6 @@
 1.7.4 :
+• Add pattern to extended info windows
+• Fix missing changes for new Skin Helper Service addons
 • Minnor fix
 
 1.7.3 :
