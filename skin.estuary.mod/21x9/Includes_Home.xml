@@ -2597,14 +2597,14 @@
 						<control type="group">
 							<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
 							<control type="image">
-								<left>20</left>
+								<left>0</left>
 								<top>18</top>
 								<width>422</width>
 								<height>240</height>
 								<texture background="true">dialogs/back.png</texture>
 							</control>
 							<control type="image">
-								<left>23</left>
+								<left>3</left>
 								<top>18</top>
 								<width>416</width>
 								<height>240</height>
@@ -2660,14 +2660,14 @@
 						<control type="group">
 							<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
 							<control type="image">
-								<left>20</left>
+								<left>0</left>
 								<top>18</top>
 								<width>422</width>
 								<height>240</height>
 								<texture background="true">dialogs/back.png</texture>
 							</control>
 							<control type="image">
-								<left>23</left>
+								<left>3</left>
 								<top>18</top>
 								<width>416</width>
 								<height>240</height>
