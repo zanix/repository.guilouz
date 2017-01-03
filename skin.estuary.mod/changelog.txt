@@ -1,6 +1,7 @@
 1.7.4 :
 • Add pattern to extended info windows
-• Fix missing changes for new Skin Helper Service addons	
+• Fix missing changes for new Skin Helper Service addons
+• Fix clearlogos aspect ratio for TV Shows widgets
 • Minnor fix
 
 1.7.3 :

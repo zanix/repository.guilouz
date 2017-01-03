@@ -2380,6 +2380,25 @@
 							<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 							<bordertexture>dialogs/back.png</bordertexture>
 							<bordersize>3</bordersize>
+							<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+						</control>
+						<control type="group">
+							<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							<control type="image">
+								<left>20</left>
+								<top>18</top>
+								<width>415</width>
+								<height>235</height>
+								<texture background="true">dialogs/back.png</texture>
+							</control>
+							<control type="image">
+								<left>23</left>
+								<top>18</top>
+								<width>409</width>
+								<height>235</height>
+								<aspectratio aligny="center">keep</aspectratio>
+								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+							</control>
 						</control>
 						<control type="group">
 							<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -2424,6 +2443,25 @@
 								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 								<bordertexture>dialogs/back.png</bordertexture>
 								<bordersize>3</bordersize>
+								<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							</control>
+							<control type="group">
+								<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+								<control type="image">
+									<left>20</left>
+									<top>18</top>
+									<width>415</width>
+									<height>235</height>
+									<texture background="true">dialogs/back.png</texture>
+								</control>
+								<control type="image">
+									<left>23</left>
+									<top>18</top>
+									<width>409</width>
+									<height>235</height>
+									<aspectratio aligny="center">keep</aspectratio>
+									<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+								</control>
 							</control>
 							<control type="group">
 								<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -2554,6 +2592,25 @@
 							<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 							<bordertexture>dialogs/back.png</bordertexture>
 							<bordersize>3</bordersize>
+							<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+						</control>
+						<control type="group">
+							<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							<control type="image">
+								<left>20</left>
+								<top>18</top>
+								<width>422</width>
+								<height>240</height>
+								<texture background="true">dialogs/back.png</texture>
+							</control>
+							<control type="image">
+								<left>23</left>
+								<top>18</top>
+								<width>416</width>
+								<height>240</height>
+								<aspectratio aligny="center">keep</aspectratio>
+								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+							</control>
 						</control>
 						<control type="group">
 							<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -2598,6 +2655,25 @@
 								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 								<bordertexture>dialogs/back.png</bordertexture>
 								<bordersize>3</bordersize>
+								<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							</control>
+							<control type="group">
+								<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+								<control type="image">
+									<left>20</left>
+									<top>18</top>
+									<width>422</width>
+									<height>240</height>
+									<texture background="true">dialogs/back.png</texture>
+								</control>
+								<control type="image">
+									<left>23</left>
+									<top>18</top>
+									<width>416</width>
+									<height>240</height>
+									<aspectratio aligny="center">keep</aspectratio>
+									<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+								</control>
 							</control>
 							<control type="group">
 								<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -2727,6 +2803,25 @@
 							<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 							<bordertexture>dialogs/back.png</bordertexture>
 							<bordersize>3</bordersize>
+							<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+						</control>
+						<control type="group">
+							<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							<control type="image">
+								<left>20</left>
+								<top>18</top>
+								<width>422</width>
+								<height>240</height>
+								<texture background="true">dialogs/back.png</texture>
+							</control>
+							<control type="image">
+								<left>23</left>
+								<top>18</top>
+								<width>416</width>
+								<height>240</height>
+								<aspectratio aligny="center">keep</aspectratio>
+								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+							</control>
 						</control>
 						<control type="group">
 							<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -2771,6 +2866,25 @@
 								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 								<bordertexture>dialogs/back.png</bordertexture>
 								<bordersize>3</bordersize>
+								<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							</control>
+							<control type="group">
+								<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+								<control type="image">
+									<left>20</left>
+									<top>18</top>
+									<width>422</width>
+									<height>240</height>
+									<texture background="true">dialogs/back.png</texture>
+								</control>
+								<control type="image">
+									<left>23</left>
+									<top>18</top>
+									<width>416</width>
+									<height>240</height>
+									<aspectratio aligny="center">keep</aspectratio>
+									<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+								</control>
 							</control>
 							<control type="group">
 								<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -2902,6 +3016,25 @@
 							<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 							<bordertexture>dialogs/back.png</bordertexture>
 							<bordersize>3</bordersize>
+							<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+						</control>
+						<control type="group">
+							<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							<control type="image">
+								<left>20</left>
+								<top>18</top>
+								<width>415</width>
+								<height>235</height>
+								<texture background="true">dialogs/back.png</texture>
+							</control>
+							<control type="image">
+								<left>23</left>
+								<top>18</top>
+								<width>409</width>
+								<height>235</height>
+								<aspectratio aligny="center">keep</aspectratio>
+								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+							</control>
 						</control>
 						<control type="group">
 							<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -2946,6 +3079,25 @@
 								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 								<bordertexture>dialogs/back.png</bordertexture>
 								<bordersize>3</bordersize>
+								<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							</control>
+							<control type="group">
+								<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+								<control type="image">
+									<left>20</left>
+									<top>18</top>
+									<width>415</width>
+									<height>235</height>
+									<texture background="true">dialogs/back.png</texture>
+								</control>
+								<control type="image">
+									<left>23</left>
+									<top>18</top>
+									<width>409</width>
+									<height>235</height>
+									<aspectratio aligny="center">keep</aspectratio>
+									<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+								</control>
 							</control>
 							<control type="group">
 								<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -3077,6 +3229,25 @@
 							<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 							<bordertexture>dialogs/back.png</bordertexture>
 							<bordersize>3</bordersize>
+							<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+						</control>
+						<control type="group">
+							<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							<control type="image">
+								<left>20</left>
+								<top>18</top>
+								<width>422</width>
+								<height>240</height>
+								<texture background="true">dialogs/back.png</texture>
+							</control>
+							<control type="image">
+								<left>23</left>
+								<top>18</top>
+								<width>416</width>
+								<height>240</height>
+								<aspectratio aligny="center">keep</aspectratio>
+								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+							</control>
 						</control>
 						<control type="group">
 							<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -3121,6 +3292,25 @@
 								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 								<bordertexture>dialogs/back.png</bordertexture>
 								<bordersize>3</bordersize>
+								<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							</control>
+							<control type="group">
+								<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+								<control type="image">
+									<left>20</left>
+									<top>18</top>
+									<width>422</width>
+									<height>240</height>
+									<texture background="true">dialogs/back.png</texture>
+								</control>
+								<control type="image">
+									<left>23</left>
+									<top>18</top>
+									<width>416</width>
+									<height>240</height>
+									<aspectratio aligny="center">keep</aspectratio>
+									<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+								</control>
 							</control>
 							<control type="group">
 								<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -3251,6 +3441,25 @@
 							<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 							<bordertexture>dialogs/back.png</bordertexture>
 							<bordersize>3</bordersize>
+							<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+						</control>
+						<control type="group">
+							<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							<control type="image">
+								<left>20</left>
+								<top>18</top>
+								<width>422</width>
+								<height>240</height>
+								<texture background="true">dialogs/back.png</texture>
+							</control>
+							<control type="image">
+								<left>23</left>
+								<top>18</top>
+								<width>416</width>
+								<height>240</height>
+								<aspectratio aligny="center">keep</aspectratio>
+								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+							</control>
 						</control>
 						<control type="group">
 							<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
@@ -3295,6 +3504,25 @@
 								<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
 								<bordertexture>dialogs/back.png</bordertexture>
 								<bordersize>3</bordersize>
+								<visible>String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+							</control>
+							<control type="group">
+								<visible>!String.IsEmpty(Container(9000).ListItem.Property(UseClearLogos))</visible>
+								<control type="image">
+									<left>20</left>
+									<top>18</top>
+									<width>422</width>
+									<height>240</height>
+									<texture background="true">dialogs/back.png</texture>
+								</control>
+								<control type="image">
+									<left>23</left>
+									<top>18</top>
+									<width>416</width>
+									<height>240</height>
+									<aspectratio aligny="center">keep</aspectratio>
+									<texture fallback="DefaultVideoFanart.png" background="true">$PARAM[item_image]</texture>
+								</control>
 							</control>
 							<control type="group">
 								<visible>String.IsEmpty(Container(9000).ListItem.Property(HideBannerWidget2))</visible>
