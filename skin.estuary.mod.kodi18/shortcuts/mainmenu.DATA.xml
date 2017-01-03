@@ -5,7 +5,7 @@
         <label2>Common Shortcut</label2>
         <defaultID>disc</defaultID>
         <icon>special://skin/extras/icons/dvd.png</icon>
-        <action>PlayDVD</action>
+        <action>PlayDisc</action>
         <visible>System.HasMediaDVD</visible>
     </shortcut>
     <shortcut>

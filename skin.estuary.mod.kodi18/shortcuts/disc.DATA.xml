@@ -4,7 +4,7 @@
         <label>208</label>
         <label2>Common Shortcut</label2>
         <icon>special://skin/extras/icons/play.png</icon>
-        <action>PlayDVD</action>
+        <action>PlayDisc</action>
     </shortcut>
     <shortcut>
         <label>40293</label>
