@@ -5143,7 +5143,7 @@
 							<font>fontContextMenu</font>
 							<aligny>center</aligny>
 							<scroll>yes</scroll>
-							<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName]</label>
+							<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName,[B],[/B]]</label>
 						</control>
 					</focusedlayout>
 					<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
@@ -5345,7 +5345,7 @@
 							<font>fontContextMenu</font>
 							<aligny>center</aligny>
 							<scroll>yes</scroll>
-							<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName]</label>
+							<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName,[B],[/B]]</label>
 						</control>
 					</focusedlayout>
 					<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
@@ -5538,7 +5538,7 @@
 							<font>fontContextMenu</font>
 							<aligny>center</aligny>
 							<scroll>yes</scroll>
-							<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName]</label>
+							<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName,[B],[/B]]</label>
 						</control>
 					</focusedlayout>
 					<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
