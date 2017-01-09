@@ -259,7 +259,7 @@
 				</control>
 				<control type="group">
                 <visible>![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Hours)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Minutes))]</visible>
-                <visible>Control.HasFocus(22100) | Control.HasFocus(17100) | Control.HasFocus(17200) | Control.HasFocus(17300) | Control.HasFocus(17400) | Control.HasFocus(18100) | Control.HasFocus(18200) | Control.HasFocus(18300) | Control.HasFocus(18500) | Control.HasFocus(18600) | Control.HasFocus(19100) | Control.HasFocus(19200) | Control.HasFocus(19300) | Control.HasFocus(19400) | Control.HasFocus(19500) | Control.HasFocus(19600) | Control.HasFocus(21100) | Control.HasFocus(21200) | Control.HasFocus(21300) | Control.HasFocus(21400) | Control.HasFocus(21500) | Control.HasFocus(21600) | Control.HasFocus(11100) | Control.HasFocus(11200) | Control.HasFocus(11300) | Control.HasFocus(6100) | Control.HasFocus(6300) | Control.HasFocus(10100) | Control.HasFocus(10200) | Control.HasFocus(10400)  | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300)  | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)</visible>
+                <visible>Control.HasFocus(22100) | Control.HasFocus(17100) | Control.HasFocus(17200) | Control.HasFocus(17300) | Control.HasFocus(17400) | Control.HasFocus(11100) | Control.HasFocus(11200) | Control.HasFocus(11300) | Control.HasFocus(6100) | Control.HasFocus(6300) | Control.HasFocus(10100) | Control.HasFocus(10200) | Control.HasFocus(10400)  | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300)  | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)</visible>
                 <width>176</width>
                 <height>50</height>
                 <control type="image">
@@ -365,7 +365,7 @@
 			</control>
 			<control type="group">
                 <visible>![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Hours)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Minutes))]</visible>
-                <visible>Control.HasFocus(22100) | Control.HasFocus(17100) | Control.HasFocus(17200) | Control.HasFocus(17300) | Control.HasFocus(17400) | Control.HasFocus(18100) | Control.HasFocus(18200) | Control.HasFocus(18300) | Control.HasFocus(18500) | Control.HasFocus(18600) | Control.HasFocus(19100) | Control.HasFocus(19200) | Control.HasFocus(19300) | Control.HasFocus(19400) | Control.HasFocus(19500) | Control.HasFocus(19600) | Control.HasFocus(21100) | Control.HasFocus(21200) | Control.HasFocus(21300) | Control.HasFocus(21400) | Control.HasFocus(21500) | Control.HasFocus(21600) | Control.HasFocus(11100) | Control.HasFocus(11200) | Control.HasFocus(11300) | Control.HasFocus(6100) | Control.HasFocus(6300) | Control.HasFocus(10100) | Control.HasFocus(10200) | Control.HasFocus(10400)  | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300)  | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)</visible>
+                <visible>Control.HasFocus(22100) | Control.HasFocus(17100) | Control.HasFocus(17200) | Control.HasFocus(17300) | Control.HasFocus(17400) | Control.HasFocus(11100) | Control.HasFocus(11200) | Control.HasFocus(11300) | Control.HasFocus(6100) | Control.HasFocus(6300) | Control.HasFocus(10100) | Control.HasFocus(10200) | Control.HasFocus(10400)  | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300)  | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)</visible>
                 <width>176</width>
                 <height>50</height>
                 <control type="image">
@@ -8683,6 +8683,7 @@
 				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<visible>!Player.hasMedia</visible>
+				<visible>!Control.HasFocus(22100) + !Control.HasFocus(18100) + !Control.HasFocus(18200) + !Control.HasFocus(18300) + !Control.HasFocus(18400) + !Control.HasFocus(18500) + !Control.HasFocus(18600) + !Control.HasFocus(19100) + !Control.HasFocus(19200) + !Control.HasFocus(19300) + !Control.HasFocus(19400) + !Control.HasFocus(19500) + !Control.HasFocus(19600) + !Control.HasFocus(21100) + !Control.HasFocus(21200) + !Control.HasFocus(21300) + !Control.HasFocus(21400) + !Control.HasFocus(21500) + !Control.HasFocus(21600) + !Control.HasFocus(17100) + !Control.HasFocus(17200) + !Control.HasFocus(17300) + !Control.HasFocus(17400) + !Control.HasFocus(6100) + !Control.HasFocus(6200) + !Control.HasFocus(6300) + !Control.HasFocus(6400) + !Control.HasFocus(6500) + !Control.HasFocus(10100) + !Control.HasFocus(10200) + !Control.HasFocus(10300) + !Control.HasFocus(10400) + !Control.HasFocus(7100) + !Control.HasFocus(7200) + !Control.HasFocus(7300) + !Control.HasFocus(7400) + !Control.HasFocus(7500) + !Control.HasFocus(7600)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -10605,6 +10606,7 @@
 				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<visible>!Player.hasMedia</visible>
+				<visible>!Control.HasFocus(22100) + !Control.HasFocus(18100) + !Control.HasFocus(18200) + !Control.HasFocus(18300) + !Control.HasFocus(18400) + !Control.HasFocus(18500) + !Control.HasFocus(18600) + !Control.HasFocus(19100) + !Control.HasFocus(19200) + !Control.HasFocus(19300) + !Control.HasFocus(19400) + !Control.HasFocus(19500) + !Control.HasFocus(19600) + !Control.HasFocus(21100) + !Control.HasFocus(21200) + !Control.HasFocus(21300) + !Control.HasFocus(21400) + !Control.HasFocus(21500) + !Control.HasFocus(21600) + !Control.HasFocus(17100) + !Control.HasFocus(17200) + !Control.HasFocus(17300) + !Control.HasFocus(17400) + !Control.HasFocus(6100) + !Control.HasFocus(6200) + !Control.HasFocus(6300) + !Control.HasFocus(6400) + !Control.HasFocus(6500) + !Control.HasFocus(10100) + !Control.HasFocus(10200) + !Control.HasFocus(10300) + !Control.HasFocus(10400) + !Control.HasFocus(7100) + !Control.HasFocus(7200) + !Control.HasFocus(7300) + !Control.HasFocus(7400) + !Control.HasFocus(7500) + !Control.HasFocus(7600)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -12389,6 +12391,7 @@
 				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 				<visible>!Player.hasMedia</visible>
+				<visible>!Control.HasFocus(22100) + !Control.HasFocus(18100) + !Control.HasFocus(18200) + !Control.HasFocus(18300) + !Control.HasFocus(18400) + !Control.HasFocus(18500) + !Control.HasFocus(18600) + !Control.HasFocus(19100) + !Control.HasFocus(19200) + !Control.HasFocus(19300) + !Control.HasFocus(19400) + !Control.HasFocus(19500) + !Control.HasFocus(19600) + !Control.HasFocus(21100) + !Control.HasFocus(21200) + !Control.HasFocus(21300) + !Control.HasFocus(21400) + !Control.HasFocus(21500) + !Control.HasFocus(21600) + !Control.HasFocus(17100) + !Control.HasFocus(17200) + !Control.HasFocus(17300) + !Control.HasFocus(17400) + !Control.HasFocus(6100) + !Control.HasFocus(6200) + !Control.HasFocus(6300) + !Control.HasFocus(6400) + !Control.HasFocus(6500) + !Control.HasFocus(10100) + !Control.HasFocus(10200) + !Control.HasFocus(10300) + !Control.HasFocus(10400) + !Control.HasFocus(7100) + !Control.HasFocus(7200) + !Control.HasFocus(7300) + !Control.HasFocus(7400) + !Control.HasFocus(7500) + !Control.HasFocus(7600)</visible>
 			</control>
 		</control>
 		<control type="group">

@@ -2,6 +2,7 @@
 • Add pattern to extended info windows
 • Fix missing changes for new Skin Helper Service addons
 • Fix clearlogos aspect ratio for TV Shows widgets
+• Fix rss on widgets focus
 • Minnor fix
 
 1.7.3 :
