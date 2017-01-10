@@ -191,19 +191,19 @@
                         <font>font12</font>
                         <width>1776</width>
                         <height>38</height>
-                        <label>$INFO[ListItem.Season,$LOCALIZE[33054] : [COLOR white],[/COLOR]]$INFO[ListItem.Episode, [COLOR white]•[/COLOR] $LOCALIZE[20360] : [COLOR white],[/COLOR]]$INFO[Window(Home).Property(NextAired.NextDate), [COLOR white]•[/COLOR] $LOCALIZE[40108] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.NextNumber),, ]$INFO[Window(Home).Property(NextAired.NextTitle)][/COLOR]</label>
+                        <label>$INFO[ListItem.Season,$LOCALIZE[33054] : [COLOR white],[/COLOR]]$INFO[ListItem.Episode, [COLOR white]•[/COLOR] $LOCALIZE[20360] : [COLOR white],[/COLOR]]$INFO[ListItem.Status, [COLOR white]•[/COLOR] $LOCALIZE[126] : [COLOR white],[/COLOR]]</label>
                         <shadowcolor>text_shadow</shadowcolor>
                         <textcolor>$VAR[SkinColorVar]</textcolor>
-                        <visible>!String.IsEmpty(ListItem.Season) + !String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+                        <visible>!String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Status)</visible>
                     </control>
                     <control type="label">
                         <font>font12</font>
                         <width>1776</width>
                         <height>38</height>
-                        <label>$INFO[ListItem.Season,$LOCALIZE[33054] : [COLOR white],[/COLOR]]$INFO[ListItem.Episode, [COLOR white]•[/COLOR] $LOCALIZE[20360] : [COLOR white],[/COLOR]]$INFO[Window(Home).Property(NextAired.LatestDate), [COLOR white]•[/COLOR] $LOCALIZE[40109] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.LatestNumber),, ]$INFO[Window(Home).Property(NextAired.LatestTitle)][/COLOR]</label>
+                        <label>$INFO[ListItem.Season,$LOCALIZE[33054] : [COLOR white],[/COLOR]]$INFO[ListItem.Episode, [COLOR white]•[/COLOR] $LOCALIZE[20360] : [COLOR white],[/COLOR]]$INFO[Window(Home).Property(NextAired.Status), [COLOR white]•[/COLOR] $LOCALIZE[126] : [COLOR white],[/COLOR]]</label>
                         <shadowcolor>text_shadow</shadowcolor>
                         <textcolor>$VAR[SkinColorVar]</textcolor>
-                        <visible>!String.IsEmpty(ListItem.Season) + String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+                        <visible>!String.IsEmpty(ListItem.Season) + String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(NextAired.Status))</visible>
                     </control>
                     <control type="textbox">
                         <width>1776</width>

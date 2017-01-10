@@ -97,9 +97,9 @@
                     <font>font12</font>
                     <scroll>yes</scroll>
                     <visible>Control.IsVisible(54)</visible>
-                    <label>$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[40108] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.NextNumber),, ]$INFO[Window(Home).Property(NextAired.NextTitle)][/COLOR]</label>
+                    <label>$LOCALIZE[126] : [COLOR white]$INFO[ListItem.Status][/COLOR]</label>
                     <textcolor>$VAR[SkinColorVar]</textcolor>
-                    <visible>!String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+                    <visible>!String.IsEmpty(ListItem.Status)</visible>
                 </control>
                 <control type="label">
                     <right>130</right>
@@ -109,9 +109,9 @@
                     <font>font12</font>
                     <scroll>yes</scroll>
                     <visible>Control.IsVisible(54)</visible>
-                    <label>$INFO[Window(Home).Property(NextAired.LatestDate),$LOCALIZE[40109] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.LatestNumber),, ]$INFO[Window(Home).Property(NextAired.LatestTitle)][/COLOR]</label>
+                    <label>$LOCALIZE[126] : [COLOR white]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]</label>
                     <textcolor>$VAR[SkinColorVar]</textcolor>
-                    <visible>String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+                    <visible>String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(NextAired.Status))</visible>
                 </control>
                 <control type="textbox">
                     <right>130</right>
@@ -155,9 +155,9 @@
                     <font>font12</font>
                     <scroll>yes</scroll>
                     <visible>!Control.IsVisible(54)</visible>
-                    <label>$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[40108] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.NextNumber),, ]$INFO[Window(Home).Property(NextAired.NextTitle)][/COLOR]</label>
+                    <label>$LOCALIZE[126] : [COLOR white]$INFO[ListItem.Status][/COLOR]</label>
                     <textcolor>$VAR[SkinColorVar]</textcolor>
-                    <visible>!String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+                    <visible>!String.IsEmpty(ListItem.Status)</visible>
                 </control>
                 <control type="label">
                     <right>130</right>
@@ -167,9 +167,9 @@
                     <font>font12</font>
                     <scroll>yes</scroll>
                     <visible>!Control.IsVisible(54)</visible>
-                    <label>$INFO[Window(Home).Property(NextAired.LatestDate),$LOCALIZE[40109] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.LatestNumber),, ]$INFO[Window(Home).Property(NextAired.LatestTitle)][/COLOR]</label>
+                    <label>$LOCALIZE[126] : [COLOR white]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]</label>
                     <textcolor>$VAR[SkinColorVar]</textcolor>
-                    <visible>String.IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+                    <visible>String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(NextAired.Status))</visible>
                 </control>
                 <control type="image">
                     <top>560</top>

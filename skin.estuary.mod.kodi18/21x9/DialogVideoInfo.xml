@@ -348,13 +348,13 @@
 					</include>
 					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="154" />
-						<param name="label" value="$INFO[Window(Home).Property(NextAired.LatestDate),$LOCALIZE[40109] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.LatestNumber),, ][/COLOR]" />
+						<param name="label" value="$INFO[Window(Home).Property(NextAired.LatestDate),$LOCALIZE[40109] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.LatestNumber),, : ]$INFO[Window(Home).Property(NextAired.LatestTitle)][/COLOR]" />
 						<param name="visible" value="String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestDate))" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata2">
 						<param name="control_id" value="154" />
-						<param name="label" value="$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[40108] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.NextNumber),, ][/COLOR]" />
+						<param name="label" value="$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[40108] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.NextNumber),, : ]$INFO[Window(Home).Property(NextAired.NextTitle)][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(Window(Home).Property(NextAired.NextDate))" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
