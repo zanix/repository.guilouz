@@ -1936,3 +1936,7 @@ msgstr ""
 msgctxt "#40293"
 msgid "Eject"
 msgstr ""
+
+msgctxt "#40294"
+msgid "Hide Spoilers"
+msgstr ""

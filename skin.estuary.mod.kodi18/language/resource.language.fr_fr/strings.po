@@ -1803,3 +1803,7 @@ msgstr "votes"
 msgctxt "#40293"
 msgid "Eject"
 msgstr "Éjecter"
+
+msgctxt "#40294"
+msgid "Hide Spoilers"
+msgstr "Masquer Spoilers"
