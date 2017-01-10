@@ -29,7 +29,7 @@
 - More in changelog...
 
 
-### • Changes for Kodi 18 L**** :
+### • Changes for Kodi 18 Leia :
 
 [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod.kodi18/changelog.txt)
 
