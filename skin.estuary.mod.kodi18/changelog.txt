@@ -1,5 +1,6 @@
 1.7.5 :
 • Fix overlapping rating with TV Shows
+• Minnor fix
 
 1.7.4 :
 • Add support for postplay screen from Nextup Service Notification addon
