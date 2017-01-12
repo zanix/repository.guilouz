@@ -36,7 +36,7 @@
                     <align>center</align>
                     <height>50</height>
                     <textcolor>white</textcolor>
-                    <scroll>yes</scroll>
+                    <scroll>true</scroll>
                     <label>$LOCALIZE[16017] :</label>
                 </control>
                 <!-- edit label -->
@@ -770,7 +770,7 @@
             <height>93</height>
             <align>center</align>
             <font>font12</font>
-            <scroll>yes</scroll>
+            <scroll>true</scroll>
             <label>$INFO[Container(3112).Listitem.tvshowtitle]$INFO[Container(3112).Listitem.Label, - ,]</label>
             <visible>Control.HasFocus(3112)</visible>
         </control>

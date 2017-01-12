@@ -589,7 +589,7 @@
 					<aligny>center</aligny>
 					<font>font12</font>
 					<textcolor>grey</textcolor>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="label">

@@ -598,7 +598,7 @@
 							<label>$INFO[ListItem.Label]</label>
 							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<aligny>center</aligny>
 							<align>center</align>
 						</control>

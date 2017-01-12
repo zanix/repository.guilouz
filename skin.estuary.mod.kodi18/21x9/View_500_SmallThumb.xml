@@ -260,7 +260,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <label>$VAR[SongTitleVar]</label>
-                            <scroll>yes</scroll>
+                            <scroll>true</scroll>
                         </control>
                         <control type="group">
                             <visible>!String.IsEmpty(ListItem.label2)</visible>

@@ -232,7 +232,7 @@
 							<height>60</height>
 							<font>font12</font>
 							<aligny>center</aligny>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<label>$INFO[ListItem.TrackNumber,, - ][COLOR white]$INFO[ListItem.Label][/COLOR]</label>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 						</control>

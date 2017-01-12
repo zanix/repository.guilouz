@@ -47,7 +47,7 @@
 			<width>390</width>
 			<height>70</height>
 			<font>font20_title</font>
-			<scroll>yes</scroll>			
+			<scroll>true</scroll>			
 			<label>40057</label>
 			<align>left</align>
 			<aligny>center</aligny>

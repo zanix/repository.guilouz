@@ -117,7 +117,7 @@
                         <aligny>center</aligny>
                         <font>font12</font>
                         <shadowcolor>black</shadowcolor>
-                        <scroll>yes</scroll>
+                        <scroll>true</scroll>
                     </control>
                     <control type="label" description="episode/season info" id="4002">
                         <visible>false</visible>

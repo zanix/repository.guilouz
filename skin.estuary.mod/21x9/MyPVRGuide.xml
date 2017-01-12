@@ -107,7 +107,7 @@
                             <height>60</height>
                             <font>font12</font>
                             <label>$INFO[ListItem.ChannelName]</label>
-                            <scroll>yes</scroll>
+                            <scroll>true</scroll>
                             <textcolor>$VAR[SkinColorVar]</textcolor>
                             <aligny>center</aligny>
                             <textoffsetx>10</textoffsetx>

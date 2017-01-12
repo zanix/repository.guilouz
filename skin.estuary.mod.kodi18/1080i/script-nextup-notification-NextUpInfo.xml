@@ -117,7 +117,7 @@
                         <aligny>center</aligny>
                         <font>font12</font>
                         <shadowcolor>black</shadowcolor>
-                        <scroll>yes</scroll>
+                        <scroll>true</scroll>
                         <label>$INFO[Control.GetLabel(3002)]$INFO[Control.GetLabel(3000), ,]</label>
                     </control>
                     <control type="label" description="episode/season info" id="3002">

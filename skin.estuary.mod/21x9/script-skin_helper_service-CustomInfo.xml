@@ -47,7 +47,7 @@
                 <shadowcolor>black</shadowcolor>
                 <align>left</align>
                 <height>100</height>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <label>$INFO[Container(999).ListItem.Label]</label>
             </control>
             <!-- subtitle -->

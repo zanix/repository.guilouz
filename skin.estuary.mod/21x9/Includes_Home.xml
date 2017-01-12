@@ -198,7 +198,7 @@
 				<shadowcolor>text_shadow</shadowcolor>
 				<textcolor>FFC0C0C0</textcolor>
 				<label>$VAR[WidgetAddonsLabelVar]</label>
-				<scroll>yes</scroll>
+				<scroll>true</scroll>
 			</control>
 			<control type="textbox">
 				<top>180</top>
@@ -297,7 +297,7 @@
 			<height>40</height>
 			<top>3</top>
 			<font>font13</font>
-			<scroll>yes</scroll>
+			<scroll>true</scroll>
 			<shadowcolor>text_shadow</shadowcolor>
 			<visible>![Control.HasFocus(7400) + String.IsEmpty(Container(7400).ListItem.Property(Artist_Genre))]</visible>
 		</control>
@@ -310,7 +310,7 @@
 			<top>0</top>
 			<height>80</height>
 			<font>font13</font>
-			<scroll>yes</scroll>
+			<scroll>true</scroll>
 			<shadowcolor>text_shadow</shadowcolor>
 			<visible>Control.HasFocus(7400) + String.IsEmpty(Container(7400).ListItem.Property(Artist_Genre))</visible>
 		</control>
@@ -322,7 +322,7 @@
 			<height>30</height>
 			<top>40</top>
 			<font>font12</font>
-			<scroll>yes</scroll>
+			<scroll>true</scroll>
 		</control>
 	</include>
 	<include name="BottomFlagInfo">
@@ -1029,7 +1029,7 @@
 				<top>15</top>
 				<width>2000</width>
 				<height>40</height>
-				<scroll>yes</scroll>
+				<scroll>true</scroll>
 				<label>$PARAM[widget_header]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -1167,7 +1167,7 @@
 				<top>15</top>
 				<width>2240</width>
 				<height>40</height>
-				<scroll>yes</scroll>
+				<scroll>true</scroll>
 				<label>$PARAM[widget_header]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -1304,7 +1304,7 @@
 				<top>0</top>
 				<width>2376</width>
 				<height>40</height>
-				<scroll>yes</scroll>
+				<scroll>true</scroll>
 				<label>$PARAM[widget_header]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -1443,7 +1443,7 @@
 				<top>15</top>
 				<width>2000</width>
 				<height>40</height>
-				<scroll>yes</scroll>
+				<scroll>true</scroll>
 				<label>$PARAM[widget_header]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -1582,7 +1582,7 @@
 				<top>15</top>
 				<width>2240</width>
 				<height>40</height>
-				<scroll>yes</scroll>
+				<scroll>true</scroll>
 				<label>$PARAM[widget_header]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -1720,7 +1720,7 @@
 				<top>0</top>
 				<width>2376</width>
 				<height>40</height>
-				<scroll>yes</scroll>
+				<scroll>true</scroll>
 				<label>$PARAM[widget_header]</label>
 				<shadowcolor>text_shadow</shadowcolor>
 			</control>
@@ -2374,7 +2374,7 @@
 					<top>15</top>
 					<width>2000</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -2586,7 +2586,7 @@
 					<top>15</top>
 					<width>2240</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -2797,7 +2797,7 @@
 					<top>0</top>
 					<width>2376</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -3010,7 +3010,7 @@
 					<top>15</top>
 					<width>2000</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -3223,7 +3223,7 @@
 					<top>15</top>
 					<width>2240</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -3435,7 +3435,7 @@
 					<top>0</top>
 					<width>2376</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -3642,7 +3642,7 @@
 					<top>15</top>
 					<width>2000</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -3739,7 +3739,7 @@
 					<top>15</top>
 					<width>2000</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -3920,7 +3920,7 @@
 					<top>15</top>
 					<width>2240</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -4017,7 +4017,7 @@
 					<top>0</top>
 					<width>2365</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -4114,7 +4114,7 @@
 					<top>0</top>
 					<width>2365</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -4211,7 +4211,7 @@
 					<top>15</top>
 					<width>2240</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -4392,7 +4392,7 @@
 					<top>0</top>
 					<width>2365</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -4487,7 +4487,7 @@
 					<top>15</top>
 					<width>2000</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -4594,7 +4594,7 @@
 								<width>260</width>
 								<height>75</height>
 								<label>$INFO[ListItem.Label]</label>
-								<scroll>yes</scroll>
+								<scroll>true</scroll>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -4626,7 +4626,7 @@
 					<top>15</top>
 					<width>2240</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -4733,7 +4733,7 @@
 								<width>260</width>
 								<height>75</height>
 								<label>$INFO[ListItem.Label]</label>
-								<scroll>yes</scroll>
+								<scroll>true</scroll>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -4770,7 +4770,7 @@
 					<top>0</top>
 					<width>2365</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -4871,7 +4871,7 @@
 								<width>260</width>
 								<height>75</height>
 								<label>$INFO[ListItem.Label]</label>
-								<scroll>yes</scroll>
+								<scroll>true</scroll>
 								<font>font12</font>
 								<shadowcolor>text_shadow</shadowcolor>
 								<align>center</align>
@@ -4901,7 +4901,7 @@
 					<top>15</top>
 					<width>2000</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -5144,7 +5144,7 @@
 							<height>70</height>
 							<font>fontContextMenu</font>
 							<aligny>center</aligny>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName,[B],[/B]]</label>
 						</control>
 					</focusedlayout>
@@ -5349,7 +5349,7 @@
 							<height>70</height>
 							<font>fontContextMenu</font>
 							<aligny>center</aligny>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName,[B],[/B]]</label>
 						</control>
 					</focusedlayout>
@@ -5545,7 +5545,7 @@
 							<height>70</height>
 							<font>fontContextMenu</font>
 							<aligny>center</aligny>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<label>$INFO[ListItem.ChannelNumberLabel,[B],[/B] - ]$INFO[ListItem.ChannelName,[B],[/B]]</label>
 						</control>
 					</focusedlayout>
@@ -5652,7 +5652,7 @@
 					<top>15</top>
 					<width>2240</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -5796,7 +5796,7 @@
 					<top>0</top>
 					<width>2365</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -6081,7 +6081,7 @@
 					<top>15</top>
 					<width>1620</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -6221,7 +6221,7 @@
 					<top>0</top>
 					<width>1700</width>
 					<height>40</height>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 					<label>$PARAM[widget_header]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
@@ -6377,7 +6377,7 @@
 				<top>30</top>
 				<width>2000</width>
 				<height>40</height>
-				<scroll>yes</scroll>
+				<scroll>true</scroll>
 				<label>$PARAM[widget_header]</label>
 				<font>font14</font>
 				<shadowcolor>text_shadow</shadowcolor>
@@ -6533,7 +6533,7 @@
 				<top>35</top>
 				<width>1315</width>
 				<height>40</height>
-				<scroll>yes</scroll>
+				<scroll>true</scroll>
 				<label>$PARAM[widget_header]</label>
 				<font>font14</font>
 				<shadowcolor>text_shadow</shadowcolor>
@@ -6674,7 +6674,7 @@
 				<top>0</top>
 				<width>2376</width>
 				<height>40</height>
-				<scroll>yes</scroll>
+				<scroll>true</scroll>
 				<label>$PARAM[widget_header]</label>
 				<font>font14</font>
 				<shadowcolor>text_shadow</shadowcolor>
@@ -8115,7 +8115,7 @@
 							<width>1310</width>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<shadowcolor>black</shadowcolor>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<label>[UPPERCASE]• $LOCALIZE[31031] •[/UPPERCASE]</label>
 						</control>
 						<control type="label">
@@ -8146,7 +8146,7 @@
 							<font>font13</font>
 							<width>1310</width>
 							<shadowcolor>black</shadowcolor>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<label>$INFO[System.KernelVersion]</label>
 						</control>
 						<control type="label">
@@ -8218,7 +8218,7 @@
 							<textoffsety>10</textoffsety>
 							<font>font13</font>
 							<width>1310</width>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<shadowcolor>black</shadowcolor>
 							<label>$LOCALIZE[13271] $INFO[System.CPUUsage] [B]-[/B] $INFO[System.CPUTemperature]</label>
 							<visible>Integer.IsGreaterOrEqual()(System.CPUTemperature,1)</visible>
@@ -8230,7 +8230,7 @@
 							<textoffsety>10</textoffsety>
 							<font>font13</font>
 							<width>1310</width>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<shadowcolor>black</shadowcolor>
 							<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
 							<visible>Integer.IsEqual(System.CPUTemperature,0)</visible>
@@ -8494,7 +8494,7 @@
 								<width>285</width>
 								<aligny>center</aligny>
 								<font>font14</font>
-								<scroll>yes</scroll>
+								<scroll>true</scroll>
 								<label>$INFO[ListItem.Label]</label>
 								<shadowcolor>text_shadow</shadowcolor>
 							</control>
@@ -8600,7 +8600,7 @@
 								<width>285</width>
 								<aligny>center</aligny>
 								<font>font14</font>
-								<scroll>yes</scroll>
+								<scroll>true</scroll>
 								<label>$INFO[ListItem.Label]</label>
 								<shadowcolor>text_shadow</shadowcolor>
 							</control>
@@ -10052,7 +10052,7 @@
 							<width>1310</width>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<shadowcolor>black</shadowcolor>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<label>[UPPERCASE]• $LOCALIZE[31031] •[/UPPERCASE]</label>
 						</control>
 						<control type="label">
@@ -10083,7 +10083,7 @@
 							<font>font13</font>
 							<width>1310</width>
 							<shadowcolor>black</shadowcolor>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<label>$INFO[System.KernelVersion]</label>
 						</control>
 						<control type="label">
@@ -10155,7 +10155,7 @@
 							<textoffsety>10</textoffsety>
 							<font>font13</font>
 							<width>1310</width>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<shadowcolor>black</shadowcolor>
 							<label>$LOCALIZE[13271] $INFO[System.CPUUsage] [B]-[/B] $INFO[System.CPUTemperature]</label>
 							<visible>Integer.IsGreaterOrEqual()(System.CPUTemperature,1)</visible>
@@ -10167,7 +10167,7 @@
 							<textoffsety>10</textoffsety>
 							<font>font13</font>
 							<width>1310</width>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<shadowcolor>black</shadowcolor>
 							<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
 							<visible>Integer.IsEqual(System.CPUTemperature,0)</visible>
@@ -10549,7 +10549,7 @@
 								<width>300</width>
 								<aligny>center</aligny>
 								<font>font14</font>
-								<scroll>yes</scroll>
+								<scroll>true</scroll>
 								<label>$INFO[ListItem.Label]</label>
 								<shadowcolor>text_shadow</shadowcolor>
 							</control>
@@ -11848,7 +11848,7 @@
 							<width>1211</width>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<shadowcolor>black</shadowcolor>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<label>[UPPERCASE]• $LOCALIZE[31031] •[/UPPERCASE]</label>
 						</control>
 						<control type="label">
@@ -11879,7 +11879,7 @@
 							<font>font13</font>
 							<width>1211</width>
 							<shadowcolor>black</shadowcolor>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<label>$INFO[System.KernelVersion]</label>
 						</control>
 						<control type="label">
@@ -11951,7 +11951,7 @@
 							<textoffsety>10</textoffsety>
 							<font>font13</font>
 							<width>1211</width>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<shadowcolor>black</shadowcolor>
 							<label>$LOCALIZE[13271] $INFO[System.CPUUsage] [B]-[/B] $INFO[System.CPUTemperature]</label>
 							<visible>Integer.IsGreaterOrEqual()(System.CPUTemperature,1)</visible>
@@ -11963,7 +11963,7 @@
 							<textoffsety>10</textoffsety>
 							<font>font13</font>
 							<width>1211</width>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 							<shadowcolor>black</shadowcolor>
 							<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
 							<visible>Integer.IsEqual(System.CPUTemperature,0)</visible>
@@ -12136,7 +12136,7 @@
 							<height>60</height>
 							<width>380</width>
 							<align>right</align>
-							<scroll>yes</scroll>
+							<scroll>true</scroll>
 						</control>
 						<control type="image">
 							<bottom>65</bottom>
@@ -12254,7 +12254,7 @@
 								<aligny>center</aligny>
 								<font>font12</font>
 								<label>$INFO[ListItem.Label]</label>
-								<scroll>yes</scroll>
+								<scroll>true</scroll>
 								<animation effect="slide" start="0" end="0,-4" time="100" reversible="false">Focus</animation>
 							</control>
 							<control type="image">
@@ -12362,7 +12362,7 @@
 								<aligny>center</aligny>
 								<font>font12</font>
 								<label>$INFO[ListItem.Label]</label>
-								<scroll>yes</scroll>
+								<scroll>true</scroll>
 								<animation effect="slide" start="0" end="0,-4" time="100" reversible="false">Focus</animation>
 							</control>
 							<control type="image">

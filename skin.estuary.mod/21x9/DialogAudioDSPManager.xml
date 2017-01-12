@@ -63,7 +63,7 @@
 					<aligny>center</aligny>
 					<align>center</align>
 					<label>$INFO[ListItem.Label]</label>
-					<scroll>yes</scroll>
+					<scroll>true</scroll>
 				</control>
 			</focusedlayout>
 		</control>

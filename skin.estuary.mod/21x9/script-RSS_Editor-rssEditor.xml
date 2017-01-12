@@ -92,7 +92,7 @@
                         <aligny>center</aligny>
                         <align>left</align>
                         <font>font12</font>
-                        <scroll>yes</scroll>
+                        <scroll>true</scroll>
                         <info>ListItem.Label</info>
                     </control>
                 </focusedlayout>

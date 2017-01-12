@@ -102,7 +102,7 @@
                                 <width>330</width>
                                 <align>center</align>
                                 <aligny>center</aligny>
-                                <scroll>yes</scroll>
+                                <scroll>true</scroll>
                                 <font>font10</font>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
@@ -148,7 +148,7 @@
                                 <width>330</width>
                                 <align>center</align>
                                 <aligny>center</aligny>
-                                <scroll>yes</scroll>
+                                <scroll>true</scroll>
                                 <font>font10</font>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
@@ -252,7 +252,7 @@
                 <right>10</right>
                 <width>535</width>
                 <height>30</height>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <font>font12</font>
                 <label>$LOCALIZE[126] : [COLOR white]$INFO[ListItem.Status][/COLOR]</label>
                 <textcolor>$VAR[SkinColorVar]</textcolor>
@@ -265,7 +265,7 @@
                 <right>10</right>
                 <width>535</width>
                 <height>30</height>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <font>font12</font>
                 <label>$LOCALIZE[126] : [COLOR white]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]</label>
                 <textcolor>$VAR[SkinColorVar]</textcolor>
@@ -278,7 +278,7 @@
                 <right>10</right>
                 <width>535</width>
                 <height>30</height>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <font>font12</font>
                 <label>$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR]]</label>
                 <textcolor>$VAR[SkinColorVar]</textcolor>
@@ -291,7 +291,7 @@
                 <right>10</right>
                 <width>535</width>
                 <height>30</height>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <font>font12</font>
                 <textcolor>$VAR[SkinColorVar]</textcolor>
                 <label>$INFO[ListItem.Genre]</label>
@@ -304,7 +304,7 @@
                 <right>10</right>
                 <width>535</width>
                 <height>30</height>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <font>font12</font>
                 <textcolor>$VAR[SkinColorVar]</textcolor>
                 <label>$INFO[Window(Home).Property(SkinHelper.ListItem.Genre)]</label>

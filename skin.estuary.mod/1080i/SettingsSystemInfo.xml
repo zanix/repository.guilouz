@@ -124,7 +124,7 @@
                     <height>45</height>
                     <width>1220</width>
                     <font>font12</font>
-                    <scroll>yes</scroll>
+                    <scroll>true</scroll>
                 </control>
                 <control type="label" id="6">
                     <height>45</height>

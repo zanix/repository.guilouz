@@ -152,7 +152,7 @@
                             <align>left</align>
                             <aligny>top</aligny>
                             <font>font13</font>
-                            <scroll>yes</scroll>
+                            <scroll>true</scroll>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -163,7 +163,7 @@
                             <align>left</align>
                             <aligny>top</aligny>
                             <font>font12</font>
-                            <scroll>yes</scroll>
+                            <scroll>true</scroll>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                         <control type="image">

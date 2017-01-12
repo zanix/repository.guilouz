@@ -140,7 +140,7 @@
 						<font>font12</font>
 						<align>right</align>
 						<aligny>center</aligny>
-						<scroll>yes</scroll>
+						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>

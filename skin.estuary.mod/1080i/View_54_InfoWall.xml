@@ -69,7 +69,7 @@
             <font>font12</font>
             <align>center</align>
             <aligny>center</aligny>
-            <scroll>yes</scroll>
+            <scroll>true</scroll>
             <label>$INFO[ListItem.Label]</label>
         </control>
     </include>
@@ -378,7 +378,7 @@
                             <font>font12</font>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <scroll>yes</scroll>
+                            <scroll>true</scroll>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="image">

@@ -414,7 +414,7 @@
                                 <left>10</left>
                                 <right>10</right>
                                 <height>36</height>
-                                <scroll>yes</scroll>
+                                <scroll>true</scroll>
                                 <label>[B]$INFO[ListItem.Title][/B]</label>
                             </control>
                             <control type="label">

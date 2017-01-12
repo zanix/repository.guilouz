@@ -172,7 +172,7 @@
                 <height>262</height>
                 <textcolor>$VAR[SkinColorVar]</textcolor>
                 <font>font24_title</font>
-                <scroll>yes</scroll>
+                <scroll>true</scroll>
                 <label>$INFO[ListItem.ChannelName]</label>
             </control>
         </control>
@@ -191,7 +191,7 @@
             <height>262</height>
             <textcolor>$VAR[SkinColorVar]</textcolor>
             <font>font24_title</font>
-            <scroll>yes</scroll>
+            <scroll>true</scroll>
             <label>$INFO[ListItem.EpgEventTitle]</label>
         </control>
         <control type="label">

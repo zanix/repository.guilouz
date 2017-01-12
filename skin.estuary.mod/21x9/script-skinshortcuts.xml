@@ -167,7 +167,7 @@
                                 <width>321</width>
                                 <aligny>center</aligny>
                                 <font>font14</font>
-                                <scroll>yes</scroll>
+                                <scroll>true</scroll>
                                 <label>$INFO[ListItem.Label]</label>
                                 <shadowcolor>text_shadow</shadowcolor>
                                 <visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
@@ -179,7 +179,7 @@
                                 <width>321</width>
                                 <aligny>center</aligny>
                                 <font>font14</font>
-                                <scroll>yes</scroll>
+                                <scroll>true</scroll>
                                 <label>$INFO[ListItem.Label] ($LOCALIZE[1223])</label>
                                 <shadowcolor>text_shadow</shadowcolor>
                                 <visible>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>

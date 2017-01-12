@@ -64,7 +64,7 @@
                         <height>338</height>
                         <font>font13_title</font>
                         <label>$INFO[ListItem.Label]</label>
-                        <scroll>yes</scroll>
+                        <scroll>true</scroll>
                         <visible>Control.IsVisible(54) | ListItem.IsCollection</visible>
                         <visible>!String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.DBType,season) + !String.IsEqual(ListItem.DBType,episode)</visible>
                     </control>
@@ -75,7 +75,7 @@
                         <height>338</height>
                         <font>font13_title</font>
                         <label>$INFO[ListItem.Label]</label>
-                        <scroll>yes</scroll>
+                        <scroll>true</scroll>
                         <visible>Control.IsVisible(54) | ListItem.IsCollection</visible>
                         <visible>String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)</visible>
                     </control>
@@ -95,7 +95,7 @@
                     <width>429</width>
                     <height>398</height>
                     <font>font12</font>
-                    <scroll>yes</scroll>
+                    <scroll>true</scroll>
                     <visible>Control.IsVisible(54)</visible>
                     <label>$LOCALIZE[126] : [COLOR white]$INFO[ListItem.Status][/COLOR]</label>
                     <textcolor>$VAR[SkinColorVar]</textcolor>
@@ -107,7 +107,7 @@
                     <width>429</width>
                     <height>398</height>
                     <font>font12</font>
-                    <scroll>yes</scroll>
+                    <scroll>true</scroll>
                     <visible>Control.IsVisible(54)</visible>
                     <label>$LOCALIZE[126] : [COLOR white]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]</label>
                     <textcolor>$VAR[SkinColorVar]</textcolor>
@@ -141,7 +141,7 @@
                     <width>429</width>
                     <height>398</height>
                     <font>font12</font>
-                    <scroll>yes</scroll>
+                    <scroll>true</scroll>
                     <visible>!Control.IsVisible(54)</visible>
                     <label>$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR]]</label>
                     <textcolor>$VAR[SkinColorVar]</textcolor>
@@ -153,7 +153,7 @@
                     <width>429</width>
                     <height>398</height>
                     <font>font12</font>
-                    <scroll>yes</scroll>
+                    <scroll>true</scroll>
                     <visible>!Control.IsVisible(54)</visible>
                     <label>$LOCALIZE[126] : [COLOR white]$INFO[ListItem.Status][/COLOR]</label>
                     <textcolor>$VAR[SkinColorVar]</textcolor>
@@ -165,7 +165,7 @@
                     <width>429</width>
                     <height>398</height>
                     <font>font12</font>
-                    <scroll>yes</scroll>
+                    <scroll>true</scroll>
                     <visible>!Control.IsVisible(54)</visible>
                     <label>$LOCALIZE[126] : [COLOR white]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]</label>
                     <textcolor>$VAR[SkinColorVar]</textcolor>
