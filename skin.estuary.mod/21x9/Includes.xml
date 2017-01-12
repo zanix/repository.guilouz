@@ -718,6 +718,7 @@
         </control>
         <control type="grouplist">
             <orientation>horizontal</orientation>
+            <top>45</top>
             <right>73</right>
             <itemgap>20</itemgap>
             <width>1720</width>
