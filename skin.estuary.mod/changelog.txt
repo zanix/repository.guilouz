@@ -1,4 +1,5 @@
 1.7.5 :
+• Changes on scrollbars
 • Fix overlapping rating with TV Shows
 • Minnor fix
 
