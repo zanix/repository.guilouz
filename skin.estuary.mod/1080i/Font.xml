@@ -101,13 +101,13 @@
 		</font>
 		<font>
             <name>Font-Flag</name>
-        	<filename>RobotoCondensed-Bold.ttf</filename>
-            <size>40</size>
+        	<filename>Lato-Regular.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>Font-Flag2</name>
-          	<filename>RobotoCondensed-Bold.ttf</filename>
-            <size>44</size>
+          	<filename>Lato-Regular.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>Font-Rating</name>
@@ -495,8 +495,8 @@
         </font>
         <font>
             <name>Font-Flag2</name>
-            <filename>RobotoCondensed-Bold.ttf</filename>
-            <size>44</size>
+            <filename>Lato-Regular.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>Font-Rating</name>
@@ -880,8 +880,8 @@
         </font>
         <font>
             <name>Font-Flag2</name>
-          	<filename>RobotoCondensed-Bold.ttf</filename>
-            <size>44</size>
+          	<filename>Lato-Regular.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>Font-Rating</name>

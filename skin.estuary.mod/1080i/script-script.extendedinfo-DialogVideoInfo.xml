@@ -427,8 +427,8 @@
 							<usecontrolcoords>true</usecontrolcoords>
 							<control type="image" id="900014">
 								<top>5</top>
-								<width>62</width>
-								<height>62</height>
+								<width>135</width>
+								<height>60</height>
 								<aspectratio>keep</aspectratio>
 								<texture colordiffuse="FFFAFAFA">$INFO[Window.Property(VideoResolution),flags/videoresolution/,.png]</texture>
 								<visible>!String.IsEmpty(Window.Property(VideoResolution))</visible>
@@ -441,8 +441,8 @@
 							</control>
 							<control type="image" id="900012">
 								<top>5</top>
-								<width>100</width>
-								<height>62</height>
+								<width>135</width>
+								<height>60</height>
 								<aspectratio>keep</aspectratio>
 								<texture colordiffuse="FFFAFAFA">$INFO[Window.Property(VideoCodec),flags/videocodec/,.png]</texture>
 								<visible>!String.IsEmpty(Window.Property(VideoCodec))</visible>
@@ -455,8 +455,8 @@
 							</control>
 							<control type="image" id="900015">
 								<top>5</top>
-								<width>80</width>
-								<height>62</height>
+								<width>135</width>
+								<height>60</height>
 								<aspectratio>keep</aspectratio>
 								<texture colordiffuse="FFFAFAFA">$INFO[Window.Property(VideoAspect),flags/aspectratio/,.png]</texture>
 								<visible>!String.IsEmpty(Window.Property(VideoAspect))</visible>
@@ -469,8 +469,8 @@
 							</control>
 							<control type="image" id="900013">
 								<top>5</top>
-								<width>100</width>
-								<height>62</height>
+								<width>135</width>
+								<height>60</height>
 								<aspectratio>keep</aspectratio>
 								<texture colordiffuse="FFFAFAFA">$INFO[Window.Property(AudioCodec),flags/audiocodec/,.png]</texture>
 								<visible>!String.IsEmpty(Window.Property(AudioCodec))</visible>
@@ -483,8 +483,8 @@
 							</control>
 							<control type="image" id="900016">
 								<top>5</top>
-								<width>100</width>
-								<height>62</height>
+								<width>135</width>
+								<height>60</height>
 								<aspectratio>keep</aspectratio>
 								<texture colordiffuse="FFFAFAFA">$INFO[Window.Property(AudioChannels),flags/audiochannel/,.png]</texture>
 								<visible>!String.IsEmpty(Window.Property(AudioChannels))</visible>

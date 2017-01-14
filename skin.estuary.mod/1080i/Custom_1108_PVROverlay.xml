@@ -96,7 +96,7 @@
 			<itemgap>10</itemgap>
 			<visible>!Player.ChannelPreviewActive</visible>
 			<control type="image">      
-                		<width>73</width>           
+                		<width>113</width>           
                 		<height>50</height>
                 		<aspectratio>keep</aspectratio>
                 		<fadetime>200</fadetime>             
@@ -104,7 +104,7 @@
                 		<visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
             		</control>
             		<control type="image">
-                		<width>130</width>
+                		<width>113</width>
                 		<height>50</height>
                 		<aspectratio>keep</aspectratio>
                 		<fadetime>200</fadetime>
@@ -112,7 +112,7 @@
                 		<visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
             		</control>
             		<control type="image">
-                		<width>108</width>
+                		<width>113</width>
                 		<height>50</height>
                 		<aspectratio>keep</aspectratio>
                 		<fadetime>200</fadetime>
@@ -120,7 +120,7 @@
                 		<visible>!String.IsEmpty(VideoPlayer.VideoAspect)</visible>
             		</control>
             		<control type="image">
-                		<width>130</width>
+                		<width>113</width>
                 		<height>50</height>
                 		<aspectratio>keep</aspectratio>
                 		<fadetime>200</fadetime>
@@ -128,7 +128,7 @@
                 		<visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
             		</control>
             		<control type="image">           
-                		<width>130</width>               
+                		<width>113</width>               
                 		<height>50</height>
                 		<aspectratio>keep</aspectratio>
                 		<fadetime>200</fadetime>

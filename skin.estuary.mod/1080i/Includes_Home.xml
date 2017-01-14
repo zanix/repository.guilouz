@@ -228,31 +228,31 @@
 				<width>1920</width>
 				<align>center</align>
 				<control type="image">
-					<width>73</width>
+					<width>113</width>
 					<height>50</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconResolutionVar]</texture>
 				</control>
 				<control type="image">
-					<width>130</width>
+					<width>113</width>
 					<height>50</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconVideoCodecVar]</texture>
 				</control>
 				<control type="image">
-					<width>108</width>
+					<width>113</width>
 					<height>50</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconAspectVar]</texture>
 				</control>
 				<control type="image">
-					<width>130</width>
+					<width>113</width>
 					<height>50</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconAudioCodecVar]</texture>
 				</control>
 				<control type="image">
-					<width>130</width>
+					<width>113</width>
 					<height>50</height>
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconAudioChannelsVar]</texture>
@@ -260,19 +260,19 @@
 				<control type="group">
                 <visible>![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Hours)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Minutes))]</visible>
                 <visible>Control.HasFocus(22100) | Control.HasFocus(17100) | Control.HasFocus(17200) | Control.HasFocus(17300) | Control.HasFocus(17400) | Control.HasFocus(11100) | Control.HasFocus(11200) | Control.HasFocus(11300) | Control.HasFocus(6100) | Control.HasFocus(6300) | Control.HasFocus(10100) | Control.HasFocus(10200) | Control.HasFocus(10400)  | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300)  | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)</visible>
-                <width>176</width>
+                <width>130</width>
                 <height>50</height>
                 <control type="image">
-                    <width>176</width>
+                    <width>130</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/time.png</texture>
                 </control>
                 <control type="label">
-                    <width>119</width>
+                    <width>100</width>
                     <centertop>47%</centertop>
                     <height>50</height>
-                    <posx>54</posx>
+                    <posx>30</posx>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>$VAR[DurationWidgetVar]</label>
@@ -335,31 +335,31 @@
 			<width>1920</width>
 			<align>center</align>
 			<control type="image">
-				<width>73</width>
+				<width>113</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
 				<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconResolutionVar]</texture>
 			</control>
 			<control type="image">
-				<width>130</width>
+				<width>113</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
 				<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconVideoCodecVar]</texture>
 			</control>
 			<control type="image">
-				<width>108</width>
+				<width>113</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
 				<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconAspectVar]</texture>
 			</control>
 			<control type="image">
-				<width>130</width>
+				<width>113</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
 				<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconAudioCodecVar]</texture>
 			</control>
 			<control type="image">
-				<width>130</width>
+				<width>113</width>
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
 				<texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[WidgetFlagIconAudioChannelsVar]</texture>
@@ -367,19 +367,19 @@
 			<control type="group">
                 <visible>![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Hours)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Minutes))]</visible>
                 <visible>Control.HasFocus(22100) | Control.HasFocus(17100) | Control.HasFocus(17200) | Control.HasFocus(17300) | Control.HasFocus(17400) | Control.HasFocus(11100) | Control.HasFocus(11200) | Control.HasFocus(11300) | Control.HasFocus(6100) | Control.HasFocus(6300) | Control.HasFocus(10100) | Control.HasFocus(10200) | Control.HasFocus(10400)  | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300)  | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)</visible>
-                <width>176</width>
+                <width>130</width>
                 <height>50</height>
                 <control type="image">
-                    <width>176</width>
+                    <width>130</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/time.png</texture>
                 </control>
                 <control type="label">
-                    <width>119</width>
+                    <width>100</width>
                     <centertop>47%</centertop>
                     <height>50</height>
-                    <posx>54</posx>
+                    <posx>30</posx>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>$VAR[DurationWidgetVar]</label>

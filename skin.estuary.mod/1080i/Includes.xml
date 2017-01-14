@@ -538,56 +538,56 @@
             <itemgap>5</itemgap>
             <width>1720</width>
             <control type="image">
-                <width>73</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[ResolutionFlagVar]</texture>
                 <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
             </control>
             <control type="image">
-                <width>130</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture>
                 <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
             </control>
             <control type="image">
-                <width>108</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
                 <visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
             </control>
             <control type="image">
-                <width>130</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[ListItemAudioCodecPlusFilenameFlags,flags/audiocodec/,.png]</texture>
                 <visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
             </control>
             <control type="image">
-                <width>130</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]</texture>
                 <visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
             </control>
             <control type="image">
-                <width>73</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/webdl.png</texture>
                 <visible>String.Contains(ListItem.Filenameandpath,WEB-DL) | String.Contains(ListItem.Filenameandpath,WEBDL) | String.Contains(ListItem.Filenameandpath,WEB) | String.Contains(ListItem.Filenameandpath,web-dl) | String.Contains(ListItem.Filenameandpath,webdl) | String.Contains(ListItem.Filenameandpath,web)</visible>
             </control>
             <control type="image">
-                <width>73</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/dvd.png</texture>
                 <visible>String.Contains(ListItem.Filenameandpath,DVD) | String.Contains(ListItem.Filenameandpath,dvd)</visible>
             </control>
             <control type="image">
-                <width>73</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/bluray.png</texture>
@@ -823,18 +823,18 @@
             <align>right</align>
             <control type="group">
                 <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250)) + !String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(tvshows)</visible>
-                <width>131</width>
+                <width>108</width>
                 <height>50</height>
                 <control type="image">
-                    <width>131</width>
+                    <width>108</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/top250.png</texture>
                 </control>
                 <control type="label">
-                    <posx>49</posx>
+                    <posx>40</posx>
                     <posy>2</posy>
-                    <width>79</width>
+                    <width>60</width>
                     <height>44</height>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -846,16 +846,16 @@
             <control type="group">
                 <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + !String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)</visible>
                 <visible>!Skin.HasSetting(enable_TMDBrating)</visible>
-                <width>156</width>
+                <width>116</width>
                 <height>50</height>
                 <control type="image">
-                    <width>156</width>
+                    <width>116</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating.png</texture>
                 </control>
                 <control type="label">
-                    <posx>74</posx>
+                    <posx>39</posx>
                     <posy>2</posy>
                     <width>79</width>
                     <height>44</height>
@@ -869,18 +869,18 @@
             <control type="group">
                 <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)) + !String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(tvshows)</visible>
                 <visible>Skin.HasSetting(enable_TMDBrating)</visible>
-                <width>156</width>
+                <width>116</width>
                 <height>50</height>
                 <control type="image">
-                    <width>156</width>
+                    <width>116</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating_tmdb.png</texture>
                 </control>
                 <control type="label">
-                    <posx>74</posx>
+                    <posx>39</posx>
                     <posy>2</posy>
-                    <width>79</width>
+                    <width>60</width>
                     <height>44</height>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -892,18 +892,18 @@
             <control type="group">
                 <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TVDB)) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
                 <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
-                <width>156</width>
+                <width>116</width>
                 <height>50</height>
                 <control type="image">
-                    <width>156</width>
+                    <width>116</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating_tvdb.png</texture>
                 </control>
                 <control type="label">
-                    <posx>74</posx>
+                    <posx>48</posx>
                     <posy>2</posy>
-                    <width>79</width>
+                    <width>60</width>
                     <height>44</height>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -914,19 +914,19 @@
             </control>
             <control type="group">
                 <visible>!ListItem.IsCollection + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(musicvideos) + !String.StartsWith(Container.FolderPath,plugin://) + !String.IsEmpty(ListItem.Duration)</visible>
-                <width>176</width>
+                <width>130</width>
                 <height>50</height>
                 <control type="image">
-                    <width>176</width>
+                    <width>130</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/time.png</texture>
                 </control>
                 <control type="label">
-                    <width>119</width>
+                    <width>100</width>
                     <centertop>47%</centertop>
                     <height>50</height>
-                    <posx>54</posx>
+                    <posx>30</posx>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>$VAR[DurationVar]</label>
@@ -936,19 +936,19 @@
             </control>
             <control type="group">
                 <visible>Container.Content(musicvideos) + !String.IsEmpty(ListItem.Duration)</visible>
-                <width>176</width>
+                <width>130</width>
                 <height>50</height>
                 <control type="image">
-                    <width>176</width>
+                    <width>130</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/time.png</texture>
                 </control>
                 <control type="label">
-                    <width>119</width>
+                    <width>100</width>
                     <centertop>47%</centertop>
                     <height>50</height>
-                    <posx>54</posx>
+                    <posx>30</posx>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>$VAR[DurationVar]</label>
@@ -957,20 +957,20 @@
                 </control>
             </control>
             <control type="group">
-                <width>162</width>
+                <width>167</width>
                 <height>50</height>
                 <visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.EndTimeResume) + !String.IsEmpty(ListItem.EndTimeResume) + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(years) + !Container.Content(genres) + !Container.Content(directors) + !Container.Content(actors) + !Container.Content(studios) + !Container.Content(countries) + !Container.Content(albums)</visible>
                 <control type="image">
-                    <width>162</width>
+                    <width>167</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/finishtime.png</texture>
                 </control>
                 <control type="label">
-                    <width>105</width>
+                    <width>120</width>
                     <centertop>47%</centertop>
                     <height>50</height>
-                    <posx>54</posx>
+                    <posx>40</posx>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.EndTimeResume]</label>
@@ -1234,49 +1234,49 @@
         <top>898</top>
         <visible>Skin.HasSetting(show_mediaflags)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
-        <control type="image">
+        <!-- <control type="image">
             <posx>686</posx>
             <width>632</width>
             <height>50</height>
             <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/cadre2.png</texture>
             <visible>![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.Meter)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.RottenTomatoes.UserMeter)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.MetaCritic.Rating))]</visible>
             <visible>!Skin.HasSetting(hide_audience)</visible>
-        </control>
+        </control> -->
         <control type="grouplist">
             <orientation>horizontal</orientation>
             <left>90</left>
             <itemgap>5</itemgap>
             <width>1720</width>
             <control type="image">
-                <width>73</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[ResolutionFlagVar]</texture>
                 <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
             </control>
             <control type="image">
-                <width>130</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture>
                 <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
             </control>
             <control type="image">
-                <width>108</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
                 <visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
             </control>
             <control type="image">
-                <width>130</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$VAR[ListItemAudioCodecPlusFilenameFlags,flags/audiocodec/,.png]</texture>
                 <visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
             </control>
             <control type="image">
-                <width>130</width>
+                <width>113</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
                 <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[ListItem.AudioChannels,flags/audiochannel/,.png]</texture>
@@ -1384,16 +1384,16 @@
             <control type="group">
                 <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + !String.StartsWith(Container.FolderPath,plugin://)  + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)</visible>
                 <visible>!Skin.HasSetting(enable_TMDBrating)</visible>
-                <width>156</width>
+                <width>116</width>
                 <height>50</height>
                 <control type="image">
-                    <width>156</width>
+                    <width>116</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating.png</texture>
                 </control>
                 <control type="label">
-                    <posx>74</posx>
+                    <posx>39</posx>
                     <posy>2</posy>
                     <width>79</width>
                     <height>44</height>
@@ -1407,16 +1407,16 @@
             <control type="group">
                 <visible>!ListItem.IsCollection + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)) + !String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)</visible>
                 <visible>Skin.HasSetting(enable_TMDBrating)</visible>
-                <width>156</width>
+                <width>116</width>
                 <height>50</height>
                 <control type="image">
-                    <width>156</width>
+                    <width>116</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/rating_tmdb.png</texture>
                 </control>
                 <control type="label">
-                    <posx>74</posx>
+                    <posx>39</posx>
                     <posy>2</posy>
                     <width>79</width>
                     <height>44</height>
@@ -1429,19 +1429,19 @@
             </control>
             <control type="group">
                 <visible>!ListItem.IsCollection + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://) + !String.IsEmpty(ListItem.Duration)</visible>
-                <width>176</width>
+                <width>130</width>
                 <height>50</height>
                 <control type="image">
-                    <width>176</width>
+                    <width>130</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/time.png</texture>
                 </control>
                 <control type="label">
-                    <width>119</width>
+                    <width>100</width>
                     <centertop>47%</centertop>
                     <height>50</height>
-                    <posx>54</posx>
+                    <posx>30</posx>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>$VAR[DurationVar]</label>
@@ -1450,20 +1450,20 @@
                 </control>
             </control>
             <control type="group">
-                <width>162</width>
+                <width>167</width>
                 <height>50</height>
                 <visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.EndTimeResume) + !Container.Content(tvshows) + !Container.Content(seasons) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
                 <control type="image">
-                    <width>162</width>
+                    <width>167</width>
                     <height>50</height>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/finishtime.png</texture>
                 </control>
                 <control type="label">
-                    <width>105</width>
+                    <width>120</width>
                     <centertop>47%</centertop>
                     <height>50</height>
-                    <posx>54</posx>
+                    <posx>40</posx>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>$INFO[ListItem.EndTimeResume]</label>

@@ -346,7 +346,7 @@
 				<control type="image">
 					<left>80</left>
 					<top>1030</top>
-					<width>150</width>
+					<width>130</width>
 					<height>58</height>
 					<texture colordiffuse="grey">$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
 					<aspectratio>keep</aspectratio>
@@ -354,28 +354,28 @@
 				<control type="image">
 					<left>235</left>
 					<top>1030</top>
-					<width>150</width>
+					<width>130</width>
 					<height>58</height>
 					<texture colordiffuse="grey">$INFO[MusicPlayer.Channels,flags/audiochannel/,.png]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="group">
-					<width>200</width>
+					<width>138</width>
 					<height>58</height>
 					<left>388</left>
 					<top>1030</top>
 					<control type="image">
-						<width>200</width>
+						<width>138</width>
 						<height>58</height>
 						<texture colordiffuse="grey">flags/cadre.png</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>!String.IsEmpty(MusicPlayer.Bitrate)</visible>
 					</control>
 					<control type="label">
-						<width>200</width>
+						<width>138</width>
 						<height>58</height>
 						<align>center</align>
-						<top>-4</top>
+						<top>12</top>
 						<label>$INFO[MusicPlayer.BitRate] kbps</label>
 						<font>Font-Flag2</font>
 						<textcolor>grey</textcolor>

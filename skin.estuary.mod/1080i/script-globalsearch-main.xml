@@ -800,35 +800,35 @@
                                 <itemgap>6</itemgap>
                                 <width>1366</width>
                                 <control type="image">
-                                    <width>63</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(111).ListItem.VideoResolution,flags/videoresolution/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(111).ListItem.VideoCodec,flags/videocodec/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>93</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(111).ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(111).ListItem.AudioCodec,flags/audiocodec/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
@@ -1672,35 +1672,35 @@
                                 <itemgap>6</itemgap>
                                 <width>1366</width>
                                 <control type="image">
-                                    <width>63</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(141).ListItem.VideoResolution,flags/videoresolution/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(141).ListItem.VideoCodec,flags/videocodec/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>93</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(141).ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(141).ListItem.AudioCodec,flags/audiocodec/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
@@ -2015,35 +2015,35 @@
                                 <itemgap>6</itemgap>
                                 <width>1366</width>
                                 <control type="image">
-                                    <width>63</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(151).ListItem.VideoResolution,flags/videoresolution/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(151).ListItem.VideoCodec,flags/videocodec/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>93</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(151).ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(151).ListItem.AudioCodec,flags/audiocodec/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
@@ -3367,35 +3367,35 @@
                                 <itemgap>6</itemgap>
                                 <width>1366</width>
                                 <control type="image">
-                                    <width>63</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(201).ListItem.VideoResolution,flags/videoresolution/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(201).ListItem.VideoCodec,flags/videocodec/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>93</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(201).ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(201).ListItem.AudioCodec,flags/audiocodec/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
@@ -3684,35 +3684,35 @@
                                 <itemgap>6</itemgap>
                                 <width>1366</width>
                                 <control type="image">
-                                    <width>63</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(211).ListItem.VideoResolution,flags/videoresolution/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(211).ListItem.VideoCodec,flags/videocodec/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>93</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(211).ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
                                     <texture colordiffuse="$VAR[MediaFlagsColorVar]">$INFO[Container(211).ListItem.AudioCodec,flags/audiocodec/,.png]</texture>
                                 </control>
                                 <control type="image">
-                                    <width>110</width>
+                                    <width>135</width>
                                     <height>60</height>
                                     <fadetime>200</fadetime>
                                     <aspectratio align="center" aligny="top">keep</aspectratio>
