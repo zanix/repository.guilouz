@@ -9,20 +9,17 @@
 			<aspectratio>scale</aspectratio>
 			<texture>colors/black.png</texture>
 		</control>
-		<control type="image">
-			<include>FullScreenDimensions</include>
-			<aspectratio>keep</aspectratio>
-			<texture>$INFO[Window(home).Property(fanart)]</texture>
-			<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))</visible>
-		</control>
 		<control type="multiimage">
- 			<include>FullScreenDimensions</include>
- 			<aspectratio>keep</aspectratio>
- 			<fadetime>400</fadetime>
-            <imagepath>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</imagepath>
+            <depth>DepthBackground</depth>
+            <include>FullScreenDimensions</include>
+            <aspectratio>scale</aspectratio>
+            <fadetime>400</fadetime>
+            <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+            <animation effect="fade" time="400">VisibleChange</animation>
+            <imagepath background="true">$VAR[BackgroundInfoVar]</imagepath>
             <timeperimage>3000</timeperimage>
             <randomize>true</randomize>
-            <visible>Skin.HasSetting(SkinHelper.EnableExtrafanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))</visible>
         </control>
    		<control type="button" id="3000">
 			<include>HiddenObject</include>

@@ -2478,6 +2478,7 @@
                     <texture background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[MediaFanartVar]</texture>
                     <visible>![[Player.HasVideo + Skin.HasSetting(background_showvideo)] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible> 
                     <visible>!Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
+                    <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
                 </control>
                 <control type="multiimage">
                     <depth>DepthBackground</depth>
@@ -2495,7 +2496,8 @@
                     <visible>!Control.IsVisible(52)</visible>
                     <visible>Skin.HasSetting(SkinHelper.EnableExtrafanart)</visible>
                     <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))</visible>
-                    <visible>!Skin.HasSetting(no_fanart)</visible>             
+                    <visible>!Skin.HasSetting(no_fanart)</visible>
+                    <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>       
                 </control>
                 <control type="image">
                     <depth>DepthBackground</depth>
@@ -2508,6 +2510,7 @@
                     <texture background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[MediaFanartVar]</texture>
                     <visible>![[Player.HasVideo + Skin.HasSetting(background_showvideo)] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible> 
                     <visible>Skin.HasSetting(SkinHelper.EnableExtraFanart) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))</visible>
+                    <visible>!Window.IsVisible(DialogVideoInfo.xml)</visible>
                 </control>
                 <control type="image">
                     <depth>DepthBackground</depth>
@@ -2520,6 +2523,21 @@
                     <texture background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[MediaFanartVar]</texture>
                     <visible>![[Player.HasVideo + Skin.HasSetting(background_showvideo)] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible> 
                     <visible>Skin.HasSetting(SkinHelper.EnableExtraFanart) + ListItem.IsCollection</visible>
+                </control>
+                <control type="multiimage">
+                    <depth>DepthBackground</depth>
+                    <include>FullScreenDimensions</include>
+                    <aspectratio>scale</aspectratio>
+                    <fadetime>400</fadetime>
+                    <animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+                    <animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+                    <animation effect="fade" time="400">VisibleChange</animation>
+                    <imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[BackgroundInfoVar]</imagepath>
+                    <timeperimage>3000</timeperimage>
+                    <randomize>true</randomize>
+                    <visible>![[Player.HasVideo + Skin.HasSetting(background_showvideo)] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
+                    <visible>!Skin.HasSetting(no_fanart)</visible>
+                    <visible>Window.IsVisible(DialogVideoInfo.xml)</visible>
                 </control>
             </control>
         </definition>

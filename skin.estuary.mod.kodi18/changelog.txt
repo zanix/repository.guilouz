@@ -1,4 +1,6 @@
 1.7.5 :
+• Add changes for new Skin Shortcuts addon
+• Workaround for fanarts on video/music info dialog
 • Changes on scrollbars
 • Fix overlapping rating with TV Shows
 • Minnor fix
