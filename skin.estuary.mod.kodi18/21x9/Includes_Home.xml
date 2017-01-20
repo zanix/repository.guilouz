@@ -8149,7 +8149,7 @@
 							<font>font13</font>
 							<width>1310</width>
 							<shadowcolor>black</shadowcolor>
-							<label>Estuary MOD $INFO[System.AddonVersion(skin.estuary.mod)]</label>
+							<label>Estuary MOD $INFO[System.AddonVersion(skin.estuary.mod.kodi18)]</label>
 						</control>
 						<control type="label">
 							<top>175</top>
@@ -10122,7 +10122,7 @@
 							<font>font13</font>
 							<width>1310</width>
 							<shadowcolor>black</shadowcolor>
-							<label>Estuary MOD $INFO[System.AddonVersion(skin.estuary.mod)]</label>
+							<label>Estuary MOD $INFO[System.AddonVersion(skin.estuary.mod.kodi18)]</label>
 						</control>
 						<control type="label">
 							<top>175</top>
@@ -11954,7 +11954,7 @@
 							<font>font13</font>
 							<width>1211</width>
 							<shadowcolor>black</shadowcolor>
-							<label>Estuary MOD $INFO[System.AddonVersion(skin.estuary.mod)]</label>
+							<label>Estuary MOD $INFO[System.AddonVersion(skin.estuary.mod.kodi18)]</label>
 						</control>
 						<control type="label">
 							<top>175</top>
