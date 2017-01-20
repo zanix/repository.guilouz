@@ -337,6 +337,7 @@
                 <include>MediaMenuCommon</include>
                 <include>PVRSideBar</include>
             </control>
+            <include>PVRChannelNumberInput</include>
             <include content="TopBar">
                 <param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRChannelsVar]" />
                 <param name="breadcrumbs_icon" value="icons/settings/tvremote.png" />

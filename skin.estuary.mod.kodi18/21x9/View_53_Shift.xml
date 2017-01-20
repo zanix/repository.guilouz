@@ -162,7 +162,7 @@
                 <label>$PARAM[textbox_content]</label>
                 <textcolor>$VAR[SkinColorVar]</textcolor>
                 <font>font12</font>
-                <shadowcolor>text_shadow</shadowcolor>
+                <align>justify</align>
                 <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
             </control>
         </control>

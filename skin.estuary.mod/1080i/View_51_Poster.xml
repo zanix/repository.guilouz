@@ -142,7 +142,6 @@
                     <scroll>true</scroll>
                     <label>$INFO[ListItem.Label]</label>
                     <font>font30_title</font>
-                    <shadowcolor>text_shadow</shadowcolor>
                 </control>
                 <control type="label">
                     <right>130</right>
@@ -152,7 +151,6 @@
                     <label>$VAR[ListSubLabelVar]</label>
                     <font>font30_title</font>
                     <textcolor>$VAR[SkinColorVar]</textcolor>
-                    <shadowcolor>text_shadow</shadowcolor>
                     <align>right</align>
                 </control>
                 <control type="grouplist">
@@ -165,7 +163,6 @@
                         <width>1160</width>
                         <height>38</height>
                         <label>$LOCALIZE[180] : [COLOR white]$VAR[DurationVar][/COLOR]</label>
-                        <shadowcolor>text_shadow</shadowcolor>
                         <textcolor>$VAR[SkinColorVar]</textcolor>
                         <visible>!String.IsEmpty(ListItem.Duration)</visible>
                     </control>
@@ -175,7 +172,6 @@
                         <height>38</height>
                         <label>$INFO[ListItem.Director,$LOCALIZE[20339] : [COLOR white],[/COLOR]]</label>
                         <textcolor>$VAR[SkinColorVar]</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
                         <visible>!String.IsEmpty(ListItem.Director)</visible>
                     </control>
                     <control type="label">
@@ -184,7 +180,6 @@
                         <height>38</height>
                         <label>$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR]]</label>
                         <textcolor>$VAR[SkinColorVar]</textcolor>
-                        <shadowcolor>text_shadow</shadowcolor>
                         <visible>[String.IsEmpty(ListItem.Director) | String.IsEmpty(ListItem.Duration)] + !String.IsEmpty(ListItem.Genre)</visible>
                     </control>
                     <control type="label">
@@ -192,7 +187,6 @@
                         <width>1160</width>
                         <height>38</height>
                         <label>$INFO[ListItem.Season,$LOCALIZE[33054] : [COLOR white],[/COLOR]]$INFO[ListItem.Episode, [COLOR white]•[/COLOR] $LOCALIZE[20360] : [COLOR white],[/COLOR]]$INFO[ListItem.Status, [COLOR white]•[/COLOR] $LOCALIZE[126] : [COLOR white],[/COLOR]]</label>
-                        <shadowcolor>text_shadow</shadowcolor>
                         <textcolor>$VAR[SkinColorVar]</textcolor>
                         <visible>!String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Status)</visible>
                     </control>
@@ -201,7 +195,6 @@
                         <width>1160</width>
                         <height>38</height>
                         <label>$INFO[ListItem.Season,$LOCALIZE[33054] : [COLOR white],[/COLOR]]$INFO[ListItem.Episode, [COLOR white]•[/COLOR] $LOCALIZE[20360] : [COLOR white],[/COLOR]]$INFO[Window(Home).Property(NextAired.Status), [COLOR white]•[/COLOR] $LOCALIZE[126] : [COLOR white],[/COLOR]]</label>
-                        <shadowcolor>text_shadow</shadowcolor>
                         <textcolor>$VAR[SkinColorVar]</textcolor>
                         <visible>!String.IsEmpty(ListItem.Season) + String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(NextAired.Status))</visible>
                     </control>
@@ -210,8 +203,8 @@
                         <height>125</height>
                         <font>font12</font>
                         <autoscroll delay="10000" time="4000" repeat="10000">!System.HasModalDialog + Skin.HasSetting(autoscroll)</autoscroll>
-                        <label>$INFO[ListItem.Plot]</label>
-                        <shadowcolor>text_shadow</shadowcolor>
+                        <label>$VAR[PlotSpoilerVar]</label>
+                        <textcolor>$VAR[SkinColorVar]</textcolor>
                     </control>
                 </control>
             </control>

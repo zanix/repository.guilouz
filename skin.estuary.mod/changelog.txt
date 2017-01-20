@@ -1,3 +1,6 @@
+1.7.6 :
+• Justify all plots
+
 1.7.5 :
 • Workaround for fanarts on video/music info dialog
 • Changes on scrollbars

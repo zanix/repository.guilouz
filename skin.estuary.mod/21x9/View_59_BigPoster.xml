@@ -312,7 +312,7 @@
                                 <right>10</right>
                                 <width>436</width>
                                 <height>278</height>
-                                <align>left</align>
+                                <align>justify</align>
                                 <font>font12</font>
                                 <autoscroll>false</autoscroll>
                                 <label>$VAR[PlotSpoilerVar]</label>
@@ -427,7 +427,7 @@
                                 <right>10</right>
                                 <width>436</width>
                                 <height>278</height>
-                                <align>left</align>
+                                <align>justify</align>
                                 <font>font12</font>
                                 <label>$VAR[PlotSpoilerVar]</label>
                                 <autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>

@@ -8,5 +8,6 @@
         <include>DefaultBackground</include>
             <include condition="!Skin.HasSetting(enable_horizontalguide)">VerticalGuide</include>
         	<include condition="Skin.HasSetting(enable_horizontalguide)">HorizontalGuide</include>
+        	<include>PVRChannelNumberInput</include>
     </controls>
 </window>

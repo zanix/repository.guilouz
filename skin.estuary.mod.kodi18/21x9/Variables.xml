@@ -22,8 +22,8 @@
         <value>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</value>
     </variable>
     <variable name="PlotSpoilerVar">
-        <value condition="[Skin.HasSetting(hide_plotforspoiler) + String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Playcount,1) + !String.StartsWith(Container.FolderPath,plugin://)">$LOCALIZE[40132]</value>
-        <value>$INFO[ListItem.Tagline,[B][I],[/I][/B][CR]]$INFO[ListItem.Plot]</value>
+        <value condition="[Skin.HasSetting(hide_plotforspoiler) + String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Playcount,1) + !String.StartsWith(Container.FolderPath,plugin://)">[COLOR white]$LOCALIZE[40132][/COLOR]</value>
+        <value>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot,[COLOR white],[/COLOR]]</value>
     </variable>
     <variable name="HubLabelVar">
         <value condition="!String.IsEmpty(Container(9501).ListItem.Property(widgetName))">$INFO[Container(9501).ListItem.Property(widgetName)]</value>
@@ -1961,11 +1961,11 @@
     <variable name="ShiftRightTextBoxVar">
         <value condition="Window.IsActive(pictures)">$INFO[ListItem.Size,$LOCALIZE[289] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureAperture,$LOCALIZE[21826] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureFocalLen,$LOCALIZE[21827] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureExpTime,$LOCALIZE[21830] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Date,$LOCALIZE[552] : [COLOR white],[/COLOR][CR]]</value>
         <value condition="[Skin.HasSetting(hide_plotforspoiler) + String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Playcount,1) + !String.StartsWith(Container.FolderPath,plugin://)">[COLOR white]$LOCALIZE[40132][/COLOR]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">[COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)) + !Container.Content(movies) + !Container.Content(tvshows)">[COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</value>
         <value condition="Container.Content(artists)">[COLOR white]$INFO[ListItem.Property(artist_description)][/COLOR]</value>
         <value condition="Container.Content(albums)">[COLOR white]$INFO[ListItem.Property(album_description)][/COLOR]</value>
         <value condition="[Skin.HasSetting(hide_plotforspoiler) + String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Playcount,1)">[COLOR white]$LOCALIZE[40132][/COLOR]</value>
-        <value>[COLOR white]$INFO[ListItem.Plot][/COLOR]</value>
+        <value>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot,[COLOR white],[/COLOR]]</value>
     </variable>
     <variable name="SelectLabel">
         <value condition="Control.IsVisible(3)">$INFO[Container(3).NumItems] [COLOR grey]$LOCALIZE[31036] - $LOCALIZE[31035][/COLOR] $INFO[Container(3).CurrentPage][COLOR grey]/[/COLOR]$INFO[Container(3).NumPages]</value>

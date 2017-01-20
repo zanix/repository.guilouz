@@ -340,6 +340,7 @@
                 <width>449</width>
                 <height>188</height>
                 <font>font12</font>
+                <align>justify</align>
                 <autoscroll time="3000" delay="7000" repeat="5000">!System.HasActiveModalDialog</autoscroll>
                 <label fallback="19055">$VAR[ListBoxInfoVar]</label>
                 <textcolor>$VAR[SkinColorVar]</textcolor>

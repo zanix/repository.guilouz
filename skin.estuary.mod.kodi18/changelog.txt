@@ -1,3 +1,7 @@
+1.7.6 :
+• Add fullscreen window direct channel number input for PVR
+• Justify all plots
+
 1.7.5 :
 • Add changes for new Skin Shortcuts addon
 • Workaround for fanarts on video/music info dialog

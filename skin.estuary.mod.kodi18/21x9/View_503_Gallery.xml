@@ -160,6 +160,7 @@
                 <align>justify</align>
                 <font>font12</font>
                 <label>$VAR[PlotSpoilerVar]</label>
+                <textcolor>$VAR[SkinColorVar]</textcolor>
                 <autoscroll delay="7000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
                 <visible>!ListItem.IsCollection</visible>
             </control>
@@ -170,7 +171,7 @@
                 <height>67</height>
                 <align>justify</align>
                 <font>font12</font>
-                <label>$INFO[Window(Home).Property(SkinHelper.ListItem.ExtendedPlot)]</label>
+                <label>$LOCALIZE[20141]</label>
                 <autoscroll delay="7000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
                 <visible>ListItem.IsCollection</visible>
             </control>

@@ -53,6 +53,7 @@
                     	<width>429</width>
                     	<height>395</height>
                     	<font>font12</font>
+                    	<align>justify</align>
                     	<label>$VAR[ShiftRightTextBoxVar][CR]</label>
                     	<autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
                 	</control>
