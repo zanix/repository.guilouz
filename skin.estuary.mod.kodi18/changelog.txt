@@ -1,4 +1,5 @@
 1.7.6 :
+• Add finish time flag icons for preconfigured widgets	
 • Add fullscreen window direct channel number input for PVR
 • Justify all plots
 • Fix build version on settings widget

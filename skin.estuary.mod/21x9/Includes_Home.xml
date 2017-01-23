@@ -387,6 +387,30 @@
                     <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
                 </control>
             </control>
+            <control type="group">
+            	<visible>!String.IsEmpty(Container().ListItem.EndTimeResume)</visible>
+                <visible>Control.HasFocus(22100) | Control.HasFocus(17100) | Control.HasFocus(17200) | Control.HasFocus(17300) | Control.HasFocus(17400) | Control.HasFocus(11100) | Control.HasFocus(11200) | Control.HasFocus(11300) | Control.HasFocus(6100) | Control.HasFocus(6300) | Control.HasFocus(10100) | Control.HasFocus(10200) | Control.HasFocus(10400)  | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300)  | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)</visible>
+                <width>162</width>
+                <height>50</height>
+                <control type="image">
+                    <width>162</width>
+                    <height>50</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="$VAR[MediaFlagsColorVar]">flags/finishtime.png</texture>
+                </control>
+                <control type="label">
+                    <width>105</width>
+                    <centertop>47%</centertop>
+                    <height>50</height>
+                    <posx>54</posx>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[Container().ListItem.EndTimeResume]</label>
+                    <font>Font-Flag</font>
+                    <scroll>true</scroll>
+                    <textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+                </control>
+            </control>
 		</control>
 		<control type="image">
 			<top>1016</top>
