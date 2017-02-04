@@ -2,6 +2,6 @@
 <window type="dialog" id="1111">
     <allowoverlay>no</allowoverlay>
     <onload condition="!Window.IsActive(visualisation)">FullScreen</onload>
-    <visible>Player.HasAudio + Skin.HasSetting(show_musicvisualisation)</visible>
+    <visible>Player.HasAudio + Skin.HasSetting(show_musicvisualisation) + String.IsEmpty(Window(10025).Property(TvTunesIsAlive))</visible>
     <controls></controls>
 </window> 

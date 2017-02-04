@@ -1,6 +1,7 @@
 1.7.6 :
 • Add finish time flag icons for preconfigured widgets
 • Justify all plots
+• Remove TVTunes workaround
 
 1.7.5 :
 • Workaround for fanarts on video/music info dialog

@@ -3,6 +3,7 @@
 • Add fullscreen window direct channel number input for PVR
 • Justify all plots
 • Fix build version on settings widget
+• Remove TVTunes workaround
 
 1.7.5 :
 • Add changes for new Skin Shortcuts addon
