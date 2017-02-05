@@ -1,51 +1,25 @@
 ## Welcome to my Repository !
 
 
-### • Features of Estuary Mod :
-
-- Support for 21:9 screens
-- Possibility to change skin color
-- Movies, TV Shows and Custom Hubs
-- Skin Shortcuts addon support
-- LibreELEC Configuration / OpenELEC Configuration addons support
-- Artwork Downloader addon support
-- TV Show Next Aired addon support
-- Global Search addon support
-- Play Album addon support
-- Nextup Service Notification addon support
-- RSS Editor addon support
-- CU LRC Lyrics addon support
-- Library Editor Script addon support
-- Clearlogos support
-- ClearArts support
-- CDArts support
-- Extrafanarts support
-- Studios icons support
-- Record labels icons support
-- Weather icons support
-- Backup / Restore skin settings
-- Possibility to change background opacity
-- Kiosk Mode
-- More in changelog...
-
-
-### • Changes for Kodi 18 Leia :
+### • Changes for Estuary MOD for Kodi 18 Leia :
 
 [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod.kodi18/changelog.txt)
 
 
-### • Changes for Kodi 17 Krypton :
+### • Changes for Estuary MOD for Kodi 17 Krypton :
 
 [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod/changelog.txt)
 
 
-### • Installation :
+### • Changes for Estuary MOD V2 for Kodi 18 Leia :
 
-- In Kodi go to "Settings / Add-ons / Install from Zip file".
-- Select downloaded ZIP file.
-- Once installed, go to "Settings / Add-ons / Install from repository / Guilouz Repository / Look and feel / Skin" and install Estuary MOD (KODI 17) or Estuary MOD (KODI 18).
-- Select the skin to "Settings / Appearance / Skin".
-- Install all necessary addons in "Settings / Skin settings".
+[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.modv2/changelog.txt)
+
+
+### • Changes for Skin Backgrounds for Estuary MOD V2 :
+
+[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.skinbackgrounds.estuarymod/changelog.txt)
+
 
 ### • Download my Repository :
 
