@@ -1,9 +1,7 @@
 ## Welcome to my Repository !
 
 
-### • Changes for Estuary MOD for Kodi 18 Leia :
-
-[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod.kodi18/changelog.txt)
+### • Changes for Estuary MOD for Kodi 18 Leia : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod.kodi18/changelog.txt)
 
 
 ### • Changes for Estuary MOD for Kodi 17 Krypton :
