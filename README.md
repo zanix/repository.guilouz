@@ -4,19 +4,14 @@
 ### • Changes for Estuary MOD for Kodi 18 Leia : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod.kodi18/changelog.txt)
 
 
-### • Changes for Estuary MOD for Kodi 17 Krypton :
-
-[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod/changelog.txt)
+### • Changes for Estuary MOD for Kodi 17 Krypton : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod/changelog.txt)
 
 
-### • Changes for Estuary MOD V2 for Kodi 18 Leia :
-
-[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.modv2/changelog.txt)
+### • Changes for Estuary MOD V2 for Kodi 18 Leia : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.modv2/changelog.txt)
 
 
-### • Changes for Skin Backgrounds for Estuary MOD V2 :
+### • Changes for Skin Backgrounds for Estuary MOD V2 : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.skinbackgrounds.estuarymod/changelog.txt)
 
-[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.skinbackgrounds.estuarymod/changelog.txt)
 
 
 ### • Download my Repository :
