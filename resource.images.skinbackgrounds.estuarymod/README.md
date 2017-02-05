@@ -4,9 +4,7 @@
 This addons allows to display Fanarts of the main menu.
 
 
-### • Changes :
-
-[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.skinbackgrounds.estuarymod/changelog.txt)
+### • Changes : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.skinbackgrounds.estuarymod/changelog.txt)
 
 
 ### • Installation :

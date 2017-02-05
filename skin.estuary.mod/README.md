@@ -29,9 +29,7 @@
 - More in changelog...
 
 
-### • Changes :
-
-[Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod/changelog.txt)
+### • Changes : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.mod/changelog.txt)
 
 
 ### • Installation :
