@@ -2,6 +2,7 @@
 • Add finish time flag icons for preconfigured widgets
 • Justify all plots
 • Remove TVTunes workaround
+• Fix RSS Editor support with new XML
 
 1.7.5 :
 • Workaround for fanarts on video/music info dialog

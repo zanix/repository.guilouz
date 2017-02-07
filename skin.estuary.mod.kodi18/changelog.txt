@@ -4,6 +4,7 @@
 • Justify all plots
 • Fix build version on settings widget
 • Remove TVTunes workaround
+• Fix RSS Editor support with new XML
 
 1.7.5 :
 • Add changes for new Skin Shortcuts addon
