@@ -6,9 +6,31 @@
 	</requires>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Skin backgrounds Pack for Estuary MOD V2</summary>
-		<description lang="en">Skin backgrounds Pack for Estuary MOD V2</description>
+		<description lang="en">Skin backgrounds Pack for main menu.</description>
 		<summary lang="fr">Pack d'arrière-plans pour Estuary MOD V2</summary>
-		<description lang="fr">Pack d'arrière-plans pour Estuary MOD V2</description>
+		<description lang="fr">Pack d'arrière-plans pour le menu principal.</description>
 		<platform>all</platform>
+		<source>https://github.com/Guilouz/resource.images.skinbackgrounds.estuarymod</source>
+		<assets>
+			<icon>resources_/icon.png</icon>
+			<fanart>resources_/fanart.jpg</fanart>
+			<screenshot>resources_/screenshot-01.jpg</screenshot>
+			<screenshot>resources_/screenshot-02.jpg</screenshot>
+			<screenshot>resources_/screenshot-03.jpg</screenshot>
+			<screenshot>resources_/screenshot-04.jpg</screenshot>
+			<screenshot>resources_/screenshot-05.jpg</screenshot>
+			<screenshot>resources_/screenshot-06.jpg</screenshot>
+			<screenshot>resources_/screenshot-07.jpg</screenshot>
+			<screenshot>resources_/screenshot-08.jpg</screenshot>
+			<screenshot>resources_/screenshot-09.jpg</screenshot>
+			<screenshot>resources_/screenshot-10.jpg</screenshot>
+			<screenshot>resources_/screenshot-11.jpg</screenshot>
+			<screenshot>resources_/screenshot-12.jpg</screenshot>
+			<screenshot>resources_/screenshot-13.jpg</screenshot>
+			<screenshot>resources_/screenshot-14.jpg</screenshot>
+		</assets>
+		<news>
+		[B]1.0.0[/B][CR]• Initial release[CR][CR]
+		</news>
 	</extension>
 </addon>
