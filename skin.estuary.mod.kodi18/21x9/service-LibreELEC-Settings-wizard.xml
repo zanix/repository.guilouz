@@ -33,7 +33,7 @@
                 <top>2</top>
                 <width>270</width>
                 <height>676</height>
-                <texture>icons/libreELEC//wizard_LibreELEC.png</texture>
+                <texture>icons/libreELEC/wizard_LibreELEC.png</texture>
             </control>
             <control type="image">
                 <left>268</left>

@@ -1,3 +1,7 @@
+1.7.7 :
+• Fix missing justify plots
+• Minnor fix
+
 1.7.6 :
 • Add finish time flag icons for preconfigured widgets
 • Justify all plots

@@ -292,9 +292,10 @@
 					<control type="textbox">
 						<left>40</left>
 						<top>25</top>
-						<width>670</width>
+						<width>676</width>
 						<height>343</height>
 						<font>font_textbox</font>
+						<align>justify</align>
 						<label fallback="19055">$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 					</control>
