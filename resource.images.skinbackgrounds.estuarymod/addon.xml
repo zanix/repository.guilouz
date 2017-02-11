@@ -29,9 +29,6 @@
 			<screenshot>resources_/screenshot-13.jpg</screenshot>
 			<screenshot>resources_/screenshot-14.jpg</screenshot>
 		</assets>
-		<news>
-		[B]1.0.0[/B][CR]• Initial release[CR][CR]
-		[B]1.0.1[/B][CR]• Fix disc fanart[CR][CR]
-		</news>
+		<news>[B]1.0.1[/B][CR]• Fix disc fanart[CR][CR][B]1.0.0[/B][CR]• Initial release[CR][CR]</news>
 	</extension>
 </addon>
