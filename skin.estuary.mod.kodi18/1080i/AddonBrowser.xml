@@ -35,13 +35,13 @@
 					</control>
 					<control type="radiobutton" id="7">
 						<description>Hide foreign</description>
-						<include>MediaMenuItemsCommon</include>
+						<include>MediaMenuItemsCommonRadio</include>
 						<label>$LOCALIZE[25001]</label>
 						<visible>Control.IsEnabled(7)</visible>
 					</control>
 					<control type="radiobutton" id="8">
 						<description>Hide incompatible</description>
-						<include>MediaMenuItemsCommon</include>
+						<include>MediaMenuItemsCommonRadio</include>
 						<label>$LOCALIZE[24999]</label>
 						<visible>Control.IsEnabled(8)</visible>
 					</control>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="resource.images.skinbackgrounds.estuarymod" name="Skin Backgrounds for Estuary MOD V2" version="1.0.0" provider-name="Guilouz">
+<addon id="resource.images.skinbackgrounds.estuarymod" name="Skin Backgrounds for Estuary MOD V2" version="1.0.1" provider-name="Guilouz">
 	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -31,6 +31,7 @@
 		</assets>
 		<news>
 		[B]1.0.0[/B][CR]• Initial release[CR][CR]
+		[B]1.0.1[/B][CR]• Fix disc fanart[CR][CR]
 		</news>
 	</extension>
 </addon>
