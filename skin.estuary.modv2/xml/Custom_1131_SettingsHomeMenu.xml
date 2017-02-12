@@ -2,15 +2,27 @@
 <window type="dialog" id="1131">
 	<defaultcontrol always="true">11000</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item1))">Skin.SetString(homemenu_item1,1)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item2))">Skin.SetString(homemenu_item2,2)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item3))">Skin.SetString(homemenu_item3,3)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item4))">Skin.SetString(homemenu_item4,4)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item5))">Skin.SetString(homemenu_item5,5)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item6))">Skin.SetString(homemenu_item6,6)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item7))">Skin.SetString(homemenu_item7,7)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item8))">Skin.SetString(homemenu_item8,8)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item9))">Skin.SetString(homemenu_item9,9)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item10))">Skin.SetString(homemenu_item10,10)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item11))">Skin.SetString(homemenu_item11,11)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_item12))">Skin.SetString(homemenu_item12,12)</onload>
 	<controls>
 		<control type="group">
 			<centerleft>50%</centerleft>
-			<height>850</height>
+			<height>920</height>
 			<centertop>50%</centertop>
 			<width>1000</width>
 			<include content="DialogBackgroundCommons">
 				<param name="width" value="1000" />
-				<param name="height" value="850" />
+				<param name="height" value="920" />
 				<param name="header_label" value="$LOCALIZE[40106]" />
 				<param name="header_id" value="1" />
 			</include>
@@ -19,84 +31,227 @@
 				<top>80</top>
 				<control type="grouplist" id="11100">
 					<width>1000</width>
-					<height>880</height>
+					<height>960</height>
 					<itemgap>0</itemgap>
 					<onup>11100</onup>
 					<ondown>11100</ondown>
 					<orientation>vertical</orientation>
-					<control type="radiobutton" id="11111">
-						<label>$LOCALIZE[40005]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoMovieButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoMovieButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11112">
-						<label>$LOCALIZE[40006]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoTVShowButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoTVShowButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11113">
-						<label>$LOCALIZE[40007]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoMusicButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11114">
-						<label>$LOCALIZE[40008]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoMusicVideoButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11115">
-						<label>$LOCALIZE[40009]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoTVButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoTVButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11116">
-						<label>$LOCALIZE[40010]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoRadioButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoRadioButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11117">
-						<label>$LOCALIZE[40011]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoProgramsButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11118">
-						<label>$LOCALIZE[40012]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoPicturesButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoPicturesButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11119">
-						<label>$LOCALIZE[40013]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoVideosButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoVideosButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11120">
-						<label>$LOCALIZE[40014]</label>
-						<visible>System.GetBool(gamesgeneral.enable)</visible>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoGamesButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoGamesButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11121">
-						<label>$LOCALIZE[40015]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoFavButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoFavButton)</onclick>
-					</control>
-					<control type="radiobutton" id="11122">
-						<label>$LOCALIZE[40016]</label>
-						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
-						<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
-					</control>
+					<control type="button" id="11111">
+ 						<label>$LOCALIZE[40005] 1</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem1Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),0)">Skin.SetString(homemenu_item1,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),1)">Skin.SetString(homemenu_item1,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),2)">Skin.SetString(homemenu_item1,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),3)">Skin.SetString(homemenu_item1,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),4)">Skin.SetString(homemenu_item1,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),5)">Skin.SetString(homemenu_item1,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),6)">Skin.SetString(homemenu_item1,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),7)">Skin.SetString(homemenu_item1,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),8)">Skin.SetString(homemenu_item1,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),9)">Skin.SetString(homemenu_item1,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),10)">Skin.SetString(homemenu_item1,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),11)">Skin.SetString(homemenu_item1,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item1),12)">Skin.SetString(homemenu_item1,0)</onclick>
+ 					</control>
+					<control type="button" id="11112">
+ 						<label>$LOCALIZE[40005] 2</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem2Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),0)">Skin.SetString(homemenu_item2,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),1)">Skin.SetString(homemenu_item2,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),2)">Skin.SetString(homemenu_item2,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),3)">Skin.SetString(homemenu_item2,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),4)">Skin.SetString(homemenu_item2,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),5)">Skin.SetString(homemenu_item2,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),6)">Skin.SetString(homemenu_item2,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),7)">Skin.SetString(homemenu_item2,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),8)">Skin.SetString(homemenu_item2,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),9)">Skin.SetString(homemenu_item2,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),10)">Skin.SetString(homemenu_item2,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),11)">Skin.SetString(homemenu_item2,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item2),12)">Skin.SetString(homemenu_item2,0)</onclick>
+ 					</control>
+					<control type="button" id="11113">
+ 						<label>$LOCALIZE[40005] 3</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem3Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),0)">Skin.SetString(homemenu_item3,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),1)">Skin.SetString(homemenu_item3,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),2)">Skin.SetString(homemenu_item3,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),3)">Skin.SetString(homemenu_item3,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),4)">Skin.SetString(homemenu_item3,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),5)">Skin.SetString(homemenu_item3,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),6)">Skin.SetString(homemenu_item3,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),7)">Skin.SetString(homemenu_item3,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),8)">Skin.SetString(homemenu_item3,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),9)">Skin.SetString(homemenu_item3,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),10)">Skin.SetString(homemenu_item3,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),11)">Skin.SetString(homemenu_item3,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item3),12)">Skin.SetString(homemenu_item3,0)</onclick>
+ 					</control>
+					<control type="button" id="11114">
+ 						<label>$LOCALIZE[40005] 4</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem4Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),0)">Skin.SetString(homemenu_item4,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),1)">Skin.SetString(homemenu_item4,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),2)">Skin.SetString(homemenu_item4,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),3)">Skin.SetString(homemenu_item4,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),4)">Skin.SetString(homemenu_item4,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),5)">Skin.SetString(homemenu_item4,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),6)">Skin.SetString(homemenu_item4,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),7)">Skin.SetString(homemenu_item4,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),8)">Skin.SetString(homemenu_item4,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),9)">Skin.SetString(homemenu_item4,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),10)">Skin.SetString(homemenu_item4,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),11)">Skin.SetString(homemenu_item4,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item4),12)">Skin.SetString(homemenu_item4,0)</onclick>
+ 					</control>
+					<control type="button" id="11115">
+ 						<label>$LOCALIZE[40005] 5</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem5Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),0)">Skin.SetString(homemenu_item5,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),1)">Skin.SetString(homemenu_item5,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),2)">Skin.SetString(homemenu_item5,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),3)">Skin.SetString(homemenu_item5,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),4)">Skin.SetString(homemenu_item5,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),5)">Skin.SetString(homemenu_item5,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),6)">Skin.SetString(homemenu_item5,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),7)">Skin.SetString(homemenu_item5,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),8)">Skin.SetString(homemenu_item5,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),9)">Skin.SetString(homemenu_item5,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),10)">Skin.SetString(homemenu_item5,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),11)">Skin.SetString(homemenu_item5,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item5),12)">Skin.SetString(homemenu_item5,0)</onclick>
+ 					</control>
+					<control type="button" id="11116">
+ 						<label>$LOCALIZE[40005] 6</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem6Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),0)">Skin.SetString(homemenu_item6,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),1)">Skin.SetString(homemenu_item6,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),2)">Skin.SetString(homemenu_item6,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),3)">Skin.SetString(homemenu_item6,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),4)">Skin.SetString(homemenu_item6,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),5)">Skin.SetString(homemenu_item6,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),6)">Skin.SetString(homemenu_item6,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),7)">Skin.SetString(homemenu_item6,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),8)">Skin.SetString(homemenu_item6,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),9)">Skin.SetString(homemenu_item6,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),10)">Skin.SetString(homemenu_item6,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),11)">Skin.SetString(homemenu_item6,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item6),12)">Skin.SetString(homemenu_item6,0)</onclick>
+ 					</control>
+					<control type="button" id="11117">
+ 						<label>$LOCALIZE[40005] 7</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem7Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),0)">Skin.SetString(homemenu_item7,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),1)">Skin.SetString(homemenu_item7,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),2)">Skin.SetString(homemenu_item7,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),3)">Skin.SetString(homemenu_item7,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),4)">Skin.SetString(homemenu_item7,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),5)">Skin.SetString(homemenu_item7,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),6)">Skin.SetString(homemenu_item7,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),7)">Skin.SetString(homemenu_item7,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),8)">Skin.SetString(homemenu_item7,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),9)">Skin.SetString(homemenu_item7,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),10)">Skin.SetString(homemenu_item7,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),11)">Skin.SetString(homemenu_item7,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item7),12)">Skin.SetString(homemenu_item7,0)</onclick>
+ 					</control>
+					<control type="button" id="11118">
+ 						<label>$LOCALIZE[40005] 8</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem8Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),0)">Skin.SetString(homemenu_item8,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),1)">Skin.SetString(homemenu_item8,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),2)">Skin.SetString(homemenu_item8,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),3)">Skin.SetString(homemenu_item8,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),4)">Skin.SetString(homemenu_item8,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),5)">Skin.SetString(homemenu_item8,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),6)">Skin.SetString(homemenu_item8,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),7)">Skin.SetString(homemenu_item8,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),8)">Skin.SetString(homemenu_item8,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),9)">Skin.SetString(homemenu_item8,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),10)">Skin.SetString(homemenu_item8,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),11)">Skin.SetString(homemenu_item8,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item8),12)">Skin.SetString(homemenu_item8,0)</onclick>
+ 					</control>
+					<control type="button" id="11119">
+ 						<label>$LOCALIZE[40005] 9</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem9Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),0)">Skin.SetString(homemenu_item9,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),1)">Skin.SetString(homemenu_item9,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),2)">Skin.SetString(homemenu_item9,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),3)">Skin.SetString(homemenu_item9,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),4)">Skin.SetString(homemenu_item9,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),5)">Skin.SetString(homemenu_item9,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),6)">Skin.SetString(homemenu_item9,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),7)">Skin.SetString(homemenu_item9,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),8)">Skin.SetString(homemenu_item9,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),9)">Skin.SetString(homemenu_item9,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),10)">Skin.SetString(homemenu_item9,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),11)">Skin.SetString(homemenu_item9,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item9),12)">Skin.SetString(homemenu_item9,0)</onclick>
+ 					</control>
+					<control type="button" id="11120">
+ 						<label>$LOCALIZE[40005] 10</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem10Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),0)">Skin.SetString(homemenu_item10,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),1)">Skin.SetString(homemenu_item10,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),2)">Skin.SetString(homemenu_item10,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),3)">Skin.SetString(homemenu_item10,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),4)">Skin.SetString(homemenu_item10,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),5)">Skin.SetString(homemenu_item10,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),6)">Skin.SetString(homemenu_item10,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),7)">Skin.SetString(homemenu_item10,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),8)">Skin.SetString(homemenu_item10,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),9)">Skin.SetString(homemenu_item10,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),10)">Skin.SetString(homemenu_item10,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),11)">Skin.SetString(homemenu_item10,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item10),12)">Skin.SetString(homemenu_item10,0)</onclick>
+ 					</control>
+					<control type="button" id="11121">
+ 						<label>$LOCALIZE[40005] 11</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem11Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),0)">Skin.SetString(homemenu_item11,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),1)">Skin.SetString(homemenu_item11,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),2)">Skin.SetString(homemenu_item11,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),3)">Skin.SetString(homemenu_item11,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),4)">Skin.SetString(homemenu_item11,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),5)">Skin.SetString(homemenu_item11,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),6)">Skin.SetString(homemenu_item11,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),7)">Skin.SetString(homemenu_item11,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),8)">Skin.SetString(homemenu_item11,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),9)">Skin.SetString(homemenu_item11,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),10)">Skin.SetString(homemenu_item11,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),11)">Skin.SetString(homemenu_item11,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item11),12)">Skin.SetString(homemenu_item11,0)</onclick>
+ 					</control>
+					<control type="button" id="11122">
+ 						<label>$LOCALIZE[40005] 12</label>
+ 						<label2>$VAR[Label_SkinSetting_HomeMenuItem12Var]</label2>
+ 						<include>DefaultSettingButton</include>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),0)">Skin.SetString(homemenu_item12,1)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),1)">Skin.SetString(homemenu_item12,2)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),2)">Skin.SetString(homemenu_item12,3)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),3)">Skin.SetString(homemenu_item12,4)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),4)">Skin.SetString(homemenu_item12,5)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),5)">Skin.SetString(homemenu_item12,6)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),6)">Skin.SetString(homemenu_item12,7)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),7)">Skin.SetString(homemenu_item12,8)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),8)">Skin.SetString(homemenu_item12,9)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),9)">Skin.SetString(homemenu_item12,10)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),10)">Skin.SetString(homemenu_item12,11)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),11)">Skin.SetString(homemenu_item12,12)</onclick>
+ 						<onclick condition="String.IsEqual(Skin.String(homemenu_item12),12)">Skin.SetString(homemenu_item12,0)</onclick>
+ 					</control>
 				</control>
 			</control>
 		</control>

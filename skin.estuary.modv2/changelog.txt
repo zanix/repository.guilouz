@@ -1,4 +1,6 @@
 [B]2.0.1[/B]
+• Add possibility to reorder main menu items
+• Add possibility to reset main menu items back to default
 • Add studios flag icons for movies widgets
 • Fix colordiffuse for studios and labels flag icons
 

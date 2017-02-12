@@ -676,6 +676,11 @@
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1131)</onclick>
 				</control>
+				<control type="button" id="612">
+					<label>  ∟$LOCALIZE[40006]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[40006],message=$LOCALIZE[40007],yesaction=Skin.Reset(homemenu_item1)|Skin.Reset(homemenu_item2)|Skin.Reset(homemenu_item3)|Skin.Reset(homemenu_item4)|Skin.Reset(homemenu_item5)|Skin.Reset(homemenu_item6)|Skin.Reset(homemenu_item7)|Skin.Reset(homemenu_item8)|Skin.Reset(homemenu_item9)|Skin.Reset(homemenu_item10)|Skin.Reset(homemenu_item11)|Skin.Reset(homemenu_item12))</onclick>
+				</control>
 				<control type="image" id="1002">
 					<height>3</height>
 					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
@@ -708,49 +713,41 @@
 					<label>$LOCALIZE[40098]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1123)</onclick>
-					<enable>!Skin.HasSetting(HomeMenuNoMovieButton)</enable>
 				</control>
 				<control type="button" id="106">
 					<label>$LOCALIZE[40099]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1124)</onclick>
-					<enable>!Skin.HasSetting(HomeMenuNoTVShowButton)</enable>
 				</control>
 				<control type="button" id="107">
 					<label>$LOCALIZE[40100]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1125)</onclick>
-					<enable>!Skin.HasSetting(HomeMenuNoMusicButton)</enable>
 				</control>
 				<control type="button" id="108">
 					<label>$LOCALIZE[40101]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1126)</onclick>
-					<enable>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</enable>
 				</control>
 				<control type="button" id="109">
 					<label>$LOCALIZE[40102]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1127)</onclick>
-					<enable>!Skin.HasSetting(HomeMenuNoTVButton)</enable>
 				</control>
 				<control type="button" id="110">
 					<label>$LOCALIZE[40103]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1128)</onclick>
-					<enable>!Skin.HasSetting(HomeMenuNoRadioButton)</enable>
 				</control>
 				<control type="button" id="111">
 					<label>$LOCALIZE[40104]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1129)</onclick>
-					<enable>!Skin.HasSetting(HomeMenuNoProgramsButton)</enable>
 				</control>
 				<control type="button" id="112">
 					<label>$LOCALIZE[40105]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1130)</onclick>
-					<enable>!Skin.HasSetting(HomeMenuNoVideosButton)</enable>
 				</control>
 			</control>
 			<control type="image">

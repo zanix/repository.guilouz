@@ -506,7 +506,7 @@
 				</control>
 				<control type="group">
 					<width>162</width>
-					<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.EndTimeResume) + !$PARAM[infolabel_prefix]ListItem.IsCollection + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !Control.HasFocus(5500) + !Control.HasFocus(6400) + !Control.HasFocus(6500) + !Control.HasFocus(6600) + !Control.HasFocus(16200) + !Control.HasFocus(16600) + !Container.Content(genres) + !Container.Content(years) + !Container.Content(actors) + !Container.Content(directors) + !Container.Content(studios) + !Container.Content(countries) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,season) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
+					<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.EndTimeResume) + !$PARAM[infolabel_prefix]ListItem.IsCollection + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !Control.HasFocus(5500) + !Control.HasFocus(6400) + !Control.HasFocus(6500) + !Control.HasFocus(6600) + !Control.HasFocus(16200) + !Control.HasFocus(16600) + !Container.Content(genres) + !Container.Content(years) + !Container.Content(actors) + !Container.Content(directors) + !Container.Content(studios) + !Container.Content(countries) + !Container.Content(artists) + !Container.Content(albums) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,season) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
 					<control type="label">
 						<width>105</width>
                     	<centertop>34%</centertop>
