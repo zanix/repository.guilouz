@@ -697,18 +697,18 @@
 					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_fanart)|Skin.Reset(SkinHelper.EnableExtraFanart)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(background_overlay)|Skin.Reset(HomeFanart.name)|Skin.Reset(MovieGenreFanart.name)|Skin.Reset(moviegenreicons.name)|Skin.Reset(WeatherFanart.name)|Skin.Reset(WeatherIcons.name)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
 				</control>
 			</control>
-			<control type="grouplist" id="100">
+			<control type="grouplist" id="1000">
 				<top>160</top>
 				<left>0</left>
 				<right>0</right>
 				<bottom>140</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-				<onup>610</onup>
+				<onup>1000</onup>
 				<pagecontrol>60</pagecontrol>
-				<ondown>610</ondown>
+				<ondown>1000</ondown>
 				<visible>Container(9000).HasFocus(2)</visible>
-				<control type="label" id="1001">
+				<control type="label" id="100011">
 					<width>1450</width>
 					<textoffsetx>45</textoffsetx>
 					<top>0</top>
@@ -720,27 +720,27 @@
 					<textcolor>grey</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
-				<control type="radiobutton" id="101">
+				<control type="radiobutton" id="10001">
 					<label>$LOCALIZE[40004]</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(HideMainMenuWithWidgets)</selected>
 					<onclick>Skin.ToggleSetting(HideMainMenuWithWidgets)</onclick>
 				</control>
-				<control type="button" id="102">
+				<control type="button" id="10002">
 					<label>$LOCALIZE[40106]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1131)</onclick>
 				</control>
-				<control type="button" id="612">
+				<control type="button" id="10003">
 					<label>  ∟$LOCALIZE[40006]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[40006],message=$LOCALIZE[40007],yesaction=Skin.Reset(homemenu_item1)|Skin.Reset(homemenu_item2)|Skin.Reset(homemenu_item3)|Skin.Reset(homemenu_item4)|Skin.Reset(homemenu_item5)|Skin.Reset(homemenu_item6)|Skin.Reset(homemenu_item7)|Skin.Reset(homemenu_item8)|Skin.Reset(homemenu_item9)|Skin.Reset(homemenu_item10)|Skin.Reset(homemenu_item11)|Skin.Reset(homemenu_item12))</onclick>
 				</control>
-				<control type="image" id="1002">
+				<control type="image" id="100012">
 					<height>3</height>
 					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
 				</control>
-				<control type="label" id="1003">
+				<control type="label" id="100013">
 					<width>1450</width>
 					<textoffsetx>45</textoffsetx>
 					<top>0</top>
@@ -752,54 +752,54 @@
 					<textcolor>grey</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
-				<control type="button" id="103">
+				<control type="button" id="10004">
 					<label>$LOCALIZE[40067]</label>
 					<label2>$VAR[Label_SkinSetting_WidgetNumber]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SetNumeric(widgetnumber)</onclick>
 				</control>
-				<control type="radiobutton" id="104">
+				<control type="radiobutton" id="10005">
 					<label>$LOCALIZE[40068]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(HomeClearLogo)</onclick>
 					<selected>!Skin.HasSetting(HomeClearLogo)</selected>
 				</control>
-				<control type="button" id="105">
+				<control type="button" id="10006">
 					<label>$LOCALIZE[40098]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1123)</onclick>
 				</control>
-				<control type="button" id="106">
+				<control type="button" id="10007">
 					<label>$LOCALIZE[40099]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1124)</onclick>
 				</control>
-				<control type="button" id="107">
+				<control type="button" id="10008">
 					<label>$LOCALIZE[40100]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1125)</onclick>
 				</control>
-				<control type="button" id="108">
+				<control type="button" id="1009">
 					<label>$LOCALIZE[40101]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1126)</onclick>
 				</control>
-				<control type="button" id="109">
+				<control type="button" id="10010">
 					<label>$LOCALIZE[40102]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1127)</onclick>
 				</control>
-				<control type="button" id="110">
+				<control type="button" id="10011">
 					<label>$LOCALIZE[40103]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1128)</onclick>
 				</control>
-				<control type="button" id="111">
+				<control type="button" id="10012">
 					<label>$LOCALIZE[40104]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1129)</onclick>
 				</control>
-				<control type="button" id="112">
+				<control type="button" id="10013">
 					<label>$LOCALIZE[40105]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>ActivateWindow(1130)</onclick>
@@ -932,7 +932,7 @@
 				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 				<hitrect x="0" y="0" w="60" h="100%" />
-				<visible>Control.IsVisible(100) | Control.IsVisible(300)</visible>
+				<visible>Control.IsVisible(1000) | Control.IsVisible(300)</visible>
 			</control>
 		</control>
 		<include content="TopBar">

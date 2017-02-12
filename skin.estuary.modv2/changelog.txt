@@ -3,6 +3,7 @@
 • Add possibility to reset main menu items back to default
 • Add studios flag icons for movies widgets
 • Fix colordiffuse for studios and labels flag icons
+• Minnor fixes
 
 [B]2.0.0[/B]
 • Initial release
