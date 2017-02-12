@@ -1,3 +1,6 @@
+[B]2.0.1[/B]
+• Fix colordiffuse for studios and labels flag icons
+
 [B]2.0.0[/B]
 • Initial release
 • Add possibility to hide main menu when selecting widgets
