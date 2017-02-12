@@ -1,3 +1,6 @@
+[B]1.0.2[/B]
+• Fix xml file
+
 [B]1.0.1[/B]
 • Fix disc fanart
 
