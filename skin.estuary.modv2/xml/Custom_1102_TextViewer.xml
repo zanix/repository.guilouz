@@ -15,9 +15,9 @@
 			</include>
 			<control type="textbox" id="2000">
 				<left>1%</left>
-				<top>85</top>
+				<top>95</top>
 				<width>82%</width>
-				<height>675</height>
+				<height>663</height>
 				<shadowcolor>black</shadowcolor>
 				<pagecontrol>3000</pagecontrol>
 				<font>font37</font>

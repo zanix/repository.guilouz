@@ -741,7 +741,12 @@ msgctxt "#40007"
 msgid "Are you sure you want to reset display of all menu items back to default ?"
 msgstr ""
 
-#: Empty strings 40008 to 40016
+#: /xml/SkinSettings.xml
+msgctxt "#40008"
+msgid "Changes of version"
+msgstr ""
+
+#: Empty strings 40009 to 40016
 
 #: /xml/SkinSettings.xml
 msgctxt "#40017"
