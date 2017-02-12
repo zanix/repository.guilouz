@@ -134,6 +134,28 @@
 				<ondown>300</ondown>
 				<pagecontrol>60</pagecontrol>
 				<visible>Container(9000).HasFocus(8)</visible>
+				<control type="radiobutton" id="318">
+					<label>repository.marcelveldt $INFO[System.AddonVersion(repository.marcelveldt),(,)]</label>
+					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+					<onclick condition="!System.HasAddon(repository.marcelveldt)">InstallAddon(repository.marcelveldt)</onclick>
+					<onclick condition="System.HasAddon(repository.marcelveldt)">Addon.OpenSettings(repository.marcelveldt)</onclick>
+					<selected>System.HasAddon(repository.marcelveldt)</selected>
+					<include>DefaultSettingButton</include>
+				</control>
+				<control type="radiobutton" id="317">
+					<label>resource.images.skinbackgrounds.estuarymod $INFO[System.AddonVersion(resource.images.skinbackgrounds.estuarymod),(,)]</label>
+					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+					<onclick condition="!System.HasAddon(resource.images.skinbackgrounds.estuarymod)">InstallAddon(resource.images.skinbackgrounds.estuarymod)</onclick>
+					<onclick condition="System.HasAddon(resource.images.skinbackgrounds.estuarymod)">Addon.OpenSettings(resource.images.skinbackgrounds.estuarymod)</onclick>
+					<selected>System.HasAddon(resource.images.skinbackgrounds.estuarymod)</selected>
+					<include>DefaultSettingButton</include>
+				</control>
 				<control type="radiobutton" id="301">
 					<label>script.extendedinfo $INFO[System.AddonVersion(script.extendedinfo),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
@@ -275,6 +297,39 @@
 					<onclick condition="!System.HasAddon(plugin.program.autocompletion)">InstallAddon(plugin.program.autocompletion)</onclick>
 					<onclick condition="System.HasAddon(plugin.program.autocompletion)">Addon.OpenSettings(plugin.program.autocompletion)</onclick>
 					<selected>System.HasAddon(plugin.program.autocompletion)</selected>
+					<include>DefaultSettingButton</include>
+				</control>
+				<control type="radiobutton" id="314">
+					<label>plugin.video.youtube $INFO[System.AddonVersion(plugin.video.youtube),(,)]</label>
+					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+					<onclick condition="!System.HasAddon(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>
+					<onclick condition="System.HasAddon(plugin.video.youtube)">Addon.OpenSettings(plugin.video.youtube)</onclick>
+					<selected>System.HasAddon(plugin.video.youtube)</selected>
+					<include>DefaultSettingButton</include>
+				</control>
+				<control type="radiobutton" id="315">
+					<label>script.cu.lrclyrics $INFO[System.AddonVersion(script.cu.lrclyrics),(,)]</label>
+					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+					<onclick condition="!System.HasAddon(script.cu.lrclyrics)">InstallAddon(script.cu.lrclyrics)</onclick>
+					<onclick condition="System.HasAddon(script.cu.lrclyrics)">Addon.OpenSettings(script.cu.lrclyrics)</onclick>
+					<selected>System.HasAddon(script.cu.lrclyrics)</selected>
+					<include>DefaultSettingButton</include>
+				</control>
+				<control type="radiobutton" id="316">
+					<label>script.libraryeditor $INFO[System.AddonVersion(script.libraryeditor),(,)]</label>
+					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+					<onclick condition="!System.HasAddon(script.libraryeditor)">InstallAddon(script.libraryeditor)</onclick>
+					<onclick condition="System.HasAddon(script.libraryeditor)">Addon.OpenSettings(script.libraryeditor)</onclick>
+					<selected>System.HasAddon(script.libraryeditor)</selected>
 					<include>DefaultSettingButton</include>
 				</control>
 			</control>
