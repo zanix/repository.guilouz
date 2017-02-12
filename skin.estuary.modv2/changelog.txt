@@ -1,4 +1,5 @@
 [B]2.0.1[/B]
+• Add studios flag icons for movies widgets
 • Fix colordiffuse for studios and labels flag icons
 
 [B]2.0.0[/B]

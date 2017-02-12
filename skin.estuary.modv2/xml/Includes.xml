@@ -405,19 +405,22 @@
 				<control type="group">
 					<width>150</width>
 					<top>0</top>
-					<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) | Control.HasFocus(6600)</visible>
+					<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) | String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,movie) | Control.HasFocus(6600)</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="$INFO[Skin.String(studiologos.path)]$INFO[$PARAM[infolabel_prefix]ListItem.Studio,,.png]" />
 						<param name="colordiffuse" value="" />
+						<param name="height" value="60" />
+						<param name="visible" value="!Window.IsVisible(movieinformation)" />
 					</include>
 				</control>
 				<control type="group">
 					<width>150</width>
 					<top>0</top>
-					<visible>!String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !Control.HasFocus(6600)</visible>
+					<visible>!String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,movie) + !Control.HasFocus(6600)</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="$INFO[Skin.String(recordlabels.path)]$INFO[$PARAM[infolabel_prefix]ListItem.Property(Album_Label),,.png]" />
 						<param name="colordiffuse" value="" />
+						<param name="height" value="60" />
 					</include>
 				</control>
 				<control type="group">
