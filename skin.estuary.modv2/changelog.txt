@@ -1,0 +1,50 @@
+[B]2.0.0[/B]
+• Initial release
+• Add possibility to hide main menu when selecting widgets
+• Add possibility to disable each widget
+• Add possibility to hide watched items from recently added widgets
+• Add possibility to hide episodes plots to avoid spoilers
+• Add possibility to change skin color
+• Add possibility to change background color
+• Add possibility to change pattern color
+• Add possibility to change background opacity
+• Add possibility to top and bottom bars opacity
+• Add possibility to change weather icons pack
+• Add possibility to change studios icons pack
+• Add possibility to change genres icons pack
+• Add possibility to set splash screen (photo, video or music)
+• Add possibility to set number of items to display on widgets
+• Add possibility to backup/restore skin settings
+• Add possibility to disable zoom effect
+• Add possibility to enable/disable music visualisation effects on background
+• Add possibility to enable/disable video on background
+• Add possibility to hide notification popup during playback
+• Add possibility to show music visualisation screen when playing song
+• Add possibility to ExtraFanarts on music visualisation screen
+• Add possibility to animate Fanart/ExtraFanarts on music visualisation screen
+• Add possibility to add music visualisation effects on music visualisation screen
+• Add possibility to disable Kodi screensaver on music visualisation screen
+• Add possibility to start Artwork Downloader at startup
+• Add next tracks on music visualisation screen
+• Add actors list on video OSD
+• Add more buttons on OSD
+• Add more flag icons
+• Add next airing episodes widget for tv shows
+• Add horizontal view for PVR Guide
+• Add support for records labels icons pack
+• Add support for ExtraFanarts
+• Add support for animated posters
+• Add support for Clearlogos
+• Add support for CDArts
+• Add support for Artwork Downloader addon
+• Add support for NextUp Notification addon
+• Add support for CU LRC Lyrics addon
+• Add support for RSS Editor addon
+• Add support for Global Search addon
+• Add support for TV Show Next Aired addon
+• Add support for Extended Info addon
+• Add support for LibreELEC settings addon
+• Add support for Kiosk mode
+• Changes on views
+• Changes on volume bar
+• Some fixes

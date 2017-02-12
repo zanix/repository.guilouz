@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="View_502_FanArt">
+		<control type="group">
+			<include>OpenClose_Left</include>
+			<visible>Control.IsVisible(502)</visible>
+			<include>Visible_Left</include>
+			<include content="ListContainer">
+				<param name="left" value="-5" />
+				<param name="right" value="1195" />
+				<param name="list_id" value="502" />
+				<param name="viewtype_label" value="$LOCALIZE[20445]" />
+			</include>
+		</control>
+		<control type="group">
+			<depth>DepthContentPanel</depth>
+			<include>OpenClose_Right</include>
+			<visible>Control.IsVisible(502)</visible>
+			<include>Visible_Right</include>
+			<control type="group">
+				<right>-20</right>
+				<width>1235</width>
+				<include content="ContentPanel">
+					<param name="width" value="1235" />
+					<param name="left" value="0" />
+					<param name="top" value="-20" />
+					<param name="flipx" value="true" />
+				</include>
+				<control type="image">
+					<left>38</left>
+					<right>36</right>
+					<top>115</top>
+					<height>644</height>
+					<fadetime>300</fadetime>
+					<texture border="2" fallback="special://skin/extras/home-images/movie.jpg" background="true">$VAR[FanartImageVar]</texture>
+					<aspectratio align="center" aligny="bottom">scale</aspectratio>
+				</control>
+				<control type="image">
+					<left>38</left>
+					<right>36</right>
+					<top>580</top>
+					<height>180</height>
+					<fadetime>300</fadetime>
+					<texture background="true">dialogs/back.png</texture>
+					<aspectratio align="center" aligny="bottom">scale</aspectratio>
+					<visible>ListItem.IsCollection</visible>
+				</control>
+				<control type="list" id="50502">
+					<left>38</left>
+					<top>585</top>
+					<width>1161</width>
+					<height>170</height>
+					<orientation>horizontal</orientation>
+					<autoscroll time="1500">true</autoscroll>
+					<visible>ListItem.IsCollection</visible>
+					<fadetime>300</fadetime>
+					<itemgap>5</itemgap>
+					<animation effect="slide" end="516,0" time="0" condition="Integer.IsEqual(Container(50502).NumItems,1)">conditional</animation>
+					<animation effect="slide" end="451.5,0" time="0" condition="Integer.IsEqual(Container(50502).NumItems,2)">conditional</animation>
+					<animation effect="slide" end="387,0" time="0" condition="Integer.IsEqual(Container(50502).NumItems,3)">conditional</animation>
+					<animation effect="slide" end="322.5,0" time="0" condition="Integer.IsEqual(Container(50502).NumItems,4)">conditional</animation>
+					<animation effect="slide" end="258,0" time="0" condition="Integer.IsEqual(Container(50502).NumItems,5)">conditional</animation>
+					<animation effect="slide" end="193.5,0" time="0" condition="Integer.IsEqual(Container(50502).NumItems,6)">conditional</animation>
+					<animation effect="slide" end="129,0" time="0" condition="Integer.IsEqual(Container(50502).NumItems,7)">conditional</animation>
+					<animation effect="slide" end="64.5,0" time="0" condition="Integer.IsEqual(Container(50502).NumItems,8)">conditional</animation>
+					<focusedlayout height="170" width="129">
+						<control type="image">
+							<left>5</left>
+							<top>0</top>
+							<right>5</right>
+							<bottom>0</bottom>
+							<aspectratio>stretch</aspectratio>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<bordertexture>colors/white.png</bordertexture>
+							<bordersize>1</bordersize>
+						</control>
+					</focusedlayout>
+					<itemlayout height="170" width="129">
+						<control type="image">
+							<left>5</left>
+							<top>0</top>
+							<right>5</right>
+							<bottom>0</bottom>
+							<aspectratio>stretch</aspectratio>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<bordertexture>colors/white.png</bordertexture>
+							<bordersize>1</bordersize>
+						</control>
+					</itemlayout>
+					<content sortby="year" sortorder="ascending">$VAR[InfoListPathVar]</content>
+				</control>
+				<control type="group">
+					<left>1140</left>
+					<top>94</top>
+					<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+				</control>
+				<control type="textbox">
+					<left>50</left>
+					<right>45</right>
+					<top>769</top>
+					<bottom>105</bottom>
+					<align>justify</align>
+					<label>$VAR[PlotSpoilerVar]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<autoscroll delay="10000" time="4000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+				<control type="scrollbar" id="502600">
+					<left>20</left>
+					<top>list_y_offset</top>
+					<width>12</width>
+					<bottom>list_y_offset</bottom>
+					<onleft>502</onleft>
+					<onright>502</onright>
+					<orientation>vertical</orientation>
+					<animation effect="zoom" end="50,100" time="300" tween="sine" center="20,0" easing="inout" condition="!Control.HasFocus(502600)">conditional</animation>
+					<hitrect x="-30" y="0" w="120" h="100%" />
+				</control>
+				<control type="group">
+					<left>50</left>
+					<top>769</top>
+					<visible>ListItem.IsCollection</visible>
+					<control type="textbox">
+						<left>0</left>
+						<top>0</top>
+						<right>45</right>
+						<bottom>105</bottom>
+						<align>justify</align>
+						<label>[I]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/I][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+					</control>
+					<control type="textbox">
+						<left>0</left>
+						<top>0</top>
+						<right>45</right>
+						<bottom>105</bottom>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font27</font>
+						<textcolor>80FFFFFF</textcolor>
+						<label>$LOCALIZE[19055]</label>
+						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)</visible>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>

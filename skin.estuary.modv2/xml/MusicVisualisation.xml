@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<defaultcontrol></defaultcontrol>
+	<backgroundcolor>background</backgroundcolor>
+	<controls>
+		<control type="multiimage">
+			<left>0</left>
+			<top>0</top>
+			<width>100%</width>
+			<height>100%</height>
+			<aspectratio>scale</aspectratio>
+			<fadetime>400</fadetime>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<imagepath background="true" colordiffuse="88FFFFFF">$VAR[PlayerFanartVar]</imagepath>
+			<animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
+			<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
+			<visible>!Skin.HasSetting(hide_background_fanart)</visible>
+		</control>
+		<control type="visualisation">
+			<include>FullScreenDimensions</include>
+			<visible>Player.HasAudio</visible>
+			<visible>Skin.HasSetting(enable_visualisation)</visible>
+		</control>
+		<control type="group">
+			<animation effect="fade" start="100" end="30" time="0" condition="!String.IsEmpty(Player.Art(fanart)) | Visualisation.Enabled">Conditional</animation>
+			<include>ColoredBackgroundImages</include>
+		</control>
+		<control type="group">
+			<bottom>0</bottom>
+			<height>1080</height>
+			<include>OpenClose_Left</include>
+			<control type="group">
+				<left>77</left>
+				<top>170</top>
+				<include>Visible_Left</include>
+				<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
+			<control type="image" id="88888">
+				<left>28</left>
+				<top>16</top>
+				<width>470</width>
+				<height>470</height>
+				<aligny>top</aligny>
+				<aspectratio align="left">keep</aspectratio>
+				<fadetime>300</fadetime>
+				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
+				<animation effect="slide" end="240,0" time="300" reverisble="true" condition="Player.Playing">Conditional</animation>
+				<animation effect="slide" end="0,0" time="300" reverisble="true" condition="!Player.Playing">Conditional</animation>
+				<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Skin.HasSetting(show_disc)">Conditional</animation>
+				<texture background="true" fallback="osd/cd.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+				<visible>!Skin.HasSetting(show_disc)</visible>
+			</control>
+			<control type="label">
+				<left>130</left>
+				<top>65</top>
+				<width>265</width>
+				<height>105</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>Font-Disc</font>
+				<label>$VAR[MusicPlayerDiscTitleVar]</label>
+				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
+				<animation effect="slide" end="240,0" time="300" reverisble="true" condition="Player.Playing">Conditional</animation>
+				<animation effect="slide" end="0,0" time="300" reverisble="true" condition="!Player.Playing">Conditional</animation>
+				<animation effect="rotate" end="-360" center="265,253" time="4800" loop="true" reversible="false" condition="!Skin.HasSetting(show_disc)">Conditional</animation>
+				<textcolor>black</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<visible>String.IsEqual(Control.GetLabel(88888),osd/cd.png)</visible>
+				<visible>!Skin.HasSetting(show_disc)</visible>
+			</control>
+			<control type="label">
+				<left>110</left>
+				<top>340</top>
+				<width>300</width>
+				<height>99</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>Font-Disc</font>
+				<label>$INFO[MusicPlayer.Album]</label>
+				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
+				<animation effect="slide" end="240,0" time="300" reverisble="true" condition="Player.Playing">Conditional</animation>
+				<animation effect="slide" end="0,0" time="300" reverisble="true" condition="!Player.Playing">Conditional</animation>
+				<animation effect="rotate" end="-360" center="265,253" time="4800" loop="true" reversible="false" condition="!Skin.HasSetting(show_disc)">Conditional</animation>
+				<textcolor>black</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<visible>String.IsEqual(Control.GetLabel(88888),osd/cd.png)</visible>
+				<visible>!Skin.HasSetting(show_disc)</visible>
+			</control>
+			<control type="image">
+				<top>1</top>
+				<left>-47</left>
+				<width>505</width>
+				<height>498</height>
+				<texture>dialogs/back.png</texture>
+				<visible>Skin.HasSetting(hide_cdcase)</visible>
+			</control>
+			<control type="image">
+				<animation effect="fade" time="300">Visible</animation>
+				<animation effect="fade" time="300">Hidden</animation>
+				<top>5</top>
+				<width>497</width>
+				<height>490</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>colors/black.png</texture>
+				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
+			</control>
+			<control type="image">
+				<animation effect="fade" time="300">Visible</animation>
+				<animation effect="fade" time="300">Hidden</animation>
+				<top>5</top>
+				<width>497</width>
+				<height>490</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>$INFO[MusicPlayer.Cover]</texture>
+				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
+			</control>
+			<control type="image">
+				<left>-47</left>
+				<top>0</top>
+				<width>550</width>
+				<height>500</height>
+				<aspectratio align="right">keep</aspectratio>
+				<texture>osd/cdcase.png</texture>
+				<visible>!Skin.HasSetting(hide_cdcase)</visible>
+			</control>
+			<control type="label">
+				<left>-208</left>
+				<top>252</top>
+				<width>400</width>
+				<height>40</height>
+				<angle>270</angle>
+				<align>center</align>
+				<font>font10</font>
+				<label>[UPPERCASE]$INFO[MusicPlayer.Property(Album_Label)][/UPPERCASE]</label>
+				<visible>!Skin.HasSetting(hide_cdcase)</visible>
+			</control>
+			</control>
+			<control type="group">
+				<top>-30</top>
+				<visible>[Player.ShowInfo | Window.IsActive(musicosd)] + !Window.IsActive(playerprocessinfo)</visible>
+				<include>Visible_Left</include>
+				<control type="group">
+					<left>30</left>
+					<top>740</top>
+					<control type="label">
+						<top>-25</top>
+						<width>930</width>
+						<height>40</height>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<font>font60</font>
+						<shadowcolor>black</shadowcolor>
+						<scroll>true</scroll>
+					</control>
+					<control type="label">
+						<top>55</top>
+						<width>930</width>
+						<height>40</height>
+						<label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year, (,)]</label>
+						<font>font37</font>
+						<shadowcolor>black</shadowcolor>
+						<scroll>true</scroll>
+					</control>
+					<control type="label">
+						<top>102</top>
+						<width>930</width>
+						<height>40</height>
+						<label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title]</label>
+						<font>font45</font>
+						<shadowcolor>black</shadowcolor>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<scroll>true</scroll>
+					</control>
+					<control type="label">
+						<top>155</top>
+						<width>930</width>
+						<height>40</height>
+						<label>$INFO[MusicPlayer.DiscNumber,$LOCALIZE[427] ,]</label>
+						<font>font37</font>
+						<shadowcolor>black</shadowcolor>
+						<scroll>true</scroll>
+					</control>
+				</control>		
+			</control>	
+		</control>
+		<control type="group">
+			<bottom>0</bottom>
+			<height>1080</height>
+			<include>OpenClose_Right</include>
+				<control type="image">
+					<top>630</top>
+					<right>30</right>
+					<width>600</width>
+					<height>111</height>
+					<aspectratio align="right" aligny="center">keep</aspectratio>
+					<texture>$INFO[Window(Home).Property(SkinHelper.Player.Art.Banner)]</texture>
+					<bordertexture>dialogs/back.png</bordertexture>
+					<bordersize>2</bordersize>
+					<animation effect="slide" end="0,165" time="0" condition="String.IsEmpty(MusicPlayer.Offset(1).Title)">Conditional</animation>
+					<visible>!Skin.HasSetting(show_artistbanner)</visible>
+				</control>
+				<control type="group">
+				<top>749</top>
+				<right>30</right>
+				<visible>[Player.ShowInfo | Window.IsActive(musicosd)] + !Window.IsActive(playerprocessinfo)</visible>
+				<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+				<include>Visible_Right</include>
+				<control type="image">
+					<top>8</top>
+					<right>0</right>
+					<width>151</width>
+					<height>151</height>
+					<texture background="true" border="2" fallback="DefaultAudioCover.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
+					<bordertexture>dialogs/back.png</bordertexture>
+					<bordersize>2</bordersize>
+				</control>
+				<control type="image">
+					<right>155</right>
+					<top>54</top>
+					<width>16</width>
+					<height>18</height>
+					<texture colordiffuse="$VAR[SkinColorVar]">osd/arrow.png</texture>
+				</control>
+				<control type="textbox">
+					<right>177</right>
+					<width>723</width>
+					<align>right</align>
+					<height>170</height>
+					<label>[B][UPPERCASE]$LOCALIZE[40090][/UPPERCASE][/B][CR][COLOR white]$INFO[MusicPlayer.Offset(1).Title]$INFO[MusicPlayer.Offset(1).Artist, - [B],[/B]]$INFO[MusicPlayer.Offset(1).Duration, - ,][CR]$INFO[MusicPlayer.Offset(2).Title]$INFO[MusicPlayer.Offset(2).Artist, - [B],[/B]]$INFO[MusicPlayer.Offset(2).Duration, - ,][CR]$INFO[MusicPlayer.Offset(3).Title]$INFO[MusicPlayer.Offset(3).Artist, - [B],[/B]]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<font>font13</font>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>
