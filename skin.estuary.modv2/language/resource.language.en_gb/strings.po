@@ -746,7 +746,17 @@ msgctxt "#40008"
 msgid "Changes of version"
 msgstr ""
 
-#: Empty strings 40009 to 40016
+#: /xml/Variables.xml
+msgctxt "#40009"
+msgid "Update video library"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40010"
+msgid "Update music library"
+msgstr ""
+
+#: Empty strings 40011 to 40016
 
 #: /xml/SkinSettings.xml
 msgctxt "#40017"

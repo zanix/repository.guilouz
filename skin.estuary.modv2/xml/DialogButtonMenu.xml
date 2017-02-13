@@ -78,6 +78,14 @@
 						<visible>System.HasShutdown + System.IsInhibit</visible>
 					</item>
 					<item>
+						<label>$VAR[VideoLibraryScanLabelVar]</label>
+						<onclick>UpdateLibrary(video)</onclick>
+					</item>
+					<item>
+						<label>$VAR[MusicLibraryScanLabelVar]</label>
+						<onclick>UpdateLibrary(music)</onclick>
+					</item>
+					<item>
 						<label>$LOCALIZE[20183]</label>
 						<onclick>ReloadSkin()</onclick>
 					</item>

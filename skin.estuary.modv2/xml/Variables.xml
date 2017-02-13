@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <variable name="VideoLibraryScanLabelVar">
+		<value condition="Library.IsScanningVideo">$LOCALIZE[13353]</value>
+		<value>$LOCALIZE[40009]</value>
+	</variable>
+	<variable name="MusicLibraryScanLabelVar">
+		<value condition="Library.IsScanningMusic">$LOCALIZE[13353]</value>
+		<value>$LOCALIZE[40010]</value>
+	</variable>
     <variable name="Label_SkinSetting_HomeMenuItem1Var">
  		<value condition="String.IsEqual(Skin.String(homemenu_item1),0)">$LOCALIZE[40064]</value>
  		<value condition="String.IsEqual(Skin.String(homemenu_item1),1)">$LOCALIZE[342]</value>

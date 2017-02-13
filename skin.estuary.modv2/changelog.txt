@@ -2,6 +2,7 @@
 • Add possibility to reorder main menu items
 • Add possibility to reset main menu items back to default
 • Add studios flag icons for movies widgets
+• Add shortcuts on power menu to update video/music library
 • Fix colordiffuse for studios and labels flag icons
 • Minnor fixes
 
