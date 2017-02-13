@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <variable name="LabelCategoriesSmallVar">
+		<value condition="Control.HasFocus(5900) | Control.HasFocus(6900) | Control.HasFocus(7900) | Control.HasFocus(8900) | Control.HasFocus(11900) | Control.HasFocus(12900) | Control.HasFocus(13900) | Control.HasFocus(16900)">$INFO[Container($PARAM[list_id]).ListItem.Label]</value>
+		<value>$LOCALIZE[31148]</value>
+	</variable>
     <variable name="VideoLibraryScanLabelVar">
 		<value condition="Library.IsScanningVideo">$LOCALIZE[13353]</value>
 		<value>$LOCALIZE[40009]</value>

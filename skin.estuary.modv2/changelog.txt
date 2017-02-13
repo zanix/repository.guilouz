@@ -1,6 +1,7 @@
 [B]2.0.1[/B]
 • Add possibility to reorder main menu items
 • Add possibility to reset main menu items back to default
+• Add possibility to show smaller icons for 'Categories' widgets
 • Add studios flag icons for movies widgets
 • Add shortcuts on power menu to update video/music library
 • Fix colordiffuse for studios and labels flag icons

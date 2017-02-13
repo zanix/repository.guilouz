@@ -758,6 +758,12 @@
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SetNumeric(widgetnumber)</onclick>
 				</control>
+				<control type="radiobutton" id="10014">
+					<label>$LOCALIZE[40011]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(UseSmallerCategories)</onclick>
+					<selected>Skin.HasSetting(UseSmallerCategories)</selected>
+				</control>
 				<control type="radiobutton" id="10005">
 					<label>$LOCALIZE[40068]</label>
 					<include>DefaultSettingButton</include>
