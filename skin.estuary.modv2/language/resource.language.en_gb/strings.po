@@ -756,7 +756,12 @@ msgctxt "#40010"
 msgid "Update music library"
 msgstr ""
 
-#: Empty strings 40011 to 40016
+#: /xml/SkinSettings.xml
+msgctxt "#40011"
+msgid "Show smaller icons for 'Categories' widgets"
+msgstr ""
+
+#: Empty strings 40012 to 40016
 
 #: /xml/SkinSettings.xml
 msgctxt "#40017"
