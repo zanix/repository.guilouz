@@ -176,6 +176,14 @@
 			</control>
 			<control type="image">
 				<left>20</left>
+				<top>138</top>
+				<width>160</width>
+				<height>70</height>
+				<texture>overlays/overlay-bg.png</texture>
+				<visible>ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
 				<top>175</top>
 				<width>32</width>
 				<height>32</height>

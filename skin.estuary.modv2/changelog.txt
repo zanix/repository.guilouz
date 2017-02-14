@@ -1,3 +1,6 @@
+[B]2.0.3[/B]
+• Fix esthetic appearance
+
 [B]2.0.2[/B]
 • Fix selecting widgets
 
