@@ -1,5 +1,6 @@
 [B]2.0.3[/B]
 • Fix color with lyrics
+• Fix banner on music visualisation
 • Fix esthetic appearance
 
 [B]2.0.2[/B]

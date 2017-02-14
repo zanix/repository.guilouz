@@ -42,12 +42,12 @@
 					<height>50</height>
 					<left>300</left>
 					<top>114</top>
+					<visible>!String.IsEmpty(MusicPlayer.Bitrate)</visible>
 					<control type="image">
 						<width>171</width>
 						<height>50</height>
 						<texture>flags/cadre.png</texture>
 						<aspectratio>keep</aspectratio>
-						<visible>!String.IsEmpty(MusicPlayer.Bitrate)</visible>
 					</control>
 					<control type="label">
 						<width>171</width>
@@ -56,7 +56,6 @@
 						<top>-3</top>
 						<label>$INFO[MusicPlayer.BitRate] kbps</label>
 						<font>Font-Flag</font>
-						<visible>!String.IsEmpty(MusicPlayer.Bitrate)</visible>
 					</control>
 				</control>
 				<control type="image">
