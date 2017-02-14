@@ -1,3 +1,6 @@
+[B]2.0.2[/B]
+• Fix selecting widgets
+
 [B]2.0.1[/B]
 • Add possibility to reorder main menu items
 • Add possibility to reset main menu items back to default

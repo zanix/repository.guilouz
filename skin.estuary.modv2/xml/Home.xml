@@ -84,7 +84,7 @@
 							<param name="content_path" value="library://video/movies/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="5900"/>
+							<param name="list_id" value="59001"/>
 							<param name="visible" value="Skin.HasSetting(UseSmallerCategories)" />
 						</include>
 						<include content="WidgetListPoster" condition="Library.HasContent(movies) + !Skin.HasSetting(hide_recentlymovies)">
@@ -159,7 +159,7 @@
 							<param name="content_path" value="library://video/tvshows/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="6900"/>
+							<param name="list_id" value="69001"/>
 							<param name="visible" value="Skin.HasSetting(UseSmallerCategories)" />
 						</include>
 						<include content="WidgetListEpisodes" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_recentlytvshows)">
@@ -238,7 +238,7 @@
 							<param name="content_path" value="library://music/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="music"/>
-							<param name="list_id" value="7900"/>
+							<param name="list_id" value="79001"/>
 							<param name="visible" value="Skin.HasSetting(UseSmallerCategories)" />
 						</include>
 						<include content="WidgetListSquare" condition="Library.HasContent(music) + !Skin.HasSetting(hide_recentlyplayedalbums)">
@@ -317,7 +317,7 @@
 							<param name="content_path" value="addons://"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="addonbrowser"/>
-							<param name="list_id" value="8900"/>
+							<param name="list_id" value="89001"/>
 							<param name="visible" value="[Integer.IsGreater(Container(8100).NumItems,0) | Integer.IsGreater(Container(8200).NumItems,0) | Integer.IsGreater(Container(8300).NumItems,0) | Integer.IsGreater(Container(8400).NumItems,0) | Integer.IsGreater(Container(8500).NumItems,0) | Integer.IsGreater(Container(8700).NumItems,0)] + Skin.HasSetting(UseSmallerCategories)"/>
 						</include>
 						<include content="WidgetListSquare" condition="!Skin.HasSetting(hide_videoaddons)">
@@ -407,7 +407,7 @@
 							<param name="content_path" value="library://video/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="11900"/>
+							<param name="list_id" value="119001"/>
 							<param name="visible" value="Skin.HasSetting(UseSmallerCategories)" />
 						</include>
 						<include content="WidgetListCategories" condition="!Skin.HasSetting(hide_videosources)">
@@ -483,7 +483,7 @@
 						</include>
 						<include content="WidgetListCategoriesSmall" condition="System.HasPVRAddon + !Skin.HasSetting(hide_tvcategories)">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
-							<param name="list_id" value="12900"/>
+							<param name="list_id" value="129001"/>
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="TV"/>
 							<param name="visible" value="Skin.HasSetting(UseSmallerCategories)" />
@@ -565,7 +565,7 @@
 						</include>
 						<include content="WidgetListCategoriesSmall" condition="System.HasPVRAddon + !Skin.HasSetting(hide_radiocategories)">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
-							<param name="list_id" value="13900"/>
+							<param name="list_id" value="139001"/>
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="Radio"/>
 							<param name="visible" value="Skin.HasSetting(UseSmallerCategories)" />
@@ -778,7 +778,7 @@
 							<param name="content_path" value="library://music/musicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="16900"/>
+							<param name="list_id" value="169001"/>
 							<param name="visible" value="Skin.HasSetting(UseSmallerCategories)" />
 						</include>
 						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(hide_recentlyaddedmusicvideos)">
