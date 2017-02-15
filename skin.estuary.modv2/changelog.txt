@@ -1,4 +1,5 @@
 [B]2.0.3[/B]
+• Add Videolyrics (credits to manfeed)
 • Add new 'Next episodes to see' widget
 • Replace music videos widgets
 • Fix color with lyrics

@@ -36,7 +36,7 @@
 				<left>77</left>
 				<top>170</top>
 				<include>Visible_Left</include>
-				<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
+				<visible>[Player.ShowInfo | Window.IsActive(musicosd)] + !Window.IsVisible(script-cu-lrclyrics-main.xml)</visible>
 			<control type="image" id="88888">
 				<left>28</left>
 				<top>16</top>
