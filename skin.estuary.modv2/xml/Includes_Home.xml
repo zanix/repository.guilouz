@@ -36,7 +36,7 @@
 				<label>$LOCALIZE[20389]</label>
 				<property name="menu_id">$NUMBER[16000]</property>
 				<onclick condition="Skin.HasSetting(hide_musicvideocategory)">ActivateWindow(Videos,musicvideos,return)</onclick>
-				<onclick condition="!Skin.HasSetting(hide_musicvideocategory)">ActivateWindow(Videos,videodb://musicvideos/artists/,return)</onclick>
+				<onclick condition="!Skin.HasSetting(hide_musicvideocategory)">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
 				<thumb>icons/sidemenu/musicvideos.png</thumb>
 				<property name="id">musicvideos</property>
 				<visible>String.IsEqual($PARAM[menuitem_number],4)</visible>
