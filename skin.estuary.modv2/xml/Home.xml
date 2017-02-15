@@ -781,7 +781,7 @@
 							<param name="list_id" value="169001"/>
 							<param name="visible" value="Skin.HasSetting(UseSmallerCategories)" />
 						</include>
-						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(hide_recentlyaddedmusicvideos)">
+						<include content="WidgetListSquare" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(hide_recentlyaddedmusicvideos)">
 							<param name="content_path" value="videodb://recentlyaddedmusicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[20390]"/>
 							<param name="widget_target" value="videos"/>
@@ -791,7 +791,7 @@
 							<param name="fallback_image" value="DefaultMusicSongs.png" />
 							<param name="list_id" value="16300"/>
 						</include>
-						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(hide_unwatchedmusicvideos)">
+						<include content="WidgetListSquare" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(hide_unwatchedmusicvideos)">
 							<param name="content_path" value="special://skin/playlists/unwatched_musicvideos.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31151]"/>
 							<param name="widget_target" value="videos"/>
@@ -808,7 +808,7 @@
 							<param name="list_id" value="16200"/>
 							<param name="widget_limit" value="10"/>
 						</include>
-						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(hide_randommusicvideo)">
+						<include content="WidgetListSquare" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(hide_randommusicvideo)">
 							<param name="content_path" value="special://skin/playlists/random_musicvideos.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31152]"/>
 							<param name="widget_target" value="videos"/>

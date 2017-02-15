@@ -69,6 +69,8 @@
 				<visible>String.IsEqual(ListItem.DBType,musicvideo)</visible>
 				<include>OpenClose_Left</include>
 				<control type="image">
+					<left>4</left>
+					<top>4</top>
 					<width>476</width>
 					<height>678</height>
 					<aspectratio>stretch</aspectratio>

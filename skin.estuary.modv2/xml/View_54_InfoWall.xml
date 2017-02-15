@@ -89,10 +89,10 @@
 				<aligny>center</aligny>
 				<label>$PARAM[single_label]</label>
 				<scroll>$PARAM[focused]</scroll>
-				<visible>!String.IsEqual(ListItem.DBType,album) + !String.IsEqual(ListItem.DBType,song)</visible>
+				<visible>!String.IsEqual(ListItem.DBType,album) + !String.IsEqual(ListItem.DBType,song) + !String.IsEqual(ListItem.DBType,musicvideo)</visible>
 			</control>
 			<control type="group">
-				<visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)</visible>
+				<visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song) | String.IsEqual(ListItem.DBType,musicvideo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)</visible>
 				<control type="label">
 					<left>29</left>
 					<top>300</top>

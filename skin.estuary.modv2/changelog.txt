@@ -1,4 +1,5 @@
 [B]2.0.3[/B]
+• Replace music videos widgets
 • Fix color with lyrics
 • Fix banner on music fullscreen
 • Fix music visualisation
