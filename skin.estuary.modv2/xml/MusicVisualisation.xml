@@ -3,6 +3,11 @@
 	<defaultcontrol></defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
+		<control type="visualisation">
+			<include>FullScreenDimensions</include>
+			<visible>Player.HasAudio</visible>
+			<visible>Skin.HasSetting(enable_visualisation)</visible>
+		</control>
 		<control type="multiimage">
 			<left>0</left>
 			<top>0</top>
@@ -18,11 +23,6 @@
 			<animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 			<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 			<visible>!Skin.HasSetting(hide_background_fanart)</visible>
-		</control>
-		<control type="visualisation">
-			<include>FullScreenDimensions</include>
-			<visible>Player.HasAudio</visible>
-			<visible>Skin.HasSetting(enable_visualisation)</visible>
 		</control>
 		<control type="group">
 			<animation effect="fade" start="100" end="30" time="0" condition="!String.IsEmpty(Player.Art(fanart)) | Visualisation.Enabled">Conditional</animation>
