@@ -241,7 +241,7 @@
 						<aligny>center</aligny>
 						<label>$LOCALIZE[19055]</label>
 						<textcolor>80FFFFFF</textcolor>
-						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)</visible>
+						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))</visible>
 					</control>
 					<control type="list" id="500551">
 					<left>7</left>
@@ -302,7 +302,7 @@
 						<align>center</align>
 						<label>$LOCALIZE[19055]</label>
 						<textcolor>80FFFFFF</textcolor>
-						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)</visible>
+						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))</visible>
 					</control>
 					<control type="list" id="50055">
 						<left>20</left>

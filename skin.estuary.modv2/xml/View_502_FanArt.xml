@@ -139,7 +139,7 @@
 						<font>font27</font>
 						<textcolor>80FFFFFF</textcolor>
 						<label>$LOCALIZE[19055]</label>
-						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)</visible>
+						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))</visible>
 					</control>
 				</control>
 			</control>
