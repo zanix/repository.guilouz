@@ -147,6 +147,7 @@
                     <label>$LOCALIZE[40289]</label>
                     <selected>Skin.HasSetting(enable_horizontalguide)</selected>
                     <onclick>Skin.ToggleSetting(enable_horizontalguide)</onclick>
+                    <onclick>ReloadSkin()</onclick>
                     <visible>Window.IsActive(MyPVRGuide.xml)</visible>
                 </control>
                 <control type="radiobutton" id="6060">
