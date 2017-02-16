@@ -27,7 +27,7 @@
     </variable>
     <variable name="HubLabelVar">
         <value condition="!String.IsEmpty(Container(9501).ListItem.Property(widgetName))">$INFO[Container(9501).ListItem.Property(widgetName)]</value>
-        <value condition="!String.IsEmpty(Container(9501).ListItem.Property(hubImage))">$LOCALIZE[1]</value>
+        <value condition="!String.IsEmpty(Container(9501).ListItem.Property(hubImage))">$INFO[Container(9501).ListItem.Label]</value>
         <value condition="Window.IsVisible(1115)">$LOCALIZE[40220]</value>
         <value>$LOCALIZE[31006]</value>
  	</variable>
