@@ -5,11 +5,11 @@
 		<value>$LOCALIZE[31148]</value>
 	</variable>
     <variable name="VideoLibraryScanLabelVar">
-		<value condition="Library.IsScanningVideo">$LOCALIZE[13353]</value>
+		<value condition="Library.IsScanningVideo">$LOCALIZE[40013]</value>
 		<value>$LOCALIZE[40009]</value>
 	</variable>
 	<variable name="MusicLibraryScanLabelVar">
-		<value condition="Library.IsScanningMusic">$LOCALIZE[13353]</value>
+		<value condition="Library.IsScanningMusic">$LOCALIZE[40014]</value>
 		<value>$LOCALIZE[40010]</value>
 	</variable>
     <variable name="Label_SkinSetting_HomeMenuItem1Var">
@@ -827,6 +827,7 @@
 		<value condition="ListItem.IsRecording">windows/pvr/record.png</value>
 		<value condition="ListItem.IsCollection">overlays/set.png</value>
 		<value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
+		<value condition="ListItem.IsResumable">overlays/watched/resume.png</value>
 		<value condition="Integer.IsGreater(ListItem.Playcount,0)">$INFO[ListItem.Overlay]</value>
 	</variable>
 	<!-- Breadcrumbs -->

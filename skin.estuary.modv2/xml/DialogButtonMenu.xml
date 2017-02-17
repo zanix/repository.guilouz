@@ -5,17 +5,71 @@
 	<controls>
 		<control type="group">
 			<centerleft>50%</centerleft>
-			<width>600</width>
+			<width>670</width>
 			<centertop>50%</centertop>
 			<height>700</height>
 			<include content="DialogBackgroundCommons">
-				<param name="width" value="600" />
+				<param name="width" value="670" />
 				<param name="height" value="80" />
 				<param name="header_label" value="$LOCALIZE[31072]" />
 				<param name="header_id" value="2" />
 			</include>
 			<control type="panel" id="9000">
-				<include>ButtonMenuList</include>
+				<left>0</left>
+				<top>80</top>
+				<width>670</width>
+				<height>700</height>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<orientation>vertical</orientation>
+				<itemlayout height="70" width="670">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>670</width>
+						<height>70</height>
+						<texture colordiffuse="dialog_tint">colors/white.png</texture>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<textoffsetx>20</textoffsetx>
+						<top>0</top>
+						<width>670</width>
+						<height>70</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>grey</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="70" width="670">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>670</width>
+						<height>70</height>
+						<texture colordiffuse="dialog_tint">colors/white.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>670</width>
+						<height>70</height>
+						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<textoffsetx>20</textoffsetx>
+						<top>0</top>
+						<width>670</width>
+						<height>70</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
 				<content>
 					<item>
 						<label>$LOCALIZE[13012]</label>

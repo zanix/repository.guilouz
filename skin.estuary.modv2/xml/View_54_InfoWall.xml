@@ -180,7 +180,7 @@
 				<width>160</width>
 				<height>70</height>
 				<texture>overlays/overlay-bg.png</texture>
-				<visible>ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -323,7 +323,7 @@
 					<width>80</width>
 					<height>80</height>
 					<texture>overlays/overlay-bg.png</texture>
-					<visible>Listitem.IsCollection | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+					<visible>ListItem.IsResumable | Listitem.IsCollection | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
 				</control>
 			</control>
 			<control type="group">

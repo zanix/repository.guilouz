@@ -78,7 +78,7 @@
 					<top>25</top>
 					<control type="image">
 						<left>645</left>
-						<top>415</top>
+						<top>417</top>
 						<width>32</width>
 						<height>32</height>
 						<texture>$VAR[ListWatchedIconVar]</texture>

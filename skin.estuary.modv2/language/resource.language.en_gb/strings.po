@@ -761,7 +761,22 @@ msgctxt "#40011"
 msgid "Show smaller icons for 'Categories' widgets"
 msgstr ""
 
-#: Empty strings 40012 to 40016
+#: /xml/Home.xml
+msgctxt "#40012"
+msgid "Next episodes to watch"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40013"
+msgid "Stop scanning video library"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40014"
+msgid "Stop scanning music library"
+msgstr ""
+
+#: Empty strings 40015 to 40016
 
 #: /xml/SkinSettings.xml
 msgctxt "#40017"
