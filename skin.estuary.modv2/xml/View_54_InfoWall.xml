@@ -386,6 +386,164 @@
 			</control>
 		</definition>
 	</include>
+	<include name="InfoWallThumbsLayout">
+		<param name="focused">false</param>
+		<definition>
+			<control type="group">
+				<visible>String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(fanart))</visible>
+				<control type="image">
+					<left>12</left>
+					<top>-14</top>
+					<width>597</width>
+					<height>339</height>
+					<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
+					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>-10</top>
+					<width>590</width>
+					<height>332</height>
+					<texture>dialogs/dialog-bg-nobo.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="textbox">
+					<left>84</left>
+					<top>220</top>
+					<width>452</width>
+					<height>80</height>
+					<font>font27</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<autoscroll time="2000" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
+					<visible>!ListItem.IsParentFolder</visible>
+				</control>
+				<control type="image">
+					<left>40</left>
+					<top>-1</top>
+					<width>550</width>
+					<height>270</height>
+					<texture background="true">DefaultMovies.png</texture>
+					<aspectratio align="center">keep</aspectratio>
+					<bordersize>20</bordersize>
+				</control>
+			</control>
+			<control type="group">
+				<visible>![String.IsEmpty(ListItem.Art(landscape)) + String.IsEmpty(ListItem.Art(fanart))]</visible>
+				<control type="image">
+					<left>12</left>
+					<top>-14</top>
+					<width>597</width>
+					<height>339</height>
+					<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
+					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>-10</top>
+					<width>590</width>
+					<height>332</height>
+					<texture background="true">$VAR[InfoWidgetThumbVar]</texture>
+					<aspectratio>stretch</aspectratio>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>35</left>
+					<top>222</top>
+					<width>80</width>
+					<height>80</height>
+					<texture>overlays/overlay-bg.png</texture>
+					<visible>ListItem.IsResumable | Listitem.IsCollection | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				</control>
+				<control type="image">
+					<left>35</left>
+					<top>222</top>
+					<width>550</width>
+					<height>80</height>
+					<texture colordiffuse="CCFFFFFF">overlays/overlayfade.png</texture>
+					<visible>String.IsEmpty(ListItem.Art(landscape)) | Listitem.IsCollection</visible>
+				</control>
+				<control type="textbox">
+					<left>84</left>
+					<top>220</top>
+					<width>452</width>
+					<height>80</height>
+					<font>font27</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+					<autoscroll time="2000" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
+					<visible>String.IsEmpty(ListItem.Art(landscape)) | Listitem.IsCollection</visible>
+				</control>
+			</control>
+			<control type="group">
+				<visible>String.IsEqual(ListItem.DBtype,tvshow)</visible>
+				<control type="image">
+					<left>35</left>
+					<top>262</top>
+					<width>550</width>
+					<height>40</height>
+					<texture colordiffuse="CCFFFFFF">overlays/overlayfade.png</texture>
+					<visible>!String.IsEmpty(ListItem.Art(landscape))</visible>
+				</control>
+				<control type="label">
+					<left>298</left>
+					<top>270</top>
+					<width>244</width>
+					<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</label>
+					<font>font20_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<align>right</align>
+				</control>
+				<control type="image">
+					<left>552</left>
+					<top>273</top>
+					<width>24</width>
+					<height>24</height>
+					<texture>lists/played-total.png</texture>
+				</control>
+			</control>
+			<control type="image">
+				<left>35</left>
+				<top>270</top>
+				<width>32</width>
+				<height>32</height>
+				<texture>$VAR[WallWatchedIconVar]</texture>
+			</control>
+			<control type="group">
+				<left>285</left>
+				<top>-8</top>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+			</control>
+			<control type="image">
+				<left>35</left>
+				<top>310</top>
+				<width>550</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
+			<control type="progress">
+				<left>35</left>
+				<top>282</top>
+				<width>550</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.PercentPlayed</info>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
+		</definition>
+	</include>
 	<include name="View_54_InfoWall">
 		<control type="group">
 			<include>OpenClose_Right</include>

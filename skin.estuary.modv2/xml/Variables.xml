@@ -202,7 +202,7 @@
     </variable>
     <variable name="InfoWidgetThumbVar">
 		<value condition="!String.IsEmpty(Listitem.Art(landscape))">$INFO[Listitem.Art(landscape)]</value>
-		<value>$INFO[Listitem.Art(fanart)]</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
     <variable name="OSDCastVar">
         <value condition="!String.IsEmpty(Window(home).Property(NextUpNotification.NowPlaying.Type)) + String.IsEqual(Window(home).Property(NextUpNotification.NowPlaying.Type),movie) + Integer.IsGreater(Window(home).Property(NextUpNotification.NowPlaying.DBID),-1)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[Window(home).Property(NextUpNotification.NowPlaying.DBID)]</value>

@@ -1,4 +1,6 @@
 [B]2.0.4[/B]
+• Add new 'InfoWall (thumbnails)' view
+• Add new 'Wall (thumbnails)' view
 • Add icon when item is resumable
 • Fix esthetic appearance
 
