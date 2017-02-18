@@ -659,12 +659,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="310" height="340">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
