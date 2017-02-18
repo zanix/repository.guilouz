@@ -1079,6 +1079,7 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<height>35</height>
 								<width min="1" max="602">auto</width>
+								<scroll>true</scroll>
 							</control>
 						</control>
 						<control type="label" id="7700">
@@ -1091,6 +1092,7 @@
 							<height>25</height>
 							<width>630</width>
 							<align>right</align>
+							<scroll>true</scroll>
 						</control>
 					</control>
 					<control type="label">
