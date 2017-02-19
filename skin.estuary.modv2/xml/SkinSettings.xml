@@ -352,8 +352,8 @@
 				<control type="button" id="402">
 					<include>DefaultSettingButton</include>
 					<label>  ∟$LOCALIZE[40072]</label>
-					<onclick condition="!System.HasAddon(script.module.musicbrainz)">InstallAddon(script.skin.helper.skinbackup)</onclick>
-					<onclick condition="System.HasAddon(script.module.musicbrainz)">Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
+					<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
 				</control>
 				<control type="button" id="403">
 					<label>$LOCALIZE[40071]</label>
