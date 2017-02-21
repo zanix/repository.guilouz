@@ -563,6 +563,7 @@
 	</variable>
 	<variable name="FanartImageVar">
 		<value condition="ListItem.IsParentFolder">special://skin/extras/home-images/movie.jpg</value>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + !ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="ListBoxInfoVar">

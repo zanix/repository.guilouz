@@ -421,13 +421,13 @@ msgstr ""
 #. viewtype name
 #: /xml/View_54_InfoWall.xml
 msgctxt "#31101"
-msgid "InfoWall"
+msgid "InfoWall (posters)"
 msgstr ""
 
 #. viewtype name
 #: /xml/View_500_Wall.xml
 msgctxt "#31102"
-msgid "Wall"
+msgid "Wall (posters)"
 msgstr ""
 
 #: /xml/SmartPlaylistRule.xml
@@ -776,7 +776,15 @@ msgctxt "#40014"
 msgid "Stop scanning music library"
 msgstr ""
 
-#: Empty strings 40015 to 40016
+#: /xml/View_504_ThumbsWall.xml
+msgctxt "#40015"
+msgid "Wall (thumbnails)"
+msgstr ""
+
+#: /xml/View_505_ThumbsInfoWall.xml
+msgctxt "#40016"
+msgid "InfoWall (thumbnails)"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40017"

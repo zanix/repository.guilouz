@@ -421,14 +421,14 @@ msgstr "Liste de posters"
 #. viewtype name
 #: /xml/View_54_InfoWall.xml
 msgctxt "#31101"
-msgid "InfoWall"
-msgstr "Mur avec informations"
+msgid "InfoWall (posters)"
+msgstr "Mur avec informations (posters)"
 
 #. viewtype name
 #: /xml/View_500_Wall.xml
 msgctxt "#31102"
-msgid "Wall"
-msgstr "Mur"
+msgid "Wall (posters)"
+msgstr "Mur (posters)"
 
 #: /xml/SmartPlaylistRule.xml
 msgctxt "#31103"
@@ -776,7 +776,15 @@ msgctxt "#40014"
 msgid "Stop scanning music library"
 msgstr "Arrêter le balayage de la bibliothèque musique"
 
-#: Empty strings 40015 to 40016
+#: /xml/View_504_ThumbsWall.xml
+msgctxt "#40015"
+msgid "Wall (thumbnails)"
+msgstr "Mur (vignettes)"
+
+#: /xml/View_505_ThumbsInfoWall.xml
+msgctxt "#40016"
+msgid "InfoWall (thumbnails)"
+msgstr "Mur avec informations (vignettes)"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40017"
