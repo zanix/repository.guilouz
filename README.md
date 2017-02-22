@@ -13,6 +13,9 @@
 ### • Changes for Skin Backgrounds for Estuary MOD V2 : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.skinbackgrounds.estuarymod/changelog.txt)
 
 
+### • Changes for Movie Genres Icons for Estuary MOD V2 : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.moviegenreicons.estuarymod/changelog.txt)
+
+
 ### • Installation :
 
 - In Kodi go to "Settings / Add-ons / Install from Zip file".
