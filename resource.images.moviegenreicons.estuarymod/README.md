@@ -1,17 +1,17 @@
-## Skin Backgrounds for Estuary MOD V2
+## Movie Genres Icons for Estuary MOD V2
 
 
-This addons allows to display Fanarts of the main menu.
+This addons allows to have icons for movies genres.
 
 
-### • Changes : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.skinbackgrounds.estuarymod/changelog.txt)
+### • Changes : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.moviegenreicons.estuarymod/changelog.txt)
 
 
 ### • Installation :
 
 - In Kodi go to "Settings / Add-ons / Install from Zip file".
 - Select downloaded ZIP file.
-- Once installed, go to "Settings / Add-ons / Install from repository / Guilouz Repository / Look and feel / Image collections" and install Skin Backgrounds for Estuary MOD V2.
+- Once installed, go to "Settings / Add-ons / Install from repository / Guilouz Repository / Look and feel / Image collections" and install Movie Genres Icons for Estuary MOD V2.
 - Configure it in skin settings.
 
 ### • Download my Repository :
