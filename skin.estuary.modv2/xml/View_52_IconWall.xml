@@ -34,6 +34,16 @@
 							<top>30</top>
 							<width>160</width>
 							<height>110</height>
+							<texture>$VAR[IconWallThumbVar]</texture>
+							<aspectratio>keep</aspectratio>
+							<align>center</align>
+							<visible>!String.StartsWith(Container.FolderPath,videodb://) + !String.StartsWith(Container.FolderPath,musicdb://)</visible>
+						</control>
+						<control type="image">
+							<left>120</left>
+							<top>30</top>
+							<width>160</width>
+							<height>110</height>
 							<texture fallback="DefaultStudios.png">$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
@@ -91,6 +101,16 @@
 							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							<bordersize>20</bordersize>
 							<include>Animation_FocusTextureFade</include>
+						</control>
+						<control type="image">
+							<left>120</left>
+							<top>30</top>
+							<width>160</width>
+							<height>110</height>
+							<texture>$VAR[IconWallThumbVar]</texture>
+							<aspectratio>keep</aspectratio>
+							<align>center</align>
+							<visible>!String.StartsWith(Container.FolderPath,videodb://) + !String.StartsWith(Container.FolderPath,musicdb://)</visible>
 						</control>
 						<control type="image">
 							<left>120</left>
