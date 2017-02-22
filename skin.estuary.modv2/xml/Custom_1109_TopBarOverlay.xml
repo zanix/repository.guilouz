@@ -39,7 +39,7 @@
 				<visible>String.IsEmpty(Player.Art(clearlogo))</visible>
 				<animation effect="fade" time="150">VisibleChange</animation>
 				<left>30</left>
-				<right>400</right>
+				<right>300</right>
 				<control type="label">
 					<label>$VAR[NowPlayingBreadcrumbsVar]</label>
 					<font>font45</font>
@@ -48,6 +48,7 @@
 					<height>100</height>
 					<left>0</left>
 					<right>0</right>
+					<scroll>true</scroll>
 				</control>
 				<control type="label">
 					<top>68</top>
@@ -57,6 +58,7 @@
 					<left>0</left>
 					<right>0</right>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="group">
