@@ -4,6 +4,7 @@
 • Add extrafanarts support for 'Fanart' view
 • Add icon when item is resumable
 • Fix esthetic appearance
+• Fix navigation on PVR info dialog
 • Minnor fixes
 
 [B]2.0.3[/B]
