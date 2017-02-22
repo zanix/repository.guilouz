@@ -37,6 +37,17 @@
 							<texture fallback="DefaultStudios.png">$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
+							<visible>String.StartsWith(Container.FolderPath,videodb://)</visible>
+						</control>
+						<control type="image">
+							<left>120</left>
+							<top>30</top>
+							<width>160</width>
+							<height>110</height>
+							<texture fallback="DefaultMusicGenres.png">$VAR[IconWallThumbVar]</texture>
+							<aspectratio>keep</aspectratio>
+							<align>center</align>
+							<visible>String.StartsWith(Container.FolderPath,musicdb://)</visible>
 						</control>
 						<control type="image">
 							<left>20</left>
@@ -89,6 +100,17 @@
 							<texture fallback="DefaultStudios.png">$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
+							<visible>String.StartsWith(Container.FolderPath,videodb://)</visible>
+						</control>
+						<control type="image">
+							<left>120</left>
+							<top>30</top>
+							<width>160</width>
+							<height>110</height>
+							<texture fallback="DefaultMusicGenres.png">$VAR[IconWallThumbVar]</texture>
+							<aspectratio>keep</aspectratio>
+							<align>center</align>
+							<visible>String.StartsWith(Container.FolderPath,musicdb://)</visible>
 						</control>
 						<control type="image">
 							<left>20</left>
