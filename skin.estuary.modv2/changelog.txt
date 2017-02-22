@@ -3,6 +3,7 @@
 • Add new 'Wall (thumbnails)' view
 • Add extrafanarts support for 'Fanart' view
 • Add icon when item is resumable
+• Hide OSD directly after pause
 • Fix esthetic appearance
 • Fix navigation on PVR info dialog
 • Minnor fixes
