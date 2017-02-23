@@ -1,3 +1,6 @@
+[B]1.0.2[/B]
+• Remove Textures.xbt
+
 [B]1.0.1[/B]
 • Add Spanish genres
 
