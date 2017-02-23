@@ -1,4 +1,5 @@
 [B]2.0.5[/B]
+• Replace rating badge
 • Fix Youtube call
 • Minnor fixes
 

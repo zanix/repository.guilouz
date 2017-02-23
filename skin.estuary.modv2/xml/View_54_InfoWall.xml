@@ -116,7 +116,7 @@
 			</control>
 			<control type="group">
 				<left>133</left>
-				<top>2</top>
+				<top>1</top>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 		</definition>
@@ -163,7 +163,7 @@
 				<width>160</width>
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
-				<visible>!ListItem.IsParentFolder</visible>
+				<visible>!ListItem.IsParentFolder + !String.IsEqual(listitem.dbtype,episode)</visible>
 			</control>
 			<control type="label">
 				<left>31</left>
@@ -173,6 +173,7 @@
 				<font>font20_title</font>
 				<shadowcolor>text_shadow</shadowcolor>
 				<align>right</align>
+				<visible>!String.IsEqual(listitem.dbtype,episode)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -242,7 +243,7 @@
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
 			</control>
 			<control type="group">
-				<left>134</left>
+				<left>133</left>
 				<top>11</top>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
@@ -363,7 +364,7 @@
 			</control>
 			<control type="group">
 				<left>135</left>
-				<top>-8</top>
+				<top>-9</top>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 			<control type="image">
@@ -521,7 +522,7 @@
 			</control>
 			<control type="group">
 				<left>285</left>
-				<top>-8</top>
+				<top>-9</top>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 			<control type="image">

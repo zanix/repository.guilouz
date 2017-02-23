@@ -49,7 +49,7 @@
 					<itemlayout width="317">
 						<control type="group">
 							<left>-220</left>
-							<top>18</top>
+							<top>19</top>
 							<include>InfoWallMovieLayout</include>
 						</control>
 					</itemlayout>
@@ -144,8 +144,8 @@
 				<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 			</control>
 			<control type="group">
-				<left>216</left>
-				<top>-18</top>
+				<left>217</left>
+				<top>-15</top>
 				<include content="RatingCircle">
 					<param name="animation" value="True" />
 				</include>

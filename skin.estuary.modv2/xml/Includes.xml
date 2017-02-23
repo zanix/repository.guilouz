@@ -123,7 +123,7 @@
 		</control>
 		<control type="label">
 			<left>3</left>
-			<top>-3</top>
+			<top>-4</top>
 			<align>center</align>
 			<aligny>center</aligny>
 			<width>44</width>

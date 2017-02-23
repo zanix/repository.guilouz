@@ -47,6 +47,7 @@
 						</control>
 						<control type="group">
 							<left>405</left>
+							<top>1</top>
 							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 						</control>
 					</control>
@@ -118,25 +119,6 @@
 								<visible>!Listitem.IsParentFolder</visible>
 							</control>
 							<control type="image">
-								<right>220</right>
-								<top>143</top>
-								<width>22</width>
-								<height>22</height>
-								<texture>lists/rating.png</texture>
-								<visible>!String.IsEmpty(ListItem.Rating)</visible>
-							</control>
-							<control type="label">
-								<right>258</right>
-								<top>144</top>
-								<width>800</width>
-								<height>20</height>
-								<font>font12</font>
-								<align>right</align>
-								<aligny>center</aligny>
-								<label>$INFO[ListItem.Rating]</label>
-								<visible>!String.IsEmpty(ListItem.Rating)</visible>
-							</control>
-							<control type="image">
 								<right>73</right>
 								<top>143</top>
 								<width>22</width>
@@ -157,6 +139,7 @@
 						</control>
 						<control type="group">
 							<left>405</left>
+							<top>1</top>
 							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 						</control>
 					</control>
