@@ -588,6 +588,7 @@
 		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.white/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</value>
 		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.xzener-flat/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-flat/,.png]</value>
 		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.xzener-reflection/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-reflection/,.png]</value>
+		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.estuarymod/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.estuarymod/,.png]</value>
 		<value>DefaultGenre.png</value>
 	</variable>
 	<variable name="WidgetStudioIconVar">
