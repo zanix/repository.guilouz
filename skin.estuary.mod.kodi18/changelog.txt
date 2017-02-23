@@ -1,4 +1,5 @@
 1.7.10
+• Add button to switch between all/watched/unwatched recordings
 • Fix Youtube call
 
 1.7.9 :

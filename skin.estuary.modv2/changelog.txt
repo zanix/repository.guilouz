@@ -1,6 +1,7 @@
 [B]2.0.5[/B]
 • Add info button on video OSD
 • Add language and subtitles language on fullscreen info
+• Add button to switch between all/watched/unwatched recordings
 • Replace rating badge
 • Fix Youtube call
 • Minnor fixes
