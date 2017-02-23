@@ -714,6 +714,7 @@
 	</variable>
 	<variable name="VideoOSDHelpTextVar">
 		<value condition="Control.HasFocus(87) + [Player.Rewinding | Player.Forwarding]">$LOCALIZE[31050]</value>
+		<value condition="Control.HasFocus(70010)">$LOCALIZE[20060]</value>
 		<value condition="Control.HasFocus(70011)">$LOCALIZE[31138]</value>
 		<value condition="Control.HasFocus(70012) | Control.HasFocus(70013)">$LOCALIZE[31034]</value>
 		<value condition="Control.HasFocus(70014) + !Window.IsVisible(1122)">$LOCALIZE[40096]</value>

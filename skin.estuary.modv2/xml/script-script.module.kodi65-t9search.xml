@@ -16,7 +16,7 @@
 			    <height>100%</height>
 			    <aspectratio>scale</aspectratio>
 			    <texture colordiffuse="80FFFFFF">colors/black.png</texture>
-			    <visible>$EXP[sidebar_focused] + !System.HasActiveModalDialog</visible>
+			    <visible>$EXP[sidebar_visible] + !System.HasActiveModalDialog</visible>
 			    <animation effect="fade" time="200">VisibleChange</animation>
 		    </control>
 		    <control type="image">
