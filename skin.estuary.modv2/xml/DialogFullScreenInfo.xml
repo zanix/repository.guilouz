@@ -188,7 +188,8 @@
 					<width>180</width>
 					<height>50</height>
 					<texture diffuse="dialogs/language-back.png">dialogs/dialog-bg-nobo.png</texture>
-					<visible>String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+					<visible>![String.IsEmpty(VideoPlayer.AudioLanguage) + String.IsEmpty(VideoPlayer.SubtitlesLanguage)]</visible>
+					<visible>[[!String.IsEmpty(VideoPlayer.SubtitlesLanguage) + String.IsEmpty(VideoPlayer.AudioLanguage)] | [!String.IsEmpty(VideoPlayer.AudioLanguage) + String.IsEmpty(VideoPlayer.SubtitlesLanguage)]]</visible>
 				</control>
 				<control type="image">
 					<left>-23</left>
@@ -196,7 +197,8 @@
 					<width>315</width>
 					<height>50</height>
 					<texture diffuse="dialogs/language-back2.png">dialogs/dialog-bg-nobo.png</texture>
-					<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+					<visible>![String.IsEmpty(VideoPlayer.AudioLanguage) + String.IsEmpty(VideoPlayer.SubtitlesLanguage)]</visible>
+					<visible>![!String.IsEmpty(VideoPlayer.SubtitlesLanguage) + String.IsEmpty(VideoPlayer.AudioLanguage)] + ![!String.IsEmpty(VideoPlayer.AudioLanguage) + String.IsEmpty(VideoPlayer.SubtitlesLanguage)]</visible>
 				</control>
 				<include>OpenClose_Right</include>
 				<control type="grouplist">
@@ -230,7 +232,7 @@
 						<height>10</height>
 						<aspectratio>keep</aspectratio>
 						<texture></texture>
-						<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+						<visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
 					</control>
 					<control type="image">
 						<width>40</width>
