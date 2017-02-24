@@ -191,8 +191,7 @@
 				<control type="group">
 				<top>749</top>
 				<right>30</right>
-				<visible>[Player.ShowInfo | Window.IsActive(musicosd)] + !Window.IsActive(playerprocessinfo)</visible>
-				<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+				<visible>[Player.ShowInfo | Window.IsActive(musicosd)] + !Window.IsActive(playerprocessinfo)</visible>		
 				<include>Visible_Right</include>
 				<control type="image">
 					<top>-119</top>
@@ -214,6 +213,7 @@
 					<texture background="true" border="2" fallback="DefaultAudioCover.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
 					<bordertexture>dialogs/back.png</bordertexture>
 					<bordersize>2</bordersize>
+					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 				</control>
 				<control type="image">
 					<right>155</right>
@@ -221,6 +221,7 @@
 					<width>16</width>
 					<height>18</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">osd/arrow.png</texture>
+					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 				</control>
 				<control type="textbox">
 					<right>177</right>
@@ -231,6 +232,7 @@
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<font>font13</font>
+					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 				</control>
 			</control>
 		</control>

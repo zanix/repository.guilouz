@@ -1,3 +1,6 @@
+[B]2.0.6[/B]
+• Fix banner on music visualisation when next tracks are not available
+
 [B]2.0.5[/B]
 • Add info button on video OSD
 • Add language and subtitles language on fullscreen info
