@@ -81,7 +81,7 @@
                     <bottom>8</bottom>
                     <width>48</width>
                     <height>48</height>
-                    <label></label>
+                    <label/>
                     <align>center</align>
                     <aligny>center</aligny>
                     <textoffsetx>0</textoffsetx>
@@ -96,7 +96,7 @@
                     <bottom>8</bottom>
                     <width>48</width>
                     <height>48</height>
-                    <label></label>
+                    <label/>
                     <align>center</align>
                     <aligny>center</aligny>
                     <textoffsetx>0</textoffsetx>

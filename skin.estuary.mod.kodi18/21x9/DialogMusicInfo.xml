@@ -63,7 +63,7 @@
 					<onup condition="Container.Content(albums)">50</onup>
 					<onup condition="Container.Content(artists)">502</onup>
 					<ondown>9000</ondown>
-					<label></label>
+					<label/>
 				</control>
 				<control type="image">
 					<left>614</left>
@@ -107,7 +107,7 @@
 					<top>-295</top>
 					<width>1190</width>
 					<height>320</height>
-					<label></label>
+					<label/>
 					<visible>Integer.IsEqual(Container(50).NumItems,0)</visible>
 				</control>
 				<control type="button" id="130">
@@ -117,7 +117,7 @@
 					<left>586</left>
 					<width>1190</width>
 					<height>320</height>
-					<label></label>
+					<label/>
 					<onclick>SetProperty(TextViewer_Header,$LOCALIZE[21821],home)</onclick>
 					<onclick>SetProperty(TextViewer_Text,$ESCVAR[MusicInfoTextboxVar],home)</onclick>
 					<onclick>ActivateWindow(1102)</onclick>

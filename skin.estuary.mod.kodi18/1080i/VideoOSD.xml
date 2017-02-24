@@ -110,7 +110,7 @@
                         <scrolltime tween="sine">200</scrolltime>
                         <orientation>horizontal</orientation>
                         <ondown condition="Player.SeekEnabled">87</ondown>
-                        <onup>noop</onup>
+                        <onup/>
                         <onleft>70043</onleft>
                         <onright>70011</onright>
                         <control type="radiobutton" id="600">

@@ -220,7 +220,7 @@
                     <width>424</width>
                     <height>110</height>
                     <font></font>
-                    <label></label>
+                    <label/>
                     <radioposx>338</radioposx>
                     <textoffsetx>40</textoffsetx>
                     <radioposy>0</radioposy>
@@ -241,7 +241,7 @@
                     <height>55</height>
                     <aligny>center</aligny>
                     <font>font13</font>
-                    <label></label>
+                    <label/>
                 </control>
                 <control type="label" id="991">
                     <left>77</left>
@@ -250,7 +250,7 @@
                     <height>55</height>
                     <aligny>center</aligny>
                     <font>font13</font>
-                    <label></label>
+                    <label/>
                 </control>
                 <control type="radiobutton" id="998">
                     <left>33</left>
@@ -263,7 +263,7 @@
                     <onright>500</onright>
                     <aligny>center</aligny>
                     <font>font14</font>
-                    <label></label>
+                    <label/>
                     <radioposx>338</radioposx>
                     <textoffsetx>40</textoffsetx>
                     <radioposy>0</radioposy>
@@ -282,7 +282,7 @@
                     <width>424</width>
                     <height>110</height>
                     <font></font>
-                    <label></label>
+                    <label/>
                     <radioposx>10</radioposx>
                     <textoffsetx>10</textoffsetx>
                     <radioposy>0</radioposy>
@@ -441,77 +441,77 @@
                                 <label>$LOCALIZE[342]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(110),: ]</label2>
                                 <thumb>special://skin/extras/icons/movie.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(119)</visible>
                             </item>
                             <item id="2">
                                 <label>$LOCALIZE[20343]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(120),: ]</label2>
                                 <thumb>special://skin/extras/icons/tv.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(129)</visible>
                             </item>
                             <item id="3">
                                 <label>$LOCALIZE[33054]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(130),: ]</label2>
                                 <thumb>special://skin/extras/icons/season.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(139)</visible>
                             </item>
                             <item id="4">
                                 <label>$LOCALIZE[20360]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(140),: ]</label2>
                                 <thumb>special://skin/extras/icons/episode.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(149)</visible>
                             </item>
                             <item id="5">
                                 <label>$LOCALIZE[20389]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(150),: ]</label2>
                                 <thumb>special://skin/extras/icons/musicvideo.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(159)</visible>
                             </item>
                             <item id="6">
                                 <label>$LOCALIZE[133]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(160),: ]</label2>
                                 <thumb>special://skin/extras/icons/artist.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(169)</visible>
                             </item>
                             <item id="7">
                                 <label>$LOCALIZE[132]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(170),: ]</label2>
                                 <thumb>special://skin/extras/icons/album.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(179)</visible>
                             </item>
                             <item id="8">
                                 <label>$LOCALIZE[134]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(180),: ]</label2>
                                 <thumb>special://skin/extras/icons/song.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(189)</visible>
                             </item>
                             <item id="9">
                                 <label>$LOCALIZE[19069]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(190),: ]</label2>
                                 <thumb>special://skin/extras/icons/livetv.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(199)</visible>
                             </item>
                             <item id="10">
                                 <label>$LOCALIZE[344]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(200),: ]</label2>
                                 <thumb>special://skin/extras/icons/actor.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(209)</visible>
                             </item>
                             <item id="11">
                                 <label>$LOCALIZE[20348]</label>
                                 <label2>$LOCALIZE[283]$INFO[Control.GetLabel(210),: ]</label2>
                                 <thumb>special://skin/extras/icons/director.png</thumb>
-                                <onclick>noop</onclick>
+                                <onclick/>
                                 <visible>Control.IsVisible(219)</visible>
                             </item>
                         </content>

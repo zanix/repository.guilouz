@@ -199,7 +199,7 @@
         <height>1</height>
         <texturefocus></texturefocus>
         <texturenofocus></texturenofocus>
-        <label></label>
+        <label/>
         <font></font>
     </include>
     <include name="UserRatingCircle">
@@ -2205,7 +2205,7 @@
             <height>$PARAM[DialogBackgroundHeight]</height>
             <texturefocus></texturefocus>
             <texturenofocus></texturenofocus>
-            <onclick>noop</onclick>
+            <onclick/>
         </control>
         <control type="radiobutton" id="22000">
             <left>$PARAM[DialogBackgroundWidth]</left>
@@ -2216,7 +2216,7 @@
             <radioheight>48</radioheight>
             <texturefocus></texturefocus>
             <texturenofocus></texturenofocus>
-            <label></label>
+            <label/>
             <animation effect="slide" end="-70,0" time="0" condition="true">Conditional</animation>
             <textureradioofffocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioofffocus>
             <textureradiooffnofocus colordiffuse="EEFFFFFF">icons/logo.png</textureradiooffnofocus>

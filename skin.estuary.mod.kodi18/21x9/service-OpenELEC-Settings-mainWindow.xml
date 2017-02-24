@@ -125,7 +125,7 @@
                     <width>400</width>
                     <height>748</height>
                     <onleft>1500</onleft>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol/>
                     <itemlayout height="124.6">
                         <control type="image">
                             <left>0</left>
@@ -1132,7 +1132,7 @@
                 <width>230</width>
                 <height>40</height>
                 <visible>true</visible>
-                <label></label>
+                <label/>
                 <align>center</align>
                 <onup>1000</onup>
                 <ondown>1501</ondown>
@@ -1146,7 +1146,7 @@
                 <width>230</width>
                 <height>40</height>
                 <visible>true</visible>
-                <label></label>
+                <label/>
                 <align>center</align>
                 <onup>1000</onup>
                 <ondown>1502</ondown>
@@ -1160,7 +1160,7 @@
                 <width>230</width>
                 <height>40</height>
                 <visible>true</visible>
-                <label></label>
+                <label/>
                 <align>center</align>
                 <onup>1503</onup>
                 <ondown>1000</ondown>
@@ -1174,7 +1174,7 @@
                 <width>230</width>
                 <height>40</height>
                 <visible>true</visible>
-                <label></label>
+                <label/>
                 <align>center</align>
                 <onup>1504</onup>
                 <ondown>1000</ondown>
@@ -1188,7 +1188,7 @@
                 <width>230</width>
                 <height>40</height>
                 <visible>true</visible>
-                <label></label>
+                <label/>
                 <align>center</align>
                 <onup>1000</onup>
                 <ondown>1000</ondown>

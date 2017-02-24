@@ -30,7 +30,7 @@
                 <scrolltime tween="sine">200</scrolltime>
                 <orientation>horizontal</orientation>
                 <onup>87</onup>
-                <ondown>noop</ondown>
+                <ondown/>
                 <onleft>5000</onleft>
                 <onright>620</onright>
                 <control type="radiobutton" id="600">
@@ -79,7 +79,7 @@
                 <scrolltime tween="sine">200</scrolltime>
                 <orientation>horizontal</orientation>
                 <onup>87</onup>
-                <ondown>noop</ondown>
+                <ondown/>
                 <onleft>605</onleft>
                 <onright>600</onright>
                 <control type="radiobutton" id="620">
@@ -104,7 +104,7 @@
                         <top>0</top>
                         <width>74</width>
                         <height>74</height>
-                        <label></label>
+                        <label/>
                         <font></font>
                         <texturefocus></texturefocus>
                         <texturenofocus></texturenofocus>
@@ -139,7 +139,7 @@
                     <texturenofocus></texturenofocus>
                     <radioposx>0</radioposx>
                     <radioposy>0</radioposy>
-                    <label></label>
+                    <label/>
                     <animation center="62,62" effect="zoom" end="100" reversible="false" start="95" time="480" tween="back">Focus</animation>
                     <selected>Playlist.IsRandom</selected>
                     <visible>!MusicPlayer.Content(LiveTV)</visible>

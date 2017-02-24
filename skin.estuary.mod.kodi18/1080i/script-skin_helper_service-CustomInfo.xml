@@ -193,7 +193,7 @@
                 <posy>521</posy>
                 <width>1160</width>
                 <height>380</height>
-                <onup>noop</onup>
+                <onup/>
                 <ondown>9000</ondown>
                 <onleft>9000</onleft>
                 <onright>9000</onright>
@@ -224,7 +224,7 @@
                 <posy>521</posy>
                 <width>1160</width>
                 <height>380</height>
-                <onup>noop</onup>
+                <onup/>
                 <ondown>9000</ondown>
                 <onleft>9000</onleft>
                 <onright>9000</onright>

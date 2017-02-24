@@ -125,7 +125,7 @@
                     <width>400</width>
                     <height>748</height>
                     <onleft>1500</onleft>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol/>
                     <itemlayout height="124.6">
                         <control type="image">
                             <left>0</left>

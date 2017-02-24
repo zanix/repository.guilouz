@@ -1,3 +1,6 @@
+1.7.11
+• Drop support for using hyphen as none value
+
 1.7.10
 • Add button to switch between all/watched/unwatched recordings
 • Fix Youtube call

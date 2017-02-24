@@ -15,7 +15,7 @@
 				<top>400</top>
 				<width>1235</width>
 				<height>375</height>
-				<label></label>
+				<label/>
 			</control>
 			<control type="textbox">
 				<left>650</left>
@@ -235,7 +235,7 @@
  				<top>490</top>
  				<width>511</width>
  				<height>128</height>
- 				<label></label>
+ 				<label/>
  			</control>
  			<control type="textbox">
  				<left>38</left>

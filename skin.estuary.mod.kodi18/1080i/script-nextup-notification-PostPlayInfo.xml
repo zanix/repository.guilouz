@@ -172,8 +172,8 @@
 									<height>300</height>
 									<onup>102</onup>
 									<ondown>210</ondown>
-									<texturefocus>-</texturefocus>
-									<texturenofocus>-</texturenofocus>
+									<texturefocus/>
+									<texturenofocus/>
 								</control>
 							</control>
 						</control>
@@ -308,8 +308,8 @@
 										<height>300</height>
 										<ondown>101</ondown>
 										<onup>210</onup>
-										<texturefocus>-</texturefocus>
-										<texturenofocus>-</texturenofocus>
+										<texturefocus/>
+										<texturenofocus/>
 									</control>
 								</control>
 							</control>

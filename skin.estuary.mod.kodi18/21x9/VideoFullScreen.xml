@@ -19,7 +19,7 @@
                 <top>15</top>
                 <width>2410</width>
                 <height>100</height>
-                <label></label>
+                <label/>
                 <font>font12</font>
             </control>
             <control type="label" id="11">
@@ -27,7 +27,7 @@
                 <top>95</top>
                 <width>2410</width>
                 <height>100</height>
-                <label></label>
+                <label/>
                 <font>font12</font>
             </control>
             <control type="label" id="12">
@@ -35,7 +35,7 @@
                 <top>175</top>
                 <width>2410</width>
                 <height>100</height>
-                <label></label>
+                <label/>
                 <font>font12</font>
             </control>
             <control type="label" id="1">

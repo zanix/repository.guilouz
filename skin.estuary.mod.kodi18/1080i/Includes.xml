@@ -2205,7 +2205,7 @@
             <height>$PARAM[DialogBackgroundHeight]</height>
             <texturefocus></texturefocus>
             <texturenofocus></texturenofocus>
-            <onclick>noop</onclick>
+            <onclick/>
         </control>
         <control type="radiobutton" id="22000">
             <left>$PARAM[DialogBackgroundWidth]</left>

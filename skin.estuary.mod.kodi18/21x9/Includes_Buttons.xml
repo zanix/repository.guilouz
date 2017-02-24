@@ -44,7 +44,7 @@
                 <font>font10</font>
                 <texturefocus></texturefocus>
                 <texturenofocus></texturenofocus>
-                <onclick>noop</onclick>
+                <onclick/>
                 <label>$PARAM[label]</label>
                 <textcolor>$PARAM[textcolor]</textcolor>
                 <visible>$PARAM[visible]</visible>
@@ -87,7 +87,7 @@
         <left>0</left>
         <top>0</top>
         <height>75</height>
-        <label></label>
+        <label/>
         <align>center</align>
         <aligny>center</aligny>
         <font>font12_title</font>

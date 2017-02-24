@@ -554,7 +554,7 @@
 				<onleft>9010</onleft>
 				<onright>9010</onright>
 				<onup>32</onup>
-				<ondown>noop</ondown>
+				<ondown/>
 				<visible>!Control.IsVisible(313)</visible>
 				<itemlayout width="530" height="60">
 					<control type="image">

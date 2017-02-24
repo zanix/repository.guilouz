@@ -134,7 +134,7 @@
 						<width>10</width>
 						<height>10</height>
 						<aspectratio>keep</aspectratio>
-						<texture></texture>
+						<texture/>
 						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 					</control>
 					<control type="image">
@@ -207,7 +207,7 @@
 						<width>10</width>
 						<height>10</height>
 						<aspectratio>keep</aspectratio>
-						<texture></texture>
+						<texture/>
 						<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
 					</control>
 					<control type="image">
@@ -273,7 +273,7 @@
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
-						<label></label>
+						<label/>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>

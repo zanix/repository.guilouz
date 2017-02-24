@@ -47,7 +47,7 @@
         <definition>
             <control type="button" id="28">
                 <left>-1000</left>
-                <label></label>
+                <label/>
                 <height>1</height>
             </control>
             <control type="grouplist" id="9000">
@@ -434,7 +434,7 @@
     </include>
     <include name="MediaMenuMouseOverlay">
         <control type="button" id="6130">
-            <label></label>
+            <label/>
             <height>100%</height>
             <width>50</width>
             <left>-50</left>

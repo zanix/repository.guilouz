@@ -70,7 +70,7 @@
                             <label>A</label>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <onleft>noop</onleft>
+                            <onleft/>
                             <onright>3021</onright>
                             <onup>3010</onup>
                             <ondown>3026</ondown>
@@ -146,7 +146,7 @@
                             <label>G</label>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <onleft>noop</onleft>
+                            <onleft/>
                             <onright>3027</onright>
                             <onup>3020</onup>
                             <ondown>3032</ondown>
@@ -222,7 +222,7 @@
                             <label>M</label>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <onleft>noop</onleft>
+                            <onleft/>
                             <onright>3033</onright>
                             <onup>3026</onup>
                             <ondown>3038</ondown>
@@ -298,7 +298,7 @@
                             <label>S</label>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <onleft>noop</onleft>
+                            <onleft/>
                             <onright>3039</onright>
                             <onup>3032</onup>
                             <ondown>3044</ondown>
@@ -374,7 +374,7 @@
                             <label>Y</label>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <onleft>noop</onleft>
+                            <onleft/>
                             <onright>3045</onright>
                             <onup>3038</onup>
                             <ondown>3050</ondown>
@@ -450,7 +450,7 @@
                             <label>$NUMBER[4]</label>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <onleft>noop</onleft>
+                            <onleft/>
                             <onright>3051</onright>
                             <onup>3044</onup>
                             <ondown>3056</ondown>
@@ -527,10 +527,10 @@
                             <label>20181</label>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <onleft>noop</onleft>
+                            <onleft/>
                             <onright>3057</onright>
                             <onup>3050</onup>
-                            <ondown>noop</ondown>
+                            <ondown/>
                         </control>
                         <control type="button" id="3057">
                             <width>174</width>
@@ -542,7 +542,7 @@
                             <onleft>3056</onleft>
                             <onright>3058</onright>
                             <onup>3052</onup>
-                            <ondown>noop</ondown>
+                            <ondown/>
                         </control>
                         <control type="button" id="3058">
                             <width>174</width>
@@ -554,7 +554,7 @@
                             <onleft>3057</onleft>
                             <onright>2900</onright>
                             <onup>3054</onup>
-                            <ondown>noop</ondown>
+                            <ondown/>
                         </control>
                     </control>
                 </control>
@@ -589,10 +589,10 @@
                     <width>1080</width>
                     <height>245</height>
                     <onleft>3025</onleft>
-                    <onright>noop</onright>
-                    <onup>noop</onup>
+                    <onright/>
+                    <onup/>
                     <ondown>3111</ondown>
-                    <pagecontrol>noop</pagecontrol>
+                    <pagecontrol/>
                     <scrolltime>200</scrolltime>
                     <orientation>horizontal</orientation>
                     <!-- itemlayout movies -->
@@ -652,10 +652,10 @@
                     <width>1080</width>
                     <height>245</height>
                     <onleft>3025</onleft>
-                    <onright>noop</onright>
+                    <onright/>
                     <onup>3110</onup>
                     <ondown>3112</ondown>
-                    <pagecontrol>noop</pagecontrol>
+                    <pagecontrol/>
                     <scrolltime>200</scrolltime>
                     <orientation>horizontal</orientation>
                     <!-- itemlayout series -->
@@ -716,10 +716,10 @@
                     <width>1080</width>
                     <height>280</height>
                     <onleft>3025</onleft>
-                    <onright>noop</onright>
+                    <onright/>
                     <onup>3111</onup>
-                    <ondown>noop</ondown>
-                    <pagecontrol>noop</pagecontrol>
+                    <ondown/>
+                    <pagecontrol/>
                     <scrolltime>200</scrolltime>
                     <orientation>horizontal</orientation>
                     <itemlayout height="245" width="182">

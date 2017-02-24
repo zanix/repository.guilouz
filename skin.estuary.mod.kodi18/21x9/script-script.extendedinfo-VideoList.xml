@@ -481,7 +481,7 @@
                 <textoffsety>25</textoffsety>
                 <font>font13</font>
                 <textwidth>315</textwidth>
-                <label></label>
+                <label/>
                 <focusedcolor>$VAR[SkinColorVar]</focusedcolor>
                 <radiowidth>200</radiowidth>
                 <radioheight>180</radioheight>
