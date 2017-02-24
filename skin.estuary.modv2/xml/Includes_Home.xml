@@ -1133,12 +1133,12 @@
 		<content>
 			<item>
 				<icon>resource://resource.images.weathericons.default/na.png</icon>
-				<onclick>noop</onclick>
+				<onclick/>
 				<visible>String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 			</item>
 			<item>
 				<icon>$INFO[Skin.String(WeatherIcons.path)]na.png</icon>
-				<onclick>noop</onclick>
+				<onclick/>
 				<visible>String.IsEmpty(Window(weather).Property(Hourly.IsFetched)) + !String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 			</item>
 			<include content="WeatherHourlyItem">
@@ -1192,12 +1192,12 @@
 		<content>
 			<item>
 				<icon>resource://resource.images.weathericons.default/na.png</icon>
-				<onclick>noop</onclick>
+				<onclick/>
 				<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 			</item>
 			<item>
 				<icon>$INFO[Skin.String(WeatherIcons.path)]na.png</icon>
-				<onclick>noop</onclick>
+				<onclick/>
 				<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched)) + !String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 			</item>
 			<include content="WeatherDailyItem">
@@ -1257,7 +1257,7 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].ShortDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].FanartCode)]</property>
 			<thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</thumb>
-			<onclick>noop</onclick>
+			<onclick/>
 			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook)) + String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 		<item>
@@ -1269,7 +1269,7 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].ShortDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].FanartCode)]</property>
 			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</thumb>
-			<onclick>noop</onclick>
+			<onclick/>
 			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook)) + !String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 	</include>
@@ -1284,7 +1284,7 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]</property>
 			<thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</thumb>
-			<onclick>noop</onclick>
+			<onclick/>
 			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook)) + String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 		<item>
@@ -1297,7 +1297,7 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]</property>
 			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</thumb>
-			<onclick>noop</onclick>
+			<onclick/>
 			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook)) + !String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 	</include>
@@ -1354,7 +1354,7 @@
 			<animation effect="slide" end="0,-90" time="0" condition="true">Conditional</animation>
 			<texturefocus border="21" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 			<font>font30_title</font>
-			<onclick>noop</onclick>
+			<onclick/>
 			<label>$INFO[Window(weather).Property(Map.$PARAM[item_id].Heading)]</label>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window(weather).Property(Map.$PARAM[item_id].Area)) + !String.IsEmpty(Window(weather).Property(Map.IsFetched))</visible>
 		</control>
@@ -1364,7 +1364,7 @@
 		<orientation>horizontal</orientation>
 		<onleft>9000</onleft>
 		<onback>9000</onback>
-		<onright>noop</onright>
+		<onright/>
 		<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
 		<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
 		<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>

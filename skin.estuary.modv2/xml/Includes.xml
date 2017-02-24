@@ -94,7 +94,7 @@
 		<height>1</height>
 		<texturefocus />
 		<texturenofocus />
-		<label></label>
+		<label/>
 		<font></font>
 	</include>
 	<include name="RatingCircle">
@@ -694,7 +694,7 @@
 						<texturesliderbackground />
 						<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus($PARAM[group_id]30)">conditional</animation>
 						<onleft>$PARAM[group_id]50</onleft>
-						<onright>noop</onright>
+						<onright/>
 					</control>
 				</control>
 				<control type="group">
@@ -929,7 +929,7 @@
 				<bottom>0</bottom>
 				<texturefocus />
 				<texturenofocus />
-				<onclick>noop</onclick>
+				<onclick/>
 			</control>
 			<control type="radiobutton">
 				<right>10</right>
@@ -940,7 +940,7 @@
 				<radioheight>48</radioheight>
 				<texturefocus />
 				<texturenofocus />
-				<label></label>
+				<label/>
 				<textureradioofffocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioofffocus>
 				<textureradiooffnofocus colordiffuse="EEFFFFFF">icons/logo.png</textureradiooffnofocus>
 				<textureradioonfocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioonfocus>
@@ -1025,7 +1025,7 @@
 					<top>0</top>
 					<width>200</width>
 					<height>100</height>
-					<label></label>
+					<label/>
 					<onclick>Action(Back)</onclick>
 					<texturefocus />
 					<texturenofocus />
@@ -1469,7 +1469,7 @@
 			<width>480</width>
 			<height>110</height>
 			<bottom>0</bottom>
-			<onup>noop</onup>
+			<onup/>
 			<ondown>9000</ondown>
 			<onright>2000</onright>
 			<align>justify</align>
@@ -1494,7 +1494,7 @@
 					<top>0</top>
 					<width>120</width>
 					<height>120</height>
-					<label></label>
+					<label/>
 					<onclick>ActivateWindow(1103)</onclick>
 					<texturefocus colordiffuse="$VAR[SkinColorVar]">buttons/roundbutton-fo.png</texturefocus>
 					<texturenofocus />

@@ -235,7 +235,7 @@
 					<aligny>center</aligny>
 					<onclick>ActivateWindow(addonbrowser,root)</onclick>
 					<font>font12</font>
-					<label></label>
+					<label/>
 					<textoffsetx>40</textoffsetx>
 					<textwidth>230</textwidth>
 					<texturefocus colordiffuse="$VAR[SkinColorVar]">buttons/roundbutton-fo.png</texturefocus>
@@ -257,7 +257,7 @@
 					<aligny>center</aligny>
 					<onclick>ActivateWindow(addonbrowser,addons://outdated/,return)</onclick>
 					<font>font12</font>
-					<label></label>
+					<label/>
 					<textoffsetx>40</textoffsetx>
 					<textwidth>230</textwidth>
 					<texturefocus border="30" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texturefocus>
@@ -281,7 +281,7 @@
 					<aligny>center</aligny>
 					<onclick>ActivateWindow(systemsettings,addons)</onclick>
 					<font>font12</font>
-					<label></label>
+					<label/>
 					<textoffsetx>40</textoffsetx>
 					<textwidth>230</textwidth>
 					<texturefocus colordiffuse="$VAR[SkinColorVar]">buttons/roundbutton-fo.png</texturefocus>

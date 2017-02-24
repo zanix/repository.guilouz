@@ -100,7 +100,7 @@
 			<control type="label" id="7">
 				<height>60</height>
 				<font>font12</font>
-				<label></label>
+				<label/>
 				<textoffsetx>40</textoffsetx>
 				<textoffsety>20</textoffsety>
 				<textcolor>$VAR[SkinColorVar]</textcolor>

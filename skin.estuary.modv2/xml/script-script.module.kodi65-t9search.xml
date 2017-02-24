@@ -124,7 +124,7 @@
                 <onright>Action(Close)</onright>
                 <onup>9090</onup>
                 <ondown>9090</ondown>
-                <onback>noop</onback>
+                <onback/>
                 <orientation>vertical</orientation>
                 <scrolltime tween="quadratic" easing="out">200</scrolltime>
                 <itemlayout height="55" width="380">

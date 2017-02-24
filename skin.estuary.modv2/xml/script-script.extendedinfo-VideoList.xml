@@ -295,7 +295,7 @@
 				<top>0</top>
 				<width>200</width>
 				<height>100</height>
-				<label></label>
+				<label/>
 				<onclick>Action(Back)</onclick>
 				<texturefocus />
 				<texturenofocus />
@@ -517,7 +517,7 @@
 				<top>0</top>
 				<width>500</width>
 				<height>100%</height>
-				<label></label>
+				<label/>
 				<texturefocus />
 				<texturenofocus />
 			</control>
@@ -547,7 +547,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font></font>
-				<label></label>
+				<label/>
 				<texturefocus colordiffuse="$VAR[SkinColorVar]">buttons/roundbutton-fo.png</texturefocus>
 				<texturenofocus />
 				<radioposx>40</radioposx>
@@ -587,7 +587,7 @@
 				<textoffsety>25</textoffsety>
 				<font>font13</font>
 				<textwidth>315</textwidth>
-				<label></label>
+				<label/>
 				<focusedcolor>$VAR[SkinColorVar]</focusedcolor>
 				<radiowidth>200</radiowidth>
 				<radioheight>180</radioheight>

@@ -64,7 +64,7 @@
 				<bottom>0</bottom>
 				<texturefocus />
 				<texturenofocus />
-				<onclick>noop</onclick>
+				<onclick/>
 			</control>
 			<control type="radiobutton">
 				<right>10</right>
@@ -75,7 +75,7 @@
 				<radioheight>48</radioheight>
 				<texturefocus />
 				<texturenofocus />
-				<label></label>
+				<label/>
 				<textureradioofffocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioofffocus>
 				<textureradiooffnofocus colordiffuse="EEFFFFFF">icons/logo.png</textureradiooffnofocus>
 				<textureradioonfocus colordiffuse="EEFFFFFF">dialogs/close.png</textureradioonfocus>

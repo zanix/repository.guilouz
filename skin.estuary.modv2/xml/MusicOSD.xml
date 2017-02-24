@@ -35,7 +35,7 @@
 				<scrolltime tween="sine">200</scrolltime>
 				<orientation>horizontal</orientation>
 				<onup>87</onup>
-				<ondown>noop</ondown>
+				<ondown/>
 				<onleft>5000</onleft>
 				<onright>620</onright>
 				<control type="radiobutton" id="600">
@@ -86,7 +86,7 @@
 				<scrolltime tween="sine">200</scrolltime>
 				<orientation>horizontal</orientation>
 				<onup>87</onup>
-				<ondown>noop</ondown>
+				<ondown/>
 				<onleft>605</onleft>
 				<onright>600</onright>
 				<control type="radiobutton" id="620">
@@ -111,14 +111,14 @@
 						<top>0</top>
 						<width>74</width>
 						<height>74</height>
-						<label></label>
+						<label/>
 						<font></font>
 						<texturefocus colordiffuse="$VAR[SkinColorVar]">osd/fullscreen/buttons/button-fo.png</texturefocus>
 						<texturenofocus />
 						<onleft>621</onleft>
 						<onright>607</onright>
 						<onup>87</onup>
-						<ondown>noop</ondown>
+						<ondown/>
 						<onclick>PlayerControl(Repeat)</onclick>
 					</control>
 					<control type="image">

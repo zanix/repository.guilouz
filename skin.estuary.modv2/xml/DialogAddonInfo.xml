@@ -17,7 +17,7 @@
 					<top>400</top>
 					<width>1235</width>
 					<height>435</height>
-					<label></label>
+					<label/>
 					<texturenofocus border="21">dialogs/dialog-bg.png</texturenofocus>
 					<onup>50</onup>
 					<ondown>9000</ondown>

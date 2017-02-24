@@ -217,7 +217,7 @@
 						<width>5</width>
 						<height>10</height>
 						<aspectratio>keep</aspectratio>
-						<texture></texture>
+						<texture/>
 						<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
 					</control>
 					<control type="image">
@@ -231,7 +231,7 @@
 						<width>30</width>
 						<height>10</height>
 						<aspectratio>keep</aspectratio>
-						<texture></texture>
+						<texture/>
 						<visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
 					</control>
 					<control type="image">
@@ -245,7 +245,7 @@
 						<width>5</width>
 						<height>10</height>
 						<aspectratio>keep</aspectratio>
-						<texture></texture>
+						<texture/>
 						<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
 					</control>
 					<control type="image">

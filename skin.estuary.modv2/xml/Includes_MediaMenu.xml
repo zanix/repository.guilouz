@@ -57,7 +57,7 @@
 		<param name="group_label2">$INFO[Control.GetLabel(29)]</param>
 		<definition>
 			<control type="button" id="28">
-				<label></label>
+				<label/>
 				<include>HiddenObject</include>
 			</control>
 			<control type="grouplist" id="9000">
@@ -292,7 +292,7 @@
 			<top>0</top>
 			<width>500</width>
 			<height>100%</height>
-			<label></label>
+			<label/>
 			<texturefocus />
 			<texturenofocus />
 		</control>
@@ -420,7 +420,7 @@
 	</include>
 	<include name="MediaMenuMouseOverlay">
 		<control type="button" id="6130">
-			<label></label>
+			<label/>
 			<left>-50</left>
 			<top>200</top>
 			<bottom>0</bottom>

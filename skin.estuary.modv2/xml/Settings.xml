@@ -24,7 +24,7 @@
 				<width>100%</width>
 				<top>120</top>
 				<height>300</height>
-				<onup>noop</onup>
+				<onup/>
 				<ondown>Control.SetFocus(9001,$INFO[Container(9000).Position],absolute)</ondown>
 				<include>SettingsPanel</include>
 				<content>
@@ -56,7 +56,7 @@
 				<top>470</top>
 				<bottom>0</bottom>
 				<onup>Control.SetFocus(9000,$INFO[Container(9001).Position],absolute)</onup>
-				<ondown>noop</ondown>
+				<ondown/>
 				<include>SettingsPanel</include>
 				<content>
 					<item>

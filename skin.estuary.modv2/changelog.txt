@@ -1,6 +1,7 @@
 [B]2.0.6[/B]
 • Add new power menu
 • Fix banner on music visualisation when next tracks are not available
+• Drop support for using hyphen as none value
 
 [B]2.0.5[/B]
 • Add info button on video OSD

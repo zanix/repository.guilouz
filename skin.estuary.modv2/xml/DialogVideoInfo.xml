@@ -98,7 +98,7 @@
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
-						<label></label>
+						<label/>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
@@ -132,7 +132,7 @@
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
 						<aligny>bottom</aligny>
-						<label></label>
+						<label/>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
@@ -183,7 +183,7 @@
 						<width>10</width>
 						<height>10</height>
 						<aspectratio>keep</aspectratio>
-						<texture></texture>
+						<texture/>
 						<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6))]</visible>
 					</control>
 					<control type="image">
@@ -232,7 +232,7 @@
 						<width>50</width>
 						<height>10</height>
 						<aspectratio>keep</aspectratio>
-						<texture></texture>
+						<texture/>
 						<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
 					</control>
 					<control type="image">
@@ -246,7 +246,7 @@
 						<width>10</width>
 						<height>10</height>
 						<aspectratio>keep</aspectratio>
-						<texture></texture>
+						<texture/>
 						<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
 					</control>
 					<control type="image">
