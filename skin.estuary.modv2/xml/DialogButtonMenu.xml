@@ -1,116 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>9000</defaultcontrol>
-	<include>Animation_DialogPopupOpenClose</include>
+	<backgroundcolor>background</backgroundcolor>
 	<controls>
+		<include>DefaultBackground</include>
 		<control type="group">
 			<centerleft>50%</centerleft>
-			<width>670</width>
+			<left>0</left>
+			<right>0</right>
 			<centertop>50%</centertop>
-			<height>700</height>
-			<include content="DialogBackgroundCommons">
-				<param name="width" value="670" />
-				<param name="height" value="80" />
-				<param name="header_label" value="$LOCALIZE[31072]" />
-				<param name="header_id" value="2" />
-			</include>
-			<control type="panel" id="9000">
-				<left>0</left>
-				<top>80</top>
-				<width>670</width>
-				<height>700</height>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<orientation>vertical</orientation>
-				<itemlayout height="70" width="670">
+			<include>OpenClose_Right</include>
+			<control id="9000" type="wraplist">
+				<centerleft>50%</centerleft>
+				<centertop>50%</centertop>
+				<width>1900</width>
+				<height>380</height>
+				<focusposition>2</focusposition>
+				<orientation>horizontal</orientation>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<itemlayout height="380" width="380">
 					<control type="image">
 						<left>0</left>
-						<top>0</top>
-						<width>670</width>
-						<height>70</height>
-						<texture colordiffuse="dialog_tint">colors/white.png</texture>
+						<width>380</width>
+						<height>380</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
 					</control>
-					<control type="label">
-						<left>0</left>
-						<textoffsetx>20</textoffsetx>
-						<top>0</top>
-						<width>670</width>
-						<height>70</height>
+					<control type="image">
+						<left>40</left>
+						<top>70</top>
+						<width>300</width>
+						<height>150</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>$INFO[ListItem.Icon]</texture>
+					</control>
+					<control type="textbox">
+						<left>30</left>
+						<top>255</top>
+						<width>320</width>
+						<height>80</height>
 						<align>center</align>
 						<aligny>center</aligny>
-						<textcolor>grey</textcolor>
+						<font>font25_title</font>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="70" width="670">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>670</width>
-						<height>70</height>
-						<texture colordiffuse="dialog_tint">colors/white.png</texture>
-					</control>
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>670</width>
-						<height>70</height>
-						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
-					</control>
-					<control type="label">
-						<left>0</left>
-						<textoffsetx>20</textoffsetx>
-						<top>0</top>
-						<width>670</width>
-						<height>70</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
+				<focusedlayout height="380" width="380">
+					<control type="group">
+						<depth>DepthContentPopout</depth>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="190,120" start="100" end="110" time="250" tween="sine" />
+						</animation>
+						<animation type="UnFocus" reversible="false">
+							<effect type="zoom" center="190,120" start="110" end="100" time="250" tween="sine" />
+						</animation>
+						<control type="image">
+							<left>0</left>
+							<width>380</width>
+							<height>380</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<width>380</width>
+							<height>380</height>
+							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							<bordersize>20</bordersize>
+							<include>Animation_FocusTextureFade</include>
+						</control>
+						<control type="image">
+							<left>40</left>
+							<top>70</top>
+							<width>300</width>
+							<height>150</height>
+							<aspectratio align="center">keep</aspectratio>
+							<texture>$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="textbox">
+							<left>30</left>
+							<top>255</top>
+							<width>320</width>
+							<height>80</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font25_title</font>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
 					</control>
 				</focusedlayout>
 				<content>
 					<item>
 						<label>$LOCALIZE[13012]</label>
 						<onclick>Quit()</onclick>
+						<icon>icons/powermenu/exit.png</icon>
 						<visible>System.ShowExitButton</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[13016]</label>
 						<onclick>Powerdown()</onclick>
+						<icon>icons/powermenu/powerdown.png</icon>
 						<visible>System.CanPowerDown</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[20150]</label>
 						<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+						<icon>icons/powermenu/shutdowntimer.png</icon>
 						<visible>!System.HasAlarm(shutdowntimer)</visible>
 						<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</label>
 						<onclick>CancelAlarm(shutdowntimer)</onclick>
+						<icon>icons/powermenu/cancel.png</icon>
 						<visible>System.HasAlarm(shutdowntimer)</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[13011]</label>
 						<onclick>Suspend()</onclick>
+						<icon>icons/powermenu/suspend.png</icon>
 						<visible>System.CanSuspend</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[13010]</label>
 						<onclick>Hibernate()</onclick>
+						<icon>icons/powermenu/suspend.png</icon>
 						<visible>System.CanHibernate</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[13013]</label>
 						<onclick>Reset()</onclick>
+						<icon>icons/powermenu/reboot.png</icon>
 						<visible>System.CanReboot</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[20126] $INFO[system.profilename,(,)]</label>
 						<onclick>dialog.close(all,true)</onclick>
 						<onclick>System.LogOff</onclick>
+						<icon>icons/powermenu/logoff.png</icon>
 						<visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
 						<visible>System.Loggedon</visible>
 					</item>
@@ -119,31 +148,75 @@
 						<altlabel>$LOCALIZE[20045]</altlabel>
 						<usealttexture>!System.IsMaster</usealttexture>
 						<onclick>mastermode</onclick>
+						<icon>icons/powermenu/mastermode.png</icon>
 						<visible>System.HasLocks</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[13017]</label>
 						<onclick>InhibitIdleShutdown(true)</onclick>
+						<icon>icons/powermenu/cancel.png</icon>
 						<visible>System.HasShutdown +!System.IsInhibit</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[13018]</label>
 						<onclick>InhibitIdleShutdown(false)</onclick>
+						<icon>icons/powermenu/inhibitidleshutdown.png</icon>
 						<visible>System.HasShutdown + System.IsInhibit</visible>
 					</item>
 					<item>
-						<label>$VAR[VideoLibraryScanLabelVar]</label>
+						<label>$LOCALIZE[40009]</label>
 						<onclick>UpdateLibrary(video)</onclick>
+						<icon>icons/powermenu/updatevideo.png</icon>
+						<visible>!Library.IsScanningVideo</visible>
 					</item>
 					<item>
-						<label>$VAR[MusicLibraryScanLabelVar]</label>
+						<label>$LOCALIZE[40013]</label>
+						<onclick>UpdateLibrary(video)</onclick>
+						<icon>icons/powermenu/cancel.png</icon>
+						<visible>Library.IsScanningVideo</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[40010]</label>
 						<onclick>UpdateLibrary(music)</onclick>
+						<icon>icons/powermenu/updatemusic.png</icon>
+						<visible>!Library.IsScanningMusic</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[40014]</label>
+						<onclick>UpdateLibrary(music)</onclick>
+						<icon>icons/powermenu/cancel.png</icon>
+						<visible>Library.IsScanningMusic</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[20183]</label>
 						<onclick>ReloadSkin()</onclick>
+						<icon>icons/powermenu/reload.png</icon>
 					</item>
 				</content>
+			</control>
+		</control>
+		<include>TopBar</include>
+		<include>BottomBar</include>
+		<control type="group">
+			<depth>DepthBars</depth>
+			<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<top>20</top>
+			<left>20</left>
+			<control type="image">
+				<aspectratio>keep</aspectratio>
+				<width>56</width>
+				<height>56</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">icons/logo.png</texture>
+			</control>
+			<control type="image">
+				<left>40</left>
+				<top>10</top>
+				<aspectratio>keep</aspectratio>
+				<width>192</width>
+				<height>36</height>
+				<texture>icons/logo-text.png</texture>
 			</control>
 		</control>
 	</controls>

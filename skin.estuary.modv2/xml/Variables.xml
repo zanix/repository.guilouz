@@ -4,14 +4,6 @@
 		<value condition="Control.HasFocus(59001) | Control.HasFocus(69001) | Control.HasFocus(79001) | Control.HasFocus(89001) | Control.HasFocus(119001) | Control.HasFocus(129001) | Control.HasFocus(139001) | Control.HasFocus(169001)">$INFO[Container($PARAM[list_id]).ListItem.Label]</value>
 		<value>$LOCALIZE[31148]</value>
 	</variable>
-    <variable name="VideoLibraryScanLabelVar">
-		<value condition="Library.IsScanningVideo">$LOCALIZE[40013]</value>
-		<value>$LOCALIZE[40009]</value>
-	</variable>
-	<variable name="MusicLibraryScanLabelVar">
-		<value condition="Library.IsScanningMusic">$LOCALIZE[40014]</value>
-		<value>$LOCALIZE[40010]</value>
-	</variable>
     <variable name="Label_SkinSetting_HomeMenuItem1Var">
  		<value condition="String.IsEqual(Skin.String(homemenu_item1),0)">$LOCALIZE[40064]</value>
  		<value condition="String.IsEqual(Skin.String(homemenu_item1),1)">$LOCALIZE[342]</value>

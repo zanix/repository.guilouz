@@ -1,4 +1,5 @@
 [B]2.0.6[/B]
+• Add new power menu
 • Fix banner on music visualisation when next tracks are not available
 
 [B]2.0.5[/B]
