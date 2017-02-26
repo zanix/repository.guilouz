@@ -1325,3 +1325,8 @@ msgstr ""
 msgctxt "#40124"
 msgid "Opacity for top and bottom bars"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40125"
+msgid "Power menu style"
+msgstr ""

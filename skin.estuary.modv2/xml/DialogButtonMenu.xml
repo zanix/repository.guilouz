@@ -6,10 +6,200 @@
 		<include>DefaultBackground</include>
 		<control type="group">
 			<centerleft>50%</centerleft>
+			<width>1600</width>
+			<centertop>50%</centertop>
+			<height>795</height>
+			<include>OpenClose_Right</include>
+			<visible>!Skin.HasSetting(powermenu_list)</visible>
+			<control id="9000" type="panel">
+				<left>0</left>
+				<width>100%</width>
+				<top>0</top>
+				<height>780</height>
+				<itemlayout height="260" width="400">
+					<control type="image">
+						<left>-5</left>
+						<width>410</width>
+						<height>270</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
+					<control type="image">
+						<centerleft>50%</centerleft>
+						<top>30</top>
+						<width>300</width>
+						<height>140</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio align="center">keep</aspectratio>
+					</control>
+					<control type="textbox">
+						<left>25</left>
+						<top>170</top>
+						<width>350</width>
+						<height>80</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font25_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+				</itemlayout>
+				<focusedlayout height="230" width="400">
+					<control type="group">
+						<depth>DepthContentPopout</depth>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="200,140" start="100" end="110" time="250" tween="sine" />
+						</animation>
+						<animation type="UnFocus" reversible="false">
+							<effect type="zoom" center="200,140" start="110" end="100" time="250" tween="sine" />
+						</animation>
+						<control type="image">
+							<left>-5</left>
+							<width>410</width>
+							<height>270</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<left>-5</left>
+							<width>410</width>
+							<height>270</height>
+							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							<bordersize>20</bordersize>
+							<include>Animation_FocusTextureFade</include>
+						</control>
+						<control type="image">
+							<centerleft>50%</centerleft>
+							<top>30</top>
+							<width>300</width>
+							<height>140</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<aspectratio align="center">keep</aspectratio>
+						</control>
+						<control type="textbox">
+							<left>25</left>
+							<top>170</top>
+							<width>350</width>
+							<height>80</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font25_title</font>
+							<align>center</align>
+							<aligny>center</aligny>
+						</control>
+					</control>
+				</focusedlayout>
+				<content>
+					<item>
+						<label>$LOCALIZE[13012]</label>
+						<onclick>Quit()</onclick>
+						<icon>icons/powermenu/exit.png</icon>
+						<visible>System.ShowExitButton</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[13016]</label>
+						<onclick>Powerdown()</onclick>
+						<icon>icons/powermenu/powerdown.png</icon>
+						<visible>System.CanPowerDown</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[20150]</label>
+						<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
+						<icon>icons/powermenu/shutdowntimer.png</icon>
+						<visible>!System.HasAlarm(shutdowntimer)</visible>
+						<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</label>
+						<onclick>CancelAlarm(shutdowntimer)</onclick>
+						<icon>icons/powermenu/cancel.png</icon>
+						<visible>System.HasAlarm(shutdowntimer)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[13011]</label>
+						<onclick>Suspend()</onclick>
+						<icon>icons/powermenu/suspend.png</icon>
+						<visible>System.CanSuspend</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[13010]</label>
+						<onclick>Hibernate()</onclick>
+						<icon>icons/powermenu/suspend.png</icon>
+						<visible>System.CanHibernate</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[13013]</label>
+						<onclick>Reset()</onclick>
+						<icon>icons/powermenu/reboot.png</icon>
+						<visible>System.CanReboot</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[20126] $INFO[system.profilename,(,)]</label>
+						<onclick>dialog.close(all,true)</onclick>
+						<onclick>System.LogOff</onclick>
+						<icon>icons/powermenu/logoff.png</icon>
+						<visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
+						<visible>System.Loggedon</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[20046]</label>
+						<altlabel>$LOCALIZE[20045]</altlabel>
+						<usealttexture>!System.IsMaster</usealttexture>
+						<onclick>mastermode</onclick>
+						<icon>icons/powermenu/mastermode.png</icon>
+						<visible>System.HasLocks</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[13017]</label>
+						<onclick>InhibitIdleShutdown(true)</onclick>
+						<icon>icons/powermenu/cancel.png</icon>
+						<visible>System.HasShutdown +!System.IsInhibit</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[13018]</label>
+						<onclick>InhibitIdleShutdown(false)</onclick>
+						<icon>icons/powermenu/inhibitidleshutdown.png</icon>
+						<visible>System.HasShutdown + System.IsInhibit</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[40009]</label>
+						<onclick>UpdateLibrary(video)</onclick>
+						<icon>icons/powermenu/updatevideo.png</icon>
+						<visible>!Library.IsScanningVideo</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[40013]</label>
+						<onclick>UpdateLibrary(video)</onclick>
+						<icon>icons/powermenu/cancel.png</icon>
+						<visible>Library.IsScanningVideo</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[40010]</label>
+						<onclick>UpdateLibrary(music)</onclick>
+						<icon>icons/powermenu/updatemusic.png</icon>
+						<visible>!Library.IsScanningMusic</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[40014]</label>
+						<onclick>UpdateLibrary(music)</onclick>
+						<icon>icons/powermenu/cancel.png</icon>
+						<visible>Library.IsScanningMusic</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[20183]</label>
+						<onclick>ReloadSkin()</onclick>
+						<icon>icons/powermenu/reload.png</icon>
+					</item>
+				</content>
+			</control>
+		</control>
+		<control type="group">
+			<centerleft>50%</centerleft>
 			<left>0</left>
 			<right>0</right>
 			<centertop>50%</centertop>
 			<include>OpenClose_Right</include>
+			<visible>Skin.HasSetting(powermenu_list)</visible>
 			<control id="9000" type="wraplist">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>

@@ -1325,3 +1325,8 @@ msgstr "Utilisation du disque dur :"
 msgctxt "#40124"
 msgid "Opacity for top and bottom bars"
 msgstr "Opacité des barres du haut et du bas"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40125"
+msgid "Power menu style"
+msgstr "Style du menu d'alimentation"

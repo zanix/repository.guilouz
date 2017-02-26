@@ -1,5 +1,5 @@
 [B]2.0.6[/B]
-• Add new power menu
+• Add two views for power menu
 • Fix banner on music visualisation when next tracks are not available
 • Fix missing clearlogos with moviesets widget
 • Fix in musicvideo views
