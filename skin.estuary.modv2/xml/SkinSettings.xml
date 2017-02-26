@@ -500,6 +500,12 @@
 					<onclick>Skin.ToggleSetting(hide_plotforspoiler)</onclick>
 					<selected>Skin.HasSetting(hide_plotforspoiler)</selected>
 				</control>
+				<control type="radiobutton" id="905">
+					<label>$LOCALIZE[40126]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(hide_thumbforspoiler)</onclick>
+					<selected>Skin.HasSetting(hide_thumbforspoiler)</selected>
+				</control>
 				<control type="radiobutton" id="903">
 					<label>$LOCALIZE[40068]</label>
 					<include>DefaultSettingButton</include>
@@ -510,10 +516,10 @@
 					<height>3</height>
 					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
 				</control>
-				<control type="button" id="904">
+				<control type="button" id="905">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(LibraryClearLogo))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(hide_thumbforspoiler)|Skin.Reset(LibraryClearLogo))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="700">

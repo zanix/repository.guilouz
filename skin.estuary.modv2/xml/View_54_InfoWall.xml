@@ -154,7 +154,7 @@
 				<width>316</width>
 				<height>218</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
-				<aspectratio>scale</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">

@@ -1,5 +1,6 @@
 [B]2.0.6[/B]
 • Add two views for power menu
+• Add possibility to hide thumbs episodes to avoid spoilers
 • Fix banner on music visualisation when next tracks are not available
 • Fix missing clearlogos with moviesets widget
 • Fix in musicvideo views
