@@ -383,7 +383,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#31093"
-msgid "Show weather info in top bar"
+msgid "Show weather info on top bar"
 msgstr ""
 
 #: /xml/SkinSettings.xml

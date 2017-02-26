@@ -383,7 +383,7 @@ msgstr "Menu vidéo"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31093"
-msgid "Show weather info in top bar"
+msgid "Show weather info on top bar"
 msgstr "Afficher la météo sur la barre du haut"
 
 #: /xml/SkinSettings.xml
