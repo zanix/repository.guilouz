@@ -2,6 +2,7 @@
 • Add new power menu
 • Fix banner on music visualisation when next tracks are not available
 • Fix missing clearlogos with moviesets widget
+• Fix in musicvideo views
 • Drop support for using hyphen as none value
 
 [B]2.0.5[/B]

@@ -2,7 +2,7 @@
 <window>
 	<zorder>3</zorder>
 	<onload condition="Library.IsScanningVideo + Skin.HasSetting(enable_updateartworks)">SetProperty(UpdateArt,1)</onload>
-    <onunload condition="!String.IsEmpty(Window.Property(UpdateArt)) + Skin.HasSetting(enable_updateartworks)">XBMC.RunScript(script.artwork.downloader,mode=custom,silent=true,clearlogo,clearart,thumb,banner,tvthumb,seasonbanner,seasonthumb,seasonposter,discart)</onunload>
+    <onunload condition="!String.IsEmpty(Window.Property(UpdateArt)) + Skin.HasSetting(enable_updateartworks)">XBMC.RunScript(script.artwork.downloader,mode=custom,silent=true,clearlogo,clearart,thumb,banner,tvthumb,seasonbanner,seasonthumb,seasonposter,discart,characterart)</onunload>
     <onunload condition="!String.IsEmpty(Window.Property(UpdateArt)) + Skin.HasSetting(enable_updateartworks)">ClearProperty(UpdateArt)</onunload>
 	<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
