@@ -7,7 +7,7 @@
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
 			<onfocus>ActivateWindow(servicesettings,weather)</onfocus>
-			<onclick/>
+			<onclick>noop</onclick>
 		</control>
 		<control type="videowindow">
 			<depth>DepthBackground</depth>
@@ -71,20 +71,20 @@
 					<content>
 						<item id="1">
 							<label>$LOCALIZE[19030]</label>
-							<onclick/>
+							<onclick>noop</onclick>
 						</item>
 						<item id="2">
 							<label>$LOCALIZE[33036]</label>
-							<onclick/>
+							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
 						</item>
 						<item id="3">
 							<label>$LOCALIZE[31019]</label>
-							<onclick/>
+							<onclick>noop</onclick>
 						</item>
 						<item id="4">
 							<label>$LOCALIZE[33035]</label>
-							<onclick/>
+							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Window(weather).Property(Map.IsFetched))</visible>
 						</item>
 					</content>

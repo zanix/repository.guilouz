@@ -111,43 +111,43 @@
                     <content>
                         <item id="2">
                             <label>$LOCALIZE[40002]</label>
-                            <onclick/>
+                            <onclick>noop</onclick>
                         </item>
                         <item id="1">
                             <label>$LOCALIZE[40007]</label>
-                            <onclick/>
+                            <onclick>noop</onclick>
                         </item>
                         <item id="4">
                             <label>$LOCALIZE[40006]</label>
-                            <onclick/>
+                            <onclick>noop</onclick>
                         </item>
                         <item id="10">
                             <label>$LOCALIZE[40192]</label>
-                            <onclick/>
+                            <onclick>noop</onclick>
                         </item>
                         <item id="5">
                             <label>$LOCALIZE[40033]</label>
-                            <onclick/>
+                            <onclick>noop</onclick>
                         </item>
                         <item id="7">
                             <label>$LOCALIZE[40044]</label>
-                            <onclick/>
+                            <onclick>noop</onclick>
                         </item>
                         <item id="3">
                             <label>$LOCALIZE[40005]</label>
-                            <onclick/>
+                            <onclick>noop</onclick>
                         </item>
                         <item id="9">
                             <label>$LOCALIZE[40181]</label>
-                            <onclick/>
+                            <onclick>noop</onclick>
                         </item>
                         <item id="6">
                             <label>$LOCALIZE[40039]</label>
-                            <onclick/>
+                            <onclick>noop</onclick>
                         </item>
                         <item id="8">
                             <label>$LOCALIZE[40047]</label>
-                            <onclick/>
+                            <onclick>noop</onclick>
                         </item>
                     </content>
                 </control>

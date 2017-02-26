@@ -6825,7 +6825,7 @@
 		<content>
 			<item>
 				<icon>resource://resource.images.weathericons.default/na.png</icon>
-				<onclick/>
+				<onclick>noop</onclick>
 				<visible>String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
 			</item>
 			<include content="WeatherHourlyItem">
@@ -6864,7 +6864,7 @@
 		<content>
 			<item>
 				<icon>resource://resource.images.weathericons.default/na.png</icon>
-				<onclick/>
+				<onclick>noop</onclick>
 				<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
 			</item>
 			<include content="WeatherDailyItem">
@@ -6921,7 +6921,7 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].ShortDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].FanartCode)]</property>
 			<thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</thumb>
-			<onclick/>
+			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook))</visible>
 			<visible>IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
@@ -6934,7 +6934,7 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].ShortDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].FanartCode)]</property>
 			<thumb>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</thumb>
-			<onclick/>
+			<onclick>noop</onclick>
 			<visible>!IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 	</include>
@@ -6949,7 +6949,7 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]</property>
 			<thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</thumb>
-			<onclick/>
+			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook))</visible>
 			<visible>IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
@@ -6963,7 +6963,7 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Daily.$PARAM[item_index].ShortDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]</property>
 			<thumb>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</thumb>
-			<onclick/>
+			<onclick>noop</onclick>
 			<visible>!IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 	</include>
@@ -6973,7 +6973,7 @@
 			<label2>$INFO[Window(weather).Property(Map.$PARAM[item_id].Legend)]</label2>
 			<icon>$INFO[Window(weather).Property(Map.$PARAM[item_id].Area)]</icon>
 			<property name="Layer">$INFO[Window(weather).Property(Map.$PARAM[item_id].Layer)]</property>
-			<onclick/>
+			<onclick>noop</onclick>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window(weather).Property(Map.$PARAM[item_id].Area)) + !String.IsEmpty(Window(weather).Property(Map.IsFetched))</visible>
 		</item>
 	</include>
@@ -7004,7 +7004,7 @@
 						<onfocus>SetFocus(22001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(22200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(22100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7036,7 +7036,7 @@
 						<onfocus>SetFocus(18001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(18200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(18100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7113,7 +7113,7 @@
 						<onfocus>SetFocus(19001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19200).NumItems,0)">SetFocus(19200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19100).NumItems,0)">SetFocus(19100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7195,7 +7195,7 @@
 						<onfocus>SetFocus(21001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21200).NumItems,0)">SetFocus(21200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21100).NumItems,0)">SetFocus(21100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7271,7 +7271,7 @@
 						<onfocus>SetFocus(17001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17200).NumItems,0)">SetFocus(17200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17100).NumItems,0)">SetFocus(17100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7339,7 +7339,7 @@
 						<onfocus>SetFocus(6001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6200).NumItems,0)">SetFocus(6200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6100).NumItems,0)">SetFocus(6100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7419,7 +7419,7 @@
 						<label></label>
 						<onfocus>SetFocus(7001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(7100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7503,7 +7503,7 @@
 						<label></label>
 						<onfocus>SetFocus(8001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(8100).NumItems,0)">SetFocus(8100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7612,7 +7612,7 @@
 						<label></label>
 						<onfocus>SetFocus(11001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(11100).NumItems,0)">SetFocus(11100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7667,7 +7667,7 @@
 						<label></label>
 						<onfocus>SetFocus(12001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(12100).NumItems,0)">SetFocus(12100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7698,7 +7698,7 @@
 						<label></label>
 						<onfocus>SetFocus(16001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(16100).NumItems,0)">SetFocus(16100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7771,7 +7771,7 @@
 						<label></label>
 						<onfocus>SetFocus(13001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(13100).NumItems,0)">SetFocus(13100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -7845,7 +7845,7 @@
 						<onfocus>SetFocus(15001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(15100).NumItems,0)">SetFocus(15100)</onfocus>
 						<onfocus condition="String.IsEmpty(Weather.Plugin)">SetFocus(15300)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -8039,7 +8039,7 @@
 						<label></label>
 						<onfocus>SetFocus(10001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(10100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -8841,7 +8841,7 @@
 						<onfocus>SetFocus(5001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(5200).NumItems,0)">SetFocus(5200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(5100).NumItems,0)">SetFocus(5100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -8967,7 +8967,7 @@
 						<onfocus>SetFocus(22001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(22200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(22100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -8999,7 +8999,7 @@
 						<onfocus>SetFocus(18001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(18200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(18100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9076,7 +9076,7 @@
 						<onfocus>SetFocus(19001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19200).NumItems,0)">SetFocus(19200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19100).NumItems,0)">SetFocus(19100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9158,7 +9158,7 @@
 						<onfocus>SetFocus(21001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21200).NumItems,0)">SetFocus(21200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21100).NumItems,0)">SetFocus(21100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9234,7 +9234,7 @@
 						<onfocus>SetFocus(17001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17200).NumItems,0)">SetFocus(17200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17100).NumItems,0)">SetFocus(17100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9302,7 +9302,7 @@
 						<onfocus>SetFocus(6001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6200).NumItems,0)">SetFocus(6200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6100).NumItems,0)">SetFocus(6100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9382,7 +9382,7 @@
 						<label></label>
 						<onfocus>SetFocus(7001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(7100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9466,7 +9466,7 @@
 						<label></label>
 						<onfocus>SetFocus(8001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(8100).NumItems,0)">SetFocus(8100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9575,7 +9575,7 @@
 						<label></label>
 						<onfocus>SetFocus(11001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(11100).NumItems,0)">SetFocus(11100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9630,7 +9630,7 @@
 						<label></label>
 						<onfocus>SetFocus(12001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(12100).NumItems,0)">SetFocus(12100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9661,7 +9661,7 @@
 						<label></label>
 						<onfocus>SetFocus(16001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(16100).NumItems,0)">SetFocus(16100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9734,7 +9734,7 @@
 						<label></label>
 						<onfocus>SetFocus(13001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(13100).NumItems,0)">SetFocus(13100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -9808,7 +9808,7 @@
 						<onfocus>SetFocus(15001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(15100).NumItems,0)">SetFocus(15100)</onfocus>
 						<onfocus condition="String.IsEmpty(Weather.Plugin)">SetFocus(15300)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -10002,7 +10002,7 @@
 						<label></label>
 						<onfocus>SetFocus(10001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(10100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -10770,7 +10770,7 @@
 						<onfocus>SetFocus(22001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(22200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(22100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -10825,7 +10825,7 @@
 						<onfocus>SetFocus(18001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18200).NumItems,0)">SetFocus(18200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(18100).NumItems,0)">SetFocus(18100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -10928,7 +10928,7 @@
 						<onfocus>SetFocus(19001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19200).NumItems,0)">SetFocus(19200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(19100).NumItems,0)">SetFocus(19100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11036,7 +11036,7 @@
 						<onfocus>SetFocus(21001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21200).NumItems,0)">SetFocus(21200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(21100).NumItems,0)">SetFocus(21100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11138,7 +11138,7 @@
 						<onfocus>SetFocus(17001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17200).NumItems,0)">SetFocus(17200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(17100).NumItems,0)">SetFocus(17100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11219,7 +11219,7 @@
 						<onfocus>SetFocus(6001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6200).NumItems,0)">SetFocus(6200)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(6100).NumItems,0)">SetFocus(6100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11312,7 +11312,7 @@
 						<label></label>
 						<onfocus>SetFocus(7001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(7100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11412,7 +11412,7 @@
 						<label></label>
 						<onfocus>SetFocus(8001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(8100).NumItems,0)">SetFocus(8100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11537,7 +11537,7 @@
 						<label></label>
 						<onfocus>SetFocus(11001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(11100).NumItems,0)">SetFocus(11100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11581,7 +11581,7 @@
 						<label></label>
 						<onfocus>SetFocus(12001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(12100).NumItems,0)">SetFocus(12100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11612,7 +11612,7 @@
 						<label></label>
 						<onfocus>SetFocus(16001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(16100).NumItems,0)">SetFocus(16100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11655,7 +11655,7 @@
 						<label></label>
 						<onfocus>SetFocus(13001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(13100).NumItems,0)">SetFocus(13100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11726,7 +11726,7 @@
 						<onfocus>SetFocus(15001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(15100).NumItems,0)">SetFocus(15100)</onfocus>
 						<onfocus condition="String.IsEmpty(Weather.Plugin)">SetFocus(15300)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>
@@ -11822,7 +11822,7 @@
 						<label></label>
 						<onfocus>SetFocus(10001)</onfocus>
 						<onfocus condition="Integer.IsGreater(Container(7100).NumItems,0)">SetFocus(10100)</onfocus>
-						<onclick/>
+						<onclick>noop</onclick>
 						<texturefocus></texturefocus>
 						<texturenofocus></texturenofocus>
 					</control>

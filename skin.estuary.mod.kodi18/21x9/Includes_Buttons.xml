@@ -44,7 +44,7 @@
                 <font>font10</font>
                 <texturefocus></texturefocus>
                 <texturenofocus></texturenofocus>
-                <onclick/>
+                <onclick>noop</onclick>
                 <label>$PARAM[label]</label>
                 <textcolor>$PARAM[textcolor]</textcolor>
                 <visible>$PARAM[visible]</visible>
