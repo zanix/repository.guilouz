@@ -4,6 +4,7 @@
 • Fix missing clearlogos with moviesets widget
 • Fix in musicvideo views
 • Drop support for using hyphen as none value
+• Minnor fixes
 
 [B]2.0.5[/B]
 • Add info button on video OSD

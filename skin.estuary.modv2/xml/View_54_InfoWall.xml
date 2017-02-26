@@ -163,7 +163,7 @@
 				<width>160</width>
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
-				<visible>!ListItem.IsParentFolder + !String.IsEqual(listitem.dbtype,episode)</visible>
+				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]]</visible>
 			</control>
 			<control type="label">
 				<left>31</left>
@@ -173,7 +173,7 @@
 				<font>font20_title</font>
 				<shadowcolor>text_shadow</shadowcolor>
 				<align>right</align>
-				<visible>!String.IsEqual(listitem.dbtype,episode)</visible>
+				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
