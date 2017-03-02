@@ -1,8 +1,0 @@
-[B]1.0.2[/B]
-• Fix xml file
-
-[B]1.0.1[/B]
-• Fix disc fanart
-
-[B]1.0.0[/B]
-• Initial release

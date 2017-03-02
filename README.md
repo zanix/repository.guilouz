@@ -10,9 +10,6 @@
 ### • Changes for Estuary MOD V2 for Kodi 18 Leia : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/skin.estuary.modv2/changelog.txt)
 
 
-### • Changes for Skin Backgrounds for Estuary MOD V2 : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.skinbackgrounds.estuarymod/changelog.txt)
-
-
 ### • Changes for Movie Genres Icons for Estuary MOD V2 : [Here](https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/resource.images.moviegenreicons.estuarymod/changelog.txt)
 
 
