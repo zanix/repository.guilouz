@@ -33,7 +33,7 @@
 					<control type="button" id="11112">
 						<label> ∟$LOCALIZE[31157]</label>
 						<include>DefaultSettingButton</include>
-						<onclick>Action(close)</onclick>
+						<onclick>Dialog.Close(all,true)</onclick>
 						<onclick condition="System.HasAddon(plugin.library.node.editor)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=video,return)</onclick>
 						<onclick condition="!System.HasAddon(plugin.library.node.editor)">InstallAddon(plugin.library.node.editor)</onclick>
 						<enable>!Skin.HasSetting(hide_tvshowscategory)</enable>

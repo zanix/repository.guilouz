@@ -561,10 +561,7 @@ msgctxt "#31130"
 msgid "Main menu-related settings: Configure the home screen to your likings."
 msgstr ""
 
-#: /xml/SkinSettings.xml
-msgctxt "#31131"
-msgid "Main menu fanarts pack"
-msgstr ""
+#: Empty string 31131
 
 #: /xml/DialogSeekBar.xml
 msgctxt "#31134"
@@ -726,14 +723,11 @@ msgctxt "#40004"
 msgid "Hide main menu when selecting widgets"
 msgstr ""
 
-#: /xml/SkinSettings.xml
-msgctxt "#40005"
-msgid "Item"
-msgstr ""
+#: Empty string 40005
 
 #: /xml/SkinSettings.xml
 msgctxt "#40006"
-msgid "Reset display of menu items"
+msgid "Reset main menu settings"
 msgstr ""
 
 #: /xml/SkinSettings.xml
@@ -1193,47 +1187,47 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40098"
-msgid "Manage widgets from 'Movies' item"
+msgid "Manage items from 'Movies' widget"
 msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40099"
-msgid "Manage widgets from 'TV shows' item"
+msgid "Manage items from 'TV shows' widget"
 msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40100"
-msgid "Manage widgets from 'Music' item"
+msgid "Manage items from 'Music' widget"
 msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40101"
-msgid "Manage widgets from 'Music videos' item"
+msgid "Manage items from 'Music videos' widget"
 msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40102"
-msgid "Manage widgets from 'TV' item"
+msgid "Manage items from 'TV' widget"
 msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40103"
-msgid "Manage widgets from 'Radio' item"
+msgid "Manage items from 'Radio' widget"
 msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40104"
-msgid "Manage widgets from 'Add-ons' item"
+msgid "Manage items from 'Add-ons' widget"
 msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40105"
-msgid "Manage widgets from 'Videos' item"
+msgid "Manage items from 'Videos' widget"
 msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40106"
-msgid "Manage display of menu items"
+msgid "Customize main menu"
 msgstr ""
 
 #: /xml/SkinSettings.xml
@@ -1334,4 +1328,94 @@ msgstr ""
 #: /xml/Custom_1124_SettingsTVShowsWidgets.xml
 msgctxt "#40126"
 msgid "Hide thumbs episodes to avoid spoilers"
+msgstr ""
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40127"
+msgid "Preconfigured widgets"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40128"
+msgid "Go up item"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40129"
+msgid "Go down item"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40130"
+msgid "Add item"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40131"
+msgid "Delete item"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40132"
+msgid "Disable item"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40133"
+msgid "Enable item"
+msgstr ""
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40134"
+msgid "Personalized widget"
+msgstr ""
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40135"
+msgid "Skin Helper Service Widgets"
+msgstr ""
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40136"
+msgid "Set type of widgets"
+msgstr ""
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40137"
+msgid "Set widget appearence"
+msgstr ""
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40138"
+msgid "Posters"
+msgstr ""
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40139"
+msgid "Thumbs"
+msgstr ""
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40140"
+msgid "Squares"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40141"
+msgid "Enable background of 'Power options' shortcut"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40142"
+msgid "Enable background of 'Settings' shortcut"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40143"
+msgid "Enable background of 'Search...' shortcut"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40144"
+msgid "Background"
 msgstr ""

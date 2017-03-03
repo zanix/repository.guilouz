@@ -561,10 +561,7 @@ msgctxt "#31130"
 msgid "Main menu-related settings: Configure the home screen to your likings."
 msgstr "Paramètres relatifs au menu principal. Configurez le menu d'accueil comme désiré."
 
-#: /xml/SkinSettings.xml
-msgctxt "#31131"
-msgid "Main menu fanarts pack"
-msgstr "Pack de Fanarts pour le menu principal"
+#: Empty string 31131
 
 #: /xml/DialogSeekBar.xml
 msgctxt "#31134"
@@ -726,15 +723,12 @@ msgctxt "#40004"
 msgid "Hide main menu when selecting widgets"
 msgstr "Masquer le menu principal lors de la sélection des widgets"
 
-#: /xml/Custom_1131_SettingsHomeMenu.xml
-msgctxt "#40005"
-msgid "Item"
-msgstr "Elément"
+#: Empty string 40005
 
 #: /xml/SkinSettings.xml
 msgctxt "#40006"
-msgid "Reset display of menu items"
-msgstr "Réinitialiser l'affichage des éléments du menu"
+msgid "Reset main menu settings"
+msgstr "Réinitialiser les paramètres du menu principal"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40007"
@@ -1193,48 +1187,48 @@ msgstr "Masquer le widget"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40098"
-msgid "Manage widgets from 'Movies' item"
-msgstr "Gérer les widgets de l'élément 'Films'"
+msgid "Manage items from 'Movies' widget"
+msgstr "Gérer les éléments du widget 'Films'"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40099"
-msgid "Manage widgets from 'TV shows' item"
-msgstr "Gérer les widgets de l'élément 'Séries TV'"
+msgid "Manage items from 'TV shows' widget"
+msgstr "Gérer les éléments du widget 'Séries TV'"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40100"
-msgid "Manage widgets from 'Music' item"
-msgstr "Gérer les widgets de l'élément 'Musique'"
+msgid "Manage items from 'Music' widget"
+msgstr "Gérer les éléments du widget 'Musique'"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40101"
-msgid "Manage widgets from 'Music videos' item"
-msgstr "Gérer les widgets de l'élément 'Clips Musicaux'"
+msgid "Manage items from 'Music videos' widget"
+msgstr "Gérer les éléments du widget 'Clips Musicaux'"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40102"
-msgid "Manage widgets from 'TV' item"
-msgstr "Gérer les widgets de l'élément 'TV'"
+msgid "Manage items from 'TV' widget"
+msgstr "Gérer les éléments du widget 'TV'"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40103"
-msgid "Manage widgets from 'Radio' item"
-msgstr "Gérer les widgets de l'élément 'Radio'"
+msgid "Manage items from 'Radio' widget"
+msgstr "Gérer les éléments du widget 'Radio'"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40104"
-msgid "Manage widgets from 'Add-ons' item"
-msgstr "Gérer les widgets de l'élément 'Extensions'"
+msgid "Manage items from 'Add-ons' widget"
+msgstr "Gérer les éléments du widget 'Extensions'"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40105"
-msgid "Manage widgets from 'Videos' item"
-msgstr "Gérer les widgets de l'élément 'Vidéos'"
+msgid "Manage items from 'Videos' widget"
+msgstr "Gérer les éléments du widget 'Vidéos'"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40106"
-msgid "Manage display of menu items"
-msgstr "Gérer l'affichage des éléments du menu"
+msgid "Customize main menu"
+msgstr "Personnaliser le menu principal"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40107"
@@ -1335,3 +1329,93 @@ msgstr "Style du menu d'alimentation"
 msgctxt "#40126"
 msgid "Hide thumbs episodes to avoid spoilers"
 msgstr "Masquer les vignettes des épisodes pour éviter les spoilers"
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40127"
+msgid "Preconfigured widgets"
+msgstr "Widgets préconfigurés"
+
+#: /xml/Variables.xml
+msgctxt "#40128"
+msgid "Go up item"
+msgstr "Monter l'élément"
+
+#: /xml/Variables.xml
+msgctxt "#40129"
+msgid "Go down item"
+msgstr "Descendre l'élément"
+
+#: /xml/Variables.xml
+msgctxt "#40130"
+msgid "Add item"
+msgstr "Ajouter un élément"
+
+#: /xml/Variables.xml
+msgctxt "#40131"
+msgid "Delete item"
+msgstr "Supprimer l'élément"
+
+#: /xml/Variables.xml
+msgctxt "#40132"
+msgid "Disable item"
+msgstr "Désactiver l'élément"
+
+#: /xml/Variables.xml
+msgctxt "#40133"
+msgid "Enable item"
+msgstr "Activer l'élément"
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40134"
+msgid "Personalized widget"
+msgstr "Widget personnalisé"
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40135"
+msgid "Skin Helper Service Widgets"
+msgstr "Widgets Skin Helper Service"
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40136"
+msgid "Set type of widgets"
+msgstr "Définir le type des widgets"
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40137"
+msgid "Set widget appearence"
+msgstr "Définir l'apparence du widget"
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40138"
+msgid "Posters"
+msgstr "Posters"
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40139"
+msgid "Thumbs"
+msgstr "Vignettes"
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40140"
+msgid "Squares"
+msgstr "Carrés"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40141"
+msgid "Enable background of 'Power options' shortcut"
+msgstr "Activer l'arrière-plan du raccourci 'Options d'alimentation'"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40142"
+msgid "Enable background of 'Settings' shortcut"
+msgstr "Activer l'arrière-plan du raccourci 'Paramètres'"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40143"
+msgid "Enable background of 'Search...' shortcut"
+msgstr "Activer l'arrière-plan du raccourci 'Rechercher...'"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40144"
+msgid "Background"
+msgstr "Arrière-plan"

@@ -19,6 +19,7 @@
 	<include file="View_504_ThumbsWall.xml" />
 	<include file="View_505_ThumbsInfoWall.xml" />
 	<include file="Variables.xml" />
+	<include file="script-skinshortcuts-includes.xml"/>
 	<constant name="DepthDialog">0.50</constant>
 	<constant name="DepthDialog+">0.52</constant>
 	<constant name="DepthDialog-">0.48</constant>
@@ -988,6 +989,7 @@
 					<animation effect="slide" end="0,16" time="200" reversible="true" condition="String.IsEmpty(Control.GetLabel(18900))">Conditional</animation>
 					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(701)">Conditional</animation>
 					<animation effect="slide" end="-70,0" time="200" reversible="true" condition="!Skin.HasSetting(touchmode) + Window.IsVisible(SkinSettings.xml)">Conditional</animation>
+					<animation effect="slide" end="70,0" time="200" reversible="true" condition="!Skin.HasSetting(touchmode) + Window.IsVisible(script-skinshortcuts.xml)">Conditional</animation>
 					<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml)</visible>
 					<control type="label">
 						<label>$PARAM[breadcrumbs_label]</label>

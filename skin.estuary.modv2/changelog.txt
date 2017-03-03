@@ -1,3 +1,10 @@
+[B]2.1.0[/B]
+• Add support for Skin Shortcuts addon to customize home menu and widgets
+• Add support for thumbnails with NextUp Service addon
+• Add support for Videolyrics v2 (thanks to manfeed)
+• Minnor fixes
+• Special Thanks to Gracus and ferent for reporting issue
+
 [B]2.0.6[/B]
 • Add two views for power menu
 • Add possibility to hide thumbs episodes to avoid spoilers

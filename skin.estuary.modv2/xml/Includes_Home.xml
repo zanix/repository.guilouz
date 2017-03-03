@@ -1,113 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="HomeMenuItem">
-		<param name="menuitem_number" />
-		<definition>
-			<item>
-				<label>$LOCALIZE[342]</label>
-				<onclick condition="Library.HasContent(movies) + Skin.HasSetting(hide_moviescategory)">ActivateWindow(Videos,videodb://movies/,return)</onclick>
-				<onclick condition="Library.HasContent(movies) + !Skin.HasSetting(hide_moviescategory)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
-				<onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
-				<property name="menu_id">$NUMBER[5000]</property>
-				<thumb>icons/sidemenu/movies.png</thumb>
-				<property name="id">movies</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],1)</visible>
-			</item>
-			<item>
-				<label>$LOCALIZE[20343]</label>
-				<onclick condition="Library.HasContent(tvshows) + Skin.HasSetting(hide_tvshowscategory)">ActivateWindow(Videos,videodb://tvshows/,return)</onclick>
-				<onclick condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_tvshowscategory)">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
-				<onclick condition="!Library.HasContent(tvshows)">ActivateWindow(Videos,sources://video/,return)</onclick>
-				<property name="menu_id">$NUMBER[6000]</property>
-				<thumb>icons/sidemenu/tv.png</thumb>
-				<property name="id">tvshows</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],2)</visible>
-			</item>
-			<item>
-				<label>$LOCALIZE[2]</label>
-				<onclick condition="Skin.HasSetting(hide_musiccategory)">ActivateWindow(Music,root,return)</onclick>
-				<onclick condition="!Skin.HasSetting(hide_musiccategory)">ActivateWindow(Music,musicdb://artists/,return)</onclick>
-				<property name="menu_id">$NUMBER[7000]</property>
-				<thumb>icons/sidemenu/music.png</thumb>
-				<property name="id">music</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],3)</visible>
-			</item>
-			<item>
-				<label>$LOCALIZE[20389]</label>
-				<property name="menu_id">$NUMBER[16000]</property>
-				<onclick condition="Skin.HasSetting(hide_musicvideocategory)">ActivateWindow(Videos,musicvideos,return)</onclick>
-				<onclick condition="!Skin.HasSetting(hide_musicvideocategory)">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
-				<thumb>icons/sidemenu/musicvideos.png</thumb>
-				<property name="id">musicvideos</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],4)</visible>
-			</item>
-			<item>
-				<label>$LOCALIZE[19020]</label>
-				<property name="menu_id">$NUMBER[12000]</property>
-				<onclick>ActivateWindow(TVChannels)</onclick>
-				<thumb>icons/sidemenu/livetv.png</thumb>
-				<property name="id">livetv</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],5)</visible>
-			</item>
-			<item>
-				<label>$LOCALIZE[19021]</label>
-				<property name="menu_id">$NUMBER[13000]</property>
-				<onclick>ActivateWindow(RadioChannels)</onclick>
-				<thumb>icons/sidemenu/radio.png</thumb>
-				<property name="id">radio</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],6)</visible>
-			</item>
-			<item>
-				 <label>$LOCALIZE[15016]</label>
-				 <property name="menu_id">$NUMBER[17000]</property>
-				 <onclick>ActivateWindow(Games)</onclick>
-	   			<thumb>icons/sidemenu/games.png</thumb>
-				<property name="id">games</property>
-				<visible>System.GetBool(gamesgeneral.enable) + String.IsEqual($PARAM[menuitem_number],7)</visible>
-			</item>
-			<item>
-				<label>$LOCALIZE[24001]</label>
-				<property name="menu_id">$NUMBER[8000]</property>
-				<onclick>ActivateWindow(1100)</onclick>
-				<thumb>icons/sidemenu/addons.png</thumb>
-				<property name="id">addons</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],8)</visible>
-			</item>
-			<item>
-				<label>$LOCALIZE[1]</label>
-				<onclick>ActivateWindow(Pictures)</onclick>
-				<property name="menu_id">$NUMBER[4000]</property>
-				<thumb>icons/sidemenu/pictures.png</thumb>
-				<property name="id">pictures</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],9)</visible>
-			</item>
-			<item>
-				<label>$LOCALIZE[3]</label>
-				<onclick>ActivateWindow(Videos,root)</onclick>
-				<property name="menu_id">$NUMBER[11000]</property>
-				<thumb>icons/sidemenu/videos.png</thumb>
-				<property name="id">video</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],10)</visible>
-			</item>
-			<item>
-				<label>$LOCALIZE[10134]</label>
-				<onclick>ActivateWindow(favourites)</onclick>
-				<property name="menu_id">$NUMBER[14000]</property>
-				<thumb>icons/sidemenu/favourites.png</thumb>
-				<property name="id">favorites</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],11)</visible>
-			</item>
-			<item>
-				<label>$LOCALIZE[8]</label>
-				<onclick condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(Weather)</onclick>
-				<onclick condition="String.IsEmpty(Weather.Plugin)">ReplaceWindow(servicesettings,weather)</onclick>
-				<property name="menu_id">$NUMBER[15000]</property>
-				<thumb>icons/sidemenu/weather.png</thumb>
-				<property name="id">weather</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],12)</visible>
-			</item>
-		</definition>
-	</include>
 	<include name="NotHideMainMenuWithWidgets">
 		<left>462</left>
 	</include>
@@ -175,19 +67,23 @@
 		</control>
 	</include>
 	<include name="WidgetListPoster">
+		<param name="visible">true</param>
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="posy" value="250"/>
+				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
 				<top>115</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<visible>$PARAM[visible]</visible>
 				<right>0</right>
 				<height>503</height>
 				<include content="WidgetListCommon">
@@ -408,10 +304,12 @@
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="posy" value="200"/>
+				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
@@ -476,10 +374,12 @@
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<include content="BusyListSpinner">
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="posy" value="200"/>
+				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
 				<left>0</left>
