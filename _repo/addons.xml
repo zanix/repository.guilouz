@@ -50,40 +50,6 @@
 	</extension>
 </addon>
 
-<addon id="resource.images.skinbackgrounds.estuarymod" name="Skin Backgrounds for Estuary MOD V2" version="1.0.2" provider-name="Guilouz">
-	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
-	<requires>
-		<import addon="kodi.resource" version="1.0.0"/>
-	</requires>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Skin backgrounds Pack for Estuary MOD V2</summary>
-		<description lang="en">Skin backgrounds Pack for main menu.</description>
-		<summary lang="fr">Pack d'arrière-plans pour Estuary MOD V2</summary>
-		<description lang="fr">Pack d'arrière-plans pour le menu principal.</description>
-		<platform>all</platform>
-		<source>https://github.com/Guilouz/resource.images.skinbackgrounds.estuarymod</source>
-		<assets>
-			<icon>resources_/icon.png</icon>
-			<fanart>resources_/fanart.jpg</fanart>
-			<screenshot>resources_/screenshot-01.jpg</screenshot>
-			<screenshot>resources_/screenshot-02.jpg</screenshot>
-			<screenshot>resources_/screenshot-03.jpg</screenshot>
-			<screenshot>resources_/screenshot-04.jpg</screenshot>
-			<screenshot>resources_/screenshot-05.jpg</screenshot>
-			<screenshot>resources_/screenshot-06.jpg</screenshot>
-			<screenshot>resources_/screenshot-07.jpg</screenshot>
-			<screenshot>resources_/screenshot-08.jpg</screenshot>
-			<screenshot>resources_/screenshot-09.jpg</screenshot>
-			<screenshot>resources_/screenshot-10.jpg</screenshot>
-			<screenshot>resources_/screenshot-11.jpg</screenshot>
-			<screenshot>resources_/screenshot-12.jpg</screenshot>
-			<screenshot>resources_/screenshot-13.jpg</screenshot>
-			<screenshot>resources_/screenshot-14.jpg</screenshot>
-		</assets>
-		<news>[B]1.0.2[/B][CR]• Fix xml file[CR][CR][B]1.0.1[/B][CR]• Fix disc fanart[CR][CR][B]1.0.0[/B][CR]• Initial release[CR][CR]</news>
-	</extension>
-</addon>
-
 <addon id="skin.estuary.mod" version="1.7.11" name="Estuary MOD (KODI 17)" provider-name="Guilouz">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
@@ -170,7 +136,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.estuary.modv2" version="2.0.6" name="Estuary MOD V2 (KODI 18)" provider-name="Guilouz">
+<addon id="skin.estuary.modv2" version="2.1.0" name="Estuary MOD V2 (KODI 18)" provider-name="Guilouz">
 	<requires>
 		<import addon="xbmc.gui" version="5.13.0"/>
 	</requires>
@@ -206,7 +172,7 @@
 				<screenshot>resources/screenshot-09.jpg</screenshot>
 				<screenshot>resources/screenshot-10.jpg</screenshot>
 			</assets>
-			<news>[B]2.0.6[/B][CR]• Add two views for power menu[CR]• Add possibility to hide thumbs episodes to avoid spoilers[CR]• Fix banner on music visualisation when next tracks are not available[CR]• Fix missing clearlogos with moviesets widget[CR]• Fix in musicvideo views[CR]• Fix label with moviesets thumbnails[CR]• Enable landscape views for seasons[CR]• Drop support for using hyphen as none value[CR]• Minnor fixes[CR][CR][B]2.0.5[/B][CR]• Add info button on video OSD[CR]• Add language and subtitles language on fullscreen info[CR]• Add button to switch between all/watched/unwatched recordings[CR]• Replace rating badge[CR]• Fix Youtube call[CR]• Minnor fixes[CR][CR][B]2.0.4[/B][CR]• Add new 'InfoWall (thumbnails)' view[CR]• Add new 'Wall (thumbnails)' view[CR]• Add extrafanarts support for 'Fanart' view[CR]• Add icon when item is resumable[CR]• Hide OSD directly after pause[CR]• Fix esthetic appearance[CR]• Minnor fixes[CR][CR][B]2.0.3[/B][CR]• Add Videolyrics (credits to manfeed)[CR]• Add new 'Next episodes to see' widget[CR]• Replace music videos widgets[CR]• Fix color with lyrics[CR]• Fix banner on music fullscreen[CR]• Fix music visualisation[CR]• Fix esthetic appearance[CR][CR][B]2.0.2[/B][CR]• Fix selecting widgets[CR][CR][B]2.0.1[/B][CR]• Add possibility to reorder main menu items[CR]• Add possibility to reset main menu items back to default[CR]• Add possibility to show smaller icons for 'Categories' widgets[CR]• Add studios flag icons for movies widgets[CR]• Add shortcuts on power menu to update video/music library[CR]• Fix colordiffuse for studios and labels flag icons[CR]• Minnor fixes[CR][CR][B]2.0.0[/B][CR]• Initial release[CR]• Add possibility to hide main menu when selecting widgets[CR]• Add possibility to disable each widget[CR]• Add possibility to hide watched items from recently added widgets[CR]• Add possibility to hide episodes plots to avoid spoilers[CR]• Add possibility to change skin color[CR]• Add possibility to change background color[CR]• Add possibility to change pattern color[CR]• Add possibility to change background opacity[CR]• Add possibility to top and bottom bars opacity[CR]• Add possibility to change weather icons pack[CR]• Add possibility to change studios icons pack[CR]• Add possibility to change genres icons pack[CR]• Add possibility to set splash screen (photo, video or music)[CR]• Add possibility to set number of items to display on widgets[CR]• Add possibility to backup/restore skin settings[CR]• Add possibility to disable zoom effect[CR]• Add possibility to enable/disable music visualisation effects on background[CR]• Add possibility to enable/disable video on background[CR]• Add possibility to hide notification popup during playback[CR]• Add possibility to show music visualisation screen when playing song[CR]• Add possibility to ExtraFanarts on music visualisation screen[CR]• Add possibility to animate Fanart/ExtraFanarts on music visualisation screen[CR]• Add possibility to add music visualisation effects on music visualisation screen[CR]• Add possibility to disable Kodi screensaver on music visualisation screen[CR]• Add possibility to start Artwork Downloader at startup[CR]• Add next tracks on music visualisation screen[CR]• Add actors list on video OSD[CR]• Add more buttons on OSD[CR]• Add more flag icons[CR]• Add next airing episodes widget for tv shows[CR]• Add horizontal view for PVR Guide[CR]• Add support for records labels icons pack[CR]• Add support for ExtraFanarts[CR]• Add support for animated posters[CR]• Add support for Clearlogos[CR]• Add support for CDArts[CR]• Add support for Artwork Downloader addon[CR]• Add support for NextUp Notification addon[CR]• Add support for CU LRC Lyrics addon[CR]• Add support for RSS Editor addon[CR]• Add support for Global Search addon[CR]• Add support for TV Show Next Aired addon[CR]• Add support for Extended Info addon[CR]• Add support for LibreELEC settings addon[CR]• Add support for Kiosk mode[CR]• Changes on views[CR]• Changes on volume bar[CR]• Some fixes[CR][CR]</news>
+			<news>[B]2.1.0[/B][CR]• Add support for Skin Shortcuts addon to customize home menu and widgets[CR]• Add support for thumbnails with NextUp Service addon[CR]• Add support for Videolyrics v2 (thanks to manfeed)[CR]• Minnor fixes[CR]• Special Thanks to Gracus and ferent for reporting issue[CR][CR][B]2.0.6[/B][CR]• Add two views for power menu[CR]• Add possibility to hide thumbs episodes to avoid spoilers[CR]• Fix banner on music visualisation when next tracks are not available[CR]• Fix missing clearlogos with moviesets widget[CR]• Fix in musicvideo views[CR]• Fix label with moviesets thumbnails[CR]• Enable landscape views for seasons[CR]• Drop support for using hyphen as none value[CR]• Minnor fixes[CR][CR][B]2.0.5[/B][CR]• Add info button on video OSD[CR]• Add language and subtitles language on fullscreen info[CR]• Add button to switch between all/watched/unwatched recordings[CR]• Replace rating badge[CR]• Fix Youtube call[CR]• Minnor fixes[CR][CR][B]2.0.4[/B][CR]• Add new 'InfoWall (thumbnails)' view[CR]• Add new 'Wall (thumbnails)' view[CR]• Add extrafanarts support for 'Fanart' view[CR]• Add icon when item is resumable[CR]• Hide OSD directly after pause[CR]• Fix esthetic appearance[CR]• Minnor fixes[CR][CR][B]2.0.3[/B][CR]• Add Videolyrics (credits to manfeed)[CR]• Add new 'Next episodes to see' widget[CR]• Replace music videos widgets[CR]• Fix color with lyrics[CR]• Fix banner on music fullscreen[CR]• Fix music visualisation[CR]• Fix esthetic appearance[CR][CR][B]2.0.2[/B][CR]• Fix selecting widgets[CR][CR][B]2.0.1[/B][CR]• Add possibility to reorder main menu items[CR]• Add possibility to reset main menu items back to default[CR]• Add possibility to show smaller icons for 'Categories' widgets[CR]• Add studios flag icons for movies widgets[CR]• Add shortcuts on power menu to update video/music library[CR]• Fix colordiffuse for studios and labels flag icons[CR]• Minnor fixes[CR][CR][B]2.0.0[/B][CR]• Initial release[CR]• Add possibility to hide main menu when selecting widgets[CR]• Add possibility to disable each widget[CR]• Add possibility to hide watched items from recently added widgets[CR]• Add possibility to hide episodes plots to avoid spoilers[CR]• Add possibility to change skin color[CR]• Add possibility to change background color[CR]• Add possibility to change pattern color[CR]• Add possibility to change background opacity[CR]• Add possibility to top and bottom bars opacity[CR]• Add possibility to change weather icons pack[CR]• Add possibility to change studios icons pack[CR]• Add possibility to change genres icons pack[CR]• Add possibility to set splash screen (photo, video or music)[CR]• Add possibility to set number of items to display on widgets[CR]• Add possibility to backup/restore skin settings[CR]• Add possibility to disable zoom effect[CR]• Add possibility to enable/disable music visualisation effects on background[CR]• Add possibility to enable/disable video on background[CR]• Add possibility to hide notification popup during playback[CR]• Add possibility to show music visualisation screen when playing song[CR]• Add possibility to ExtraFanarts on music visualisation screen[CR]• Add possibility to animate Fanart/ExtraFanarts on music visualisation screen[CR]• Add possibility to add music visualisation effects on music visualisation screen[CR]• Add possibility to disable Kodi screensaver on music visualisation screen[CR]• Add possibility to start Artwork Downloader at startup[CR]• Add next tracks on music visualisation screen[CR]• Add actors list on video OSD[CR]• Add more buttons on OSD[CR]• Add more flag icons[CR]• Add next airing episodes widget for tv shows[CR]• Add horizontal view for PVR Guide[CR]• Add support for records labels icons pack[CR]• Add support for ExtraFanarts[CR]• Add support for animated posters[CR]• Add support for Clearlogos[CR]• Add support for CDArts[CR]• Add support for Artwork Downloader addon[CR]• Add support for NextUp Notification addon[CR]• Add support for CU LRC Lyrics addon[CR]• Add support for RSS Editor addon[CR]• Add support for Global Search addon[CR]• Add support for TV Show Next Aired addon[CR]• Add support for Extended Info addon[CR]• Add support for LibreELEC settings addon[CR]• Add support for Kiosk mode[CR]• Changes on views[CR]• Changes on volume bar[CR]• Some fixes[CR][CR]</news>
 	</extension>
 </addon>
 </addons>
