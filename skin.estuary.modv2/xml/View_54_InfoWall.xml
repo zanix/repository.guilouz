@@ -429,9 +429,20 @@
 					<top>-1</top>
 					<width>550</width>
 					<height>270</height>
+					<texture background="true">DefaultFolderBack.png</texture>
+					<aspectratio align="center">keep</aspectratio>
+					<bordersize>20</bordersize>
+					<visible>ListItem.IsParentFolder</visible>
+				</control>
+				<control type="image">
+					<left>40</left>
+					<top>-1</top>
+					<width>550</width>
+					<height>270</height>
 					<texture background="true">DefaultMovies.png</texture>
 					<aspectratio align="center">keep</aspectratio>
 					<bordersize>20</bordersize>
+					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 			</control>
 			<control type="group">
