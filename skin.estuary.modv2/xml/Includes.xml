@@ -1240,6 +1240,7 @@
                     	<randomize>true</randomize>
 						<visible>!Control.IsVisible(502) | $EXP[infodialog_active]</visible>
 						<visible>!Window.IsVisible(Home.xml)</visible>
+						<visible>!Control.IsVisible(52) + ![Control.IsVisible(55) + [Container.Content(directors) | Container.Content(actors) | Container.Content(playlists)]]</visible>
 					</control>
 					<control type="image">
 						<left>-3</left>
