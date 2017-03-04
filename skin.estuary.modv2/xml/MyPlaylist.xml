@@ -12,7 +12,7 @@
 				<control type="fixedlist" id="50">
 					<left>402</left>
 					<top>list_y_offset</top>
-					<right>594</right>
+					<right>614</right>
 					<bottom>list_y_offset</bottom>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>vertical</orientation>
@@ -142,11 +142,11 @@
 		</control>
 		<include content="TopBar" condition="Window.IsActive(videoplaylist)">
 			<param name="breadcrumbs_label" value="$LOCALIZE[31065]" />
-			<param name="sublabel">$INFO[Container.TotalTime,, - ] $INFO[Playlist.Position(video),, / ]$INFO[Playlist.Length(video)]</param>
+			<param name="sublabel">$INFO[Container.TotalTime,$LOCALIZE[180] : , - ]$INFO[Playlist.Position(video),, / ]$INFO[Playlist.Length(video)]</param>
 		</include>
 		<include content="TopBar" condition="Window.IsActive(musicplaylist)">
 			<param name="breadcrumbs_label" value="$LOCALIZE[31066]" />
-			<param name="sublabel">$INFO[Container.TotalTime,, - ] $INFO[Playlist.Position(music),, / ]$INFO[Playlist.Length(music)]</param>
+			<param name="sublabel">$INFO[Container.TotalTime,$LOCALIZE[180] : , - ]$INFO[Playlist.Position(music),, / ]$INFO[Playlist.Length(music)]</param>
 		</include>
 		<include>BottomBar</include>
 		<control type="group">
