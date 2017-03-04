@@ -130,7 +130,7 @@
 					<param name="icon" value="icons/disable.png" />
 				</include>
 				<include content="IconButton">
-					<param name="control_id" value="3010" />
+					<param name="control_id" value="301" />
 					<param name="icon" value="icons/add.png" />
 				</include>
 				<include content="IconButton">

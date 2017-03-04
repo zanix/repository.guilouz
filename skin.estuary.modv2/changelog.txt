@@ -1,3 +1,6 @@
+[B]2.1.2[/B]
+• Fix adding item with Skin Shortcut
+
 [B]2.1.1[/B]
 • Add support for submenus with Skin Shortcuts addon
 • Minnor fixes

@@ -72,7 +72,7 @@
         <item control="304">$LOCALIZE[40129]</item>
         <item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)">$LOCALIZE[40132]</item>
         <item control="313" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[40133]</item>
-        <item control="3010">$LOCALIZE[40130]</item>
+        <item control="301">$LOCALIZE[40130]</item>
         <item control="302">$LOCALIZE[40131]</item>
     </contextmenu>
     
