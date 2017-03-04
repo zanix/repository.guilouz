@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="VideoLibraryScanLabel">
+		<value condition="Library.IsScanningVideo">$LOCALIZE[13353]</value>
+		<value>$LOCALIZE[653]</value>
+	</variable>
+	<variable name="VideoLibraryScanIcon">
+		<value condition="Library.IsScanningVideo">Quit.png</value>
+		<value>UpdateLibrary.png</value>
+	</variable>
+	<variable name="MusicLibraryScanLabel">
+		<value condition="Library.IsScanningMusic">$LOCALIZE[13353]</value>
+		<value>$LOCALIZE[653]</value>
+	</variable>
+	<variable name="MusicLibraryScanIcon">
+		<value condition="Library.IsScanningMusic">Quit.png</value>
+		<value>UpdateLibrary.png</value>
+	</variable>
 	<variable name="Label_SkinSetting_PowerFanart">
         <value condition="!String.IsEmpty(Skin.String(power_background))">$INFO[Skin.String(power_background)]</value>
         <value>$LOCALIZE[15109]</value>

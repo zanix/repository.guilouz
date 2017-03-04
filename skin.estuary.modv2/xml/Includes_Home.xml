@@ -615,15 +615,108 @@
 			</control>
 		</definition>
 	</include>
+		<include name="WidgetListCategoriesBig">
+			<include content="CategoryLabel">
+				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<control type="panel" id="$PARAM[list_id]">
+				<left>0</left>
+				<top>110</top>
+				<right>0</right>
+				<height>290</height>
+				<include content="WidgetListCommon">
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
+				<visible>$PARAM[visible]</visible>
+				<itemlayout width="310" height="340">
+					<control type="group">
+						<left>70</left>
+						<control type="image">
+							<width>316</width>
+							<height>200</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<centertop>74</centertop>
+							<left>58</left>
+							<width>200</width>
+							<height>120</height>
+							<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="textbox">
+							<left>18</left>
+							<top>107</top>
+							<width>280</width>
+							<height>68</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font25_narrow</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout width="310" height="340">
+					<control type="group">
+						<depth>DepthContentPopout</depth>
+						<left>70</left>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+							<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="228,70" />
+						</animation>
+						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+							<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="228,70" />
+						</animation>
+						<control type="image">
+							<width>316</width>
+							<height>200</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<width>316</width>
+							<height>200</height>
+							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							<bordersize>20</bordersize>
+							<include>Animation_FocusTextureFade</include>
+						</control>
+						<control type="image">
+							<centertop>74</centertop>
+							<left>58</left>
+							<width>200</width>
+							<height>120</height>
+							<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="textbox">
+							<left>18</left>
+							<top>107</top>
+							<width>280</width>
+							<height>68</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font25_narrow</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
+						</control>
+					</control>
+				</focusedlayout>
+				<content>
+					<include>skinshortcuts-submenu</include>
+				</content>
+			</control>
+	</include>
 	<include name="WidgetListCategoriesSmall">
-		<param name="item_limit">50</param>
-		<param name="icon">$INFO[ListItem.Icon]</param>
-		<param name="icon_height">80</param>
-		<param name="pvr_submenu">false</param>
-		<param name="pvr_type">TV</param>
-		<param name="visible">true</param>
-		<param name="fallback_image">DefaultFolder.png</param>
-		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$VAR[LabelCategoriesSmallVar]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
@@ -642,7 +735,6 @@
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
 				<visible>$PARAM[visible]</visible>
-				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<itemlayout width="122" height="220">
 					<control type="group">
 						<left>70</left>
@@ -657,8 +749,8 @@
 							<top>20</top>
 							<left>30</left>
 							<width>80</width>
-							<height>$PARAM[icon_height]</height>
-							<texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+							<height>80</height>
+							<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 					</control>
@@ -697,22 +789,16 @@
 							<top>20</top>
 							<left>30</left>
 							<width>80</width>
-							<height>$PARAM[icon_height]</height>
-							<texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+							<height>80</height>
+							<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 					</control>
 				</focusedlayout>
-				<include condition="!$PARAM[pvr_submenu]" content="SubmenuContent">
-					<param name="widget_target" value="$PARAM[widget_target]"/>
-					<param name="item_limit" value="$PARAM[item_limit]"/>
-					<param name="content_path" value="$PARAM[content_path]"/>
-				</include>
-				<include condition="$PARAM[pvr_submenu]" content="PVRSubMenuContent">
-					<param name="pvr_type" value="$PARAM[pvr_type]"/>
-				</include>
+				<content>
+					<include>skinshortcuts-submenu</include>
+				</content>
 			</control>
-		</definition>
 	</include>
 	<include name="SubmenuContent">
 		<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>

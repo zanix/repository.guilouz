@@ -561,7 +561,12 @@ msgctxt "#31130"
 msgid "Main menu-related settings: Configure the home screen to your likings."
 msgstr "Paramètres relatifs au menu principal. Configurez le menu d'accueil comme désiré."
 
-#: Empty string 31131
+#: /shortcuts/addons.DATA.xml
+msgctxt "#31131"
+msgid "Add-ons settings"
+msgstr "Paramètres des extensions"
+
+#: Empty string 31132 to 31133
 
 #: /xml/DialogSeekBar.xml
 msgctxt "#31134"
@@ -663,10 +668,7 @@ msgctxt "#31156"
 msgid "Choose background pattern"
 msgstr "Type du modèle d'arrière-plan"
 
-#: /xml/SkinSettings.xml
-msgctxt "#31157"
-msgid "Edit videos medias categories"
-msgstr "Editer les catégories des médias vidéos"
+#: Empty String 31157
 
 #: /xml/SkinSettings.xml
 msgctxt "#31158"
@@ -780,10 +782,7 @@ msgctxt "#40016"
 msgid "InfoWall (thumbnails)"
 msgstr "Mur avec informations (vignettes)"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40017"
-msgid "Edit audio media categories"
-msgstr "Editer les catégories des médias audios"
+#: Empty String 40017
 
 #: /xml/SkinSettings.xml
 msgctxt "#40018"
@@ -1419,3 +1418,8 @@ msgstr "Activer l'arrière-plan du raccourci 'Rechercher...'"
 msgctxt "#40144"
 msgid "Background"
 msgstr "Arrière-plan"
+
+#: /shortcuts/musicvideos.DATA.xml
+msgctxt "#40145"
+msgid "Music videos - Library"
+msgstr "Clips Musicaux - Bibliothèque"

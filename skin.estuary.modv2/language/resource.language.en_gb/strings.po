@@ -561,7 +561,12 @@ msgctxt "#31130"
 msgid "Main menu-related settings: Configure the home screen to your likings."
 msgstr ""
 
-#: Empty string 31131
+#: /shortcuts/addons.DATA.xml
+msgctxt "#31131"
+msgid "Add-ons settings"
+msgstr ""
+
+#: Empty string 31132 to 31133
 
 #: /xml/DialogSeekBar.xml
 msgctxt "#31134"
@@ -663,10 +668,7 @@ msgctxt "#31156"
 msgid "Choose background pattern"
 msgstr ""
 
-#: /xml/SkinSettings.xml
-msgctxt "#31157"
-msgid "Edit videos medias categories"
-msgstr ""
+#: Empty String 31157
 
 #: /xml/SkinSettings.xml
 msgctxt "#31158"
@@ -780,10 +782,7 @@ msgctxt "#40016"
 msgid "InfoWall (thumbnails)"
 msgstr ""
 
-#: /xml/SkinSettings.xml
-msgctxt "#40017"
-msgid "Edit audio media categories"
-msgstr ""
+#: Empty String 40017
 
 #: /xml/SkinSettings.xml
 msgctxt "#40018"
@@ -1418,4 +1417,9 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#40144"
 msgid "Background"
+msgstr ""
+
+#: /shortcuts/musicvideos.DATA.xml
+msgctxt "#40145"
+msgid "Music videos - Library"
 msgstr ""

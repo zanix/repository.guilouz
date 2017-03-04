@@ -1254,6 +1254,7 @@
 						<texture background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[PosterVar]</texture>
 						<visible>!Control.IsVisible(32111)</visible>
 						<visible>!Window.IsVisible(Home.xml)</visible>
+						<visible>![Control.IsVisible(55) + [Container.Content(directors) | Container.Content(actors) | Container.Content(playlists)]]</visible>
 					</control>
 				</control>
 			</control>
