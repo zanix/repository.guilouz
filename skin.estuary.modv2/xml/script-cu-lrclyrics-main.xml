@@ -12,9 +12,9 @@
 			<include>OpenClose_Right</include>
 			<!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
 			<control type="list" id="110">
-				<left>45</left>
+				<centerleft>50%</centerleft>
 				<top>45</top>
-				<width>300</width>
+				<width>400</width>
 				<height>450</height>
 				<onleft>111</onleft>
 				<onright>111</onright>
@@ -26,10 +26,7 @@
 					<control type="label">
 						<width>1830</width>
 						<height>50</height>
-						<font>font15</font>
-						<textcolor>01ffffff</textcolor>
 						<align>center</align>
-						<selectedcolor>selected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
@@ -37,83 +34,81 @@
 					<control type="label">
 						<width>1830</width>
 						<height>50</height>
-						<font>font15</font>
 						<align>center</align>
-						<textcolor>01ffffff</textcolor>
 						<label fallback="--">$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
-			<control type="list" id="120">
-				<left>45</left>
-				<top>45</top>
-				<width>300</width>
-				<height>450</height>
-				<onleft>121</onleft>
-				<onright>121</onright>
-				<onup>120</onup>
-				<ondown>120</ondown>
-				<pagecontrol>121</pagecontrol>
-				<scrolltime tween="quadratic" easing="out">200</scrolltime>
-				<itemlayout height="60" width="641">
-					<control type="image">
-						<left>1</left>
-						<width>630</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
+			<control type="group">
+				<centerleft>50%</centerleft>
+				<width>700</width>
+				<centertop>43%</centertop>
+				<height>780</height>
+				<visible>Control.IsVisible(120)</visible>
+				<include content="DialogBackgroundCommons">
+					<param name="width" value="700" />
+					<param name="height" value="780" />
+					<param name="header_label" value="$ADDON[script.cu.lrclyrics 32006]" />
+					<param name="header_id" value="" />
+				</include>
+				<control type="group">
+					<left>0</left>
+					<top>80</top>
+					<control type="list" id="120">
+						<centerleft>50%</centerleft>
+						<top>0</top>
+						<width>700</width>
+						<height>700</height>
+						<onleft>121</onleft>
+						<onright>121</onright>
+						<onup>120</onup>
+						<ondown>120</ondown>
+						<pagecontrol>121</pagecontrol>
+						<scrolltime tween="quadratic" easing="out">200</scrolltime>
+						<itemlayout height="70" width="700">
+							<control type="label">
+								<width>700</width>
+								<height>70</height>
+								<textoffsetx>40</textoffsetx>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="label">
+								<width>700</width>
+								<height>70</height>
+								<textoffsetx>40</textoffsetx>
+								<align>left</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="70" width="700">
+							<control type="image">
+								<left>1</left>
+								<width>700</width>
+								<height>70</height>
+								<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+								<visible>Control.HasFocus(120)</visible>
+							</control>
+							<control type="label">
+								<width>700</width>
+								<height>70</height>
+								<textoffsetx>40</textoffsetx>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="label">
+								<width>700</width>
+								<height>70</height>
+								<textoffsetx>40</textoffsetx>
+								<align>right</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</focusedlayout>
 					</control>
-					<control type="label">
-						<width>630</width>
-						<height>60</height>
-						<font>font14</font>
-						<textoffsetx>15</textoffsetx>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<width>630</width>
-						<height>60</height>
-						<font>font14</font>
-						<textoffsetx>15</textoffsetx>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<label>$INFO[ListItem.Label2]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="60" width="641">
-					<control type="image">
-						<left>1</left>
-						<width>630</width>
-						<height>60</height>
-						<texture border="5">listselect_fo.png</texture>
-						<visible>Control.HasFocus(120)</visible>
-						<include>VisibleFadeAnimation</include>
-					</control>
-					<control type="label">
-						<width>630</width>
-						<height>60</height>
-						<font>font14</font>
-						<textoffsetx>15</textoffsetx>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(120)">Conditional</animation>
-					</control>
-					<control type="label">
-						<width>630</width>
-						<height>60</height>
-						<font>font14</font>
-						<textoffsetx>15</textoffsetx>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<label>$INFO[ListItem.Label2]</label>
-						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(120)">Conditional</animation>
-					</control>
-				</focusedlayout>
+				</control>
 			</control>
 			<control type="label">
 				<description>Scraper label</description>
@@ -137,8 +132,9 @@
 		</control>
 		<!-- ** Required ** Do not change <id> or <type> -->
 		<!-- ** Required ** Do not change <id> or <type> -->
-				<control type="group">
+		<control type="group">
 			<visible>!String.IsEmpty(Container(110).ListItem.Label)</visible>
+			<visible>!Control.IsVisible(120)</visible>
 			<animation effect="slide" end="320,0" time="0" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
 			<control type="group">
 				<visible>[!String.IsEmpty(Window(Home).Property(culrc.islrc)) + Integer.IsGreater(Container(110).ListItem.Property(duration),299) + !Integer.IsGreater(Container(110).ListItem.Property(duration),1449)] | String.IsEmpty(Container(110).ListItem.Property(part4))</visible>
@@ -496,46 +492,44 @@
 						<label>[COLOR=ff00e676]$INFO[Container(110).ListItem.Property(part1)] [/COLOR][COLOR=fffffaf0]$INFO[Container(110).ListItem.Property(part2)] [/COLOR][COLOR=fffb8c00]$INFO[Container(110).ListItem.Property(part3)][/COLOR][CR][COLOR=ffb39ddb]$INFO[Container(110).ListItem.Property(part4)][/COLOR]</label>
 					</control>
 				</control>
-			</control>	
+			</control>
 			<control type="group">
 				<visible>!String.IsEmpty(Container(110).ListItem.Property(part4)) + [Integer.IsGreater(Container(110).ListItem.Property(duration),1449) | String.IsEmpty(Window(Home).Property(culrc.islrc))]</visible>
 				<!--Line 1-->
 				<control type="grouplist">
 					<left>0</left>
-					      <top>199</top>
-					      <width>1920</width>
-					      <height>100</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics1">
-					</include>
+					<top>199</top>
+					<width>1920</width>
+					<height>100</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics1"></include>
 				</control>
 				<control type="grouplist">
 					<left>4</left>
-					      <top>203</top>
-					      <width>1920</width>
-					      <height>100</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics1">
-					</include>
+					<top>203</top>
+					<width>1920</width>
+					<height>100</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics1"></include>
 				</control>
 				<control type="grouplist">
 					<left>1</left>
-					      <top>200</top>
-					      <width>1920</width>
-					      <height>100</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<top>200</top>
+					<width>1920</width>
+					<height>100</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics1">
 						<param name="col11">ff69bbd3</param>
 						<param name="col12">ffe16b6b</param>
@@ -554,8 +548,7 @@
 					<param name="col14">fffffaf0</param>
 				</include>
 				<!--Line 2-->
-				<include content="Lyrics2">
-				</include>
+				<include content="Lyrics2"></include>
 				<include content="Lyrics2">
 					<param name="2_left">4</param>
 					<param name="2_top">254</param>
@@ -571,40 +564,38 @@
 				<!--Line 3-->
 				<control type="grouplist">
 					<left>0</left>
-					      <top>199</top>
-					      <width>1920</width>
-					      <height>120</height>
-					      <itemgap>3</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics3">
-					</include>
+					<top>199</top>
+					<width>1920</width>
+					<height>120</height>
+					<itemgap>3</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics3"></include>
 				</control>
 				<control type="grouplist">
 					<left>4</left>
-					      <top>203</top>
-					      <width>1920</width>
-					      <height>120</height>
-					      <itemgap>3</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics3">
-					</include>
+					<top>203</top>
+					<width>1920</width>
+					<height>120</height>
+					<itemgap>3</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics3"></include>
 				</control>
 				<control type="grouplist">
 					<left>1</left>
-					      <top>200</top>
-					      <width>1920</width>
-					      <height>120</height>
-					      <itemgap>3</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<top>200</top>
+					<width>1920</width>
+					<height>120</height>
+					<itemgap>3</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics3">
 						<param name="col31">ffff9a32</param>
 						<param name="col32">ff45aa1d</param>
@@ -623,8 +614,7 @@
 					<param name="col34">fffffaf0</param>
 				</include>
 				<!--Line 4-->
-				<include content="Lyrics4">
-				</include>
+				<include content="Lyrics4"></include>
 				<include content="Lyrics4">
 					<param name="4_left">114</param>
 					<param name="4_top">34</param>
@@ -640,40 +630,38 @@
 				<!--Line 5-->
 				<control type="grouplist">
 					<left>1950</left>
-					      <top>99</top>
-					      <width>1920</width>
-					      <height>350</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics5">
-					</include>
+					<top>99</top>
+					<width>1920</width>
+					<height>350</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics5"></include>
 				</control>
 				<control type="grouplist">
 					<left>1954</left>
-					      <top>103</top>
-					      <width>1920</width>
-					      <height>350</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics5">
-					</include>
+					<top>103</top>
+					<width>1920</width>
+					<height>350</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics5"></include>
 				</control>
 				<control type="grouplist">
 					<left>1951</left>
-					      <top>100</top>
-					      <width>1920</width>
-					      <height>350</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<top>100</top>
+					<width>1920</width>
+					<height>350</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics5">
 						<param name="col51">ff00bfc0</param>
 						<param name="col52">ff98ea33</param>
@@ -684,40 +672,38 @@
 				<!--Line 6-->
 				<control type="grouplist">
 					<left>0</left>
-					      <top>-201</top>
-					      <width>1920</width>
-					      <height>100</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics6">
-					</include>
+					<top>-201</top>
+					<width>1920</width>
+					<height>100</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics6"></include>
 				</control>
 				<control type="grouplist">
 					<left>4</left>
-					      <top>-197</top>
-					      <width>1920</width>
-					      <height>100</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics6">
-					</include>
+					<top>-197</top>
+					<width>1920</width>
+					<height>100</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics6"></include>
 				</control>
 				<control type="grouplist">
 					<left>1</left>
-					      <top>-200</top>
-					      <width>1920</width>
-					      <height>100</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<top>-200</top>
+					<width>1920</width>
+					<height>100</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics6">
 						<param name="col61">ffff9c00</param>
 						<param name="col62">ff86b8b1</param>
@@ -736,8 +722,7 @@
 					<param name="col64">fffffaf0</param>
 				</include>
 				<!--Line 7-->
-				<include content="Lyrics7">
-				</include>
+				<include content="Lyrics7"></include>
 				<include content="Lyrics7">
 					<param name="7_left">14</param>
 					<param name="7_top">4</param>
@@ -753,40 +738,38 @@
 				<!--Line 8-->
 				<control type="grouplist">
 					<left>0</left>
-					      <top>199</top>
-					      <width>1920</width>
-					      <height>140</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics8">
-					</include>
+					<top>199</top>
+					<width>1920</width>
+					<height>140</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics8"></include>
 				</control>
 				<control type="grouplist">
 					<left>4</left>
-					      <top>203</top>
-					      <width>1920</width>
-					      <height>140</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics8">
-					</include>
+					<top>203</top>
+					<width>1920</width>
+					<height>140</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics8"></include>
 				</control>
 				<control type="grouplist">
 					<left>1</left>
-					      <top>200</top>
-					      <width>1920</width>
-					      <height>140</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<top>200</top>
+					<width>1920</width>
+					<height>140</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics8">
 						<param name="col81">ff4cb050</param>
 						<param name="col82">fffec106</param>
@@ -805,8 +788,7 @@
 					<param name="col84">fffffaf0</param>
 				</include>
 				<!--Line 9-->
-				<include content="Lyrics9">
-				</include>
+				<include content="Lyrics9"></include>
 				<include content="Lyrics9">
 					<param name="9_left">24</param>
 					<param name="9_top">-16</param>
@@ -820,8 +802,7 @@
 					<param name="9_top">-19</param>
 				</include>
 				<!--Line 10-->
-				<include content="Lyrics10">
-				</include>
+				<include content="Lyrics10"></include>
 				<include content="Lyrics10">
 					<param name="10_left">4</param>
 					<param name="10_top">154</param>
@@ -835,8 +816,7 @@
 					<param name="10_top">151</param>
 				</include>
 				<!--Line 11-->
-				<include content="Lyrics11">
-				</include>
+				<include content="Lyrics11"></include>
 				<include content="Lyrics11">
 					<param name="11_left">4</param>
 					<param name="11_top">254</param>
@@ -850,8 +830,7 @@
 					<param name="11_top">251</param>
 				</include>
 				<!--Line 12-->
-				<include content="Lyrics12">
-				</include>
+				<include content="Lyrics12"></include>
 				<include content="Lyrics12">
 					<param name="12_left">14</param>
 					<param name="12_top">4</param>
@@ -861,8 +840,7 @@
 					<param name="12_left">11</param>
 					<param name="12_top">1</param>
 				</include>
-				<include content="Lyrics12b">
-				</include>
+				<include content="Lyrics12b"></include>
 				<include content="Lyrics12b">
 					<param name="12b_left">14</param>
 					<param name="12b_top">184</param>
@@ -873,8 +851,7 @@
 					<param name="12b_left">11</param>
 					<param name="12b_top">181</param>
 				</include>
-				<include content="Lyrics12c">
-				</include>
+				<include content="Lyrics12c"></include>
 				<include content="Lyrics12c">
 					<param name="12c_left">14</param>
 					<param name="12c_top">4</param>
@@ -887,40 +864,38 @@
 				<!--Line 13-->
 				<control type="grouplist">
 					<left>0</left>
-					      <top>199</top>
-					      <width>1920</width>
-					      <height>125</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics13">
-					</include>
+					<top>199</top>
+					<width>1920</width>
+					<height>125</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics13"></include>
 				</control>
 				<control type="grouplist">
 					<left>4</left>
-					      <top>203</top>
-					      <width>1920</width>
-					      <height>125</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
-					<include content="Lyrics13">
-					</include>
+					<top>203</top>
+					<width>1920</width>
+					<height>125</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
+					<include content="Lyrics13"></include>
 				</control>
 				<control type="grouplist">
 					<left>1</left>
-					      <top>200</top>
-					      <width>1920</width>
-					      <height>125</height>
-					      <itemgap>10</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<top>200</top>
+					<width>1920</width>
+					<height>125</height>
+					<itemgap>10</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics13">
 						<param name="col131">ff00BFC0</param>
 						<param name="col132">ff98EA33</param>
@@ -941,70 +916,70 @@
 				<!--Line 14-->
 				<control type="grouplist">
 					<left>0</left>
-					      <top>169</top>
-					      <width>2020</width>
-					      <height>350</height>
-					      <itemgap>20</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<top>169</top>
+					<width>2020</width>
+					<height>350</height>
+					<itemgap>20</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics14">
 						<param name="col141">black</param>
 					</include>
 				</control>
 				<control type="grouplist">
 					<left>0</left>
-					      <top>169</top>
-					      <width>2020</width>
-					      <height>350</height>
-					      <itemgap>20</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<top>169</top>
+					<width>2020</width>
+					<height>350</height>
+					<itemgap>20</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics14">
 						<param name="col142">black</param>
 					</include>
 				</control>
 				<control type="grouplist">
 					<left>0</left>
-					      <top>169</top>
-					      <width>2020</width>
-					      <height>350</height>
-					      <itemgap>20</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<top>169</top>
+					<width>2020</width>
+					<height>350</height>
+					<itemgap>20</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics14">
 						<param name="col143">black</param>
 					</include>
 				</control>
 				<control type="grouplist">
-					      <top>173</top>
+					<top>173</top>
 					<left>4</left>
-					      <width>2020</width>
-					      <height>350</height>
-					      <itemgap>20</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<width>2020</width>
+					<height>350</height>
+					<itemgap>20</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics14">
 						<param name="col141">black</param>
 					</include>
 				</control>
 				<control type="grouplist">
-					      <top>173</top>
+					<top>173</top>
 					<left>4</left>
-					      <width>2020</width>
-					      <height>350</height>
-					      <itemgap>20</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<width>2020</width>
+					<height>350</height>
+					<itemgap>20</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics14">
 						<param name="col142">black</param>
 					</include>
@@ -1012,13 +987,13 @@
 				<control type="grouplist">
 					<top>173</top>
 					<left>4</left>
-					      <width>2020</width>
-					      <height>350</height>
-					      <itemgap>20</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<width>2020</width>
+					<height>350</height>
+					<itemgap>20</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics14">
 						<param name="col143">black</param>
 					</include>
@@ -1026,13 +1001,13 @@
 				<control type="grouplist">
 					<top>170</top>
 					<left>1</left>
-					      <width>2020</width>
-					      <height>350</height>
-					      <itemgap>20</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<width>2020</width>
+					<height>350</height>
+					<itemgap>20</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics14">
 						<param name="col141">ffFF9800</param>
 					</include>
@@ -1040,13 +1015,13 @@
 				<control type="grouplist">
 					<top>170</top>
 					<left>1</left>
-					      <width>2020</width>
-					      <height>350</height>
-					      <itemgap>20</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<width>2020</width>
+					<height>350</height>
+					<itemgap>20</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics14">
 						<param name="col142">fffffaf0</param>
 					</include>
@@ -1054,13 +1029,13 @@
 				<control type="grouplist">
 					<top>170</top>
 					<left>1</left>
-					      <width>2020</width>
-					      <height>350</height>
-					      <itemgap>20</itemgap>
-					      <scrolltime>0</scrolltime>
-					      <orientation>horizontal</orientation>
-					      <visible>true</visible>
-					      <align>center</align>
+					<width>2020</width>
+					<height>350</height>
+					<itemgap>20</itemgap>
+					<scrolltime>0</scrolltime>
+					<orientation>horizontal</orientation>
+					<visible>true</visible>
+					<align>center</align>
 					<include content="Lyrics14">
 						<param name="col143">ff00BCD4</param>
 					</include>
@@ -1079,8 +1054,7 @@
 					<param name="col144">fff395b5</param>
 				</include>
 				<!--Line 15-->
-				<include content="Lyrics15">
-				</include>
+				<include content="Lyrics15"></include>
 				<include content="Lyrics15">
 					<param name="15_left">174</param>
 					<param name="15_top">4</param>

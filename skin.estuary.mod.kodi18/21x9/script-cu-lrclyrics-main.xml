@@ -12,9 +12,9 @@
 			<include>OpenClose_Right</include>
 			<!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
 			<control type="list" id="110">
-				<left>45</left>
+				<centerleft>50%</centerleft>
 				<top>45</top>
-				<width>300</width>
+				<width>400</width>
 				<height>450</height>
 				<onleft>111</onleft>
 				<onright>111</onright>
@@ -26,10 +26,7 @@
 					<control type="label">
 						<width>1830</width>
 						<height>50</height>
-						<font>font15</font>
-						<textcolor>01ffffff</textcolor>
 						<align>center</align>
-						<selectedcolor>selected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
@@ -37,83 +34,81 @@
 					<control type="label">
 						<width>1830</width>
 						<height>50</height>
-						<font>font15</font>
 						<align>center</align>
-						<textcolor>01ffffff</textcolor>
 						<label fallback="--">$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
-			<control type="list" id="120">
-				<left>45</left>
-				<top>45</top>
-				<width>300</width>
-				<height>450</height>
-				<onleft>121</onleft>
-				<onright>121</onright>
-				<onup>120</onup>
-				<ondown>120</ondown>
-				<pagecontrol>121</pagecontrol>
-				<scrolltime tween="quadratic" easing="out">200</scrolltime>
-				<itemlayout height="60" width="641">
-					<control type="image">
-						<left>1</left>
-						<width>630</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
+			<control type="group">
+				<centerleft>50%</centerleft>
+				<width>700</width>
+				<centertop>43%</centertop>
+				<height>780</height>
+				<visible>Control.IsVisible(120)</visible>
+				<include content="DialogBackgroundCommons">
+					<param name="width" value="700" />
+					<param name="height" value="780" />
+					<param name="header_label" value="$ADDON[script.cu.lrclyrics 32006]" />
+					<param name="header_id" value="" />
+				</include>
+				<control type="group">
+					<left>0</left>
+					<top>80</top>
+					<control type="list" id="120">
+						<centerleft>50%</centerleft>
+						<top>0</top>
+						<width>700</width>
+						<height>700</height>
+						<onleft>121</onleft>
+						<onright>121</onright>
+						<onup>120</onup>
+						<ondown>120</ondown>
+						<pagecontrol>121</pagecontrol>
+						<scrolltime tween="quadratic" easing="out">200</scrolltime>
+						<itemlayout height="70" width="700">
+							<control type="label">
+								<width>700</width>
+								<height>70</height>
+								<textoffsetx>40</textoffsetx>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="label">
+								<width>700</width>
+								<height>70</height>
+								<textoffsetx>40</textoffsetx>
+								<align>left</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="70" width="700">
+							<control type="image">
+								<left>1</left>
+								<width>700</width>
+								<height>70</height>
+								<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+								<visible>Control.HasFocus(120)</visible>
+							</control>
+							<control type="label">
+								<width>700</width>
+								<height>70</height>
+								<textoffsetx>40</textoffsetx>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="label">
+								<width>700</width>
+								<height>70</height>
+								<textoffsetx>40</textoffsetx>
+								<align>right</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</focusedlayout>
 					</control>
-					<control type="label">
-						<width>630</width>
-						<height>60</height>
-						<font>font14</font>
-						<textoffsetx>15</textoffsetx>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<width>630</width>
-						<height>60</height>
-						<font>font14</font>
-						<textoffsetx>15</textoffsetx>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<label>$INFO[ListItem.Label2]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="60" width="641">
-					<control type="image">
-						<left>1</left>
-						<width>630</width>
-						<height>60</height>
-						<texture border="5">listselect_fo.png</texture>
-						<visible>Control.HasFocus(120)</visible>
-						<include>VisibleFadeAnimation</include>
-					</control>
-					<control type="label">
-						<width>630</width>
-						<height>60</height>
-						<font>font14</font>
-						<textoffsetx>15</textoffsetx>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(120)">Conditional</animation>
-					</control>
-					<control type="label">
-						<width>630</width>
-						<height>60</height>
-						<font>font14</font>
-						<textoffsetx>15</textoffsetx>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<label>$INFO[ListItem.Label2]</label>
-						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(120)">Conditional</animation>
-					</control>
-				</focusedlayout>
+				</control>
 			</control>
 			<control type="label">
 				<description>Scraper label</description>

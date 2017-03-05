@@ -1,3 +1,6 @@
+1.7.13
+• Fix context menu for CU LRC Lyrics addon
+
 1.7.12
 • Update to use latest Skin Shortcuts addon
 • Add support for Videolyrics v2 (thanks to manfeed)
