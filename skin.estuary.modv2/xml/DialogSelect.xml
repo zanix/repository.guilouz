@@ -71,7 +71,7 @@
 					<control type="label">
 						<left>135</left>
 						<top>0</top>
-						<width>730</width>
+						<right>14</right>
 						<height>125</height>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
@@ -81,7 +81,7 @@
 					<control type="label">
 						<left>135</left>
 						<top>10</top>
-						<right>20</right>
+						<right>14</right>
 						<height>62.5</height>
 						<font>font14</font>
 						<aligny>center</aligny>
@@ -91,7 +91,7 @@
 					<control type="textbox">
 						<left>135</left>
 						<top>52.5</top>
-						<right>20</right>
+						<right>14</right>
 						<height>62.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
@@ -119,30 +119,33 @@
 					<control type="label">
 						<left>135</left>
 						<top>0</top>
-						<width>730</width>
+						<right>14</right>
 						<height>125</height>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font14</font>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
 						<left>135</left>
 						<top>10</top>
-						<right>20</right>
+						<right>14</right>
 						<height>62.5</height>
 						<font>font14</font>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(ListItem.Label2)</visible>
 					</control>
-					<control type="textbox">
+					<control type="label">
 						<left>135</left>
 						<top>52.5</top>
-						<right>20</right>
+						<right>14</right>
 						<height>62.5</height>
 						<font>font12</font>
 						<aligny>center</aligny>
+						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</focusedlayout>
