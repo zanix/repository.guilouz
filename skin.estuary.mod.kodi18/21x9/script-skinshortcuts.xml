@@ -27,7 +27,7 @@
                         <param name="icon" value="icons/down.png" />
                     </include>
                     <include content="BottomMainMenuItem">
-                        <param name="control_id" value="3010" />
+                        <param name="control_id" value="301" />
                         <param name="icon" value="icons/add.png" />
                     </include>
                     <include content="BottomMainMenuItem">

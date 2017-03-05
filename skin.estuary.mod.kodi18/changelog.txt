@@ -1,3 +1,6 @@
+1.7.12
+• Update to use latest Skin Shortcuts addon
+
 1.7.11
 • Add polish translation
 • Drop support for using hyphen as none value
