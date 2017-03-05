@@ -139,6 +139,7 @@
 		<!-- ** Required ** Do not change <id> or <type> -->
 				<control type="group">
 			<visible>!String.IsEmpty(Container(110).ListItem.Label)</visible>
+			<animation effect="slide" end="320,0" time="0" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
 			<control type="group">
 				<visible>[!String.IsEmpty(Window(Home).Property(culrc.islrc)) + Integer.IsGreater(Container(110).ListItem.Property(duration),299) + !Integer.IsGreater(Container(110).ListItem.Property(duration),1449)] | String.IsEmpty(Container(110).ListItem.Property(part4))</visible>
 				<!--Short LINEA 1 & 6-->
