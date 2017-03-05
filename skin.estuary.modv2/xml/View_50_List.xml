@@ -312,7 +312,7 @@
 						<orientation>horizontal</orientation>
 						<autoscroll time="1500">true</autoscroll>
 						<itemgap>5</itemgap>
-						<animation effect="slide" end="293.5,0" time="0" condition="Integer.IsEqual(Container(50055).NumItems,1)">conditional</animation>
+						<animation effect="slide" end="193.5,0" time="0" condition="Integer.IsEqual(Container(50055).NumItems,1)">conditional</animation>
 						<animation effect="slide" end="129,0" time="0" condition="Integer.IsEqual(Container(50055).NumItems,2)">conditional</animation>
 						<animation effect="slide" end="64.5,0" time="0" condition="Integer.IsEqual(Container(50055).NumItems,3)">conditional</animation>
 						<focusedlayout height="170" width="129">

@@ -105,7 +105,7 @@
 							<orientation>horizontal</orientation>
 							<autoscroll time="1500">true</autoscroll>
 							<itemgap>5</itemgap>
-							<animation effect="slide" end="293.5,0" time="0" condition="Integer.IsEqual(Container(50054).NumItems,1)">conditional</animation>
+							<animation effect="slide" end="193.5,0" time="0" condition="Integer.IsEqual(Container(50054).NumItems,1)">conditional</animation>
 							<animation effect="slide" end="129,0" time="0" condition="Integer.IsEqual(Container(50054).NumItems,2)">conditional</animation>
 							<animation effect="slide" end="64.5,0" time="0" condition="Integer.IsEqual(Container(50054).NumItems,3)">conditional</animation>
 							<focusedlayout height="170" width="129">
@@ -144,7 +144,7 @@
 				<param name="info_visible" value="true" />
 			</include>
 			<control type="group">
-				<visible>Control.IsVisible(500) + ListItem.IsCollection</visible>
+				<visible>[Control.IsVisible(500) | Control.IsVisible(504)] + ListItem.IsCollection</visible>
 				<control type="list" id="50500">
 					<right>20</right>
 					<bottom>20</bottom>
