@@ -153,7 +153,7 @@
 				</control>
 				<control type="radiobutton" id="703">
 					<include content="OSDButton">
-						<param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
+						<param name="texture" value="osd/fullscreen/buttons/lyrics.png"/>
 					</include>
 					<onclick>Close</onclick>
 					<onclick condition="!String.IsEmpty(Skin.String(LyricScript_Path))">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
