@@ -1,5 +1,6 @@
 1.7.12
 • Update to use latest Skin Shortcuts addon
+• Add support for Videolyrics v2 (thanks to manfeed)
 
 1.7.11
 • Add polish translation
