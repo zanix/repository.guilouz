@@ -566,7 +566,12 @@ msgctxt "#31131"
 msgid "Add-ons settings"
 msgstr ""
 
-#: Empty string 31132 to 31133
+#: /xml/script-skinshortcuts.xml
+msgctxt "#31132"
+msgid "Hide submenus widget"
+msgstr ""
+
+#: Empty string 31133
 
 #: /xml/DialogSeekBar.xml
 msgctxt "#31134"

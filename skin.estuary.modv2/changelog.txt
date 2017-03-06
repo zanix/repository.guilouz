@@ -1,4 +1,5 @@
 [B]2.1.4[/B]
+• Add possibility to configure submenus for Personnal Widget
 • Fix context menu for CU LRC Lyrics addon
 • Fix disable Clearlogos on library
 • Minor fixes
