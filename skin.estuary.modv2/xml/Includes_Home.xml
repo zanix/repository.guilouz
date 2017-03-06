@@ -23,7 +23,7 @@
 				<top>80</top>
 				<width>900</width>
 				<height>90</height>
-				<label>• $PARAM[label]</label>
+				<label>$PARAM[label]</label>
 				<font>font25_title</font>
 				<shadowcolor>text_shadow</shadowcolor>
 				<visible>$PARAM[visible]</visible>
