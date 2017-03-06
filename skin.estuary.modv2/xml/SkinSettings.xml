@@ -501,7 +501,7 @@
 					<onclick>Skin.ToggleSetting(hide_plotforspoiler)</onclick>
 					<selected>Skin.HasSetting(hide_plotforspoiler)</selected>
 				</control>
-				<control type="radiobutton" id="905">
+				<control type="radiobutton" id="904">
 					<label>$LOCALIZE[40126]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(hide_thumbforspoiler)</onclick>
@@ -510,8 +510,8 @@
 				<control type="radiobutton" id="903">
 					<label>$LOCALIZE[40068]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(LibraryClearLogo)</onclick>
-					<selected>!Skin.HasSetting(LibraryClearLogo)</selected>
+					<onclick>Skin.ToggleSetting(enable_LibraryClearLogo)</onclick>
+					<selected>!Skin.HasSetting(enable_LibraryClearLogo)</selected>
 				</control>
 				<control type="image" id="9001">
 					<height>3</height>

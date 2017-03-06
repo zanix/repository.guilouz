@@ -1,5 +1,6 @@
 [B]2.1.4[/B]
 • Fix context menu for CU LRC Lyrics addon
+• Fix disable Clearlogos on library
 • Minor fixes
 
 [B]2.1.3[/B]

@@ -257,7 +257,7 @@
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture>$VAR[LibraryClearLogoVar]</texture>
 				<visible>Control.IsVisible(51)</visible>
-				<visible>!Skin.HasSetting(LibrayClearLogo)</visible>
+				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
 			</control>
 			<control type="image">
@@ -268,12 +268,12 @@
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture>$VAR[LibraryClearLogoVar]</texture>
 				<visible>Control.IsVisible(53)</visible>
-				<visible>!Skin.HasSetting(LibrayClearLogo)</visible>
+				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
 			</control>
 			<control type="group">
 				<include>OpenClose_Left</include>
-				<visible>!Skin.HasSetting(LibrayClearLogo)</visible>
+				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<control type="image">
 					<top>15</top>
 					<width>362</width>
@@ -294,7 +294,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!Skin.HasSetting(LibrayClearLogo)</visible>
+				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
 				<visible>Control.IsVisible(500) | Control.IsVisible(504) | Control.IsVisible(501)</visible>
 				<control type="image">
@@ -322,6 +322,7 @@
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture>$VAR[LibraryClearLogoVar]</texture>
 				<visible>Control.IsVisible(502)</visible>
+				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 			</control>
 			<control type="group">
 				<depth>DepthBars</depth>
