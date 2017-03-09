@@ -72,6 +72,19 @@
 							<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+							<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
+						</control>
+						<control type="image">
+							<depth>DepthContentPopout</depth>
+							<left>0</left>
+							<top>90</top>
+							<width>370</width>
+							<height>480</height>
+							<aspectratio aligny="center">keep</aspectratio>
+							<texture fallback="DefaultAudio.png">$VAR[ShiftThumbVar]</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>Container.Content(artists) | Container.Content(albums)</visible>
 						</control>
 						<control type="textbox">
 							<left>20</left>
@@ -101,6 +114,19 @@
 							<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+							<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
+						</control>
+						<control type="image">
+							<depth>DepthContentPopout</depth>
+							<left>0</left>
+							<top>90</top>
+							<width>370</width>
+							<height>480</height>
+							<aspectratio aligny="center">keep</aspectratio>
+							<texture fallback="DefaultAudio.png">$VAR[ShiftThumbVar]</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>Container.Content(artists) | Container.Content(albums)</visible>
 						</control>
 						<control type="textbox">
 							<left>20</left>
