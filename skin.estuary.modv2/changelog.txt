@@ -1,5 +1,7 @@
 [B]2.1.4[/B]
 • Add possibility to configure submenus for Personnal Widget
+• Add possibility to show banners for episodes/thumbs widgets
+• Decrease number of personal widgets to 8 because not possible to show more
 • Fix context menu for CU LRC Lyrics addon
 • Fix disable Clearlogos on library
 • Minor fixes

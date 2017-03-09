@@ -390,38 +390,6 @@
 					<label2>$VAR[WidgetsAppearence8Label2Var]</label2>
 					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8))</visible>
 				</control>
-				<control type="button" id="1483">
-					<include>DefaultSettingButton</include>
-					<label>$ADDON[script.skinshortcuts 32044] 9</label>
-					<label2>$VAR[PersonalWidget9Label2Var]</label2>
-					<onclick>ClearProperty(WidgetVisibility,home)</onclick>
-					<onclick>SetProperty(widgetID, personal9)</onclick>
-					<onclick>SendClick(312)</onclick>
-					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
-				</control>
-				<control type="button" id="14831">
-					<label>  ∟$LOCALIZE[40137] 9</label>
-					<include>DefaultSettingButton</include>
-					<label2>$VAR[WidgetsAppearence9Label2Var]</label2>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal9))</visible>
-				</control>
-				<control type="button" id="1484">
-					<include>DefaultSettingButton</include>
-					<label>$ADDON[script.skinshortcuts 32044] 10</label>
-					<label2>$VAR[PersonalWidget10Label2Var]</label2>
-					<onclick>ClearProperty(WidgetVisibility,home)</onclick>
-					<onclick>SetProperty(widgetID, personal10)</onclick>
-					<onclick>SendClick(312)</onclick>
-					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
-				</control>
-				<control type="button" id="14841">
-					<label>  ∟$LOCALIZE[40137] 10</label>
-					<include>DefaultSettingButton</include>
-					<label2>$VAR[WidgetsAppearence10Label2Var]</label2>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal10))</visible>
-				</control>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>

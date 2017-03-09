@@ -817,6 +817,12 @@
 					<onclick>Skin.ToggleSetting(HomeClearLogo)</onclick>
 					<selected>!Skin.HasSetting(HomeClearLogo)</selected>
 				</control>
+				<control type="radiobutton" id="10015">
+					<label>$LOCALIZE[31133]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(HomeBanner)</selected>
+					<onclick>Skin.ToggleSetting(HomeBanner)</onclick>
+				</control>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>

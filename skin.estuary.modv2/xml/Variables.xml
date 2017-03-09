@@ -76,18 +76,6 @@
 		<value condition="String.IsEqual(Window.Property(WidgetStyle8),Squares)">$LOCALIZE[40140]</value>
 		<value>$LOCALIZE[40138]</value>
 	</variable>
-	<variable name="WidgetsAppearence9Label2Var">
-		<value condition="String.IsEqual(Window.Property(WidgetStyle9),Posters)">$LOCALIZE[40138]</value>
-		<value condition="String.IsEqual(Window.Property(WidgetStyle9),Thumbs)">$LOCALIZE[40139]</value>
-		<value condition="String.IsEqual(Window.Property(WidgetStyle9),Squares)">$LOCALIZE[40140]</value>
-		<value>$LOCALIZE[40138]</value>
-	</variable>
-	<variable name="WidgetsAppearence10Label2Var">
-		<value condition="String.IsEqual(Window.Property(WidgetStyle10),Posters)">$LOCALIZE[40138]</value>
-		<value condition="String.IsEqual(Window.Property(WidgetStyle10),Thumbs)">$LOCALIZE[40139]</value>
-		<value condition="String.IsEqual(Window.Property(WidgetStyle10),Squares)">$LOCALIZE[40140]</value>
-		<value>$LOCALIZE[40138]</value>
-	</variable>
     <variable name="PersonalWidget1Label2Var">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1))">$INFO[Container(211).ListItem.Property(widgetName.personal1)]</value>
         <value>$LOCALIZE[40064]</value>
@@ -118,14 +106,6 @@
     </variable>
     <variable name="PersonalWidget8Label2Var">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8))">$INFO[Container(211).ListItem.Property(widgetName.personal8)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="PersonalWidget9Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal9))">$INFO[Container(211).ListItem.Property(widgetName.personal9)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="PersonalWidget10Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal10))">$INFO[Container(211).ListItem.Property(widgetName.personal10)]</value>
         <value>$LOCALIZE[40064]</value>
     </variable>
     <variable name="LabelCategoriesSmallVar">

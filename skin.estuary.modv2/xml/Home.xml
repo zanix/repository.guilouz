@@ -87,7 +87,14 @@
 							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal1)]"/>
 							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal1)]"/>
 							<param name="list_id" value="221001"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle1),Thumbs)"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle1),Thumbs) + Skin.HasSetting(HomeBanner)"/>
+						</include>
+						<include content="WidgetNextAiringEpisodesBanner">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal1)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal1)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal1)]"/>
+							<param name="list_id" value="2210011"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle1),Thumbs) + !Skin.HasSetting(HomeBanner)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal1)]"/>
@@ -108,7 +115,14 @@
 							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal2)]"/>
 							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal2)]"/>
 							<param name="list_id" value="222001"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle2),Thumbs)"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle2),Thumbs) + Skin.HasSetting(HomeBanner)"/>
+						</include>
+						<include content="WidgetNextAiringEpisodesBanner">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal2)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal2)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal2)]"/>
+							<param name="list_id" value="2220011"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle2),Thumbs) + !Skin.HasSetting(HomeBanner)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal2)]"/>
@@ -129,7 +143,14 @@
 							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal3)]"/>
 							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal3)]"/>
 							<param name="list_id" value="223001"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle3),Thumbs)"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle3),Thumbs) + Skin.HasSetting(HomeBanner)"/>
+						</include>
+						<include content="WidgetNextAiringEpisodesBanner">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal3)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal3)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal3)]"/>
+							<param name="list_id" value="2230011"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle3),Thumbs) + !Skin.HasSetting(HomeBanner)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal3)]"/>
@@ -150,7 +171,14 @@
 							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal4)]"/>
 							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal4)]"/>
 							<param name="list_id" value="224001"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle4),Thumbs)"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle4),Thumbs) + Skin.HasSetting(HomeBanner)"/>
+						</include>
+						<include content="WidgetNextAiringEpisodesBanner">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal4)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal4)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal4)]"/>
+							<param name="list_id" value="2240011"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle4),Thumbs) + !Skin.HasSetting(HomeBanner)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal4)]"/>
@@ -171,7 +199,14 @@
 							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal5)]"/>
 							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal5)]"/>
 							<param name="list_id" value="225001"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle5),Thumbs)"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle5),Thumbs) + Skin.HasSetting(HomeBanner)"/>
+						</include>
+						<include content="WidgetNextAiringEpisodesBanner">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal5)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal5)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal5)]"/>
+							<param name="list_id" value="2250011"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle5),Thumbs) + !Skin.HasSetting(HomeBanner)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal5)]"/>
@@ -192,7 +227,14 @@
 							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal6)]"/>
 							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal6)]"/>
 							<param name="list_id" value="226001"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle6),Thumbs)"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle6),Thumbs) + Skin.HasSetting(HomeBanner)"/>
+						</include>
+						<include content="WidgetNextAiringEpisodesBanner">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal6)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal6)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal6)]"/>
+							<param name="list_id" value="2260011"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle6),Thumbs) + !Skin.HasSetting(HomeBanner)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal6)]"/>
@@ -213,7 +255,14 @@
 							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal7)]"/>
 							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal7)]"/>
 							<param name="list_id" value="227001"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle7),Thumbs)"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle7),Thumbs) + Skin.HasSetting(HomeBanner)"/>
+						</include>
+						<include content="WidgetNextAiringEpisodesBanner">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal7)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal7)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal7)]"/>
+							<param name="list_id" value="2270011"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle7),Thumbs) + !Skin.HasSetting(HomeBanner)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal7)]"/>
@@ -234,7 +283,14 @@
 							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal8)]"/>
 							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal8)]"/>
 							<param name="list_id" value="228001"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle8),Thumbs)"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle8),Thumbs) + Skin.HasSetting(HomeBanner)"/>
+						</include>
+						<include content="WidgetNextAiringEpisodesBanner">
+							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal8)]"/>
+							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal8)]"/>
+							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal8)]"/>
+							<param name="list_id" value="2280011"/>
+							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle8),Thumbs) + !Skin.HasSetting(HomeBanner)"/>
 						</include>
 						<include content="WidgetListSquare">
 							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal8)]"/>
@@ -242,48 +298,6 @@
 							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal8)]"/>
 							<param name="list_id" value="228002"/>
 							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle8),Squares)"/>
-						</include>						
-						<include content="WidgetListPoster">
-							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal9)]"/>
-							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal9)]"/>
-							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal9)]"/>
-							<param name="list_id" value="22900"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle9),Posters) | String.IsEmpty(Container(9000).ListItem.Property(WidgetStyle9))"/>
-						</include>
-						<include content="WidgetNextAiringEpisodes">
-							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal9)]"/>
-							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal9)]"/>
-							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal9)]"/>
-							<param name="list_id" value="229001"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle9),Thumbs)"/>
-						</include>
-						<include content="WidgetListSquare">
-							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal9)]"/>
-							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal9)]"/>
-							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal9)]"/>
-							<param name="list_id" value="229002"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle9),Squares)"/>
-						</include>
-						<include content="WidgetListPoster">
-							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal10)]"/>
-							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal10)]"/>
-							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal10)]"/>
-							<param name="list_id" value="221000"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle10),Posters) | String.IsEmpty(Container(9000).ListItem.Property(WidgetStyle10))"/>
-						</include>
-						<include content="WidgetNextAiringEpisodes">
-							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal10)]"/>
-							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal10)]"/>
-							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal10)]"/>
-							<param name="list_id" value="2210001"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle10),Thumbs)"/>
-						</include>
-						<include content="WidgetListSquare">
-							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personal10)]"/>
-							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personal10)]"/>
-							<param name="widget_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget.personal10)]"/>
-							<param name="list_id" value="2210002"/>
-							<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle10),Squares)"/>
 						</include>
 					</control>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
@@ -380,19 +394,33 @@
 							<param name="list_id" value="69001"/>
 							<param name="visible" value="Skin.HasSetting(UseSmallerCategories)" />
 						</include>
-						<include content="WidgetListEpisodes" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_recentlytvshows)">
+						<include content="WidgetListEpisodes" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_recentlytvshows) + Skin.HasSetting(HomeBanner)">
 							<param name="content_path" value="$VAR[HideWatchedEpisodesFromRecentlyVar]"/>
 							<param name="widget_header" value="$LOCALIZE[20387]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6100"/>
 						</include>
-						<include content="WidgetNextAiringEpisodes" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_nextepisodes)">
+						<include content="WidgetListEpisodesBanner" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_recentlytvshows) + !Skin.HasSetting(HomeBanner)">
+							<param name="content_path" value="$VAR[HideWatchedEpisodesFromRecentlyVar]"/>
+							<param name="widget_header" value="$LOCALIZE[20387]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="61001"/>
+						</include>
+						<include content="WidgetNextAiringEpisodes" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_nextepisodes) + Skin.HasSetting(HomeBanner)">
 							<param name="content_path" value="plugin://script.skin.helper.widgets/?action=next&mediatype=episodes&reload=$INFO[Window(Home).Property(widgetreload)]"/>
 							<param name="sortby" value=""/>
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[40012]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6700"/>
+						</include>
+						<include content="WidgetNextAiringEpisodesBanner" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_nextepisodes) + !Skin.HasSetting(HomeBanner)">
+							<param name="content_path" value="plugin://script.skin.helper.widgets/?action=next&mediatype=episodes&reload=$INFO[Window(Home).Property(widgetreload)]"/>
+							<param name="sortby" value=""/>
+							<param name="sortorder" value="descending"/>
+							<param name="widget_header" value="$LOCALIZE[40012]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="67001"/>
 						</include>
 						<include content="WidgetListPoster" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_inprogresstvshows)">
 							<param name="content_path" value="videodb://inprogresstvshows"/>
@@ -408,11 +436,17 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6300"/>
 						</include>
-						<include content="WidgetNextAiringEpisodes" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_nextairingepisodes)">
+						<include content="WidgetNextAiringEpisodes" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_nextairingepisodes) + Skin.HasSetting(HomeBanner)">
 							<param name="content_path" value="plugin://script.skin.helper.widgets/?action=nextaired&mediatype=episodes&reload=$INFO[Window(Home).Property(widgetreload2)]"/>
 							<param name="widget_header" value="$LOCALIZE[40107]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6600"/>
+						</include>
+						<include content="WidgetNextAiringEpisodesBanner" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_nextairingepisodes) + !Skin.HasSetting(HomeBanner)">
+							<param name="content_path" value="plugin://script.skin.helper.widgets/?action=nextaired&mediatype=episodes&reload=$INFO[Window(Home).Property(widgetreload2)]"/>
+							<param name="widget_header" value="$LOCALIZE[40107]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="66001"/>
 						</include>
 						<include content="WidgetListCategories" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_genretvshows)">
 							<param name="content_path" value="videodb://tvshows/genres/"/>
@@ -1500,7 +1534,7 @@
 				<height>115</height>
 				<centerleft>50%</centerleft>
 				<texture colordiffuse="4DFFFFFF">dialogs/clearlogo-back.png</texture>
-				<visible>[Control.HasFocus(22100) | Control.HasFocus(211001) | Control.HasFocus(221002) | Control.HasFocus(22200) | Control.HasFocus(222001) | Control.HasFocus(222002) | Control.HasFocus(22300) | Control.HasFocus(223001) | Control.HasFocus(223002) | Control.HasFocus(22400) | Control.HasFocus(224001) | Control.HasFocus(224002) | Control.HasFocus(22500) | Control.HasFocus(225001) | Control.HasFocus(225002) | Control.HasFocus(22600) | Control.HasFocus(226001) | Control.HasFocus(226002) | Control.HasFocus(22700) | Control.HasFocus(227001) | Control.HasFocus(227002) | Control.HasFocus(22800) | Control.HasFocus(228001) | Control.HasFocus(228002) | Control.HasFocus(22900) | Control.HasFocus(229001) | Control.HasFocus(229002) | Control.HasFocus(221000) | Control.HasFocus(2210001) | Control.HasFocus(2210002) | Control.HasFocus(5100) | Control.HasFocus(5200) | Control.HasFocus(5300) | Control.HasFocus(5400) | Control.HasFocus(5600) | Control.HasFocus(6100) | Control.HasFocus(6200) | Control.HasFocus(6300) | Control.HasFocus(6600) | Control.HasFocus(6700) | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300) | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)] + ![String.IsEmpty(Container().ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(Container().ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
+				<visible>[Control.HasFocus(22100) | Control.HasFocus(221001) | Control.HasFocus(2210011) | Control.HasFocus(221002) | Control.HasFocus(22200) | Control.HasFocus(222001) | Control.HasFocus(2220011) | Control.HasFocus(222002) | Control.HasFocus(22300) | Control.HasFocus(223001) | Control.HasFocus(2230011) | Control.HasFocus(223002) | Control.HasFocus(22400) | Control.HasFocus(224001) | Control.HasFocus(2240011) | Control.HasFocus(224002) | Control.HasFocus(22500) | Control.HasFocus(225001) | Control.HasFocus(2250011) | Control.HasFocus(225002) | Control.HasFocus(22600) | Control.HasFocus(226001) | Control.HasFocus(2260011) | Control.HasFocus(226002) | Control.HasFocus(22700) | Control.HasFocus(227001) | Control.HasFocus(2270011) | Control.HasFocus(227002) | Control.HasFocus(22800) | Control.HasFocus(228001) | Control.HasFocus(2280011) | Control.HasFocus(228002) | Control.HasFocus(5100) | Control.HasFocus(5200) | Control.HasFocus(5300) | Control.HasFocus(5400) | Control.HasFocus(5600) | Control.HasFocus(6100) | Control.HasFocus(61001) | Control.HasFocus(6200) | Control.HasFocus(6300) | Control.HasFocus(6600) | Control.HasFocus(66001) | Control.HasFocus(6700) | Control.HasFocus(67001) | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300) | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)] + ![String.IsEmpty(Container().ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(Container().ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
 				<visible>!Skin.HasSetting(HomeClearLogo)</visible>
 				<visible>!Window.IsVisible(DialogVolumeBar.xml)</visible>
 			</control>
@@ -1511,7 +1545,7 @@
 				<centerleft>50%</centerleft>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture>$VAR[HomeClearLogoVar]</texture>
-				<visible>Control.HasFocus(22100) | Control.HasFocus(211001) | Control.HasFocus(221002) | Control.HasFocus(22200) | Control.HasFocus(222001) | Control.HasFocus(222002) | Control.HasFocus(22300) | Control.HasFocus(223001) | Control.HasFocus(223002) | Control.HasFocus(22400) | Control.HasFocus(224001) | Control.HasFocus(224002) | Control.HasFocus(22500) | Control.HasFocus(225001) | Control.HasFocus(225002) | Control.HasFocus(22600) | Control.HasFocus(226001) | Control.HasFocus(226002) | Control.HasFocus(22700) | Control.HasFocus(227001) | Control.HasFocus(227002) | Control.HasFocus(22800) | Control.HasFocus(228001) | Control.HasFocus(228002) | Control.HasFocus(22900) | Control.HasFocus(229001) | Control.HasFocus(229002) | Control.HasFocus(221000) | Control.HasFocus(2210001) | Control.HasFocus(2210002) | Control.HasFocus(5100) | Control.HasFocus(5200) | Control.HasFocus(5300) | Control.HasFocus(5400) | Control.HasFocus(5600) | Control.HasFocus(6100) | Control.HasFocus(6200) | Control.HasFocus(6300) | Control.HasFocus(6600) | Control.HasFocus(6700) | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300) | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)</visible>
+				<visible>Control.HasFocus(22100) | Control.HasFocus(221001) | Control.HasFocus(2210011) | Control.HasFocus(221002) | Control.HasFocus(22200) | Control.HasFocus(222001) | Control.HasFocus(2220011) | Control.HasFocus(222002) | Control.HasFocus(22300) | Control.HasFocus(223001) | Control.HasFocus(2230011) | Control.HasFocus(223002) | Control.HasFocus(22400) | Control.HasFocus(224001) | Control.HasFocus(2240011) | Control.HasFocus(224002) | Control.HasFocus(22500) | Control.HasFocus(225001) | Control.HasFocus(2250011) | Control.HasFocus(225002) | Control.HasFocus(22600) | Control.HasFocus(226001) | Control.HasFocus(2260011) | Control.HasFocus(226002) | Control.HasFocus(22700) | Control.HasFocus(227001) | Control.HasFocus(2270011) | Control.HasFocus(227002) | Control.HasFocus(22800) | Control.HasFocus(228001) | Control.HasFocus(2280011) | Control.HasFocus(228002) | Control.HasFocus(5100) | Control.HasFocus(5200) | Control.HasFocus(5300) | Control.HasFocus(5400) | Control.HasFocus(5600) | Control.HasFocus(6100) | Control.HasFocus(61001) | Control.HasFocus(6200) | Control.HasFocus(6300) | Control.HasFocus(6600) | Control.HasFocus(66001) | Control.HasFocus(6700) | Control.HasFocus(67001) | Control.HasFocus(7100) | Control.HasFocus(7200) | Control.HasFocus(7300) | Control.HasFocus(7400) | Control.HasFocus(7500) | Control.HasFocus(7600)</visible>
 				<visible>!Skin.HasSetting(HomeClearLogo)</visible>
 				<visible>!Window.IsVisible(DialogVolumeBar.xml)</visible>
 			</control>

@@ -571,7 +571,10 @@ msgctxt "#31132"
 msgid "Hide submenus widget"
 msgstr ""
 
-#: Empty string 31133
+#: /xml/SkinSettings.xml
+msgctxt "#31133"
+msgid "Show banners on episodes/thumbs widgets"
+msgstr ""
 
 #: /xml/DialogSeekBar.xml
 msgctxt "#31134"
