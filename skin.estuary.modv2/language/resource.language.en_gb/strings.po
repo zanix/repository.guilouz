@@ -794,7 +794,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40018"
-msgid "Hide items of widget"
+msgid "Hide watched items"
 msgstr ""
 
 #: /xml/SkinSettings.xml
