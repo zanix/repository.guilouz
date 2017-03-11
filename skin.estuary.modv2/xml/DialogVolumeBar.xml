@@ -15,7 +15,7 @@
 				<info>Player.Volume</info>
 			</control>
 			<control type="image">
-				<left>22</left>
+				<left>6</left>
 				<top>15</top>
 				<width>100</width>
 				<height>100</height>
@@ -23,14 +23,14 @@
 				<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(slideshow)</visible>
 			</control>
 			<control type="image">
-				<left>22</left>
+				<left>6</left>
 				<top>15</top>
 				<width>100</width>
 				<height>100</height>
 				<texture>dialogs/volume/progress2/back.png</texture>
 			</control>
 			<control type="image">
-				<left>22</left>
+				<left>6</left>
 				<top>15</top>
 				<width>100</width>
 				<height>100</height>
