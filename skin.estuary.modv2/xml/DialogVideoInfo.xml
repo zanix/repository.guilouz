@@ -378,7 +378,7 @@
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="164" />
-						<param name="label" value="$LOCALIZE[563] (TVDB) : [COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TVDB)]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.TVDB), (, $LOCALIZE[40027])][/COLOR]" />
+						<param name="label" value="$LOCALIZE[563] TVDB : [COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TVDB)]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.TVDB), (, $LOCALIZE[40027])][/COLOR]" />
 						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TVDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.TVDB))] + [Container.Content(tvshows) |Container.Content(seasons) | Container.Content(episodes)]" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
