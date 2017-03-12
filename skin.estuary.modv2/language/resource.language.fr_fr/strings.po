@@ -676,7 +676,10 @@ msgctxt "#31156"
 msgid "Choose background pattern"
 msgstr "Type du modèle d'arrière-plan"
 
-#: Empty String 31157
+#: /xml/SettingsSystemInfo.xml
+msgctxt "#31157"
+msgid "Library info"
+msgstr "Informations de la bibliothèque"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31158"
