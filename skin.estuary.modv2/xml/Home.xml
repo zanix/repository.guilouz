@@ -1355,6 +1355,7 @@
 							<visible>![[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets)]</visible>
 							<control type="group">
 								<width>300</width>
+								<visible>Library.HasContent(movies)</visible>
 								<control type="image">
 									<centerleft>50%</centerleft>
 									<width>100</width>
@@ -1371,6 +1372,7 @@
 							</control>
 							<control type="group">
 								<width>300</width>
+								<visible>Library.HasContent(tvshows)</visible>
 								<control type="image">
 									<centerleft>50%</centerleft>
 									<width>100</width>
@@ -1387,6 +1389,7 @@
 							</control>
 							<control type="group">
 								<width>300</width>
+								<visible>Library.HasContent(music)</visible>
 								<control type="image">
 									<centerleft>50%</centerleft>
 									<width>100</width>
@@ -1403,6 +1406,7 @@
 							</control>
 							<control type="group">
 								<width>300</width>
+								<visible>Library.HasContent(musicvideos)</visible>
 								<control type="image">
 									<centerleft>50%</centerleft>
 									<width>100</width>
@@ -1428,6 +1432,7 @@
 							<visible>[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets)</visible>
 							<control type="group">
 								<width>300</width>
+								<visible>Library.HasContent(movies)</visible>
 								<control type="image">
 									<centerleft>50%</centerleft>
 									<width>100</width>
@@ -1444,6 +1449,7 @@
 							</control>
 							<control type="group">
 								<width>300</width>
+								<visible>Library.HasContent(tvshows)</visible>
 								<control type="image">
 									<centerleft>50%</centerleft>
 									<width>100</width>
@@ -1460,6 +1466,7 @@
 							</control>
 							<control type="group">
 								<width>300</width>
+								<visible>Library.HasContent(music)</visible>
 								<control type="image">
 									<centerleft>50%</centerleft>
 									<width>100</width>
@@ -1476,6 +1483,7 @@
 							</control>
 							<control type="group">
 								<width>300</width>
+								<visible>Library.HasContent(musicvideos)</visible>
 								<control type="image">
 									<centerleft>50%</centerleft>
 									<width>100</width>
