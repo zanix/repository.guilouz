@@ -411,6 +411,234 @@
 			</control>
 		</definition>
 	</include>
+	<include name="InfoNextWatchEpisodeLayout">
+		<param name="main_label">$INFO[ListItem.Title]</param>
+		<param name="sub_label">$INFO[ListItem.TVShowTitle]</param>
+		<param name="thumb_label">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</param>
+		<param name="fallback_image">DefaultTVShows.png</param>
+		<param name="focused">false</param>
+		<definition>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>288</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<top>6</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>296</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>10</top>
+				<width>316</width>
+				<height>218</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWatchThumbVar]</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<left>136</left>
+				<top>138</top>
+				<width>160</width>
+				<height>70</height>
+				<texture flipx="true">overlays/overlay-bg.png</texture>
+				<visible>!ListItem.IsParentFolder</visible>
+			</control>
+			<control type="label">
+				<left>31</left>
+				<top>178</top>
+				<width>260</width>
+				<label>$PARAM[thumb_label]</label>
+				<font>font20_title</font>
+				<shadowcolor>text_shadow</shadowcolor>
+				<align>right</align>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>175</top>
+				<width>32</width>
+				<height>32</height>
+				<texture>$VAR[WallWatchedIconVar]</texture>
+			</control>
+			<control type="textbox">
+				<left>28</left>
+				<top>202</top>
+				<width>262</width>
+				<height>80</height>
+				<font>font12</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Window.IsActive(videos)</visible>
+			</control>
+			<control type="group">
+				<visible>!Window.IsActive(videos)</visible>
+				<control type="label">
+					<left>29</left>
+					<top>210</top>
+					<width>260</width>
+					<label>$PARAM[sub_label]</label>
+					<font>font12</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<left>29</left>
+					<top>240</top>
+					<width>260</width>
+					<label>$PARAM[main_label]</label>
+					<font>font10</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="progress">
+				<left>20</left>
+				<top>258</top>
+				<width>276</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.PercentPlayed</info>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
+			<control type="group">
+				<left>134</left>
+				<top>8</top>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+			</control>
+		</definition>
+	</include>
+	<include name="InfoNextWatchEpisodeBannerLayout">
+		<param name="main_label">$INFO[ListItem.Title]</param>
+		<param name="sub_label">$INFO[ListItem.TVShowTitle]</param>
+		<param name="thumb_label">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</param>
+		<param name="fallback_image">DefaultTVShows.png</param>
+		<param name="focused">false</param>
+		<definition>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>348</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<top>6</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>356</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>70</top>
+				<width>316</width>
+				<height>218</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWatchThumbVar]</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>30</top>
+				<width>276</width>
+				<height>58</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[BannerVar]</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			<control type="image">
+				<left>136</left>
+				<top>198</top>
+				<width>160</width>
+				<height>70</height>
+				<texture flipx="true">overlays/overlay-bg.png</texture>
+				<visible>!ListItem.IsParentFolder</visible>
+			</control>
+			<control type="label">
+				<left>31</left>
+				<top>238</top>
+				<width>260</width>
+				<label>$PARAM[thumb_label]</label>
+				<font>font20_title</font>
+				<shadowcolor>text_shadow</shadowcolor>
+				<align>right</align>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>235</top>
+				<width>32</width>
+				<height>32</height>
+				<texture>$VAR[WallWatchedIconVar]</texture>
+			</control>
+			<control type="textbox">
+				<left>28</left>
+				<top>262</top>
+				<width>262</width>
+				<height>80</height>
+				<font>font12</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Window.IsActive(videos)</visible>
+			</control>
+			<control type="group">
+				<visible>!Window.IsActive(videos)</visible>
+				<control type="label">
+					<left>29</left>
+					<top>270</top>
+					<width>260</width>
+					<label>$PARAM[sub_label]</label>
+					<font>font12</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<left>29</left>
+					<top>300</top>
+					<width>260</width>
+					<label>$PARAM[main_label]</label>
+					<font>font10</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="progress">
+				<left>20</left>
+				<top>318</top>
+				<width>276</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.PercentPlayed</info>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
+			<control type="group">
+				<left>134</left>
+				<top>8</top>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+			</control>
+		</definition>
+	</include>
 	<include name="WidgetNextAiringEpisodes">
 		<param name="main_label">$INFO[ListItem.Title]</param>
 		<param name="sub_label">$INFO[ListItem.TVShowTitle]</param>
@@ -540,6 +768,146 @@
 							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="220,118" />
 						</animation>
 						<include content="InfoNextAiringEpisodeBannerLayout">
+							<param name="main_label" value="$PARAM[main_label]" />
+							<param name="sub_label" value="$PARAM[sub_label]" />
+							<param name="thumb_label" value="$PARAM[thumb_label]" />
+							<param name="focused" value="true" />
+						</include>
+					</control>
+				</focusedlayout>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[widget_limit]">$PARAM[content_path]</content>
+			</control>
+		</definition>
+	</include>
+	<include name="WidgetNextWatchEpisodes">
+		<param name="main_label">$INFO[ListItem.Title]</param>
+		<param name="sub_label">$INFO[ListItem.TVShowTitle]</param>
+		<param name="thumb_label">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</param>
+		<param name="sortby"></param>
+		<param name="visible">True</param>
+		<param name="sortorder">ascending</param>
+		<param name="widget_limit">$VAR[Label_SkinSetting_WidgetNumber]</param>
+		<definition>
+			<include content="CategoryLabel">
+				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="posy" value="200"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<control type="panel" id="$PARAM[list_id]">
+				<left>0</left>
+				<top>105</top>
+				<right>0</right>
+				<height>410</height>
+				<include content="WidgetListCommon">
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
+				<visible>$PARAM[visible]</visible>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<itemlayout width="310" height="500">
+					<control type="group">
+						<left>70</left>
+						<top>5</top>
+						<include content="InfoNextWatchEpisodeLayout">
+							<param name="main_label" value="$PARAM[main_label]" />
+							<param name="sub_label" value="$PARAM[sub_label]" />
+							<param name="thumb_label" value="$PARAM[thumb_label]" />
+							<param name="focused" value="false" />
+						</include>
+					</control>
+				</itemlayout>
+				<focusedlayout width="310" height="500">
+					<control type="button">
+						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<texturenofocus></texturenofocus>
+						<texturefocus></texturefocus>
+					</control>
+					<control type="group">
+						<depth>DepthContentPopout</depth>
+						<left>70</left>
+						<top>5</top>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="220,118" />
+						</animation>
+						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="220,118" />
+						</animation>
+						<include content="InfoNextWatchEpisodeLayout">
+							<param name="main_label" value="$PARAM[main_label]" />
+							<param name="sub_label" value="$PARAM[sub_label]" />
+							<param name="thumb_label" value="$PARAM[thumb_label]" />
+							<param name="focused" value="true" />
+						</include>
+					</control>
+				</focusedlayout>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[widget_limit]">$PARAM[content_path]</content>
+			</control>
+		</definition>
+	</include>
+	<include name="WidgetNextWatchEpisodesBanner">
+		<param name="main_label">$INFO[ListItem.Title]</param>
+		<param name="sub_label">$INFO[ListItem.TVShowTitle]</param>
+		<param name="thumb_label">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</param>
+		<param name="sortby"></param>
+		<param name="visible">True</param>
+		<param name="sortorder">ascending</param>
+		<param name="widget_limit">$VAR[Label_SkinSetting_WidgetNumber]</param>
+		<definition>
+			<include content="CategoryLabel">
+				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="posy" value="200"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<control type="panel" id="$PARAM[list_id]">
+				<left>0</left>
+				<top>105</top>
+				<right>0</right>
+				<height>470</height>
+				<include content="WidgetListCommon">
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
+				<visible>$PARAM[visible]</visible>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<itemlayout width="310" height="550">
+					<control type="group">
+						<left>70</left>
+						<top>5</top>
+						<include content="InfoNextWatchEpisodeBannerLayout">
+							<param name="main_label" value="$PARAM[main_label]" />
+							<param name="sub_label" value="$PARAM[sub_label]" />
+							<param name="thumb_label" value="$PARAM[thumb_label]" />
+							<param name="focused" value="false" />
+						</include>
+					</control>
+				</itemlayout>
+				<focusedlayout width="310" height="550">
+					<control type="button">
+						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<texturenofocus></texturenofocus>
+						<texturefocus></texturefocus>
+					</control>
+					<control type="group">
+						<depth>DepthContentPopout</depth>
+						<left>70</left>
+						<top>5</top>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="220,118" />
+						</animation>
+						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="220,118" />
+						</animation>
+						<include content="InfoNextWatchEpisodeBannerLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
 							<param name="thumb_label" value="$PARAM[thumb_label]" />

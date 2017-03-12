@@ -1,6 +1,7 @@
 [B]2.1.5[/B]
 • Add library info on settings widget
 • Add ratings/user ratings in list views
+• Changes on 'Next episode to watch' widget
 • Minor fixes
 
 [B]2.1.4[/B]
