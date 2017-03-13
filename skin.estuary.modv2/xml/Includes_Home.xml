@@ -443,7 +443,7 @@
 				<width>316</width>
 				<height>218</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWatchThumbVar]</texture>
-				<aspectratio>stretch</aspectratio>
+				<aspectratio>scale</aspectratio>
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
@@ -553,7 +553,7 @@
 				<width>316</width>
 				<height>218</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWatchThumbVar]</texture>
-				<aspectratio>stretch</aspectratio>
+				<aspectratio>scale</aspectratio>
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
