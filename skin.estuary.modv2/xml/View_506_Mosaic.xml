@@ -5,12 +5,12 @@
 			<include>OpenClose_Right</include>
 			<visible>Control.IsVisible(506)</visible>
 			<include>Visible_Right</include>
-			<left>0</left>
+			<left>-20</left>
 			<right>0</right>
-			<top>85</top>
+			<top>65</top>
 			<control type="panel" id="506">
 				<width>100%</width>
-				<height>910</height>
+				<height>950</height>
 				<onup condition="!Skin.HasSetting(KioskMode)">9000</onup>
 				<onright>506</onright>
 				<onleft>506</onleft>
@@ -25,16 +25,18 @@
 					<control type="image">
 						<left>10</left>
 						<top>10</top>
-						<width>270</width>
-						<height>170</height>
+						<width>310</width>
+						<height>210</height>
 						<texture fallback="DefaultFolderSquare.png" background="true">$VAR[ShiftThumbVar]</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
 						<aspectratio>scale</aspectratio>
 					</control>
 				</itemlayout>
 				<focusedlayout height="180" width="280" condition="Container.Content(images)">
 						<control type="image">
-							<left>0</left>
-							<top>0</top>
+							<left>20</left>
+							<top>20</top>
 							<width>290</width>
 							<height>190</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
@@ -42,9 +44,11 @@
 						<control type="image">
 							<left>10</left>
 							<top>10</top>
-							<width>270</width>
-							<height>170</height>
+							<width>310</width>
+							<height>210</height>
 							<texture fallback="DefaultFolderSquare.png" background="true">$VAR[ShiftThumbVar]</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
 							<aspectratio>scale</aspectratio>
 						</control>
 				</focusedlayout>
