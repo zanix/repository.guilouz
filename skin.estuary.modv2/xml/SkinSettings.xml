@@ -715,7 +715,6 @@
 				<ondown>1000</ondown>
 				<visible>Container(9000).HasFocus(2)</visible>
 				<control type="label" id="100011">
-					<width>1450</width>
 					<textoffsetx>45</textoffsetx>
 					<top>0</top>
 					<height>50</height>
@@ -789,7 +788,6 @@
 					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
 				</control>
 				<control type="label" id="100013">
-					<width>1450</width>
 					<textoffsetx>45</textoffsetx>
 					<top>0</top>
 					<height>50</height>
