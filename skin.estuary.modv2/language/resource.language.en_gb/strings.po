@@ -736,7 +736,10 @@ msgctxt "#40004"
 msgid "Hide main menu when selecting widgets"
 msgstr ""
 
-#: Empty string 40005
+#: /xml/View_503_Gallery.xml
+msgctxt "#40005"
+msgid "Gallery"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40006"
@@ -793,7 +796,10 @@ msgctxt "#40016"
 msgid "InfoWall (thumbnails)"
 msgstr ""
 
-#: Empty String 40017
+#: /xml/View_506_Mosaic.xml
+msgctxt "#40017"
+msgid "Mosaic"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40018"

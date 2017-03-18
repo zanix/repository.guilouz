@@ -3,7 +3,7 @@
 	<onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
-	<views>50,51,52,53,54,505,55,500,504,501,502</views>
+	<views>50,51,52,53,54,505,55,500,504,501,502,503</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include>DefaultBackground</include>
@@ -18,6 +18,8 @@
 			<include>View_500_Wall</include>
 			<include>View_501_Banner</include>
 			<include>View_502_FanArt</include>
+			<include condition="!String.IsEqual(Skin.AspectRatio,21:9)">View_503_Gallery</include>
+			<include condition="String.IsEqual(Skin.AspectRatio,21:9)">View_503_Gallery_21x9</include>
 			<include>View_504_ThumbsWall</include>
 			<include>View_505_ThumbsInfoWall</include>
 			<control type="group">
@@ -146,7 +148,7 @@
 			<control type="group">
 				<visible>[Control.IsVisible(500) | Control.IsVisible(504)] + ListItem.IsCollection</visible>
 				<control type="list" id="50500">
-					<right>20</right>
+					<right>16</right>
 					<bottom>20</bottom>
 					<width>780</width>
 					<height>90</height>
@@ -175,6 +177,51 @@
 						</control>
 					</focusedlayout>
 					<itemlayout height="90" width="78">
+						<control type="image">
+							<left>5</left>
+							<top>0</top>
+							<right>5</right>
+							<bottom>0</bottom>
+							<aspectratio>stretch</aspectratio>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<bordertexture>colors/white.png</bordertexture>
+							<bordersize>1</bordersize>
+						</control>
+					</itemlayout>
+					<content sortby="year" sortorder="ascending">$VAR[InfoListPathVar]</content>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(503) + ListItem.IsCollection</visible>
+				<control type="list" id="500503">
+					<right>16</right>
+					<bottom>20</bottom>
+					<width>1161</width>
+					<height>170</height>
+					<orientation>horizontal</orientation>
+					<autoscroll time="1500">true</autoscroll>
+					<itemgap>5</itemgap>
+					<animation effect="slide" end="1032,0" time="0" condition="Integer.IsEqual(Container(500503).NumItems,1)">conditional</animation>
+					<animation effect="slide" end="903,0" time="0" condition="Integer.IsEqual(Container(500503).NumItems,2)">conditional</animation>
+					<animation effect="slide" end="774,0" time="0" condition="Integer.IsEqual(Container(500503).NumItems,3)">conditional</animation>
+					<animation effect="slide" end="645,0" time="0" condition="Integer.IsEqual(Container(500503).NumItems,4)">conditional</animation>
+					<animation effect="slide" end="516,0" time="0" condition="Integer.IsEqual(Container(500503).NumItems,5)">conditional</animation>
+					<animation effect="slide" end="387,0" time="0" condition="Integer.IsEqual(Container(500503).NumItems,6)">conditional</animation>
+					<animation effect="slide" end="258,0" time="0" condition="Integer.IsEqual(Container(500503).NumItems,7)">conditional</animation>
+					<animation effect="slide" end="129,0" time="0" condition="Integer.IsEqual(Container(500503).NumItems,8)">conditional</animation>
+					<focusedlayout height="170" width="129">
+						<control type="image">
+							<left>5</left>
+							<top>0</top>
+							<right>5</right>
+							<bottom>0</bottom>
+							<aspectratio>stretch</aspectratio>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<bordertexture>colors/white.png</bordertexture>
+							<bordersize>1</bordersize>
+						</control>
+					</focusedlayout>
+					<itemlayout height="170" width="129">
 						<control type="image">
 							<left>5</left>
 							<top>0</top>
@@ -256,7 +303,7 @@
 				<centerleft>50%</centerleft>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture>$VAR[LibraryClearLogoVar]</texture>
-				<visible>Control.IsVisible(51)</visible>
+				<visible>Control.IsVisible(51) | Control.IsVisible(503)</visible>
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
 			</control>
@@ -267,9 +314,21 @@
 				<centerleft>50%</centerleft>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture>$VAR[LibraryClearLogoVar]</texture>
-				<visible>Control.IsVisible(53)</visible>
+				<visible>Control.IsVisible(53) + !Window.IsVisible(MyVideoNav.xml)</visible>
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>326</width>
+				<height>125</height>
+				<centerleft>50%</centerleft>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<texture>$VAR[ViewClearArtVar]</texture>
+				<visible>Control.IsVisible(53) + Window.IsVisible(MyVideoNav.xml)</visible>
+				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
+				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
+				<animation effect="slide" end=",-5" time="0" condition="ListItem.IsCollection">Conditional</animation>
 			</control>
 			<control type="group">
 				<include>OpenClose_Left</include>

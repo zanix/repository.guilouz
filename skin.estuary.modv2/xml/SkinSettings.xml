@@ -667,8 +667,9 @@
 					<label>$LOCALIZE[31062]</label>
 					<label2>$VAR[Label_SkinSetting_WeatherFanart]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
+					<onclick condition="System.HasAddon(script.image.resource.select) + System.HasAddon(resource.images.weatherfanart.multi)">RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
+					<onclick condition="!System.HasAddon(resource.images.weatherfanart.multi)">InstallAddon(resource.images.weatherfanart.multi)</onclick>
 					<enable>!Skin.HasSetting(no_fanart)</enable>
 				</control>
 				<control type="button" id="609">

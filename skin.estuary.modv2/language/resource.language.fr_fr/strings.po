@@ -736,7 +736,10 @@ msgctxt "#40004"
 msgid "Hide main menu when selecting widgets"
 msgstr "Masquer le menu principal lors de la sélection des widgets"
 
-#: Empty string 40005
+#: /xml/View_503_Gallery.xml
+msgctxt "#40005"
+msgid "Gallery"
+msgstr "Galerie"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40006"
@@ -793,7 +796,10 @@ msgctxt "#40016"
 msgid "InfoWall (thumbnails)"
 msgstr "Mur avec informations (vignettes)"
 
-#: Empty String 40017
+#: /xml/View_506_Mosaic.xml
+msgctxt "#40017"
+msgid "Mosaic"
+msgstr "Mosaïque"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40018"
