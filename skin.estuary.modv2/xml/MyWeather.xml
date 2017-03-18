@@ -8,20 +8,17 @@
 			<include>HiddenObject</include>
 			<animation effect="fade" time="300" start="100" end="0">Focus</animation>
 			<onfocus>SetFocus(2000)</onfocus>
-			<onclick>noop</onclick>
 			<visible allowhiddenfocus="true">Control.HasFocus(20000)</visible>
 		</control>
 		<control type="button" id="20001">
 			<include>HiddenObject</include>
 			<animation effect="fade" time="300" start="100" end="0">Focus</animation>
 			<onfocus>SetFocus(2000)</onfocus>
-			<onclick>noop</onclick>
 			<visible allowhiddenfocus="true">Control.HasFocus(20001)</visible>
 		</control>
 		<control type="button" id="10000">
 			<include>HiddenObject</include>
 			<onfocus>ActivateWindow(servicesettings,weather)</onfocus>
-			<onclick>noop</onclick>
 		</control>
 		<control type="videowindow">
 			<depth>DepthBackground</depth>

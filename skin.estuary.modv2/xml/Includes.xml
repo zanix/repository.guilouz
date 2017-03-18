@@ -933,7 +933,6 @@
 				<bottom>0</bottom>
 				<texturefocus />
 				<texturenofocus />
-				<onclick>noop</onclick>
 			</control>
 			<control type="radiobutton">
 				<right>10</right>

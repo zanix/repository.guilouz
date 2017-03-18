@@ -6,7 +6,6 @@
 			<include>HiddenObject</include>
 			<animation effect="fade" delay="500" time="0" start="100" end="0">Visible</animation>
 			<animation effect="fade" delay="500" time="0" start="100" end="0">WindowOpen</animation>
-			<onclick>noop</onclick>
 			<visible>Control.IsVisible(51)</visible>
 		</control>
 		<control type="group">

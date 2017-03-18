@@ -26,7 +26,6 @@
 			<texturefocus/>
 			<left>-5000</left>
 			<onfocus>SetFocus(132)</onfocus>
-			<onclick>noop</onclick>
 			<visible allowhiddenfocus="true">Control.HasFocus(20000)</visible>
 		</control>
 		<control type="button" id="20001">
@@ -34,7 +33,6 @@
 			<width>0</width>
 			<texturefocus/>
 			<left>-5000</left>
-			<onclick>noop</onclick>
 			<visible allowhiddenfocus="true">Control.HasFocus(20001)</visible>
 		</control>
 		<control type="group">
