@@ -3,7 +3,7 @@
 	<onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
-	<views>50,51,52,53,54,505,55,500,504,501,502,503</views>
+	<views>50,51,52,53,54,505,55,500,504,501,502,503,506</views>
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include>DefaultBackground</include>
@@ -22,6 +22,7 @@
 			<include condition="String.IsEqual(Skin.AspectRatio,21:9)">View_503_Gallery_21x9</include>
 			<include>View_504_ThumbsWall</include>
 			<include>View_505_ThumbsInfoWall</include>
+			<include>View_506_Mosaic</include>
 			<control type="group">
 				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Left</include>
@@ -146,7 +147,7 @@
 				<param name="info_visible" value="true" />
 			</include>
 			<control type="group">
-				<visible>[Control.IsVisible(500) | Control.IsVisible(504)] + ListItem.IsCollection</visible>
+				<visible>[Control.IsVisible(500) | Control.IsVisible(504) | Control.IsVisible(506)] + ListItem.IsCollection</visible>
 				<control type="list" id="50500">
 					<right>16</right>
 					<bottom>20</bottom>
@@ -329,6 +330,17 @@
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
 				<animation effect="slide" end=",-5" time="0" condition="ListItem.IsCollection">Conditional</animation>
+			</control>
+			<control type="image">
+				<top>5</top>
+				<width>222</width>
+				<height>85</height>
+				<centerleft>50%</centerleft>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<texture>$VAR[LibraryClearLogoVar]</texture>
+				<visible>Control.IsVisible(506)</visible>
+		  		<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
+		  		<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
 			</control>
 			<control type="group">
 				<include>OpenClose_Left</include>

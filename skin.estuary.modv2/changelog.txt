@@ -1,6 +1,6 @@
 [B]2.1.6[/B]
 • Add new 'Gallery' view
-• Add new 'Mosaic' view for pictures
+• Add new 'Mosaic' view
 • Add clearlogos list for 'Shift' view
 • Minor fixes
 
