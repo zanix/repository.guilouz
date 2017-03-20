@@ -798,7 +798,7 @@ msgstr ""
 
 #: /xml/View_506_Mosaic.xml
 msgctxt "#40017"
-msgid "Mosaic"
+msgid "Mosaic (horizontal)"
 msgstr ""
 
 #: /xml/SkinSettings.xml
@@ -1439,4 +1439,9 @@ msgstr ""
 #: /shortcuts/musicvideos.DATA.xml
 msgctxt "#40145"
 msgid "Music videos - Library"
+msgstr ""
+
+#: /xml/View_507_Mosaic_Vertical.xml
+msgctxt "#40146"
+msgid "Mosaic (vertical)"
 msgstr ""

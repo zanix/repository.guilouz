@@ -798,8 +798,8 @@ msgstr "Mur avec informations (vignettes)"
 
 #: /xml/View_506_Mosaic.xml
 msgctxt "#40017"
-msgid "Mosaic"
-msgstr "Mosaïque"
+msgid "Mosaic (horizontal)"
+msgstr "Mosaïque (horizontale)"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40018"
@@ -1440,3 +1440,8 @@ msgstr "Arrière-plan"
 msgctxt "#40145"
 msgid "Music videos - Library"
 msgstr "Clips Musicaux - Bibliothèque"
+
+#: /xml/View_507_Mosaic_Vertical.xml
+msgctxt "#40146"
+msgid "Mosaic (vertical)"
+msgstr "Mosaïque (verticale)"

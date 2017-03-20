@@ -1,3 +1,6 @@
+[B]2.1.8[/B]
+• Add new 'Mosaic (vertical)' view
+
 [B]2.1.7[/B]
 • Changes for Kodi 18
 • Fix setting to disable submenu
