@@ -210,7 +210,7 @@
 					<control type="textbox" id="15500">
 						<top>640</top>
 						<width>535</width>
-						<bottom>117</bottom>
+						<bottom>112</bottom>
 						<align>justify</align>
 						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$VAR[ListBoxInfoVar]</label>

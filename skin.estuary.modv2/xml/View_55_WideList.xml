@@ -164,6 +164,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Year]</label>
 						<shadowcolor>text_shadow</shadowcolor>
+						<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
 					</control>
 					<control type="label">
 						<left>105</left>
@@ -174,6 +175,18 @@
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
+						<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>0</top>
+						<bottom>0</bottom>
+						<right>100</right>
+						<aligny>center</aligny>
+						<scroll>true</scroll>
+						<label>$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<visible>Container.Content(artists) | Container.Content(albums)</visible>
 					</control>
 					<control type="label">
 						<left>40</left>
@@ -196,6 +209,7 @@
 						<label>$INFO[ListItem.Year]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
+						<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
 					</control>
 					<control type="label">
 						<left>105</left>
@@ -203,8 +217,21 @@
 						<bottom>0</bottom>
 						<right>100</right>
 						<aligny>center</aligny>
+						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
+						<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
+					</control>
+					<control type="label">
+						<left>40</left>
+						<top>0</top>
+						<bottom>0</bottom>
+						<right>100</right>
+						<aligny>center</aligny>
+						<scroll>true</scroll>
+						<label>$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<visible>Container.Content(artists) | Container.Content(albums)</visible>
 					</control>
 					<control type="label">
 						<left>40</left>

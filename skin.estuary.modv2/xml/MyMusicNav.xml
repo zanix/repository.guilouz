@@ -30,7 +30,7 @@
 			</include>
 			<include>CommonScrollbars</include>
 			<control type="group">
-				<visible>Control.IsVisible(500) + String.IsEqual(listitem.dbtype,artist)</visible>
+				<visible>[Control.IsVisible(500) | Control.IsVisible(506) | Control.IsVisible(507)] + String.IsEqual(listitem.dbtype,artist)</visible>
 				<control type="list" id="5005001">
 					<right>16</right>
 					<bottom>20</bottom>
