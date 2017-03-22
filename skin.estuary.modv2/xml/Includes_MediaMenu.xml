@@ -176,7 +176,7 @@
 				<control type="button" id="10">
          			<include>MediaMenuItemsCommon</include>
  					<label>$LOCALIZE[20367]</label>
- 					<label2>[B]$INFO[Container.NonFolderItems][/B]</label2>
+ 					<label2>[B]$INFO[Container.NumNonFolderItems][/B]</label2>
  					<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
  				</control>
 				<control type="label" id="300">

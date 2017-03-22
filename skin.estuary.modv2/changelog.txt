@@ -1,4 +1,5 @@
 [B]2.1.9[/B]
+• Changes for Kodi 18
 • Add preview for view mode
 • Minor fixes
 
