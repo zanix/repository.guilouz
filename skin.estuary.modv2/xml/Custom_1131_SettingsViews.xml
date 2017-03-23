@@ -18,10 +18,10 @@
 				<left>0</left>
 				<top>80</top>
 				<control type="image">
-					<left>601</left>
+					<left>600</left>
 					<top>-10</top>
 					<height>930</height>
-					<width>1</width>
+					<width>894</width>
 					<texture colordiffuse="border_alpha">colors/black.png</texture>
 				</control>
 				<control type="image">
@@ -33,6 +33,27 @@
 					<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 					<bordersize>4</bordersize>
 				</control>
+				<control type="image">
+            		<left>812</left>
+            		<bottom>20</bottom>
+            		<width>470</width>
+            		<height>100</height>
+            		<texture>dialogs/logo.png</texture>
+       		    </control>
+       		    <control type="image">
+            		<left>600</left>
+            		<bottom>73</bottom>
+            		<width>212</width>
+            		<height>4</height>
+            		<texture>colors/white.png</texture>
+       		    </control>
+       		    <control type="image">
+            		<left>1282</left>
+            		<bottom>22</bottom>
+            		<width>212</width>
+            		<height>4</height>
+            		<texture>colors/white.png</texture>
+       		    </control>
 				<control type="grouplist" id="11100">
 					<width>600</width>
 					<height>910</height>

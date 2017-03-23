@@ -174,7 +174,7 @@ msgstr "Informations de version "
 #: /xml/EventLog.xml /xml/Includes_MediaMenu.xml /xml/SmartPlaylistEditor.xml
 msgctxt "#31032"
 msgid "Order"
-msgstr "Trier"
+msgstr "Ordre"
 
 #: /xml/DialogVideoInfo.xml /xml/DialogSongInfo.xml
 msgctxt "#31033"
@@ -1445,3 +1445,8 @@ msgstr "Clips Musicaux - Bibliothèque"
 msgctxt "#40146"
 msgid "Mosaic (vertical)"
 msgstr "Mosaïque (verticale)"
+
+#: /xml/Includes_MediaMenu.xml
+msgctxt "#40147"
+msgid "View"
+msgstr "Vue"

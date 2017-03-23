@@ -385,7 +385,7 @@
 			</control>
 			<control type="button" id="6051">
 				<include>MediaMenuItemsCommon</include>
-				<label>$LOCALIZE[31023]</label>
+				<label>$LOCALIZE[40147]</label>
 				<label2>[B]$INFO[Container.Viewmode][/B]</label2>
 				<visible>Integer.IsGreater(Container.ViewCount,1)</visible>
 				<onclick>Container.NextViewMode</onclick>
@@ -393,7 +393,7 @@
 			</control>
 			<control type="button" id="60511">
 				<include>MediaMenuItemsCommon</include>
-				<label>$LOCALIZE[31023]</label>
+				<label>$LOCALIZE[40147]</label>
 				<label2>[B]$INFO[Container.Viewmode][/B]</label2>
 				<visible>Integer.IsGreater(Container.ViewCount,1)</visible>
 				<onclick>ActivateWindow(1131)</onclick>

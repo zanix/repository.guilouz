@@ -1445,3 +1445,8 @@ msgstr ""
 msgctxt "#40146"
 msgid "Mosaic (vertical)"
 msgstr ""
+
+#: /xml/Includes_MediaMenu.xml
+msgctxt "#40147"
+msgid "View"
+msgstr ""
