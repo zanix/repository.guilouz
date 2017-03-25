@@ -146,6 +146,20 @@
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<include>OpenClose_Left</include>
+					<visible>!String.StartsWith(Player.FolderPath,http)</visible>
+				</control>
+				<control type="image">
+					<depth>DepthOSD+</depth>
+					<left>10</left>
+					<top>-500</top>
+					<width>440</width>
+					<height>610</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<texture fallback="DefaultVideo.png" background="true">$VAR[NowPlayingPosterVar]</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<include>OpenClose_Left</include>
+					<visible>String.StartsWith(Player.FolderPath,http)</visible>
 				</control>
 				<control type="group">
 					<include>OpenClose_Right</include>

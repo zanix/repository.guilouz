@@ -1,6 +1,7 @@
 [B]2.1.10[/B]
 • Fix missing view for music
 • Fix esthetic appearance
+• Minor fixes
 
 [B]2.1.9[/B]
 • Changes for Kodi 18
