@@ -693,7 +693,7 @@
 						<pagecontrol>12010</pagecontrol>
 						<control type="grouplist" id="12855">
 							<height>390</height>
-							<left>0</left>
+							<left>-10</left>
 							<right>0</right>
 							<top>36</top>
 							<orientation>horizontal</orientation>
@@ -844,9 +844,13 @@
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="FavoritesWidget"/>
 					</include>
+					<include content="CategoryLabel">
+						<param name="label">$LOCALIZE[10134]</param>
+						<param name="list_id" value="14100"/>
+					</include>
 					<control type="panel" id="14100">
-						<left>65</left>
-						<top>0</top>
+						<left>60</left>
+						<top>-10</top>
 						<right>0</right>
 						<bottom>0</bottom>
 						<onleft>9000</onleft>
@@ -901,13 +905,14 @@
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="WeatherWidget"/>
 					</include>
+					<top>6</top>
 					<control type="grouplist" id="15001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>15010</pagecontrol>
 						<control type="group" id="16678">
 							<description>Weather info</description>
-							<left>68</left>
-							<right>70</right>
+							<left>60</left>
+							<right>20</right>
 							<top>102</top>
 							<height>300</height>
 							<visible>!String.IsEmpty(Weather.plugin)</visible>
@@ -917,26 +922,28 @@
 								<texture border="21">dialogs/dialog-bg.png</texture>
 							</control>
 							<control type="label">
-								<left>840</left>
+								<width>500</width>
 								<top>60</top>
 								<aligny>center</aligny>
 								<height>24</height>
-								<right>60</right>
+								<right>50</right>
 								<align>right</align>
 								<font>font30_title</font>
 								<label>$INFO[Weather.Location]</label>
-								<animation effect="slide" end="-420,0" time="0" condition="Skin.HasSetting(HideMainMenuWithWidgets)">conditional</animation>
+								<scroll>true</scroll>
+								<animation effect="slide" end="-460,0" time="0" condition="Skin.HasSetting(HideMainMenuWithWidgets)">conditional</animation>
 							</control>
 							<control type="label">
-								<left>840</left>
+								<width>500</width>
 								<top>120</top>
 								<aligny>center</aligny>
 								<height>24</height>
-								<right>60</right>
+								<right>50</right>
 								<align>right</align>
 								<font>font13</font>
+								<scroll>true</scroll>
 								<label>$INFO[Weather.Temperature]$INFO[Weather.Conditions, ∙ ,]</label>
-								<animation effect="slide" end="-420,0" time="0" condition="Skin.HasSetting(HideMainMenuWithWidgets)">conditional</animation>
+								<animation effect="slide" end="-460,0" time="0" condition="Skin.HasSetting(HideMainMenuWithWidgets)">conditional</animation>
 							</control>
 							<control type="grouplist">
 								<top>50</top>

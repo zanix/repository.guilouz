@@ -81,7 +81,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>-13</left>
+				<left>-23</left>
 				<top>115</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<visible>$PARAM[visible]</visible>
@@ -659,7 +659,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>105</top>
 				<right>0</right>
 				<height>410</height>
@@ -729,7 +729,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>105</top>
 				<right>0</right>
 				<height>470</height>
@@ -799,7 +799,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>105</top>
 				<right>0</right>
 				<height>410</height>
@@ -869,7 +869,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>105</top>
 				<right>0</right>
 				<height>470</height>
@@ -939,7 +939,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>105</top>
 				<right>0</right>
 				<height>410</height>
@@ -1009,7 +1009,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>105</top>
 				<right>0</right>
 				<height>470</height>
@@ -1078,7 +1078,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>120</top>
 				<right>0</right>
 				<height>500</height>
@@ -1145,7 +1145,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>110</top>
 				<right>0</right>
 				<height>290</height>
@@ -1253,7 +1253,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>110</top>
 				<right>0</right>
 				<height>290</height>
@@ -1354,7 +1354,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>110</top>
 				<right>0</right>
 				<height>220</height>
@@ -1479,7 +1479,7 @@
 				<param name="posy" value="200"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>120</top>
 				<right>0</right>
 				<height>430</height>
@@ -1620,7 +1620,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-10</left>
 				<top>90</top>
 				<right>0</right>
 				<height>396</height>
