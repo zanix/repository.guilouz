@@ -81,7 +81,7 @@
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>0</left>
+				<left>-13</left>
 				<top>115</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<visible>$PARAM[visible]</visible>
