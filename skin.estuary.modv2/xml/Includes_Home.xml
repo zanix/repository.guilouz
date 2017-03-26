@@ -90,7 +90,7 @@
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
-				<itemlayout width="310" height="486">
+				<itemlayout width="300" height="486">
 					<control type="group">
 						<left>68</left>
 						<top>10</top>
@@ -99,7 +99,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="486">
+				<focusedlayout width="300" height="486">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
 						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
@@ -111,10 +111,10 @@
 						<left>68</left>
 						<top>10</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="174,130" />
+							<effect type="zoom" start="100" end="109" time="200" tween="sine" easing="inout" center="220,130" />
 						</animation>
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="174,130" />
+							<effect type="zoom" start="109" end="100" time="200" tween="sine" easing="inout" center="220,130" />
 						</animation>
 						<include content="InfoWallMovieLayout">
 							<param name="focused" value="true" />
@@ -692,10 +692,10 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<include content="InfoNextAiringEpisodeLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
@@ -762,10 +762,10 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<include content="InfoNextAiringEpisodeBannerLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
@@ -832,10 +832,10 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<include content="InfoNextWatchEpisodeLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
@@ -902,10 +902,10 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<include content="InfoNextWatchEpisodeBannerLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
@@ -972,10 +972,10 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<include content="InfoWallEpisodeLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
@@ -1042,10 +1042,10 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="220,118" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,118" />
 						</animation>
 						<include content="InfoWallEpisodeBannerLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
@@ -1109,10 +1109,10 @@
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="220,120" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,120" />
 						</animation>
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="220,120" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,120" />
 						</animation>
 						<include content="InfoWallMusicLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
@@ -1547,10 +1547,10 @@
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="240,100" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="230,100" />
 						</animation>
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="240,100" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="230,100" />
 						</animation>
 						<control type="image">
 							<width>319</width>
@@ -1683,10 +1683,10 @@
 						<left>70</left>
 						<depth>DepthContentPopout</depth>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="180,140" />
+							<effect type="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="200,140" />
 						</animation>
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="180,140" />
+							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="200,140" />
 						</animation>
 						<control type="image">
 							<left>0</left>

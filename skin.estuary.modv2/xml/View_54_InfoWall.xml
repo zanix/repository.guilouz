@@ -434,10 +434,10 @@
 			<control type="group">
 				<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
 				<control type="image">
-					<left>11</left>
-					<top>-14</top>
-					<width>298</width>
-					<height>408</height>
+					<left>10</left>
+					<top>-15</top>
+					<width>300</width>
+					<height>410</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
