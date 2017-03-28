@@ -1014,6 +1014,7 @@
 							<itemlayout height="300" width="316.5">
 								<include content="InfoWallEpisodeLayout">
 									<param name="focused" value="false" />
+									<param name="label" value="$INFO[ListItem.Label]" />
 								</include>
 							</itemlayout>
 							<focusedlayout height="300" width="316.5">
@@ -1023,6 +1024,7 @@
 									<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="155,120" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
 									<include content="InfoWallEpisodeLayout">
 										<param name="focused" value="true" />
+										<param name="label" value="$INFO[ListItem.Label]" />
 									</include>
 								</control>
 							</focusedlayout>
@@ -1490,7 +1492,7 @@
 					</control>
 					<control type="group">
 						<visible>Integer.IsGreater(Container(950).NumItems,0)</visible>
-						<height>280</height>
+						<height>370</height>
 						<control type="label">
 							<left>25</left>
 							<top>6</top>
@@ -1658,10 +1660,10 @@
 									<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="346,120" condition="!Skin.HasSetting(no_animations)">Focus</animation>
 									<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="346,120" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
 									<control type="image">
-										<left>11</left>
-										<top>-13</top>
-										<width>620</width>
-										<height>369</height>
+										<left>10</left>
+										<top>-14</top>
+										<width>622</width>
+										<height>371</height>
 										<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 										<bordertexture border="21">overlays/shadow.png</bordertexture>
 										<bordersize>20</bordersize>

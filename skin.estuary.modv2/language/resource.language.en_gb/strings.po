@@ -1450,3 +1450,58 @@ msgstr ""
 msgctxt "#40147"
 msgid "View"
 msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40148"
+msgid "None"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40149"
+msgid "Enable forced views"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40150"
+msgid "Forced view for movies"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40151"
+msgid "Forced view for movie sets"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40152"
+msgid "Forced view for movies inside set"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40153"
+msgid "Forced view for tv shows"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40154"
+msgid "Forced view for seasons"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40155"
+msgid "Forced view for episodes"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40156"
+msgid "Forced view for artists"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40157"
+msgid "Forced view for albums"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40158"
+msgid "Forced view for music videos"
+msgstr ""

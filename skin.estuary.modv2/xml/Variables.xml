@@ -1,5 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="SettingsForcedViewsMoviesVar">
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),50)">$LOCALIZE[535]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),55)">$LOCALIZE[31107]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),51)">$LOCALIZE[20021]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),53)">$LOCALIZE[31100]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),54)">$LOCALIZE[31101]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),505)">$LOCALIZE[40016]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),504)">$LOCALIZE[40015]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),502)">$LOCALIZE[20445]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),503)">$LOCALIZE[40005]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),506)">$LOCALIZE[40017]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),507)">$LOCALIZE[40146]</value>
+		<value>$LOCALIZE[40148]</value>
+	</variable>
+	<variable name="SettingsForcedViewsSetsVar">
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),50)">$LOCALIZE[535]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),55)">$LOCALIZE[31107]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),51)">$LOCALIZE[20021]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),53)">$LOCALIZE[31100]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),54)">$LOCALIZE[31101]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),505)">$LOCALIZE[40016]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),504)">$LOCALIZE[40015]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),502)">$LOCALIZE[20445]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),503)">$LOCALIZE[40005]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),506)">$LOCALIZE[40017]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),507)">$LOCALIZE[40146]</value>
+		<value>$LOCALIZE[40148]</value>
+	</variable>
+	<variable name="SettingsForcedViewsSetMoviesVar">
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),50)">$LOCALIZE[535]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),55)">$LOCALIZE[31107]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),51)">$LOCALIZE[20021]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),53)">$LOCALIZE[31100]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),54)">$LOCALIZE[31101]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),505)">$LOCALIZE[40016]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),504)">$LOCALIZE[40015]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),502)">$LOCALIZE[20445]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),503)">$LOCALIZE[40005]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),506)">$LOCALIZE[40017]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),507)">$LOCALIZE[40146]</value>
+		<value>$LOCALIZE[40148]</value>
+	</variable>
+	<variable name="SettingsForcedViewsTVShowsVar">
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),50)">$LOCALIZE[535]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),55)">$LOCALIZE[31107]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),51)">$LOCALIZE[20021]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),53)">$LOCALIZE[31100]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),54)">$LOCALIZE[31101]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),505)">$LOCALIZE[40016]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),504)">$LOCALIZE[40015]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),501)">$LOCALIZE[20020]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),502)">$LOCALIZE[20445]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),503)">$LOCALIZE[40005]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),506)">$LOCALIZE[40017]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),507)">$LOCALIZE[40146]</value>
+		<value>$LOCALIZE[40148]</value>
+	</variable>
+	<variable name="SettingsForcedViewsSeasonsVar">
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),50)">$LOCALIZE[535]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),55)">$LOCALIZE[31107]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),51)">$LOCALIZE[20021]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),53)">$LOCALIZE[31100]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),54)">$LOCALIZE[31101]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),505)">$LOCALIZE[40016]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),504)">$LOCALIZE[40015]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),502)">$LOCALIZE[20445]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),506)">$LOCALIZE[40017]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),507)">$LOCALIZE[40146]</value>
+		<value>$LOCALIZE[40148]</value>
+	</variable>
+	<variable name="SettingsForcedViewsEpisodesVar">
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),55)">$LOCALIZE[31107]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),54)">$LOCALIZE[31101]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),503)">$LOCALIZE[40005]</value>
+		<value>$LOCALIZE[40148]</value>
+	</variable>
+	<variable name="SettingsForcedViewsArtistsVar">
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),55)">$LOCALIZE[31107]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),53)">$LOCALIZE[31100]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),54)">$LOCALIZE[31101]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),506)">$LOCALIZE[40017]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),507)">$LOCALIZE[40146]</value>
+		<value>$LOCALIZE[40148]</value>
+	</variable>
+	<variable name="SettingsForcedViewsAlbumsVar">
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),55)">$LOCALIZE[31107]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),53)">$LOCALIZE[31100]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),54)">$LOCALIZE[31101]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),506)">$LOCALIZE[40017]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),507)">$LOCALIZE[40146]</value>
+		<value>$LOCALIZE[40148]</value>
+	</variable>
+	<variable name="SettingsForcedViewsMusicVideosVar">
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),55)">$LOCALIZE[31107]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),53)">$LOCALIZE[31100]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),54)">$LOCALIZE[31101]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),506)">$LOCALIZE[40017]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),507)">$LOCALIZE[40146]</value>
+		<value>$LOCALIZE[40148]</value>
+	</variable>
 	<variable name="SettingsViewsImagesVar">
 		<value condition="Container.Content(movies) + Control.HasFocus(11111)">special://skin/extras/views/movies/50.png</value>
 		<value condition="Container.Content(movies) + Control.HasFocus(11112)">special://skin/extras/views/movies/51.png</value>

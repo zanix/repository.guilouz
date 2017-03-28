@@ -92,7 +92,7 @@
 				<visible>!String.IsEqual(ListItem.DBType,album) + !String.IsEqual(ListItem.DBType,song) + !String.IsEqual(ListItem.DBType,musicvideo)</visible>
 			</control>
 			<control type="group">
-				<visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song) | String.IsEqual(ListItem.DBType,musicvideo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)</visible>
+				<visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song) | String.IsEqual(ListItem.DBType,musicvideo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
 				<control type="label">
 					<left>29</left>
 					<top>300</top>
@@ -200,6 +200,18 @@
 				<aligny>center</aligny>
 				<label>$PARAM[label]</label>
 				<visible>Window.IsActive(videos)</visible>
+			</control>
+			<control type="label">
+				<left>28</left>
+				<top>202</top>
+				<width>262</width>
+				<height>80</height>
+				<font>font12</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$PARAM[label]</label>
+				<scroll>$PARAM[focused]</scroll>
+				<visible>Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(videos)</visible>
