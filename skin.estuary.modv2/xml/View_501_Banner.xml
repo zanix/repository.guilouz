@@ -8,7 +8,7 @@
 			<visible>Control.IsVisible(501)</visible>
 			<include>Visible_Right</include>
 			<control type="panel" id="501">
-				<right>20</right>
+				<right>0</right>
 				<top>0</top>
 				<width>1840</width>
 				<height>100%</height>
@@ -21,9 +21,10 @@
 				<pagecontrol>531</pagecontrol>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<visible>Container.Content(tvshows)</visible>
+				<animation effect="slide" end="-20,0" time="0" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
 				<itemlayout height="220" width="900">
 					<control type="group">
-						<posy>100</posy>
+						<posy>130</posy>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
@@ -61,7 +62,7 @@
 						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
 							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="450,180" />
 						</animation>
-						<posy>100</posy>
+						<posy>130</posy>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>

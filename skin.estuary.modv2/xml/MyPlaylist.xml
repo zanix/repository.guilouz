@@ -115,7 +115,9 @@
 							<param name="control_id" value="22" />
 							<param name="label" value="$LOCALIZE[192]" />
 						</include>
-						<include>MediaMenuNowPlaying</include>
+						<include content="MediaMenuNowPlaying">
+ 							<param name="itemgap" value="-20" />
+ 						</include>
 					</control>
 				</control>
 			</control>

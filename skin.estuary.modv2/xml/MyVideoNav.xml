@@ -374,7 +374,7 @@
 					<left>117</left>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture>$VAR[LibraryClearLogoVar]</texture>
-					<visible>Control.IsVisible(54) | Control.IsVisible(505) | Control.IsVisible(50)</visible>
+					<visible>Control.IsVisible(54) | Control.IsVisible(505) | Control.IsVisible(50) | [Control.IsVisible(501) + String.IsEqual(Skin.AspectRatio,21:9)]</visible>
 				</control>
 				<control type="image">
 					<top>15</top>
@@ -389,7 +389,7 @@
 			<control type="group">
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
-				<visible>Control.IsVisible(500) | Control.IsVisible(504) | Control.IsVisible(501)</visible>
+				<visible>Control.IsVisible(500) | Control.IsVisible(504) | [Control.IsVisible(501) + !String.IsEqual(Skin.AspectRatio,21:9)]</visible>
 				<control type="image">
 					<top>0</top>
 					<width>284</width>

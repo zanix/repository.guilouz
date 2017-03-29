@@ -737,8 +737,8 @@
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>30</left>
-						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+						<animation effect="zoom" start="100" end="109" time="200" tween="sine" easing="inout" center="200,300" condition="!Skin.HasSetting(no_animations)">Focus</animation>
+						<animation effect="zoom" start="109" end="100" time="200" tween="sine" easing="inout" center="200,300" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
 						<top>120</top>
 						<include content="InfoWallMovieLayout">
 							<param name="focused" value="true" />

@@ -25,7 +25,7 @@
 				<animation effect="slide" end="20,0" time="0" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
 				<itemlayout height="370" width="600">
 					<control type="group">
-						<top>120</top>
+						<top>150</top>
 						<include>InfoWallThumbsLayout</include>
 					</control>
 				</itemlayout>
@@ -34,7 +34,7 @@
 						<depth>DepthContentPopout</depth>
 						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="310,280" condition="!Skin.HasSetting(no_animations)">Focus</animation>
 						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="310,280" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
-						<top>120</top>
+						<top>150</top>
 						<include content="InfoWallThumbsLayout">
 							<param name="focused" value="true" />
 						</include>
