@@ -401,6 +401,52 @@
 		<param name="resolution_var">$VAR[ResolutionFlagVar]</param>
 		<param name="audiocodec_var">$VAR[AudioCodecFlagVar]</param>
 		<definition>
+			<control type="list" id="56000">
+				<orientation>horizontal</orientation>
+				<right>16</right>
+				<top>-15</top>
+				<height>70</height>
+				<align>right</align>
+				<itemgap>5</itemgap>
+				<width>1240</width>
+				<usecontrolcoords>true</usecontrolcoords>
+				<autoscroll time="1500">true</autoscroll>
+				<animation effect="slide" end="1116,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
+				<animation effect="slide" end="992,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
+				<animation effect="slide" end="868,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
+				<animation effect="slide" end="744,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
+				<animation effect="slide" end="620,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
+				<animation effect="slide" end="496,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
+				<animation effect="slide" end="372,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
+				<animation effect="slide" end="248,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,8)">conditional</animation>
+				<animation effect="slide" end="124,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
+				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set)</visible>
+				<focusedlayout height="70" width="124">
+					<control type="image">
+						<left>5</left>
+						<top>0</top>
+						<right>5</right>
+						<bottom>0</bottom>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
+						<bordertexture>colors/white.png</bordertexture>
+						<bordersize>1</bordersize>
+					</control>
+				</focusedlayout>
+				<itemlayout height="70" width="124">
+					<control type="image">
+						<left>5</left>
+						<top>0</top>
+						<right>5</right>
+						<bottom>0</bottom>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
+						<bordertexture>colors/white.png</bordertexture>
+						<bordersize>1</bordersize>
+					</control>
+				</itemlayout>
+				<content sortby="year" sortorder="ascending">$INFO[$PARAM[infolabel_prefix]ListItem.FolderPath]</content>
+			</control>
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
 				<right>20</right>
@@ -436,12 +482,12 @@
 					<visible>Control.HasFocus(6600) | Control.HasFocus(66001)</visible>
 					<control type="label">
 						<width>293</width>
-                    	<centertop>34%</centertop>
-                    	<height>50</height>
-                    	<posx>54</posx>
-                    	<align>center</align>
-                    	<aligny>center</aligny>
-                    	<font>font_flag</font>
+						<centertop>34%</centertop>
+						<height>50</height>
+						<posx>54</posx>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font_flag</font>
 						<label>$INFO[$PARAM[infolabel_prefix]ListItem.Property(airdatetime)]</label>
 						<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 					</control>
@@ -498,12 +544,12 @@
 					<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.Duration) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,song) + !Control.HasFocus(6600)  + !Control.HasFocus(66001)</visible>
 					<control type="label">
 						<width>149</width>
-                    	<centertop>34%</centertop>
-                    	<height>50</height>
-                    	<posx>59</posx>
-                    	<align>center</align>
-                    	<aligny>center</aligny>
-                    	<font>font_flag</font>
+						<centertop>34%</centertop>
+						<height>50</height>
+						<posx>59</posx>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font_flag</font>
 						<label>$INFO[$PARAM[infolabel_prefix]ListItem.Duration]</label>
 						<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 					</control>
@@ -517,12 +563,12 @@
 					<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.EndTimeResume) + !$PARAM[infolabel_prefix]ListItem.IsCollection + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !Control.HasFocus(5500) + !Control.HasFocus(6400) + !Control.HasFocus(6500) + !Control.HasFocus(6600) + !Control.HasFocus(66001) + !Control.HasFocus(16200) + !Control.HasFocus(16600) + !Container.Content(genres) + !Container.Content(years) + !Container.Content(actors) + !Container.Content(directors) + !Container.Content(studios) + !Container.Content(countries) + !Container.Content(artists) + !Container.Content(albums) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,season) + !String.StartsWith(Container.FolderPath,plugin://)</visible>
 					<control type="label">
 						<width>105</width>
-                    	<centertop>34%</centertop>
-                    	<height>50</height>
-                    	<posx>54</posx>
-                    	<align>center</align>
-                    	<aligny>center</aligny>
-                    	<font>font_flag</font>
+						<centertop>34%</centertop>
+						<height>50</height>
+						<posx>54</posx>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font_flag</font>
 						<label>$INFO[$PARAM[infolabel_prefix]ListItem.EndTimeResume]</label>
 						<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						<scroll>true</scroll>
@@ -1240,7 +1286,7 @@
 						<animation effect="fade" time="400">VisibleChange</animation>
 						<imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[MediaFanartVar]</imagepath>
 						<timeperimage>3000</timeperimage>
-                    	<randomize>true</randomize>
+						<randomize>true</randomize>
 						<visible>!Control.IsVisible(502) | $EXP[infodialog_active]</visible>
 						<visible>!Window.IsVisible(Home.xml)</visible>
 						<visible>![Control.IsVisible(52) + !ListItem.IsParentFolder] + ![Control.IsVisible(55) + [Container.Content(directors) | Container.Content(actors) | Container.Content(playlists)]]</visible>

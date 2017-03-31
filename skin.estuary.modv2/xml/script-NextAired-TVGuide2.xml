@@ -1355,7 +1355,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -1383,7 +1383,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -1411,7 +1411,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -1544,7 +1544,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -1572,7 +1572,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -1600,7 +1600,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -1733,7 +1733,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -1761,7 +1761,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -1789,7 +1789,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -1922,7 +1922,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -1950,7 +1950,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -1978,7 +1978,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -2111,7 +2111,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -2139,7 +2139,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -2167,7 +2167,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -2300,7 +2300,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -2328,7 +2328,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -2356,7 +2356,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -2489,7 +2489,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -2517,7 +2517,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -2545,7 +2545,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -2678,7 +2678,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -2706,7 +2706,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -2734,7 +2734,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -2867,7 +2867,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -2895,7 +2895,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -2923,7 +2923,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -3056,7 +3056,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -3084,7 +3084,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -3112,7 +3112,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -3245,7 +3245,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -3273,7 +3273,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -3301,7 +3301,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -3434,7 +3434,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -3462,7 +3462,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -3490,7 +3490,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -3623,7 +3623,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -3651,7 +3651,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -3679,7 +3679,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -3812,7 +3812,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -3840,7 +3840,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -3868,7 +3868,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -4001,7 +4001,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -4029,7 +4029,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -4057,7 +4057,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -4190,7 +4190,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>299</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Poster</description>
@@ -4218,7 +4218,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>40</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Banner</description>
@@ -4246,7 +4246,7 @@
 								<posy>0</posy>
 								<width>210</width>
 								<height>81</height>
-								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
 								<description>Logo</description>

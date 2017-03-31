@@ -42,6 +42,138 @@
 			<control type="image">
 				<depth>DepthBackground</depth>
 				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/search.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/movies.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(1) + !Control.HasFocus(111) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/tvshows.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(2) + !Control.HasFocus(121) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/tvshows.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(3) + !Control.HasFocus(131) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/tvshows.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(4) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/musicvideos.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(5) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/music.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(6) + !Control.HasFocus(161) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/music.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(7) + !Control.HasFocus(171) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/music.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(8) + !Control.HasFocus(181) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/livetv.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(9) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/movies.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(10) + !Control.HasFocus(201) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
+				<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/movies.jpg</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>400</fadetime>
+				<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" time="400">VisibleChange</animation>
+				<visible>Container(9000).HasFocus(11) + !Control.HasFocus(211) + !Control.HasFocus(998)</visible>
+			</control>
+			<control type="image">
+				<depth>DepthBackground</depth>
+				<include>FullScreenDimensions</include>
 				<texture background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Container(111).ListItem.Art(fanart)]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>400</fadetime>
@@ -588,28 +720,22 @@
 							<include content="Visible_Right_Delayed">
 								<param name="id" value="5"/>
 							</include>
-							<itemlayout height="300" width="300">
+							<itemlayout height="410" width="310">
 								<control type="group">
-									<left>64</left>
-									<top>110</top>
-									<include content="InfoWallEpisodeLayout">
-										<param name="focused" value="false" />
-										<param name="main_label" value="$INFO[ListItem.Artist]" />
-										<param name="sub_label" value="$INFO[ListItem.Label]" />
-									</include>
+									<top>150</top>
+									<left>40</left>
+									<include>InfoWallMusicLayout</include>
 								</control>
 							</itemlayout>
-							<focusedlayout height="300" width="300">
+							<focusedlayout height="410" width="310">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="220,250" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="220,250" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
-									<left>64</left>
-									<top>110</top>
-									<include content="InfoWallEpisodeLayout">
+									<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">Focus</animation>
+									<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<top>150</top>
+									<left>40</left>
+									<include content="InfoWallMusicLayout">
 										<param name="focused" value="true" />
-										<param name="main_label" value="$INFO[ListItem.Artist]" />
-										<param name="sub_label" value="$INFO[ListItem.Label]" />
 									</include>
 								</control>
 							</focusedlayout>

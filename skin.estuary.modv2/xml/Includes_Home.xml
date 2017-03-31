@@ -415,7 +415,7 @@
 		<param name="main_label">$INFO[ListItem.Title]</param>
 		<param name="sub_label">$INFO[ListItem.TVShowTitle]</param>
 		<param name="thumb_label">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</param>
-		<param name="fallback_image">DefaultTVShows.png</param>
+		<param name="fallback_image">DefaultVideo.png</param>
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
@@ -525,7 +525,7 @@
 		<param name="main_label">$INFO[ListItem.Title]</param>
 		<param name="sub_label">$INFO[ListItem.TVShowTitle]</param>
 		<param name="thumb_label">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</param>
-		<param name="fallback_image">DefaultTVShows.png</param>
+		<param name="fallback_image">DefaultVideo.png</param>
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
