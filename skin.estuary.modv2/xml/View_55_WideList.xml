@@ -156,16 +156,13 @@
 						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 						<visible>Control.HasFocus(55)</visible>
 					</control>
-					<control type="label">
-						<left>18</left>
-						<top>0</top>
-						<bottom>0</bottom>
-						<width>80</width>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Year]</label>
-						<shadowcolor>text_shadow</shadowcolor>
-						<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
-					</control>
+					<control type="image">
+ 						<left>35</left>
+ 						<centertop>50%</centertop>
+ 						<width>32</width>
+ 						<height>32</height>
+ 						<texture>$VAR[ListWatchedIconVar]</texture>
+  					</control>
 					<control type="label">
 						<left>105</left>
 						<top>0</top>
@@ -175,18 +172,6 @@
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
-						<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
-					</control>
-					<control type="label">
-						<left>40</left>
-						<top>0</top>
-						<bottom>0</bottom>
-						<right>100</right>
-						<aligny>center</aligny>
-						<scroll>true</scroll>
-						<label>$INFO[ListItem.Label]</label>
-						<shadowcolor>text_shadow</shadowcolor>
-						<visible>Container.Content(artists) | Container.Content(albums)</visible>
 					</control>
 					<control type="label">
 						<left>40</left>
@@ -200,17 +185,13 @@
 					</control>
 				</focusedlayout>
 				<itemlayout height="list_item_height" condition="!Container.Content(songs) + !Container.Content(addons) + !Container.Content(playlists) + !Container.Content() + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(movies) + !Container.Content(musicvideos) + !Container.Content(videos)">
-					<control type="label">
-						<left>18</left>
-						<top>0</top>
-						<bottom>0</bottom>
-						<width>80</width>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Year]</label>
-						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<shadowcolor>text_shadow</shadowcolor>
-						<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
-					</control>
+					<control type="image">
+ 						<left>35</left>
+ 						<centertop>50%</centertop>
+ 						<width>32</width>
+ 						<height>32</height>
+ 						<texture>$VAR[ListWatchedIconVar]</texture>
+  					</control>
 					<control type="label">
 						<left>105</left>
 						<top>0</top>
@@ -220,18 +201,6 @@
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Label]</label>
 						<shadowcolor>text_shadow</shadowcolor>
-						<visible>!Container.Content(artists) + !Container.Content(albums)</visible>
-					</control>
-					<control type="label">
-						<left>40</left>
-						<top>0</top>
-						<bottom>0</bottom>
-						<right>100</right>
-						<aligny>center</aligny>
-						<scroll>true</scroll>
-						<label>$INFO[ListItem.Label]</label>
-						<shadowcolor>text_shadow</shadowcolor>
-						<visible>Container.Content(artists) | Container.Content(albums)</visible>
 					</control>
 					<control type="label">
 						<left>40</left>
