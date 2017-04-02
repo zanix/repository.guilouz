@@ -484,7 +484,7 @@
 					<width>250</width>
 					<height>50</height>
 					<texture colordiffuse="CCFFFFFF">overlays/overlayfade.png</texture>
-					<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
+					<visible>!String.IsEmpty(ListItem.Art(poster)) + !String.IsEmpty(ListItem.Property(WatchedEpisodes)) + !String.IsEmpty(ListItem.Property(TotalEpisodes))</visible>
 				</control>
 				<control type="label">
 					<left>0</left>
@@ -501,6 +501,7 @@
 					<width>24</width>
 					<height>24</height>
 					<texture>lists/played-total.png</texture>
+					<visible>!String.IsEmpty(ListItem.Property(WatchedEpisodes)) + !String.IsEmpty(ListItem.Property(TotalEpisodes))</visible>
 				</control>
 			</control>
 			<control type="image">

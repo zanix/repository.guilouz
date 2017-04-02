@@ -38,6 +38,17 @@
 							<height>95</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">$INFO[ListItem.Icon]</texture>
 							<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
+							<visible>!String.IsEqual(Window.Property(groupname),powermenu)</visible>
+						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>65</width>
+							<height>65</height>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<texture colordiffuse="$VAR[SkinColorVar]">$INFO[ListItem.Icon]</texture>
+							<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
+							<visible>String.IsEqual(Window.Property(groupname),powermenu)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -54,6 +65,16 @@
 						<width>95</width>
 						<height>95</height>
 						<texture>$INFO[ListItem.Icon]</texture>
+						<visible>!String.IsEqual(Window.Property(groupname),powermenu)</visible>
+					</control>
+					<control type="image">
+						<left>15</left>
+						<top>15</top>
+						<width>65</width>
+						<height>65</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<visible>String.IsEqual(Window.Property(groupname),powermenu)</visible>
 					</control>
 					<control type="label">
 						<left>104</left>
@@ -87,6 +108,16 @@
 						<width>95</width>
 						<height>95</height>
 						<texture colordiffuse="44FFFFFF">$INFO[ListItem.Icon]</texture>
+						<visible>!String.IsEqual(Window.Property(groupname),powermenu)</visible>
+					</control>
+					<control type="image">
+						<left>15</left>
+						<top>15</top>
+						<width>65</width>
+						<height>65</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture colordiffuse="44FFFFFF">$INFO[ListItem.Icon]</texture>
+						<visible>String.IsEqual(Window.Property(groupname),powermenu)</visible>
 					</control>
 					<control type="label">
 						<left>104</left>
@@ -410,6 +441,11 @@
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[40106]" />
+			<param name="visible" value="String.IsEqual(Window.Property(groupname),mainmenu)" />
+		</include>
+		<include content="TopBar">
+			<param name="breadcrumbs_label" value="$LOCALIZE[40159]" />
+			<param name="visible" value="String.IsEqual(Window.Property(groupname),powermenu)" />
 		</include>
 		<include>BottomBar</include>
 		<control type="textbox" id="6">

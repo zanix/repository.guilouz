@@ -92,6 +92,178 @@
 			</control>
 		</control>
 	</include>
+	<include name="ScrollbarAlphabet">
+        <control type="group">
+        	<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(504) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54) | Control.IsVisible(505) | Control.IsVisible(507)</visible>
+        	<visible>Integer.IsGreater(Container.NumPages,1)</visible>
+        	<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])</visible>
+        	<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="slide" end="41,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
+			<control type="image">
+				<right>0</right>
+             	<top>0</top>
+             	<bottom>0</bottom>
+			  	<width>46</width>
+			  	<texture>dialogs/back.png</texture>
+			</control>
+			<control type="image">
+				<right>0</right>
+             	<top>0</top>
+             	<bottom>0</bottom>
+			  	<width>46</width>
+			  	<texture>dialogs/back.png</texture>
+			</control>
+			<control type="image">
+				<right>0</right>
+             	<top>0</top>
+             	<bottom>0</bottom>
+			  	<width>5</width>
+			  	<texture colordiffuse="FFAAAAAA">colors/white.png</texture>
+			  	<animation effect="slide" end="5,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(531)">conditional</animation>
+			  	<animation effect="slide" end="-41,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
+			</control>
+            <control type="panel" id="531">
+                <orientation>vertical</orientation>
+                <right>0</right>
+                <top>0</top>
+                <bottom>0</bottom>
+                <onleft>50</onleft>
+				<onright>50</onright>
+				<width>46</width>
+                <visible>!Container.Content(seasons)</visible>
+                <itemlayout height="40" width="46">
+                    <control type="label">
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <height>40</height>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>white</textcolor>
+                        <font>font30_title</font>
+                        <animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <height>40</height>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>$VAR[SkinColorVar]</textcolor>
+                        <font>font30_title</font>
+                        <visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="40" width="46">
+                    <control type="image">
+                        <height>4</height>
+                        <bottom>0</bottom>
+                        <texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+                        <visible>String.IsEmpty(ListItem.Property(NotAvailable))</visible>
+                    </control>
+                    <control type="label">
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <height>40</height>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>$VAR[SkinColorVar]</textcolor>
+                        <font>font30_title</font>
+                        <animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+                    </control>
+                    <control type="button">
+                        <visible>visible</visible>
+                        <label />
+                        <onfocus condition="!String.IsEmpty(Container(531).ListItem.Property(NotAvailable)) + Container(531).OnNext">Control.Move(531,1)</onfocus>
+                        <onfocus condition="!String.IsEmpty(Container(531).ListItem.Property(NotAvailable)) + Container(531).OnPrevious">Control.Move(531,-1)</onfocus>
+                    </control>
+                </focusedlayout>
+                <content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+            </control>
+        </control>
+        <control type="group">
+        	<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(503) | Control.IsVisible(506)</visible>
+        	<visible>Integer.IsGreater(Container.NumPages,1)</visible>
+        	<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])</visible>
+        	<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="slide" end="0,41" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
+			<control type="image">
+				<left>0</left>
+             	<right>0</right>
+             	<bottom>0</bottom>
+			  	<height>46</height>
+			  	<texture>dialogs/back.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+             	<right>0</right>
+             	<bottom>0</bottom>
+			  	<height>46</height>
+			  	<texture>dialogs/back.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+             	<right>0</right>
+             	<bottom>0</bottom>
+			  	<height>5</height>
+			  	<texture colordiffuse="FFAAAAAA">colors/white.png</texture>
+			  	<animation effect="slide" end="0,5" time="300" tween="sine" easing="inout" condition="Control.HasFocus(5199)">conditional</animation>
+			  	<animation effect="slide" end="0,-41" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
+			</control>
+            <control type="panel" id="5199">
+                <orientation>horizontal</orientation>
+                <centerleft>50%</centerleft>
+                <width>1080</width>
+                <bottom>0</bottom>
+                <onup>50</onup>
+				<ondown>50</ondown>
+				<height>46</height>
+                <visible>!Container.Content(seasons)</visible>
+                <itemlayout height="46" width="40">
+                    <control type="label">
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <height>46</height>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>white</textcolor>
+                        <font>font30_title</font>
+                        <animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <height>46</height>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>$VAR[SkinColorVar]</textcolor>
+                        <font>font30_title</font>
+                        <visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="46" width="40">
+                    <control type="image">
+                        <height>4</height>
+                        <bottom>0</bottom>
+                        <texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+                        <visible>String.IsEmpty(ListItem.Property(NotAvailable))</visible>
+                    </control>
+                    <control type="label">
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <height>46</height>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>$VAR[SkinColorVar]</textcolor>
+                        <font>font30_title</font>
+                        <animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+                    </control>
+                    <control type="button">
+                        <visible>visible</visible>
+                        <label />
+                        <onfocus condition="!String.IsEmpty(Container(5199).ListItem.Property(NotAvailable)) + Container(5199).OnNext">Control.Move(5199,1)</onfocus>
+                        <onfocus condition="!String.IsEmpty(Container(5199).ListItem.Property(NotAvailable)) + Container(5199).OnPrevious">Control.Move(5199,-1)</onfocus>
+                    </control>
+                </focusedlayout>
+                <content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+            </control>
+        </control>
+    </include>
 	<include name="HiddenObject">
 		<left>-3000</left>
 		<top>-3000</top>
@@ -420,7 +592,7 @@
 				<animation effect="slide" end="372,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
 				<animation effect="slide" end="248,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,8)">conditional</animation>
 				<animation effect="slide" end="124,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
-				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set)</visible>
+				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set) + Window.IsVisible(Home)</visible>
 				<focusedlayout height="70" width="124">
 					<control type="image">
 						<left>5</left>
@@ -1012,6 +1184,7 @@
 	</include>
 	<include name="TopBar">
 		<param name="sublabel">$INFO[Container.SortMethod,$LOCALIZE[31022] : ,  ∙  ]$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</param>
+		<param name="visible">true</param>
 		<definition>
 			<control type="group">
 				<animation effect="slide" end="0,-112" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
@@ -1024,6 +1197,7 @@
 					<height>130</height>
 					<texture colordiffuse="$VAR[Bars_Opacity]">frame/InfoBar.png</texture>
 					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+					<visible>$PARAM[visible]</visible>
 				</control>
 				<control type="grouplist">
 					<left>35</left>
@@ -1043,6 +1217,7 @@
 					<control type="label">
 						<label>$PARAM[breadcrumbs_label]</label>
 						<include>BreadcrumbsLabel</include>
+						<visible>$PARAM[visible]</visible>
 					</control>
 					<control type="label">
 						<label>$INFO[Container.ShowTitle, / ]</label>

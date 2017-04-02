@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="SystemLogOffVar">
+        <value>$LOCALIZE[20126] $INFO[system.profilename,(,)]</value>
+    </variable>
+    <variable name="CancelAlarmVar">
+        <value>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</value>
+    </variable>
 	<variable name="SettingsForcedViewsMoviesVar">
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),50)">$LOCALIZE[535]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),55)">$LOCALIZE[31107]</value>
@@ -896,7 +902,8 @@
         <value condition="Control.HasFocus(304)">$LOCALIZE[40129].</value>
         <value condition="Control.HasFocus(313) + String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)">$LOCALIZE[40132].</value>
         <value condition="Control.HasFocus(313) + String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[40133].</value>
-        <value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus]">$LOCALIZE[31130]</value>
+        <value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus] + !String.IsEqual(Window.Property(groupname),powermenu)">$LOCALIZE[31130]</value>
+        <value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus] + String.IsEqual(Window.Property(groupname),powermenu)">$LOCALIZE[40160]</value>
 	</variable>
 	<variable name="DSPManagerHelpTextVar">
 		<value condition="Control.HasFocus(20)">$INFO[Container(20).ListItem.Property(Description)]</value>

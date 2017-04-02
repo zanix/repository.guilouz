@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu)</onload>
+	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|powermenu)</onload>
 	<onload condition="Skin.HasSetting(Skin_EnableAnimatedPosters)">Skin.SetBool(SkinHelper.EnableAnimatedPosters)</onload>
 	<onload condition="!Skin.HasSetting(Skin_EnableAnimatedPosters)">Skin.Reset(SkinHelper.EnableAnimatedPosters)</onload>
 	<onload>Skin.SetBool(SkinHelper.EnableExtendedArt)</onload>
@@ -361,6 +361,18 @@
 							<param name="sortby" value="random"/>
 							<param name="list_id" value="5600"/>
 						</include>
+						<!--<include content="WidgetListPoster" condition="Library.HasContent(movies) + !Skin.HasSetting(hide_incinemamovies)">
+							<param name="content_path" value="plugin://script.extendedinfo?info=incinemamovies"/>
+							<param name="widget_header" value="In cinema movies"/>
+							<param name="widget_target" value="video"/>
+							<param name="list_id" value="5700"/>
+						</include>
+						<include content="WidgetListPoster" condition="Library.HasContent(movies) + !Skin.HasSetting(hide_upcomingmovies)">
+							<param name="content_path" value="plugin://script.extendedinfo?info=upcomingmovies"/>
+							<param name="widget_header" value="Upcoming movies"/>
+							<param name="widget_target" value="video"/>
+							<param name="list_id" value="5800"/>
+						</include>-->
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(movies)">
 						<param name="text_label" value="$LOCALIZE[31104]" />

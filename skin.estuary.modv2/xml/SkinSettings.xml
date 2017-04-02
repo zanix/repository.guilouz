@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu)</onunload>
+	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|powermenu)</onunload>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -804,6 +804,11 @@
 					<label>$LOCALIZE[40106]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
+				</control>
+				<control type="button" id="10016">
+					<label>$LOCALIZE[40159]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=powermenu)</onclick>
 				</control>
 				<control type="button" id="10003">
 					<label>  ∟$LOCALIZE[40006]</label>

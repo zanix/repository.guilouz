@@ -439,7 +439,7 @@
 					<width>1247</width>
 					<height>280</height>
 					<texture border="21">dialogs/dialog-bg.png</texture>
-					<visible>Integer.IsEqual(Container(50).NumItems,0)</visible>
+					<visible>Integer.IsEqual(Container(50).NumItems,0) + [!String.IsEmpty(ListItem.Art(tvshow.banner)) | !String.IsEmpty(ListItem.Art(banner))]</visible>
 				</control>
 				<control type="image">
 					<left>30</left>

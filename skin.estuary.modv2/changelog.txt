@@ -1,5 +1,6 @@
 [B]2.1.10[/B]
 • Add possibility to force views in library
+• Add possibility to customize power menu
 • Add flags for moviesets widget
 • Fix missing view for music
 • Fix esthetic appearance
