@@ -1,3 +1,7 @@
+[B]2.2.1[/B]
+• Add 'All channels' and 'All radios' widgets
+• Fix esthetic appearance
+
 [B]2.2.0[/B]
 • Add possibility to force views in library
 • Add possibility to customize power menu

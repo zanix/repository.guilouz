@@ -760,6 +760,15 @@
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 						</include>
+						<include content="WidgetListChannels" condition="System.HasPVRAddon + !Skin.HasSetting(hide_allchannels)">
+							<param name="content_path" value="pvr://channels/tv/*"/>
+							<param name="widget_header" value="$LOCALIZE[40161]"/>
+							<param name="widget_target" value="pvr"/>
+							<param name="list_id" value="12400"/>
+							<param name="item_limit" value="2000"/>
+							<param name="label" value="$INFO[ListItem.ChannelName]"/>
+							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
 						<param name="text_label" value="$LOCALIZE[31143]" />
@@ -835,6 +844,15 @@
 							<param name="widget_header" value="$LOCALIZE[31015]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="13300"/>
+							<param name="label" value="$INFO[ListItem.ChannelName]"/>
+							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+						</include>
+						<include content="WidgetListChannels" condition="System.HasPVRAddon + !Skin.HasSetting(hide_allradios)">
+							<param name="content_path" value="pvr://channels/radio/*"/>
+							<param name="widget_header" value="$LOCALIZE[40162]"/>
+							<param name="widget_target" value="pvr"/>
+							<param name="list_id" value="13400"/>
+							<param name="item_limit" value="2000"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 						</include>

@@ -1515,3 +1515,13 @@ msgstr "Personnaliser le menu d'alimentation"
 msgctxt "#40160"
 msgid "Power menu-related settings: Configure it to your likings."
 msgstr "Paramètres relatifs au menu d'alimentation. Configurez le comme désiré."
+
+#: /xml/Home.xml
+msgctxt "#40161"
+msgid "All channels"
+msgstr "Toutes les chaînes TV"
+
+#: /xml/Home.xml
+msgctxt "#40162"
+msgid "All radios"
+msgstr "Toutes les radios"

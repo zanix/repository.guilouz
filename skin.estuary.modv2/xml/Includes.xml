@@ -92,11 +92,61 @@
 			</control>
 		</control>
 	</include>
-	<include name="ScrollbarAlphabet">
-        <control type="group">
+	<include name="CommonScrollbarsWithAlphabet">
+		<control type="group">
+			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="System.HasActiveModalDialog">Conditional</animation>
+			<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
+			<visible>!Skin.HasSetting(scroll_alphabet) | [Skin.HasSetting(scroll_alphabet) + ![String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])]]</visible>
+			<control type="group">
+				<right>0</right>
+				<top>0</top>
+				<width>60</width>
+				<bottom>0</bottom>
+				<control type="scrollbar" id="531">
+					<right>0</right>
+					<top>0</top>
+					<bottom>0</bottom>
+					<width>13</width>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<orientation>vertical</orientation>
+					<texturesliderbackground />
+					<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+					<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
+					<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(504) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54) | Control.IsVisible(505) | Control.IsVisible(507)</visible>
+					<hitrect x="-20" y="0" w="80" bottom="0r" />
+				</control>
+			</control>
+			<control type="group">
+				<left>0</left>
+				<right>0</right>
+				<bottom>0</bottom>
+				<width>100%</width>
+				<height>60</height>
+				<control type="scrollbar" id="5199">
+					<left>0</left>
+					<bottom>0</bottom>
+					<width>100%</width>
+					<height>12</height>
+					<texturesliderbackground />
+					<onup>50</onup>
+					<ondown>50</ondown>
+					<orientation>horizontal</orientation>
+					<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(503) | Control.IsVisible(506)</visible>
+					<animation effect="slide" end="0,6" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
+					<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+					<animation effect="slide" end="0,90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+					<hitrect x="0" y="20" w="100%" h="40" />
+				</control>
+			</control>
+		</control>	
+		<control type="group">
         	<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(504) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54) | Control.IsVisible(505) | Control.IsVisible(507)</visible>
         	<visible>Integer.IsGreater(Container.NumPages,1)</visible>
-        	<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])</visible>
+        	<visible>Skin.HasSetting(scroll_alphabet) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])]</visible>
         	<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			<animation effect="slide" end="41,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
@@ -263,7 +313,7 @@
                 <content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
             </control>
         </control>
-    </include>
+	</include>
 	<include name="HiddenObject">
 		<left>-3000</left>
 		<top>-3000</top>
