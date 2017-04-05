@@ -686,7 +686,7 @@
     </variable>
 	<variable name="ShiftRightTextBoxVar">
 		<value condition="Window.IsActive(pictures)">$INFO[ListItem.Size,$LOCALIZE[289] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureAperture,$LOCALIZE[21826] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureFocalLen,$LOCALIZE[21827] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureExpTime,$LOCALIZE[21830] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Date,$LOCALIZE[552] : [COLOR white],[/COLOR][CR]]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)) + !String.IsEqual(Listitem.DBType,movie) + !String.IsEqual(Listitem.DBType,tvshow)">[I]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901][CR]][/I][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)) + !String.IsEqual(Listitem.DBType,movie) + !String.IsEqual(Listitem.DBType,tvshow)">[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901][CR]][/B][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</value>
 		<value condition="String.IsEqual(listitem.dbtype,artist)">[COLOR white]$INFO[ListItem.Property(artist_description)][/COLOR]</value>
 		<value condition="String.IsEqual(listitem.dbtype,album)">COLOR white]$INFO[ListItem.Property(album_description)][/COLOR]</value>
 		<value>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot,[COLOR white],[/COLOR]]</value>

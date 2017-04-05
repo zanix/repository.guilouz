@@ -301,7 +301,7 @@
 						<left>10</left>
 						<align>justify</align>
 						<autoscroll time="5000" delay="5000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
-						<label>[I]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/I][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+						<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
 					<control type="textbox">
