@@ -1,6 +1,7 @@
 [B]2.2.1[/B]
 • Changes for Kodi 18
 • Add 'All channels' and 'All radios' widgets
+• Fix PVR channels OSD
 • Fix esthetic appearance
 
 [B]2.2.0[/B]

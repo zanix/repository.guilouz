@@ -887,6 +887,7 @@
 						<onright>9000</onright>
 						<onup>14100</onup>
 						<ondown>14100</ondown>
+						<onback>9000</onback>
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="cubic" easing="out">500</scrolltime>
 						<orientation>vertical</orientation>
