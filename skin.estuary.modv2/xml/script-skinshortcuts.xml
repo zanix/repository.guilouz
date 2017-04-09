@@ -227,7 +227,7 @@
                 <control type="radiobutton" id="3129">
                     <label>  ∟$LOCALIZE[31132]</label>
                     <include>DefaultSettingButton</include>
-                    <selected>!String.IsEmpty(Container(211).ListItem.Property(HideSubMenu)</selected>
+                    <selected>!String.IsEmpty(Container(211).ListItem.Property(HideSubMenu))</selected>
                     <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
                 </control>
 				<control type="button" id="312">
