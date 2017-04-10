@@ -66,10 +66,18 @@
 						<label2>[B]$INFO[Skin.String(LyricScript_Path)][/B]</label2>
 						<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
 					</control>
+					<control type="radiobutton" id="50010">
+						<width>700</width>
+						<include>DialogSettingButton</include>
+						<label>  ∟$LOCALIZE[40163]</label>
+						<onclick>Skin.ToggleSetting(Alt_color.lyrics)</onclick>
+						<selected>Skin.HasSetting(Alt_color.lyrics)</selected>
+						<visible>!String.IsEmpty(Skin.String(LyricScript_Path))</visible>
+					</control>
 					<control type="button" id="5008">
 						<width>700</width>
 						<include>DialogSettingButton</include>
-						<label>$LOCALIZE[31083]</label>
+						<label>  ∟$LOCALIZE[31083]</label>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
 						<visible>!String.IsEmpty(Skin.String(LyricScript_Path))</visible>
 					</control>

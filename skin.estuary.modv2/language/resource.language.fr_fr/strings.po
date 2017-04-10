@@ -1525,3 +1525,8 @@ msgstr "Toutes les chaînes TV"
 msgctxt "#40162"
 msgid "All radios"
 msgstr "Toutes les radios"
+
+#: /xml/Custom_1105_MusicOSDSettings.xml
+msgctxt "#40163"
+msgid "Fixed lyrics colors"
+msgstr "Couleurs des paroles fixes"

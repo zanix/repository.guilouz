@@ -1525,3 +1525,8 @@ msgstr ""
 msgctxt "#40162"
 msgid "All radios"
 msgstr ""
+
+#: /xml/Custom_1105_MusicOSDSettings.xml
+msgctxt "#40163"
+msgid "Fixed lyrics colors"
+msgstr ""
