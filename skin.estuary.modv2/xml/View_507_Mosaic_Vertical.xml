@@ -90,6 +90,16 @@
 							<aspectratio>scale</aspectratio>
 							<visible>Container.Content(addons)</visible>
 						</control>
+						<control type="image">
+							<left>30</left>
+							<top>30</top>
+							<width>215</width>
+							<height>215</height>
+							<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Container.Content(addons)</visible>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + Container.Content(musicvideos)</visible>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout height="225" width="225" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
@@ -187,6 +197,15 @@
 							<width>28</width>
 							<height>28</height>
 							<texture>$VAR[WallWatchedIconVar]</texture>
+						</control>
+						<control type="image">
+							<left>30</left>
+							<top>30</top>
+							<width>200</width>
+							<height>290</height>
+							<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
 						</control>
 					</control>
 				</itemlayout>

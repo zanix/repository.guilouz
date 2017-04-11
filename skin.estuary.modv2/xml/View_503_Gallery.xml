@@ -54,12 +54,31 @@
                             <label>$INFO[ListItem.Label]</label>
                             <align>left</align>
                         </control>
+                        <control type="label">
+                            <aligny>center</aligny>
+                            <top>630</top>
+                            <height>75</height>
+                            <width>590</width>
+                            <animation effect="rotate" end="90" start="0" condition="true" center="20,650">Conditional</animation>
+                            <label>$INFO[ListItem.Label]</label>
+                            <align>left</align>
+                            <textcolor>grey</textcolor>
+                            <visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+                        </control>
                         <control type="image">
                             <centerleft>50%</centerleft>
                             <top>20</top>
                             <height>36</height>
                             <width>36</width>
-                            <texture>$VAR[ListWatchedIconVar]</texture>>
+                            <texture>$VAR[ListWatchedIconVar]</texture>
+                        </control>
+                        <control type="image">
+                            <centerleft>50%</centerleft>
+                            <top>20</top>
+                            <height>36</height>
+                            <width>36</width>
+                            <texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
+                            <visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
                         </control>
                     </control>
                 </itemlayout>

@@ -1530,3 +1530,8 @@ msgstr ""
 msgctxt "#40163"
 msgid "Fixed lyrics colors"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40164"
+msgid "Greyed out watched items"
+msgstr ""

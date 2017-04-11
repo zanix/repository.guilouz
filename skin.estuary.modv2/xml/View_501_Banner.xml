@@ -46,10 +46,25 @@
 							<aligny>center</aligny>
 							<visible>String.IsEmpty(ListItem.Art(banner)) + !Listitem.IsParentFolder</visible>
 						</control>
+						<control type="image">
+							<left>20</left>
+							<top>20</top>
+							<width>820</width>
+							<height>155</height>
+							<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+							<aspectratio aligny="center">scale</aspectratio>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+						</control>
 						<control type="group">
 							<left>405</left>
 							<top>1</top>
 							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+						</control>
+						<control type="group">
+							<left>405</left>
+							<top>1</top>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
 						</control>
 					</control>
 				</itemlayout>

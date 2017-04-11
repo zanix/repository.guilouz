@@ -513,6 +513,12 @@
 					<onclick>Skin.ToggleSetting(hide_thumbforspoiler)</onclick>
 					<selected>Skin.HasSetting(hide_thumbforspoiler)</selected>
 				</control>
+				<control type="radiobutton" id="917">
+					<label>$LOCALIZE[40164]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(greyedout_watched)</onclick>
+					<selected>Skin.HasSetting(greyedout_watched)</selected>
+				</control>
 				<control type="radiobutton" id="903">
 					<label>$LOCALIZE[40068]</label>
 					<include>DefaultSettingButton</include>
@@ -901,6 +907,12 @@
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(HomeBanner)</selected>
 					<onclick>Skin.ToggleSetting(HomeBanner)</onclick>
+				</control>
+				<control type="radiobutton" id="10017">
+					<label>$LOCALIZE[40164]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(greyedout_watched_home)</onclick>
+					<selected>Skin.HasSetting(greyedout_watched_home)</selected>
 				</control>
 			</control>
 			<control type="image">

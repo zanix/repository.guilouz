@@ -447,6 +447,12 @@
 						<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.content(seasons) | Container.Content(episodes)</visible>
 					</control>
+					<control type="radiobutton" id="627">
+						<include>MediaMenuItemsCommonRadio</include>
+						<label>$LOCALIZE[40164]</label>
+						<onclick>Skin.ToggleSetting(greyedout_watched)</onclick>
+						<selected>Skin.HasSetting(greyedout_watched)</selected>
+					</control>
 					<control type="label" id="203">
 						<include>MediaMenuLabelCommon</include>
 						<label>$LOCALIZE[31020]</label>

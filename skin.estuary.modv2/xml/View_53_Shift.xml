@@ -95,6 +95,16 @@
 							<texture>$VAR[ViewClearLogoVar]</texture>
 							<visible>!ListItem.IsCollection</visible>
 						</control>
+						<control type="image">
+							<left>20</left>
+							<top>600</top>
+							<width>330</width>
+							<height>110</height>
+							<aspectratio aligny="center">stretch</aspectratio>
+							<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+							<visible>!ListItem.IsCollection</visible>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+						</control>
 						<control type="textbox">
 							<left>25</left>
 							<top>605</top>
@@ -105,6 +115,19 @@
 							<label>$INFO[ListItem.Label]</label>
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
 							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))] | ListItem.IsCollection</visible>
+						</control>
+						<control type="textbox">
+							<left>25</left>
+							<top>605</top>
+							<width>320</width>
+							<height>100</height>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>grey</textcolor>
+							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
+							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))] | ListItem.IsCollection</visible>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
 						</control>
 						<control type="image">
 							<left>169</left>

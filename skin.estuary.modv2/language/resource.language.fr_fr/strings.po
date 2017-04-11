@@ -1530,3 +1530,8 @@ msgstr "Toutes les radios"
 msgctxt "#40163"
 msgid "Fixed lyrics colors"
 msgstr "Couleurs des paroles fixes"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40164"
+msgid "Greyed out watched items"
+msgstr "Griser les éléments vus"
