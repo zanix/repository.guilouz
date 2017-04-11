@@ -18,31 +18,31 @@
 					<left>0</left>
 					<top>160</top>
 					<width>470</width>
-					<height>720</height>
+					<height>700</height>
 					<onleft>1500</onleft>
 					<onup>1000</onup>
 					<ondown>1000</ondown>
-					<itemlayout height="72" width="470">
+					<itemlayout height="70" width="470">
 						<control type="label">
 							<textoffsetx>30</textoffsetx>
 							<width>470</width>
-							<height>72</height>
+							<height>70</height>
 							<label>$INFO[ListItem.Label]</label>
 							<font>font30_title</font>
 							<aligny>center</aligny>
 						</control>
 					</itemlayout>
-					<focusedlayout height="72" width="470">
+					<focusedlayout height="70" width="470">
 						<control type="image">
 							<width>470</width>
-							<height>72</height>
+							<height>70</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(1000)">Conditional</animation>
 						</control>
 						<control type="label">
 							<textoffsetx>30</textoffsetx>
 							<width>470</width>
-							<height>72</height>
+							<height>70</height>
 							<font>font30_title</font>
 							<aligny>center</aligny>
 							<scroll>true</scroll>
@@ -197,6 +197,8 @@
 					<bottom>0</bottom>
 					<onleft>1000</onleft>
 					<onright>60</onright>
+					<onup condition="![String.IsEmpty(Control.GetLabel(1500)) + String.IsEmpty(Control.GetLabel(1501))]">1501</onup>
+					<ondown condition="![String.IsEmpty(Control.GetLabel(1500)) + String.IsEmpty(Control.GetLabel(1501))]">1500</ondown>
 					<pagecontrol>60</pagecontrol>
 					<visible>String.IsEqual(Container(1000).ListItem.Property(listTyp), 1100)</visible>
 					<itemlayout height="70">
@@ -1044,33 +1046,36 @@
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<autoscroll time="3000" delay="5000" repeat="5000">true</autoscroll>
 				</control>
-				<control type="button" id="1501">
-					<left>610</left>
-					<top>810</top>
-					<width>300</width>
-					<height>75</height>
-					<visible>true</visible>
-					<label />
-					<align>center</align>
+				<control type="grouplist">
+					<orientation>vertical</orientation>
+					<left>470</left>
+					<right>0</right>
+					<bottom>150</bottom>
+					<onleft>1000</onleft>
+					<onright>60</onright>
 					<onup>1100</onup>
 					<ondown>1100</ondown>
-					<onleft>1500</onleft>
-					<onright>1500</onright>
+					<height>140</height>
+					<control type="button" id="1500">
+					<height>70</height>
+					<visible>true</visible>
+					<label />
+					<texturefocus colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<textoffsetx>40</textoffsetx>
+					<align>left</align>
+					<visible>!String.IsEmpty(Control.GetLabel(1500))</visible>
+				</control>
+				<control type="button" id="1501">
+					<height>70</height>
+					<visible>true</visible>
+					<label />
+					<texturefocus colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<textoffsetx>40</textoffsetx>
+					<align>left</align>
 					<visible>!String.IsEmpty(Control.GetLabel(1501))</visible>
 				</control>
-				<control type="button" id="1500">
-					<left>945</left>
-					<top>810</top>
-					<width>300</width>
-					<height>75</height>
-					<visible>true</visible>
-					<label />
-					<align>center</align>
-					<onup>1100</onup>
-					<ondown>1100</ondown>
-					<onleft>1501</onleft>
-					<onright>1501</onright>
-					<visible>!String.IsEmpty(Control.GetLabel(1500))</visible>
 				</control>
 			</control>
 		</control>
