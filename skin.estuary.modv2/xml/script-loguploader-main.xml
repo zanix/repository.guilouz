@@ -29,6 +29,9 @@
 				<aligny>center</aligny>
 				<shadowcolor>FF000000</shadowcolor>
 			</control>
+			<control type="button" id="503">
+            	<visible>false</visible>
+        	</control>
 		</control>
 	</controls>
 </window>

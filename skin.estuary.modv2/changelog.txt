@@ -1,3 +1,6 @@
+[B]2.2.3[/B]
+• Minor fixes
+
 [B]2.2.2[/B]
 • Add possibility to greyed out watched items in library and on widgets
 • Add support for Videolyrics v3 with possibility to fix lyrics colors by song (thanks to manfeed)

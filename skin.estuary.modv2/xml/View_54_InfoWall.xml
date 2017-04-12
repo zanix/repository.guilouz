@@ -365,7 +365,7 @@
 				<left>20</left>
 				<top>30</top>
 				<width>276</width>
-				<height>58</height>
+				<height>60</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[BannerVar]</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
