@@ -1535,3 +1535,8 @@ msgstr "Couleurs des paroles fixes"
 msgctxt "#40164"
 msgid "Greyed out watched items"
 msgstr "Griser les éléments vus"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40165"
+msgid "Use alphabet for scrolling on library (experimental)"
+msgstr "Utiliser l'alphabet pour défiler sur la bibliothèque (expérimental)"

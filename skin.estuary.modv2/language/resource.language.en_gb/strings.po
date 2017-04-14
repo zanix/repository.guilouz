@@ -1535,3 +1535,8 @@ msgstr ""
 msgctxt "#40164"
 msgid "Greyed out watched items"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40165"
+msgid "Use alphabet for scrolling on library (experimental)"
+msgstr ""

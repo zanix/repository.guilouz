@@ -243,7 +243,7 @@
 					<onclick>SetProperty(WidgetVisibility,True,home)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>!String.IsEqual(Container(211).ListItem.Label,LibreELEC)</visible>
+					<visible>!String.IsEqual(Container(211).ListItem.Property(defaultID),libreelec)</visible>
 				</control>
 				<control type="button" id="10006">
 					<label>$LOCALIZE[40098]</label>

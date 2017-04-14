@@ -1,4 +1,5 @@
 [B]2.2.3[/B]
+• Add possibility to use alphabet for scrolling on library (experimental)
 • Minor fixes
 
 [B]2.2.2[/B]

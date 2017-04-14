@@ -495,12 +495,12 @@
 					<onclick>Skin.ToggleSetting(autoscroll)</onclick>
 					<selected>Skin.HasSetting(autoscroll)</selected>
 				</control>
-				<!--<control type="radiobutton" id="916">
-					<label>Alphabet</label>
+				<control type="radiobutton" id="916">
+					<label>$LOCALIZE[40165]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(scroll_alphabet)</onclick>
 					<selected>Skin.HasSetting(scroll_alphabet)</selected>
-				</control>-->
+				</control>
 				<control type="radiobutton" id="902">
 					<label>$LOCALIZE[40031]</label>
 					<include>DefaultSettingButton</include>
