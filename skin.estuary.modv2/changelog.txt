@@ -1,5 +1,6 @@
 [B]2.2.3[/B]
 • Add possibility to use alphabet for scrolling on library (experimental)
+• Changes on PVR Guide with Kodi 18 last build
 • Minor fixes
 
 [B]2.2.2[/B]

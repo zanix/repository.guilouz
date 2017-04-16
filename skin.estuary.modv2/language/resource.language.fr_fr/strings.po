@@ -1316,10 +1316,7 @@ msgctxt "#40120"
 msgid "TV shows next aired"
 msgstr "Prochaines diffusions des séries TV"
 
-#: /xml/Includes_MediaMenu.xml
-msgctxt "#40121"
-msgid "Horizontal guide"
-msgstr "Guide horizontal"
+#: empty string 40121
 
 #: /xml/Home.xml
 msgctxt "#40122"
