@@ -236,7 +236,11 @@
             <shortcut label="10134" icon="icons/sidemenu/favourites.png" widget="FavoritesWidget">FavoritesWidget</shortcut>
             <shortcut label="8" icon="icons/sidemenu/weather.png" widget="WeatherWidget">WeatherWidget</shortcut>
         </node>
-            <shortcut label="40134" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidget" condition="!String.IsEmpty(Window(home).Property(WidgetVisibility))">PersonalWidget</shortcut>
+        <node label="40134" condition="!String.IsEmpty(Window(home).Property(WidgetVisibility))">
+            <shortcut label="40166" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidget">PersonalWidget</shortcut>
+            <shortcut label="40167" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidget2">PersonalWidget2</shortcut>
+            <shortcut label="40168" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidget3">PersonalWidget3</shortcut>
+        </node>    
             <shortcut label="40135" icon="DefaultFolder.png" condition="String.IsEmpty(Window(home).Property(WidgetVisibility)) + System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
         <shortcut label="32107" type="32021" icon="DefaultAddon.png" condition="String.IsEmpty(Window(home).Property(WidgetVisibility)) + !System.HasAddon(script.skin.helper.service)">::INSTALL::script.skin.helper.service</shortcut>
         <node label="32030" condition="String.IsEmpty(Window(home).Property(WidgetVisibility))">

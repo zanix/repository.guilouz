@@ -228,7 +228,7 @@
                     <label>  ∟$LOCALIZE[31132]</label>
                     <include>DefaultSettingButton</include>
                     <selected>!String.IsEmpty(Container(211).ListItem.Property(HideSubMenu))</selected>
-                    <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
+                    <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)</visible>
                 </control>
 				<control type="button" id="312">
 					<include>DefaultSettingButton</include>
@@ -298,128 +298,144 @@
 					<label>$ADDON[script.skinshortcuts 32044] 1</label>
 					<label2>$VAR[PersonalWidget1Label2Var]</label2>
 					<onclick>ClearProperty(WidgetVisibility,home)</onclick>
-					<onclick>SetProperty(widgetID, personal1)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)">SetProperty(widgetID, personal1)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal1.2)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal1.3)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)</visible>
 				</control>
 				<control type="button" id="14751">
 					<label>  ∟$LOCALIZE[40137] 1</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence1Label2Var]</label2>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1))</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1.3))]</visible>
 				</control>
 				<control type="button" id="1476">
 					<include>DefaultSettingButton</include>
 					<label>$ADDON[script.skinshortcuts 32044] 2</label>
 					<label2>$VAR[PersonalWidget2Label2Var]</label2>
 					<onclick>ClearProperty(WidgetVisibility,home)</onclick>
-					<onclick>SetProperty(widgetID, personal2)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)">SetProperty(widgetID, personal2)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal2.2)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal2.3)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)</visible>
 				</control>
 				<control type="button" id="14761">
 					<label>  ∟$LOCALIZE[40137] 2</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence2Label2Var]</label2>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2))</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2.3))]</visible>
 				</control>
 				<control type="button" id="1477">
 					<include>DefaultSettingButton</include>
 					<label>$ADDON[script.skinshortcuts 32044] 3</label>
 					<label2>$VAR[PersonalWidget3Label2Var]</label2>
 					<onclick>ClearProperty(WidgetVisibility,home)</onclick>
-					<onclick>SetProperty(widgetID, personal3)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)">SetProperty(widgetID, personal3)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal3.2)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal3.3)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)</visible>
 				</control>
 				<control type="button" id="14771">
 					<label>  ∟$LOCALIZE[40137] 3</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence3Label2Var]</label2>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3))</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3.3))]</visible>
 				</control>
 				<control type="button" id="1478">
 					<include>DefaultSettingButton</include>
 					<label>$ADDON[script.skinshortcuts 32044] 4</label>
 					<label2>$VAR[PersonalWidget4Label2Var]</label2>
 					<onclick>ClearProperty(WidgetVisibility,home)</onclick>
-					<onclick>SetProperty(widgetID, personal4)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)">SetProperty(widgetID, personal4)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal4.2)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal4.3)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)</visible>
 				</control>
 				<control type="button" id="14781">
 					<label>  ∟$LOCALIZE[40137] 4</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence4Label2Var]</label2>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4))</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4.3))]</visible>
 				</control>
 				<control type="button" id="1479">
 					<include>DefaultSettingButton</include>
 					<label>$ADDON[script.skinshortcuts 32044] 5</label>
 					<label2>$VAR[PersonalWidget5Label2Var]</label2>
 					<onclick>ClearProperty(WidgetVisibility,home)</onclick>
-					<onclick>SetProperty(widgetID, personal5)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)">SetProperty(widgetID, personal5)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal5.2)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal5.3)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)</visible>
 				</control>
 				<control type="button" id="14791">
 					<label>  ∟$LOCALIZE[40137] 5</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence5Label2Var]</label2>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5))</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5.3))]</visible>
 				</control>
 				<control type="button" id="1480">
 					<include>DefaultSettingButton</include>
 					<label>$ADDON[script.skinshortcuts 32044] 6</label>
 					<label2>$VAR[PersonalWidget6Label2Var]</label2>
 					<onclick>ClearProperty(WidgetVisibility,home)</onclick>
-					<onclick>SetProperty(widgetID, personal6)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)">SetProperty(widgetID, personal6)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal6.2)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal6.3)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)</visible>
 				</control>
 				<control type="button" id="14801">
 					<label>  ∟$LOCALIZE[40137] 6</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence6Label2Var]</label2>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6))</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6.3))]</visible>
 				</control>
 				<control type="button" id="1481">
 					<include>DefaultSettingButton</include>
 					<label>$ADDON[script.skinshortcuts 32044] 7</label>
 					<label2>$VAR[PersonalWidget7Label2Var]</label2>
 					<onclick>ClearProperty(WidgetVisibility,home)</onclick>
-					<onclick>SetProperty(widgetID, personal7)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)">SetProperty(widgetID, personal7)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal7.2)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal7.3)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)</visible>
 				</control>
 				<control type="button" id="14811">
 					<label>  ∟$LOCALIZE[40137] 7</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence7Label2Var]</label2>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7))</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7.3))]</visible>
 				</control>
 				<control type="button" id="1482">
 					<include>DefaultSettingButton</include>
 					<label>$ADDON[script.skinshortcuts 32044] 8</label>
 					<label2>$VAR[PersonalWidget8Label2Var]</label2>
 					<onclick>ClearProperty(WidgetVisibility,home)</onclick>
-					<onclick>SetProperty(widgetID, personal8)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)">SetProperty(widgetID, personal8)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal8.2)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal8.3)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)</visible>
 				</control>
 				<control type="button" id="14821">
 					<label>  ∟$LOCALIZE[40137] 8</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence8Label2Var]</label2>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8))</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8.3))]</visible>
 				</control>
 			</control>
 			<control type="image">

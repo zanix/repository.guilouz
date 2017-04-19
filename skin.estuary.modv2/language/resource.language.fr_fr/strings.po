@@ -1380,8 +1380,8 @@ msgstr "Activer l'élément"
 
 #: /extras/script.skinshortcuts/overrides.xml
 msgctxt "#40134"
-msgid "Personalized widget"
-msgstr "Widget personnalisé"
+msgid "Personalized widgets"
+msgstr "Widgets personnalisés"
 
 #: /extras/script.skinshortcuts/overrides.xml
 msgctxt "#40135"
@@ -1537,3 +1537,18 @@ msgstr "Griser les éléments vus"
 msgctxt "#40165"
 msgid "Use alphabet for scrolling on library (experimental)"
 msgstr "Utiliser l'alphabet pour défiler sur la bibliothèque (expérimental)"
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40166"
+msgid "Personalized widget 1"
+msgstr "Widget personnalisé 1"
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40167"
+msgid "Personalized widget 2"
+msgstr "Widget personnalisé 2"
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40168"
+msgid "Personalized widget 3"
+msgstr "Widget personnalisé 3"

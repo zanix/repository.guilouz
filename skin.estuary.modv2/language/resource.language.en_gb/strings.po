@@ -1380,7 +1380,7 @@ msgstr ""
 
 #: /extras/script.skinshortcuts/overrides.xml
 msgctxt "#40134"
-msgid "Personalized widget"
+msgid "Personalized widgets"
 msgstr ""
 
 #: /extras/script.skinshortcuts/overrides.xml
@@ -1536,4 +1536,19 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#40165"
 msgid "Use alphabet for scrolling on library (experimental)"
+msgstr ""
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40166"
+msgid "Personalized widget 1"
+msgstr ""
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40167"
+msgid "Personalized widget 2"
+msgstr ""
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40168"
+msgid "Personalized widget 3"
 msgstr ""
