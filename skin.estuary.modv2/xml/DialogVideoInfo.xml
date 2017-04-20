@@ -776,7 +776,7 @@
 				</control>
 				<control type="label">
 					<left>74</left>
-					<width>730</width>
+					<width>790</width>
 					<height>44</height>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$LOCALIZE[31125]</label>
@@ -797,7 +797,7 @@
 				</control>
 				<control type="label">
 					<left>74</left>
-					<width>730</width>
+					<width>790</width>
 					<height>44</height>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$LOCALIZE[31126]</label>

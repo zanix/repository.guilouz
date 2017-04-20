@@ -1,11 +1,733 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="DurationVar">
+		<value condition="String.StartsWith(ListItem.Duration,01:00:)">1h00</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:01:)">1h01</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:02:)">1h02</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:03:)">1h03</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:04:)">1h04</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:05:)">1h05</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:06:)">1h06</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:07:)">1h07</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:08:)">1h08</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:09:)">1h09</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:10:)">1h10</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:11:)">1h11</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:12:)">1h12</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:13:)">1h13</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:14:)">1h14</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:15:)">1h15</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:16:)">1h16</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:17:)">1h17</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:18:)">1h18</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:19:)">1h19</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:20:)">1h20</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:21:)">1h21</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:22:)">1h22</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:23:)">1h23</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:24:)">1h24</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:25:)">1h25</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:26:)">1h26</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:27:)">1h27</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:28:)">1h28</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:29:)">1h29</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:30:)">1h30</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:31:)">1h31</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:32:)">1h32</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:33:)">1h33</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:34:)">1h34</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:35:)">1h35</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:36:)">1h36</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:37:)">1h37</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:38:)">1h38</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:39:)">1h39</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:40:)">1h40</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:41:)">1h41</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:42:)">1h42</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:43:)">1h43</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:44:)">1h44</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:45:)">1h45</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:46:)">1h46</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:47:)">1h47</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:48:)">1h48</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:49:)">1h49</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:50:)">1h50</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:51:)">1h51</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:52:)">1h52</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:53:)">1h53</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:54:)">1h54</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:55:)">1h55</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:56:)">1h56</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:57:)">1h57</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:58:)">1h58</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:59:)">1h59</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:00:)">1h00</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:01:)">1h01</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:02:)">1h02</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:03:)">1h03</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:04:)">1h04</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:05:)">1h05</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:06:)">1h06</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:07:)">1h07</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:08:)">1h08</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:09:)">1h09</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:10:)">1h10</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:11:)">1h11</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:12:)">1h12</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:13:)">1h13</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:14:)">1h14</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:15:)">1h15</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:16:)">1h16</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:17:)">1h17</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:18:)">1h18</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:19:)">1h19</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:20:)">1h20</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:21:)">1h21</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:22:)">1h22</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:23:)">1h23</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:24:)">1h24</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:25:)">1h25</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:26:)">1h26</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:27:)">1h27</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:28:)">1h28</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:29:)">1h29</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:30:)">1h30</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:31:)">1h31</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:32:)">1h32</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:33:)">1h33</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:34:)">1h34</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:35:)">1h35</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:36:)">1h36</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:37:)">1h37</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:38:)">1h38</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:39:)">1h39</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:40:)">1h40</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:41:)">1h41</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:42:)">1h42</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:43:)">1h43</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:44:)">1h44</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:45:)">1h45</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:46:)">1h46</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:47:)">1h47</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:48:)">1h48</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:49:)">1h49</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:50:)">1h50</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:51:)">1h51</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:52:)">1h52</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:53:)">1h53</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:54:)">1h54</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:55:)">1h55</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:56:)">1h56</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:57:)">1h57</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:58:)">1h58</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:59:)">1h59</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:00:)">2h00</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:01:)">2h01</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:02:)">2h02</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:03:)">2h03</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:04:)">2h04</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:05:)">2h05</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:06:)">2h06</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:07:)">2h07</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:08:)">2h08</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:09:)">2h09</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:10:)">2h10</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:11:)">2h11</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:12:)">2h12</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:13:)">2h13</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:14:)">2h14</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:15:)">2h15</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:16:)">2h16</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:17:)">2h17</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:18:)">2h18</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:19:)">2h19</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:20:)">2h20</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:21:)">2h21</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:22:)">2h22</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:23:)">2h23</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:24:)">2h24</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:25:)">2h25</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:26:)">2h26</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:27:)">2h27</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:28:)">2h28</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:29:)">2h29</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:30:)">2h30</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:31:)">2h31</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:32:)">2h32</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:33:)">2h33</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:34:)">2h34</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:35:)">2h35</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:36:)">2h36</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:37:)">2h37</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:38:)">2h38</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:39:)">2h39</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:40:)">2h40</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:41:)">2h41</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:42:)">2h42</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:43:)">2h43</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:44:)">2h44</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:45:)">2h45</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:46:)">2h46</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:47:)">2h47</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:48:)">2h48</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:49:)">2h49</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:50:)">2h50</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:51:)">2h51</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:52:)">2h52</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:53:)">2h53</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:54:)">2h54</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:55:)">2h55</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:56:)">2h56</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:57:)">2h57</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:58:)">2h58</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:59:)">2h59</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:00:)">2h00</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:01:)">2h01</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:02:)">2h02</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:03:)">2h03</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:04:)">2h04</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:05:)">2h05</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:06:)">2h06</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:07:)">2h07</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:08:)">2h08</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:09:)">2h09</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:10:)">2h10</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:11:)">2h11</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:12:)">2h12</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:13:)">2h13</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:14:)">2h14</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:15:)">2h15</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:16:)">2h16</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:17:)">2h17</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:18:)">2h18</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:19:)">2h19</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:20:)">2h20</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:21:)">2h21</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:22:)">2h22</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:23:)">2h23</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:24:)">2h24</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:25:)">2h25</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:26:)">2h26</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:27:)">2h27</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:28:)">2h28</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:29:)">2h29</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:30:)">2h30</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:31:)">2h31</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:32:)">2h32</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:33:)">2h33</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:34:)">2h34</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:35:)">2h35</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:36:)">2h36</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:37:)">2h37</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:38:)">2h38</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:39:)">2h39</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:40:)">2h40</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:41:)">2h41</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:42:)">2h42</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:43:)">2h43</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:44:)">2h44</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:45:)">2h45</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:46:)">2h46</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:47:)">2h47</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:48:)">2h48</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:49:)">2h49</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:50:)">2h50</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:51:)">2h51</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:52:)">2h52</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:53:)">2h53</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:54:)">2h54</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:55:)">2h55</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:56:)">2h56</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:57:)">2h57</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:58:)">2h58</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:59:)">2h59</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:00:)">3h00</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:01:)">3h01</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:02:)">3h02</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:03:)">3h03</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:04:)">3h04</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:05:)">3h05</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:06:)">3h06</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:07:)">3h07</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:08:)">3h08</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:09:)">3h09</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:10:)">3h10</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:11:)">3h11</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:12:)">3h12</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:13:)">3h13</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:14:)">3h14</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:15:)">3h15</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:16:)">3h16</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:17:)">3h17</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:18:)">3h18</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:19:)">3h19</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:20:)">3h20</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:21:)">3h21</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:22:)">3h22</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:23:)">3h23</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:24:)">3h24</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:25:)">3h25</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:26:)">3h26</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:27:)">3h27</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:28:)">3h28</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:29:)">3h29</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:30:)">3h30</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:31:)">3h31</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:32:)">3h32</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:33:)">3h33</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:34:)">3h34</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:35:)">3h35</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:36:)">3h36</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:37:)">3h37</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:38:)">3h38</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:39:)">3h39</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:40:)">3h40</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:41:)">3h41</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:42:)">3h42</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:43:)">3h43</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:44:)">3h44</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:45:)">3h45</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:46:)">3h46</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:47:)">3h47</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:48:)">3h48</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:49:)">3h49</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:50:)">3h50</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:51:)">3h51</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:52:)">3h52</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:53:)">3h53</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:54:)">3h54</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:55:)">3h55</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:56:)">3h56</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:57:)">3h57</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:58:)">3h58</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:59:)">3h59</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:00:)">3h00</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:01:)">3h01</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:02:)">3h02</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:03:)">3h03</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:04:)">3h04</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:05:)">3h05</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:06:)">3h06</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:07:)">3h07</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:08:)">3h08</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:09:)">3h09</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:10:)">3h10</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:11:)">3h11</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:12:)">3h12</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:13:)">3h13</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:14:)">3h14</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:15:)">3h15</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:16:)">3h16</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:17:)">3h17</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:18:)">3h18</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:19:)">3h19</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:20:)">3h20</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:21:)">3h21</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:22:)">3h22</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:23:)">3h23</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:24:)">3h24</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:25:)">3h25</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:26:)">3h26</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:27:)">3h27</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:28:)">3h28</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:29:)">3h29</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:30:)">3h30</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:31:)">3h31</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:32:)">3h32</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:33:)">3h33</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:34:)">3h34</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:35:)">3h35</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:36:)">3h36</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:37:)">3h37</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:38:)">3h38</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:39:)">3h39</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:40:)">3h40</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:41:)">3h41</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:42:)">3h42</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:43:)">3h43</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:44:)">3h44</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:45:)">3h45</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:46:)">3h46</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:47:)">3h47</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:48:)">3h48</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:49:)">3h49</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:50:)">3h50</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:51:)">3h51</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:52:)">3h52</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:53:)">3h53</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:54:)">3h54</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:55:)">3h55</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:56:)">3h56</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:57:)">3h57</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:58:)">3h58</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:59:)">3h59</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:00:)">4h00</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:01:)">4h01</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:02:)">4h02</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:03:)">4h03</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:04:)">4h04</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:05:)">4h05</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:06:)">4h06</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:07:)">4h07</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:08:)">4h08</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:09:)">4h09</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:10:)">4h10</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:11:)">4h11</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:12:)">4h12</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:13:)">4h13</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:14:)">4h14</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:15:)">4h15</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:16:)">4h16</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:17:)">4h17</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:18:)">4h18</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:19:)">4h19</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:20:)">4h20</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:21:)">4h21</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:22:)">4h22</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:23:)">4h23</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:24:)">4h24</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:25:)">4h25</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:26:)">4h26</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:27:)">4h27</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:28:)">4h28</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:29:)">4h29</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:30:)">4h30</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:31:)">4h31</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:32:)">4h32</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:33:)">4h33</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:34:)">4h34</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:35:)">4h35</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:36:)">4h36</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:37:)">4h37</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:38:)">4h38</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:39:)">4h39</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:40:)">4h40</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:41:)">4h41</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:42:)">4h42</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:43:)">4h43</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:44:)">4h44</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:45:)">4h45</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:46:)">4h46</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:47:)">4h47</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:48:)">4h48</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:49:)">4h49</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:50:)">4h50</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:51:)">4h51</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:52:)">4h52</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:53:)">4h53</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:54:)">4h54</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:55:)">4h55</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:56:)">4h56</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:57:)">4h57</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:58:)">4h58</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:59:)">4h59</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:00:)">4h00</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:01:)">4h01</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:02:)">4h02</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:03:)">4h03</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:04:)">4h04</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:05:)">4h05</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:06:)">4h06</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:07:)">4h07</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:08:)">4h08</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:09:)">4h09</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:10:)">4h10</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:11:)">4h11</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:12:)">4h12</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:13:)">4h13</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:14:)">4h14</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:15:)">4h15</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:16:)">4h16</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:17:)">4h17</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:18:)">4h18</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:19:)">4h19</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:20:)">4h20</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:21:)">4h21</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:22:)">4h22</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:23:)">4h23</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:24:)">4h24</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:25:)">4h25</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:26:)">4h26</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:27:)">4h27</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:28:)">4h28</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:29:)">4h29</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:30:)">4h30</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:31:)">4h31</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:32:)">4h32</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:33:)">4h33</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:34:)">4h34</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:35:)">4h35</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:36:)">4h36</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:37:)">4h37</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:38:)">4h38</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:39:)">4h39</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:40:)">4h40</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:41:)">4h41</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:42:)">4h42</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:43:)">4h43</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:44:)">4h44</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:45:)">4h45</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:46:)">4h46</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:47:)">4h47</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:48:)">4h48</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:49:)">4h49</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:50:)">4h50</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:51:)">4h51</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:52:)">4h52</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:53:)">4h53</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:54:)">4h54</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:55:)">4h55</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:56:)">4h56</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:57:)">4h57</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:58:)">4h58</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:59:)">4h59</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:00:)">5h00</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:01:)">5h01</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:02:)">5h02</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:03:)">5h03</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:04:)">5h04</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:05:)">5h05</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:06:)">5h06</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:07:)">5h07</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:08:)">5h08</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:09:)">5h09</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:10:)">5h10</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:11:)">5h11</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:12:)">5h12</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:13:)">5h13</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:14:)">5h14</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:15:)">5h15</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:16:)">5h16</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:17:)">5h17</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:18:)">5h18</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:19:)">5h19</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:20:)">5h20</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:21:)">5h21</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:22:)">5h22</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:23:)">5h23</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:24:)">5h24</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:25:)">5h25</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:26:)">5h26</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:27:)">5h27</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:28:)">5h28</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:29:)">5h29</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:30:)">5h30</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:31:)">5h31</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:32:)">5h32</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:33:)">5h33</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:34:)">5h34</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:35:)">5h35</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:36:)">5h36</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:37:)">5h37</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:38:)">5h38</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:39:)">5h39</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:40:)">5h40</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:41:)">5h41</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:42:)">5h42</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:43:)">5h43</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:44:)">5h44</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:45:)">5h45</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:46:)">5h46</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:47:)">5h47</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:48:)">5h48</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:49:)">5h49</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:50:)">5h50</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:51:)">5h51</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:52:)">5h52</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:53:)">5h53</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:54:)">5h54</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:55:)">5h55</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:56:)">5h56</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:57:)">5h57</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:58:)">5h58</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:59:)">5h59</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:00:)">5h00</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:01:)">5h01</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:02:)">5h02</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:03:)">5h03</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:04:)">5h04</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:05:)">5h05</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:06:)">5h06</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:07:)">5h07</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:08:)">5h08</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:09:)">5h09</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:10:)">5h10</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:11:)">5h11</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:12:)">5h12</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:13:)">5h13</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:14:)">5h14</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:15:)">5h15</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:16:)">5h16</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:17:)">5h17</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:18:)">5h18</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:19:)">5h19</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:20:)">5h20</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:21:)">5h21</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:22:)">5h22</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:23:)">5h23</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:24:)">5h24</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:25:)">5h25</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:26:)">5h26</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:27:)">5h27</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:28:)">5h28</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:29:)">5h29</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:30:)">5h30</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:31:)">5h31</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:32:)">5h32</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:33:)">5h33</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:34:)">5h34</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:35:)">5h35</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:36:)">5h36</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:37:)">5h37</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:38:)">5h38</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:39:)">5h39</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:40:)">5h40</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:41:)">5h41</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:42:)">5h42</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:43:)">5h43</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:44:)">5h44</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:45:)">5h45</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:46:)">5h46</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:47:)">5h47</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:48:)">5h48</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:49:)">5h49</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:50:)">5h50</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:51:)">5h51</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:52:)">5h52</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:53:)">5h53</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:54:)">5h54</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:55:)">5h55</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:56:)">5h56</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:57:)">5h57</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:58:)">5h58</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:59:)">5h59</value>
+		<value condition="String.StartsWith(ListItem.Duration,00:)">1 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,01:)">1 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,02:)">2 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,03:)">3 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,04:)">4 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,05:)">5 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,06:)">6 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,07:)">7 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,08:)">8 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,09:)">9 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,10:)">10 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,11:)">11 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,12:)">12 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,13:)">13 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,14:)">14 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,15:)">15 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,16:)">16 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,17:)">17 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,18:)">18 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,19:)">19 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,20:)">20 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,21:)">21 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,22:)">22 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,23:)">23 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,24:)">24 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,25:)">25 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,26:)">26 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,27:)">27 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,28:)">28 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,29:)">29 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,30:)">30 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,31:)">31 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,32:)">32 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,33:)">33 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,34:)">34 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,35:)">35 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,36:)">36 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,37:)">37 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,38:)">38 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,39:)">39 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,40:)">40 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,41:)">41 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,42:)">42 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,43:)">43 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,44:)">44 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,45:)">45 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,46:)">46 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,47:)">47 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,48:)">48 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,49:)">49 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,50:)">50 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,51:)">51 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,52:)">52 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,53:)">53 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,54:)">54 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,55:)">55 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,56:)">56 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,57:)">57 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,58:)">58 min</value>
+		<value condition="String.StartsWith(ListItem.Duration,59:)">59 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,00:)">1 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,01:)">1 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,02:)">2 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,03:)">3 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,04:)">4 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,05:)">5 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,06:)">6 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,07:)">7 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,08:)">8 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,09:)">9 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,10:)">10 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,11:)">11 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,12:)">12 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,13:)">13 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,14:)">14 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,15:)">15 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,16:)">16 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,17:)">17 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,18:)">18 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,19:)">19 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,20:)">20 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,21:)">21 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,22:)">22 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,23:)">23 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,24:)">24 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,25:)">25 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,26:)">26 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,27:)">27 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,28:)">28 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,29:)">29 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,30:)">30 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,31:)">31 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,32:)">32 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,33:)">33 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,34:)">34 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,35:)">35 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,36:)">36 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,37:)">37 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,38:)">38 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,39:)">39 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,40:)">40 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,41:)">41 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,42:)">42 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,43:)">43 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,44:)">44 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,45:)">45 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,46:)">46 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,47:)">47 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,48:)">48 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,49:)">49 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,50:)">50 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,51:)">51 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,52:)">52 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,53:)">53 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,54:)">54 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,55:)">55 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,56:)">56 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,57:)">57 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,58:)">58 min</value>
+		<value condition="String.StartsWith(Container.ListItem.Duration,59:)">59 min</value>
+	</variable>
 	<variable name="SystemLogOffVar">
-        <value>$LOCALIZE[20126] $INFO[system.profilename,(,)]</value>
-    </variable>
-    <variable name="CancelAlarmVar">
-        <value>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</value>
-    </variable>
+		<value>$LOCALIZE[20126] $INFO[system.profilename,(,)]</value>
+	</variable>
+	<variable name="CancelAlarmVar">
+		<value>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</value>
+	</variable>
 	<variable name="SettingsForcedViewsMoviesVar">
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),50)">$LOCALIZE[535]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),55)">$LOCALIZE[31107]</value>
@@ -209,18 +931,18 @@
 		<value>UpdateLibrary.png</value>
 	</variable>
 	<variable name="Label_SkinSetting_PowerFanart">
-        <value condition="!String.IsEmpty(Skin.String(power_background))">$INFO[Skin.String(power_background)]</value>
-        <value>$LOCALIZE[15109]</value>
-    </variable>
-    <variable name="Label_SkinSetting_SettingsFanart">
-        <value condition="!String.IsEmpty(Skin.String(settings_background))">$INFO[Skin.String(settings_background)]</value>
-        <value>$LOCALIZE[15109]</value>
-    </variable>
-    <variable name="Label_SkinSetting_SearchFanart">
-        <value condition="!String.IsEmpty(Skin.String(search_background))">$INFO[Skin.String(search_background)]</value>
-        <value>$LOCALIZE[15109]</value>
-    </variable>
-    <variable name="WidgetsAppearence1Label2Var">
+		<value condition="!String.IsEmpty(Skin.String(power_background))">$INFO[Skin.String(power_background)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="Label_SkinSetting_SettingsFanart">
+		<value condition="!String.IsEmpty(Skin.String(settings_background))">$INFO[Skin.String(settings_background)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="Label_SkinSetting_SearchFanart">
+		<value condition="!String.IsEmpty(Skin.String(search_background))">$INFO[Skin.String(search_background)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="WidgetsAppearence1Label2Var">
 		<value condition="String.IsEqual(Window.Property(WidgetStyle1),Posters)">$LOCALIZE[40138]</value>
 		<value condition="String.IsEqual(Window.Property(WidgetStyle1),Thumbs)">$LOCALIZE[40139]</value>
 		<value condition="String.IsEqual(Window.Property(WidgetStyle1),Squares)">$LOCALIZE[40140]</value>
@@ -268,193 +990,193 @@
 		<value condition="String.IsEqual(Window.Property(WidgetStyle8),Squares)">$LOCALIZE[40140]</value>
 		<value>$LOCALIZE[40138]</value>
 	</variable>
-    <variable name="PersonalWidget1Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1))">$INFO[Container(211).ListItem.Property(widgetName.personal1)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1.2))">$INFO[Container(211).ListItem.Property(widgetName.personal1.2)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1.3))">$INFO[Container(211).ListItem.Property(widgetName.personal1.3)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="PersonalWidget2Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2))">$INFO[Container(211).ListItem.Property(widgetName.personal2)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2.2))">$INFO[Container(211).ListItem.Property(widgetName.personal2.2)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2.3))">$INFO[Container(211).ListItem.Property(widgetName.personal2.3)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="PersonalWidget3Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3))">$INFO[Container(211).ListItem.Property(widgetName.personal3)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3.2))">$INFO[Container(211).ListItem.Property(widgetName.personal3.2)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3.3))">$INFO[Container(211).ListItem.Property(widgetName.personal3.3)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="PersonalWidget4Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4))">$INFO[Container(211).ListItem.Property(widgetName.personal4)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4.2))">$INFO[Container(211).ListItem.Property(widgetName.personal4.2)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4.3))">$INFO[Container(211).ListItem.Property(widgetName.personal4.3)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="PersonalWidget5Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5))">$INFO[Container(211).ListItem.Property(widgetName.personal5)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5.2))">$INFO[Container(211).ListItem.Property(widgetName.personal5.2)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5.3))">$INFO[Container(211).ListItem.Property(widgetName.personal5.3)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="PersonalWidget6Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6))">$INFO[Container(211).ListItem.Property(widgetName.personal6)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6.2))">$INFO[Container(211).ListItem.Property(widgetName.personal6.2)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6.3))">$INFO[Container(211).ListItem.Property(widgetName.personal6.3)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="PersonalWidget7Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7))">$INFO[Container(211).ListItem.Property(widgetName.personal7)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7.2))">$INFO[Container(211).ListItem.Property(widgetName.personal7.2)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7.3))">$INFO[Container(211).ListItem.Property(widgetName.personal7.3)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="PersonalWidget8Label2Var">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8))">$INFO[Container(211).ListItem.Property(widgetName.personal8)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8.2))">$INFO[Container(211).ListItem.Property(widgetName.personal8.2)]</value>
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8.3))">$INFO[Container(211).ListItem.Property(widgetName.personal8.3)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="LabelCategoriesSmallVar">
+	<variable name="PersonalWidget1Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1))">$INFO[Container(211).ListItem.Property(widgetName.personal1)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1.2))">$INFO[Container(211).ListItem.Property(widgetName.personal1.2)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1.3))">$INFO[Container(211).ListItem.Property(widgetName.personal1.3)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="PersonalWidget2Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2))">$INFO[Container(211).ListItem.Property(widgetName.personal2)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2.2))">$INFO[Container(211).ListItem.Property(widgetName.personal2.2)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2.3))">$INFO[Container(211).ListItem.Property(widgetName.personal2.3)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="PersonalWidget3Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3))">$INFO[Container(211).ListItem.Property(widgetName.personal3)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3.2))">$INFO[Container(211).ListItem.Property(widgetName.personal3.2)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3.3))">$INFO[Container(211).ListItem.Property(widgetName.personal3.3)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="PersonalWidget4Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4))">$INFO[Container(211).ListItem.Property(widgetName.personal4)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4.2))">$INFO[Container(211).ListItem.Property(widgetName.personal4.2)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4.3))">$INFO[Container(211).ListItem.Property(widgetName.personal4.3)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="PersonalWidget5Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5))">$INFO[Container(211).ListItem.Property(widgetName.personal5)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5.2))">$INFO[Container(211).ListItem.Property(widgetName.personal5.2)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5.3))">$INFO[Container(211).ListItem.Property(widgetName.personal5.3)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="PersonalWidget6Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6))">$INFO[Container(211).ListItem.Property(widgetName.personal6)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6.2))">$INFO[Container(211).ListItem.Property(widgetName.personal6.2)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6.3))">$INFO[Container(211).ListItem.Property(widgetName.personal6.3)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="PersonalWidget7Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7))">$INFO[Container(211).ListItem.Property(widgetName.personal7)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7.2))">$INFO[Container(211).ListItem.Property(widgetName.personal7.2)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7.3))">$INFO[Container(211).ListItem.Property(widgetName.personal7.3)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="PersonalWidget8Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8))">$INFO[Container(211).ListItem.Property(widgetName.personal8)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8.2))">$INFO[Container(211).ListItem.Property(widgetName.personal8.2)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8.3))">$INFO[Container(211).ListItem.Property(widgetName.personal8.3)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="LabelCategoriesSmallVar">
 		<value condition="Control.HasFocus(59001) | Control.HasFocus(69001) | Control.HasFocus(79001) | Control.HasFocus(89001) | Control.HasFocus(119001) | Control.HasFocus(129001) | Control.HasFocus(139001) | Control.HasFocus(169001) | Control.HasFocus(22900) | Control.HasFocus(229001)">$INFO[Container($PARAM[list_id]).ListItem.Label]</value>
 		<value>$LOCALIZE[31148]</value>
 	</variable>
-    <variable name="Label_SkinSetting_StudioLogos">
-        <value condition="!String.IsEmpty(Skin.String(studiologos.name))">$INFO[Skin.String(studiologos.name)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="Label_SkinSetting_RecordLabels">
-        <value condition="!String.IsEmpty(Skin.String(recordlabels.name))">$INFO[Skin.String(recordlabels.name)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="InfoWidgetThumbVar">
-    	<value condition="!String.IsEmpty(Listitem.Art(season.landscape))">$INFO[Listitem.Art(season.landscape)]</value>
+	<variable name="Label_SkinSetting_StudioLogos">
+		<value condition="!String.IsEmpty(Skin.String(studiologos.name))">$INFO[Skin.String(studiologos.name)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="Label_SkinSetting_RecordLabels">
+		<value condition="!String.IsEmpty(Skin.String(recordlabels.name))">$INFO[Skin.String(recordlabels.name)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="InfoWidgetThumbVar">
+		<value condition="!String.IsEmpty(Listitem.Art(season.landscape))">$INFO[Listitem.Art(season.landscape)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(tvshow.landscape))">$INFO[Listitem.Art(tvshow.landscape)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(landscape))">$INFO[Listitem.Art(landscape)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
-    <variable name="OSDCastVar">
-        <value condition="!String.IsEmpty(Window(home).Property(NextUpNotification.NowPlaying.Type)) + String.IsEqual(Window(home).Property(NextUpNotification.NowPlaying.Type),movie) + Integer.IsGreater(Window(home).Property(NextUpNotification.NowPlaying.DBID),-1)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[Window(home).Property(NextUpNotification.NowPlaying.DBID)]</value>
-        <value condition="!String.IsEmpty(Window(home).Property(NextUpNotification.NowPlaying.Type)) + String.IsEqual(Window(home).Property(NextUpNotification.NowPlaying.Type),episode) + Integer.IsGreater(Window(home).Property(NextUpNotification.NowPlaying.DBID),-1)">plugin://script.skin.helper.service/?action=getcast&amp;tvshow=$INFO[Window(home).Property(NextUpNotification.NowPlaying.DBID)]</value>
-        <value condition="VideoPlayer.Content(movies)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[VideoPlayer.Title]</value>
-        <value condition="VideoPlayer.Content(episodes)">plugin://script.skin.helper.service/?action=getcast&amp;tvshow=$INFO[VideoPlayer.TvShowTitle]</value>
-        <value condition="VideoPlayer.Content(livetv)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[VideoPlayer.Title]</value>
-    </variable>
-    <variable name="MediaFlagsColorVar">
-        <value condition="Skin.HasSetting(enable_mediaflagscolor)">$VAR[SkinColorVar]</value>
-        <value>FFFFFFFF</value>
-    </variable>
-    <variable name="MusicPlayerDiscTitleVar">
-        <value condition="!String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]</value>
-        <value>$INFO[Player.Title]</value>
-    </variable>
-    <variable name="PlayerFanartVar">
-        <value condition="Skin.HasSetting(enable_artistslideshow) + !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)]</value>
-        <value condition="Skin.HasSetting(enable_artistslideshow) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Player.Art(fanart)]</value>
-        <value condition="!Skin.HasSetting(enable_artistslideshow)">$INFO[Player.Art(fanart)]</value>
-    </variable>
-    <variable name="PlayerInfoClearArtVar">
-        <value condition="!String.IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
-        <value>$INFO[Player.Art(clearart)]</value>
-    </variable>
-    <variable name="PlayerClearArtVar">
-        <value condition="!String.IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
-        <value condition="!String.IsEmpty(Player.Art(clearart))">$INFO[Player.Art(clearart)]</value>
-        <value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
-    </variable>
-    <variable name="LibraryClearLogoVar">
-        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
-    </variable>
-    <variable name="ViewClearLogoVar">
-        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-    </variable>
-    <variable name="ViewClearArtVar">
-        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(clearlogo)) + ListItem.IsCollection">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)) + ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
-    </variable>
-    <variable name="HomeClearLogoVar">
-        <value condition="!String.IsEmpty(Container().ListItem.Art(tvshow.clearlogo))">$INFO[Container().ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container().ListItem.Art(clearlogo))">$INFO[Container().ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
-    </variable>
-    <variable name="Label_SkinSetting_Backgrounds">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(background))">$INFO[Container(211).ListItem.Property(background)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="Label_SkinSetting_Widget">
-        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName))">$INFO[Container(211).ListItem.Property(widgetName)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="Label_SkinSetting_WidgetNumber">
-        <value condition="!String.IsEmpty(Skin.String(widgetnumber))">$INFO[Skin.String(widgetnumber)]</value>
-        <value>25</value>
-    </variable>
-    <variable name="Label_SkinSetting_Startup">
-        <value condition="!String.IsEmpty(Skin.String(SplashScreen))">$INFO[Skin.String(SplashScreen)]</value>
-        <value condition="String.IsEmpty(Skin.String(SplashScreen))">$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="Label_SkinSetting_MovieGenreFanart">
-        <value condition="!String.IsEmpty(Skin.String(MovieGenreFanart.name))">$INFO[Skin.String(MovieGenreFanart.name)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="Label_SkinSetting_MovieGenreIcons">
-        <value condition="!String.IsEmpty(Skin.String(moviegenreicons.name))">$INFO[Skin.String(moviegenreicons.name)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="Label_SkinSetting_WeatherFanart">
-        <value condition="!String.IsEmpty(Skin.String(WeatherFanart.name))">$INFO[Skin.String(WeatherFanart.name)]</value>
-        <value>$LOCALIZE[40064]</value>
-    </variable>
-    <variable name="Label_SkinSetting_WeatherIcons">
-        <value condition="!String.IsEmpty(Skin.String(WeatherIcons.name))">$INFO[Skin.String(WeatherIcons.name)]</value>
-        <value>$LOCALIZE[15109]</value>
-    </variable>
+	<variable name="OSDCastVar">
+		<value condition="!String.IsEmpty(Window(home).Property(NextUpNotification.NowPlaying.Type)) + String.IsEqual(Window(home).Property(NextUpNotification.NowPlaying.Type),movie) + Integer.IsGreater(Window(home).Property(NextUpNotification.NowPlaying.DBID),-1)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[Window(home).Property(NextUpNotification.NowPlaying.DBID)]</value>
+		<value condition="!String.IsEmpty(Window(home).Property(NextUpNotification.NowPlaying.Type)) + String.IsEqual(Window(home).Property(NextUpNotification.NowPlaying.Type),episode) + Integer.IsGreater(Window(home).Property(NextUpNotification.NowPlaying.DBID),-1)">plugin://script.skin.helper.service/?action=getcast&amp;tvshow=$INFO[Window(home).Property(NextUpNotification.NowPlaying.DBID)]</value>
+		<value condition="VideoPlayer.Content(movies)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[VideoPlayer.Title]</value>
+		<value condition="VideoPlayer.Content(episodes)">plugin://script.skin.helper.service/?action=getcast&amp;tvshow=$INFO[VideoPlayer.TvShowTitle]</value>
+		<value condition="VideoPlayer.Content(livetv)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[VideoPlayer.Title]</value>
+	</variable>
+	<variable name="MediaFlagsColorVar">
+		<value condition="Skin.HasSetting(enable_mediaflagscolor)">$VAR[SkinColorVar]</value>
+		<value>FFFFFFFF</value>
+	</variable>
+	<variable name="MusicPlayerDiscTitleVar">
+		<value condition="!String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]</value>
+		<value>$INFO[Player.Title]</value>
+	</variable>
+	<variable name="PlayerFanartVar">
+		<value condition="Skin.HasSetting(enable_artistslideshow) + !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)]</value>
+		<value condition="Skin.HasSetting(enable_artistslideshow) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Player.Art(fanart)]</value>
+		<value condition="!Skin.HasSetting(enable_artistslideshow)">$INFO[Player.Art(fanart)]</value>
+	</variable>
+	<variable name="PlayerInfoClearArtVar">
+		<value condition="!String.IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
+		<value>$INFO[Player.Art(clearart)]</value>
+	</variable>
+	<variable name="PlayerClearArtVar">
+		<value condition="!String.IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
+		<value condition="!String.IsEmpty(Player.Art(clearart))">$INFO[Player.Art(clearart)]</value>
+		<value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
+		<value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
+	</variable>
+	<variable name="LibraryClearLogoVar">
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
+	</variable>
+	<variable name="ViewClearLogoVar">
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+	</variable>
+	<variable name="ViewClearArtVar">
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(clearlogo)) + ListItem.IsCollection">$INFO[ListItem.Art(clearlogo)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)) + ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
+	</variable>
+	<variable name="HomeClearLogoVar">
+		<value condition="!String.IsEmpty(Container().ListItem.Art(tvshow.clearlogo))">$INFO[Container().ListItem.Art(tvshow.clearlogo)]</value>
+		<value condition="!String.IsEmpty(Container().ListItem.Art(clearlogo))">$INFO[Container().ListItem.Art(clearlogo)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
+	</variable>
+	<variable name="Label_SkinSetting_Backgrounds">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(background))">$INFO[Container(211).ListItem.Property(background)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="Label_SkinSetting_Widget">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName))">$INFO[Container(211).ListItem.Property(widgetName)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="Label_SkinSetting_WidgetNumber">
+		<value condition="!String.IsEmpty(Skin.String(widgetnumber))">$INFO[Skin.String(widgetnumber)]</value>
+		<value>25</value>
+	</variable>
+	<variable name="Label_SkinSetting_Startup">
+		<value condition="!String.IsEmpty(Skin.String(SplashScreen))">$INFO[Skin.String(SplashScreen)]</value>
+		<value condition="String.IsEmpty(Skin.String(SplashScreen))">$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="Label_SkinSetting_MovieGenreFanart">
+		<value condition="!String.IsEmpty(Skin.String(MovieGenreFanart.name))">$INFO[Skin.String(MovieGenreFanart.name)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="Label_SkinSetting_MovieGenreIcons">
+		<value condition="!String.IsEmpty(Skin.String(moviegenreicons.name))">$INFO[Skin.String(moviegenreicons.name)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="Label_SkinSetting_WeatherFanart">
+		<value condition="!String.IsEmpty(Skin.String(WeatherFanart.name))">$INFO[Skin.String(WeatherFanart.name)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="Label_SkinSetting_WeatherIcons">
+		<value condition="!String.IsEmpty(Skin.String(WeatherIcons.name))">$INFO[Skin.String(WeatherIcons.name)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
 	<variable name="BackgroundInfoVar">
-        <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))">$VAR[MediaFanartVar]</value>
-        <value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))">$INFO[Window(home).Property(fanart)]</value>
-        <value condition="!Skin.HasSetting(SkinHelper.EnableExtraFanart)">$INFO[Window(home).Property(fanart)]</value>
-    </variable>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))">$VAR[MediaFanartVar]</value>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))">$INFO[Window(home).Property(fanart)]</value>
+		<value condition="!Skin.HasSetting(SkinHelper.EnableExtraFanart)">$INFO[Window(home).Property(fanart)]</value>
+	</variable>
 	<variable name="PlotSpoilerVar">
-        <value condition="[Skin.HasSetting(hide_plotforspoiler) + String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Playcount,1) + !String.StartsWith(Container.FolderPath,plugin://)">[COLOR white]$LOCALIZE[40030][/COLOR]</value>
-        <value>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot,[COLOR white],[/COLOR]]</value>
-    </variable>
+		<value condition="[Skin.HasSetting(hide_plotforspoiler) + String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Playcount,1) + !String.StartsWith(Container.FolderPath,plugin://)">[COLOR white]$LOCALIZE[40030][/COLOR]</value>
+		<value>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot,[COLOR white],[/COLOR]]</value>
+	</variable>
 	<variable name="ClearLogoVar">
-        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
-    </variable>
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
+	</variable>
 	<variable name="MPAALabelVar">
-        <value condition="String.Contains(ListItem.mpaa,10) + String.Contains(System.Language,French)">Interdit au moins de 10 ans</value>
-        <value condition="String.Contains(ListItem.mpaa,12) + String.Contains(System.Language,French)">Interdit au moins de 12 ans</value>
-        <value condition="String.Contains(ListItem.mpaa,16) + String.Contains(System.Language,French)">Interdit au moins de 16 ans</value>
-        <value condition="String.Contains(ListItem.mpaa,18) + String.Contains(System.Language,French)">Interdit au moins de 18 ans</value>
-        <value condition="String.Contains(ListItem.mpaa,U) + String.Contains(System.Language,French)">Tout public</value>
-        <value condition="String.Contains(ListItem.mpaa,Rated) + String.Contains(System.Language,French)">Inconnue</value>
-        <value>$INFO[ListItem.mpaa]</value>
-    </variable>
-    <variable name="MPAAIconVar">
-        <value condition="String.Contains(Window.Property(mpaa),10) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa10.png</value>
-        <value condition="String.Contains(Window.Property(mpaa),12) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa12.png</value>
-        <value condition="String.Contains(Window.Property(mpaa),16) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa16.png</value>
-        <value condition="String.Contains(Window.Property(mpaa),18) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa18.png</value>
-        <value condition="String.Contains(Window.Property(mpaa),U) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csau.png</value>
-        <value condition="String.Contains(Window.Property(mpaa),Rated) + String.Contains(System.Language,French)">icons/extendedinfo/rating/rated.png</value>
-        <value>$INFO[Window.Property(mpaa),icons/extendedinfo/rating/,.png]</value>
-    </variable>
-    <variable name="PowerMenuAspectLabel2Var">
+		<value condition="String.Contains(ListItem.mpaa,10) + String.Contains(System.Language,French)">Interdit au moins de 10 ans</value>
+		<value condition="String.Contains(ListItem.mpaa,12) + String.Contains(System.Language,French)">Interdit au moins de 12 ans</value>
+		<value condition="String.Contains(ListItem.mpaa,16) + String.Contains(System.Language,French)">Interdit au moins de 16 ans</value>
+		<value condition="String.Contains(ListItem.mpaa,18) + String.Contains(System.Language,French)">Interdit au moins de 18 ans</value>
+		<value condition="String.Contains(ListItem.mpaa,U) + String.Contains(System.Language,French)">Tout public</value>
+		<value condition="String.Contains(ListItem.mpaa,Rated) + String.Contains(System.Language,French)">Inconnue</value>
+		<value>$INFO[ListItem.mpaa]</value>
+	</variable>
+	<variable name="MPAAIconVar">
+		<value condition="String.Contains(Window.Property(mpaa),10) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa10.png</value>
+		<value condition="String.Contains(Window.Property(mpaa),12) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa12.png</value>
+		<value condition="String.Contains(Window.Property(mpaa),16) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa16.png</value>
+		<value condition="String.Contains(Window.Property(mpaa),18) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa18.png</value>
+		<value condition="String.Contains(Window.Property(mpaa),U) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csau.png</value>
+		<value condition="String.Contains(Window.Property(mpaa),Rated) + String.Contains(System.Language,French)">icons/extendedinfo/rating/rated.png</value>
+		<value>$INFO[Window.Property(mpaa),icons/extendedinfo/rating/,.png]</value>
+	</variable>
+	<variable name="PowerMenuAspectLabel2Var">
 		<value condition="Skin.HasSetting(powermenu_panel)">$LOCALIZE[31099]</value>
 		<value condition="Skin.HasSetting(powermenu_list)">$LOCALIZE[535]</value>
 		<value>$LOCALIZE[31099]</value>
 	</variable>
-    <variable name="OpacitySettingLabel2Var">
+	<variable name="OpacitySettingLabel2Var">
 		<value condition="Skin.HasSetting(opacity_0)">0%</value>
 		<value condition="Skin.HasSetting(opacity_5)">5%</value>
 		<value condition="Skin.HasSetting(opacity_10)">10%</value>
@@ -503,77 +1225,77 @@
 		<value>$LOCALIZE[15109]</value>
 	</variable>
 	<variable name="Label_SkinSetting_SkinColor">
-        <value condition="!String.IsEmpty(Skin.String(SkinColor))">$INFO[Skin.String(SkinColor)]</value>
-        <value>$LOCALIZE[15109]</value>
-    </variable>
-    <variable name="Label_SkinSetting_BackgroundColor">
-        <value condition="!String.IsEmpty(Skin.String(BackgroundColor))">$INFO[Skin.String(BackgroundColor)]</value>
-        <value>$LOCALIZE[15109]</value>
-    </variable>
-    <variable name="Label_SkinSetting_PatternColor">
-        <value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
-        <value>$LOCALIZE[15109]</value>
-    </variable>
-    <variable name="SkinColorVar">
-        <value condition="!String.IsEmpty(Skin.String(SkinColor))">$INFO[Skin.String(SkinColor)]</value>
-        <value>button_focus</value>
-    </variable>
-    <variable name="BackgroundColorVar">
-        <value condition="!String.IsEmpty(Skin.String(BackgroundColor))">$INFO[Skin.String(BackgroundColor)]</value>
-        <value>primary_background</value>
-    </variable>
-    <variable name="PatternColorVar">
-        <value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
-        <value>00000000</value>
-    </variable>
-    <variable name="Background_Opacity">
-        <value condition="Skin.HasSetting(opacity_0)">00FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_5)">0DFFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_10)">1AFFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_15)">26FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_20)">33FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_25)">40FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_30)">4DFFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_35)">59FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_40)">66FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_45)">73FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_50)">80FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_55)">8CFFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_60)">99FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_65)">A6FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_70)">B3FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_75)">BFFFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_80)">CCFFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_85)">D9FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_90)">E6FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_95)">F2FFFFFF</value>
-        <value condition="Skin.HasSetting(opacity_100)">FFFFFFFF</value>
-        <value>37FFFFFF</value>
-    </variable>
-    <variable name="Bars_Opacity">
-        <value condition="Skin.HasSetting(opacitybars_0)">00FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_5)">0DFFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_10)">1AFFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_15)">26FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_20)">33FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_25)">40FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_30)">4DFFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_35)">59FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_40)">66FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_45)">73FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_50)">80FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_55)">8CFFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_60)">99FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_65)">A6FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_70)">B3FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_75)">BFFFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_80)">CCFFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_85)">D9FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_90)">E6FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_95)">F2FFFFFF</value>
-        <value condition="Skin.HasSetting(opacitybars_100)">FFFFFFFF</value>
-        <value>FFFFFFFF</value>
-    </variable>
+		<value condition="!String.IsEmpty(Skin.String(SkinColor))">$INFO[Skin.String(SkinColor)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="Label_SkinSetting_BackgroundColor">
+		<value condition="!String.IsEmpty(Skin.String(BackgroundColor))">$INFO[Skin.String(BackgroundColor)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="Label_SkinSetting_PatternColor">
+		<value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="SkinColorVar">
+		<value condition="!String.IsEmpty(Skin.String(SkinColor))">$INFO[Skin.String(SkinColor)]</value>
+		<value>button_focus</value>
+	</variable>
+	<variable name="BackgroundColorVar">
+		<value condition="!String.IsEmpty(Skin.String(BackgroundColor))">$INFO[Skin.String(BackgroundColor)]</value>
+		<value>primary_background</value>
+	</variable>
+	<variable name="PatternColorVar">
+		<value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
+		<value>00000000</value>
+	</variable>
+	<variable name="Background_Opacity">
+		<value condition="Skin.HasSetting(opacity_0)">00FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_5)">0DFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_10)">1AFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_15)">26FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_20)">33FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_25)">40FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_30)">4DFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_35)">59FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_40)">66FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_45)">73FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_50)">80FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_55)">8CFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_60)">99FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_65)">A6FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_70)">B3FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_75)">BFFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_80)">CCFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_85)">D9FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_90)">E6FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_95)">F2FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_100)">FFFFFFFF</value>
+		<value>37FFFFFF</value>
+	</variable>
+	<variable name="Bars_Opacity">
+		<value condition="Skin.HasSetting(opacitybars_0)">00FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_5)">0DFFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_10)">1AFFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_15)">26FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_20)">33FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_25)">40FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_30)">4DFFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_35)">59FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_40)">66FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_45)">73FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_50)">80FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_55)">8CFFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_60)">99FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_65)">A6FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_70)">B3FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_75)">BFFFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_80)">CCFFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_85)">D9FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_90)">E6FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_95)">F2FFFFFF</value>
+		<value condition="Skin.HasSetting(opacitybars_100)">FFFFFFFF</value>
+		<value>FFFFFFFF</value>
+	</variable>
 	<variable name="HideWatchedMoviesFromRecentlyVar">
 		<value condition="Skin.HasSetting(HideWatchedMoviesFromRecently)">special://skin/playlists/recent_unwatched_movies.xsp</value>
 		<value>special://skin/playlists/recent_movies.xsp</value>
@@ -644,13 +1366,13 @@
 		<value>$INFO[ListItem.Thumb]</value>
 	</variable>
 	<variable name="MusicInfoThumbVar">
- 		<value condition="!String.IsEmpty(Listitem.Art(thumb))">$INFO[Listitem.Art(thumb)]</value>
- 		<value condition="String.IsEqual(listitem.dbtype,artist)">DefaultArtist.png</value>
- 		<value condition="String.IsEqual(listitem.dbtype,album)">DefaultAlbumCover.png</value>
- 		<value>DefaultAudio.png</value>
- 	</variable>
+		<value condition="!String.IsEmpty(Listitem.Art(thumb))">$INFO[Listitem.Art(thumb)]</value>
+		<value condition="String.IsEqual(listitem.dbtype,artist)">DefaultArtist.png</value>
+		<value condition="String.IsEqual(listitem.dbtype,album)">DefaultAlbumCover.png</value>
+		<value>DefaultAudio.png</value>
+	</variable>
 	<variable name="InfoWallThumbVar">
-	    <value condition="!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)">$INFO[ListItem.Art(animatedposter)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)">$INFO[ListItem.Art(animatedposter)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(poster))">$INFO[Listitem.Art(poster)]</value>
 		<value condition="Skin.HasSetting(hide_thumbforspoiler) + Integer.IsLess(ListItem.Playcount,1) + String.IsEqual(listitem.dbtype,episode)">$VAR[InfoWidgetThumbVar]</value>
 		<value>$INFO[ListItem.Icon]</value>
@@ -668,20 +1390,20 @@
 		<value>$INFO[Listitem.Art(poster)]</value>
 	</variable>
 	<variable name="IconWallThumbVar">
-	    <value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.arctic.zephyr/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.arctic.zephyr/,.png]</value>
-	    <value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.coloured/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
-	    <value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.filmstrip/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip/,.jpg]</value>
-	    <value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.grey/,.jpg]</value>
-	    <value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.poster/,.jpg]</value>
+		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.arctic.zephyr/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.arctic.zephyr/,.png]</value>
+		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.coloured/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
+		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.filmstrip/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip/,.jpg]</value>
+		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.grey/,.jpg]</value>
+		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.poster/,.jpg]</value>
 		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.transparent/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]</value>
 		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.white/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</value>
 		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.xzener-flat/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-flat/,.png]</value>
 		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.xzener-reflection/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-reflection/,.png]</value>
 		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.estuarymod/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.estuarymod/,.png]</value>
 		<value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.estuarymod/)">$INFO[ListItem.Label,resource://resource.images.studios.estuarymod/,.png]</value>
-        <value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.white/)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
-        <value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.coloured/)">$INFO[ListItem.Label,resource://resource.images.studios.coloured/,.png]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)">$INFO[ListItem.Art(animatedposter)]</value>
+		<value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.white/)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
+		<value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.coloured/)">$INFO[ListItem.Label,resource://resource.images.studios.coloured/,.png]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)">$INFO[ListItem.Art(animatedposter)]</value>
 		<value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
@@ -694,12 +1416,12 @@
 		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 	<variable name="ShiftLeftTextBoxVar">
-        <value condition="Window.IsActive(pictures)">$INFO[ListItem.Property(description),,[CR]]$INFO[ListItem.PictureDatetime,$LOCALIZE[552] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureResolution,$LOCALIZE[169] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureCamMake,$LOCALIZE[31041] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureCamModel,$LOCALIZE[21823] : [COLOR white],[/COLOR][CR]]</value>
-        <value condition="String.IsEqual(listitem.dbtype,album)">$INFO[ListItem.Year,$LOCALIZE[345] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Property(album_label),$LOCALIZE[21899] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Property(album_style),$LOCALIZE[736] : [COLOR white],[/COLOR][CR]]</value>
-        <value condition="String.IsEqual(Listitem.DBType,season) | String.IsEqual(Listitem.DBType,tvshow) + !String.IsEmpty(ListItem.Status)">$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Property(NumEpisodes),$LOCALIZE[20360] : [COLOR white],[/COLOR]]$INFO[ListItem.Property(UnWatchedEpisodes), [COLOR white]($LOCALIZE[31064] : ,)[/COLOR]]$INFO[Window(Home).Property(NextAired.LatestDate),[CR]$LOCALIZE[40026] : [COLOR white], - [/COLOR]]$INFO[Window(Home).Property(NextAired.LatestNumber),[COLOR white], [/COLOR]]$INFO[Window(Home).Property(NextAired.LatestTitle),[COLOR white],[/COLOR]]$INFO[Window(Home).Property(NextAired.NextDate),[CR]$LOCALIZE[40025] : [COLOR white], - [/COLOR]]$INFO[Window(Home).Property(NextAired.NextNumber),[COLOR white], [/COLOR]]$INFO[Window(Home).Property(NextAired.NextTitle),[COLOR white],[/COLOR]]$INFO[ListItem.Status,[CR]$LOCALIZE[126] : [COLOR white], [/COLOR]]</value>
-        <value condition="String.IsEqual(Listitem.DBType,season) | String.IsEqual(Listitem.DBType,tvshow) + String.IsEmpty(ListItem.Status)">$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Property(NumEpisodes),$LOCALIZE[20360] : [COLOR white],[/COLOR]]$INFO[ListItem.Property(UnWatchedEpisodes), [COLOR white]($LOCALIZE[31064] : ,)[/COLOR]]$INFO[Window(Home).Property(NextAired.LatestDate),[CR]$LOCALIZE[40026] : [COLOR white], - [/COLOR]]$INFO[Window(Home).Property(NextAired.LatestNumber),[COLOR white], [/COLOR]]$INFO[Window(Home).Property(NextAired.LatestTitle),[COLOR white],[/COLOR]]$INFO[Window(Home).Property(NextAired.NextDate),[CR]$LOCALIZE[40025] : [COLOR white], - [/COLOR]]$INFO[Window(Home).Property(NextAired.NextNumber),[COLOR white], [/COLOR]]$INFO[Window(Home).Property(NextAired.NextTitle),[COLOR white],[/COLOR]]$INFO[Window(Home).Property(NextAired.Status),[CR]$LOCALIZE[126] : [COLOR white], [/COLOR]]</value>
-        <value condition="!String.IsEqual(listitem.dbtype,artist)">$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Director,$LOCALIZE[20339] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Writer,$LOCALIZE[20417] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Premiered,$LOCALIZE[20416] : [COLOR white],[/COLOR]]</value>
-    </variable>
+		<value condition="Window.IsActive(pictures)">$INFO[ListItem.Property(description),,[CR]]$INFO[ListItem.PictureDatetime,$LOCALIZE[552] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureResolution,$LOCALIZE[169] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureCamMake,$LOCALIZE[31041] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureCamModel,$LOCALIZE[21823] : [COLOR white],[/COLOR][CR]]</value>
+		<value condition="String.IsEqual(listitem.dbtype,album)">$INFO[ListItem.Year,$LOCALIZE[345] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Property(album_label),$LOCALIZE[21899] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Property(album_style),$LOCALIZE[736] : [COLOR white],[/COLOR][CR]]</value>
+		<value condition="String.IsEqual(Listitem.DBType,season) | String.IsEqual(Listitem.DBType,tvshow) + !String.IsEmpty(ListItem.Status)">$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Property(NumEpisodes),$LOCALIZE[20360] : [COLOR white],[/COLOR]]$INFO[ListItem.Property(UnWatchedEpisodes), [COLOR white]($LOCALIZE[31064] : ,)[/COLOR]]$INFO[Window(Home).Property(NextAired.LatestDate),[CR]$LOCALIZE[40026] : [COLOR white], - [/COLOR]]$INFO[Window(Home).Property(NextAired.LatestNumber),[COLOR white], [/COLOR]]$INFO[Window(Home).Property(NextAired.LatestTitle),[COLOR white],[/COLOR]]$INFO[Window(Home).Property(NextAired.NextDate),[CR]$LOCALIZE[40025] : [COLOR white], - [/COLOR]]$INFO[Window(Home).Property(NextAired.NextNumber),[COLOR white], [/COLOR]]$INFO[Window(Home).Property(NextAired.NextTitle),[COLOR white],[/COLOR]]$INFO[ListItem.Status,[CR]$LOCALIZE[126] : [COLOR white], [/COLOR]]</value>
+		<value condition="String.IsEqual(Listitem.DBType,season) | String.IsEqual(Listitem.DBType,tvshow) + String.IsEmpty(ListItem.Status)">$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Property(NumEpisodes),$LOCALIZE[20360] : [COLOR white],[/COLOR]]$INFO[ListItem.Property(UnWatchedEpisodes), [COLOR white]($LOCALIZE[31064] : ,)[/COLOR]]$INFO[Window(Home).Property(NextAired.LatestDate),[CR]$LOCALIZE[40026] : [COLOR white], - [/COLOR]]$INFO[Window(Home).Property(NextAired.LatestNumber),[COLOR white], [/COLOR]]$INFO[Window(Home).Property(NextAired.LatestTitle),[COLOR white],[/COLOR]]$INFO[Window(Home).Property(NextAired.NextDate),[CR]$LOCALIZE[40025] : [COLOR white], - [/COLOR]]$INFO[Window(Home).Property(NextAired.NextNumber),[COLOR white], [/COLOR]]$INFO[Window(Home).Property(NextAired.NextTitle),[COLOR white],[/COLOR]]$INFO[Window(Home).Property(NextAired.Status),[CR]$LOCALIZE[126] : [COLOR white], [/COLOR]]</value>
+		<value condition="!String.IsEqual(listitem.dbtype,artist)">$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Director,$LOCALIZE[20339] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Writer,$LOCALIZE[20417] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Premiered,$LOCALIZE[20416] : [COLOR white],[/COLOR]]</value>
+	</variable>
 	<variable name="ShiftRightTextBoxVar">
 		<value condition="Window.IsActive(pictures)">$INFO[ListItem.Size,$LOCALIZE[289] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureAperture,$LOCALIZE[21826] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureFocalLen,$LOCALIZE[21827] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureExpTime,$LOCALIZE[21830] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Date,$LOCALIZE[552] : [COLOR white],[/COLOR][CR]]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)) + !String.IsEqual(Listitem.DBType,movie) + !String.IsEqual(Listitem.DBType,tvshow)">[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901][CR]][/B][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</value>
@@ -741,11 +1463,11 @@
 		<value>$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]</value>
 	</variable>
 	<variable name="WidgetGenreIconVar">
-	    <value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.arctic.zephyr/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.arctic.zephyr/,.png]</value>
-	    <value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.coloured/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
-	    <value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.filmstrip/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip/,.jpg]</value>
-	    <value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.grey/,.jpg]</value>
-	    <value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.poster/,.jpg]</value>
+		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.arctic.zephyr/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.arctic.zephyr/,.png]</value>
+		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.coloured/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
+		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.filmstrip/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip/,.jpg]</value>
+		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.grey/,.jpg]</value>
+		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.poster/,.jpg]</value>
 		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.transparent/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]</value>
 		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.white/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</value>
 		<value condition="String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.xzener-flat/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-flat/,.png]</value>
@@ -755,8 +1477,8 @@
 	</variable>
 	<variable name="WidgetStudioIconVar">
 		<value condition="String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.estuarymod/)">$INFO[ListItem.Label,resource://resource.images.studios.estuarymod/,.png]</value>
-        <value condition="String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.white/)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
-        <value condition="String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.coloured/)">$INFO[ListItem.Label,resource://resource.images.studios.coloured/,.png]</value>
+		<value condition="String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.white/)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
+		<value condition="String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.coloured/)">$INFO[ListItem.Label,resource://resource.images.studios.coloured/,.png]</value>
 		<value>DefaultStudios.png</value>
 	</variable>
 	<variable name="AddonsLabel2Var">
@@ -781,54 +1503,54 @@
 	<variable name="ResolutionFlagVar">
 		<value condition="ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
 		<value condition="String.Contains(ListItem.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
-        <value condition="String.Contains(ListItem.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
+		<value condition="String.Contains(ListItem.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
 		<value condition="Integer.IsGreater(ListItem.VideoResolution,1080)">flags/videoresolution/4K.png</value>
 		<value>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</value>
 	</variable>
 	<variable name="VideoPlayerResolutionFlagVar">
-        <value condition="VideoPlayer.IsStereoscopic">flags/videoresolution/3D.png</value>
-        <value condition="String.Contains(VideoPlayer.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
-        <value condition="String.Contains(VideoPlayer.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
-        <value condition="Integer.IsGreater(VideoPlayer.VideoResolution,1080)">flags/videoresolution/4K.png</value>
-        <value>$INFO[VideoPlayer.VideoResolution,flags/videoresolution/,.png]</value>
-    </variable>
+		<value condition="VideoPlayer.IsStereoscopic">flags/videoresolution/3D.png</value>
+		<value condition="String.Contains(VideoPlayer.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
+		<value condition="String.Contains(VideoPlayer.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
+		<value condition="Integer.IsGreater(VideoPlayer.VideoResolution,1080)">flags/videoresolution/4K.png</value>
+		<value>$INFO[VideoPlayer.VideoResolution,flags/videoresolution/,.png]</value>
+	</variable>
 	<variable name="AudioCodecFlagVar">
-        <value condition="String.Contains(ListItem.Filenameandpath,atmos)">flags/audiocodec/atmos.png</value>
-        <value condition="String.Contains(ListItem.Filenameandpath,Atmos)">flags/audiocodec/atmos.png</value>
-        <value condition="String.Contains(ListItem.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
-        <value condition="String.Contains(ListItem.Filenameandpath,dts-x)">flags/audiocodec/dts-x.png</value>
-        <value condition="String.Contains(ListItem.Filenameandpath,DTS-X)">flags/audiocodec/dts-x.png</value>
-        <value condition="String.Contains(ListItem.Filenameandpath,dtsx)">flags/audiocodec/dts-x.png</value>
-        <value condition="String.Contains(ListItem.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
-        <value>$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</value>
-    </variable>
-    <variable name="VideoPlayerAudioCodecFlagVar">
-        <value condition="String.Contains(Player.Filenameandpath,atmos)">flags/audiocodec/atmos.png</value>
-        <value condition="String.Contains(Player.Filenameandpath,Atmos)">flags/audiocodec/atmos.png</value>
-        <value condition="String.Contains(Player.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
-        <value condition="String.Contains(Player.Filenameandpath,dts-x)">flags/audiocodec/dts-x.png</value>
-        <value condition="String.Contains(Player.Filenameandpath,DTS-X)">flags/audiocodec/dts-x.png</value>
-        <value condition="String.Contains(Player.Filenameandpath,dtsx)">flags/audiocodec/dts-x.png</value>
-        <value condition="String.Contains(Player.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
-        <value>$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]</value>
-    </variable>
+		<value condition="String.Contains(ListItem.Filenameandpath,atmos)">flags/audiocodec/atmos.png</value>
+		<value condition="String.Contains(ListItem.Filenameandpath,Atmos)">flags/audiocodec/atmos.png</value>
+		<value condition="String.Contains(ListItem.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
+		<value condition="String.Contains(ListItem.Filenameandpath,dts-x)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(ListItem.Filenameandpath,DTS-X)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(ListItem.Filenameandpath,dtsx)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(ListItem.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
+		<value>$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</value>
+	</variable>
+	<variable name="VideoPlayerAudioCodecFlagVar">
+		<value condition="String.Contains(Player.Filenameandpath,atmos)">flags/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Player.Filenameandpath,Atmos)">flags/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Player.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Player.Filenameandpath,dts-x)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(Player.Filenameandpath,DTS-X)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(Player.Filenameandpath,dtsx)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(Player.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
+		<value>$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]</value>
+	</variable>
 	<variable name="ContainerResolutionFlagVar">
 		<value condition="Container.ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
 		<value condition="String.Contains(Container.ListItem.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
-        <value condition="String.Contains(ContainerListItem.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
+		<value condition="String.Contains(ContainerListItem.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
 		<value condition="Integer.IsGreater(Container.ListItem.VideoResolution,1080)">flags/videoresolution/4K.png</value>
 		<value>$INFO[Container.ListItem.VideoResolution,flags/videoresolution/,.png]</value>
 	</variable>
 	<variable name="ContainerAudioCodecFlagVar">
-        <value condition="String.Contains(Container.ListItem.Filenameandpath,atmos)">flags/audiocodec/atmos.png</value>
-        <value condition="String.Contains(Container.ListItem.Filenameandpath,Atmos)">flags/audiocodec/atmos.png</value>
-        <value condition="String.Contains(Container.ListItem.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
-        <value condition="String.Contains(Container.ListItem.Filenameandpath,dts-x)">flags/audiocodec/dts-x.png</value>
-        <value condition="String.Contains(Container.ListItem.Filenameandpath,DTS-X)">flags/audiocodec/dts-x.png</value>
-        <value condition="String.Contains(Container.ListItem.Filenameandpath,dtsx)">flags/audiocodec/dts-x.png</value>
-        <value condition="String.Contains(Container.ListItem.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
-        <value>$INFO[Container.ListItem.AudioCodec,flags/audiocodec/,.png]</value>
-    </variable>
+		<value condition="String.Contains(Container.ListItem.Filenameandpath,atmos)">flags/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Container.ListItem.Filenameandpath,Atmos)">flags/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Container.ListItem.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Container.ListItem.Filenameandpath,dts-x)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(Container.ListItem.Filenameandpath,DTS-X)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(Container.ListItem.Filenameandpath,dtsx)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(Container.ListItem.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
+		<value>$INFO[Container.ListItem.AudioCodec,flags/audiocodec/,.png]</value>
+	</variable>
 	<variable name="BannerVar">
 		<value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
 		<value>$INFO[ListItem.Art(tvshow.banner)]</value>
@@ -861,13 +1583,13 @@
 		<value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
 	</variable>
 	<variable name="SeekLabel">
-	    <value condition="Player.IsTempo">$LOCALIZE[31142] : [COLOR white]$INFO[Player.PlaySpeed][/COLOR]</value>
+		<value condition="Player.IsTempo">$LOCALIZE[31142] : [COLOR white]$INFO[Player.PlaySpeed][/COLOR]</value>
 		<value condition="!String.IsEmpty(Player.SeekStepSize)">$LOCALIZE[773][COLOR white] $INFO[Player.SeekStepSize][/COLOR]</value>
 		<value condition="Player.Caching">$LOCALIZE[15107]</value>
 		<value condition="Player.Paused">$LOCALIZE[112]</value>
 		<value condition="Player.Forwarding">$LOCALIZE[31039] [COLOR white] $VAR[VideoPlayerForwardRewindVar][/COLOR]</value>
 		<value condition="Player.Rewinding">$LOCALIZE[31038] [COLOR white] $VAR[VideoPlayerForwardRewindVar][/COLOR]</value>
-		<value condition="[Player.Playing + !Player.Caching] + !Player.Seeking">$LOCALIZE[14086]</value>   
+		<value condition="[Player.Playing + !Player.Caching] + !Player.Seeking">$LOCALIZE[14086]</value>
 	</variable>
 	<variable name="SeekTimeLabelVar">
 		<value condition="!String.IsEmpty(Player.SeekNumeric)">[B]$INFO[Player.SeekNumeric(hh:mm:ss)][/B]</value>
@@ -913,13 +1635,13 @@
 		<value condition="Container(9000).HasFocus(9)">$LOCALIZE[40113]</value>
 		<value condition="Container(9000).HasFocus(10)">$LOCALIZE[40114]</value>
 		<value condition="Control.HasFocus(301)">$LOCALIZE[40130].</value>
-        <value condition="Control.HasFocus(302)">$LOCALIZE[40131].</value>
-        <value condition="Control.HasFocus(303)">$LOCALIZE[40128].</value>
-        <value condition="Control.HasFocus(304)">$LOCALIZE[40129].</value>
-        <value condition="Control.HasFocus(313) + String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)">$LOCALIZE[40132].</value>
-        <value condition="Control.HasFocus(313) + String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[40133].</value>
-        <value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus] + !String.IsEqual(Window.Property(groupname),powermenu)">$LOCALIZE[31130]</value>
-        <value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus] + String.IsEqual(Window.Property(groupname),powermenu)">$LOCALIZE[40160]</value>
+		<value condition="Control.HasFocus(302)">$LOCALIZE[40131].</value>
+		<value condition="Control.HasFocus(303)">$LOCALIZE[40128].</value>
+		<value condition="Control.HasFocus(304)">$LOCALIZE[40129].</value>
+		<value condition="Control.HasFocus(313) + String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),False)">$LOCALIZE[40132].</value>
+		<value condition="Control.HasFocus(313) + String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[40133].</value>
+		<value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus] + !String.IsEqual(Window.Property(groupname),powermenu)">$LOCALIZE[31130]</value>
+		<value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus] + String.IsEqual(Window.Property(groupname),powermenu)">$LOCALIZE[40160]</value>
 	</variable>
 	<variable name="DSPManagerHelpTextVar">
 		<value condition="Control.HasFocus(20)">$INFO[Container(20).ListItem.Property(Description)]</value>
@@ -1051,9 +1773,9 @@
 		<value>$LOCALIZE[19199] - $LOCALIZE[19023]</value>
 	</variable>
 	<variable name="PVRGroupMgrHeader">
- 		<value condition="!String.IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19048] - $LOCALIZE[19174]</value>
- 		<value>$LOCALIZE[19048] - $LOCALIZE[19173]</value>
- 	</variable>
+		<value condition="!String.IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19048] - $LOCALIZE[19174]</value>
+		<value>$LOCALIZE[19048] - $LOCALIZE[19173]</value>
+	</variable>
 	<variable name="PVRAreaVar">
 		<value condition="Control.HasFocus(100)">$LOCALIZE[19019]</value>
 		<value condition="Control.HasFocus(101)">$LOCALIZE[19069]</value>
@@ -1106,7 +1828,7 @@
 		<value>$INFO[ListItem.EpisodeName]</value>
 	</variable>
 	<variable name="BackgroundOverlayTypeVar">
-	    <value condition="String.IsEmpty(Skin.String(background_overlay))">$LOCALIZE[231]</value>
+		<value condition="String.IsEmpty(Skin.String(background_overlay))">$LOCALIZE[231]</value>
 		<value condition="String.IsEqual(Skin.String(background_overlay),0)">$LOCALIZE[231]</value>
 		<value>$INFO[Skin.String(background_overlay),$LOCALIZE[467] ]</value>
 	</variable>
