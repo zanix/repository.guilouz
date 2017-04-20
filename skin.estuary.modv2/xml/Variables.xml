@@ -994,48 +994,64 @@
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1))">$INFO[Container(211).ListItem.Property(widgetName.personal1)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1.2))">$INFO[Container(211).ListItem.Property(widgetName.personal1.2)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1.3))">$INFO[Container(211).ListItem.Property(widgetName.personal1.3)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1.4))">$INFO[Container(211).ListItem.Property(widgetName.personal1.4)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal1.5))">$INFO[Container(211).ListItem.Property(widgetName.personal1.5)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="PersonalWidget2Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2))">$INFO[Container(211).ListItem.Property(widgetName.personal2)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2.2))">$INFO[Container(211).ListItem.Property(widgetName.personal2.2)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2.3))">$INFO[Container(211).ListItem.Property(widgetName.personal2.3)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2.4))">$INFO[Container(211).ListItem.Property(widgetName.personal2.4)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal2.5))">$INFO[Container(211).ListItem.Property(widgetName.personal2.5)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="PersonalWidget3Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3))">$INFO[Container(211).ListItem.Property(widgetName.personal3)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3.2))">$INFO[Container(211).ListItem.Property(widgetName.personal3.2)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3.3))">$INFO[Container(211).ListItem.Property(widgetName.personal3.3)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3.4))">$INFO[Container(211).ListItem.Property(widgetName.personal3.4)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal3.5))">$INFO[Container(211).ListItem.Property(widgetName.personal3.5)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="PersonalWidget4Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4))">$INFO[Container(211).ListItem.Property(widgetName.personal4)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4.2))">$INFO[Container(211).ListItem.Property(widgetName.personal4.2)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4.3))">$INFO[Container(211).ListItem.Property(widgetName.personal4.3)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4.4))">$INFO[Container(211).ListItem.Property(widgetName.personal4.4)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal4.5))">$INFO[Container(211).ListItem.Property(widgetName.personal4.5)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="PersonalWidget5Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5))">$INFO[Container(211).ListItem.Property(widgetName.personal5)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5.2))">$INFO[Container(211).ListItem.Property(widgetName.personal5.2)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5.3))">$INFO[Container(211).ListItem.Property(widgetName.personal5.3)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5.4))">$INFO[Container(211).ListItem.Property(widgetName.personal5.5)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal5.5))">$INFO[Container(211).ListItem.Property(widgetName.personal5.5)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="PersonalWidget6Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6))">$INFO[Container(211).ListItem.Property(widgetName.personal6)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6.2))">$INFO[Container(211).ListItem.Property(widgetName.personal6.2)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6.3))">$INFO[Container(211).ListItem.Property(widgetName.personal6.3)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6.4))">$INFO[Container(211).ListItem.Property(widgetName.personal6.4)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal6.5))">$INFO[Container(211).ListItem.Property(widgetName.personal6.5)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="PersonalWidget7Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7))">$INFO[Container(211).ListItem.Property(widgetName.personal7)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7.2))">$INFO[Container(211).ListItem.Property(widgetName.personal7.2)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7.3))">$INFO[Container(211).ListItem.Property(widgetName.personal7.3)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7.4))">$INFO[Container(211).ListItem.Property(widgetName.personal7.4)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal7.5))">$INFO[Container(211).ListItem.Property(widgetName.personal7.5)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="PersonalWidget8Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8))">$INFO[Container(211).ListItem.Property(widgetName.personal8)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8.2))">$INFO[Container(211).ListItem.Property(widgetName.personal8.2)]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8.3))">$INFO[Container(211).ListItem.Property(widgetName.personal8.3)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8.4))">$INFO[Container(211).ListItem.Property(widgetName.personal8.4)]</value>
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.personal8.5))">$INFO[Container(211).ListItem.Property(widgetName.personal8.5)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="LabelCategoriesSmallVar">

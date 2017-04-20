@@ -1552,3 +1552,13 @@ msgstr "Widget personnalisé 2"
 msgctxt "#40168"
 msgid "Personalized widget 3"
 msgstr "Widget personnalisé 3"
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40169"
+msgid "Personalized widget 4"
+msgstr "Widget personnalisé 4"
+
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40170"
+msgid "Personalized widget 5"
+msgstr "Widget personnalisé 5"

@@ -1,7 +1,7 @@
 [B]2.2.3[/B]
 • Add possibility to use alphabet for scrolling on library (experimental)
 • Add more personalized widgets to bypass problem with disappearance and animations of widgets (use one personalized widget per home menu item)
-• Changes on duration flag icon
+• Changes on duration flag icon with hours and minutes
 • Changes on PVR Guide with Kodi 18 last build
 • Minor fixes
 
