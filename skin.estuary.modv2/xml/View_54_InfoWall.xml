@@ -232,6 +232,7 @@
 				<aligny>center</aligny>
 				<label>$PARAM[label]</label>
 				<visible>Window.IsActive(videos)</visible>
+				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
 			</control>
 			<control type="label">
 				<left>28</left>

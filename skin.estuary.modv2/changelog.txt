@@ -1,3 +1,7 @@
+[B]2.2.4[/B]
+• Add possibility to install addons zip files directly from home menu
+• Minor fixes
+
 [B]2.2.3[/B]
 • Add possibility to use alphabet for scrolling on library (experimental)
 • Add more personalized widgets to bypass problem with disappearance and animations of widgets (use one personalized widget per home menu item)
