@@ -228,7 +228,7 @@
                     <label>  ∟$LOCALIZE[31132]</label>
                     <include>DefaultSettingButton</include>
                     <selected>!String.IsEmpty(Container(211).ListItem.Property(HideSubMenu))</selected>
-                    <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)</visible>
+                    <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)</visible>
                 </control>
 				<control type="button" id="312">
 					<include>DefaultSettingButton</include>
@@ -302,16 +302,15 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal1.2)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal1.3)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)">SetProperty(widgetID, personal1.4)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)">SetProperty(widgetID, personal1.5)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)</visible>
 				</control>
 				<control type="button" id="14751">
 					<label>  ∟$LOCALIZE[40137] 1</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence1Label2Var]</label2>
-					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1.4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1.5))]</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal1.4))]</visible>
 				</control>
 				<control type="button" id="1476">
 					<include>DefaultSettingButton</include>
@@ -322,16 +321,15 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal2.2)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal2.3)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)">SetProperty(widgetID, personal2.4)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)">SetProperty(widgetID, personal2.5)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)</visible>
 				</control>
 				<control type="button" id="14761">
 					<label>  ∟$LOCALIZE[40137] 2</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence2Label2Var]</label2>
-					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2.4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2.5))]</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal2.4))]</visible>
 				</control>
 				<control type="button" id="1477">
 					<include>DefaultSettingButton</include>
@@ -342,16 +340,15 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal3.2)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal3.3)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)">SetProperty(widgetID, personal3.4)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)">SetProperty(widgetID, personal3.5)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)</visible>
 				</control>
 				<control type="button" id="14771">
 					<label>  ∟$LOCALIZE[40137] 3</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence3Label2Var]</label2>
-					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3.4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3.5))]</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal3.4))]</visible>
 				</control>
 				<control type="button" id="1478">
 					<include>DefaultSettingButton</include>
@@ -362,16 +359,15 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal4.2)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal4.3)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)">SetProperty(widgetID, personal4.4)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)">SetProperty(widgetID, personal4.5)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)</visible>
 				</control>
 				<control type="button" id="14781">
 					<label>  ∟$LOCALIZE[40137] 4</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence4Label2Var]</label2>
-					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4.4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4.5))]</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal4.4))]</visible>
 				</control>
 				<control type="button" id="1479">
 					<include>DefaultSettingButton</include>
@@ -382,16 +378,15 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal5.2)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal5.3)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)">SetProperty(widgetID, personal5.4)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)">SetProperty(widgetID, personal5.5)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)</visible>
 				</control>
 				<control type="button" id="14791">
 					<label>  ∟$LOCALIZE[40137] 5</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence5Label2Var]</label2>
-					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5.4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5.5))]</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal5.4))]</visible>
 				</control>
 				<control type="button" id="1480">
 					<include>DefaultSettingButton</include>
@@ -402,16 +397,15 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal6.2)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal6.3)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)">SetProperty(widgetID, personal6.4)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)">SetProperty(widgetID, personal6.5)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)</visible>
 				</control>
 				<control type="button" id="14801">
 					<label>  ∟$LOCALIZE[40137] 6</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence6Label2Var]</label2>
-					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6.4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6.5))]</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal6.4))]</visible>
 				</control>
 				<control type="button" id="1481">
 					<include>DefaultSettingButton</include>
@@ -422,16 +416,15 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal7.2)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal7.3)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)">SetProperty(widgetID, personal7.4)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)">SetProperty(widgetID, personal7.5)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)</visible>
 				</control>
 				<control type="button" id="14811">
 					<label>  ∟$LOCALIZE[40137] 7</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence7Label2Var]</label2>
-					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7.4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7.5))]</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal7.4))]</visible>
 				</control>
 				<control type="button" id="1482">
 					<include>DefaultSettingButton</include>
@@ -442,16 +435,15 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2)">SetProperty(widgetID, personal8.2)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3)">SetProperty(widgetID, personal8.3)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)">SetProperty(widgetID, personal8.4)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)">SetProperty(widgetID, personal8.5)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4)</visible>
 				</control>
 				<control type="button" id="14821">
 					<label>  ∟$LOCALIZE[40137] 8</label>
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence8Label2Var]</label2>
-					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8.4))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8.5))]</visible>
+					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8.2))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8.3))] | [String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.personal8.4))]</visible>
 				</control>
 			</control>
 			<control type="image">

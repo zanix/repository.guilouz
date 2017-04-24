@@ -367,7 +367,7 @@
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="162" />
 						<param name="label" value="$LOCALIZE[563] IMDB : [COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.IMDB), (, $LOCALIZE[40027])][/COLOR]" />
-						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.IMDB))] + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes" />
+						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.IMDB))] + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata">

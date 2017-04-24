@@ -1,4 +1,5 @@
 [B]2.2.4[/B]
+• Add possibility to show CDArt on widgets and on library
 • Add possibility to install addons zip files directly from home menu
 • Minor fixes
 

@@ -1558,7 +1558,12 @@ msgctxt "#40169"
 msgid "Personalized widget 4"
 msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /xml/SkinSettings.xml
 msgctxt "#40170"
-msgid "Personalized widget 5"
+msgid "Show CDArt on movies widgets"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40171"
+msgid "Show movies CDArt"
 msgstr ""
