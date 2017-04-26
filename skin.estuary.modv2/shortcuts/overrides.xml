@@ -241,7 +241,7 @@
             <shortcut label="40167" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidget2">PersonalWidget2</shortcut>
             <shortcut label="40168" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidget3">PersonalWidget3</shortcut>
             <shortcut label="40169" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidget4">PersonalWidget4</shortcut>
-            <shortcut label="40170" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidget5">PersonalWidget5</shortcut>
+            <shortcut label="40121" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidget5">PersonalWidget5</shortcut>
         </node>    
             <shortcut label="40135" icon="DefaultFolder.png" condition="String.IsEmpty(Window(home).Property(WidgetVisibility)) + System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
         <shortcut label="32107" type="32021" icon="DefaultAddon.png" condition="String.IsEmpty(Window(home).Property(WidgetVisibility)) + !System.HasAddon(script.skin.helper.service)">::INSTALL::script.skin.helper.service</shortcut>

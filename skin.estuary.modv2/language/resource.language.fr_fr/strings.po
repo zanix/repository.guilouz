@@ -1316,7 +1316,10 @@ msgctxt "#40120"
 msgid "TV shows next aired"
 msgstr "Prochaines diffusions des séries TV"
 
-#: empty string 40121
+#: /extras/script.skinshortcuts/overrides.xml
+msgctxt "#40121"
+msgid "Personalized widget 5"
+msgstr "Widget personnalisé 5"
 
 #: /xml/Home.xml
 msgctxt "#40122"
