@@ -1,5 +1,6 @@
 [B]2.2.5[/B]
 • Add games sources widget
+• Add support for games artworks (artworks must be named identical to the file name of the game with the extension '.png' and must be in the same folder as games)
 • Fix personalized widget 5
 • Fix plots and thumbs on info dialog to avoid spoilers
 • Fix widgets property

@@ -233,7 +233,7 @@
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>300</fadetime>
 					<texture background="true" fallback="DefaultVideo.png">$VAR[IconWallThumbVar]</texture>
-					<visible>!String.IsEqual(ListItem.DbType,episode) + !String.IsEqual(ListItem.DbType,artist) + !String.IsEqual(ListItem.DbType,album) + !String.IsEqual(ListItem.DbType,song)</visible>
+					<visible>!String.IsEqual(ListItem.DbType,episode) + !String.IsEqual(ListItem.DbType,artist) + !String.IsEqual(ListItem.DbType,album) + !String.IsEqual(ListItem.DbType,song) + !Container.Content(games)</visible>
 				</control>
 				<control type="group">
 					<top>405</top>
@@ -268,6 +268,16 @@
 					<fadetime>300</fadetime>
 					<texture background="true" fallback="DefaultAudio.png">$VAR[IconWallThumbVar]</texture>
 					<visible>String.IsEqual(ListItem.DbType,artist) | String.IsEqual(ListItem.DbType,album) | String.IsEqual(ListItem.DbType,song)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<bottom>140</bottom>
+					<aspectratio aligny="center" align="center">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" fallback="DefaultAddonGame.png">$INFO[ListItem.FileNameAndPath,,.png]</texture>
+					<visible>Container.Content(games)</visible>
 				</control>
 				<control type="image">
 					<left>30</left>
@@ -448,6 +458,7 @@
 						<visible>!ListItem.IsParentFolder</visible>
 						<visible>!Integer.IsGreater(Container(42000).NumItems,0) + !Integer.IsGreater(Container(43000).NumItems,0)</visible>
 						<visible>!Container.Content() | !String.isEmpty(ListItem.Plot)</visible>
+						<visible>!Container.Content(games)</visible>
 					</control>
 					<control type="group">
 						<left>20</left>
