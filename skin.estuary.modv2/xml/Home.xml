@@ -6,7 +6,7 @@
 	<onload>Skin.SetBool(SkinHelper.EnableExtendedArt)</onload>
 	<onload>Skin.SetBool(SkinHelper.EnableMusicArt)</onload>
 	<onload>Skin.SetBool(SkinHelper.EnableAddonsLookups)</onload>
-	<onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
+	<onunload>ClearProperty(SkinHelper.WidgetContainer,home)</onunload>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>

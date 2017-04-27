@@ -104,7 +104,7 @@
 				<focusedlayout width="300" height="486">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -685,7 +685,7 @@
 				<focusedlayout width="310" height="500">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -755,7 +755,7 @@
 				<focusedlayout width="310" height="550">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -825,7 +825,7 @@
 				<focusedlayout width="310" height="500">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -895,7 +895,7 @@
 				<focusedlayout width="310" height="550">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -965,7 +965,7 @@
 				<focusedlayout width="310" height="500">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -1035,7 +1035,7 @@
 				<focusedlayout width="310" height="550">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -1103,7 +1103,7 @@
 				<focusedlayout width="310" height="500">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -1387,7 +1387,7 @@
 				<focusedlayout width="122.4" height="220">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -1541,7 +1541,7 @@
 				<focusedlayout width="310" height="500">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -1677,7 +1677,7 @@
 				<focusedlayout width="$PARAM[width]" height="400">
 					<control type="button">
 						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onunfocus>
+						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
 						<texturenofocus></texturenofocus>
 						<texturefocus></texturefocus>
 					</control>

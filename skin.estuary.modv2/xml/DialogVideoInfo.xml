@@ -57,7 +57,7 @@
 						<width>444</width>
 						<height>678</height>
 						<aspectratio aligny="center">keep</aspectratio>
-						<texture fallback="DefaultVideoFanart.png">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="DefaultVideoFanart.png">$VAR[EpisodeThumbInfoVar]</texture>
 						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
 					</control>
@@ -122,7 +122,7 @@
 						<width>673</width>
 						<height>363</height>
 						<align>justify</align>
-						<label fallback="19055">$INFO[ListItem.Plot]</label>
+						<label fallback="19055">$VAR[PlotSpoilerInfoVar]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))</visible>
 					</control>
@@ -149,7 +149,7 @@
 						<width>673</width>
 						<height>295</height>
 						<align>justify</align>
-						<label fallback="19055">$INFO[ListItem.Plot]</label>
+						<label fallback="19055">$VAR[PlotSpoilerInfoVar]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
 					</control>
