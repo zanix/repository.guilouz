@@ -437,13 +437,13 @@ msgstr "Saisir le texte ici…"
 
 #: /xml/Home.xml
 msgctxt "#31104"
-msgid "Your library is currently empty. In order to populate it with your personal media, enter \"Files\" section, add a media source and configure it. After the source has been added and indexed you will be able to browse your library."
-msgstr "Votre bibliothèque est actuellement vide. Afin de la remplir avec vos médias personnels, rendez-vous dans la section \"Fichiers\", ajoutez une source de médias et configurez-la. Après ajout et indexation, la bibliothèque pourra être parcourue."
+msgid "Your video library is currently empty. In order to populate it with your personal media, add a video source and configure it. After the source has been added and indexed you will be able to browse your library."
+msgstr "Votre bibliothèque vidéo est actuellement vide. Afin de la remplir avec vos médias personnels, ajoutez une source de vidéos et configurez-la. Après ajout et indexation, la bibliothèque pourra être parcourue."
 
 #: /xml/Home.xml
 msgctxt "#31105"
 msgid "Add video sources and set the appropriate content type in order to populate your video libraries."
-msgstr "Ajoutez des sources vidéo et définissez le type de contenu approprié pour remplir les bibliothèques vidéos."
+msgstr "Ajoutez des sources de vidéos et définissez le type de contenu approprié pour remplir vos bibliothèques vidéos."
 
 #: /xml/Variables.xml
 msgctxt "#31106"
@@ -458,8 +458,8 @@ msgstr "Liste large"
 
 #: /xml/Home.xml
 msgctxt "#31110"
-msgid "Enter files section"
-msgstr "Section Fichiers"
+msgid "Your music library is currently empty. In order to populate it with your personal media, add a music source and configure it. After the source has been added and indexed you will be able to browse your library."
+msgstr "Votre bibliothèque musicale est actuellement vide. Afin de la remplir avec vos médias personnels, ajoutez une source de musiques et configurez-la. Après ajout et indexation, la bibliothèque pourra être parcourue."
 
 #: /xml/Home.xml
 msgctxt "#31111"
@@ -486,10 +486,10 @@ msgctxt "#31115"
 msgid "Search TheMovieDB"
 msgstr "Rechercher sur TheMovieDB"
 
-#: /xml/Includes_Home.xml
+#: /xml/Home.xml
 msgctxt "#31116"
-msgid "Remove this main menu item"
-msgstr "Retirer cet élément du menu principal"
+msgid "Add games source"
+msgstr "Ajouter une source de jeux"
 
 #: /xml/MyVideoNav.xml
 msgctxt "#31117"
@@ -1570,3 +1570,23 @@ msgstr "Afficher les disques sur les widgets des films"
 msgctxt "#40171"
 msgid "Show movies CDArt"
 msgstr "Afficher les disques des films"
+
+#: /xml/Home.xml
+msgctxt "#40172"
+msgid "Games sources"
+msgstr "Sources des jeux"
+
+#: /xml/Home.xml
+msgctxt "#40173"
+msgid "Your games library is currently empty. In order to populate it with your personal games, add a games source. After the source has been added you will be able to browse your games list. You will also need to install necessary add-ons for games."
+msgstr "Votre bibliothèque de jeux est actuellement vide. Afin de la remplir avec vos jeux personnels, ajoutez une source de jeux. Après ajout la liste de jeux pourra être parcourue. Vous devrez également installer les extensions nécessaires aux jeux."
+
+#: /xml/Home.xml
+msgctxt "#40174"
+msgid "Your pictures library is currently empty. In order to populate it with your personal pictures, add a pictures source. After the source has been added you will be able to browse your pictures list."
+msgstr "Votre bibliothèque d'images est actuellement vide. Afin de la remplir avec vos images personnelles, ajoutez une source d'images. Après ajout la liste des images pourra être parcourue."
+
+#: /xml/Home.xml
+msgctxt "#40175"
+msgid "Pictures sources"
+msgstr "Sources des images"

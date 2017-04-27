@@ -35,7 +35,7 @@
             <control type="panel" id="5000">
 				<include>ButtonMenuList</include>
 				<content>
-					<item>
+				<item>
                     <label>$LOCALIZE[3]</label>
                     <onclick>Dialog.Close(all)</onclick>
                     <onclick>ActivateWindow(Videos,Files,return)</onclick>

@@ -1,7 +1,9 @@
 [B]2.2.5[/B]
+• Add games sources widget
 • Fix personalized widget 5
 • Fix plots and thumbs on info dialog to avoid spoilers
 • Fix widgets property
+• Changes on widgets when libraries are not populated
 
 [B]2.2.4[/B]
 • Add possibility to show CDArt on widgets and on library

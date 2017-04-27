@@ -437,7 +437,7 @@ msgstr ""
 
 #: /xml/Home.xml
 msgctxt "#31104"
-msgid "Your library is currently empty. In order to populate it with your personal media, enter \"Files\" section, add a media source and configure it. After the source has been added and indexed you will be able to browse your library."
+msgid "Your video library is currently empty. In order to populate it with your personal media, add a video source and configure it. After the source has been added and indexed you will be able to browse your library."
 msgstr ""
 
 #: /xml/Home.xml
@@ -458,7 +458,7 @@ msgstr ""
 
 #: /xml/Home.xml
 msgctxt "#31110"
-msgid "Enter files section"
+msgid "Your music library is currently empty. In order to populate it with your personal media, add a music source and configure it. After the source has been added and indexed you will be able to browse your library."
 msgstr ""
 
 #: /xml/Home.xml
@@ -486,9 +486,9 @@ msgctxt "#31115"
 msgid "Search TheMovieDB"
 msgstr ""
 
-#: /xml/Includes_Home.xml
+#: /xml/Home.xml
 msgctxt "#31116"
-msgid "Remove this main menu item"
+msgid "Add games source"
 msgstr ""
 
 #: /xml/MyVideoNav.xml
@@ -1569,4 +1569,24 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#40171"
 msgid "Show movies CDArt"
+msgstr ""
+
+#: /xml/Home.xml
+msgctxt "#40172"
+msgid "Games sources"
+msgstr ""
+
+#: /xml/Home.xml
+msgctxt "#40173"
+msgid "Your games library is currently empty. In order to populate it with your personal games, add a games source. After the source has been added you will be able to browse your games list. You will also need to install necessary add-ons for games."
+msgstr ""
+
+#: /xml/Home.xml
+msgctxt "#40174"
+msgid "Your pictures library is currently empty. In order to populate it with your personal pictures, add a pictures source. After the source has been added you will be able to browse your pictures list."
+msgstr ""
+
+#: /xml/Home.xml
+msgctxt "#40175"
+msgid "Pictures sources"
 msgstr ""
