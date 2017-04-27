@@ -102,12 +102,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="300" height="486">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>68</left>
@@ -683,12 +677,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="310" height="500">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -753,12 +741,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="310" height="550">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -823,12 +805,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="310" height="500">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -893,12 +869,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="310" height="550">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -963,12 +933,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="310" height="500">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -1033,12 +997,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="310" height="550">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -1101,12 +1059,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="310" height="500">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -1385,12 +1337,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="122.4" height="220">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -1539,12 +1485,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="310" height="500">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -1675,12 +1615,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="$PARAM[width]" height="400">
-					<control type="button">
-						<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-						<onunfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onunfocus>
-						<texturenofocus></texturenofocus>
-						<texturefocus></texturefocus>
-					</control>
 					<control type="group">
 						<left>70</left>
 						<depth>DepthContentPopout</depth>
@@ -1971,6 +1905,7 @@
 		<onleft>9000</onleft>
 		<onback>9000</onback>
 		<onright/>
+		<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
 		<onunfocus>SetProperty(listposition,$INFO[Container($PARAM[list_id]).Position],home)</onunfocus>
 		<onfocus>Control.Move($PARAM[list_id],-$INFO[Container($PARAM[list_id]).Position])</onfocus>
 		<onfocus>Control.Move($PARAM[list_id],$INFO[Window(home).Property(listposition)])</onfocus>

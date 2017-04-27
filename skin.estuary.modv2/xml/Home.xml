@@ -1302,6 +1302,7 @@
 					<movement>7</movement>
 					<focusposition>0</focusposition>
 					<onfocus>ClearProperty(listposition,home)</onfocus>
+					<onfocus>ClearProperty(SkinHelper.WidgetContainer,home)</onfocus>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)">21000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)">5000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget)">6000</onright>
