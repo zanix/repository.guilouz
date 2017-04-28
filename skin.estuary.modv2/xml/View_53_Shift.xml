@@ -162,6 +162,7 @@
 								<height>172</height>
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">overlays/circle-172.png</texture>
 								<aspectratio>keep</aspectratio>
+								<visible>!Skin.HasSetting(enable_LibraryDiscArtOverlay)</visible>
 							</control>
 							<control type="image">
 								<right>16</right>

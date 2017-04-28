@@ -531,6 +531,13 @@
 					<onclick>Skin.ToggleSetting(enable_LibraryDiscArt)</onclick>
 					<selected>Skin.HasSetting(enable_LibraryDiscArt)</selected>
 				</control>
+				<control type="radiobutton" id="919">
+					<include>DefaultSettingButton</include>
+					<label>  ∟$LOCALIZE[40176]</label>
+					<onclick>Skin.ToggleSetting(enable_LibraryDiscArtOverlay)</onclick>
+					<selected>!Skin.HasSetting(enable_LibraryDiscArtOverlay)</selected>
+					<visible>Skin.HasSetting(enable_LibraryDiscArt)</visible>
+				</control>
 				<control type="radiobutton" id="905">
 					<label>$LOCALIZE[40149]</label>
 					<include>DefaultSettingButton</include>
@@ -607,7 +614,7 @@
 				<control type="button" id="915">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(scroll_alphabet)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(hide_thumbforspoiler)|Skin.Reset(LibraryClearLogo)|Skin.Reset(enable_LibraryDiscArt)|Skin.Reset(SkinHelper.ForcedViews.Enabled))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(scroll_alphabet)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(hide_thumbforspoiler)|Skin.Reset(LibraryClearLogo)|Skin.Reset(enable_LibraryDiscArt)|Skin.Reset(enable_LibraryDiscArtOverlay)|Skin.Reset(SkinHelper.ForcedViews.Enabled))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="700">
@@ -913,6 +920,13 @@
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(enable_HomeDiscArt)</onclick>
 					<selected>Skin.HasSetting(enable_HomeDiscArt)</selected>
+				</control>
+				<control type="radiobutton" id="10019">
+					<include>DefaultSettingButton</include>
+					<label>  ∟$LOCALIZE[40176]</label>
+					<onclick>Skin.ToggleSetting(enable_HomeDiscArtOverlay)</onclick>
+					<selected>!Skin.HasSetting(enable_HomeDiscArtOverlay)</selected>
+					<visible>Skin.HasSetting(enable_HomeDiscArt)</visible>
 				</control>
 				<control type="radiobutton" id="10015">
 					<label>$LOCALIZE[31133]</label>

@@ -1,3 +1,7 @@
+[B]2.2.7[/B]
+• Add possibility to disable colored outline for CDArts
+• Fix disc overlay for some CDArts
+
 [B]2.2.6[/B]
 • Change extension file '.png' to '.jpg' for games artworks
 • Minor fixes

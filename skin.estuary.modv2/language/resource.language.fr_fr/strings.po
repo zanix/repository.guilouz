@@ -1590,3 +1590,8 @@ msgstr "Votre bibliothèque d'images est actuellement vide. Afin de la remplir a
 msgctxt "#40175"
 msgid "Pictures sources"
 msgstr "Sources des images"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40176"
+msgid "Show colored outline"
+msgstr "Afficher le contour coloré"

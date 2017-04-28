@@ -665,6 +665,7 @@
 					<height>172</height>
 					<texture background="true" colordiffuse="$VAR[SkinColorVar]">overlays/circle-172.png</texture>
 					<aspectratio>keep</aspectratio>
+					<visible>[!Skin.HasSetting(enable_LibraryDiscArtOverlay) + !Window.IsVisible(Home)] | [!Skin.HasSetting(enable_HomeDiscArtOverlay) + Window.IsVisible(Home)]</visible>
 				</control>
 				<control type="image">
 					<right>-5</right>
@@ -876,6 +877,7 @@
 					<height>172</height>
 					<texture background="true" colordiffuse="$VAR[SkinColorVar]">overlays/circle-172.png</texture>
 					<aspectratio>keep</aspectratio>
+					<visible>!Skin.HasSetting(enable_LibraryDiscArtOverlay)</visible>
 				</control>
 				<control type="image">
 					<right>4</right>

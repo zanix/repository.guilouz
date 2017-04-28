@@ -1590,3 +1590,8 @@ msgstr ""
 msgctxt "#40175"
 msgid "Pictures sources"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40176"
+msgid "Show colored outline"
+msgstr ""
