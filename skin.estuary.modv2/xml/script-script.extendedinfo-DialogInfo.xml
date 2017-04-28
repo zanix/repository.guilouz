@@ -9,12 +9,14 @@
 			<animation effect="slide" end="-749,0" time="450" tween="sine" easing="inout" condition="!Control.HasFocus(132) + !ControlGroup(5000).HasFocus">Conditional</animation>
 			<control type="image">
 				<width>729</width>
-				<height>1080</height>
+				<top>0</top>
+				<bottom>0</bottom>
 				<texture>dialogs/extendedinfo/movieinfogradient.png</texture>
 			</control>
 			<control type="image">
 				<width>729</width>
-				<height>1080</height>
+				<top>0</top>
+				<bottom>0</bottom>
 				<aspectratio aligny="top">scale</aspectratio>
 				<fadetime>300</fadetime>
 				<texture>$INFO[Window.Property(thumb)]</texture>
@@ -44,7 +46,8 @@
 			<control type="image">
 				<left>729</left>
 				<width>1950</width>
-				<height>1080</height>
+				<top>0</top>
+				<bottom>0</bottom>
 				<aspectratio align="center">scale</aspectratio>
 				<texture fallback="colors/black.png">$INFO[Window.Property(ImageFilter)]</texture>
 			</control>
@@ -52,7 +55,8 @@
 				<depth>DepthBackground</depth>
 				<left>729</left>
 				<width>1950</width>
-				<height>1080</height>
+				<top>0</top>
+				<bottom>0</bottom>
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$VAR[BackgroundColorVar]">special://skin/extras/backgrounds/primary.jpg</texture>
 			</control>
@@ -60,7 +64,8 @@
 				<depth>DepthBackground</depth>
 				<left>729</left>
 				<width>1950</width>
-				<height>1080</height>
+				<top>0</top>
+				<bottom>0</bottom>
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$VAR[PatternColorVar]">$INFO[Skin.String(background_overlay),special://skin/extras/patterns/pattern,.png]</texture>
 			</control>

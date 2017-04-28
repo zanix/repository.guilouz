@@ -10,14 +10,16 @@
 			<control type="image">
 				<left>729</left>
 				<width>1950</width>
-				<height>1080</height>
+				<top>0</top>
+				<bottom>0</bottom>
 				<texture fallback="colors/black.png">$INFO[Window.Property(ImageFilter)]</texture>
 			</control>
 			<control type="image">
 				<depth>DepthBackground</depth>
 				<left>729</left>
 				<width>2590</width>
-				<height>1080</height>
+				<top>0</top>
+				<bottom>0</bottom>
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$VAR[BackgroundColorVar]">special://skin/extras/backgrounds/primary.jpg</texture>
 			</control>
@@ -25,7 +27,8 @@
 				<depth>DepthBackground</depth>
 				<left>729</left>
 				<width>2590</width>
-				<height>1080</height>
+				<top>0</top>
+				<bottom>0</bottom>
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$VAR[PatternColorVar]">$INFO[Skin.String(background_overlay),special://skin/extras/patterns/pattern,.png]</texture>
 			</control>
@@ -2064,7 +2067,8 @@
 			<animation effect="slide" end="-749,0" time="450" tween="sine" easing="inout" condition="!Control.HasFocus(132) + !ControlGroup(5000).HasFocus">Conditional</animation>
 			<control type="image">
 				<width>729</width>
-				<height>1080</height>
+				<top>0</top>
+				<bottom>0</bottom>
 				<fadetime>300</fadetime>
 				<aspectratio aligny="top">scale</aspectratio>
 				<texture>$INFO[Window.Property(Poster)]</texture>
@@ -2072,7 +2076,8 @@
 			<control type="image">
 				<top>0</top>
 				<width>729</width>
-				<height>1080</height>
+				<top>0</top>
+				<bottom>0</bottom>
 				<fadetime>300</fadetime>
 				<aspectratio aligny="center">keep</aspectratio>
 				<visible>String.IsEqual(Window.Property(type),episode)</visible>
