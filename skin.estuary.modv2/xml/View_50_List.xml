@@ -276,7 +276,7 @@
 					<bottom>140</bottom>
 					<aspectratio aligny="center" align="center">keep</aspectratio>
 					<fadetime>300</fadetime>
-					<texture background="true" fallback="DefaultAddonGame.png">$INFO[ListItem.FileNameAndPath,,.png]</texture>
+					<texture background="true" fallback="DefaultAddonGame.png">$INFO[ListItem.FileNameAndPath,,.jpg]</texture>
 					<visible>Container.Content(games)</visible>
 				</control>
 				<control type="image">
