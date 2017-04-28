@@ -379,8 +379,8 @@
 			<height>100%</height>
 			<onleft>9000</onleft>
 			<onup>9000</onup>
-			<onright condition="!Container.Content(games)">50</onright>
-			<onright condition="Container.Content(games)">55</onright>
+			<onright condition="!Window.IsVisible(MyGames.xml)">50</onright>
+			<onright condition="Window.IsVisible(MyGames.xml)">55</onright>
 			<ondown>9000</ondown>
 			<onback>50</onback>
 			<control type="label" id="200">
