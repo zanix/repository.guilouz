@@ -473,7 +473,7 @@
 		</control>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[40106]" />
-			<param name="visible" value="String.IsEqual(Window.Property(groupname),mainmenu)" />
+			<param name="visible" value="!String.IsEqual(Window.Property(groupname),powermenu)" />
 		</include>
 		<include content="TopBar">
 			<param name="breadcrumbs_label" value="$LOCALIZE[40159]" />
