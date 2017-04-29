@@ -1605,3 +1605,8 @@ msgstr "Fichiers de musique"
 msgctxt "#40178"
 msgid "Current playlist"
 msgstr "Liste de lecture actuelle"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40179"
+msgid "Show animated lyrics"
+msgstr "Afficher les paroles animées"

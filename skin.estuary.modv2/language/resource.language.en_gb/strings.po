@@ -1605,3 +1605,8 @@ msgstr ""
 msgctxt "#40178"
 msgid "Current playlist"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40179"
+msgid "Show animated lyrics"
+msgstr ""
