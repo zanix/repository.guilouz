@@ -2,7 +2,7 @@
 • Add possibility to disable colored outline for CDArts
 • Fix disc overlay for some CDArts
 • Fix extended info window for some resolutions
-• Minor playlists editor
+• Fix playlists editor
 • Minor fixes
 
 [B]2.2.6[/B]
