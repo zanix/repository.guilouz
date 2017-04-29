@@ -113,7 +113,7 @@
 			<control type="label">
 				<description>Scraper label</description>
 				<right>30</right>
-				<top>842</top>
+				<bottom>208</bottom>
 				<width>900</width>
 				<height>30</height>
 				<label>$LOCALIZE[40092] : $INFO[Control.GetLabel(200)]</label>

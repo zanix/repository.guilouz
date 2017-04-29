@@ -34,6 +34,10 @@
 		<control type="group" id="1">
 			<depth>DepthOSD+</depth>
 			<visible>Player.Caching</visible>
+			<centerleft>50%</centerleft>
+            <centertop>50%</centertop>
+            <width>350</width>
+            <height>70</height>
 			<animation delay="300" effect="fade" time="200">Visible</animation>
 			<animation effect="fade" delay="200" time="150">Hidden</animation>
 			<control type="image" id="1">
@@ -45,7 +49,7 @@
             </control>
  			<control type="progress" id="1">
  			    <centerleft>50%</centerleft>
-                <top>544</top>
+                <top>39</top>
                 <width>320</width>
                 <height>16</height>
                 <info>Player.CacheLevel</info>
@@ -53,7 +57,7 @@
             <control type="label" id="1">
  				<label>$INFO[Player.CacheLevel]%</label>
  				<centerleft>50%</centerleft>
- 				<top>518</top>
+ 				<top>13</top>
  				<width>320</width>
  				<height>20</height>
  				<aligny>center</aligny>
@@ -63,7 +67,7 @@
  			<control type="label" id="2">
  				<label>$LOCALIZE[15107]</label>
  				<centerleft>50%</centerleft>
- 				<top>518</top>
+ 				<top>13</top>
  				<width>320</width>
   				<height>20</height>
   				<aligny>center</aligny>
