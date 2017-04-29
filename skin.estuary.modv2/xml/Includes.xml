@@ -878,7 +878,7 @@
 				<bottom>list_y_offset</bottom>
 				<right>$PARAM[right]</right>
 				<width>$PARAM[width]</width>
-				<focusposition>4</focusposition>
+				<focusposition>5</focusposition>
 				<movement>3</movement>
 				<onleft>$PARAM[onleft_id]</onleft>
 				<onright>$PARAM[onright_id]</onright>
@@ -1404,13 +1404,13 @@
 						</control>
 						<control type="label" id="7700">
 							<label>$VAR[NowPlayingSublabelVar]</label>
-							<left>-45</left>
+							<left>5</left>
 							<top>44</top>
 							<font>font12</font>
 							<textcolor>grey</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
 							<height>25</height>
-							<width>630</width>
+							<width>580</width>
 							<align>right</align>
 							<scroll>true</scroll>
 						</control>

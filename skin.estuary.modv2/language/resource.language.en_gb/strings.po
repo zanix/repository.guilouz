@@ -1595,3 +1595,13 @@ msgstr ""
 msgctxt "#40176"
 msgid "Show colored outline"
 msgstr ""
+
+#: /xml/MyMusicPlaylistEditor.xml
+msgctxt "#40177"
+msgid "Music files"
+msgstr ""
+
+#: /xml/MyMusicPlaylistEditor.xml
+msgctxt "#40178"
+msgid "Current playlist"
+msgstr ""

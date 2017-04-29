@@ -1595,3 +1595,13 @@ msgstr "Sources des images"
 msgctxt "#40176"
 msgid "Show colored outline"
 msgstr "Afficher le contour coloré"
+
+#: /xml/MyMusicPlaylistEditor.xml
+msgctxt "#40177"
+msgid "Music files"
+msgstr "Fichiers de musique"
+
+#: /xml/MyMusicPlaylistEditor.xml
+msgctxt "#40178"
+msgid "Current playlist"
+msgstr "Liste de lecture actuelle"
