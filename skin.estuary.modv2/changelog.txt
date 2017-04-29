@@ -1,4 +1,5 @@
 [B]2.2.7[/B]
+• Changes for Kodi 18
 • Add possibility to disable colored outline for CDArts
 • Add possibility to disable animated lyrics for classic lyrics
 • Fix disc overlay for some CDArts
