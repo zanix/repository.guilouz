@@ -195,7 +195,7 @@
 				<width>160</width>
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
-				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]]</visible>
+				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]] + [String.IsEqual(listitem.dbtype,episode) + Window.IsVisible(DialogContextMenu.xml) + [Control.IsVisible(500) | Control.IsVisible(54)]]</visible>
 			</control>
 			<control type="label">
 				<left>31</left>
@@ -205,7 +205,7 @@
 				<font>font20_title</font>
 				<shadowcolor>text_shadow</shadowcolor>
 				<align>right</align>
-				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]]</visible>
+				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]] + [String.IsEqual(listitem.dbtype,episode) + Window.IsVisible(DialogContextMenu.xml) + [Control.IsVisible(500) | Control.IsVisible(54)]]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -657,7 +657,7 @@
 				<animation effect="slide" start="0,50" end="0,0" time="300" tween="cubic" easing="out" reversible="false">Focus</animation>
 				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 				<animation effect="slide" end="67,0" time="0" condition="Window.IsVisible(Home)">Conditional</animation>
-				<animation effect="slide" end="11,0" time="0" condition="Control.IsVisible(54)">Conditional</animation>
+				<animation effect="slide" end="11,0" time="0" condition="Control.IsVisible(54) | [String.IsEqual(Container.ViewMode,$LOCALIZE[31101]) + Window.IsVisible(DialogContextMenu.xml)]">Conditional</animation>
 				<control type="image">
 					<right>-6</right>
 					<top>0</top>
@@ -869,7 +869,7 @@
 				<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
 				<animation effect="slide" start="0,50" end="0,0" time="300" tween="cubic" easing="out" reversible="false">Focus</animation>
 				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
-				<animation effect="slide" end="281,0" time="0" condition="Control.IsVisible(505)">Conditional</animation>
+				<animation effect="slide" end="281,0" time="0" condition="Control.IsVisible(505) | [String.IsEqual(Container.ViewMode,$LOCALIZE[40016]) + Window.IsVisible(DialogContextMenu.xml)]">Conditional</animation>
 				<control type="image">
 					<right>3</right>
 					<top>0</top>
@@ -902,6 +902,7 @@
 				<top>0</top>
 				<right>15</right>
 				<height>100%</height>
+				<oninfo condition="String.IsEqual(ListItem.DBType,set)">ActivateWindow(1132)</oninfo>
 				<onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
 				<onright>531</onright>
 				<onup condition="Integer.IsGreater(Container.NumPages,1)">54</onup>

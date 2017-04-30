@@ -4,6 +4,7 @@
 	<onload>SetProperty(infobackground,$ESCINFO[ListItem.Art(fanart)],home)</onload>
 	<onunload>ClearProperty(infobackground,home)</onunload>
 	<controls>
+		<include condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml)">DefaultBackground</include>
 		<control type="group">
 			<centertop>50%</centertop>
 			<height>1080</height>
@@ -119,7 +120,7 @@
 					<control type="textbox">
 						<left>40</left>
 						<top>25</top>
-						<width>673</width>
+						<width>675</width>
 						<height>363</height>
 						<align>justify</align>
 						<label fallback="19055">$VAR[PlotSpoilerInfoVar]</label>
@@ -146,7 +147,7 @@
 					<control type="textbox">
 						<left>40</left>
 						<top>25</top>
-						<width>673</width>
+						<width>675</width>
 						<height>295</height>
 						<align>justify</align>
 						<label fallback="19055">$VAR[PlotSpoilerInfoVar]</label>

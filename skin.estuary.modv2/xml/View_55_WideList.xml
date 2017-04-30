@@ -15,6 +15,7 @@
 				<pagecontrol>531</pagecontrol>
 				<movement>5</movement>
 				<focusposition>6</focusposition>
+				<oninfo condition="String.IsEqual(ListItem.DBType,set)">ActivateWindow(1132)</oninfo>
 				<onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
 				<onright>531</onright>
 				<onup>55</onup>

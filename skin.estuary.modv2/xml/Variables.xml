@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="MainLabelMoviesSetsInfoVar">
+		<value condition="Control.HasFocus(50) + !String.IsEmpty(Container(50).ListItem.Title)">$INFO[Container(50).ListItem.Title]$INFO[Container(50).ListItem.Year, (,)]</value>
+		<value condition="Control.HasFocus(50) + String.IsEmpty(Container(50).ListItem.Title)">$INFO[Container(50).ListItem.Label]$INFO[Container(50).ListItem.Year, (,)]</value>
+        <value condition="!Control.HasFocus(50)">$INFO[ListItem.Label]</value>
+	</variable>
+	<variable name="SubLabelMoviesSetsInfoVar">
+		<value condition="Control.HasFocus(50)">$INFO[Container(50).ListItem.Tagline]</value>
+		<value condition="!Control.HasFocus(50)">$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]]</value>
+	</variable>
+	<variable name="MPAALabelMoviesSetsVar">
+		<value condition="String.Contains(Container(50).ListItem.mpaa,10) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 10 ans[/COLOR]</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,12) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 12 ans[/COLOR]</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,16) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 16 ans[/COLOR]</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,18) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 18 ans[/COLOR]</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,U) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Tout public[/COLOR]</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,Rated) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Inconnue[/COLOR]</value>
+		<value>$LOCALIZE[31017] : [COLOR white]$INFO[Container(50).ListItem.mpaa][/COLOR]</value>
+	</variable>
+	<variable name="PosterMoviesSetsInfoVar">
+        <value condition="!Control.HasFocus(50)">$INFO[ListItem.Art(poster)]</value>
+        <value condition="Control.HasFocus(50)">$INFO[Container(50).ListItem.Art(poster)]</value>
+    </variable>
+    <variable name="PlotMoviesSetsInfoVar">
+		<value condition="!Control.HasFocus(50)">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</value>
+		<value condition="Control.HasFocus(50)">$INFO[Container(50).Listitem.Plot]</value>
+	</variable>
 	<variable name="DurationVar">
 		<value condition="String.StartsWith(ListItem.Duration,01:00:)">1h00</value>
 		<value condition="String.StartsWith(ListItem.Duration,01:01:)">1h01</value>
@@ -1526,9 +1552,14 @@
 	</variable>
 	<variable name="ResolutionFlagVar">
 		<value condition="ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + Container(50).ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
 		<value condition="String.Contains(ListItem.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
 		<value condition="String.Contains(ListItem.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
 		<value condition="Integer.IsGreater(ListItem.VideoResolution,1080)">flags/videoresolution/4K.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + Integer.IsGreater(Container(50).ListItem.VideoResolution,1080)">flags/videoresolution/4K.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + !String.IsEmpty(Container(50).ListItem.VideoResolution)">$INFO[Container(50).ListItem.VideoResolution,flags/videoresolution/,.png]</value>
 		<value>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</value>
 	</variable>
 	<variable name="VideoPlayerResolutionFlagVar">
@@ -1540,12 +1571,20 @@
 	</variable>
 	<variable name="AudioCodecFlagVar">
 		<value condition="String.Contains(ListItem.Filenameandpath,atmos)">flags/audiocodec/atmos.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,atmos)">flags/audiocodec/atmos.png</value>
 		<value condition="String.Contains(ListItem.Filenameandpath,Atmos)">flags/audiocodec/atmos.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,Atmos)">flags/audiocodec/atmos.png</value>
 		<value condition="String.Contains(ListItem.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
 		<value condition="String.Contains(ListItem.Filenameandpath,dts-x)">flags/audiocodec/dts-x.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,dts-x)">flags/audiocodec/dts-x.png</value>
 		<value condition="String.Contains(ListItem.Filenameandpath,DTS-X)">flags/audiocodec/dts-x.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,DTS-X)">flags/audiocodec/dts-x.png</value>
 		<value condition="String.Contains(ListItem.Filenameandpath,dtsx)">flags/audiocodec/dts-x.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,dtsx)">flags/audiocodec/dts-x.png</value>
 		<value condition="String.Contains(ListItem.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + !String.IsEmpty(Container(50).ListItem.AudioCodec)">$INFO[Container(50).ListItem.AudioCodec,flags/audiocodec/,.png]</value>
 		<value>$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</value>
 	</variable>
 	<variable name="VideoPlayerAudioCodecFlagVar">
@@ -1727,6 +1766,7 @@
 	<variable name="MediaFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)"></value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + !ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + Control.HasFocus(50) + !String.IsEmpty(Container(50).ListItem.Art(fanart))">$INFO[Container(50).ListItem.Art(fanart)]</value>
 		<value condition="Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window(home).Property(infobackground)]</value>
 		<value condition="Container.Content(genres) + Window.IsActive(videos)">$INFO[Skin.String(MovieGenreFanart.path)]$INFO[ListItem.Label]$INFO[Skin.String(MovieGenreFanart.ext)]</value>
 		<value condition="Window.IsActive(pictures) + String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.FolderPath]</value>

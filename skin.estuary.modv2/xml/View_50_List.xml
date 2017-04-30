@@ -94,6 +94,7 @@
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<pagecontrol>$PARAM[list_id]600</pagecontrol>
+				<oninfo condition="String.IsEqual(ListItem.DBType,set)">ActivateWindow(1132)</oninfo>
 				<onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
 				<onright>$PARAM[list_id]600</onright>
 				<onup>$PARAM[list_id]</onup>

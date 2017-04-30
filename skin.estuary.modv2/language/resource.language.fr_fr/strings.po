@@ -533,7 +533,7 @@ msgstr "Afficher les images sur la carte"
 
 #: /xml/DialogVideoInfo.xml
 msgctxt "#31125"
-msgid "Press up for actor info"
+msgid "Press [B]Up[/B] for actor info"
 msgstr "Appuyer sur [B]Haut[/B] pour afficher les informations de l'acteur"
 
 #: /xml/DialogVideoInfo.xml
@@ -1610,3 +1610,8 @@ msgstr "Liste de lecture actuelle"
 msgctxt "#40179"
 msgid "Show animated lyrics"
 msgstr "Afficher les paroles animées"
+
+#: /xml/Custom_1132_MoviesSetsInfo.xml
+msgctxt "#40180"
+msgid "Press [B]Up[/B] for extended info"
+msgstr "Appuyer sur [B]Haut[/B] pour afficher les informations étendues"

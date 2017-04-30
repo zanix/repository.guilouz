@@ -533,7 +533,7 @@ msgstr ""
 
 #: /xml/DialogVideoInfo.xml
 msgctxt "#31125"
-msgid "Press up for actor info"
+msgid "Press [B]Up[/B] for actor info"
 msgstr ""
 
 #: /xml/DialogVideoInfo.xml
@@ -1609,4 +1609,9 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#40179"
 msgid "Show animated lyrics"
+msgstr ""
+
+#: /xml/Custom_1132_MoviesSetsInfo.xml
+msgctxt "#40180"
+msgid "Press [B]Up[/B] for extended info"
 msgstr ""

@@ -666,6 +666,7 @@
 		<param name="infolabel_prefix"></param>
 		<param name="resolution_var">$VAR[ResolutionFlagVar]</param>
 		<param name="audiocodec_var">$VAR[AudioCodecFlagVar]</param>
+		<param name="visible">true</param>
 		<definition>
 			<control type="list" id="56000">
 				<orientation>horizontal</orientation>
@@ -722,6 +723,7 @@
 				<itemgap>5</itemgap>
 				<width>1900</width>
 				<usecontrolcoords>true</usecontrolcoords>
+				<visible>$PARAM[visible]</visible>
 				<control type="group">
 					<width>130</width>
 					<top>0</top>
@@ -730,7 +732,7 @@
 						<param name="texture" value="$INFO[Skin.String(studiologos.path)]$INFO[$PARAM[infolabel_prefix]ListItem.Studio,,.png]" />
 						<param name="colordiffuse" value="" />
 						<param name="height" value="60" />
-						<param name="visible" value="!Window.IsVisible(movieinformation)" />
+						<param name="visible" value="!Window.IsVisible(movieinformation) + !Window.IsVisible(Custom_1132_MoviesSetsInfo.xml)" />
 					</include>
 				</control>
 				<control type="group">

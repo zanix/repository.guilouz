@@ -25,6 +25,7 @@
                 <onleft>$PARAM[id]</onleft>
                 <onright>$PARAM[id]</onright>
                 <ondown>5199</ondown>
+                <oninfo condition="String.IsEqual(ListItem.DBType,set)">ActivateWindow(1132)</oninfo>
                 <onup condition="!Skin.HasSetting(KioskMode)">9000</onup>
                 <pagecontrol>5199</pagecontrol>
                 <focusposition>9</focusposition>

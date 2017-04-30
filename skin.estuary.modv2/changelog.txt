@@ -1,3 +1,8 @@
+[B]2.2.8[/B]
+• Add info dialog for movies sets
+• Fix playlists editor
+• Minor fixes
+
 [B]2.2.7[/B]
 • Changes for Kodi 18
 • Add possibility to disable colored outline for CDArts
