@@ -1620,3 +1620,8 @@ msgstr "Appuyer sur [B]Haut[/B] pour afficher les informations étendues"
 msgctxt "#40181"
 msgid "Movies set information"
 msgstr "Informations de la saga"
+
+#: /xml/addon.xml
+msgctxt "#40182"
+msgid "Extended information"
+msgstr "Informations étendues"

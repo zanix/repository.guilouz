@@ -1620,3 +1620,8 @@ msgstr ""
 msgctxt "#40181"
 msgid "Movies set information"
 msgstr ""
+
+#: /xml/addon.xml
+msgctxt "#40182"
+msgid "Extended information"
+msgstr ""
