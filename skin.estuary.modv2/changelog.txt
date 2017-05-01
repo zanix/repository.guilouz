@@ -1,4 +1,5 @@
 [B]2.2.9[/B]
+• Add support for extendedinfo youtube list
 • Add shortcut for movies set info to context menu
 • Add shortcut for extended info to context menu
 

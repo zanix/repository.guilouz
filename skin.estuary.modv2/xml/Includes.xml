@@ -1281,6 +1281,7 @@
 	<include name="TopBar">
 		<param name="sublabel">$INFO[Container.SortMethod,$LOCALIZE[31022] : ,  ∙  ]$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</param>
 		<param name="visible">true</param>
+		<param name="width">900</param>
 		<definition>
 			<control type="group">
 				<animation effect="slide" end="0,-112" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
@@ -1298,7 +1299,7 @@
 				<control type="grouplist">
 					<left>35</left>
 					<description>Left side of top bar</description>
-					<width>900</width>
+					<width>$PARAM[width]</width>
 					<top>-7</top>
 					<height>100</height>
 					<orientation>horizontal</orientation>
@@ -1309,7 +1310,7 @@
 					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(701)">Conditional</animation>
 					<animation effect="slide" end="-70,0" time="200" reversible="true" condition="!Skin.HasSetting(touchmode) + Window.IsVisible(SkinSettings.xml)">Conditional</animation>
 					<animation effect="slide" end="70,0" time="200" reversible="true" condition="!Skin.HasSetting(touchmode) + Window.IsVisible(script-skinshortcuts.xml)">Conditional</animation>
-					<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml)</visible>
+					<visible>![Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(script-script.extendedinfo-YoutubeList.xml)] + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml)</visible>
 					<control type="label">
 						<label>$PARAM[breadcrumbs_label]</label>
 						<include>BreadcrumbsLabel</include>
