@@ -1615,3 +1615,8 @@ msgstr "Afficher les paroles animées"
 msgctxt "#40180"
 msgid "Press [B]Up[/B] for extended info"
 msgstr "Appuyer sur [B]Haut[/B] pour afficher les informations étendues"
+
+#: /xml/addon.xml
+msgctxt "#40181"
+msgid "Movies set information"
+msgstr "Informations de la saga"

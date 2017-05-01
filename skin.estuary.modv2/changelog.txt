@@ -1,3 +1,6 @@
+[B]2.2.9[/B]
+• Add shortcut for movies set info to context menu
+
 [B]2.2.8[/B]
 • Add info dialog for movies sets
 • Fix playlists editor
