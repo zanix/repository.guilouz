@@ -14,7 +14,7 @@
 	<extension point="kodi.context.item" library="scripts/context_menu_moviessets.py">
  		<item>
  			<label>$LOCALIZE[40181]</label>
- 			<visible>String.IsEqual(ListItem.DBType,set)</visible>
+ 			<visible>String.IsEqual(ListItem.DBType,set) + !Window.IsVisible(Home)</visible>
  		</item>
  	</extension>
 	<extension point="xbmc.addon.metadata">
