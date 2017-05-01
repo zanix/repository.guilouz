@@ -330,7 +330,7 @@
 					<width>447</width>
 					<height>485</height>
 					<font>font12</font>
-					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Director),$LOCALIZE[20339] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Writer),$LOCALIZE[20417] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Genre),$LOCALIZE[515] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Country),$LOCALIZE[21875] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Studio),$LOCALIZE[29909] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Years),$LOCALIZE[652] : [COLOR white],[/COLOR]]</label>
+					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Director),$LOCALIZE[20348] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Writer),$LOCALIZE[20418] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Genre),$LOCALIZE[135] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Country),$LOCALIZE[20451] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Studio),$LOCALIZE[20388] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Years),$LOCALIZE[652] : [COLOR white],[/COLOR]]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<autoscroll delay="7000" time="3000" repeat="4000">true</autoscroll>
 					<visible>!Control.HasFocus(50)</visible>

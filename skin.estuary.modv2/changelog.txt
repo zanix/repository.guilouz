@@ -2,6 +2,7 @@
 • Add support for extendedinfo youtube list
 • Add shortcut for movies set info to context menu
 • Add shortcut for extended info to context menu
+• Minor fixes
 
 [B]2.2.8[/B]
 • Add info dialog for movies sets
