@@ -15,6 +15,12 @@
 			<style>lighten</style>
 		</font>
 		<font>
+			<name>fontplot</name>
+			<filename>NotoSans-Regular.ttf</filename>
+			<size>27</size>
+			<style>lighten</style>
+		</font>
+		<font>
 			<name>font13</name>
 			<filename>NotoSans-Regular.ttf</filename>
 			<size>30</size>
@@ -522,6 +528,12 @@
 			<name>font12</name>
 			<filename>arial.ttf</filename>
 			<size>22</size>
+		</font>
+		<font>
+			<name>fontplot</name>
+			<filename>arial.ttf</filename>
+			<size>25</size>
+			<style>lighten</style>
 		</font>
 		<font>
 			<name>font13</name>

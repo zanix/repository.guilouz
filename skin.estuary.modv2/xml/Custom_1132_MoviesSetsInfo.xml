@@ -83,23 +83,25 @@
 						<visible>Control.HasFocus(50)</visible>
 					</control>
 					<control type="textbox">
-						<left>40</left>
-						<top>25</top>
-						<width>675</width>
-						<height>363</height>
+						<left>35</left>
+						<top>23</top>
+						<width>685</width>
+						<height>372</height>
 						<align>justify</align>
+						<font>fontplot</font>
 						<label fallback="19055">$VAR[PlotMoviesSetsInfoVar]</label>
-						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll delay="12000" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>!Control.HasFocus(50)</visible>
 					</control>
 					<control type="textbox">
-						<left>40</left>
-						<top>25</top>
-						<width>675</width>
-						<height>295</height>
+						<left>35</left>
+						<top>23</top>
+						<width>685</width>
+						<height>300</height>
 						<align>justify</align>
+						<font>fontplot</font>
 						<label fallback="19055">$VAR[PlotMoviesSetsInfoVar]</label>
-						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll delay="12000" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>Control.HasFocus(50)</visible>
 					</control>
 					<control type="image">
@@ -274,54 +276,63 @@
 						<param name="label" value="$INFO[Container(50).ListItem.Director,$LOCALIZE[20339] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Director)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
+						<param name="width" value="447" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="148" />
 						<param name="label" value="$INFO[Container(50).ListItem.Writer,$LOCALIZE[20417] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Writer)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
+						<param name="width" value="447" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="149" />
 						<param name="label" value="$INFO[Container(50).ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Genre)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
+						<param name="width" value="447" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="150" />
 						<param name="label" value="$INFO[Container(50).ListItem.Country,$LOCALIZE[21875] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Country)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
+						<param name="width" value="447" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="151" />
 						<param name="label" value="$INFO[Container(50).ListItem.Studio,$LOCALIZE[29909] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Studio)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
+						<param name="width" value="447" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="152" />
 						<param name="label" value="$INFO[Container(50).ListItem.Premiered,$LOCALIZE[20416] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Premiered)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
+						<param name="width" value="447" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="153" />
 						<param name="label" value="$LOCALIZE[31017] : [COLOR white]$VAR[MPAALabelMoviesSetsVar][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Mpaa)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
+						<param name="width" value="447" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="154" />
 						<param name="label" value="$INFO[Container(50).ListItem.Tag,$LOCALIZE[20459] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Tag)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
+						<param name="width" value="447" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="155" />
 						<param name="label" value="$INFO[Container(50).ListItem.LastPlayed,$LOCALIZE[568] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.LastPlayed)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
+						<param name="width" value="447" />
 					</include>
 				</control>
 				<control type="textbox">

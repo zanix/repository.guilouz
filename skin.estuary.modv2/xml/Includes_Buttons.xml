@@ -20,9 +20,10 @@
 	</include>
 	<include name="InfoDialogMetadata">
 		 <param name="textcolor">white</param>
+		 <param name="width">444</param>
         <definition>
             <control type="label" id="$PARAM[control_id]">
-                <width>447</width>
+                <width>$PARAM[width]</width>
                 <height>40</height>
                 <aligny>center</aligny>
                 <font>font12</font>

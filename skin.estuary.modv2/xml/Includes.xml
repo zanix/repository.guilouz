@@ -1936,12 +1936,4 @@
 			</control>
 		</focusedlayout>
 	</include>
-	<include name="DialogInfolistLong">
-		<width>1774</width>
-		<itemgap>-10</itemgap>
-	</include>
-	<include name="DialogInfolistShort">
-		<width>1246</width>
-		<itemgap>-16</itemgap>
-	</include>
 </includes>
