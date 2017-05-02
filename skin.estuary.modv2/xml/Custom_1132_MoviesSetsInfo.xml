@@ -428,8 +428,8 @@
 				</control>
 				<include content="LeftRightArrows">
 					<param name="list_id" value="50" />
-					<param name="left_posx" value="-15" />
-					<param name="right_posx" value="1232" />
+					<param name="left_posx" value="-21" />
+					<param name="right_posx" value="1238" />
 					<param name="posy" value="320" />
 					<param name="visible" value="true" />
 				</include>

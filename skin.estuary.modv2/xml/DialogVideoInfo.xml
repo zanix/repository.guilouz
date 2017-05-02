@@ -463,7 +463,7 @@
 					<ondown>140</ondown>
 					<scrolltime>200</scrolltime>
 					<orientation>horizontal</orientation>
-					<itemlayout height="317" width="245">
+					<itemlayout height="317" width="245.8">
 						<control type="group">
 							<top>10</top>
 							<control type="image">
@@ -514,7 +514,7 @@
 							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout height="317" width="245">
+					<focusedlayout height="317" width="245.8">
 						<control type="group">
 							<left>0</left>
 							<top>10</top>
@@ -577,16 +577,17 @@
 					</focusedlayout>
 				</control>
 				<control type="grouplist" id="5000">
+					<animation effect="slide" end="-527,0" time="0" condition="String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">Conditional</animation>
 					<left>0</left>
 					<top>864</top>
-					<width>1246</width>
+					<include condition="String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">DialogInfolistLong</include>
+					<include condition="![String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]">DialogInfolistShort</include>
 					<height>400</height>
 					<onleft>5000</onleft>
 					<onright>5000</onright>
 					<onup>140</onup>
 					<ondown condition="!Integer.IsGreater(Container(5000).Position,4)">SetFocus(50,$INFO[Container(5000).Position])</ondown>
 					<ondown condition="Integer.IsGreater(Container(5000).Position,4)">SetFocus(50,4)</ondown>
-					<itemgap>-16</itemgap>
 					<align>center</align>
 					<orientation>horizontal</orientation>
 					<scrolltime tween="quadratic">200</scrolltime>
@@ -716,16 +717,23 @@
 						<param name="visible" value="Control.IsEnabled(6)" />
 					</include>
 				</control>
-				<include content="LeftRightArrows">
+				<include content="LeftRightArrows" condition="![String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]">
 					<param name="list_id" value="5000" />
-					<param name="left_posx" value="-15" />
+					<param name="left_posx" value="-21" />
+					<param name="right_posx" value="1240" />
+					<param name="posy" value="924" />
+					<param name="visible" value="true" />
+				</include>
+				<include content="LeftRightArrows" condition="String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">
+					<param name="list_id" value="5000" />
+					<param name="left_posx" value="-548" />
 					<param name="right_posx" value="1240" />
 					<param name="posy" value="924" />
 					<param name="visible" value="true" />
 				</include>
 				<include content="LeftRightArrows">
 					<param name="list_id" value="50" />
-					<param name="left_posx" value="-15" />
+					<param name="left_posx" value="-21" />
 					<param name="right_posx" value="1240" />
 					<param name="posy" value="320" />
 					<param name="visible" value="true" />
