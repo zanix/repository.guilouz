@@ -65,6 +65,7 @@
 							<align>center</align>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<label fallback="--">[B]$INFO[ListItem.Label][/B]</label>
+							<scroll>true</scroll>
 							<visible>Control.HasFocus(110)</visible>
 						</control>
 					</focusedlayout>
@@ -75,7 +76,7 @@
 		<control type="list" id="110">
 				<centerleft>50%</centerleft>
 				<top>45</top>
-				<width>400</width>
+				<width>10</width>
 				<height>450</height>
 				<onleft>111</onleft>
 				<onright>111</onright>
