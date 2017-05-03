@@ -3,6 +3,7 @@
 • Add shortcut for movies set info to context menu
 • Add shortcut for extended info to context menu
 • Fix lyrics on music visualisation
+• Fix aspect ratio on tv shows widgets
 • Minor fixes
 • Minor changes
 

@@ -195,7 +195,7 @@
 				<width>160</width>
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
-				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]] + [String.IsEqual(listitem.dbtype,episode) + Window.IsVisible(DialogContextMenu.xml) + [Control.IsVisible(500) | Control.IsVisible(54)]]</visible>
+				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]] + ![String.IsEqual(listitem.dbtype,episode) + Window.IsVisible(DialogContextMenu.xml) + [String.IsEqual(Container.ViewMode,$LOCALIZE[31102]) | String.IsEqual(Container.ViewMode,$LOCALIZE[31101])]]</visible>
 			</control>
 			<control type="label">
 				<left>31</left>
@@ -205,7 +205,7 @@
 				<font>font20_title</font>
 				<shadowcolor>text_shadow</shadowcolor>
 				<align>right</align>
-				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]] + [String.IsEqual(listitem.dbtype,episode) + Window.IsVisible(DialogContextMenu.xml) + [Control.IsVisible(500) | Control.IsVisible(54)]]</visible>
+				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]] + ![String.IsEqual(listitem.dbtype,episode) + Window.IsVisible(DialogContextMenu.xml) + [String.IsEqual(Container.ViewMode,$LOCALIZE[31102]) | String.IsEqual(Container.ViewMode,$LOCALIZE[31101])]]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -289,7 +289,7 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>286</top>
+				<top>287</top>
 				<width>276</width>
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
@@ -297,7 +297,7 @@
 			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>258</top>
+				<top>259</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -337,16 +337,16 @@
 			<control type="image">
 				<top>10</top>
 				<width>316</width>
-				<height>348</height>
+				<height>316</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<top>6</top>
+				<top>7</top>
 				<left>-4</left>
 				<width>324</width>
-				<height>356</height>
+				<height>324</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -354,25 +354,24 @@
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>70</top>
-				<width>316</width>
-				<height>218</height>
+				<left>20</left>
+				<top>81</top>
+				<width>276</width>
+				<height>155</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
-				<aspectratio>scale</aspectratio>
-				<bordersize>20</bordersize>
+				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
 				<left>20</left>
 				<top>30</top>
 				<width>276</width>
-				<height>60</height>
+				<height>51</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[BannerVar]</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
 				<left>136</left>
-				<top>198</top>
+				<top>166</top>
 				<width>160</width>
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
@@ -380,7 +379,7 @@
 			</control>
 			<control type="label">
 				<left>31</left>
-				<top>238</top>
+				<top>206</top>
 				<width>260</width>
 				<label>$PARAM[thumb_label]</label>
 				<font>font20_title</font>
@@ -390,7 +389,7 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>198</top>
+				<top>166</top>
 				<width>160</width>
 				<height>70</height>
 				<texture>overlays/overlay-bg.png</texture>
@@ -398,14 +397,14 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>235</top>
+				<top>203</top>
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
 			</control>
 			<control type="textbox">
 				<left>28</left>
-				<top>262</top>
+				<top>263</top>
 				<width>262</width>
 				<height>80</height>
 				<font>font12</font>
@@ -413,12 +412,13 @@
 				<aligny>center</aligny>
 				<label>$PARAM[label]</label>
 				<visible>Window.IsActive(videos)</visible>
+				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(videos)</visible>
 				<control type="label">
 					<left>29</left>
-					<top>270</top>
+					<top>238</top>
 					<width>260</width>
 					<label>$PARAM[sub_label]</label>
 					<font>font12</font>
@@ -428,7 +428,7 @@
 				</control>
 				<control type="label">
 					<left>29</left>
-					<top>300</top>
+					<top>268</top>
 					<width>260</width>
 					<label>$PARAM[main_label]</label>
 					<font>font10</font>
@@ -441,14 +441,14 @@
 				<top>30</top>
 				<left>20</left>
 				<width>276</width>
-				<height>308</height>
+				<height>276</height>
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>346</top>
+				<top>315</top>
 				<width>276</width>
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
@@ -456,7 +456,7 @@
 			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>318</top>
+				<top>287</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>

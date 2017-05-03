@@ -231,6 +231,14 @@
 			</control>
 			<control type="image">
 				<left>20</left>
+				<top>138</top>
+				<width>160</width>
+				<height>70</height>
+				<texture>overlays/overlay-bg.png</texture>
+				<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
 				<top>175</top>
 				<width>32</width>
 				<height>32</height>
@@ -270,9 +278,17 @@
 					<align>center</align>
 				</control>
 			</control>
+			<control type="image">
+				<left>20</left>
+				<top>287</top>
+				<width>276</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>258</top>
+				<top>259</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -281,8 +297,8 @@
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
 			</control>
 			<control type="group">
-				<left>134</left>
-				<top>8</top>
+				<left>133</left>
+				<top>11</top>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 		</definition>
@@ -297,16 +313,16 @@
 			<control type="image">
 				<top>10</top>
 				<width>316</width>
-				<height>348</height>
+				<height>316</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<top>6</top>
+				<top>7</top>
 				<left>-4</left>
 				<width>324</width>
-				<height>356</height>
+				<height>324</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -314,25 +330,24 @@
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>70</top>
-				<width>316</width>
-				<height>218</height>
+				<left>20</left>
+				<top>81</top>
+				<width>276</width>
+				<height>155</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWidgetThumbVar]</texture>
 				<aspectratio>stretch</aspectratio>
-				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
 				<left>20</left>
 				<top>30</top>
 				<width>276</width>
-				<height>60</height>
+				<height>51</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[BannerVar]</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
 				<left>136</left>
-				<top>198</top>
+				<top>166</top>
 				<width>160</width>
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
@@ -340,7 +355,7 @@
 			</control>
 			<control type="label">
 				<left>31</left>
-				<top>238</top>
+				<top>206</top>
 				<width>260</width>
 				<label>$PARAM[thumb_label]</label>
 				<font>font20_title</font>
@@ -349,7 +364,7 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>235</top>
+				<top>236</top>
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
@@ -357,19 +372,20 @@
 			<control type="textbox">
 				<left>28</left>
 				<top>262</top>
-				<width>262</width>
+				<width>263</width>
 				<height>80</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>Window.IsActive(videos)</visible>
+				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(videos)</visible>
 				<control type="label">
 					<left>29</left>
-					<top>270</top>
+					<top>238</top>
 					<width>260</width>
 					<label>$PARAM[sub_label]</label>
 					<font>font12</font>
@@ -379,7 +395,7 @@
 				</control>
 				<control type="label">
 					<left>29</left>
-					<top>300</top>
+					<top>268</top>
 					<width>260</width>
 					<label>$PARAM[main_label]</label>
 					<font>font10</font>
@@ -388,9 +404,17 @@
 					<align>center</align>
 				</control>
 			</control>
+			<control type="image">
+				<left>20</left>
+				<top>315</top>
+				<width>276</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>318</top>
+				<top>287</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -399,8 +423,8 @@
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
 			</control>
 			<control type="group">
-				<left>134</left>
-				<top>8</top>
+				<left>133</left>
+				<top>11</top>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 		</definition>
@@ -459,6 +483,14 @@
 			</control>
 			<control type="image">
 				<left>20</left>
+				<top>138</top>
+				<width>160</width>
+				<height>70</height>
+				<texture>overlays/overlay-bg.png</texture>
+				<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
 				<top>175</top>
 				<width>32</width>
 				<height>32</height>
@@ -498,9 +530,17 @@
 					<align>center</align>
 				</control>
 			</control>
+			<control type="image">
+				<left>20</left>
+				<top>287</top>
+				<width>276</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>258</top>
+				<top>259</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -509,8 +549,8 @@
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
 			</control>
 			<control type="group">
-				<left>134</left>
-				<top>8</top>
+				<left>133</left>
+				<top>11</top>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 		</definition>
@@ -525,16 +565,16 @@
 			<control type="image">
 				<top>10</top>
 				<width>316</width>
-				<height>348</height>
+				<height>316</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<top>6</top>
+				<top>7</top>
 				<left>-4</left>
 				<width>324</width>
-				<height>356</height>
+				<height>324</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -542,25 +582,24 @@
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>70</top>
-				<width>316</width>
-				<height>218</height>
+				<left>20</left>
+				<top>81</top>
+				<width>276</width>
+				<height>155</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWatchThumbVar]</texture>
-				<aspectratio>scale</aspectratio>
-				<bordersize>20</bordersize>
+				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
 				<left>20</left>
 				<top>30</top>
 				<width>276</width>
-				<height>60</height>
+				<height>51</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[BannerVar]</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
 				<left>136</left>
-				<top>198</top>
+				<top>166</top>
 				<width>160</width>
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
@@ -568,7 +607,7 @@
 			</control>
 			<control type="label">
 				<left>31</left>
-				<top>238</top>
+				<top>206</top>
 				<width>260</width>
 				<label>$PARAM[thumb_label]</label>
 				<font>font20_title</font>
@@ -577,14 +616,14 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>235</top>
+				<top>203</top>
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
 			</control>
 			<control type="textbox">
 				<left>28</left>
-				<top>262</top>
+				<top>263</top>
 				<width>262</width>
 				<height>80</height>
 				<font>font12</font>
@@ -592,12 +631,13 @@
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>Window.IsActive(videos)</visible>
+				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(videos)</visible>
 				<control type="label">
 					<left>29</left>
-					<top>270</top>
+					<top>238</top>
 					<width>260</width>
 					<label>$PARAM[sub_label]</label>
 					<font>font12</font>
@@ -607,7 +647,7 @@
 				</control>
 				<control type="label">
 					<left>29</left>
-					<top>300</top>
+					<top>268</top>
 					<width>260</width>
 					<label>$PARAM[main_label]</label>
 					<font>font10</font>
@@ -616,9 +656,17 @@
 					<align>center</align>
 				</control>
 			</control>
+			<control type="image">
+				<left>20</left>
+				<top>315</top>
+				<width>276</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>318</top>
+				<top>287</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -627,8 +675,8 @@
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
 			</control>
 			<control type="group">
-				<left>134</left>
-				<top>8</top>
+				<left>133</left>
+				<top>11</top>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 		</definition>
@@ -720,7 +768,7 @@
 				<left>-10</left>
 				<top>105</top>
 				<right>0</right>
-				<height>470</height>
+				<height>440</height>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
@@ -848,7 +896,7 @@
 				<left>-10</left>
 				<top>105</top>
 				<right>0</right>
-				<height>470</height>
+				<height>440</height>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
@@ -976,7 +1024,7 @@
 				<left>-10</left>
 				<top>105</top>
 				<right>0</right>
-				<height>470</height>
+				<height>440</height>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
