@@ -11,12 +11,20 @@
 		<control type="group">
 			<bottom>0</bottom>
 			<height>190</height>
-			<control type="image">
+			<!--<control type="image">
+				<top>50</top>
 				<left>-40</left>
 				<width>120%</width>
-				<height>200</height>
+				<height>150</height>
 				<texture flipy="true">frame/osdfade.png</texture>
-			</control>
+			</control>-->
+			<control type="image">
+					<left>0</left>
+					<bottom>0</bottom>
+					<width>110%</width>
+					<height>250</height>
+					<texture flipy="true">frame/InfoBar.png</texture>
+				</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
