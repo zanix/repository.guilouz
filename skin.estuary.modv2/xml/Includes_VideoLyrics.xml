@@ -76,7 +76,7 @@
 		<control type="list" id="110">
 				<centerleft>50%</centerleft>
 				<top>45</top>
-				<width>10</width>
+				<width>0</width>
 				<height>450</height>
 				<onleft>111</onleft>
 				<onright>111</onright>
