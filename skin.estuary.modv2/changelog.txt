@@ -4,6 +4,7 @@
 • Add shortcut for extended info to context menu
 • Fix lyrics on music visualisation
 • Fix aspect ratio on tv shows widgets
+• Fix channel osd recording indicator visibility
 • Fix esthetic appearance
 • Minor fixes
 • Minor changes
