@@ -64,7 +64,7 @@
 						<font>font10</font>
 						<align>center</align>
 						<aligny>top</aligny>
-						<label>$LOCALIZE[31029]:</label>
+						<label>$LOCALIZE[31029] :</label>
 						<visible>!String.IsEqual(Listitem.Label,$LOCALIZE[20058])</visible>
 					</control>
 					<control type="label">
@@ -124,7 +124,7 @@
 							<font>font10</font>
 							<align>center</align>
 							<aligny>top</aligny>
-							<label>$LOCALIZE[31029]:</label>
+							<label>$LOCALIZE[31029] :</label>
 							<visible>!String.Contains(Listitem.Label,$LOCALIZE[20058])</visible>
 						</control>
 						<control type="label">
