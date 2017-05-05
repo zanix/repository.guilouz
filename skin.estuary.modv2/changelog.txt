@@ -1,4 +1,5 @@
 [B]2.2.10[/B]
+• Add support for German language (Thanks to rainman74)
 • Fix CDArts position on Global Search screen
 • Minor fixes
 
