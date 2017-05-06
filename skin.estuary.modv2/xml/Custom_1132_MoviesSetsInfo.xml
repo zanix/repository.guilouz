@@ -398,7 +398,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content sortby="year" sortorder="ascending">$VAR[InfoListPathVar]</content>
+					<content sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/</content>
 				</control>
 				<control type="grouplist" id="5000">
 					<left>-246</left>

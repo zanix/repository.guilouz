@@ -12,7 +12,7 @@
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<top>158</top>
-				<left>40</left>
+				<left>30</left>
 				<control type="image">
 					<left>24</left>
 					<top>2</top>
@@ -37,7 +37,7 @@
 			<control type="group">
 				<include>OpenClose_Right</include>
 				<include>Visible_Right</include>
-				<left>80</left>
+				<left>90</left>
 				<visible>![Window.Is(songinformation) + Window.IsActive(musicinformation)]</visible>
 				<control type="group">
 					<visible>Integer.IsEqual(Container(50).NumItems,0) + String.IsEmpty(Control.GetLabel(400))</visible>
@@ -161,24 +161,25 @@
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="panel" id="50">
-					<left>585</left>
+					<left>586</left>
 					<top>170</top>
-					<width>1190</width>
+					<width>1185</width>
 					<height>360</height>
 					<ondown>130</ondown>
 					<onup>9000</onup>
 					<orientation>horizontal</orientation>
-					<itemlayout height="72.5" width="595" condition="Container.Content(songs)">
+					<visible>!String.IsEqual(ListItem.DBType,artist)</visible>
+					<itemlayout height="72.5" width="585" condition="Container.Content(songs)">
 						<control type="image">
 							<top>-10</top>
-							<width>595</width>
+							<width>605</width>
 							<height>100</height>
 							<texture border="21">buttons/button-nofo.png</texture>
 						</control>
 						<control type="label">
 							<left>40</left>
 							<top>10</top>
-							<width>515</width>
+							<width>525</width>
 							<height>60</height>
 							<font>font12</font>
 							<aligny>center</aligny>
@@ -186,17 +187,17 @@
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 						</control>
 					</itemlayout>
-					<focusedlayout height="72.5" width="595" condition="Container.Content(songs)">
+					<focusedlayout height="72.5" width="585" condition="Container.Content(songs)">
 						<control type="image">
 							<top>-10</top>
-							<width>595</width>
+							<width>605</width>
 							<height>100</height>
 							<texture border="21" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texture>
 						</control>
 						<control type="label">
 							<left>40</left>
 							<top>10</top>
-							<width>515</width>
+							<width>525</width>
 							<height>60</height>
 							<font>font12</font>
 							<aligny>center</aligny>
@@ -204,55 +205,55 @@
 							<scroll>true</scroll>
 						</control>
 					</focusedlayout>
-					<itemlayout height="72.5" width="595" condition="Container.Content(albums)">
+					<itemlayout height="72.5" width="585" condition="Container.Content(albums)">
 						<control type="image">
 							<top>-10</top>
-							<width>595</width>
+							<width>605</width>
 							<height>100</height>
 							<texture border="21">buttons/button-nofo.png</texture>
 						</control>
 						<control type="label">
 							<left>40</left>
 							<top>10</top>
-							<width>515</width>
+							<width>525</width>
 							<height>60</height>
 							<font>font12</font>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.TrackNumber,,[COLOR white] - ]$INFO[ListItem.Label][/COLOR]</label>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 						</control>
-						<control type="group">
-							<left>230</left>
-							<top>28</top>
-							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
-						</control>
 					</itemlayout>
-					<focusedlayout height="72.5" width="595" condition="Container.Content(albums)">
+					<focusedlayout height="72.5" width="585" condition="Container.Content(albums)">
 						<control type="group">
 							<control type="image">
 								<top>-10</top>
-								<width>595</width>
+								<width>605</width>
 								<height>100</height>
 								<texture border="21" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texture>
 							</control>
 							<control type="label">
 								<left>40</left>
 								<top>10</top>
-								<width>515</width>
+								<width>525</width>
 								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.TrackNumber,[COLOR white], - [/COLOR]]$INFO[ListItem.Label]</label>
 								<scroll>true</scroll>
 							</control>
-							<control type="group">
-								<left>230</left>
-								<top>28</top>
-								<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
-							</control>
 						</control>
 					</focusedlayout>
-					<itemlayout height="360" width="236" condition="Container.Content(artists)">
+				</control>
+				<control type="panel" id="50">
+					<left>585</left>
+					<top>170</top>
+					<width>1190</width>
+					<height>360</height>
+					<ondown>130</ondown>
+					<onup>9000</onup>
+					<orientation>horizontal</orientation>
+					<visible>String.IsEqual(ListItem.DBType,artist)</visible>
+					<itemlayout height="360" width="235.3" condition="Container.Content(artists)">
 						<control type="image">
 							<top>-10</top>
 							<width>250</width>
@@ -277,16 +278,10 @@
 							<font>font27_narrow</font>
 							<align>center</align>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label2,,[COLOR white] - ]$INFO[ListItem.Label,,[/COLOR]]</label>
-							<textcolor>$VAR[SkinColorVar]</textcolor>
-						</control>
-						<control type="group">
-							<left>230</left>
-							<top>28</top>
-							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="360" width="236" condition="Container.Content(artists)">
+					<focusedlayout height="360" width="235.3" condition="Container.Content(artists)">
 						<control type="group">
 							<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="160,180">Focus</animation>
 							<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="160,180">UnFocus</animation>
@@ -315,13 +310,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
-								<label>$INFO[ListItem.Label2,,[COLOR white] - ]$INFO[ListItem.Label,,[/COLOR]]</label>
-								<textcolor>$VAR[SkinColorVar]</textcolor>
-							</control>
-							<control type="group">
-								<left>230</left>
-								<top>28</top>
-								<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="image">
 								<left>16</left>
@@ -333,6 +322,7 @@
 							</control>
 						</control>
 					</focusedlayout>
+					<content sortby="year" sortorder="ascending" condition="Container.Content(artists)">musicdb://artists/$INFO[ListItem.DBID]/</content>
 				</control>
 				<control type="grouplist" id="9000">
 					<left>-37</left>
@@ -439,7 +429,7 @@
 				<include content="LeftRightArrows">
 					<param name="list_id" value="50" />
 					<param name="left_posx" value="562" />
-					<param name="right_posx" value="1780" />
+					<param name="right_posx" value="1771" />
 					<param name="posy" value="300" />
 					<param name="visible" value="true" />
 				</include>
