@@ -266,7 +266,7 @@
 							<width>190</width>
 							<height>190</height>
 							<texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
-							<aspectratio>keep</aspectratio>
+							<aspectratio>stretch</aspectratio>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
 						</control>
@@ -297,7 +297,7 @@
 								<width>190</width>
 								<height>190</height>
 								<texture border="2" fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
-								<aspectratio>keep</aspectratio>
+								<aspectratio>stretch</aspectratio>
 								<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 								<bordersize>4</bordersize>
 							</control>
@@ -325,7 +325,7 @@
 					<content sortby="year" sortorder="ascending" condition="Container.Content(artists)">musicdb://artists/$INFO[ListItem.DBID]/</content>
 				</control>
 				<control type="grouplist" id="9000">
-					<left>-37</left>
+					<left>-47</left>
 					<top>820</top>
 					<width>1834</width>
 					<height>300</height>
@@ -334,7 +334,7 @@
 					<onup>130</onup>
 					<ondown>50</ondown>
 					<align>center</align>
-					<itemgap>0</itemgap>
+					<itemgap>-3.6</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="radiobutton" id="155">
 						<include content="VideoInfoButtonsCommon">

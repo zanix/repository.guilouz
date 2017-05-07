@@ -104,6 +104,7 @@
 							<aspectratio aligny="center">stretch</aspectratio>
 							<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+							<visible>!String.IsEqual(listitem.dbtype,album)</visible>
 						</control>
 						<control type="textbox">
 							<left>25</left>
@@ -128,6 +129,7 @@
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
 							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))] | ListItem.IsCollection</visible>
 							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+							<visible>!String.IsEqual(listitem.dbtype,album)</visible>
 						</control>
 						<control type="image">
 							<left>169</left>

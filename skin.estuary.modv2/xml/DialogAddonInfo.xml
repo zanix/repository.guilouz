@@ -35,8 +35,8 @@
 					<autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
 				</control>
 				<control type="group">
-					<left>606</left>
-					<top>160</top>
+					<left>605</left>
+					<top>162</top>
 					<visible>Integer.IsEqual(Container(50).NumItems,0)</visible>
 					<control type="image">
 						<width>425</width>
@@ -66,8 +66,8 @@
 					</control>
 				</control>
 				<control type="panel" id="50">
-					<left>618</left>
-					<top>160</top>
+					<left>617</left>
+					<top>162</top>
 					<width>1215</width>
 					<height>273</height>
 					<ondown>5000</ondown>
@@ -124,7 +124,7 @@
 				<include content="LeftRightArrows">
 					<param name="list_id" value="50" />
 					<param name="left_posx" value="590" />
-					<param name="right_posx" value="1840" />
+					<param name="right_posx" value="1827" />
 					<param name="posy" value="280" />
 					<param name="visible" value="true" />
 				</include>
@@ -229,7 +229,7 @@
 				</control>
 				<control type="image">
 					<left>-5</left>
-					<top>525</top>
+					<top>527</top>
 					<width>540</width>
 					<height>150</height>
 					<texture>dialogs/dialog-bg-nobo.png</texture>
@@ -238,7 +238,7 @@
 				</control>
 				<control type="grouplist">
 					<left>30</left>
-					<top>555</top>
+					<top>557</top>
 					<control type="label">
 						<width>470</width>
 						<height>40</height>
