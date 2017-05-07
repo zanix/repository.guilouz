@@ -4,21 +4,21 @@
         <label2>Common Shortcut</label2>
         <label>13012</label>
         <action>Quit()</action>
-        <icon>icons/powermenu/exit.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/exit.png</icon> 
         <visible>System.ShowExitButton</visible>       
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
         <label>13016</label>
         <action>Powerdown()</action>
-        <icon>icons/powermenu/powerdown.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/powerdown.png</icon> 
         <visible>System.CanPowerDown</visible>        
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
         <label>20150</label>
         <action>AlarmClock(shutdowntimer,Shutdown())</action>
-        <icon>icons/powermenu/shutdowntimer.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/shutdowntimer.png</icon> 
         <visible>!System.HasAlarm(shutdowntimer)</visible>
         <visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>       
     </shortcut>
@@ -26,28 +26,28 @@
         <label2>Common Shortcut</label2>
         <label>$VAR[CancelAlarmVar]</label>
         <action>CancelAlarm(shutdowntimer)</action>
-        <icon>icons/powermenu/cancel.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/cancel.png</icon> 
         <visible>System.HasAlarm(shutdowntimer)</visible>        
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
         <label>13011</label>
         <action>Suspend()</action>
-        <icon>icons/powermenu/suspend.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/suspend.png</icon> 
         <visible>System.CanSuspend</visible>       
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
         <label>13010</label>
         <action>Hibernate()</action>
-        <icon>icons/powermenu/suspend.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/suspend.png</icon> 
         <visible>System.CanHibernate</visible>        
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
         <label>13013</label>
         <action>Reset()</action>
-        <icon>icons/powermenu/reboot.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/reboot.png</icon> 
         <visible>System.CanReboot</visible>        
     </shortcut>
     <shortcut>
@@ -55,7 +55,7 @@
         <label>$VAR[SystemLogOffVar]</label>
         <action>dialog.close(all,true)</action>
         <action>System.LogOff</action>
-        <icon>icons/powermenu/logoff.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/logoff.png</icon> 
         <visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
         <visible>System.Loggedon</visible>        
     </shortcut>
@@ -65,55 +65,55 @@
         <altlabel>20045</altlabel>
         <usealttexture>!System.IsMaster</usealttexture>
         <action>mastermode</action>
-        <icon>icons/powermenu/mastermode.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/mastermode.png</icon> 
         <visible>System.HasLocks</visible>        
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
         <label>13017</label>
         <action>InhibitIdleShutdown(true)</action>
-        <icon>icons/powermenu/cancel.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/cancel.png</icon> 
         <visible>System.HasShutdown + !System.IsInhibit</visible>     
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
         <label>13018</label>
         <action>InhibitIdleShutdown(false)</action>
-        <icon>icons/powermenu/inhibitidleshutdown.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/inhibitidleshutdown.png</icon> 
         <visible>System.HasShutdown + System.IsInhibit</visible>       
     </shortcut>
     <shortcut>
     	<label2>Common Shortcut</label2>
 		<label>40009</label>
 		<action>UpdateLibrary(video)</action>
-		<icon>icons/powermenu/updatevideo.png</icon>
+		<icon>special://skin/extras/icons/Power menu/updatevideo.png</icon>
 		<visible>!Library.IsScanningVideo</visible>
 	</shortcut>
 	<shortcut>
 		<label2>Common Shortcut</label2>
 		<label>40013</label>
 		<action>UpdateLibrary(video)</action>
-		<icon>icons/powermenu/cancel.png</icon>
+		<icon>special://skin/extras/icons/Power menu/cancel.png</icon>
 		<visible>Library.IsScanningVideo</visible>
 	</shortcut>
 	<shortcut>
 		<label2>Common Shortcut</label2>
 		<label>40010</label>
 		<action>UpdateLibrary(music)</action>
-		<icon>icons/powermenu/updatemusic.png</icon>
+		<icon>special://skin/extras/icons/Power menu/updatemusic.png</icon>
 		<visible>!Library.IsScanningMusic</visible>
 	</shortcut>
 	<shortcut>
 		<label2>Common Shortcut</label2>
 		<label>40014</label>
 		<action>UpdateLibrary(music)</action>
-		<icon>icons/powermenu/cancel.png</icon>
+		<icon>special://skin/extras/icons/Power menu/cancel.png</icon>
 		<visible>Library.IsScanningMusic</visible>
 	</shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
         <label>20183</label>
         <action>ReloadSkin()</action>
-        <icon>icons/powermenu/reload.png</icon>        
+        <icon>special://skin/extras/icons/Power menu/reload.png</icon>        
     </shortcut>
 </shortcuts>
