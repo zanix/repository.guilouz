@@ -22,7 +22,7 @@
 				<top>236</top>
 				<width>461</width>
 				<height>461</height>
-				<aspectratio>keep</aspectratio>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture fallback="DefaultTVShows.png">$INFO[ListItem.Icon]</texture>
 			</control>
 			<control type="group">
@@ -49,7 +49,7 @@
 					<width>1050</width>
 					<height>425</height>
 					<align>justify</align>
-					<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.Duration])[CR]$INFO[ListItem.StartDate][CR]$INFO[ListItem.Season, [COLOR grey]S[/COLOR]]$INFO[ListItem.Episode, [COLOR grey]E[/COLOR],: ]$INFO[ListItem.EpisodeName,[B],[/B][CR]]$INFO[ListItem.Genre,[COLOR grey]$LOCALIZE[515]:[/COLOR] ,[CR]]$INFO[ListItem.Writer,[COLOR grey]$LOCALIZE[20417]:[/COLOR] ,[CR]]$INFO[ListItem.Director,[COLOR grey]$LOCALIZE[20339]:[/COLOR] ,[CR]]$INFO[ListItem.Cast,[COLOR grey]$LOCALIZE[206]:[/COLOR] ,[CR]][CR]$INFO[ListItem.Plot]</label>
+					<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.Duration])[CR]$INFO[ListItem.StartDate][CR]$INFO[ListItem.Season, [COLOR grey]S[/COLOR]]$INFO[ListItem.Episode, [COLOR grey]E[/COLOR], : ]$INFO[ListItem.EpisodeName,[B],[/B][CR]]$INFO[ListItem.Genre,[COLOR grey]$LOCALIZE[515] :[/COLOR] ,[CR]]$INFO[ListItem.Writer,[COLOR grey]$LOCALIZE[20417] :[/COLOR] ,[CR]]$INFO[ListItem.Director,[COLOR grey]$LOCALIZE[20339] :[/COLOR] ,[CR]]$INFO[ListItem.Cast,[COLOR grey]$LOCALIZE[206] :[/COLOR] ,[CR]][CR]$INFO[ListItem.Plot]</label>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="grouplist" id="9000">
@@ -108,6 +108,7 @@
 				<param name="main_label" value="$INFO[ListItem.Title]$INFO[ListItem.Season, ]$INFO[ListItem.Episode,[COLOR grey]x[/COLOR]]" />
 				<param name="sub_label" value="$INFO[ListItem.ChannelName]" />
 				<param name="posy" value="40" />
+				<param name="subtextcolor" value="$VAR[SkinColorVar]" />
 			</include>
 		</control>
 		<include condition="Skin.HasSetting(touchmode)">TouchBackButton</include>
